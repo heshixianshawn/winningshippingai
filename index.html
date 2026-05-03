@@ -274,10 +274,10 @@ async function loadFleetData() {
     const resp = await fetch('data/hifleet_daily.json?_t=' + Date.now());
     if (!resp.ok) throw new Error('HTTP ' + resp.status);
     STATE.fleetData = await resp.json();
-    renderFleet();
+    initFleetView();
   } catch(e) {
     STATE.fleetData = getTestFleetData();
-    renderFleet();
+    initFleetView();
   }
 }
 
@@ -320,27 +320,9 @@ function renderFleet() {
 
   const winning = filtered.filter(v => v.name.startsWith('WINNING'));
   const sunny = filtered.filter(v => v.name.startsWith('SUNNY'));
-  const total = vessels.length;
-  const sea = vessels.filter(v=>v.status==='在航').length;
-  const anchor = vessels.filter(v=>v.status==='锚泊').length;
-  const moored = vessels.filter(v=>v.status==='系泊').length;
 
-  let html = `<div class="fleet-header">
-    <h3>🚢 A.WINNING FLEET <span style="font-weight:400;font-size:12px;color:var(--text-light)">(${total}艘)</span></h3>
-    <div class="fleet-stats">
-      <span class="fleet-stat sea">🟢 ${sea}</span>
-      <span class="fleet-stat anchor">🟡 ${anchor}</span>
-      <span class="fleet-stat moored">🔴 ${moored}</span>
-    </div>
-  </div>`;
-  html += `<div class="fleet-time">📡 ${STATE.fleetData.timestamp || ''}</div>`;
-  html += `<div class="fleet-filter">
-    <input class="fleet-search" id="fleetSearchInput" placeholder="🔍 搜索船名/目的港..." oninput="renderFleet()">
-    <button class="active ${STATE.fleetFilter==='all'?'':''}" onclick="setFleetFilter('all')" data-ff="all">全部 ${total}</button>
-    <button class="sea-filter ${STATE.fleetFilter==='sea'?'active':''}" onclick="setFleetFilter('sea')">🟢 在航 ${sea}</button>
-    <button class="anchor-filter ${STATE.fleetFilter==='anchor'?'active':''}" onclick="setFleetFilter('anchor')">🟡 锚泊 ${anchor}</button>
-    <button class="moored-filter ${STATE.fleetFilter==='moored'?'active':''}" onclick="setFleetFilter('moored')">🔴 系泊 ${moored}</button>
-  </div>`;
+  // 只更新船舶列表部分，不重建头部和搜索框
+  let listHtml = '';
 
   function sec(title, vs) {
     let s = `<div class="fleet-section"><h4>${title} <span>(${vs.length}艘)</span></h4>`;
@@ -369,17 +351,75 @@ function renderFleet() {
     return s;
   }
 
-  if (winning.length) html += sec('WINNING 系列', winning);
-  if (sunny.length) html += sec('SUNNY 系列', sunny);
-  if (!filtered.length) html += '<div class="empty-fleet"><p>没有匹配的船舶</p></div>';
+  if (winning.length) listHtml += sec('WINNING 系列', winning);
+  if (sunny.length) listHtml += sec('SUNNY 系列', sunny);
+  if (!filtered.length) listHtml += '<div class="empty-fleet"><p>没有匹配的船舶</p></div>';
 
-  container.innerHTML = html;
+  // 找到或创建列表容器
+  let listEl = document.getElementById('fleetList');
+  if (!listEl) {
+    listEl = document.createElement('div');
+    listEl.id = 'fleetList';
+    // 插入到搜索框后面
+    const filterEl = container.querySelector('.fleet-filter');
+    if (filterEl) filterEl.after(listEl);
+    else container.appendChild(listEl);
+  }
+  listEl.innerHTML = listHtml;
 }
 
 function setFleetFilter(filter) {
   STATE.fleetFilter = filter;
-  document.querySelectorAll('.fleet-filter button').forEach(b => b.classList.remove('active'));
-  document.querySelectorAll(`.fleet-filter button[onclick*="'${filter}'"]`).forEach(b => b.classList.add('active'));
+  // 更新按钮活动状态显示
+  document.querySelectorAll('.fleet-filter button').forEach(b => {
+    const isActive = b.textContent.includes('全部') && filter === 'all' ||
+      b.textContent.includes('在航') && filter === 'sea' ||
+      b.textContent.includes('锚泊') && filter === 'anchor' ||
+      b.textContent.includes('系泊') && filter === 'moored';
+    b.classList.toggle('active', isActive);
+  });
+  renderFleet();
+}
+
+// 搜索输入延迟，避免频繁重排
+let searchTimer = null;
+window.onFleetSearch = function() {
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(() => renderFleet(), 150);
+};
+
+function buildFleetHeader() {
+  const vessels = STATE.fleetData.vessels || [];
+  const total = vessels.length;
+  const sea = vessels.filter(v=>v.status==='在航').length;
+  const anchor = vessels.filter(v=>v.status==='锚泊').length;
+  const moored = vessels.filter(v=>v.status==='系泊').length;
+  
+  let html = `<div class="fleet-header">
+    <h3>🚢 A.WINNING FLEET <span style="font-weight:400;font-size:12px;color:var(--text-light)">(${total}艘)</span></h3>
+    <div class="fleet-stats">
+      <span class="fleet-stat sea">🟢 ${sea}</span>
+      <span class="fleet-stat anchor">🟡 ${anchor}</span>
+      <span class="fleet-stat moored">🔴 ${moored}</span>
+    </div>
+  </div>`;
+  html += `<div class="fleet-time">📡 ${STATE.fleetData.timestamp || ''}</div>`;
+  html += `<div class="fleet-filter">
+    <input class="fleet-search" id="fleetSearchInput" placeholder="🔍 搜索船名/目的港..." oninput="onFleetSearch()">
+    <button class="active" onclick="setFleetFilter('all')">全部 ${total}</button>
+    <button class="sea-filter ${STATE.fleetFilter==='sea'?'active':''}" onclick="setFleetFilter('sea')">🟢 在航 ${sea}</button>
+    <button class="anchor-filter ${STATE.fleetFilter==='anchor'?'active':''}" onclick="setFleetFilter('anchor')">🟡 锚泊 ${anchor}</button>
+    <button class="moored-filter ${STATE.fleetFilter==='moored'?'active':''}" onclick="setFleetFilter('moored')">🔴 系泊 ${moored}</button>
+  </div>`;
+  return html;
+}
+
+// 首次加载：一次性渲染头部+列表+过滤器
+function initFleetView() {
+  if (!STATE.fleetData) return;
+  const container = document.getElementById('fleetContent');
+  container.innerHTML = buildFleetHeader() + '<div id="fleetList"></div>';
+  STATE.fleetFilter = 'all';
   renderFleet();
 }
 
