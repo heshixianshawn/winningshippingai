@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WINNING Shipping AI - 船舶法规智能查询</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-ship"></i>
+                <h1>WINNING Shipping AI</h1>
+                <span class="subtitle">船舶法规智能查询系统</span>
+            </div>
+            <div class="user-info">
+                <div class="user-avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="user-details">
+                    <span class="username">Shawn</span>
+                    <span class="user-role">船舶管理员</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主内容区 -->
+    <main class="main-container">
+        <div class="sidebar">
+            <!-- 搜索区域 -->
+            <div class="search-section">
+                <h3><i class="fas fa-search"></i> 法规搜索</h3>
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="输入关键词搜索法规..." autocomplete="off">
+                    <button id="searchBtn"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="search-filters">
+                    <label><input type="checkbox" name="filter" value="SOLAS" checked> SOLAS公约</label>
+                    <label><input type="checkbox" name="filter" value="MARPOL"> MARPOL公约</label>
+                    <label><input type="checkbox" name="filter" value="MLC"> MLC公约</label>
+                    <label><input type="checkbox" name="filter" value="国内"> 国内法规</label>
+                </div>
+            </div>
+
+            <!-- 分类导航 (整合船舶资料) -->
+            <div class="category-section">
+                <h3><i class="fas fa-folder"></i> 船舶资料</h3>
+                <ul class="category-list">
+                    <li data-category="ship-list">
+                        <i class="fas fa-list"></i> 船舶列表
+                        <span class="count" id="count-shiplist">—</span>
+                    </li>
+                    <li data-category="ship-certs">
+                        <i class="fas fa-file-certificate"></i> 船舶证书
+                        <span class="count" id="count-certs">—</span>
+                    </li>
+                    <li data-category="fleet" id="fleetNavItem">
+                        <i class="fas fa-ship"></i> 船舶动态
+                        <span class="count" id="count-fleet">59</span>
+                    </li>
+                    <li data-category="ship-tech">
+                        <i class="fas fa-cogs"></i> 技术资料
+                        <span class="count" id="count-tech">—</span>
+                    </li>
+                </ul>
+                <h3 style="margin-top:20px;"><i class="fas fa-book"></i> 法规查询</h3>
+                <ul class="category-list">
+                    <li class="active" data-category="all">
+                        <i class="fas fa-globe"></i> 全部法规
+                        <span class="count" id="count-all">0</span>
+                    </li>
+                    <li data-category="SOLAS">
+                        <i class="fas fa-fire-extinguisher"></i> SOLAS公约
+                        <span class="count" id="count-solas">0</span>
+                    </li>
+                    <li data-category="MARPOL">
+                        <i class="fas fa-leaf"></i> MARPOL公约
+                        <span class="count" id="count-marpol">0</span>
+                    </li>
+                    <li data-category="MLC">
+                        <i class="fas fa-users"></i> MLC公约
+                        <span class="count" id="count-mlc">0</span>
+                    </li>
+                    <li data-category="国内">
+                        <i class="fas fa-flag"></i> 国内法规
+                        <span class="count" id="count-domestic">0</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 最近查看 -->
+            <div class="recent-section">
+                <h3><i class="fas fa-history"></i> 最近查看</h3>
+                <ul class="recent-list" id="recentList">
+                    <!-- 动态生成 -->
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- 欢迎区域 -->
+            <div class="welcome-section">
+                <h2><i class="fas fa-anchor"></i> 欢迎使用船舶法规查询系统</h2>
+                <p>快速查找SOLAS、MARPOL、MLC等国际公约及国内法规文件</p>
+                
+                <div class="quick-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-file-pdf"></i>
+                        <div>
+                            <h3 id="totalFiles">0</h3>
+                            <p>法规文件</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-book"></i>
+                        <div>
+                            <h3 id="totalCategories">4</h3>
+                            <p>法规分类</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-search"></i>
+                        <div>
+                            <h3 id="searchCount">0</h3>
+                            <p>搜索次数</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 搜索结果区域 -->
+            <div class="results-section">
+                <div class="results-header">
+                    <h3><i class="fas fa-list"></i> 法规列表</h3>
+                    <div class="results-info">
+                        <span id="resultsCount">找到 0 个文件</span>
+                        <div class="view-toggle">
+                            <button class="view-btn active" data-view="list"><i class="fas fa-list"></i></button>
+                            <button class="view-btn" data-view="grid"><i class="fas fa-th-large"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="results-container" id="resultsContainer">
+                    <!-- 搜索结果将在这里显示 -->
+                    <div class="empty-state">
+                        <i class="fas fa-search fa-3x"></i>
+                        <h4>开始搜索法规</h4>
+                        <p>输入关键词或选择分类查看法规文件</p>
+                    </div>
+                </div>
+
+                <!-- 分页 -->
+                <div class="pagination" id="pagination">
+                    <!-- 动态生成 -->
+                </div>
+            </div>
+
+            <!-- 文件预览区域 -->
+            <div class="preview-section" id="previewSection" style="display: none;">
+                <div class="preview-header">
+                    <h3 id="previewTitle"></h3>
+                    <button class="close-preview" id="closePreview"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="preview-content" id="previewContent">
+                    <!-- PDF预览或文本内容 -->
+                </div>
+                <div class="preview-actions">
+                    <button class="btn" id="downloadBtn"><i class="fas fa-download"></i> 下载文件</button>
+                    <button class="btn" id="printBtn"><i class="fas fa-print"></i> 打印</button>
+                    <button class="btn" id="shareBtn"><i class="fas fa-share"></i> 分享</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 底部信息 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-ship"></i>
+                    <span>WINNING Shipping AI</span>
+                </div>
+                <div class="footer-info">
+                    <p>© 2026 WINNING International Group. 仅供内部使用。</p>
+                    <p>版本: v1.0.0 | 最后更新: <span id="lastUpdate">2026-04-19</span></p>
+                </div>
+                <div class="footer-links">
+                    <a href="#"><i class="fas fa-question-circle"></i> 帮助</a>
+                    <a href="#"><i class="fas fa-cog"></i> 设置</a>
+                    <a href="#"><i class="fas fa-envelope"></i> 联系</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript文件 -->
+    <script src="js/search-index.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
