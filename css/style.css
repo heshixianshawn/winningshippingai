@@ -749,6 +749,119 @@ body {
     100% { transform: rotate(360deg); }
 }
 
+/* ========== 船舶动态模块 ========== */
+.fleet-filter-bar {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+.fleet-filter-bar .filter-btn {
+    padding: 5px 14px;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    background: #fff;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all .15s;
+}
+.fleet-filter-bar .filter-btn:hover {
+    border-color: var(--primary-color);
+}
+.fleet-filter-bar .filter-btn.active {
+    background: var(--primary-color);
+    color: #fff;
+    border-color: var(--primary-color);
+}
+.fleet-filter-bar .filter-btn.active.sea {
+    background: #28a745;
+    border-color: #28a745;
+}
+.fleet-filter-bar .filter-btn.active.anchor {
+    background: #ffc107;
+    color: #333;
+    border-color: #ffc107;
+}
+.fleet-filter-bar .filter-btn.active.moored {
+    background: #dc3545;
+    border-color: #dc3545;
+}
+.fleet-section {
+    margin-bottom: 24px;
+}
+.fleet-section h4 {
+    font-size: 16px;
+    color: var(--primary-dark);
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--primary-color);
+    margin-bottom: 10px;
+}
+.fleet-section h4 span {
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--gray-color);
+}
+.fleet-card {
+    background: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    margin-bottom: 6px;
+    padding: 10px 14px;
+    cursor: pointer;
+    transition: box-shadow .15s;
+}
+.fleet-card:hover {
+    box-shadow: 0 1px 6px rgba(0,0,0,.06);
+}
+.fleet-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 14px;
+}
+.fleet-name {
+    font-weight: 700;
+    font-size: 14px;
+    min-width: 140px;
+}
+.fleet-status {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 1px 10px;
+    border-radius: 12px;
+}
+.fleet-status.sea { background: #d4edda; color: #155724; }
+.fleet-status.anchor { background: #fff3cd; color: #856404; }
+.fleet-status.moored { background: #f8d7da; color: #721c24; }
+.fleet-speed { font-size: 13px; color: #555; }
+.fleet-dest { font-size: 13px; }
+.fleet-dest b { color: var(--primary-color); }
+.fleet-eta { font-size: 12px; color: #777; }
+.fleet-eta.overdue { color: var(--danger-color); }
+.fleet-details {
+    display: none;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px dashed var(--border-color);
+    font-size: 12px;
+    color: #888;
+    gap: 6px 18px;
+    flex-wrap: wrap;
+}
+.fleet-card.expanded .fleet-details {
+    display: flex;
+}
+.fleet-mini-stats {
+    margin-left: 8px;
+    font-size: 13px;
+}
+.stat-dot { margin: 0 2px; }
+.fleet-ts {
+    margin-left: 12px;
+    font-size: 12px;
+    color: #aaa;
+}
+
 /* 工具类 */
 .hidden {
     display: none !important;

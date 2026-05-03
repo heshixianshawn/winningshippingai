@@ -7,6 +7,118 @@ let currentPage = 1;
 const itemsPerPage = 10;
 let currentResults = [];
 
+// ========== 船舶动态模块 ==========
+let fleetData = null;
+let fleetFilter = 'all';
+
+async function loadFleetData() {
+    try {
+        const resp = await fetch('data/hifleet_daily.json?_t=' + Date.now());
+        if (!resp.ok) throw new Error('HTTP ' + resp.status);
+        fleetData = await resp.json();
+    } catch(e) {
+        console.warn('加载船舶动态数据失败:', e.message);
+        fleetData = null;
+    }
+}
+
+function renderFleetView() {
+    const container = document.getElementById('resultsContainer');
+    const resultsHeader = document.querySelector('.results-header h3');
+    resultsHeader.innerHTML = '<i class="fas fa-ship"></i> 船舶动态';
+    
+    if (!fleetData || !fleetData.vessels) {
+        container.innerHTML = '<div class="empty-state"><i class="fas fa-ship fa-3x"></i><h4>数据加载中</h4><p>请等待自动更新或手动刷新</p></div>';
+        return;
+    }
+
+    const search = document.getElementById('searchInput');
+    const searchText = (search ? search.value : '').toLowerCase().trim();
+    
+    let filtered = fleetData.vessels.filter(v => {
+        if (fleetFilter !== 'all' && getStatusClass(v.status) !== fleetFilter) return false;
+        if (searchText && !v.name.toLowerCase().includes(searchText) && !(v.destination||'').toLowerCase().includes(searchText)) return false;
+        return true;
+    });
+
+    const winning = filtered.filter(v => v.name.startsWith('WINNING'));
+    const sunny = filtered.filter(v => v.name.startsWith('SUNNY'));
+    const totalAll = fleetData.vessels.length;
+    const seaCount = fleetData.vessels.filter(v => v.status === '在航').length;
+    const anchorCount = fleetData.vessels.filter(v => v.status === '锚泊').length;
+    const mooredCount = fleetData.vessels.filter(v => v.status === '系泊').length;
+
+    document.getElementById('count-fleet').textContent = totalAll;
+    document.getElementById('resultsCount').innerHTML = `
+        <span>${filtered.length}艘 / 共${totalAll}艘</span>
+        <span class="fleet-mini-stats">
+            <span class="stat-dot sea">🟢${seaCount}</span>
+            <span class="stat-dot anchor">🟡${anchorCount}</span>
+            <span class="stat-dot moored">🔴${mooredCount}</span>
+        </span>
+        <span class="fleet-ts">⏱ ${fleetData.timestamp || ''}</span>
+    `;
+
+    let html = '<div class="fleet-filter-bar">';
+    html += `<button class="filter-btn ${fleetFilter==='all'?'active':''}" data-fleet-filter="all">全部 ${totalAll}</button>`;
+    html += `<button class="filter-btn sea ${fleetFilter==='sea'?'active':''}" data-fleet-filter="sea">🟢 在航 ${seaCount}</button>`;
+    html += `<button class="filter-btn anchor ${fleetFilter==='anchor'?'active':''}" data-fleet-filter="anchor">🟡 锚泊 ${anchorCount}</button>`;
+    html += `<button class="filter-btn moored ${fleetFilter==='moored'?'active':''}" data-fleet-filter="moored">🔴 系泊 ${mooredCount}</button>`;
+    html += '</div>';
+
+    function renderSection(title, vessels) {
+        let s = `<div class="fleet-section"><h4>${title} <span>(${vessels.length}艘)</span></h4>`;
+        vessels.forEach(v => {
+            const sc = getStatusClass(v.status);
+            const overdue = v.eta && v.eta < '2026-05-01';
+            s += `<div class="fleet-card" onclick="this.classList.toggle('expanded')">
+                <div class="fleet-row">
+                    <span class="fleet-name">${v.name}</span>
+                    <span class="fleet-status ${sc}">${v.status === '在航' ? '🟢' : v.status === '锚泊' ? '🟡' : '🔴'} ${v.status}</span>
+                    ${v.speed_kn ? `<span class="fleet-speed">${v.speed_kn} kn</span>` : ''}
+                    ${v.destination ? `<span class="fleet-dest">→ <b>${v.destination}</b></span>` : ''}
+                    ${v.eta ? `<span class="fleet-eta ${overdue?'overdue':''}">ETA ${v.eta}</span>` : ''}
+                </div>
+                <div class="fleet-details">
+                    ${v.lat ? `<span>📍 ${v.lat.toFixed(2)}, ${v.lon.toFixed(2)}</span>` : ''}
+                    ${v.heading_deg ? `<span>🧭 ${v.heading_deg}°</span>` : ''}
+                    ${v.draught_m ? `<span>📏 ${v.draught_m}m</span>` : ''}
+                    ${v.mmsi ? `<span>📡 ${v.mmsi}</span>` : ''}
+                    ${v.imo ? `<span>🆔 ${v.imo}</span>` : ''}
+                    ${v.updateTime ? `<span>⏱ ${v.updateTime}</span>` : ''}
+                </div>
+            </div>`;
+        });
+        s += '</div>';
+        return s;
+    }
+
+    if (winning.length) html += renderSection('WINNING 系列', winning);
+    if (sunny.length) html += renderSection('SUNNY 系列', sunny);
+    if (!filtered.length) html += '<div class="empty-state"><p>没有匹配的船舶</p></div>';
+    
+    container.innerHTML = html;
+
+    // 绑定筛选按钮
+    document.querySelectorAll('[data-fleet-filter]').forEach(btn => {
+        btn.addEventListener('click', function() {
+            fleetFilter = this.getAttribute('data-fleet-filter');
+            renderFleetView();
+        });
+    });
+
+    // 隐藏预览区
+    document.getElementById('previewSection').style.display = 'none';
+    // 隐藏分页
+    document.getElementById('pagination').style.display = 'none';
+}
+
+function getStatusClass(s) {
+    if (s === '锚泊') return 'anchor';
+    if (s === '系泊') return 'moored';
+    return 'sea';
+}
+
 // DOM加载完成后初始化
 document.addEventListener('DOMContentLoaded', function() {
     console.log("WINNING Shipping AI 初始化...");
@@ -16,6 +128,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // 绑定事件
     bindEvents();
+    
+    // 加载船舶动态数据
+    loadFleetData();
     
     // 显示所有文件
     showAllFiles();
@@ -31,7 +146,12 @@ function bindEvents() {
     // 搜索输入框回车
     document.getElementById('searchInput').addEventListener('keypress', function(e) {
         if (e.key === 'Enter') {
-            performSearch();
+            const activeCat = document.querySelector('.category-list li.active');
+            if (activeCat && activeCat.getAttribute('data-category') === 'fleet') {
+                renderFleetView();
+            } else {
+                performSearch();
+            }
         }
     });
     
@@ -48,7 +168,50 @@ function bindEvents() {
             
             // 获取分类
             const category = this.getAttribute('data-category');
-            showFilesByCategory(category);
+            
+            const searchInput = document.getElementById('searchInput');
+            const searchSection = document.querySelector('.search-section');
+            const searchFilters = document.querySelector('.search-filters');
+            const welcomeSection = document.querySelector('.welcome-section');
+            const pagination = document.getElementById('pagination');
+            const previewSection = document.getElementById('previewSection');
+            
+            // 判断是船舶资料模块还是法规模块
+            const isShipData = ['fleet', 'ship-list', 'ship-certs', 'ship-tech'].includes(category);
+            
+            if (isShipData) {
+                // ▶ 船舶资料模块
+                searchSection.style.display = 'none';
+                welcomeSection.style.display = 'none';
+                previewSection.style.display = 'none';
+                pagination.style.display = 'none';
+                
+                if (category === 'ship-list') {
+                    document.querySelector('.results-header h3').innerHTML = '<i class="fas fa-list"></i> 船舶列表';
+                    document.getElementById('resultsCount').style.display = 'none';
+                    document.getElementById('resultsContainer').innerHTML = '<div class="empty-state"><i class="fas fa-ship fa-3x"></i><h4>船舶列表</h4><p>展示公司59条船的详细信息</p></div>';
+                } else if (category === 'fleet') {
+                    document.querySelector('.results-header h3').innerHTML = '<i class="fas fa-ship"></i> 船舶动态';
+                    document.getElementById('resultsCount').style.display = 'block';
+                    renderFleetView();
+                } else if (category === 'ship-certs') {
+                    document.querySelector('.results-header h3').innerHTML = '<i class="fas fa-file-certificate"></i> 船舶证书';
+                    document.getElementById('resultsCount').style.display = 'none';
+                    document.getElementById('resultsContainer').innerHTML = '<div class="empty-state"><i class="fas fa-file-certificate fa-3x"></i><h4>船舶证书模块</h4><p>OCR处理完成后将在此展示证书检索</p></div>';
+                } else if (category === 'ship-tech') {
+                    document.querySelector('.results-header h3').innerHTML = '<i class="fas fa-cogs"></i> 技术资料';
+                    document.getElementById('resultsCount').style.display = 'none';
+                    document.getElementById('resultsContainer').innerHTML = '<div class="empty-state"><i class="fas fa-cogs fa-3x"></i><h4>技术资料模块</h4><p>OCR处理完成后将在此展示技术资料检索</p></div>';
+                }
+            } else {
+                // ▶ 法规查询模块
+                searchSection.style.display = 'block';
+                searchFilters.style.display = 'block';
+                welcomeSection.style.display = 'block';
+                pagination.style.display = 'block';
+                document.getElementById('resultsCount').style.display = 'block';
+                showFilesByCategory(category);
+            }
         });
     });
     
