@@ -139,25 +139,6 @@
 .tech-card h5 { margin: 0 0 4px 0; font-size: 13px; }
 .tech-card p { font-size: 12px; color: #666; margin: 0; }
 .tech-card .info { font-size: 11px; color: #999; margin-top: 4px; }
-
-/* entry cards */
-.entry-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 16px; }
-.entry-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 18px 12px; cursor: pointer; text-align: center; transition: all .2s; }
-.entry-card:hover { border-color: var(--primary); box-shadow: 0 2px 10px rgba(0,0,0,.08); transform: translateY(-1px); }
-.entry-card .e-icon { font-size: 28px; display: block; margin-bottom: 6px; }
-.entry-card .e-title { font-size: 14px; font-weight: 600; color: var(--text); }
-.entry-card .e-desc { font-size: 11px; color: var(--text-light); margin-top: 4px; }
-.entry-card .e-badge { display: inline-block; font-size: 10px; padding: 2px 10px; border-radius: 10px; background: var(--primary-light); color: var(--primary); margin-top: 6px; }
-.sub-panel { display: none; }
-.sub-panel.active { display: block; }
-.sub-back { display: inline-flex; align-items: center; gap: 4px; padding: 4px 12px; border: 1px solid var(--border); border-radius: 16px; font-size: 12px; cursor: pointer; margin-bottom: 10px; color: var(--primary); background: white; transition: all .15s; }
-.sub-back:hover { border-color: var(--primary); background: var(--primary-light); }
-.contact-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 8px; }
-.contact-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 12px; }
-.contact-card h5 { margin: 0 0 6px 0; font-size: 14px; }
-.contact-card table { width: 100%; font-size: 12px; border-collapse: collapse; }
-.contact-card td { padding: 4px 6px; border-bottom: 1px solid #f0f0f0; }
-.contact-card td:first-child { color: #666; white-space: nowrap; width: 80px; }
 </style>
 </head>
 <body>
@@ -194,16 +175,17 @@
   <!-- 快捷指令（仅法规模块使用） -->
   <div class="quick-actions" id="quickActions"></div>
   
-    <main class="chat-area" id="chatArea">
+  <!-- 主聊天区域（仅法规模块使用） -->
+  <main class="chat-area" id="chatArea">
     <div class="welcome" id="welcomeScreen">
       <div class="welcome-icon">📋</div>
       <h2>法规咨询</h2>
-      <p>问答式查询 · 图片上传合规分析</p>
-      <div class="entry-grid" style="max-width:400px;margin:16px auto 0">
-        <div class="entry-card" onclick="document.getElementById('messageInput').focus()"><span class="e-icon">💬</span><span class="e-title">自由提问</span><span class="e-desc">输入法规关键词或问题</span></div>
-        <div class="entry-card" onclick="quickAsk('请列举SOLAS公约主要内容')"><span class="e-icon">📄</span><span class="e-title">SOLAS查询</span><span class="e-desc">公约条款速查</span></div>
-        <div class="entry-card" onclick="document.getElementById('imageInput').click()"><span class="e-icon">📷</span><span class="e-title">图片分析</span><span class="e-desc">上传照片判断合规性</span></div>
-        <div class="entry-card" onclick="quickAsk('PSC检查常见缺陷有哪些？')"><span class="e-icon">🔗</span><span class="e-title">PSC缺陷</span><span class="e-desc">缺陷描述匹配条款</span></div>
+      <p>IMO公约 · SOLAS · MARPOL · MLC · 国内法规</p>
+      <div class="welcome-tips">
+        <div class="tip-item"><span class="tip-icon">💬</span><span>输入法规关键词或问题</span></div>
+        <div class="tip-item"><span class="tip-icon">📷</span><span>上传照片判断合规性</span></div>
+        <div class="tip-item"><span class="tip-icon">📄</span><span>粘贴缺陷描述匹配条款</span></div>
+        <div class="tip-item"><span class="tip-icon">🔗</span><span>引用IMO官网原文</span></div>
       </div>
     </div>
     <div id="messages"></div>
@@ -212,55 +194,67 @@
       <span>思考中...</span>
     </div>
   </main>
+  
   <!-- 🏢 体系面板 -->
   <div class="systems-panel" id="systemsPanel">
-    <div class="panel-header"><h3>🏢 公司体系文件</h3><p>安全管理体系 · 程序手册 · 应急计划 · 劳资文件</p></div>
-    <div class="sub-panel active" id="sysEntry">
-      <div class="entry-grid">
-        <div class="entry-card" onclick="openSub('sysSafety')"><span class="e-icon">📘</span><span class="e-title">安全管理体系</span><span class="e-desc">SMS 安全管理手册 · 程序 · 须知</span></div>
-        <div class="entry-card" onclick="openSub('sysShipMgt')"><span class="e-icon">📙</span><span class="e-title">船舶管理体系</span><span class="e-desc">船舶管理 · 值班 · 设备保养</span></div>
-        <div class="entry-card" onclick="openSub('sysEmergency')"><span class="e-icon">📋</span><span class="e-title">应急计划</span><span class="e-desc">应急部署 · 演习 · 响应程序</span></div>
-        <div class="entry-card" onclick="openSub('sysLabor')"><span class="e-icon">📄</span><span class="e-title">劳资与岸基</span><span class="e-desc">MLC · 岸基支持 · 人事管理</span></div>
+    <div class="panel-header">
+      <h3>🏢 公司体系文件</h3>
+      <p>安全管理体系 · 程序手册 · 应急计划</p>
+    </div>
+    <div class="panel-search-box">
+      <input id="systemsSearch" placeholder="🔍 搜索体系文件 / 章节..." oninput="onSystemsSearch()">
+    </div>
+    <div id="systemsContent">
+      <div class="panel-placeholder">
+        <h4>体系文件目录</h4>
+        <div class="sug-card">📘 安全管理手册</div>
+        <div class="sug-card">📙 船舶管理手册</div>
+        <div class="sug-card">📗 程序手册</div>
+        <div class="sug-card">📕 岸基管理手册</div>
+        <div class="sug-card">📋 应急计划</div>
+        <div class="sug-card">📄 海事劳工手册</div>
+        <div class="sug-card">⚡ 能效管理手册</div>
+        <p style="margin-top:16px;font-size:12px;color:var(--text-light)">🔍 在搜索框输入关键词查找体系文件</p>
       </div>
     </div>
-    <div class="sub-panel" id="sysSafety"><button class="sub-back" onclick="closeSub('sysSafety')">← 返回</button><div id="sysSafetyContent"></div></div>
-    <div class="sub-panel" id="sysShipMgt"><button class="sub-back" onclick="closeSub('sysShipMgt')">← 返回</button><div id="sysShipMgtContent"></div></div>
-    <div class="sub-panel" id="sysEmergency"><button class="sub-back" onclick="closeSub('sysEmergency')">← 返回</button><div id="sysEmergencyContent"></div></div>
-    <div class="sub-panel" id="sysLabor"><button class="sub-back" onclick="closeSub('sysLabor')">← 返回</button><div id="sysLaborContent"></div></div>
   </div>
+  
   <!-- 🔧 技术资料面板 -->
   <div class="tech-panel" id="techPanel">
-    <div class="panel-header"><h3>🔧 技术资料</h3><p>设备说明书 · 船舶图纸 · 检验报告 · 厂家技术文件</p></div>
-    <div class="sub-panel active" id="techEntry">
-      <div class="entry-grid">
-        <div class="entry-card" onclick="openSub('techManual')"><span class="e-icon">📖</span><span class="e-title">设备说明书</span><span class="e-desc">主机 · 辅机 · 锅炉 · 泵组 · 电气</span></div>
-        <div class="entry-card" onclick="openSub('techDrawing')"><span class="e-icon">📐</span><span class="e-title">船舶图纸</span><span class="e-desc">总布置图 · 结构图 · 系统图</span></div>
-        <div class="entry-card" onclick="openSub('techReport')"><span class="e-icon">📝</span><span class="e-title">检验修理报告</span><span class="e-desc">船级社检验 · 修船记录 · 故障</span></div>
-        <div class="entry-card" onclick="openSub('techVendor')"><span class="e-icon">🏭</span><span class="e-title">厂家技术文件</span><span class="e-desc">厂家手册 · 技术通函 · 改装包</span></div>
-      </div>
+    <div class="panel-header">
+      <h3>🔧 技术资料</h3>
     </div>
-    <div class="sub-panel" id="techManual"><button class="sub-back" onclick="closeSub('techManual')">← 返回</button><div id="techManualContent"></div></div>
-    <div class="sub-panel" id="techDrawing"><button class="sub-back" onclick="closeSub('techDrawing')">← 返回</button><div id="techDrawingContent"></div></div>
-    <div class="sub-panel" id="techReport"><button class="sub-back" onclick="closeSub('techReport')">← 返回</button><div id="techReportContent"></div></div>
-    <div class="sub-panel" id="techVendor"><button class="sub-back" onclick="closeSub('techVendor')">← 返回</button><div id="techVendorContent"></div></div>
+    <div class="panel-search-box">
+      <input id="techSearch" placeholder="🔍 搜索技术资料..." oninput="onTechSearch()">
+    </div>
+    <div id="techContent"></div>
   </div>
   <!-- 🚢 船舶证书知识库面板 -->
   <div class="ship-panel" id="shipPanel">
-    <div class="panel-header"><h3>🚢 船舶资料中心</h3><p>证书 · 动态 · 档案 · 船员配备 — 59艘船全覆盖</p></div>
-    <div class="sub-panel active" id="shipEntry">
-      <div class="entry-grid">
-        <div class="entry-card" onclick="loadShipCertificates();openSub('shipCert')"><span class="e-icon">📜</span><span class="e-title">船舶证书</span><span class="e-desc">10,228份已结构化 · 到期提醒</span><span class="e-badge">10,228份</span></div>
-        <div class="entry-card" onclick="loadFleetInShip();openSub('shipFleet')"><span class="e-icon">🚢</span><span class="e-title">船舶动态</span><span class="e-desc">实时船位 · 状态 · 目的地 · ETA</span><span class="e-badge">59艘</span></div>
-        <div class="entry-card" onclick="loadShipProfiles();openSub('shipProfile')"><span class="e-icon">📁</span><span class="e-title">船舶档案</span><span class="e-desc">IMO号 · 船级社 · 建造年份 · 吨位</span><span class="e-badge">59条</span></div>
-        <div class="entry-card" onclick="loadCrewData();openSub('shipCrew')"><span class="e-icon">👥</span><span class="e-title">联系方式及船员配备</span><span class="e-desc">机务 · 海务 · 船员名单 · 证书</span></div>
+    <div class="panel-header">
+      <h3>🚢 船舶证书知识库</h3>
+    </div>
+    <div class="panel-search-box">
+      <input id="shipSearch" placeholder="🔍 搜索船名 / 证书类型..." oninput="onShipSearch()">
+    </div>
+    <div class="ship-stat-bar" id="shipStatBar"></div>
+    <div id="shipContent"></div>
+  </div>
+  
+  <!-- 🚢 船舶动态面板 -->
+  <div class="fleet-panel" id="fleetPanel">
+    <button class="fleet-toggle" id="fleetToggle" onclick="toggleFleetView()">
+      🚢 查看船舶动态
+    </button>
+    <div id="fleetContent">
+      <div class="fleet-loading">
+        <div class="dot-pulse" style="margin:0 auto 8px;"></div>
+        <span>加载船舶动态数据...</span>
       </div>
     </div>
-    <div class="sub-panel" id="shipCert"><button class="sub-back" onclick="closeSub('shipCert')">← 返回</button><div id="shipCertContent"></div></div>
-    <div class="sub-panel" id="shipFleet"><button class="sub-back" onclick="closeSub('shipFleet')">← 返回</button><div id="fleetContent"></div></div>
-    <div class="sub-panel" id="shipProfile"><button class="sub-back" onclick="closeSub('shipProfile')">← 返回</button><input id="shipProfileSearch" placeholder="🔍 搜索船名..." oninput="onProfileSearch()" style="width:calc(100%-28px);margin:8px 0;padding:8px 14px;border:1px solid var(--border);border-radius:20px;font-size:13px;outline:0"><div id="shipProfileList"></div></div>
-    <div class="sub-panel" id="shipCrew"><button class="sub-back" onclick="closeSub('shipCrew')">← 返回</button><input id="shipCrewSearch" placeholder="🔍 搜索船名/船员..." oninput="onCrewSearch()" style="width:calc(100%-28px);margin:8px 0;padding:8px 14px;border:1px solid var(--border);border-radius:20px;font-size:13px;outline:0"><div id="shipCrewContent"></div></div>
   </div>
-<!-- 输入区域 -->
+
+  <!-- 输入区域 -->
   <footer class="input-area">
     <div class="input-wrapper">
       <button class="attach-btn" id="imageUploadBtn" title="上传图片">
@@ -966,22 +960,6 @@ function scrollToBottom() {
 document.addEventListener('DOMContentLoaded', () => {
   switchModule('regulations');
 });
-
-function openSub(id){var el=document.getElementById(id);if(!el)return;var p=el.closest('.systems-panel,.ship-panel,.tech-panel');if(!p)return;p.querySelectorAll('.sub-panel').forEach(function(s){s.classList.remove('active')});el.classList.add('active');}
-function closeSub(id){var el=document.getElementById(id);if(!el)return;var p=el.closest('.systems-panel,.ship-panel,.tech-panel');if(!p)return;p.querySelectorAll('.sub-panel').forEach(function(s){s.classList.remove('active')});var e=p.querySelector('.sub-panel:first-child');if(e)e.classList.add('active');}
-function onSubSearch(e,id){var q=(e.target.value||'').trim().toLowerCase();var el=document.getElementById(id);if(!el)return;if(q.length<2){el.innerHTML='';return;}searchKnowledgeBase(q,el);}
-function searchKnowledgeBase(q,c){var db=STATE.shipKnowledge;if(!db||!db.documents){c.innerHTML='';return;}var ql=q.toLowerCase(),res=[],seen={};for(var id in db.documents){var d=db.documents[id];var fn=(d.filename||'').toLowerCase();var lm=(d.llm_md||'').toLowerCase();if(fn.indexOf(ql)===-1&&lm.indexOf(ql)===-1)continue;var k=d.filename+(d.llm_md||'').slice(0,80);if(seen[k])continue;seen[k]=1;res.push(d);if(res.length>=50)break;}if(!res.length){c.innerHTML='<div class=panel-placeholder><p>无结果</p></div>';return;}var h='';res.forEach(function(d){h+='<div class=doc-card><h5>📄 '+(d.filename||'?')+'</h5><p>'+(d.llm_md||'').split('\\n').slice(0,3).join(' | ')+'</p></div>';});c.innerHTML=h;}
-function loadShipCertificates(){var db=STATE.shipKnowledge;var c=document.getElementById('shipCertContent');if(!db||!db.documents){c.innerHTML='<div class=panel-placeholder><p>知识库加载中…</p></div>';return;}var ships={};for(var id in db.documents){var d=db.documents[id],fn=d.filename||'';var m=fn.match(/^(WINNING\s+\w+|SUNNY\s+\w+)/i);var s=m?m[1].toUpperCase():'其他';if(!ships[s])ships[s]=[];var md=d.llm_md||'',t='文档',exp='';if(md){var x=md.match(/文档类型[：:](.+)/);if(x)t=x[1].trim();x=md.match(/有效期[：:](.+)/);if(x)exp=x[1].trim();}ships[s].push({filename:d.filename||'?',type:t,expiry:exp});}var h='<div class=ship-stat-bar><span class=ship-stat total>📄 '+Object.values(ships).reduce(function(a,b){return a+b.length},0)+' 份</span><span class=ship-stat>🚢 '+Object.keys(ships).length+' 艘</span></div>';var w={},su={},o={};for(var s in ships){if(s.startsWith('WINNING'))w[s]=ships[s];else if(s.startsWith('SUNNY'))su[s]=ships[s];else o[s]=ships[s];}function rg(t,g){var h='<div class=ship-cat-title>'+t+'</div><div class=ship-grid>';for(var s in g){var ct=g[s].map(function(d){return d.type}).filter(function(v,i,a){return a.indexOf(v)===i}).join(' · ');h+='<div class=ship-card onclick="this.classList.toggle(\'expanded\')"><h4>'+s+' <span>('+g[s].length+'份)</span></h4><div class=certs><span>'+ct+'</span></div><div class=ship-detail>';g[s].forEach(function(d){h+='<div class=ship-detail-item><b>'+d.filename+'</b>'+(d.expiry?'<span class=exp>⏰ '+d.expiry+'</span>':'')+'</div>';});h+='</div></div>';}h+='</div>';return h;}if(Object.keys(w).length)h+=rg('WINNING 系列',w);if(Object.keys(su).length)h+=rg('SUNNY 系列',su);if(Object.keys(o).length)h+=rg('其他',o);c.innerHTML=h;}
-function loadShipProfiles(){getShipList().then(function(s){var h='';s.forEach(function(x){h+='<div class=ship-card style=cursor:default><h4>'+x.name+'</h4><div style=font-size:12px;color:#666;display:flex;flex-wrap:wrap;gap:4px 16px><span>🆔 '+(x.imo||'N/A')+'</span><span>🏛 '+(x.classification||'N/A')+'</span><span>📅 '+(x.year||'N/A')+'</span><span>⛽ '+(x.flag||'N/A')+'</span></div></div>';});document.getElementById('shipProfileList').innerHTML=h;});}
-function onProfileSearch(){var q=(document.getElementById('shipProfileSearch').value||'').toLowerCase();getShipList().then(function(s){var list=q?s.filter(function(x){return x.name.toLowerCase().indexOf(q)!==-1||(x.imo||'').indexOf(q)!==-1}):s;var h='';list.forEach(function(x){h+='<div class=ship-card style=cursor:default><h4>'+x.name+'</h4><div style=font-size:12px;color:#666;display:flex;flex-wrap:wrap;gap:4px 16px><span>🆔 '+(x.imo||'N/A')+'</span><span>🏛 '+(x.classification||'N/A')+'</span><span>📅 '+(x.year||'N/A')+'</span><span>⛽ '+(x.flag||'N/A')+'</span></div></div>';});if(!h)h='<div class=panel-placeholder><p>无结果</p></div>';document.getElementById('shipProfileList').innerHTML=h;});}
-function loadCrewData(){getShipList().then(function(s){var h='<div class=contact-grid>';s.forEach(function(x){h+='<div class=contact-card><h5>🚢 '+x.name+'</h5><table><tr><td>机务</td><td>'+(x.superintendent||'待定')+'</td></tr><tr><td>海务</td><td>'+(x.marine_superintendent||'待定')+'</td></tr><tr><td>船级社</td><td>'+(x.classification||'N/A')+'</td></tr><tr><td>建造年份</td><td>'+(x.year||'N/A')+'</td></tr><tr><td>编制</td><td>'+(x.crew_count||'N/A')+'人</td></tr></table></div>';});h+='</div>';document.getElementById('shipCrewContent').innerHTML=h;});}
-function onCrewSearch(){var q=(document.getElementById('shipCrewSearch').value||'').toLowerCase();getShipList().then(function(s){var list=q?s.filter(function(x){return x.name.toLowerCase().indexOf(q)!==-1}):s;var h='<div class=contact-grid>';list.forEach(function(x){h+='<div class=contact-card><h5>🚢 '+x.name+'</h5><table><tr><td>机务</td><td>'+(x.superintendent||'待定')+'</td></tr><tr><td>海务</td><td>'+(x.marine_superintendent||'待定')+'</td></tr><tr><td>船级社</td><td>'+(x.classification||'N/A')+'</td></tr><tr><td>建造年份</td><td>'+(x.year||'N/A')+'</td></tr><tr><td>编制</td><td>'+(x.crew_count||'N/A')+'人</td></tr></table></div>';});h+='</div>';if(!list.length)h='<div class=panel-placeholder><p>无结果</p></div>';document.getElementById('shipCrewContent').innerHTML=h;});}
-var _cachedShipList=null;async function getShipList(){if(_cachedShipList)return _cachedShipList;_cachedShipList=[{name:'WINNING CONFIDENCE',imo:'9325001',classification:'NK',year:'2006',flag:'Singapore',superintendent:'张工',marine_superintendent:'李工',crew_count:'22'},{name:'WINNING DILIGENCE',imo:'9374088',classification:'NK',year:'2008',flag:'Singapore',superintendent:'王工',marine_superintendent:'赵工',crew_count:'24'},{name:'WINNING HOPE',imo:'9722950',classification:'NK',year:'2015',flag:'Liberia',superintendent:'陈工',marine_superintendent:'刘工',crew_count:'25'},{name:'SUNNY SAILOR',imo:'9439125',classification:'NK',year:'2010',flag:'Panama',superintendent:'林工',marine_superintendent:'周工',crew_count:'23'},{name:'SUNNY LABE',imo:'9271597',classification:'RINA',year:'2005',flag:'Panama',superintendent:'黄工',marine_superintendent:'吴工',crew_count:'22'}];return _cachedShipList;}
-function loadFleetInShip(){var fc=document.getElementById('fleetContent');fc.innerHTML='<div class=panel-placeholder><p style=font-size:13px;color:var(--text-light)>⏳ 加载船舶动态…</p></div>';fetch('data/hifleet_daily.json?_t='+Date.now()).then(function(r){return r.ok?r.json():Promise.reject()}).then(function(d){renderFleetInSub(d,fc)}).catch(function(){renderFleetInSub({"timestamp":"2026-05-03 17:37:54","vessels":[{"name":"WINNING CONFIDENCE","status":"在航","speed_kn":10,"destination":"CNTAO","eta":"2026-06-05 14:00","lat":-28.45,"lon":12.20,"heading_deg":128,"draught_m":18.6,"mmsi":"566311000","imo":"9325001","updateTime":"2026-05-03 17:37:09"},{"name":"WINNING DILIGENCE","status":"在航","speed_kn":11,"destination":"CN FAN","eta":"2026-05-08 15:00","lat":0.53,"lon":108.18,"heading_deg":357,"draught_m":18.2,"mmsi":"566545000","imo":"9374088","updateTime":"2026-05-03 17:33:18"},{"name":"WINNING HOPE","status":"在航","speed_kn":9.7,"destination":"YANTAI","eta":"2026-05-17 08:00","lat":-9.01,"lon":100.92,"heading_deg":58,"draught_m":18.7,"mmsi":"563152000","imo":"9722950","updateTime":"2026-05-03 17:28:09"},{"name":"SUNNY SAILOR","status":"在航","speed_kn":12,"destination":"GN PORT DE BOKE","eta":"2026-05-11 09:00","lat":-6.39,"lon":-4.97,"heading_deg":326,"draught_m":9.3,"mmsi":"370118000","imo":"9439125","updateTime":"2026-05-03 17:37:45"},{"name":"SUNNY LABE","status":"系泊","speed_kn":null,"destination":"CN YNT","eta":"2026-05-01 00:00","lat":37.58,"lon":121.39,"heading_deg":270,"draught_m":18.2,"mmsi":"352002765","imo":"9271597","updateTime":"2026-05-03 17:35:31"}]},fc)});}
-function renderFleetInSub(d,c){var v=d.vessels||[];var se=v.filter(function(x){return x.status==='在航'}).length;var an=v.filter(function(x){return x.status==='锚泊'}).length;var mo=v.filter(function(x){return x.status==='系泊'}).length;var h='<div class=fleet-header><h3>🚢 A.WINNING FLEET <span style=font-weight:400;font-size:12px;color:var(--text-light)>('+v.length+'艘)</span></h3><div class=fleet-stats><span class=fleet-stat sea>🟢 '+se+'</span><span class=fleet-stat anchor>🟡 '+an+'</span><span class=fleet-stat moored>🔴 '+mo+'</span></div></div>';h+='<div class=fleet-time>📡 '+(d.timestamp||'')+'</div>';function fl(f,sv){var r=v;if(f!=='all')r=r.filter(function(x){if(f==='sea')return x.status==='在航';if(f==='anchor')return x.status==='锚泊';return x.status==='系泊'});if(sv)r=r.filter(function(x){return x.name.toLowerCase().indexOf(sv.toLowerCase())!==-1||(x.destination||'').toLowerCase().indexOf(sv.toLowerCase())!==-1});return r;}h+='<div class=fleet-filter><input class=fleet-search id=ffs placeholder="🔍 搜索船名…" oninput="renderFleetInSubFilter()">';var ff=fl('all','');[['all','全部',v.length],['sea','🟢 在航',se],['anchor','🟡 锚泊',an],['moored','🔴 系泊',mo]].forEach(function(x){h+='<button onclick="setFleetSubFilter(\''+x[0]+'\')">'+x[1]+' '+x[2]+'</button>'});h+='</div>';
-[['WINNING',ff.filter(function(x){return x.name.startsWith('WINNING')})],['SUNNY',ff.filter(function(x){return x.name.startsWith('SUNNY')})]].forEach(function(a){if(!a[1].length)return;h+='<div class=fleet-section><h4>'+a[0]+' <span>('+a[1].length+')</span></h4>';a[1].forEach(function(x){var sc=x.status==='在航'?'sea':x.status==='锚泊'?'anchor':'moored';h+='<div class=fleet-card onclick="this.classList.toggle(\'expanded\')"><div class=fleet-row><span class=fleet-name>'+x.name+'</span><span class="fleet-status-badge '+sc+'">'+x.status+'</span>'+'<span class=fleet-speed>'+(x.speed_kn?x.speed_kn+'kn':'—')+'</span><span class=fleet-dest><b>'+(x.destination||'—')+'</b></span>'+'<span class=fleet-eta>'+(x.eta||'')+'</span></div><div class=fleet-details><span>🌐 '+(x.lat||'')+', '+(x.lon||'')+'</span><span>🧭 '+(x.heading_deg||'')+'°</span><span>📏 '+(x.draught_m||'')+'m</span><span>📡 '+(x.updateTime||'')+'</span></div></div>';});h+='</div>';});c.innerHTML=h;}
-function setFleetSubFilter(f){window._fleetFilter=f;renderFleetInSubFilter();}
-function renderFleetInSubFilter(){}
 </script>
 </body>
 </html>
