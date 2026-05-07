@@ -597,16 +597,18 @@ function renderFleet() {
     vs.forEach(v => {
       const sc = getStatusClass(v.status);
       const overdue = v.eta && v.eta < '2026-05-01';
+      const area = getShipLocation(v);
       s += `<div class="fleet-card" onclick="this.classList.toggle('expanded')">
         <div class="fleet-row">
           <span class="fleet-name">${v.name}</span>
           <span class="fleet-status-badge ${sc}">${v.status==='在航'?'🟢':v.status==='锚泊'?'🟡':'🔴'} ${v.status}</span>
+          <span class="fleet-location">📍 ${area}</span>
           ${v.speed_kn ? `<span class="fleet-speed">${v.speed_kn}kn</span>` : ''}
           ${v.destination ? `<span class="fleet-dest">→ <b>${v.destination}</b></span>` : ''}
           ${v.eta ? `<span class="fleet-eta ${overdue?'overdue':''}">ETA ${v.eta}</span>` : ''}
         </div>
         <div class="fleet-details">
-          ${v.lat ? `<span>📍 ${v.lat.toFixed(2)}, ${v.lon.toFixed(2)}</span>` : ''}
+          ${v.lat ? `<span>🌐 ${v.lat.toFixed(2)}, ${v.lon.toFixed(2)}</span>` : ''}
           ${v.heading_deg ? `<span>🧭 ${v.heading_deg}°</span>` : ''}
           ${v.draught_m ? `<span>📏 ${v.draught_m}m</span>` : ''}
           ${v.mmsi ? `<span>📡 ${v.mmsi}</span>` : ''}
@@ -1142,9 +1144,118 @@ function loadCrewDataOverlay() {
 function loadShipProfiles() { loadShipProfilesOverlay(); }
 function loadCrewData() { loadCrewDataOverlay(); }
 function loadFleetInShip() { loadFleetDataInOverlay(); }
-function loadFleetInShip(){var fc=document.getElementById('fleetContent');fc.innerHTML='<div class=panel-placeholder><p style=font-size:13px;color:var(--text-light)>⏳ 加载船舶动态…</p></div>';fetch('data/hifleet_daily.json?_t='+Date.now()).then(function(r){return r.ok?r.json():Promise.reject()}).then(function(d){renderFleetInSub(d,fc)}).catch(function(){renderFleetInSub({"timestamp":"2026-05-03 17:37:54","vessels":[{"name":"WINNING CONFIDENCE","status":"在航","speed_kn":10,"destination":"CNTAO","eta":"2026-06-05 14:00","lat":-28.45,"lon":12.20,"heading_deg":128,"draught_m":18.6,"mmsi":"566311000","imo":"9325001","updateTime":"2026-05-03 17:37:09"},{"name":"WINNING DILIGENCE","status":"在航","speed_kn":11,"destination":"CN FAN","eta":"2026-05-08 15:00","lat":0.53,"lon":108.18,"heading_deg":357,"draught_m":18.2,"mmsi":"566545000","imo":"9374088","updateTime":"2026-05-03 17:33:18"},{"name":"WINNING HOPE","status":"在航","speed_kn":9.7,"destination":"YANTAI","eta":"2026-05-17 08:00","lat":-9.01,"lon":100.92,"heading_deg":58,"draught_m":18.7,"mmsi":"563152000","imo":"9722950","updateTime":"2026-05-03 17:28:09"},{"name":"SUNNY SAILOR","status":"在航","speed_kn":12,"destination":"GN PORT DE BOKE","eta":"2026-05-11 09:00","lat":-6.39,"lon":-4.97,"heading_deg":326,"draught_m":9.3,"mmsi":"370118000","imo":"9439125","updateTime":"2026-05-03 17:37:45"},{"name":"SUNNY LABE","status":"系泊","speed_kn":null,"destination":"CN YNT","eta":"2026-05-01 00:00","lat":37.58,"lon":121.39,"heading_deg":270,"draught_m":18.2,"mmsi":"352002765","imo":"9271597","updateTime":"2026-05-03 17:35:31"}]},fc)});}
-function renderFleetInSub(d,c){var v=d.vessels||[];var se=v.filter(function(x){return x.status==='在航'}).length;var an=v.filter(function(x){return x.status==='锚泊'}).length;var mo=v.filter(function(x){return x.status==='系泊'}).length;var h='<div class=fleet-header><h3>🚢 A.WINNING FLEET <span style=font-weight:400;font-size:12px;color:var(--text-light)>('+v.length+'艘)</span></h3><div class=fleet-stats><span class=fleet-stat sea>🟢 '+se+'</span><span class=fleet-stat anchor>🟡 '+an+'</span><span class=fleet-stat moored>🔴 '+mo+'</span></div></div>';h+='<div class=fleet-time>📡 '+(d.timestamp||'')+'</div>';function fl(f,sv){var r=v;if(f!=='all')r=r.filter(function(x){if(f==='sea')return x.status==='在航';if(f==='anchor')return x.status==='锚泊';return x.status==='系泊'});if(sv)r=r.filter(function(x){return x.name.toLowerCase().indexOf(sv.toLowerCase())!==-1||(x.destination||'').toLowerCase().indexOf(sv.toLowerCase())!==-1});return r;}h+='<div class=fleet-filter><input class=fleet-search id=ffs placeholder="🔍 搜索船名…" oninput="renderFleetInSubFilter()">';var ff=fl('all','');[['all','全部',v.length],['sea','🟢 在航',se],['anchor','🟡 锚泊',an],['moored','🔴 系泊',mo]].forEach(function(x){h+='<button onclick="setFleetSubFilter(\''+x[0]+'\')">'+x[1]+' '+x[2]+'</button>'});h+='</div>';
-[['WINNING',ff.filter(function(x){return x.name.startsWith('WINNING')})],['SUNNY',ff.filter(function(x){return x.name.startsWith('SUNNY')})]].forEach(function(a){if(!a[1].length)return;h+='<div class=fleet-section><h4>'+a[0]+' <span>('+a[1].length+')</span></h4>';a[1].forEach(function(x){var sc=x.status==='在航'?'sea':x.status==='锚泊'?'anchor':'moored';h+='<div class=fleet-card onclick="this.classList.toggle(\'expanded\')"><div class=fleet-row><span class=fleet-name>'+x.name+'</span><span class="fleet-status-badge '+sc+'">'+x.status+'</span>'+'<span class=fleet-speed>'+(x.speed_kn?x.speed_kn+'kn':'—')+'</span><span class=fleet-dest><b>'+(x.destination||'—')+'</b></span>'+'<span class=fleet-eta>'+(x.eta||'')+'</span></div><div class=fleet-details><span>🌐 '+(x.lat||'')+', '+(x.lon||'')+'</span><span>🧭 '+(x.heading_deg||'')+'°</span><span>📏 '+(x.draught_m||'')+'m</span><span>📡 '+(x.updateTime||'')+'</span></div></div>';});h+='</div>';});c.innerHTML=h;}
+// ── 前端海域/港口判断（与Python端一致）──
+function getShipLocation(v) {
+  if (v.lon == null || v.lat == null) return '—';
+  var lon = v.lon, lat = v.lat, st = v.status;
+  // 港口定义
+  var ports = {
+    '曹妃甸': {lo:118.2,hi:118.6,la:38.5,ha:39.1},
+    '烟台':   {lo:121.1,hi:121.7,la:37.3,ha:37.9},
+    '青岛':   {lo:120.0,hi:120.6,la:35.8,ha:36.3},
+    '日照':   {lo:119.3,hi:119.7,la:35.0,ha:35.5},
+    '防城港': {lo:108.1,hi:108.6,la:21.3,ha:21.8},
+    '湛江':   {lo:110.2,hi:110.6,la:21.0,ha:21.4},
+    '新加坡': {lo:103.5,hi:104.0,la:1.0, ha:1.5},
+    '博凯港': {lo:-15.0,hi:-14.5,la:10.0,ha:11.0},
+    '博法港': {lo:-13.9,hi:-13.4,la:9.0, ha:9.6},
+  };
+  // 精确匹配港口
+  for (var name in ports) {
+    var p = ports[name];
+    if (p.lo <= lon && lon <= p.hi && p.la <= lat && lat <= p.ha) return name;
+  }
+  // 系泊/锚泊：扩大范围
+  if (st === '系泊' || st === '锚泊') {
+    for (var name in ports) {
+      var p = ports[name];
+      if ((p.lo-2) <= lon && lon <= (p.hi+2) && (p.la-1) <= lat && lat <= (p.ha+1)) return name+'附近';
+    }
+  }
+  // 海域定义
+  var seas = [
+    ['渤海', 117,122,37,41],['黄海', 119,126,33,37],
+    ['东海', 117,127,25,33],['台湾海峡',117,121,22,26],
+    ['南海(近赤道)',106,122,-4,-2],['南海',106,122,-2,22],
+    ['马六甲海峡',100,106,1,6],['巽他海峡附近',103,108,-8,-5],
+    ['印度洋(东部)',78,100,-15,15],['印度洋(中部)',50,78,-30,15],
+    ['印度洋(西部)',20,50,-35,15],['印度洋(东南部)',78,100,-30,-15],
+    ['好望角近岸',14,20,-35,-32],['南大西洋(西非近岸)',-20,10,-30,-5],
+    ['几内亚湾',-15,-2,-5,8],['北大西洋(非洲西北岸)',-20,-10,12,25],
+  ];
+  for (var i=0; i<seas.length; i++) {
+    var s = seas[i];
+    if (s[1] <= lon && lon <= s[2] && s[3] <= lat && lat <= s[4]) return s[0];
+  }
+  return '(' + Math.abs(lat).toFixed(0) + '°' + (lat>=0?'N':'S') + ' ' + Math.abs(lon).toFixed(0) + '°' + (lon>=0?'E':'W') + ')';
+}
+
+// ── 渲染覆盖面板船舶动态（含海域位置）──
+function renderFleetInSub(d,c) {
+  var v = d.vessels || [];
+  v.forEach(function(x) { x._area = getShipLocation(x); });
+  var se = v.filter(function(x){return x.status==='在航'}).length;
+  var an = v.filter(function(x){return x.status==='锚泊'}).length;
+  var mo = v.filter(function(x){return x.status==='系泊'}).length;
+  var h = '<div class=fleet-header><h3>🚢 A.WINNING FLEET <span style=font-weight:400;font-size:12px;color:var(--text-light)>('+v.length+'艘)</span></h3><div class=fleet-stats><span class=fleet-stat sea>🟢 '+se+'</span><span class=fleet-stat anchor>🟡 '+an+'</span><span class=fleet-stat moored>🔴 '+mo+'</span></div></div>';
+  h += '<div class=fleet-time>📡 '+(d.timestamp||'')+'</div>';
+
+  function fl(f,sv){
+    var r = v;
+    if(f!=='all') r = r.filter(function(x){if(f==='sea') return x.status==='在航';if(f==='anchor') return x.status==='锚泊';return x.status==='系泊'});
+    if(sv) r = r.filter(function(x){return x.name.toLowerCase().indexOf(sv.toLowerCase())!==-1 || (x.destination||'').toLowerCase().indexOf(sv.toLowerCase())!==-1});
+    return r;
+  }
+
+  var ff = fl('all','');
+
+  // 按钮
+  var btns = [['all','全部',v.length],['sea','🟢 在航',se],['anchor','🟡 锚泊',an],['moored','🔴 系泊',mo]];
+  h += '<div class=fleet-filter><span class=ship-count>' + v.length + '艘</span>';
+  btns.forEach(function(x){h+='<button onclick="setFleetSubFilter(\''+x[0]+'\')" class="' + (x[0]==='all'?'active':'') + '">'+x[1]+' '+x[2]+'</button>'});
+  h += '</div>';
+
+  // 列出两条航线方向
+  h += '<div style="font-size:11px;color:#888;margin:0 0 10px 12px;display:flex;gap:16px;flex-wrap:wrap">';
+  h += '<span>⛴ 西行: 中国→博凯</span><span>⛴ 东行: 博凯→中国</span>';
+  h += '</div>';
+
+  // WINNING + SUNNY
+  [['WINNING',ff.filter(function(x){return x.name.startsWith('WINNING')})],['SUNNY',ff.filter(function(x){return x.name.startsWith('SUNNY')})]].forEach(function(a){
+    if(!a[1].length) return;
+    h += '<div class=fleet-section><h4>'+a[0]+' <span>('+a[1].length+')</span></h4>';
+    a[1].forEach(function(x){
+      var sc = x.status==='在航'?'sea':x.status==='锚泊'?'anchor':'moored';
+      var spd = x.speed_kn ? x.speed_kn+'kn' : '—';
+      var area = x._area || '—';
+      var dst = x.destination || '';
+      var etaInfo = x.eta ? ' ETA '+x.eta : '';
+
+      if (x.status === '系泊') {
+        // 系泊：位置（港口）+ 下一港 + ETA
+        var line2 = '📍 ' + area;
+        if (dst) line2 += ' → 下一港 ' + dst;
+        if (etaInfo) line2 += ' ' + etaInfo;
+        h += '<div class=fleet-card style="cursor:default"><div class=fleet-row><span class=fleet-name>'+x.name+'</span><span class="fleet-status-badge '+sc+'">'+x.status+'</span><span class=fleet-location>'+line2+'</span></div></div>';
+      } else {
+        // 在航/锚泊
+        var line2 = '📍 ' + area;
+        if (x.status === '锚泊') {
+          if (dst) line2 += ' → ' + dst;
+        } else {
+          line2 += ' | ' + spd;
+          if (dst) line2 += ' → ' + dst;
+        }
+        if (etaInfo) line2 += ' ' + etaInfo;
+        h += '<div class=fleet-card style="cursor:default"><div class=fleet-row><span class=fleet-name>'+x.name+'</span><span class="fleet-status-badge '+sc+'">'+x.status+'</span><span class=fleet-location>'+line2+'</span></div></div>';
+      }
+    });
+    h += '</div>';
+  });
+
+  c.innerHTML = h;
+}
+
 function setFleetSubFilter(f){window._fleetFilter=f;renderFleetInSubFilter();}
 function renderFleetInSubFilter(){}
 </script>
