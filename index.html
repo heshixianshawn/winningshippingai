@@ -517,31 +517,108 @@ window.onShipSearch = function() {
   window._shipSearchTimer = setTimeout(() => renderShipKnowledge(q), 150);
 };
 
-// ====== 技术资料加载 ======
+// ====== 技术资料加载（分片式）======
+// 技术资料按设备类型分成多个小文件，只加载用户搜索的类别
+var STATE_TECH_INDEX = null;
+var TECH_SHARD_CACHE = {};
+
 async function loadTechKnowledge() {
   try {
-    const resp = await fetch('data/ocr_knowledge.json?_t=' + Date.now());
-    STATE.techKnowledge = await resp.json();
+    // 先加载索引（~70KB），不加载全量数据
+    const resp = await fetch('data/tech_index.json?_t=' + Date.now());
+    STATE_TECH_INDEX = await resp.json();
+    STATE.techKnowledge = { documents: {}, statistics: STATE_TECH_INDEX };
     renderTechKnowledge('');
   } catch(e) {
     const el = document.getElementById('techContent');
-    if (el) el.innerHTML = '<div class="empty-fleet"><p>⚠️ 加载失败: ' + e.message + '</p></div>';
+    if (el) el.innerHTML = '<div class="empty-fleet"><p>⚠️ 索引加载失败: ' + e.message + '</p></div>';
   }
 }
 
-function renderTechKnowledge(searchText) {
-  const data = STATE.techKnowledge;
+function getDeviceFromQuery(q) {
+  // 先从keyword_map找
+  var km = STATE_TECH_INDEX.keyword_map || {};
+  for (var kw in km) {
+    if (q.includes(kw)) return km[kw];
+  }
+  // 从word_index找
+  var wi = STATE_TECH_INDEX.word_index || {};
+  for (var w in wi) {
+    if (q.includes(w) && wi[w].length === 1) return wi[w][0];
+  }
+  return null;
+}
+
+async function loadTechShard(deviceName) {
+  var shard = STATE_TECH_INDEX.device_shards[deviceName];
+  if (!shard) return {};
+  var url = 'data/' + shard.file + '?_t=' + Date.now();
+  try {
+    var resp = await fetch(url);
+    var data = await resp.json();
+    TECH_SHARD_CACHE[deviceName] = data;
+    return data;
+  } catch(e) {
+    return {};
+  }
+}
+
+async function renderTechKnowledge(searchText) {
   const list = document.getElementById('techContent');
-  if (!data) {
-    list.innerHTML = '<div class="fleet-loading"><div class="dot-pulse"></div><span>加载技术资料...</span></div>';
+  const statBar = document.getElementById('techStatBar');
+  
+  if (!STATE_TECH_INDEX) {
+    list.innerHTML = '<div class="fleet-loading"><div class="dot-pulse"></div><span>加载技术资料索引...</span></div>';
     return;
   }
   
-  const docs = data.documents || {};
   const st = (searchText || '').toUpperCase();
   
-  let html = '';
-  let count = 0;
+  if (!st) {
+    // 无搜索：显示分类统计
+    let html = '<div class="tech-categories">';
+    html += '<h3>📂 技术资料分类浏览</h3>';
+    html += '<div class="category-grid">';
+    var shards = STATE_TECH_INDEX.device_shards || {};
+    for (var device in shards) {
+      var info = shards[device];
+      html += '<div class="category-card" onclick="searchTech(\'' + escHtml(device) + '\')">';
+      html += '<h4>' + escHtml(device) + '</h4>';
+      html += '<span>' + info.count + ' 份文档</span>';
+      var sizeKB = Math.round(info.size / 1024);
+      html += '<small>' + sizeKB + ' KB</small>';
+      html += '</div>';
+    }
+    html += '</div></div>';
+    list.innerHTML = html;
+    if (statBar) statBar.innerHTML = '<span>📚 共 ' + STATE_TECH_INDEX.num_docs + ' 份技术资料（分片加载）</span>';
+    return;
+  }
+  
+  // 有搜索：先确定类别
+  var device = getDeviceFromQuery(st);
+  
+  if (!device && STATE_TECH_INDEX) {
+    // 无匹配类别，搜索所有分片文件名
+    device = '_其他';
+  }
+  
+  if (!device || !STATE_TECH_INDEX.device_shards[device]) {
+    list.innerHTML = '<p>未找到匹配的技术资料</p>';
+    return;
+  }
+  
+  // 异步加载该分片
+  list.innerHTML = '<div class="fleet-loading"><div class="dot-pulse"></div><span>加载 ' + device + ' 技术资料...</span></div>';
+  
+  var shardData = TECH_SHARD_CACHE[device];
+  if (!shardData) {
+    shardData = await loadTechShard(device);
+  }
+  
+  var docs = shardData || {};
+  var html = '';
+  var count = 0;
   var seen = {};
   
   for (var id in docs) {
@@ -550,17 +627,19 @@ function renderTechKnowledge(searchText) {
     var fn = (d.filename || '').toUpperCase();
     var md = (d.llm_md || '').slice(0, 100).toUpperCase();
     
-    // 如果searchText不为空，过滤匹配
-    if (st) {
-      if (!fn.includes(st) && !md.includes(st)) continue;
-    }
+    // 过滤
+    if (!fn.includes(st) && !md.includes(st)) continue;
     
-    // 去重（相同文件名+md前50字视为重复）
     var key = d.filename + (d.llm_md || '').slice(0, 50);
     if (seen[key]) continue;
     seen[key] = 1;
-    
     count++;
+    
+    var mdPreview = (d.llm_md || '').replace(/\n/g, ' ').slice(0, 150);
+    html += '<div class="tech-card">';
+    html += '<h5>' + (d.filename || '未命名') + '</h5>';
+    html += '<p class="preview">' + escHtml(mdPreview) + '</p>';
+    html += '<div class="info">';
     var mdPreview = (d.llm_md || '').replace(/\n/g, ' ').slice(0, 150);
     html += '<div class="tech-card">';
     html += '<h5>' + (d.filename || '未命名') + '</h5>';
@@ -850,6 +929,13 @@ window.quickAsk = function(query) {
   sendMessage();
 };
 
+function searchTech(device) {
+  els.input.value = device;
+  module = 'tech';
+  switchModule('tech');
+  sendMessage();
+}
+
 // ====== 发送消息 ======
 async function sendMessage() {
   const text = els.input.value.trim();
@@ -892,49 +978,40 @@ function buildModuleContext(module, message) {
   if (module === 'ships' && STATE.shipKnowledge) {
     return buildShipsContext(message);
   }
-  // 技术模块：从 ocr_knowledge.json 检索
-  if (module === 'tech' && STATE.techKnowledge) {
-    return buildTechContext(message);
-  }
+  // 技术模块：已由 callAPI 按需加载分片（buildTechContext）
   // 法律法规、体系：不传知识库，靠system prompt约束
   return null;
 }
 
-function buildTechContext(message) {
-  var db = STATE.techKnowledge;
-  if (!db || !db.documents) return null;
+async function buildTechContext(message) {
+  if (!STATE_TECH_INDEX) return null;
   
   var q = message.toUpperCase();
-  var docs = db.documents;
-  var results = [];
   
-  // 遍历文档，找匹配的
+  // 确定设备类别
+  var device = getDeviceFromQuery(q);
+  if (!device) return null;
+  
+  var shardInfo = STATE_TECH_INDEX.device_shards[device];
+  if (!shardInfo) return null;
+  
+  // 按需加载分片
+  var shardData = TECH_SHARD_CACHE[device];
+  if (!shardData) {
+    shardData = await loadTechShard(device);
+  }
+  if (!shardData) return null;
+  
+  // 在分片内搜索匹配文档
+  var docs = shardData;
+  var results = [];
   for (var id in docs) {
+    if (results.length >= 5) break;
     var d = docs[id];
-    if (results.length >= 5) break; // 最多5条
-    
     var fn = (d.filename || '').toUpperCase();
     var md = (d.llm_md || '').toUpperCase();
-    var cat = '';
-    if (d.categories) {
-      cat = (Array.isArray(d.categories) ? d.categories.join(' ') : d.categories).toUpperCase();
-    }
-    
-    // 关键词匹配：文件名、md内容、分类
-    if (fn.includes(q) || md.includes(q) || cat.includes(q)) {
+    if (fn.includes(q) || md.includes(q)) {
       results.push(d);
-    }
-  }
-  
-  // 如果用户查某个设备类型（锅炉、主机等），放宽匹配
-  if (results.length === 0) {
-    for (var id in docs) {
-      if (results.length >= 3) break;
-      var d = docs[id];
-      var md = (d.llm_md || '').toUpperCase();
-      if (md.includes(q)) {
-        results.push(d);
-      }
     }
   }
   
@@ -1046,8 +1123,13 @@ async function callAPI(message, module, imageData) {
   const history = STATE.conversationHistory[module] || [];
   const lastHistory = history.slice(-6).map(h => ({ role: h.role, content: h.text }));
   
-  // 检索知识库，拼入 context
-  const context = buildModuleContext(module, message);
+  // 检索知识库，拼入 context（技术模块需要按需加载分片）
+  var context = null;
+  if (module === 'tech' && STATE_TECH_INDEX) {
+    context = await buildTechContext(message);
+  } else {
+    context = buildModuleContext(module, message);
+  }
   
   const body = { message, module, history: lastHistory, imageUrl: imageData, context };
   
