@@ -269,7 +269,7 @@
         <input type="file" id="fileInput" accept=".pdf,.doc,.docx,.txt" hidden>
       </button>
       <textarea id="messageInput" rows="1" placeholder="输入法规问题，如：lifeboat要求..."></textarea>
-      <button class="send-btn" id="sendBtn" disabled><span>➤</span></button>
+      <button class="send-btn" id="sendBtn"><span>➤</span></button>
     </div>
     <p class="input-hint">WINNING Shipping AI · 仅供参考，请以IMO官方原文为准</p>
   </footer>
@@ -373,6 +373,39 @@ const els = {
   previewImg: document.getElementById('previewImg'),
   fleetContent: document.getElementById('fleetContent')
 };
+
+// ====== scrollToBottom ======
+function scrollToBottom() {
+  setTimeout(function() {
+    const container = els.messages.parentElement || els.messages;
+    container.scrollTop = container.scrollHeight;
+  }, 10);
+}
+
+// 绑定发送按钮和回车键事件
+(function() {
+  // 发送按钮点击
+  els.sendBtn.onclick = function(e) {
+    if (els.input.value.trim()) sendMessage();
+  };
+  // 回车键发送
+  els.input.onkeydown = function(e) {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      if (els.input.value.trim()) sendMessage();
+    }
+  };
+  // 输入时自动启用/禁用发送按钮
+  els.input.oninput = function(e) {
+    els.sendBtn.disabled = !this.value.trim();
+    // 自动撑高
+    this.style.height = 'auto';
+    this.style.height = Math.min(this.scrollHeight, 120) + 'px';
+  };
+})();
+
+// 解除按钮默认disabled：单击事件仍然处理
+els.sendBtn.disabled = false;
 
 // ====== 船舶知识库加载 ======
 const SHIP_DATA_URL = 'data/ship_knowledge.json';
@@ -487,7 +520,7 @@ window.onShipSearch = function() {
 // ====== 技术资料加载 ======
 async function loadTechKnowledge() {
   try {
-    const resp = await fetch(SHIP_DATA_URL + '?_t=' + Date.now());
+    const resp = await fetch('data/ocr_knowledge.json?_t=' + Date.now());
     STATE.techKnowledge = await resp.json();
     renderTechKnowledge('');
   } catch(e) {
@@ -504,30 +537,51 @@ function renderTechKnowledge(searchText) {
     return;
   }
   
-  const byShip = data.by_ship || {};
+  const docs = data.documents || {};
   const st = (searchText || '').toUpperCase();
   
   let html = '';
   let count = 0;
-  for (const [ship, docs] of Object.entries(byShip)) {
-    const techDocs = docs.filter(d => {
-      if (!st) return true;
-      return d.file.toUpperCase().includes(st) || d.cert.toUpperCase().includes(st) || (d.md || '').toUpperCase().includes(st);
-    });
-    if (techDocs.length === 0) continue;
-    count += techDocs.length;
-    html += '<div class="ship-cat-title">' + ship + ' <span style="font-weight:400;font-size:12px;color:var(--text-light)">(' + techDocs.length + '条)</span></div>';
-    techDocs.slice(0, 10).forEach(d => {
-      html += '<div class="tech-card">';
-      html += '<h5>' + (d.cert || '未分类') + '</h5>';
-      html += '<p>' + d.file.slice(0, 60) + '</p>';
-      html += '<div class="info">' + (d.expiry ? '⏱ ' + d.expiry : '') + '</div>';
-      html += '</div>';
-    });
+  var seen = {};
+  
+  for (var id in docs) {
+    if (Object.keys(seen).length > 100) break;
+    var d = docs[id];
+    var fn = (d.filename || '').toUpperCase();
+    var md = (d.llm_md || '').slice(0, 100).toUpperCase();
+    
+    // 如果searchText不为空，过滤匹配
+    if (st) {
+      if (!fn.includes(st) && !md.includes(st)) continue;
+    }
+    
+    // 去重（相同文件名+md前50字视为重复）
+    var key = d.filename + (d.llm_md || '').slice(0, 50);
+    if (seen[key]) continue;
+    seen[key] = 1;
+    
+    count++;
+    var mdPreview = (d.llm_md || '').replace(/\n/g, ' ').slice(0, 150);
+    html += '<div class="tech-card">';
+    html += '<h5>' + (d.filename || '未命名') + '</h5>';
+    html += '<p class="preview">' + escHtml(mdPreview) + '</p>';
+    html += '<div class="info">';
+    if (d.categories) html += '📂 ' + (Array.isArray(d.categories) ? d.categories.join(', ') : d.categories);
+    if (d.ship_name) html += ' | 🚢 ' + d.ship_name;
+    html += '</div>';
+    html += '</div>';
   }
   
-  if (!html) html = '<div class="empty-fleet"><p>没有匹配的技术资料</p></div>';
+  if (!html) html = '<div class="empty-fleet"><p>📂 已加载 ' + Object.keys(docs).length + ' 份技术资料。在搜索框输入设备名称（如：锅炉、主机、发电机）查找，或到聊天对话框提问。</p></div>';
+  else {
+    html = '<div class="ship-stat-bar"><span class="ship-stat total">📄 ' + count + ' 条匹配（共' + Object.keys(docs).length + '份资料）</span></div>' + html;
+  }
   list.innerHTML = html;
+}
+
+function escHtml(str) {
+  if (!str) return '';
+  return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
 window.onTechSearch = function() {
@@ -832,11 +886,170 @@ async function sendMessage() {
   scrollToBottom();
 }
 
+// ====== 知识库检索 ======
+function buildModuleContext(module, message) {
+  // 船舶模块：从 ship_knowledge.json 检索
+  if (module === 'ships' && STATE.shipKnowledge) {
+    return buildShipsContext(message);
+  }
+  // 技术模块：从 ocr_knowledge.json 检索
+  if (module === 'tech' && STATE.techKnowledge) {
+    return buildTechContext(message);
+  }
+  // 法律法规、体系：不传知识库，靠system prompt约束
+  return null;
+}
+
+function buildTechContext(message) {
+  var db = STATE.techKnowledge;
+  if (!db || !db.documents) return null;
+  
+  var q = message.toUpperCase();
+  var docs = db.documents;
+  var results = [];
+  
+  // 遍历文档，找匹配的
+  for (var id in docs) {
+    var d = docs[id];
+    if (results.length >= 5) break; // 最多5条
+    
+    var fn = (d.filename || '').toUpperCase();
+    var md = (d.llm_md || '').toUpperCase();
+    var cat = '';
+    if (d.categories) {
+      cat = (Array.isArray(d.categories) ? d.categories.join(' ') : d.categories).toUpperCase();
+    }
+    
+    // 关键词匹配：文件名、md内容、分类
+    if (fn.includes(q) || md.includes(q) || cat.includes(q)) {
+      results.push(d);
+    }
+  }
+  
+  // 如果用户查某个设备类型（锅炉、主机等），放宽匹配
+  if (results.length === 0) {
+    for (var id in docs) {
+      if (results.length >= 3) break;
+      var d = docs[id];
+      var md = (d.llm_md || '').toUpperCase();
+      if (md.includes(q)) {
+        results.push(d);
+      }
+    }
+  }
+  
+  if (results.length === 0) return null;
+  
+  // 构建context
+  var context = '以下是从技术知识库中检索到的设备技术资料：\n\n';
+  results.forEach(function(d, i) {
+    context += '【文档 ' + (i+1) + '】' + (d.filename || '未知文件') + '\n';
+    if (d.ship_name) context += '适用船舶：' + d.ship_name + '\n';
+    if (d.categories) {
+      if (Array.isArray(d.categories)) context += '分类：' + d.categories.join('、') + '\n';
+      else context += '分类：' + d.categories + '\n';
+    }
+    if (d.llm_md) {
+      context += (d.llm_md || '').slice(0, 3000) + '\n\n';
+    }
+  });
+  
+  return context;
+}
+
+function buildShipsContext(message) {
+  const byShip = STATE.shipKnowledge.by_ship;
+  if (!byShip) return null;
+  
+  const q = message.toUpperCase();
+  
+  // 1. 尝试精确匹配船名
+  let matchedShip = Object.keys(byShip).find(name => q.includes(name));
+  
+  // 2. 模糊匹配：找q中含有的船名关键词
+  if (!matchedShip) {
+    const allNames = Object.keys(byShip);
+    // 按名字长度降序排序（长名更精确），找包含在q中的
+    const sorted = [...allNames].sort((a, b) => b.length - a.length);
+    matchedShip = sorted.find(name => {
+      // 取船名前半部分（不含'SUNNY' 'WINNING'等前缀后的具体名）
+      const short = name.replace(/^(WINNING|SUNNY)\s+/i, '');
+      return q.includes(short);
+    });
+  }
+  
+  // 3. 按证书类型匹配
+  let matchedCertType = null;
+  if (!matchedShip) {
+    // 遍历所有船，看证书名是否包含q中的关键词
+    for (const [name, certs] of Object.entries(byShip)) {
+      for (const c of certs) {
+        const certUpper = (c.cert || '').toUpperCase();
+        const fileName = (c.file || '').toUpperCase();
+        if (certUpper.includes(q) || fileName.includes(q)) {
+          matchedShip = name;
+          matchedCertType = c.cert;
+          break;
+        }
+      }
+      if (matchedShip) break;
+    }
+  }
+  
+  if (!matchedShip) return null;
+  
+  const certs = byShip[matchedShip];
+  if (!certs || certs.length === 0) return null;
+  
+  // 构建context：只放文档原文，不放约束指令（Worker端会统一处理约束）
+  let context = `以下是从船舶知识库中检索到的 "${matchedShip}" 相关文档内容：\n\n`;
+  
+  // 如果匹配了特定证书类型，只输出该类型
+  if (matchedCertType) {
+    const matched = certs.filter(c => c.cert === matchedCertType);
+    if (matched.length > 0) {
+      context += `【证书类型：${matchedCertType}】\n`;
+      matched.forEach((c, i) => {
+        if (c.expiry && c.expiry !== '未明确提及' && c.expiry !== '未明确标注有效期') {
+          context += `到期日：${c.expiry}\n`;
+        }
+        if (c.md) {
+          const mdText = c.md.replace(/^#+\s/gm, '').slice(0, 3000);
+          context += `${mdText}\n\n`;
+        }
+      });
+    }
+  } else {
+    // 输出该船所有证书的md（限于5条以内，避免token过长）
+    const LIMIT = 5;
+    const toShow = certs.slice(0, LIMIT);
+    toShow.forEach((c) => {
+      context += `【${c.cert || '证书'}】`;
+      if (c.expiry && c.expiry !== '未明确提及' && c.expiry !== '未明确标注有效期') {
+        context += `（到期日：${c.expiry}）`;
+      }
+      context += `\n`;
+      if (c.md) {
+        const mdText = c.md.replace(/^#+\s/gm, '').slice(0, 2000);
+        context += `${mdText}\n\n`;
+      }
+    });
+    if (certs.length > LIMIT) {
+      context += `...（该船还有 ${certs.length - LIMIT} 份证书，如需查看请具体提问）\n`;
+    }
+  }
+  
+  return context;
+}
+
 async function callAPI(message, module, imageData) {
   const history = STATE.conversationHistory[module] || [];
   const lastHistory = history.slice(-6).map(h => ({ role: h.role, content: h.text }));
   
-  const body = { message, module, history: lastHistory, imageUrl: imageData };
+  // 检索知识库，拼入 context
+  const context = buildModuleContext(module, message);
+  
+  const body = { message, module, history: lastHistory, imageUrl: imageData, context };
   
   const response = await fetch(`${CONFIG.API_BASE_URL}/api/chat`, {
     method: 'POST',
