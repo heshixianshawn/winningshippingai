@@ -404,66 +404,6 @@ function scrollToBottom() {
   };
 })();
 
-// ====== 图片压缩 ======
-function compressImage(dataUrl, maxWidth, quality) {
-  maxWidth = maxWidth || 800;
-  quality = quality || 0.6;
-  return new Promise(function(resolve) {
-    var img = new Image();
-    img.onload = function() {
-      var w = img.width, h = img.height;
-      if (w > maxWidth) { h = h * maxWidth / w; w = maxWidth; }
-      var canvas = document.createElement('canvas');
-      canvas.width = w; canvas.height = h;
-      var ctx = canvas.getContext('2d');
-      ctx.drawImage(img, 0, 0, w, h);
-      resolve(canvas.toDataURL('image/jpeg', quality));
-    };
-    img.src = dataUrl;
-  });
-}
-
-// ====== 图片处理 ======
-(function() {
-  // 点击上传
-  els.imageUploadBtn.onclick = function() {
-    els.imageInput.click();
-  };
-  // 选择文件
-  els.imageInput.onchange = async function(e) {
-    var file = e.target.files[0];
-    if (!file) return;
-    var reader = new FileReader();
-    reader.onload = async function(ev) {
-      var raw = ev.target.result;
-      try {
-        STATE.imageData = await compressImage(raw, 800, 0.6);
-      } catch (e) {
-        STATE.imageData = raw;
-      }
-      els.previewImg.src = STATE.imageData;
-      els.imagePreview.classList.remove('hidden');
-    };
-    reader.readAsDataURL(file);
-    e.target.value = '';
-  };
-})();
-
-window.analyzeImage = function() {
-  els.imagePreview.classList.add('hidden');
-  els.input.value = '请分析这张图片中的设备状态，判断是否存在不合规情况，并引用相关法规条款。';
-  sendMessage();
-};
-
-window.closeImagePreview = function() {
-  els.imagePreview.classList.add('hidden');
-};
-
-window.removeImage = function() {
-  STATE.imageData = null;
-  els.imagePreview.classList.add('hidden');
-};
-
 // 解除按钮默认disabled：单击事件仍然处理
 els.sendBtn.disabled = false;
 
@@ -1297,36 +1237,6 @@ async function buildFrontendContext(message, module) {
         return ctx;
       }
       
-      // 按证书类型/到期日关键词搜索（非船名查询场景）
-      var certTypePats = ['证书', '到期', '到期日', 'DOCK', 'SURVEY', '舱室', 'ILL', 'IOPP', 'SMC', 'ISSC', 'SSEC', 'SC', 'SE', 'SR', 'IAPP'];
-      var isCertQuery = false;
-      for (var cp of certTypePats) {
-        if (q.includes(cp)) { isCertQuery = true; break; }
-      }
-      if (isCertQuery) {
-        var certMatches = [];
-        for (var sn of Object.keys(byShip).sort()) {
-          for (var ct of (byShip[sn] || [])) {
-            var cn = (ct.cert || '').toUpperCase();
-            var ex = (ct.expiry || '').toUpperCase();
-            if (cn.includes(q) || ex.includes(q)) {
-              certMatches.push({ ship: sn, cert: ct.cert, expiry: ct.expiry });
-              break;
-            }
-          }
-          if (certMatches.length >= 5) break;
-        }
-        if (certMatches.length > 0) {
-          var ctx = '【知识库检索结果 — 按关键词匹配证书】\n共找到 ' + certMatches.length + ' 条匹配记录：\n\n';
-          certMatches.forEach(function(m) {
-            ctx += '• ' + m.ship + ' — ' + m.cert;
-            if (m.expiry) ctx += '（到期日：' + m.expiry + '）';
-            ctx += '\n';
-          });
-          return ctx;
-        }
-      }
-
       // 没匹配到具体船只 → 返回完整船队索引，让AI自行查找
       var idxParts = [];
       for (var sn of Object.keys(byShip).sort()) {
