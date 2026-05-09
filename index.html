@@ -1182,6 +1182,24 @@ async function buildFrontendContext(message, module) {
   if (module === 'ships' && STATE.shipKnowledge) {
     const byShip = STATE.shipKnowledge.by_ship;
     if (byShip) {
+      // 统计类问题（有几条船、总证书数）
+      var statsPats = ['几条船', '几艘船', '总共多少', '总数', '几有', '多少条', '多少艘', '船舶数量', '船舶总数'];
+      for (var p2 of statsPats) {
+        if (q.includes(p2)) {
+          let sCount = Object.keys(byShip).length;
+          let cCount = STATE.shipKnowledge.total_certs || 0;
+          let list = Object.keys(byShip).sort();
+          let ctx = '【知识库检索结果 — 船队概况】\n\n';
+          ctx += '船舶总数：' + sCount + ' 条船\n';
+          ctx += '已上传证书总数：' + cCount + ' 份\n\n';
+          let w = list.filter(s => s.startsWith('WINNING'));
+          let sn = list.filter(s => s.startsWith('SUNNY'));
+          ctx += 'WINNING系列（' + w.length + ' 条）：' + w.join('、').slice(0, 300) + '\n\n';
+          ctx += 'SUNNY系列（' + sn.length + ' 条）：' + sn.join('、').slice(0, 300) + '\n\n';
+          return ctx;
+        }
+      }
+
       let matchedShip = Object.keys(byShip).find(name => q.includes(name));
       if (!matchedShip) {
         const sorted = Object.keys(byShip).sort((a, b) => b.length - a.length);
