@@ -972,73 +972,35 @@ async function sendMessage() {
   scrollToBottom();
 }
 
-// ====== 知识库检索 ======
-function buildModuleContext(module, message) {
-  // 船舶模块：从 ship_knowledge.json 检索
-  if (module === 'ships' && STATE.shipKnowledge) {
-    return buildShipsContext(message);
-  }
-  // 技术模块：已由 callAPI 按需加载分片（buildTechContext）
-  // 法律法规、体系：不传知识库，靠system prompt约束
-  return null;
-}
-
-async function buildTechContext(message) {
-  if (!STATE_TECH_INDEX) return null;
-  
-  var q = message.toUpperCase();
-  
-  // 确定设备类别
-  var device = getDeviceFromQuery(q);
-  if (!device) return null;
-  
-  var shardInfo = STATE_TECH_INDEX.device_shards[device];
-  if (!shardInfo) return null;
-  
-  // 按需加载分片
-  var shardData = TECH_SHARD_CACHE[device];
-  if (!shardData) {
-    shardData = await loadTechShard(device);
-  }
-  if (!shardData) return null;
-  
-  // 在分片内搜索匹配文档
-  var docs = shardData;
-  var results = [];
-  for (var id in docs) {
-    if (results.length >= 5) break;
-    var d = docs[id];
-    var fn = (d.filename || '').toUpperCase();
-    var md = (d.llm_md || '').toUpperCase();
-    if (fn.includes(q) || md.includes(q)) {
-      results.push(d);
-    }
-  }
-  
-  if (results.length === 0) return null;
-  
-  // 构建context
-  var context = '以下是从技术知识库中检索到的设备技术资料：\n\n';
-  results.forEach(function(d, i) {
-    context += '【文档 ' + (i+1) + '】' + (d.filename || '未知文件') + '\n';
-    if (d.ship_name) context += '适用船舶：' + d.ship_name + '\n';
-    if (d.categories) {
-      if (Array.isArray(d.categories)) context += '分类：' + d.categories.join('、') + '\n';
-      else context += '分类：' + d.categories + '\n';
-    }
-    if (d.llm_md) {
-      context += (d.llm_md || '').slice(0, 3000) + '\n\n';
-    }
-  });
-  
-  return context;
-}
+// ====== [v3.0 RAG] 知识库检索由Worker后端完成 ======
+// 以下函数保留用于前端展示（船舶列表面板、技术知识展示），不再用于AI对话context
 
 function buildShipsContext(message) {
   const byShip = STATE.shipKnowledge.by_ship;
   if (!byShip) return null;
   
   const q = message.toUpperCase();
+  
+  // 先检查统计类问题（有几条船、总证书数），直接传答案不走AI
+  const statsPatterns = ['几条船', '几艘船', '总共多少', '总数', '几有', '多少条', '多少艘', '船舶数量', '船舶总数'];
+  for (var p of statsPatterns) {
+    if (q.includes(p)) {
+      var shipCount = Object.keys(byShip).length;
+      var certCount = STATE.shipKnowledge.total_certs || 0;
+      var ships = Object.keys(byShip).sort();
+      var shipList = ships.join('、');
+      var context = '以下是从船舶知识库中检索到的船舶统计信息：\n\n';
+      context += '【船舶总数】' + shipCount + ' 条船\n';
+      context += '【证书总数】约 ' + certCount + ' 份\n\n';
+      context += '船舶列表（共 ' + shipCount + ' 条）：\n';
+      // 分WINNING和SUNNY系列显示
+      var winning = ships.filter(s => s.startsWith('WINNING'));
+      var sunny = ships.filter(s => s.startsWith('SUNNY'));
+      context += 'WINNING系列（' + winning.length + ' 条）：' + winning.join('、') + '\n\n';
+      context += 'SUNNY系列（' + sunny.length + ' 条）：' + sunny.join('、') + '\n\n';
+      return context;
+    }
+  }
   
   // 1. 尝试精确匹配船名
   let matchedShip = Object.keys(byShip).find(name => q.includes(name));
@@ -1119,32 +1081,157 @@ function buildShipsContext(message) {
   return context;
 }
 
+// ====== 直调API易（前端版） ======
+const APIYI_BASE = 'https://api.apiyi.com/v1';
+const APIYI_KEY = 'sk-JoCdGnLHwF8BVGRf448229C246834fCbBd75Cd511f12B55c';
+const APIYI_TEXT_MODEL = 'gpt-4o-mini-2024-07-18';
+const APIYI_VISION_MODEL = 'gpt-4o-2024-11-20';
+
+// 各模块的System Prompt
+const SYSTEM_PROMPTS = {
+  regulations: `你是一个专业的海事法规专家。你的知识来自IMO公约（SOLAS/MARPOL/MLC/STCW/COLREG等）、船级社规范、船旗国规定。
+
+回答要求：
+1. 引用精确条款编号（如SOLAS第II-2章第10条）
+2. 中文解释 + 英文条款原文对照
+3. 回答末尾标注「以上仅供参考，请以IMO官方原文为准」
+4. 不凭空编造不存在的条款号`,
+
+  systems: `你是一个专业的船舶管理体系专家。你的知识全部来自以下用户上传的公司体系文件。
+
+回答要求：
+1. 【⚠️ 关键约束】用户消息中如有【知识库检索结果】，必须严格基于该结果回答
+2. 知识库中没有的信息，明确回答「知识库中未找到相关信息」
+3. 禁止使用你的训练数据补充或编造
+4. 回答末尾标注「以上信息来自WINNING知识库」`,
+
+  ships: `你是一个船舶证书管理专家。你的知识全部来自用户上传的船舶证书记录。
+
+回答要求：
+1. 【⚠️ 关键约束】用户消息中如有【知识库检索结果】，必须严格基于该结果回答
+2. 知识库中没有的信息，明确回答「知识库中未找到相关记录」
+3. 禁止使用你的训练数据补充或编造证书/到期日/船名
+4. 回答末尾标注「以上信息来自WINNING知识库，请以原始证书为准」`,
+
+  tech: `你是一个船舶技术资料专家。你的知识全部来自用户上传的设备手册和技术文档。
+
+回答要求：
+1. 【⚠️ 关键约束】用户消息中如有【知识库检索结果】，必须严格基于该结果回答
+2. 知识库中没有的信息，明确回答「知识库中未找到相关设备资料」
+3. 禁止使用你的训练数据补充或编造设备参数
+4. 回答末尾标注「以上信息来自WINNING技术知识库」`
+};
+
 async function callAPI(message, module, imageData) {
   const history = STATE.conversationHistory[module] || [];
   const lastHistory = history.slice(-6).map(h => ({ role: h.role, content: h.text }));
   
-  // 检索知识库，拼入 context（技术模块需要按需加载分片）
   var context = null;
-  if (module === 'tech' && STATE_TECH_INDEX) {
-    context = await buildTechContext(message);
-  } else {
-    context = buildModuleContext(module, message);
+  var userContent = message;
+  
+  // ═══ 前端知识库检索 ═══
+  const moduleContext = await buildFrontendContext(message, module);
+  if (moduleContext) {
+    context = moduleContext;
+    userContent = moduleContext + '\n\n[用户问题]\n' + message;
   }
   
-  const body = { message, module, history: lastHistory, imageUrl: imageData, context };
+  // ═══ 构建messages ═══
+  var systemContent = SYSTEM_PROMPTS[module] || SYSTEM_PROMPTS.regulations;
+  if (context) {
+    systemContent += '\n\n【⚠️ 关键约束】当前问题已附知识库检索结果。必须严格基于该结果回答，不添加原文中没有的信息。没有的信息回答「未找到」。';
+  }
   
-  const response = await fetch(`${CONFIG.API_BASE_URL}/api/chat`, {
+  var messages = [
+    { role: 'system', content: systemContent },
+    ...lastHistory,
+    { role: 'user', content: userContent }
+  ];
+  
+  // ═══ 图片处理 ═══
+  var model = APIYI_TEXT_MODEL;
+  if (imageData) {
+    model = APIYI_VISION_MODEL;
+    messages = [
+      { role: 'system', content: systemContent },
+      { role: 'user', content: [{ type: 'image_url', image_url: { url: imageData } }, { type: 'text', text: message }] }
+    ];
+  }
+  
+  // ═══ 调API易 ═══
+  const response = await fetch(APIYI_BASE + '/chat/completions', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(body)
+    headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + APIYI_KEY },
+    body: JSON.stringify({ model, messages, temperature: 0.1, max_tokens: 4096, stream: false })
   });
   
   if (!response.ok) {
     const err = await response.json().catch(() => ({}));
-    throw new Error(err.detail || `HTTP ${response.status}`);
+    throw new Error(err.error?.message || `HTTP ${response.status}`);
   }
   
-  return response.json();
+  const data = await response.json();
+  return { reply: data.choices[0].message.content, model: data.model, usage: data.usage };
+}
+
+// 前端知识库检索
+async function buildFrontendContext(message, module) {
+  const q = (message || '').toUpperCase();
+  
+  // 船舶模块
+  if (module === 'ships' && STATE.shipKnowledge) {
+    const byShip = STATE.shipKnowledge.by_ship;
+    if (byShip) {
+      let matchedShip = Object.keys(byShip).find(name => q.includes(name));
+      if (!matchedShip) {
+        const sorted = Object.keys(byShip).sort((a, b) => b.length - a.length);
+        matchedShip = sorted.find(name => {
+          const short = name.replace(/^(WINNING|SUNNY)\s+/i, '');
+          return q.includes(short);
+        });
+      }
+      if (matchedShip) {
+        const certs = byShip[matchedShip];
+        let ctx = '【知识库检索结果 — ' + matchedShip + '】\n该船共有 ' + certs.length + ' 份证书记录：\n\n';
+        certs.slice(0, 8).forEach(c => {
+          ctx += '• ' + (c.cert || '证书');
+          if (c.expiry && c.expiry !== '未明确提及' && c.expiry !== '未明确标注有效期') {
+            ctx += '（到期日：' + c.expiry + '）';
+          }
+          ctx += '\n';
+        });
+        if (certs.length > 8) ctx += '\n...（还有 ' + (certs.length - 8) + ' 份证书）';
+        return ctx;
+      }
+    }
+  }
+  
+  // 技术模块
+  if (module === 'tech' && STATE_TECH_INDEX) {
+    var device = getDeviceFromQuery(q);
+    if (device && STATE_TECH_INDEX.device_shards[device]) {
+      var shardData = TECH_SHARD_CACHE[device];
+      if (!shardData) shardData = await loadTechShard(device);
+      if (shardData) {
+        var docs = Object.values(shardData).filter(d => {
+          var fn = (d.filename || '').toUpperCase();
+          var md = (d.llm_md || '').slice(0, 200).toUpperCase();
+          return fn.includes(q) || md.includes(q);
+        }).slice(0, 5);
+        if (docs.length > 0) {
+          var ctx = '【知识库检索结果 — 技术资料】\n共找到 ' + docs.length + ' 份相关文档：\n\n';
+          docs.forEach(d => {
+            ctx += '• ' + (d.filename || '未命名');
+            if (d.llm_md) ctx += '\n  ' + d.llm_md.replace(/\n/g, ' ').slice(0, 200);
+            ctx += '\n';
+          });
+          return ctx;
+        }
+      }
+    }
+  }
+  
+  return null;
 }
 
 // ====== 消息渲染 ======
