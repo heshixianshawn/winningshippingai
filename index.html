@@ -892,7 +892,7 @@ window.toggleFleetView = function() {
 };
 
 // ====== 模块切换 ======
-window.switchModule = function(module) {
+window.switchModule = async function(module) {
   STATE.currentModule = module;
   
   document.querySelectorAll('.module-btn').forEach(btn => {
@@ -920,9 +920,9 @@ window.switchModule = function(module) {
   
   // 按需加载知识库
   if (module === 'ships' && !STATE.shipKnowledge) {
-    loadShipKnowledge();
-  } else if (module === 'tech' && !STATE.techKnowledge) {
-    loadTechKnowledge();
+    await loadShipKnowledge();
+  } else if (module === 'tech' && !STATE_TECH_INDEX) {
+    await loadTechKnowledge();
   }
 };
 
@@ -1001,9 +1001,20 @@ async function sendMessage() {
   const text = els.input.value.trim();
   if (!text && !STATE.imageData) return;
   if (STATE.isProcessing) return;
+  if (text.length > 10000) {
+    addMessage({ role: 'assistant', text: '⚠️ 消息过长，请将问题控制在10000字符以内' });
+    return;
+  }
   
   STATE.isProcessing = true;
   els.sendBtn.disabled = true;
+  
+  // 自动加载知识库（首次查询或跨模块场景）
+  if (STATE.currentModule === 'ships' && !STATE.shipKnowledge) {
+    await loadShipKnowledge();
+  } else if (STATE.currentModule === 'tech' && !STATE_TECH_INDEX) {
+    await loadTechKnowledge();
+  }
   
   els.welcome.classList.add('hidden');
   
