@@ -1208,6 +1208,33 @@ async function buildFrontendContext(message, module) {
           return q.includes(short);
         });
       }
+
+      // 按证书类型/关键词搜索（如"dock survey"、"到期2026"等）
+      if (!matchedShip) {
+        var results = [];
+        for (var sn of Object.keys(byShip)) {
+          for (var cert of byShip[sn]) {
+            var c = ((cert.cert || '') + ' ' + (cert.expiry || '')).toUpperCase();
+            if (c.includes(q)) {
+              results.push({ ship: sn, cert: cert });
+              break;
+            }
+          }
+        }
+        if (results.length > 0) {
+          var ctx = '【知识库检索结果 — 按证书/关键词搜索】\n\n共找到 ' + results.length + ' 条船匹配：\n\n';
+          results.slice(0, 20).forEach(function(r) {
+            ctx += '• ' + r.ship;
+            if (r.cert.cert) ctx += ' — ' + r.cert.cert;
+            if (r.cert.expiry && r.cert.expiry !== '未明确提及' && r.cert.expiry !== '未明确标注有效期') {
+              ctx += '（到期日：' + r.cert.expiry + '）';
+            }
+            ctx += '\n';
+          });
+          if (results.length > 20) ctx += '\n...（还有 ' + (results.length - 20) + ' 条，请具体查询）';
+          return ctx;
+        }
+      }
       if (matchedShip) {
         const certs = byShip[matchedShip];
         let ctx = '【知识库检索结果 — ' + matchedShip + '】\n该船共有 ' + certs.length + ' 份证书记录：\n\n';
