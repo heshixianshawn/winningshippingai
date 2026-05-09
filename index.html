@@ -983,19 +983,19 @@ function buildShipsContext(message) {
   
   // 先检查统计类问题（有几条船、总证书数），直接传答案不走AI
   const statsPatterns = ['几条船', '几艘船', '总共多少', '总数', '几有', '多少条', '多少艘', '船舶数量', '船舶总数'];
-  for (var p of statsPatterns) {
+  for (let p of statsPatterns) {
     if (q.includes(p)) {
-      var shipCount = Object.keys(byShip).length;
-      var certCount = STATE.shipKnowledge.total_certs || 0;
-      var ships = Object.keys(byShip).sort();
-      var shipList = ships.join('、');
-      var context = '以下是从船舶知识库中检索到的船舶统计信息：\n\n';
+      let shipCount = Object.keys(byShip).length;
+      let certCount = STATE.shipKnowledge.total_certs || 0;
+      let ships = Object.keys(byShip).sort();
+      let shipList = ships.join('、');
+      let context = '以下是从船舶知识库中检索到的船舶统计信息：\n\n';
       context += '【船舶总数】' + shipCount + ' 条船\n';
       context += '【证书总数】约 ' + certCount + ' 份\n\n';
       context += '船舶列表（共 ' + shipCount + ' 条）：\n';
       // 分WINNING和SUNNY系列显示
-      var winning = ships.filter(s => s.startsWith('WINNING'));
-      var sunny = ships.filter(s => s.startsWith('SUNNY'));
+      let winning = ships.filter(s => s.startsWith('WINNING'));
+      let sunny = ships.filter(s => s.startsWith('SUNNY'));
       context += 'WINNING系列（' + winning.length + ' 条）：' + winning.join('、') + '\n\n';
       context += 'SUNNY系列（' + sunny.length + ' 条）：' + sunny.join('、') + '\n\n';
       return context;
@@ -1126,8 +1126,8 @@ async function callAPI(message, module, imageData) {
   const history = STATE.conversationHistory[module] || [];
   const lastHistory = history.slice(-6).map(h => ({ role: h.role, content: h.text }));
   
-  var context = null;
-  var userContent = message;
+  let context = null;
+  let userContent = message;
   
   // ═══ 前端知识库检索 ═══
   const moduleContext = await buildFrontendContext(message, module);
