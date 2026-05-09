@@ -1211,15 +1211,29 @@ async function buildFrontendContext(message, module) {
 
       if (matchedShip) {
         const certs = byShip[matchedShip];
-        let ctx = '【知识库检索结果 — ' + matchedShip + '】\n该船共有 ' + certs.length + ' 份证书记录：\n\n';
-        certs.slice(0, 8).forEach(c => {
+        // 先输出有明确到期日的，再输出其他的
+        var validCerts = [];
+        var otherCerts = [];
+        for (var ct of certs) {
+          var ex = ct.expiry || '';
+          if (ex && ex !== '未明确提及' && ex !== '未明确标注有效期' && ex !== '未明确显示' && ex !== '未明确说明' && ex !== '无' && !ex.startsWith('未')) {
+            validCerts.push(ct);
+          } else if (ct.cert && ct.cert !== '(未分类)' && ct.cert !== '') {
+            otherCerts.push(ct);
+          }
+        }
+        // 优先展示有期限的
+        var sorted = validCerts.concat(otherCerts).slice(0, 60);
+        var ctx = '【知识库检索结果 — ' + matchedShip + '】\n该船共有 ' + certs.length + ' 份证书记录，以下是部分列表：\n\n';
+        sorted.slice(0, 60).forEach(function(c) {
           ctx += '• ' + (c.cert || '证书');
-          if (c.expiry && c.expiry !== '未明确提及' && c.expiry !== '未明确标注有效期') {
-            ctx += '（到期日：' + c.expiry + '）';
+          var ex = c.expiry || '';
+          if (ex && ex !== '未明确提及' && ex !== '未明确标注有效期' && ex !== '未明确显示' && ex !== '未明确说明' && ex !== '无' && !ex.startsWith('未')) {
+            ctx += '（到期日：' + ex + '）';
           }
           ctx += '\n';
         });
-        if (certs.length > 8) ctx += '\n...（还有 ' + (certs.length - 8) + ' 份证书）';
+        if (certs.length > 60) ctx += '\n...（该船共 ' + certs.length + ' 份证书，未全部展示）';
         return ctx;
       }
       
