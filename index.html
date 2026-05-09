@@ -1209,32 +1209,6 @@ async function buildFrontendContext(message, module) {
         });
       }
 
-      // 按证书类型/关键词搜索（如"dock survey"、"到期2026"等）
-      if (!matchedShip) {
-        var results = [];
-        for (var sn of Object.keys(byShip)) {
-          for (var cert of byShip[sn]) {
-            var c = ((cert.cert || '') + ' ' + (cert.expiry || '')).toUpperCase();
-            if (c.includes(q)) {
-              results.push({ ship: sn, cert: cert });
-              break;
-            }
-          }
-        }
-        if (results.length > 0) {
-          var ctx = '【知识库检索结果 — 按证书/关键词搜索】\n\n共找到 ' + results.length + ' 条船匹配：\n\n';
-          results.slice(0, 20).forEach(function(r) {
-            ctx += '• ' + r.ship;
-            if (r.cert.cert) ctx += ' — ' + r.cert.cert;
-            if (r.cert.expiry && r.cert.expiry !== '未明确提及' && r.cert.expiry !== '未明确标注有效期') {
-              ctx += '（到期日：' + r.cert.expiry + '）';
-            }
-            ctx += '\n';
-          });
-          if (results.length > 20) ctx += '\n...（还有 ' + (results.length - 20) + ' 条，请具体查询）';
-          return ctx;
-        }
-      }
       if (matchedShip) {
         const certs = byShip[matchedShip];
         let ctx = '【知识库检索结果 — ' + matchedShip + '】\n该船共有 ' + certs.length + ' 份证书记录：\n\n';
@@ -1246,6 +1220,27 @@ async function buildFrontendContext(message, module) {
           ctx += '\n';
         });
         if (certs.length > 8) ctx += '\n...（还有 ' + (certs.length - 8) + ' 份证书）';
+        return ctx;
+      }
+      
+      // 没匹配到具体船只 → 返回完整船队索引，让AI自行查找
+      var idxParts = [];
+      for (var sn of Object.keys(byShip).sort()) {
+        var certList = [];
+        for (var ct of (byShip[sn] || []).slice(0, 8)) {
+          var cn = ct.cert || '(未分类)';
+          var ex = ct.expiry || '';
+          if (ex && ex !== '未明确提及' && ex !== '未明确标注有效期' && ex !== '未明确显示' && ex !== '未明确说明' && ex !== '无' && !ex.startsWith('未')) {
+            certList.push(cn + '(' + ex + ')');
+          } else if (cn !== '(未分类)') {
+            certList.push(cn);
+          }
+        }
+        if (certList.length > 0) idxParts.push(sn + ': ' + certList.join('; '));
+      }
+      if (idxParts.length > 0) {
+        var ctx = '【完整船舶证书索引（共' + idxParts.length + '艘）】\n\n请从下方索引中查找用户问题涉及的船名、证书名或到期日。如果找到，请基于索引内容回答。如果索引中没有相关信息，请如实说未找到。\n\n';
+        ctx += idxParts.join('\n---\n').slice(0, 14000);
         return ctx;
       }
     }
