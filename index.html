@@ -921,37 +921,51 @@ window.toggleFleetView = function() {
 };
 
 // ====== 模块切换 ======
-window.switchModule = async function(module) {
-  STATE.currentModule = module;
-  
-  document.querySelectorAll('.module-btn').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.module === module);
-  });
-  
-  const config = CONFIG.modules[module];
-  
-  // 关闭覆盖面板
-  closeOverlay();
-  
-  // 所有模块共享同一个聊天区域
-  els.chatArea.style.display = 'flex';
-  const ia = document.querySelector('.input-area');
-  ia.style.display = '';
-  document.getElementById('quickActions').style.display = '';
-  
-  // 更新欢迎界面
-  updateWelcome(module);
-  
-  // 更新输入框提示和快捷指令
-  els.input.placeholder = config.placeholder;
-  renderQuickActions(module);
-  renderMessages(module);
-  
-  // 按需加载知识库
-  if (module === 'ships' && !STATE.shipKnowledge) {
-    await loadShipKnowledge();
-  } else if (module === 'tech' && !STATE_TECH_INDEX) {
-    await loadTechKnowledge();
+window.switchModule = function(module) {
+  try {
+    STATE.currentModule = module;
+    
+    document.querySelectorAll('.module-btn').forEach(function(btn) {
+      btn.classList.toggle('active', btn.dataset.module === module);
+    });
+    
+    var config = CONFIG.modules[module];
+    
+    // 关闭覆盖面板
+    closeOverlay();
+    
+    // 所有模块共享同一个聊天区域
+    els.chatArea.style.display = 'flex';
+    var ia = document.querySelector('.input-area');
+    if (ia) ia.style.display = '';
+    var qa = document.getElementById('quickActions');
+    if (qa) qa.style.display = '';
+    
+    // 更新欢迎界面
+    updateWelcome(module);
+    
+    // 更新输入框提示和快捷指令
+    els.input.placeholder = config.placeholder;
+    renderQuickActions(module);
+    renderMessages(module);
+    
+    // 非阻塞加载知识库
+    if (module === 'ships' && !STATE.shipKnowledge) {
+      // 用setTimeout避免阻塞UI切换
+      setTimeout(function() {
+        loadShipKnowledge().catch(function(e) {
+          console.error('船舶知识库加载失败:', e);
+        });
+      }, 50);
+    } else if (module === 'tech' && !STATE_TECH_INDEX) {
+      setTimeout(function() {
+        loadTechKnowledge().catch(function(e) {
+          console.error('技术索引加载失败:', e);
+        });
+      }, 50);
+    }
+  } catch(e) {
+    console.error('switchModule出错:', e);
   }
 };
 
@@ -1038,11 +1052,11 @@ async function sendMessage() {
   STATE.isProcessing = true;
   els.sendBtn.disabled = true;
   
-  // 自动加载知识库（首次查询或跨模块场景）
+  // 自动加载知识库（首次查询或跨模块场景）- 非阻塞
   if (STATE.currentModule === 'ships' && !STATE.shipKnowledge) {
-    await loadShipKnowledge();
+    try { await loadShipKnowledge(); } catch(e) { console.error(e); }
   } else if (STATE.currentModule === 'tech' && !STATE_TECH_INDEX) {
-    await loadTechKnowledge();
+    try { await loadTechKnowledge(); } catch(e) { console.error(e); }
   }
   
   els.welcome.classList.add('hidden');
