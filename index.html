@@ -1697,18 +1697,72 @@ function loadFleetDataInOverlay() {
 
 function loadShipProfilesOverlay() {
   const contentEl = document.getElementById('overlayContent');
+  var certDb = STATE.shipByShip || null;
+  
+  // 加载证书数据（如果还没有）
+  function getCertStats(shipName, cb) {
+    if (certDb) {
+      var certs = certDb[shipName] || [];
+      cb(certs.length, 0);
+      return;
+    }
+    fetch('data/ship_knowledge.json').then(function(r) { return r.json(); }).then(function(data) {
+      STATE.shipByShip = data.by_ship || data;
+      certDb = STATE.shipByShip;
+      var certs = certDb[shipName] || [];
+      cb(certs.length, 0);
+    }).catch(function() { cb(0, 0); });
+  }
+  
   getShipList().then(function(s) {
-    var h = '';
+    var h = '<div style="padding:4px 0 12px; font-size:13px; color:#666;">📊 共 ' + s.length + ' 艘 · 下方展示各船关键信息</div>';
+    var pending = s.length;
     s.forEach(function(x) {
       h += '<div class=ship-card style=cursor:default><h4>' + x.name + '</h4>';
-      h += '<div style=font-size:12px;color:#666;display:flex;flex-wrap:wrap;gap:4px 16px>';
+      h += '<div style=font-size:12px;color:#666;display:flex;flex-wrap:wrap;gap:4px 16px;margin-bottom:8px>';
       h += '<span>🆔 ' + (x.imo || 'N/A') + '</span>';
       h += '<span>🏛 ' + (x.classification || 'N/A') + '</span>';
       h += '<span>📅 ' + (x.year || 'N/A') + '</span>';
       h += '<span>⛽ ' + (x.flag || 'N/A') + '</span>';
-      h += '</div></div>';
+      h += '</div>';
+      // 证书统计占位（异步加载后填充）
+      h += '<div id="cert-stat-' + x.name.replace(/\s/g,'') + '" style="font-size:11px;color:#999;border-top:1px solid #f0f0f0;padding-top:6px;">⏳ 加载证书数据…</div>';
+      h += '</div>';
     });
     contentEl.innerHTML = h;
+    
+    // 异步加载证书数据
+    function updateCertStats(shipName) {
+      if (certDb) {
+        var certs = certDb[shipName] || [];
+        var el = document.getElementById('cert-stat-' + shipName.replace(/\s/g,''));
+        if (el) {
+          var total = certs.length;
+          var now = new Date();
+          var nearExpiry = 0, expired = 0;
+          certs.forEach(function(c) {
+            var ex = (c.expiry || '').toString();
+            if (ex) {
+              var m = ex.match(/(20\d{2})/);
+              if (m) {
+                var y = parseInt(m[1]);
+                if (y < now.getFullYear()) expired++;
+                else if (y === now.getFullYear()) nearExpiry++;
+              }
+            }
+          });
+          var stats = '📄 ' + total + ' 份'; 
+          if (nearExpiry > 0) stats += ' · 🟡 ' + nearExpiry + ' 今年到期';
+          el.innerHTML = stats;
+        }
+      }
+    }
+    
+    fetch('data/ship_knowledge.json').then(function(r) { return r.json(); }).then(function(data) {
+      certDb = data.by_ship || data;
+      STATE.shipByShip = certDb;
+      s.forEach(function(x) { updateCertStats(x.name); });
+    }).catch(function() {});
   });
 }
 

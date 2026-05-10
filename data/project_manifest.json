@@ -1,0 +1,88 @@
+{
+  "name": "WINNING Shipping AI 平台 — 架构与目标",
+  "version": "2.0",
+  "last_updated": "2026-05-10",
+  "architecture_principles": [
+    "⚠️ 【核心原则】任何新功能必须附加在现有架构之上，不得修改核心交互逻辑（index.html的对话流、callAPI、buildFrontendContext）",
+    "📂 知识库来源：~/船舶资料管理/原始资料/ 下四个子目录（法规模块/体系模块/技术模块/船舶模块）",
+    "🤖 AI模型：GPT-4o-mini（文本）+ GPT-4o（图片），通过API易代理",
+    "🚀 部署：Cloudflare Pages (winningshippingai.pages.dev)，自动从GitHub main分支部署",
+    "💾 历史记录：localStorage，按模块分开存储"
+  ],
+  "modules": [
+    {
+      "id": "regulations",
+      "name": "法规 📋",
+      "knowledge_source": "GPT训练数据 + SOLAS 2024 PDF（参考，不提取全文）",
+      "features": ["IMO公约条款问答", "PSC缺陷分析", "条款引用验证"],
+      "future": [
+        "✅ 已实现：solas_toc.json条款索引，辅助验证AI引用的条款是否存在",
+        "⏳ 计划：每条引用附带条款号→PDF页码的跳转"
+      ]
+    },
+    {
+      "id": "systems",
+      "name": "体系 🏢",
+      "knowledge_source": "7本SMS手册TXT（4.4MB）→ 船舶资料管理/原始资料/体系模块/",
+      "features": ["SMS手册问答", "体系缺陷归因分析"],
+      "future": [
+        "✅ 已实现：7本手册完整文本",
+        "⏳ 计划：缺陷→体系要素归因（制度缺失vs执行不到位）"
+      ]
+    },
+    {
+      "id": "tech",
+      "name": "技术 🔧",
+      "knowledge_source": "tech_index.json + tech_shards/（73KB索引）",
+      "features": ["设备手册问答", "技术参数查询"],
+      "future": [
+        "⏳ 待完成：更多设备类别的OCR提取和分片加载"
+      ]
+    },
+    {
+      "id": "ships",
+      "name": "船舶 🚢",
+      "knowledge_source": "ship_knowledge.json（1.9MB，59条船证书数据）",
+      "features": ["证书查询", "到期提醒", "船档卡片"],
+      "future": [
+        "✅ 已实现：证书到期主动推送（每日08:30自动检查）",
+        "✅ 已实现：数字船档（档案卡片显示IMO/船级社/证书统计）",
+        "⏳ 待补充：坞检/特检数据"
+      ]
+    }
+  ],
+  "automated_tasks": [
+    {
+      "id": "hifleet_daily",
+      "name": "🚢 船舶动态每日采集",
+      "schedule": "每天 08:00",
+      "method": "curl REST API（HiFleet通用登录+船队API）",
+      "status": "✅ 稳定运行（6秒完成）"
+    },
+    {
+      "id": "cert_expiry_alert",
+      "name": "📅 证书到期主动推送",
+      "schedule": "每天 08:30（HiFleet采集之后）",
+      "method": "scripts/expiry_alert.py 扫描ship_knowledge.json",
+      "status": "✅ 稳定运行（推送7天/30天内到期证书）"
+    },
+    {
+      "id": "auto_scan_docs",
+      "name": "📂 四模块资料自动扫描",
+      "schedule": "每天 14:00",
+      "method": "扫描~/船舶资料管理/原始资料/下四个目录，检测新增/修改文件，自动提取更新知识库",
+      "status": "✅ Cron任务已设置"
+    }
+  ],
+  "data_sources": [
+    "~/船舶资料管理/原始资料/法规模块/ — 1个文件（SOLAS 2024 PDF）",
+    "~/船舶资料管理/原始资料/体系模块/ — 7个文件（SMS手册TXT）",
+    "~/船舶资料管理/原始资料/技术模块/ — 103船规文件 + 说明书PDF + OCR提取286文件",
+    "~/船舶资料管理/原始资料/船舶模块/ — 64证书目录（39+25）, ship_knowledge.json"
+  ],
+  "data_gaps": [
+    "🚢 坞检/特检记录缺失",
+    "🔧 主机/锅炉/发电机等设备手册OCR未处理",
+    "📋 法规条款索引基于快速提取，非全文索引"
+  ]
+}

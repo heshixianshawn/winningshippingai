@@ -1,0 +1,105 @@
+{
+  "name": "SOLAS 2024 综合文本",
+  "source": "IMO官方出版",
+  "note": "此索引为手动编写，助AI验证条款引用准确性。不替代官方原文。",
+  "last_updated": "2026-05-10",
+  "chapters": {
+    "Chapter I": {
+      "title": "General Provisions",
+      "pages": "1-40",
+      "regulations": 20,
+      "topics": ["Survey", "Certificates", "Construction", "Maintenance"]
+    },
+    "Chapter II-1": {
+      "title": "Construction — Structure, Subdivision and Stability, Machinery and Electrical Installations",
+      "pages": "41-180",
+      "regulations": 58,
+      "topics": ["Subdivision", "Stability", "Machinery", "Electrical", "Fire safety"]
+    },
+    "Chapter II-2": {
+      "title": "Fire Protection, Fire Detection and Fire Extinction",
+      "pages": "181-360",
+      "regulations": 21,
+      "parts": {
+        "Part A": "General (Reg.1-2)",
+        "Part B": "Prevention of explosion (Reg.3-6)",
+        "Part C": "Suppression of fire (Reg.7-11)",
+        "Part D": "Escape (Reg.12-14)",
+        "Part E": "Operational requirements (Reg.15-16)",
+        "Part F": "Alternative design (Reg.17)",
+        "Part G": "Special requirements (Reg.18-21)"
+      },
+      "topics": ["Fire protection", "Fire detection", "Fire extinguishing", "Fire fighting"]
+    },
+    "Chapter III": {
+      "title": "Life-Saving Appliances and Arrangements",
+      "pages": "361-420",
+      "regulations": 38,
+      "topics": ["Lifeboats", "Life rafts", "Rescue boats", "Lifejackets", "Embarkation"]
+    },
+    "Chapter IV": {
+      "title": "Radiocommunications",
+      "pages": "421-450",
+      "regulations": 18,
+      "topics": ["GMDSS", "Radio equipment", "Maintenance"]
+    },
+    "Chapter V": {
+      "title": "Safety of Navigation",
+      "pages": "451-510",
+      "regulations": 35,
+      "topics": ["Navigation equipment", "Voyage planning", "Reporting", "AIS", "ECDIS"]
+    },
+    "Chapter VI": {
+      "title": "Carriage of Cargoes and Oil Fuels",
+      "pages": "511-530",
+      "regulations": 7,
+      "topics": ["Cargo stowage", "Lashing", "DG cargo"]
+    },
+    "Chapter VII": {
+      "title": "Carriage of Dangerous Goods",
+      "pages": "531-555",
+      "regulations": 9,
+      "topics": ["Classification", "Packaging", "Marking", "Documentation", "IMDG Code"]
+    },
+    "Chapter VIII": {
+      "title": "Nuclear Ships",
+      "pages": "556-565",
+      "regulations": 12,
+      "topics": ["Nuclear propulsion", "Safety assessment"]
+    },
+    "Chapter IX": {
+      "title": "Management for the Safe Operation of Ships",
+      "pages": "566-575",
+      "regulations": 6,
+      "topics": ["ISM Code", "Safety management", "SMS"]
+    },
+    "Chapter X": {
+      "title": "Safety Measures for High-Speed Craft",
+      "pages": "576-580",
+      "regulations": 4,
+      "topics": ["HSC Code", "High speed craft"]
+    },
+    "Chapter XI-1": {
+      "title": "Special Measures to Enhance Maritime Safety",
+      "pages": "581-590",
+      "regulations": 7,
+      "topics": ["IMSBC", "Port State", "Identification", "Continuous Synopsis"]
+    },
+    "Chapter XI-2": {
+      "title": "Special Measures to Enhance Maritime Security",
+      "pages": "591-605",
+      "regulations": 13,
+      "topics": ["ISPS Code", "Ship security", "Port security", "Security level"]
+    }
+  },
+  "annexes": [
+    {"id": "Annex 1", "title": "Certificate and Survey Requirements", "note": "Contains forms of all statutory certificates"},
+    {"id": "Annex 2", "title": "Codes and Resolutions Referred to in SOLAS", "note": "References to Codes (FSS, LSA, FTP, etc.)"}
+  ],
+  "related_codes": [
+    {"code": "FSS Code", "title": "Fire Safety Systems Code", "chapters": 15},
+    {"code": "LSA Code", "title": "Life-Saving Appliances Code", "chapters": 8},
+    {"code": "FTP Code", "title": "Fire Test Procedures Code"},
+    {"code": "IMDG Code", "title": "International Maritime Dangerous Goods Code"}
+  ]
+}
