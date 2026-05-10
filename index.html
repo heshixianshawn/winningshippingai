@@ -427,16 +427,15 @@ function compressImage(dataUrl, maxWidth, quality) {
 
 // ====== 图片/文件处理 ======
 (function() {
-  function safeBind(el, evt, fn) {
-    var e = el || null;
-    if (e) { e[evt] = fn; }
+  function bindClick(btn, target) {
+    if (btn) {
+      btn.onclick = function() {
+        if (target) target.click();
+      };
+    }
   }
-  safeBind(els.imageUploadBtn, 'onclick', function() {
-    if (els.imageInput) els.imageInput.click();
-  });
-  safeBind(els.fileUploadBtn, 'onclick', function() {
-    if (els.fileInput) els.fileInput.click();
-  });
+  bindClick(els.imageUploadBtn, els.imageInput);
+  bindClick(els.fileUploadBtn, els.fileInput);
   els.fileInput.onchange = async function(e) {
     var file = e.target.files[0];
     if (!file) return;
