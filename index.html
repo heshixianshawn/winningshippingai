@@ -288,8 +288,8 @@
 </div>
 
 <script>
-// ====== CONFIG ======
-const CONFIG = {
+// ====== 防止CF Pages/浏览器对const声明的干扰，改为var全局声明 ======
+var CONFIG = {
   API_BASE_URL: 'https://api.winningshippingai.com',
   modules: {
     regulations: {
@@ -341,7 +341,7 @@ const CONFIG = {
 };
 
 // ====== 状态管理 ======
-const STATE = {
+var STATE = {
   currentModule: 'regulations',
   messages: {},
   imageData: null,
@@ -360,7 +360,7 @@ try {
 } catch(e) {}
 
 // ====== DOM ======
-const els = {
+var els = {
   chatArea: document.getElementById('chatArea'),
   messages: document.getElementById('messages'),
   welcome: document.getElementById('welcomeScreen'),
@@ -498,7 +498,7 @@ window.removeImage = function() {
 els.sendBtn.disabled = false;
 
 // ====== 船舶知识库加载 ======
-const SHIP_DATA_URL = 'data/ship_knowledge.json';
+var SHIP_DATA_URL = 'data/ship_knowledge.json';
 
 async function loadShipKnowledge() {
   try {
@@ -1197,13 +1197,13 @@ function buildShipsContext(message) {
 }
 
 // ====== 直调API易（前端版） ======
-const APIYI_BASE = 'https://api.apiyi.com/v1';
-const APIYI_KEY = 'sk-JoCdGnLHwF8BVGRf448229C246834fCbBd75Cd511f12B55c';
-const APIYI_TEXT_MODEL = 'gpt-4o-mini-2024-07-18';
-const APIYI_VISION_MODEL = 'gpt-4o-2024-11-20';
+var APIYI_BASE = 'https://api.apiyi.com/v1';
+var APIYI_KEY = 'sk-JoCdGnLHwF8BVGRf448229C246834fCbBd75Cd511f12B55c';
+var APIYI_TEXT_MODEL = 'gpt-4o-mini-2024-07-18';
+var APIYI_VISION_MODEL = 'gpt-4o-2024-11-20';
 
 // 各模块的System Prompt
-const SYSTEM_PROMPTS = {
+var SYSTEM_PROMPTS = {
   regulations: `你是一个专业的海事法规专家。你的知识来自IMO公约（SOLAS/MARPOL/MLC/STCW/COLREG等）、船级社规范、船旗国规定。
 
 回答要求：
