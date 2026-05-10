@@ -345,6 +345,8 @@ const STATE = {
   currentModule: 'regulations',
   messages: {},
   imageData: null,
+  uploadedFileContent: null,
+  uploadedFileName: null,
   conversationHistory: {},
   isProcessing: false,
   fleetShowing: false,
@@ -429,7 +431,34 @@ function compressImage(dataUrl, maxWidth, quality) {
   els.imageUploadBtn.onclick = function() {
     els.imageInput.click();
   };
-  // 选择文件
+  // 文件上传：支持PDF/DOC/TXT等
+  els.fileUploadBtn.onclick = function() {
+    els.fileInput.click();
+  };
+  els.fileInput.onchange = async function(e) {
+    var file = e.target.files[0];
+    if (!file) return;
+    var reader = new FileReader();
+    reader.onload = function(ev) {
+      var content = ev.target.result;
+      // 截取前5000字符作为context上下文
+      var snippet = content.substring(0, 5000);
+      if (content.length > 5000) snippet += '\n...(文件较长，截取前5000字符)';
+      STATE.uploadedFileContent = snippet;
+      STATE.uploadedFileName = file.name;
+      els.input.value = '我上传了一个文件【' + file.name + '】，请分析内容：\n' + snippet;
+      sendMessage();
+    };
+    if (file.type === 'text/plain' || file.name.endsWith('.txt')) {
+      reader.readAsText(file, 'utf-8');
+    } else {
+      // PDF/DOC等作提示
+      els.input.value = '⚠️ 我上传了文件【' + file.name + '】，但我当前只能直接处理TXT文本。PDF/DOC文件会显示为引用标记。';
+      sendMessage();
+    }
+    e.target.value = '';
+  };
+  // 选择图片
   els.imageInput.onchange = async function(e) {
     var file = e.target.files[0];
     if (!file) return;
@@ -1316,6 +1345,30 @@ async function buildFrontendContext(message, module) {
       }
       if (isCertQuery) {
         var certMatches = [];
+        var isFullListQuery = /各船有哪些证书|列出.*[所全]有.*证书|所有船.*证书|全部船.*证书/.test(q);
+        if (isFullListQuery) {
+          // 用户要全量清单 → 输出每条船的证书数量+类型概览（去重）
+          var ctx = '【知识库检索结果 — 全船队证书清单】\n以下为每艘船的证书类型（已去重）及数量。请基于此数据回答用户问题。\n\n';
+          for (var sn of Object.keys(byShip).sort()) {
+            var certsForShip = byShip[sn] || [];
+            var uniqueTypes = {};
+            for (var ct of certsForShip) {
+              var cn = ct.cert || '(未分类)';
+              uniqueTypes[cn] = (uniqueTypes[cn] || 0) + 1;
+            }
+            var typeKeys = Object.keys(uniqueTypes).slice(0, 12);
+            var typeStr = typeKeys.map(function(tk) {
+              var extra = uniqueTypes[tk] > 1 ? '(' + uniqueTypes[tk] + '份)' : '';
+              return tk + extra;
+            }).join('; ');
+            if (Object.keys(uniqueTypes).length > 12) {
+              typeStr += '...(+' + (Object.keys(uniqueTypes).length - 12) + '种)';
+            }
+            ctx += sn + ': ' + certsForShip.length + '份证书记录 — ' + typeStr + '\n';
+          }
+          ctx += '\n⚠️ 每艘船只展示前12种证书类型（含重复），完整列表请具体询问某条船。';
+          return ctx.slice(0, 16000);
+        }
         for (var sn of Object.keys(byShip).sort()) {
           for (var ct of (byShip[sn] || [])) {
             var cn = (ct.cert || '').toUpperCase();
