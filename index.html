@@ -384,26 +384,26 @@ function scrollToBottom() {
   }, 10);
 }
 
-// 绑定发送按钮和回车键事件
+// 绑定事件（安全版：所有元素不存在时不报错）
 (function() {
-  // 发送按钮点击
-  els.sendBtn.onclick = function(e) {
+  function safeBind(el, evt, fn) {
+    var e = el || null;
+    if (e) { e[evt] = fn; }
+  }
+  safeBind(els.sendBtn, 'onclick', function(e) {
     if (els.input.value.trim()) sendMessage();
-  };
-  // 回车键发送
-  els.input.onkeydown = function(e) {
+  });
+  safeBind(els.input, 'onkeydown', function(e) {
     if (e.key === 'Enter' && !e.shiftKey) {
       e.preventDefault();
       if (els.input.value.trim()) sendMessage();
     }
-  };
-  // 输入时自动启用/禁用发送按钮
-  els.input.oninput = function(e) {
+  });
+  safeBind(els.input, 'oninput', function(e) {
     els.sendBtn.disabled = !this.value.trim();
-    // 自动撑高
     this.style.height = 'auto';
     this.style.height = Math.min(this.scrollHeight, 120) + 'px';
-  };
+  });
 })();
 
 // ====== 图片压缩 ======
@@ -425,16 +425,19 @@ function compressImage(dataUrl, maxWidth, quality) {
   });
 }
 
-// ====== 图片处理 ======
+// ====== 图片/文件处理 ======
 (function() {
-  // 点击上传
-  els.imageUploadBtn.onclick = function() {
-    els.imageInput.click();
-  };
-  // 文件上传：支持PDF/DOC/TXT等
-  els.fileUploadBtn.onclick = function() {
-    els.fileInput.click();
-  };
+  function safeBind(el, evt, fn) {
+    var e = el || null;
+    if (e) { e[evt] = fn; }
+  }
+  safeBind(els.imageUploadBtn, 'onclick', function() {
+    safeBind(els.imageInput, 'click', function(){});
+    if (els.imageInput) els.imageInput.click();
+  });
+  safeBind(els.fileUploadBtn, 'onclick', function() {
+    if (els.fileInput) els.fileInput.click();
+  });
   els.fileInput.onchange = async function(e) {
     var file = e.target.files[0];
     if (!file) return;
