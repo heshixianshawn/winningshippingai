@@ -432,7 +432,6 @@ function compressImage(dataUrl, maxWidth, quality) {
     if (e) { e[evt] = fn; }
   }
   safeBind(els.imageUploadBtn, 'onclick', function() {
-    safeBind(els.imageInput, 'click', function(){});
     if (els.imageInput) els.imageInput.click();
   });
   safeBind(els.fileUploadBtn, 'onclick', function() {
