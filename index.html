@@ -448,14 +448,14 @@ function compressImage(dataUrl, maxWidth, quality) {
       if (content.length > 5000) snippet += '\n...(文件较长，截取前5000字符)';
       STATE.uploadedFileContent = snippet;
       STATE.uploadedFileName = file.name;
-      els.input.value = '我上传了一个文件【' + file.name + '】，请分析内容：\n' + snippet;
+      els.input.value = '📄 以下是文件【' + file.name + '】的内容，请直接分析：\n\n' + snippet + '\n\n[请基于以上文件内容回答用户的问题]';
       sendMessage();
     };
     if (file.type === 'text/plain' || file.name.endsWith('.txt')) {
       reader.readAsText(file, 'utf-8');
     } else {
       // PDF/DOC等作提示
-      els.input.value = '⚠️ 我上传了文件【' + file.name + '】，但我当前只能直接处理TXT文本。PDF/DOC文件会显示为引用标记。';
+      els.input.value = '⚠️ 【' + file.name + '】不支持直接读取。请将文件内容粘贴到输入框，或上传TXT文件。';
       sendMessage();
     }
     e.target.value = '';
@@ -1211,7 +1211,8 @@ var SYSTEM_PROMPTS = {
 1. 引用精确条款编号（如SOLAS第II-2章第10条）
 2. 中文解释 + 英文条款原文对照
 3. 回答末尾标注「以上仅供参考，请以IMO官方原文为准」
-4. 不凭空编造不存在的条款号`,
+4. 不凭空编造不存在的条款号
+5. 【文件上传处理】当用户消息以📄开头包含文件内容时（格式：📄 以下是文件【xxx】的内容），请直接分析嵌入的文件内容，不要回复「无法访问上传文件」。文件原文就在消息中，请基于内容回答。`,
 
   systems: `你是一个专业的船舶管理体系专家。你的知识全部来自以下用户上传的公司体系文件。
 
