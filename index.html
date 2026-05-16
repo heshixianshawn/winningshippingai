@@ -1252,14 +1252,6 @@ async function callAPI(message, module, imageData) {
       if (fleetResp && fleetResp.vessels) {
         STATE.fleetData = fleetResp;
         window.fleetData = fleetResp;
-        // 重新渲染船舶动态面板
-        if (typeof renderFleet === 'function') {
-          renderFleet();
-        }
-        // 重新渲染船舶对话列表
-        if (typeof renderFleetInSub === 'function') {
-          renderFleetInSub();
-        }
         var ts = fleetResp.timestamp || '未知';
         var atSea = fleetResp.vessels.filter(function(v) { return v.status === '在航'; }).length;
         var anchored = fleetResp.vessels.filter(function(v) { return v.status === '锚泊'; }).length;
