@@ -1267,14 +1267,16 @@ var SYSTEM_PROMPTS = {
 };
 
 async function callAPI(message, module, imageData) {
-  // ═══ 拦截特殊指令：更新船舶动态 ═══
+  // ═══ 拦截特殊指令：更新船舶动态（实时采集版） ═══
   var refreshPats = ['更新船舶动态', '更新船舶', '刷新船舶', '刷新动态', '刷新船舶动态', 'update.*fleet', 'refresh.*fleet'];
   if (module === 'ships' && refreshPats.some(function(p) { return new RegExp(p, 'i').test(message); })) {
-    // 重新加载船舶动态数据
-    addMessage({ role: 'assistant', text: '⏳ 正在更新船舶动态数据...' });
+    addMessage({ role: 'assistant', text: '⏳ 正在从HiFleet实时采集最新船舶动态数据...' });
     try {
-      var resp = await fetch('data/hifleet_daily.json?_t=' + Date.now());
-      if (!resp.ok) throw new Error('HTTP ' + resp.status);
+      var resp = await fetch(CONFIG.API_BASE_URL + '/api/refresh-fleet', { method: 'POST' });
+      if (!resp.ok) {
+        var errData = await resp.json().catch(function(){return {};});
+        throw new Error(errData.error || 'HTTP ' + resp.status);
+      }
       var fleetResp = await resp.json();
       if (fleetResp && fleetResp.vessels) {
         STATE.fleetData = fleetResp;
@@ -1283,7 +1285,7 @@ async function callAPI(message, module, imageData) {
         var atSea = fleetResp.vessels.filter(function(v) { return v.status === '在航'; }).length;
         var anchored = fleetResp.vessels.filter(function(v) { return v.status === '锚泊'; }).length;
         var moored = fleetResp.vessels.filter(function(v) { return v.status === '系泊'; }).length;
-        return { reply: '✅ 船舶动态已更新！\n\n📊 数据时间：' + ts + '\n🟢 在航 ' + atSea + ' | 🟡 锚泊 ' + anchored + ' | 🔴 系泊 ' + moored + '\n\n💡 如需采集最新HiFleet实时数据，请直接在聊天框中告诉我，我可以手动触发采集并推送到公网。' };
+        return { reply: '✅ 船舶动态已从HiFleet实时采集成功！\n\n📊 数据时间：' + ts + '\n🟢 在航 ' + atSea + ' | 🟡 锚泊 ' + anchored + ' | 🔴 系泊 ' + moored + '\n\n💡 支持在聊天框输入「更新船舶动态」随时刷新。' };
       } else {
         return { reply: '⚠️ 数据格式异常，请稍后再试。' };
       }
