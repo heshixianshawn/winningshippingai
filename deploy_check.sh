@@ -16,9 +16,9 @@ if [ ! -f index.html ]; then
     ERRORS=$((ERRORS+1))
 fi
 
-# 2. 必须有 worker/index.js
-if [ ! -f worker/index.js ]; then
-    echo "❌ [致命] worker/index.js 不存在！"
+# 2. 必须有 functions/api/ 目录和相关文件
+if [ ! -d functions/api ]; then
+    echo "❌ [致命] functions/api/ 目录不存在！"
     ERRORS=$((ERRORS+1))
 fi
 
