@@ -47,23 +47,41 @@ async function ensureTechIndex(request) {
   return null;
 }
 
+/** 获取证书显示名：处理字符串或对象两种格式 */
+function getCertName(cert) {
+  if (typeof cert === 'string') return cert;
+  if (typeof cert === 'object' && cert !== null) return cert.cert || cert.name || '(未分类)';
+  return '(未分类)';
+}
+
+/** 获取证书到期日：只对对象格式有效 */
+function getCertExpiry(cert) {
+  if (typeof cert === 'object' && cert !== null) return cert.expiry || '';
+  return '';
+}
+
+/** 获取证书文件名：只对对象格式有效 */
+function getCertFile(cert) {
+  if (typeof cert === 'object' && cert !== null) return cert.file || '';
+  return '';
+}
+
 /** 搜索船舶知识库 */
 function searchShipKnowledge(kb, query) {
   if (!kb || !kb.ships) return '';
-  const q = query.toLowerCase();
+  const q = query.toLowerCase().trim();
   const results = [];
 
-  // 先精确匹配船名
-  const matchedShip = kb.ships.find(s => 
-    s.name.toLowerCase().includes(q) || q.includes(s.name.toLowerCase())
-  );
+  // 先精确匹配船名（忽略大小写）
+  const matchedShip = kb.ships.find(s => {
+    const sn = s.name.toLowerCase().trim();
+    return sn === q || sn.includes(q) || q.includes(sn);
+  });
   if (matchedShip) {
     let ctx = `【船舶知识库 - ${matchedShip.name}】\n`;
     for (const cert of matchedShip.certs.slice(0, 30)) {
-      ctx += `- 证书: ${cert.cert || '(未分类)'}`;
-      if (cert.expiry && cert.expiry !== '未明确提及') ctx += ` | 到期: ${cert.expiry}`;
-      if (cert.file) ctx += ` | 文件: ${cert.file.slice(0, 80)}`;
-      ctx += '\n';
+      const certName = getCertName(cert);
+      ctx += `- 证书: ${certName}\n`;
     }
     results.push(ctx);
   }
@@ -71,24 +89,25 @@ function searchShipKnowledge(kb, query) {
   // 关键字匹配更多船舶
   for (const ship of kb.ships) {
     if (matchedShip && ship.name === matchedShip.name) continue;
-    const shipMatch = ship.name.toLowerCase().includes(q) || q.includes(ship.name.toLowerCase().split(' ').pop());
-    const certMatch = ship.certs.some(c => 
-      (c.cert || '').toLowerCase().includes(q) ||
-      (c.expiry || '').toLowerCase().includes(q)
-    );
+    const sn = ship.name.toLowerCase().trim();
+    const lastName = sn.split(' ').pop();
+    const shipMatch = sn.includes(q) || q.includes(sn) || q.includes(lastName);
+    const certMatch = ship.certs.some(c => {
+      const cn = getCertName(c).toLowerCase();
+      const ex = getCertExpiry(c).toLowerCase();
+      return cn.includes(q) || ex.includes(q);
+    });
     if (certMatch || shipMatch) {
       let ctx = `【船舶知识库 - ${ship.name}】\n`;
       for (const cert of ship.certs.slice(0, 15)) {
-        ctx += `- 证书: ${cert.cert || '(未分类)'}`;
-        if (cert.expiry && cert.expiry !== '未明确提及') ctx += ` | 到期: ${cert.expiry}`;
-        ctx += '\n';
+        ctx += `- 证书: ${getCertName(cert)}\n`;
       }
       results.push(ctx);
       if (results.length >= 15) break;
     }
   }
 
-  return results.join('\n');
+  return results.flat().join('\n');
 }
 
 /** 搜索技术知识库 */
