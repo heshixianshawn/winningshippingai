@@ -1533,10 +1533,14 @@ function formatMessage(text) {
   html = html.replace(/`([^`]+)`/g, '<code>$1</code>');
   html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
   html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
-  html = html.replace(/SOLAS[^\s,。；]*|MARPOL[^\s,。；]*|MLC[^\s,。；]*/g, match => {
-    const safe = match.replace(/'/g, "\\'");
-    return `<span class="citation" onclick="quickAsk('请详细展示${safe}的中文原文和英文原文对照')">${match}</span>`;
-  });
+  // 【法规条款→可点击查看原文】
+  // 使用 RegulationsMap 将法规条款名称转换为可点击链接
+  if (typeof window.RegulationsMap !== 'undefined' && window.RegulationsMap.htmlify) {
+    var regHtml = window.RegulationsMap.htmlify(text);
+    if (regHtml) {
+      html = regHtml;
+    }
+  }
   const paragraphs = html.split('\n\n');
   html = paragraphs.map(p => {
     const trimmed = p.trim();
@@ -1556,6 +1560,36 @@ function formatMessage(text) {
   }).join('');
   return html;
 }
+
+// ====== 法规PDF预览 ======
+window.openRegulationPdf = function(filePath, title) {
+  if (!filePath) return;
+  // 使用已有的overlay面板
+  window.openOverlay('pdf', title || '法规文件预览');
+  var contentEl = document.getElementById('overlayContent');
+  if (!contentEl) return;
+  // 清理旧内容
+  while (contentEl.firstChild) contentEl.removeChild(contentEl.firstChild);
+  // 构建PDF预览容器
+  var wrapper = document.createElement('div');
+  wrapper.style.cssText = 'width:100%;height:calc(100vh - 140px);display:flex;flex-direction:column;';
+  
+  // 顶部工具栏：标题+下载按钮
+  var toolbar = document.createElement('div');
+  toolbar.style.cssText = 'background:#f8f9fa;padding:8px 16px;border-bottom:1px solid #dee2e6;display:flex;align-items:center;gap:12px;flex-shrink:0;';
+  toolbar.innerHTML = '<span style="font-weight:600;">' + (title || '法规文件') + '</span>' +
+    '<a href="' + filePath + '" target="_blank" rel="noopener" style="margin-left:auto;padding:4px 12px;background:#1a73e8;color:#fff;border-radius:4px;text-decoration:none;font-size:13px;">⬇ 下载</a>';
+  wrapper.appendChild(toolbar);
+  
+  // iframe显示PDF
+  var iframe = document.createElement('iframe');
+  iframe.src = filePath + '#view=FitH';
+  iframe.style.cssText = 'flex:1;width:100%;border:none;';
+  iframe.title = title || '';
+  wrapper.appendChild(iframe);
+  
+  contentEl.appendChild(wrapper);
+};
 
 function saveHistory(userText, assistantText) {
   const module = STATE.currentModule;
@@ -1605,6 +1639,8 @@ window.openOverlay = function(contentId, title) {
     searchKnowledgeBaseOverlay(contentId);
   } else if (contentId === 'techManual' || contentId === 'techDrawing' || contentId === 'techReport' || contentId === 'techVendor') {
     searchKnowledgeBaseOverlay(contentId, 'tech');
+  } else if (contentId === 'pdf') {
+    // PDF预览占位，内容由 openRegulationPdf 填充
   }
   
   overlay.classList.remove('hidden');
@@ -1973,6 +2009,121 @@ function renderFleetInSub(d,c) {
 
 function setFleetSubFilter(f){window._fleetFilter=f;renderFleetInSubFilter();}
 function renderFleetInSubFilter(){}
+
+// ====== 法规条款→文件映射（用于AI回复中可点击查看原文） ======
+(function(){
+'use strict';
+var MAP = {
+  SOLAS: { f:'regulations/SOLAS/SOLAS_2024_综合文本_英文版.pdf', l:'SOLAS 2024 综合文本' },
+  'SOLAS Charter': { f:'regulations/SOLAS/SOLAS_2024_综合文本_英文版.pdf', l:'SOLAS Charter' },
+  'SOLAS Chapter I': { f:'regulations/SOLAS/SOLAS_2024_综合文本_英文版.pdf', l:'SOLAS Ch.I 总则' },
+  'SOLAS Chapter II-1': { f:'regulations/SOLAS/SOLAS_2024_综合文本_英文版.pdf', l:'SOLAS Ch.II-1 构造（分舱与稳性）' },
+  'SOLAS Chapter II-2': { f:'regulations/SOLAS/SOLAS_2024_综合文本_英文版.pdf', l:'SOLAS Ch.II-2 防火、探火与灭火' },
+  'SOLAS Chapter III': { f:'regulations/SOLAS/SOLAS_2024_综合文本_英文版.pdf', l:'SOLAS Ch.III 救生设备与布置' },
+  'SOLAS Chapter IV': { f:'regulations/SOLAS/SOLAS_2024_综合文本_英文版.pdf', l:'SOLAS Ch.IV 无线电通信' },
+  'SOLAS Chapter V': { f:'regulations/SOLAS/SOLAS_2024_综合文本_英文版.pdf', l:'SOLAS Ch.V 航行安全' },
+  'SOLAS Chapter VI': { f:'regulations/SOLAS/SOLAS_2024_综合文本_英文版.pdf', l:'SOLAS Ch.VI 货物运输' },
+  'SOLAS Chapter VII': { f:'regulations/SOLAS/SOLAS_2024_综合文本_英文版.pdf', l:'SOLAS Ch.VII 危险货物运输' },
+  'SOLAS Chapter VIII': { f:'regulations/SOLAS/SOLAS_2024_综合文本_英文版.pdf', l:'SOLAS Ch.VIII 核能船舶' },
+  'SOLAS Chapter IX': { f:'regulations/SOLAS/SOLAS_2024_综合文本_英文版.pdf', l:'SOLAS Ch.IX 安全管理' },
+  'SOLAS Chapter X': { f:'regulations/SOLAS/SOLAS_2024_综合文本_英文版.pdf', l:'SOLAS Ch.X 高速船安全措施' },
+  'SOLAS Chapter XI-1': { f:'regulations/SOLAS/SOLAS_2024_综合文本_英文版.pdf', l:'SOLAS Ch.XI-1 加强海上安全的特别措施' },
+  'SOLAS Chapter XI-2': { f:'regulations/SOLAS/SOLAS_2024_综合文本_英文版.pdf', l:'SOLAS Ch.XI-2 加强海上保安的特别措施' },
+  'SOLAS Chapter XII': { f:'regulations/SOLAS/SOLAS_2024_综合文本_英文版.pdf', l:'SOLAS Ch.XII 散货船附加安全措施' },
+  'SOLAS Chapter XIII': { f:'regulations/SOLAS/SOLAS_2024_综合文本_英文版.pdf', l:'SOLAS Ch.XIII 检验发证' },
+  'SOLAS Chapter XIV': { f:'regulations/SOLAS/SOLAS_2024_综合文本_英文版.pdf', l:'SOLAS Ch.XIV 极地水域船舶操作' },
+  'SOLAS Ch.I': { r:'SOLAS Chapter I', l:'SOLAS Ch.I' },
+  'SOLAS Ch.II-1': { r:'SOLAS Chapter II-1', l:'SOLAS Ch.II-1' },
+  'SOLAS Ch.II-2': { r:'SOLAS Chapter II-2', l:'SOLAS Ch.II-2' },
+  'SOLAS Ch.III': { r:'SOLAS Chapter III', l:'SOLAS Ch.III' },
+  'SOLAS Ch.IV': { r:'SOLAS Chapter IV', l:'SOLAS Ch.IV' },
+  'SOLAS Ch.V': { r:'SOLAS Chapter V', l:'SOLAS Ch.V' },
+  'SOLAS Ch.VI': { r:'SOLAS Chapter VI', l:'SOLAS Ch.VI' },
+  'SOLAS Ch.VII': { r:'SOLAS Chapter VII', l:'SOLAS Ch.VII' },
+  'SOLAS Ch.IX': { r:'SOLAS Chapter IX', l:'SOLAS Ch.IX' },
+  'SOLAS Ch.XI-1': { r:'SOLAS Chapter XI-1', l:'SOLAS Ch.XI-1' },
+  'SOLAS Ch.XI-2': { r:'SOLAS Chapter XI-2', l:'SOLAS Ch.XI-2' },
+  'SOLAS Ch.XII': { r:'SOLAS Chapter XII', l:'SOLAS Ch.XII' },
+  MARPOL: { u:'https://www.imo.org/en/OurWork/Environment/Pages/MARPOL.aspx', l:'MARPOL 公约' },
+  'MARPOL Annex I': { u:'https://www.imo.org/en/OurWork/Environment/Pages/OilPollution.aspx', l:'MARPOL 附则I' },
+  'MARPOL Annex II': { u:'https://www.imo.org/en/OurWork/Environment/Pages/ChemicalPollution.aspx', l:'MARPOL 附则II' },
+  'MARPOL Annex III': { u:'https://www.imo.org/en/OurWork/Environment/Pages/HarmfulSubstances.aspx', l:'MARPOL 附则III' },
+  'MARPOL Annex IV': { u:'https://www.imo.org/en/OurWork/Environment/Pages/Sewage.aspx', l:'MARPOL 附则IV' },
+  'MARPOL Annex V': { u:'https://www.imo.org/en/OurWork/Environment/Pages/Garbage.aspx', l:'MARPOL 附则V' },
+  'MARPOL Annex VI': { u:'https://www.imo.org/en/OurWork/Environment/Pages/AirPollution.aspx', l:'MARPOL 附则VI' },
+  MLC: { u:'https://www.imo.org/en/OurWork/HumanElement/Pages/MLC.aspx', l:'MLC 2006' },
+  'MLC 2006': { u:'https://www.imo.org/en/OurWork/HumanElement/Pages/MLC.aspx', l:'MLC 2006' },
+  STCW: { u:'https://www.imo.org/en/OurWork/HumanElement/Pages/STCW.aspx', l:'STCW 公约' },
+  COLREG: { u:'https://www.imo.org/en/OurWork/Safety/Pages/COLREG.aspx', l:'COLREG 避碰规则' },
+  'ISM Code': { u:'https://www.imo.org/en/OurWork/Safety/Pages/ISMCode.aspx', l:'ISM Code' },
+  ISM: { r:'ISM Code', l:'ISM Code' },
+  'ISPS Code': { u:'https://www.imo.org/en/OurWork/Security/Pages/SOLAS-XI-2%20ISPS%20Code.aspx', l:'ISPS Code' },
+  ISPS: { r:'ISPS Code', l:'ISPS Code' },
+  载重线公约: { u:'https://www.imo.org/en/About/Conventions/Pages/International-Convention-on-Load-Lines.aspx', l:'LL 1966 载重线公约' },
+  AMSA: { u:'https://www.amsa.gov.au/', l:'AMSA 官网' },
+  MPA: { u:'https://www.mpa.gov.sg/', l:'Singapore MPA 官网' },
+  'Singapore MPA': { r:'MPA', l:'Singapore MPA' },
+  DNV: { u:'https://www.dnv.com/rules-standards/', l:'DNV 船级社规范' },
+  'Lloyd\'s': { u:'https://www.lr.org/en/rules-and-regulations/', l:'LR 劳氏船级社规范' },
+  'LR': { u:'https://www.lr.org/en/rules-and-regulations/', l:'LR 劳氏船级社规范' },
+  ABS: { u:'https://www.eagle.org/rules-standards/', l:'ABS 船级社规范' },
+  BV: { u:'https://www.bureauveritas.com/marine/regulations', l:'BV 船级社规范' },
+  NK: { u:'https://www.classnk.or.jp/', l:'NK 日本海事协会' },
+  CCS: { u:'https://www.ccs.org.cn/', l:'CCS 中国船级社' }
+};
+
+function resolve(e) {
+  if (!e) return null;
+  return e.r ? (MAP[e.r] || null) : e;
+}
+
+function extractMatches(text) {
+  var m = [];
+  var keys = Object.keys(MAP).sort(function(a,b){return b.length-a.length;});
+  for (var i=0;i<keys.length;i++) {
+    var k = keys[i], idx = text.indexOf(k);
+    if (idx === -1) continue;
+    var pc = text[idx-1]||'', nc = text[idx+k.length]||'';
+    if (!pc.match(/[a-zA-Z0-9]/) && (!nc.match(/[a-zA-Z0-9]/)||nc==='.'||nc==='-'||nc==='/')) {
+      m.push({s:idx,e:idx+k.length,k:k,entry:MAP[k]});
+    }
+  }
+  m.sort(function(a,b){return a.s-b.s;});
+  var f = [];
+  for (var i=0;i<m.length;i++) {
+    var ov = false;
+    for (var j=0;j<f.length;j++) {
+      if (m[i].s < f[j].e && m[i].e > f[j].s) {
+        if (m[i].k.length > f[j].k.length) f[j] = m[i];
+        ov = true; break;
+      }
+    }
+    if (!ov) f.push(m[i]);
+  }
+  return f;
+}
+
+window.htmlifyRegs = function(text) {
+  var matches = extractMatches(text);
+  if (matches.length === 0) return null;
+  var result = text;
+  matches.sort(function(a,b){return b.s-a.s;});
+  for (var i=0;i<matches.length;i++) {
+    var mt = matches[i];
+    var res = resolve(mt.entry);
+    if (!res) continue;
+    var ref = text.substring(mt.s, mt.e);
+    var link = '';
+    if (res.f) {
+      link = '<a href="javascript:void(0)" class="regulation-link" onclick="openRegulationPdf(\''+res.f.replace(/'/g,"\\'")+'\',\''+(res.l||'').replace(/'/g,"\\'")+'\')" title="点击查看 '+(res.l||ref)+'">'+ref+'<span class="law-icon">\uD83D\uDCC4</span></a>';
+    } else if (res.u) {
+      link = '<a href="'+res.u+'" target="_blank" rel="noopener" class="regulation-link" title="打开 '+(res.l||ref)+'">'+ref+'<span class="law-icon">\uD83D\uDD17</span></a>';
+    } else { continue; }
+    result = result.substring(0,mt.s) + link + result.substring(mt.e);
+  }
+  return result;
+};
+})();
 </script>
 </body>
 </html>
