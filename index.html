@@ -1355,6 +1355,10 @@ async function callAPI(message, module, imageData) {
   if (moduleContext) {
     context = moduleContext;
     userContent = moduleContext + '\n\n[用户问题]\n' + message;
+    // 🐛 DEBUG: 检查法规模块类型标签
+    if (module === 'regulations') {
+      console.log('[DEBUG] 法规模块 context:', moduleContext.substring(0, 100));
+    }
   }
   
   // ═══ 构建messages ═══
