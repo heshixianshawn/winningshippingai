@@ -1344,7 +1344,10 @@ async function callAPI(message, module, imageData) {
   
   // ═══ 构建messages ═══
   var systemContent = SYSTEM_PROMPTS[module] || SYSTEM_PROMPTS.regulations;
-  if (context) {
+  
+  // 法规模块：context是问题类型标签（TYPE1-TYPE9），不是知识库检索结果，不加约束指令
+  var isRegTypeLabel = module === 'regulations' && context && context.startsWith('【法规问题类型:');
+  if (context && !isRegTypeLabel) {
     systemContent += '\n\n【⚠️ 关键约束】当前问题已附知识库检索结果。必须严格基于该结果回答，不添加原文中没有的信息。没有的信息回答「未找到」。';
   }
   
