@@ -1386,6 +1386,11 @@ async function callAPI(message, module, imageData) {
     ];
   }
   
+  // 🐛 DEBUG: 打印实际发送的消息结构
+  console.log('[DEBUG] system prompt last 300:', systemContent.substring(systemContent.length - 300));
+  console.log('[DEBUG] user content first 200:', userContent.substring(0, 200));
+  console.log('[DEBUG] model:', model);
+  
   // ═══ 调API易 ═══
   const response = await fetch(APIYI_BASE + '/chat/completions', {
     method: 'POST',
@@ -1399,6 +1404,7 @@ async function callAPI(message, module, imageData) {
   }
   
   const data = await response.json();
+  console.log('[DEBUG] API reply (first 200 chars):', data.choices[0].message.content.substring(0, 200));
   return { reply: data.choices[0].message.content, model: data.model, usage: data.usage };
 }
 
