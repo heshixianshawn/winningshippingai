@@ -1005,8 +1005,8 @@ window.updateWelcome = function(module) {
   } else if (module === 'ships') {
     cardContainer.innerHTML = [
       '<div class="entry-card" onclick="loadShipCertificates();openOverlay(\'shipCert\', \'船舶证书\')"><span class="e-icon">📜</span><span class="e-title">船舶证书</span><span class="e-desc">10,228份已结构化 · 到期提醒</span><span class="e-badge">10,228份</span></div>',
-      '<div class="entry-card" onclick="loadFleetInShip();openOverlay(\'shipFleet\', \'船舶动态\')"><span class="e-icon">🚢</span><span class="e-title">船舶动态</span><span class="e-desc">实时船位 · 状态 · 目的地 · ETA</span><span class="e-badge">59艘</span></div>',
-      '<div class="entry-card" onclick="loadShipProfiles();openOverlay(\'shipProfile\', \'船舶档案\')"><span class="e-icon">📁</span><span class="e-title">船舶档案</span><span class="e-desc">IMO号 · 船级社 · 建造年份 · 吨位</span><span class="e-badge">59条</span></div>',
+      '<div class="entry-card" onclick="loadFleetInShip();openOverlay(\'shipFleet\', \'船舶动态\')"><span class="e-icon">🚢</span><span class="e-title">船舶动态</span><span class="e-desc">实时船位 · 状态 · 目的地 · ETA</span><span class="e-badge">62艘</span></div>',
+      '<div class="entry-card" onclick="loadShipProfiles();openOverlay(\'shipProfile\', \'船舶档案\')"><span class="e-icon">📁</span><span class="e-title">船舶档案</span><span class="e-desc">IMO号 · 船级社 · 建造年份 · 吨位</span><span class="e-badge">62条</span></div>',
       '<div class="entry-card" onclick="loadCrewData();openOverlay(\'shipCrew\', \'联系方式及船员配备\')"><span class="e-icon">👥</span><span class="e-title">联系方式及船员配备</span><span class="e-desc">机务 · 海务 · 船员名单 · 证书</span></div>'
     ].join('');
   }
@@ -1209,7 +1209,7 @@ var SYSTEM_PROMPTS = {
   regulations: `你是WINNING Shipping AI，一名资深的国际海事法规专家，精通IMO公约（SOLAS/MARPOL/MLC/STCW/COLREG/BWM等）。
 
 ## 背景（必读）
-你为WINNING INTERNATIONAL GROUP服务，旗下约59条18万吨级以上好望角型散货船，航线中国-非洲（几内亚回国为主），PSC检查东京/巴黎备忘录。
+你为WINNING INTERNATIONAL GROUP服务，旗下62条18万吨级以上好望角型散货船，航线中国-非洲（几内亚回国为主），PSC检查东京/巴黎备忘录。
 
 ## 绝对规则（顺序执行）
 ### 第1条：第一句话必须包含所有关键数字

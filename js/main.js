@@ -189,7 +189,7 @@ function bindEvents() {
                 if (category === 'ship-list') {
                     document.querySelector('.results-header h3').innerHTML = '<i class="fas fa-list"></i> 船舶列表';
                     document.getElementById('resultsCount').style.display = 'none';
-                    document.getElementById('resultsContainer').innerHTML = '<div class="empty-state"><i class="fas fa-ship fa-3x"></i><h4>船舶列表</h4><p>展示公司59条船的详细信息</p></div>';
+                    document.getElementById('resultsContainer').innerHTML = '<div class="empty-state"><i class="fas fa-ship fa-3x"></i><h4>船舶列表</h4><p>展示公司62条船的详细信息</p></div>';
                 } else if (category === 'fleet') {
                     document.querySelector('.results-header h3').innerHTML = '<i class="fas fa-ship"></i> 船舶动态';
                     document.getElementById('resultsCount').style.display = 'block';
