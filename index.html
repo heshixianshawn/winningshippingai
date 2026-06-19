@@ -352,7 +352,8 @@ var STATE = {
   isProcessing: false,
   fleetShowing: false,
   fleetData: null,
-  fleetFilter: 'all'
+  fleetFilter: 'all',
+  fleetParams: null
 };
 
 try {
@@ -498,6 +499,9 @@ window.removeImage = function() {
 
 // 解除按钮默认disabled：单击事件仍然处理
 els.sendBtn.disabled = false;
+
+// 惰性加载船队参数
+loadFleetParams();
 
 // ====== 船舶知识库加载 ======
 var SHIP_DATA_URL = 'data/ship_knowledge.json';
@@ -762,6 +766,15 @@ window.onTechSearch = function() {
 };
 
 // ====== 船舶动态加载 ======
+async function loadFleetParams() {
+  try {
+    const resp = await fetch('data/fleet_params.json?_t=' + Date.now());
+    STATE.fleetParams = await resp.json();
+  } catch(e) {
+    console.warn('fleet_params.json 加载失败:', e.message);
+  }
+}
+
 async function loadFleetData() {
   try {
     const resp = await fetch('data/hifleet_daily.json?_t=' + Date.now());
@@ -1094,7 +1107,8 @@ async function sendMessage() {
 
 function buildShipsContext(message) {
   const byShip = STATE.shipKnowledge.by_ship;
-  if (!byShip) return null;
+  const fp = STATE.fleetParams;
+  if (!byShip && !fp) return null;
   
   const q = message.toUpperCase();
   
@@ -1102,17 +1116,23 @@ function buildShipsContext(message) {
   const statsPatterns = ['几条船', '几艘船', '总共多少', '总数', '几有', '多少条', '多少艘', '船舶数量', '船舶总数'];
   for (let p of statsPatterns) {
     if (q.includes(p)) {
-      let shipCount = Object.keys(byShip).length;
+      let shipCount = fp && fp.ships ? Object.keys(fp.ships).length : (byShip ? Object.keys(byShip).length : 0);
       let certCount = STATE.shipKnowledge.total_certs || 0;
-      let ships = Object.keys(byShip).sort();
-      let shipList = ships.join('、');
       let context = '以下是从船舶知识库中检索到的船舶统计信息：\n\n';
       context += '【船舶总数】' + shipCount + ' 条船\n';
       context += '【证书总数】约 ' + certCount + ' 份\n\n';
       context += '船舶列表（共 ' + shipCount + ' 条）：\n';
-      // 分WINNING和SUNNY系列显示
-      let winning = ships.filter(s => s.startsWith('WINNING'));
-      let sunny = ships.filter(s => s.startsWith('SUNNY'));
+      // 从fleet_params获取完整列表，或从byShip
+      let ships;
+      if (fp && fp.ships) {
+        ships = Object.values(fp.ships).map(function(s){ return s.name_en; }).sort();
+      } else if (byShip) {
+        ships = Object.keys(byShip).sort();
+      } else {
+        ships = [];
+      }
+      let winning = ships.filter(function(s){ return s.startsWith('WINNING'); });
+      let sunny = ships.filter(function(s){ return s.startsWith('SUNNY'); });
       context += 'WINNING系列（' + winning.length + ' 条）：' + winning.join('、') + '\n\n';
       context += 'SUNNY系列（' + sunny.length + ' 条）：' + sunny.join('、') + '\n\n';
       return context;
@@ -1153,29 +1173,56 @@ function buildShipsContext(message) {
   }
   
   if (!matchedShip) return null;
+
+  // 获取船舶参数（来自fleet_params.json）
+  let params = null;
+  if (fp && fp.ships) {
+    // 按英文名匹配
+    for (const [imo, s] of Object.entries(fp.ships)) {
+      if (s.name_en && matchedShip.toUpperCase() === s.name_en.toUpperCase()) {
+        params = s;
+        params.imo = imo;
+        break;
+      }
+      // 略去船名空格差异
+      if (s.name_en && s.name_en.replace(/\s+/g,'').toUpperCase() === matchedShip.replace(/\s+/g,'').toUpperCase()) {
+        params = s;
+        params.imo = imo;
+        break;
+      }
+    }
+  }
+  
+  // 构建参数上下文
+  let paramStr = '';
+  if (params) {
+    paramStr = `【基本参数】\nIMO: ${params.imo || '—'} | 船旗: ${params.flag || '—'} | 船级社: ${params.class_notation || '—'} | 建造年份: ${(params.built || '—').slice(0,4)} | 船厂: ${params.builder || '—'}\n总吨(GT): ${params.gt || '—'} | 净吨(NT): ${params.nt || '—'} | 载重吨(DWT): ${params.dwt || '—'} | 轻吨: ${params.light_ton || '—'}\n主机: ${[params.me_make, params.me_model].filter(Boolean).join(' ')} | 辅机: ${[params.ae_make, params.ae_model].filter(Boolean).join(' ')}${params.scrubber_make ? ' | 脱硫塔: ' + params.scrubber_model || params.scrubber_make : ''}${params.bwt_make ? ' | 压载水: ' + params.bwt_make : ''}\n`;
+  }
   
   const certs = byShip[matchedShip];
   if (!certs || certs.length === 0) {
-    // 船名有匹配但无证书数据（新船），返回基本信息让AI知道该船存在
-    // 尝试补充hifleet动态数据
+    // 船名有匹配但无证书数据（新船），返回船舶参数+动态
     let dynInfo = '';
-    if (STATE.hifleetData && STATE.hifleetData.vessels) {
-      const dyn = STATE.hifleetData.vessels.find(function(v) { return v.name === matchedShip; });
+    if (STATE.fleetData && STATE.fleetData.vessels) {
+      const dyn = STATE.fleetData.vessels.find(function(v) { return v.name === matchedShip; });
       if (dyn) {
         dynInfo = `【当前动态】${dyn.status}，位置(${dyn.lat !== null ? dyn.lat.toFixed(2) : '未知'}, ${dyn.lon !== null ? dyn.lon.toFixed(2) : '未知'})，航速${dyn.speed_kn || '—'}节，目的港${dyn.destination || '未知'}，${dyn.updateTime || ''}`;
       }
     }
-    return `【检索到船舶信息】以下是“${matchedShip}”的已知信息：
-
-- 所属船队：WINNING船队（共62艘）
-- ${dynInfo || '暂无当前动态数据'}
-
-【注意】该船暂无已录入的证书/资料数据，以上信息来自船舶动态和知识库索引，仅供参考。如需完整证书资料，请查阅原始文件或联系船舶管理部门。`;
+    let ctx = `【检索到船舶信息】以下是“${matchedShip}”的已知资料（数据来源：WINNING船队参数库）：\n\n`;
+    ctx += `- 所属船队：WINNING船队（共62艘）\n`;
+    if (paramStr) ctx += `\n${paramStr}\n`;
+    if (dynInfo) ctx += `\n${dynInfo}\n`;
+    ctx += `\n【提示】该船暂无录入的证书数据。以上资料来自船队参数统计表（船舶信息统计2026.xlsx）和船舶动态。`;
+    return ctx;
   }
   
   // 构建context：只放文档原文，不放约束指令（Worker端会统一处理约束）
   let context = `以下是从船舶知识库中检索到的 "${matchedShip}" 相关文档内容：\n\n`;
   
+  if (paramStr) {
+    context += `${paramStr}\n`;
+  }
   // 如果匹配了特定证书类型，只输出该类型
   if (matchedCertType) {
     const matched = certs.filter(c => c.cert === matchedCertType);
