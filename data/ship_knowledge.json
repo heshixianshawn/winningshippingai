@@ -1,6 +1,37 @@
 {
   "by_ship": {
-    "WINNING AMBITION": [],
+    "WINNING AMBITION": [
+      {
+        "cert": "船舶规范（Ship's Particulars）- 基本参数",
+        "expiry": "-",
+        "file": "船舶规范 (WINNING AMBITION)-Chinese(1).doc",
+        "details": {
+          "IMO": "1037397",
+          "呼号": "9V9538",
+          "船旗国": "SINGAPORE",
+          "船籍港": "SINGAPORE",
+          "船级社": "DNV",
+          "船舶种类": "BULK CARRIER",
+          "总长": "329.99m",
+          "型宽": "60.0m",
+          "型深": "30.50m",
+          "吃水": "22m",
+          "总吨": "174,863",
+          "净吨": "72,130",
+          "载重吨": "325,000MT",
+          "货舱数": "6",
+          "散装舱容": "248,000 m³",
+          "设计航速": "15.3 knots",
+          "服务航速": "13.9 KTS",
+          "主机型号": "MAN 6G80ME-C10.6 Low EGB Tuning Tier II",
+          "主机功率": "19,000KW",
+          "建造厂": "CSSC QINGDAO BEIHAI SHIPBUILDING Co.,Ltd.",
+          "铺龙骨日期": "2025/10/25",
+          "接船日期": "2026/6/16",
+          "克令吊": "NIL"
+        }
+      }
+    ],
     "WINNING ANGEL": [
       {
         "cert": "Attestation（证明书）",
