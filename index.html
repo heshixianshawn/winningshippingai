@@ -1200,6 +1200,10 @@ function buildShipsContext(message) {
       if (c.expiry && c.expiry !== '未明确提及' && c.expiry !== '未明确标注有效期') {
         context += `（到期日：${c.expiry}）`;
       }
+      if (c.details && typeof c.details === 'object') {
+        context += `\n基本参数：\n`;
+        Object.entries(c.details).forEach(function(d){ context += `- ${d[0]}：${d[1]}\n`; });
+      }
       context += `\n`;
       if (c.md) {
         const mdText = c.md.replace(/^#+\s/gm, '').slice(0, 2000);
