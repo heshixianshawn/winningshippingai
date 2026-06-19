@@ -1155,7 +1155,18 @@ function buildShipsContext(message) {
   if (!matchedShip) return null;
   
   const certs = byShip[matchedShip];
-  if (!certs || certs.length === 0) return null;
+  if (!certs || certs.length === 0) {
+    // 船名有匹配但无证书数据（新船），返回基本信息让AI知道该船存在
+    // 尝试补充hifleet动态数据
+    let dynInfo = '';
+    if (STATE.hifleetData && STATE.hifleetData.vessels) {
+      const dyn = STATE.hifleetData.vessels.find(function(v) { return v.name === matchedShip; });
+      if (dyn) {
+        dynInfo = `当前动态：${dyn.status}，位置(${dyn.lat !== null ? dyn.lat.toFixed(2) : '未知'}, ${dyn.lon !== null ? dyn.lon.toFixed(2) : '未知'})，航速${dyn.speed_kn || '—'}节，目的港${dyn.destination || '未知'}，${dyn.updateTime || ''}`;
+      }
+    }
+    return `您查询的是“${matchedShip}”，该船是WINNING船队成员（共62艘）。${dynInfo}目前暂无已录入的证书/资料数据，建议查阅原始证书文件或联系船舶管理部门获取最新证书信息。`;
+  }
   
   // 构建context：只放文档原文，不放约束指令（Worker端会统一处理约束）
   let context = `以下是从船舶知识库中检索到的 "${matchedShip}" 相关文档内容：\n\n`;
