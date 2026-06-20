@@ -439,7 +439,7 @@ function compressImage(dataUrl, maxWidth, quality) {
   }
   bindClick(els.imageUploadBtn, els.imageInput);
   bindClick(els.fileUploadBtn, els.fileInput);
-  els.fileInput.onchange = async function(e) {
+  if (els.fileInput) els.fileInput.onchange = async function(e) {
     var file = e.target.files[0];
     if (!file) return;
     var reader = new FileReader();
@@ -463,7 +463,7 @@ function compressImage(dataUrl, maxWidth, quality) {
     e.target.value = '';
   };
   // 选择图片
-  els.imageInput.onchange = async function(e) {
+  if (els.imageInput) els.imageInput.onchange = async function(e) {
     var file = e.target.files[0];
     if (!file) return;
     var reader = new FileReader();
@@ -1363,7 +1363,7 @@ var SYSTEM_PROMPTS = {
 3. 【重要】用户消息中以 【当前动态】 开头的结构来自AIS实时数据，可直接引用。
 4. 知识库中没有的信息，明确回答「知识库中未找到相关记录」。
 5. 禁止使用你的训练数据补充或编造证书/到期日/船名。
-6. 回答末尾标注「以上信息来自WINNING知识库，请以原始证书为准」。`,}
+6. 回答末尾标注「以上信息来自WINNING知识库，请以原始证书为准」。`,
 
   tech: `你是一个船舶技术资料专家。你的知识全部来自用户上传的设备手册和技术文档。
 
