@@ -1105,6 +1105,8 @@ async function sendMessage() {
 // ====== [v3.0 RAG] 知识库检索由Worker后端完成 ======
 // 以下函数保留用于前端展示（船舶列表面板、技术知识展示），不再用于AI对话context
 
+// ====== 船舶思考引擎（取代旧buildShipsContext） ======
+// 从"搜索式回答"升级为"结构化数据 → Worker思考链交付"
 function buildShipsContext(message) {
   const byShip = STATE.shipKnowledge.by_ship;
   const fp = STATE.fleetParams;
@@ -1112,17 +1114,15 @@ function buildShipsContext(message) {
   
   const q = message.toUpperCase();
   
-  // 先检查统计类问题（有几条船、总证书数），直接传答案不走AI
+  // 先检查统计类问题（有几条船、总证书数）
   const statsPatterns = ['几条船', '几艘船', '总共多少', '总数', '几有', '多少条', '多少艘', '船舶数量', '船舶总数'];
   for (let p of statsPatterns) {
     if (q.includes(p)) {
       let shipCount = fp && fp.ships ? Object.keys(fp.ships).length : (byShip ? Object.keys(byShip).length : 0);
       let certCount = STATE.shipKnowledge.total_certs || 0;
-      let context = '以下是从船舶知识库中检索到的船舶统计信息：\n\n';
-      context += '【船舶总数】' + shipCount + ' 条船\n';
-      context += '【证书总数】约 ' + certCount + ' 份\n\n';
-      context += '船舶列表（共 ' + shipCount + ' 条）：\n';
-      // 从fleet_params获取完整列表，或从byShip
+      let context = '【知识库检索结果 — 船队概况】\n\n';
+      context += '船舶总数：' + shipCount + ' 条船\n';
+      context += '已上传证书总数：' + certCount + ' 份\n\n';
       let ships;
       if (fp && fp.ships) {
         ships = Object.values(fp.ships).map(function(s){ return s.name_en; }).sort();
@@ -1139,25 +1139,20 @@ function buildShipsContext(message) {
     }
   }
   
-  // 1. 尝试精确匹配船名
+  // 匹配船名
   let matchedShip = Object.keys(byShip).find(name => q.includes(name));
-  
-  // 2. 模糊匹配：找q中含有的船名关键词
   if (!matchedShip) {
     const allNames = Object.keys(byShip);
-    // 按名字长度降序排序（长名更精确），找包含在q中的
     const sorted = [...allNames].sort((a, b) => b.length - a.length);
     matchedShip = sorted.find(name => {
-      // 取船名前半部分（不含'SUNNY' 'WINNING'等前缀后的具体名）
       const short = name.replace(/^(WINNING|SUNNY)\s+/i, '');
       return q.includes(short);
     });
   }
   
-  // 3. 按证书类型匹配
+  // 按证书类型匹配
   let matchedCertType = null;
   if (!matchedShip) {
-    // 遍历所有船，看证书名是否包含q中的关键词
     for (const [name, certs] of Object.entries(byShip)) {
       for (const c of certs) {
         const certUpper = (c.cert || '').toUpperCase();
@@ -1172,97 +1167,159 @@ function buildShipsContext(message) {
     }
   }
   
-  if (!matchedShip) return null;
+  if (!matchedShip) {
+    // 按证书类型/到期日关键词搜索
+    var certTypePats = ['证书', '到期', '到期日', 'DOCK', 'SURVEY', '舱室', 'ILL', 'IOPP', 'SMC', 'ISSC', 'SSEC', 'SC', 'SE', 'SR', 'IAPP'];
+    var isCertQuery = certTypePats.some(function(cp) { return q.includes(cp); });
+    if (isCertQuery) {
+      var certMatches = [];
+      var isFullListQuery = /各船有哪些证书|列出.*[所全]有.*证书|所有船.*证书|全部船.*证书/.test(q);
+      if (isFullListQuery) {
+        var ctx = '【知识库检索结果 — 全船队证书清单】\n以下为每艘船的证书类型（已去重）及数量。请基于此数据回答用户问题。\n\n';
+        for (var sn00 of Object.keys(byShip).sort()) {
+          var certsFS = byShip[sn00] || [];
+          var uniqueTypes = {};
+          for (var cf of certsFS) {
+            var cn0 = cf.cert || '(未分类)';
+            uniqueTypes[cn0] = (uniqueTypes[cn0] || 0) + 1;
+          }
+          var typeKeys = Object.keys(uniqueTypes).slice(0, 12);
+          var typeStr = typeKeys.map(function(tk) {
+            var extra = uniqueTypes[tk] > 1 ? '(' + uniqueTypes[tk] + '份)' : '';
+            return tk + extra;
+          }).join('; ');
+          if (Object.keys(uniqueTypes).length > 12) {
+            typeStr += '...(+' + (Object.keys(uniqueTypes).length - 12) + '种)';
+          }
+          ctx += sn00 + ': ' + certsFS.length + '份证书记录 — ' + typeStr + '\n';
+        }
+        ctx += '\n⚠️ 每艘船只展示前12种证书类型（含重复），完整列表请具体询问某条船。';
+        return ctx.slice(0, 16000);
+      }
+      for (var sn0 of Object.keys(byShip).sort()) {
+        for (var ct0 of (byShip[sn0] || [])) {
+          var cn0 = (ct0.cert || '').toUpperCase();
+          var ex0 = (ct0.expiry || '').toUpperCase();
+          if (cn0.includes(q) || ex0.includes(q)) {
+            certMatches.push({ ship: sn0, cert: ct0.cert, expiry: ct0.expiry });
+            break;
+          }
+        }
+        if (certMatches.length >= 5) break;
+      }
+      if (certMatches.length > 0) {
+        var ctx0 = '【知识库检索结果 — 按关键词匹配证书】\n共找到 ' + certMatches.length + ' 条匹配记录：\n\n';
+        certMatches.forEach(function(m) {
+          ctx0 += '• ' + m.ship + ' — ' + m.cert;
+          if (m.expiry) ctx0 += '（到期日：' + m.expiry + '）';
+          ctx0 += '\n';
+        });
+        return ctx0;
+      }
+    }
+    // 完整索引
+    var idxParts = [];
+    for (var sn0 of Object.keys(byShip).sort()) {
+      var certList = [];
+      for (var ct0 of (byShip[sn0] || []).slice(0, 8)) {
+        var cn0 = ct0.cert || '(未分类)';
+        var ex0 = ct0.expiry || '';
+        if (ex0 && ex0 !== '未明确提及' && ex0 !== '未明确标注有效期' && ex0 !== '未明确显示' && ex0 !== '未明确说明' && ex0 !== '无' && !ex0.startsWith('未')) {
+          certList.push(cn0 + '(' + ex0 + ')');
+        } else if (cn0 !== '(未分类)') {
+          certList.push(cn0);
+        }
+      }
+      if (certList.length > 0) idxParts.push(sn0 + ': ' + certList.join('; '));
+    }
+    if (idxParts.length > 0) {
+      var ctx0 = '【完整船舶证书索引（共' + idxParts.length + '艘）】\n\n请从下方索引中查找用户问题涉及的船名、证书名或到期日。如果找到，请基于索引内容回答。如果索引中没有相关信息，请如实说未找到。\n\n';
+      ctx0 += idxParts.join('\n---\n').slice(0, 14000);
+      return ctx0;
+    }
+    return null;
+  }
 
-  // 获取船舶参数（来自fleet_params.json）
+  // ====== 匹配到船舶 → 打包结构化数据给Worker思考引擎 ======
+  
+  // 1. 获取船舶参数
   let params = null;
   if (fp && fp.ships) {
-    // 按英文名匹配
     for (const [imo, s] of Object.entries(fp.ships)) {
       if (s.name_en && matchedShip.toUpperCase() === s.name_en.toUpperCase()) {
-        params = s;
-        params.imo = imo;
+        params = { ...s, imo: imo };
         break;
       }
-      // 略去船名空格差异
       if (s.name_en && s.name_en.replace(/\s+/g,'').toUpperCase() === matchedShip.replace(/\s+/g,'').toUpperCase()) {
-        params = s;
-        params.imo = imo;
+        params = { ...s, imo: imo };
         break;
       }
     }
   }
   
-  // 构建参数上下文
-  let paramStr = '';
-  if (params) {
-    paramStr = `【基本参数】\nIMO: ${params.imo || '—'} | 船旗: ${params.flag || '—'} | 船级社: ${params.class_notation || '—'} | 建造年份: ${(params.built || '—').slice(0,4)} | 船厂: ${params.builder || '—'}\n总吨(GT): ${params.gt || '—'} | 净吨(NT): ${params.nt || '—'} | 载重吨(DWT): ${params.dwt || '—'} | 轻吨: ${params.light_ton || '—'}\n主机: ${[params.me_make, params.me_model].filter(Boolean).join(' ')} | 辅机: ${[params.ae_make, params.ae_model].filter(Boolean).join(' ')}${params.scrubber_make ? ' | 脱硫塔: ' + params.scrubber_model || params.scrubber_make : ''}${params.bwt_make ? ' | 压载水: ' + params.bwt_make : ''}\n`;
-  }
-  
-  const certs = byShip[matchedShip];
-  if (!certs || certs.length === 0) {
-    // 船名有匹配但无证书数据（新船），返回船舶参数+动态
-    let dynInfo = '';
-    if (STATE.fleetData && STATE.fleetData.vessels) {
-      const dyn = STATE.fleetData.vessels.find(function(v) { return v.name === matchedShip; });
-      if (dyn) {
-        dynInfo = `【当前动态】${dyn.status}，位置(${dyn.lat !== null ? dyn.lat.toFixed(2) : '未知'}, ${dyn.lon !== null ? dyn.lon.toFixed(2) : '未知'})，航速${dyn.speed_kn || '—'}节，目的港${dyn.destination || '未知'}，${dyn.updateTime || ''}`;
-      }
+  // 2. 获取证书列表
+  const certs = byShip[matchedShip] || [];
+  var validCerts = [];
+  var otherCerts = [];
+  for (var ct0 of certs) {
+    var ex0 = ct0.expiry || '';
+    if (ex0 && ex0 !== '未明确提及' && ex0 !== '未明确标注有效期' && ex0 !== '未明确显示' && ex0 !== '未明确说明' && ex0 !== '无' && !ex0.startsWith('未')) {
+      validCerts.push(ct0);
+    } else if (ct0.cert && ct0.cert !== '(未分类)' && ct0.cert !== '') {
+      otherCerts.push(ct0);
     }
-    let ctx = `【检索到船舶信息】以下是“${matchedShip}”的已知资料（数据来源：WINNING船队参数库）：\n\n`;
-    ctx += `- 所属船队：WINNING船队（共62艘）\n`;
-    if (paramStr) ctx += `\n${paramStr}\n`;
-    if (dynInfo) ctx += `\n${dynInfo}\n`;
-    ctx += `\n【提示】该船暂无录入的证书数据。以上资料来自船队参数统计表（船舶信息统计2026.xlsx）和船舶动态。`;
-    return ctx;
   }
+  var sortedCerts = validCerts.concat(otherCerts).slice(0, 60);
+  var certList = sortedCerts.map(function(c) {
+    var ex = c.expiry || '';
+    var hasExpiry = ex && ex !== '未明确提及' && ex !== '未明确标注有效期' && ex !== '未明确显示' && ex !== '未明确说明' && ex !== '无' && !ex.startsWith('未');
+    return { cert: c.cert, expiry: hasExpiry ? ex : null, file: c.file };
+  });
   
-  // 构建context：只放文档原文，不放约束指令（Worker端会统一处理约束）
-  let context = `以下是从船舶知识库中检索到的 "${matchedShip}" 相关文档内容：\n\n`;
-  
-  if (paramStr) {
-    context += `${paramStr}\n`;
-  }
-  // 如果匹配了特定证书类型，只输出该类型
-  if (matchedCertType) {
-    const matched = certs.filter(c => c.cert === matchedCertType);
-    if (matched.length > 0) {
-      context += `【证书类型：${matchedCertType}】\n`;
-      matched.forEach((c, i) => {
-        if (c.expiry && c.expiry !== '未明确提及' && c.expiry !== '未明确标注有效期') {
-          context += `到期日：${c.expiry}\n`;
-        }
-        if (c.md) {
-          const mdText = c.md.replace(/^#+\s/gm, '').slice(0, 3000);
-          context += `${mdText}\n\n`;
-        }
-      });
-    }
-  } else {
-    // 输出该船所有证书的md（限于5条以内，避免token过长）
-    const LIMIT = 5;
-    const toShow = certs.slice(0, LIMIT);
-    toShow.forEach((c) => {
-      context += `【${c.cert || '证书'}】`;
-      if (c.expiry && c.expiry !== '未明确提及' && c.expiry !== '未明确标注有效期') {
-        context += `（到期日：${c.expiry}）`;
-      }
-      if (c.details && typeof c.details === 'object') {
-        context += `\n基本参数：\n`;
-        Object.entries(c.details).forEach(function(d){ context += `- ${d[0]}：${d[1]}\n`; });
-      }
-      context += `\n`;
-      if (c.md) {
-        const mdText = c.md.replace(/^#+\s/gm, '').slice(0, 2000);
-        context += `${mdText}\n\n`;
-      }
-    });
-    if (certs.length > LIMIT) {
-      context += `...（该船还有 ${certs.length - LIMIT} 份证书，如需查看请具体提问）\n`;
+  // 3. 获取当前动态
+  let dynamic = null;
+  if (STATE.fleetData && STATE.fleetData.vessels) {
+    const dyn = STATE.fleetData.vessels.find(function(v) { return v.name === matchedShip; });
+    if (dyn) {
+      dynamic = {
+        status: dyn.status,
+        position: dyn.lat !== null ? dyn.lat.toFixed(2) + ', ' + dyn.lon.toFixed(2) : null,
+        speed_kn: dyn.speed_kn,
+        destination: dyn.destination,
+        eta: dyn.eta,
+        updateTime: dyn.updateTime
+      };
     }
   }
   
-  return context;
+  // 4. 打包结构化数据
+  var structuredData = {
+    type: 'ship_query',
+    ship: matchedShip,
+    params: params ? {
+      imo: params.imo,
+      flag: params.flag,
+      class_notation: params.class_notation,
+      class_society: params.class_society,
+      built: params.built,
+      builder: params.builder,
+      gt: params.gt,
+      nt: params.nt,
+      dwt: params.dwt,
+      light_ton: params.light_ton,
+      me: [params.me_make, params.me_model].filter(Boolean).join(' '),
+      ae: [params.ae_make, params.ae_model].filter(Boolean).join(' '),
+      scrubber: params.scrubber_make || null,
+      bwt: params.bwt_make || null
+    } : null,
+    certificates: certList,
+    cert_count: certs.length,
+    dynamic: dynamic,
+    matched_cert_type: matchedCertType
+  };
+  
+  // 序列化为JSON字符串，传给Worker
+  return JSON.stringify(structuredData);
 }
 
 // ====== 直调API易（前端版） ======
@@ -1405,34 +1462,50 @@ async function callAPI(message, module, imageData) {
   const history = STATE.conversationHistory[module] || [];
   const lastHistory = history.slice(-6).map(h => ({ role: h.role, content: h.text }));
   
-  let context = null;
-  let userContent = message;
-  
-  // ═══ 前端知识库检索 ═══
+  // ═══ 前端知识库检索（思考引擎版） ═══
   const moduleContext = await buildFrontendContext(message, module);
+  var isShipStructured = false;
+  var structuredData = null;
   if (moduleContext) {
-    context = moduleContext;
-    userContent = moduleContext + '\n\n[用户问题]\n' + message;
-    // 🐛 DEBUG: 检查法规模块类型标签
-    if (module === 'regulations') {
-      console.log('[DEBUG] 法规模块 context:', moduleContext.substring(0, 100));
+    try {
+      var parsed = JSON.parse(moduleContext);
+      if (parsed && parsed.type === 'ship_query') {
+        isShipStructured = true;
+        structuredData = parsed;
+        context = null;
+        userContent = message;
+      }
+    } catch(e) {}
+    if (!isShipStructured) {
+      context = moduleContext;
+      userContent = moduleContext + '\n\n[用户问题]\n' + message;
     }
   }
   
-  // ═══ 构建messages ═══
   var systemContent = SYSTEM_PROMPTS[module] || SYSTEM_PROMPTS.regulations;
-  
-  // 法规模块：context是问题类型标签（TYPE1-TYPE9），不是知识库检索结果，不加约束指令
   var isRegTypeLabel = module === 'regulations' && context && context.startsWith('【法规问题类型:');
-  if (context && !isRegTypeLabel) {
+  if (context && !isRegTypeLabel && !isShipStructured) {
     systemContent += '\n\n【⚠️ 关键约束】当前问题已附知识库检索结果。必须严格基于该结果回答，不添加原文中没有的信息。没有的信息回答「未找到」。';
   }
   
   var messages = [
     { role: 'system', content: systemContent },
-    ...lastHistory,
-    { role: 'user', content: userContent }
+    ...lastHistory
   ];
+  
+  if (isShipStructured && structuredData) {
+    var aspects = [];
+    var sq = message.toUpperCase();
+    if (sq.includes('到期') || sq.includes('过期') || sq.includes('效期') || sq.includes('EXPIR')) aspects.push('证书到期');
+    if (sq.includes('证书') || sq.includes('CERT')) aspects.push('证书信息');
+    if (sq.includes('参数') || sq.includes('船旗') || sq.includes('船级') || sq.includes('吨位') || sq.includes('主机')) aspects.push('技术参数');
+    if (sq.includes('位置') || sq.includes('在哪') || sq.includes('航速') || sq.includes('目的港')) aspects.push('船舶动态');
+    if (sq.includes('建议') || sq.includes('提醒') || sq.includes('注意') || sq.includes('应该')) aspects.push('建议/提醒');
+    var thinkCtx = buildThinkingContext(structuredData, aspects, message);
+    messages.push({ role: 'user', content: thinkCtx + '\n\n[用户问题]\n' + message });
+  } else {
+    messages.push({ role: 'user', content: userContent });
+  }
   
   // ═══ 图片处理 ═══
   var model = APIYI_TEXT_MODEL;
@@ -2314,6 +2387,72 @@ window.htmlifyRegs = function(text) {
   return result;
 };
 })();
+
+// ====== 思考引擎：构建结构化数据上下文（前端版） ======
+function buildThinkingContext(structuredData, aspects, message) {
+  if (!structuredData) return '';
+  var ctx = '【思考引擎 — 船舶综合分析】\n\n';
+  
+  // 1. 船舶基本信息
+  if (structuredData.params) {
+    var p = structuredData.params;
+    ctx += '## 船舶基本信息\n';
+    ctx += '- 船名: ' + (structuredData.ship || '未知') + '\n';
+    ctx += '- IMO: ' + (p.imo || '—') + '\n';
+    ctx += '- 船旗国: ' + (p.flag || '—') + '\n';
+    ctx += '- 船级社: ' + (p.class_notation || '—') + '\n';
+    ctx += '- 建造年份: ' + ((p.built || '—').slice(0,4)) + '\n';
+    ctx += '- DWT: ' + (p.dwt || '—') + ' | GT: ' + (p.gt || '—') + '\n';
+    ctx += '- 主机: ' + (p.me || '—') + '\n';
+    if (p.scrubber) ctx += '- 脱硫塔: ' + p.scrubber + '\n';
+    if (p.bwt) ctx += '- 压载水: ' + p.bwt + '\n';
+    ctx += '\n';
+  }
+  
+  // 2. 当前动态
+  if (structuredData.dynamic) {
+    var d = structuredData.dynamic;
+    ctx += '## 当前动态\n';
+    ctx += '- 状态: ' + (d.status || '未知') + '\n';
+    ctx += '- 位置: (' + (d.position || '未知') + ')\n';
+    ctx += '- 航速: ' + (d.speed_kn || '—') + ' kn\n';
+    ctx += '- 目的港: ' + (d.destination || '未知') + '\n';
+    ctx += '- 更新时间: ' + (d.updateTime || '—') + '\n\n';
+  }
+  
+  // 3. OCR证书清单
+  if (structuredData.certificates && structuredData.certificates.length > 0) {
+    ctx += '## OCR证书清单（' + structuredData.certificates.length + '份）\n';
+    var withExp = [];
+    var noExp = [];
+    for (var ci = 0; ci < structuredData.certificates.length; ci++) {
+      if (structuredData.certificates[ci].expiry) withExp.push(structuredData.certificates[ci]);
+      else noExp.push(structuredData.certificates[ci]);
+    }
+    if (withExp.length > 0) {
+      ctx += '### 有到期日信息：\n';
+      var showN = Math.min(withExp.length, 20);
+      for (var ci2 = 0; ci2 < showN; ci2++) {
+        ctx += '- ' + withExp[ci2].cert + ': ' + withExp[ci2].expiry + '\n';
+      }
+      if (withExp.length > showN) ctx += '  ... 还有' + (withExp.length - showN) + '份\n';
+    }
+    ctx += '\n';
+  }
+  
+  // 4. 意图预分析
+  ctx += '## 思考引擎预分析\n';
+  ctx += '检测到用户关注: ' + (aspects && aspects.length > 0 ? aspects.join('、') : '船舶综合信息') + '\n';
+  ctx += '匹配证书类型: ' + (structuredData.matched_cert_type || '全部') + '\n\n';
+  
+  // 到期提醒
+  if (aspects.indexOf('证书到期') >= 0) {
+    ctx += '⚠️ **到期提醒**: 请特别注意以上证书的到期日期，提前安排检验。\n\n';
+  }
+  
+  ctx += '【思考引擎结束】\n';
+  return ctx;
+}
 </script>
 </body>
 </html>

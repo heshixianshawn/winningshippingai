@@ -1,1 +1,20 @@
-{"3fef42c47a19":{"id":"3fef42c47a19","filename":"SV-R(071925_24ZT0287).pdf","ship_name":"","llm_md":"好的，作为海事证书专家，我已根据您提供的文档内容提取了相关信息。\n\n**文档类型:** 检验记录 (Survey Record)\n\n**船名:** SUNNY COYAH\n\n**有效期:** 不适用 (此文档为检验记录，非证书本身。但其中列出的多项证书有效期均为 2027年4月25日)\n\n**签发机构:** 日本船级社 (NIPPON KAIJI KYOKAI / ClassNK)\n\n**证书编号:** 071925 (Class No.) / 24ZT0287 (Record No.)\n\n**船籍港:** 巴拿马 (Panama)\n\n**关键信息:**\n*   **船舶识别号 (IMO No.):** 9387114\n*   **总吨位 (GT):** 90,092\n*   **检验地点:** 中国京唐港锚地 (Jingtang Port Anchorage, China)\n*   **检验日期:** 2024年5月21日至22日\n*   **检验类型:** 年度检验 (Annual Survey) 及临时检验 (Occasional Survey)\n*   **检验结果:** 所有列出的检验项目均已完成 (Complete)，船舶被认为适合维持其船级。\n\n**摘要:**\n该文档是日本船级社 (ClassNK) 为船名 **SUNNY COYAH** (IMO编号 9387114，巴拿马船旗) 出具的检验记录。检验于"},"c35c728d263c":{"id":"c35c728d263c","filename":"34. CALIBRATION OF ANCHOR CHAIN CABLE.pdf","ship_name":"","llm_md":"好的，根据您提供的文档内容，以下是提取的海事证书信息：\n\n- **文档类型**: 锚链校准记录\n- **船名**: STAMATIS\n- **有效期**: 未明确标注（文档为2022年10月22日的测量记录，通常此类记录无固定有效期，但校准结果在下次检验前有效）\n- **签发机构**: Sembcorp Marine Integrated Yard Pte. Ltd.\n- **证书编号**: JOB NO: 0109 J2 10599\n- **船籍港**: 未明确标注\n- **关键信息**:\n    - 原始直径: 97.00 mm\n    - 极限直径: 85.36 mm\n    - 测量日期: 2022年10月22日\n    - 测量结果：左右锚链各节长度（A、B、平均值）及备注（如“NEW CHAIN”表示新链）\n- **摘要**: 该文档为“STAMATIS”轮的锚链校准记录，由Sembcorp Marine Integrated Yard Pte. Ltd.于2022年10月22日出具。记录显示锚链原始直径为97.00毫米，极限直径为85.36毫米。文档详细列出了左右两侧锚链各节的测量数据（A、B、平均值），部分节段标注为“NEW CHAIN”（新链）。"},"59ae6ca660bf":{"id":"59ae6ca660bf","filename":"15锚机刹车.pdf","ship_name":"","llm_md":"| 字段 | 内容 |\n|------|------|\n| 文档类型 | 检验报告（Inspection Report） |\n| 船名 | 未明确给出（文本中无直接船名，可能为“W INNING DIL. IGE NCE”或OCR识别错误） |\n| 有效期 | 2014年3月5日（Date: 2014/3/5） |\n| 签发机构 | 未明确给出（文本中无签发机构信息） |\n| 证书编号 | 未明确给出（文本中无证书编号） |\n| 关键信息 | 锚机刹车测试（brake test for windlass）；测试参数包括制动力（Braking force）、千斤顶力（Jack force）、压力表读数（Pressure Gauge reading）；涉及左舷（Port M1）、右舷（STB M2）等位置；制动力值包括3010KN、5114KN、5114KN、5114KN等 |\n| 摘要（中文） | 该文档为一份锚机刹车测试检验报告，日期为2014年3月5日。报告记录了锚机刹车测试的制动力、千斤顶力及压力表读数等关键参数，涉及多个测试位置（如左舷、右舷、前甲板中心等），制动力数值包括3010KN、5114KN等。文档未明确给出船名、签发机构及证书编号。 |"}}
+{
+  "3fef42c47a19": {
+    "id": "3fef42c47a19",
+    "filename": "SV-R(071925_24ZT0287).pdf",
+    "ship_name": "SUNNY COYAH",
+    "llm_md": "好的，作为海事证书专家，我已根据您提供的文档内容提取了相关信息。\n\n**文档类型:** 检验记录 (Survey Record)\n\n**船名:** SUNNY COYAH\n\n**有效期:** 不适用 (此文档为检验记录，非证书本身。但其中列出的多项证书有效期均为 2027年4月25日)\n\n**签发机构:** 日本船级社 (NIPPON KAIJI KYOKAI / ClassNK)\n\n**证书编号:** 071925 (Class No.) / 24ZT0287 (Record No.)\n\n**船籍港:** 巴拿马 (Panama)\n\n**关键信息:**\n*   **船舶识别号 (IMO No.):** 9387114\n*   **总吨位 (GT):** 90,092\n*   **检验地点:** 中国京唐港锚地 (Jingtang Port Anchorage, China)\n*   **检验日期:** 2024年5月21日至22日\n*   **检验类型:** 年度检验 (Annual Survey) 及临时检验 (Occasional Survey)\n*   **检验结果:** 所有列出的检验项目均已完成 (Complete)，船舶被认为适合维持其船级。\n\n**摘要:**\n该文档是日本船级社 (ClassNK) 为船名 **SUNNY COYAH** (IMO编号 9387114，巴拿马船旗) 出具的检验记录。检验于"
+  },
+  "c35c728d263c": {
+    "id": "c35c728d263c",
+    "filename": "34. CALIBRATION OF ANCHOR CHAIN CABLE.pdf",
+    "ship_name": "SUNNY KANKAN",
+    "llm_md": "好的，根据您提供的文档内容，以下是提取的海事证书信息：\n\n- **文档类型**: 锚链校准记录\n- **船名**: STAMATIS\n- **有效期**: 未明确标注（文档为2022年10月22日的测量记录，通常此类记录无固定有效期，但校准结果在下次检验前有效）\n- **签发机构**: Sembcorp Marine Integrated Yard Pte. Ltd.\n- **证书编号**: JOB NO: 0109 J2 10599\n- **船籍港**: 未明确标注\n- **关键信息**:\n    - 原始直径: 97.00 mm\n    - 极限直径: 85.36 mm\n    - 测量日期: 2022年10月22日\n    - 测量结果：左右锚链各节长度（A、B、平均值）及备注（如“NEW CHAIN”表示新链）\n- **摘要**: 该文档为“STAMATIS”轮的锚链校准记录，由Sembcorp Marine Integrated Yard Pte. Ltd.于2022年10月22日出具。记录显示锚链原始直径为97.00毫米，极限直径为85.36毫米。文档详细列出了左右两侧锚链各节的测量数据（A、B、平均值），部分节段标注为“NEW CHAIN”（新链）。"
+  },
+  "59ae6ca660bf": {
+    "id": "59ae6ca660bf",
+    "filename": "15锚机刹车.pdf",
+    "ship_name": "WINNING DILIGENCE",
+    "llm_md": "| 字段 | 内容 |\n|------|------|\n| 文档类型 | 检验报告（Inspection Report） |\n| 船名 | 未明确给出（文本中无直接船名，可能为“W INNING DIL. IGE NCE”或OCR识别错误） |\n| 有效期 | 2014年3月5日（Date: 2014/3/5） |\n| 签发机构 | 未明确给出（文本中无签发机构信息） |\n| 证书编号 | 未明确给出（文本中无证书编号） |\n| 关键信息 | 锚机刹车测试（brake test for windlass）；测试参数包括制动力（Braking force）、千斤顶力（Jack force）、压力表读数（Pressure Gauge reading）；涉及左舷（Port M1）、右舷（STB M2）等位置；制动力值包括3010KN、5114KN、5114KN、5114KN等 |\n| 摘要（中文） | 该文档为一份锚机刹车测试检验报告，日期为2014年3月5日。报告记录了锚机刹车测试的制动力、千斤顶力及压力表读数等关键参数，涉及多个测试位置（如左舷、右舷、前甲板中心等），制动力数值包括3010KN、5114KN等。文档未明确给出船名、签发机构及证书编号。 |"
+  }
+}
