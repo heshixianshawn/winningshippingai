@@ -83,34 +83,64 @@ export async function queryMemory(db, question, module) {
 
 /**
  * Extract potential memory topic keywords from user question.
+ * 
+ * Key improvement: handles mixed Chinese + English queries like 
+ * "BOFFA单船信息" → extracts "BOFFA" as keyword even though it's
+ * attached to Chinese characters without spaces.
  */
 function extractKeywords(q, module) {
   const keywords = [];
   
-  // Extract words that look like ship names or equipment
-  // Ship name patterns: WINNING *, SUNNY *, or standalone words
-  const words = q.split(/[\s,，。、；;：:（）()]+/).filter(w => w.length > 2);
-  
-  for (const w of words) {
-    // Ship prefixes
-    if (w.startsWith('WINNING') || w.startsWith('SUNNY')) {
-      keywords.push(w);
+  // Phase 1: Extract known ship name patterns that may be attached to Chinese chars
+  // Matches WINNING*, SUNNY*, or standalone ALL-CAPS words (ship names, IMO numbers, etc.)
+  const shipPrefixMatch = q.match(/(WINNING\w*)|(SUNNY\w*)/g);
+  if (shipPrefixMatch) {
+    for (const m of shipPrefixMatch) {
+      keywords.push(m);
     }
-    // Common equipment names (Chinese + English)
-    if (/^[A-Z]{2,}$/.test(w)) keywords.push(w);  // All-caps: BOFFA, DWT, GT, etc.
-    if (w === '锅炉' || w === 'BOILER') keywords.push('锅炉');
-    if (w === '主机' || w === 'ENGINE' || w === '副机' || w === '辅机') keywords.push('主机');
-    if (w === '压载' || w === 'BALLAST' || w === 'BWT') keywords.push('压载水');
-    if (w === '脱硫' || w === 'SCRUBBER') keywords.push('脱硫塔');
   }
   
-  // If module-specific, add module topic
+  // Phase 2: Split mixed text on word boundaries. Handle cases like:
+  // "BOFFA单船" → extract "BOFFA"
+  // "加入韦立的时间和particulars" → extract "particulars"
+  
+  // Extract all-letter English words (2+ chars) from mixed text
+  const englishWords = q.match(/[A-Za-z]{2,}/g);
+  if (englishWords) {
+    for (const w of englishWords) {
+      const upper = w.toUpperCase();
+      if (upper.startsWith('WINNING') || upper.startsWith('SUNNY')) continue; // Already handled
+      if (upper === 'IMO') continue; // Generic, not a ship name
+      keywords.push(upper);
+    }
+  }
+  
+  // Phase 3: Chinese equipment/facility keywords
+  // Don't use space-split here; use character-level matching for Chinese
+  if (/锅炉|BOILER|锅炉/.test(q)) keywords.push('锅炉');
+  if (/主机|ENGINE|副机|辅机|M/E|ME[^T]/.test(q)) keywords.push('主机');
+  if (/压载|BALLAST|BWT/.test(q)) keywords.push('压载水');
+  if (/脱硫|SCRUBBER/.test(q)) keywords.push('脱硫塔');
+  if (/锅炉|BOILER/.test(q)) keywords.push('锅炉');
+  if (/辅机|发电机|GENERATOR|A[.]?E[^RT]/.test(q)) keywords.push('辅机');
+  if (/舵机|STEERING/.test(q)) keywords.push('舵机');
+  if (/分油机|PURIFIER|SEPARATOR/.test(q)) keywords.push('分油机');
+  if (/泵|PUMP/.test(q)) keywords.push('泵');
+  if (/热水器|加热器|HEATER|热水/.test(q)) keywords.push('热水器');
+  if (/侧推|THRUSTER/.test(q)) keywords.push('侧推');
+  
+  // Phase 4: Before returning, if module='ships' and no keywords found,
+  // search for any word that could be a ship name fragment
   if (module === 'ships' && keywords.length === 0) {
-    // Could be a general fleet query - don't add specific topics
-  } else if (module === 'tech' && keywords.length === 0) {
-    keywords.push('技术资料');
-  } else if (module === 'regulations' && keywords.length === 0) {
-    keywords.push('法规');
+    // Last resort: grab the first all-caps or capitalized English word
+    const anyCaps = q.match(/[A-Za-z]{4,}/);
+    if (anyCaps) keywords.push(anyCaps[0].toUpperCase());
+  }
+  
+  // Phase 5: Module-level fallback (no specific match, but we know the domain)
+  if (keywords.length === 0) {
+    if (module === 'tech') keywords.push('技术资料');
+    else if (module === 'regulations') keywords.push('法规');
   }
   
   return [...new Set(keywords)];  // Deduplicate
