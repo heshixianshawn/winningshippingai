@@ -2402,6 +2402,9 @@ function buildThinkingContext(structuredData, aspects, message) {
     ctx += '- 船旗国: ' + (p.flag || '—') + '\n';
     ctx += '- 船级社: ' + (p.class_notation || '—') + '\n';
     ctx += '- 建造年份: ' + ((p.built || '—').slice(0,4)) + '\n';
+    ctx += '- 建造船厂: ' + (p.builder || '—') + '\n';
+    ctx += '- 接管日期: ' + (p.takeover_date || '—') + '\n';
+    ctx += '- 船东: ' + (p.owner || '—') + '\n';
     ctx += '- DWT: ' + (p.dwt || '—') + ' | GT: ' + (p.gt || '—') + '\n';
     ctx += '- 主机: ' + (p.me || '—') + '\n';
     if (p.scrubber) ctx += '- 脱硫塔: ' + p.scrubber + '\n';
