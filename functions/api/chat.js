@@ -10,6 +10,7 @@ import {
 import { autoSearchKnowledge } from './_knowledge.js';
 import { logToKV } from './_logger.js';
 import { analyzeIntent, buildThinkingContext } from './_thinking_engine.js';
+import { queryMemory, injectMemoryPrompt, logQuery } from './memory/_memory_core.js';
 
 // ====== AI 调用配置 ======
 const DEEPSEEK_BASE = 'https://api.deepseek.com/v1';
@@ -84,6 +85,19 @@ export async function onRequest(context) {
 
     // ====== Build messages ======
     let systemContent = SYSTEM_PROMPTS[module] || REGULATIONS_SYSTEM_PROMPT;
+
+    // ====== Memory System: inject digested long-term memory ======
+    let memoryEntries = [];
+    if (env && env.DB) {
+      try {
+        memoryEntries = await queryMemory(env.DB, message, module);
+      } catch (e) {
+        console.error('[Memory] query failed:', e.message);
+      }
+    }
+    if (memoryEntries.length > 0) {
+      systemContent = injectMemoryPrompt(systemContent, memoryEntries);
+    }
 
     if (ragUsed && kbContext) {
       if (isThinkingMode) {
@@ -180,12 +194,23 @@ export async function onRequest(context) {
       });
     })();
 
+    // ====== Log query to memory system ======
+    if (env && env.DB && memoryEntries.length > 0) {
+      ctx.waitUntil(logQuery(env.DB, {
+        module,
+        question: message.slice(0, 200),
+        topics: memoryEntries.map(m => m.topic),
+        count: memoryEntries.length
+      }));
+    }
+
     return new Response(JSON.stringify({
       reply,
       model: data.model,
       usage,
       rag: ragUsed,
-      thinking: isThinkingMode
+      thinking: isThinkingMode,
+      memoryUsed: memoryEntries.length
     }), {
       headers: { 'Content-Type': 'application/json', ...CORS_HEADERS }
     });
