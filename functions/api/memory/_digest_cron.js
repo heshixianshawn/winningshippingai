@@ -254,7 +254,7 @@ export async function onRequest(context) {
     const { results } = await db.prepare('SELECT * FROM source_tracking').all();
     return new Response(JSON.stringify(results), {
       headers: { 'Content-Type': 'application/json' }
-    );
+    });
   }
   
   return new Response('Method not allowed', { status: 405 });
