@@ -1,25 +1,16 @@
 # WINNING Shipping AI - wrangler.toml
 # Only needed for D1 + Cron (Pages Functions use this for advanced features)
-# Deploy via: wrangler deploy --config wrangler.toml
 
 name = "winningshippingai"
-pages_build_output_dir = ""  # Pages auto-builds
+pages_build_output_dir = ""
 
 # D1 Database for Knowledge Memory System
 [[d1_databases]]
 binding = "DB"
 database_name = "winningshippingai-memory"
-database_id = "your-database-id-will-go-here"
+database_id = "480d7142-3a26-450c-bbe9-cb3a42d6d18c"
 
-# Cron trigger for knowledge digestion (daily 02:00)
-[triggers]
-crons = ["0 2 * * *"]
-
-[env]
-# These are set via Cloudflare Dashboard secrets:
+# Environment variables are set via Cloudflare Dashboard:
 # DEEPSEEK_API_KEY_ENV
-# DIGEST_KEY (for manual HTTP trigger)
+# DIGEST_KEY
 # PAGES_URL = "https://winningshippingai.pages.dev"
-
-# Compatibility date
-compatibility_date = "2025-04-01"
