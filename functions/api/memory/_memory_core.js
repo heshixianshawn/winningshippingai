@@ -118,7 +118,7 @@ function extractKeywords(q, module) {
   // Phase 3: Chinese equipment/facility keywords
   // Don't use space-split here; use character-level matching for Chinese
   if (/锅炉|BOILER|锅炉/.test(q)) keywords.push('锅炉');
-  if (/主机|ENGINE|副机|辅机|M/E|ME[^T]/.test(q)) keywords.push('主机');
+  if (/主机|ENGINE|副机|辅机|M\/E|ME[^T]/.test(q)) keywords.push('主机');
   if (/压载|BALLAST|BWT/.test(q)) keywords.push('压载水');
   if (/脱硫|SCRUBBER/.test(q)) keywords.push('脱硫塔');
   if (/锅炉|BOILER/.test(q)) keywords.push('锅炉');
