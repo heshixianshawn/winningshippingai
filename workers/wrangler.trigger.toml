@@ -1,0 +1,7 @@
+name = "wsai-digest-trigger"
+main = "workers/digest_trigger.js"
+compatibility_date = "2026-04-01"
+
+# Daily schedule: 02:00 Asia/Shanghai
+[triggers]
+crons = ["0 2 * * *"]
