@@ -353,7 +353,8 @@ var STATE = {
   fleetShowing: false,
   fleetData: null,
   fleetFilter: 'all',
-  fleetParams: null
+  fleetParams: null,
+  inspectionHistory: null
 };
 
 try {
@@ -787,6 +788,31 @@ async function loadFleetData() {
   }
 }
 
+async function loadInspectionHistory() {
+  if (STATE.inspectionHistory) return;
+  try {
+    const resp = await fetch('data/inspection_history.json?_t=' + Date.now());
+    STATE.inspectionHistory = await resp.json();
+    console.log('inspection_history.json loaded');
+  } catch(e) {
+    console.warn('inspection_history.json 加载失败:', e.message);
+  }
+}
+
+function getShipInspections(shipName) {
+  var ih = STATE.inspectionHistory;
+  if (!ih) return null;
+  var result = {};
+  if (ih.psc && ih.psc.by_ship && ih.psc.by_ship[shipName]) {
+    result.psc = ih.psc.by_ship[shipName];
+  }
+  if (ih.rightship && ih.rightship.by_ship && ih.rightship.by_ship[shipName]) {
+    result.rightship = ih.rightship.by_ship[shipName];
+  }
+  if (!result.psc && !result.rightship) return null;
+  return result;
+}
+
 function getTestFleetData() {
   return {"timestamp":"2026-05-03 17:37:54","group":"A.WINNING FLEET","total":59,"winning":34,"sunny":25,"vessels":[
     {"name":"WINNING CONFIDENCE","status":"在航","speed_kn":10.0,"destination":"CNTAO","eta":"2026-06-05 14:00","lat":-28.45,"lon":12.20,"heading_deg":128,"draught_m":18.6,"mmsi":"566311000","imo":"9325001","updateTime":"2026-05-03 17:37:09"},
@@ -971,6 +997,9 @@ window.switchModule = function(module) {
       setTimeout(function() {
         loadShipKnowledge().catch(function(e) {
           console.error('船舶知识库加载失败:', e);
+        });
+        loadInspectionHistory().catch(function(e) {
+          console.error('检查历史加载失败:', e);
         });
       }, 50);
     } else if (module === 'tech' && !STATE_TECH_INDEX) {
@@ -1319,6 +1348,7 @@ function buildShipsContext(message) {
     certificates: certList,
     cert_count: certs.length,
     dynamic: dynamic,
+    inspections: getShipInspections(matchedShip),
     matched_cert_type: matchedCertType
   };
   
@@ -1504,6 +1534,7 @@ async function callAPI(message, module, imageData) {
     if (sq.includes('证书') || sq.includes('CERT')) aspects.push('证书信息');
     if (sq.includes('参数') || sq.includes('船旗') || sq.includes('船级') || sq.includes('吨位') || sq.includes('主机') || sq.includes('资料') || sq.includes('PARTICULAR') || sq.includes('呼号') || sq.includes('CALL SIGN') || sq.includes('建造') || sq.includes('船厂') || sq.includes('船东') || sq.includes('管理公司') || sq.includes('辅机') || sq.includes('姊妹') || sq.includes('压载水') || sq.includes('脱硫塔') || sq.includes('舱容') || sq.includes('轻吨')) aspects.push('技术参数');
     if (sq.includes('位置') || sq.includes('在哪') || sq.includes('航速') || sq.includes('目的港') || sq.includes('ETA')) aspects.push('船舶动态');
+    if (sq.includes('PSC') || sq.includes('RIGHTSHIP') || sq.includes('RIGHT SHIP') || sq.includes('缺陷') || sq.includes('滞留') || sq.includes('检查') || sq.includes('港口国') || sq.includes('INSPECTION')) aspects.push('检查记录');
     if (sq.includes('建议') || sq.includes('提醒') || sq.includes('注意') || sq.includes('应该')) aspects.push('建议/提醒');
     var thinkCtx = buildThinkingContext(structuredData, aspects, message);
     messages.push({ role: 'user', content: thinkCtx + '\n\n[用户问题]\n' + message });
@@ -1581,6 +1612,61 @@ async function buildFrontendContext(message, module) {
       if (matchedShip) {
         // 委托给 buildShipsContext 生成结构化 JSON（含参数+证书+动态）
         return buildShipsContext(message);
+      }
+      
+      // === PSC/RightShip 跨船聚合查询 ===
+      var isInspectionQuery = q.includes('PSC') || q.includes('RIGHTSHIP') || q.includes('检查') || q.includes('缺陷');
+      var isAggQuery = isInspectionQuery && (q.includes('有哪些船') || q.includes('哪些船') || q.includes('统计') || q.includes('趋势') || q.includes('总结') || q.includes('情况') || q.includes('分布') || q.includes('所有PSC') || q.includes('全部PSC') || q.includes('消防') || q.includes('救生') || q.includes('航行'));
+      if (isAggQuery && STATE.inspectionHistory) {
+        var ih = STATE.inspectionHistory;
+        var ctx = '【知识库检索结果 — PSC/RightShip检查统计】\n\n';
+        
+        // PSC Q1+Q2 总览
+        if (ih.psc && ih.psc.quarters) {
+          ctx += '=== PSC 检查 ===\n';
+          for (var qk of Object.keys(ih.psc.quarters).sort()) {
+            var qdata = ih.psc.quarters[qk];
+            ctx += qk + ': ' + qdata.inspection_count + '条船, ' + qdata.total_defects + '条缺陷\n';
+            var cd = qdata.category_distribution || {};
+            var cdEntries = Object.entries(cd).sort(function(a,b){return b[1]-a[1];}).slice(0, 5);
+            ctx += '  Top5缺陷: ' + cdEntries.map(function(e){return e[0]+'×'+e[1];}).join(', ') + '\n';
+          }
+          ctx += '\n';
+        }
+        
+        // RightShip Q1+Q2 总览
+        if (ih.rightship && ih.rightship.quarters) {
+          ctx += '=== RightShip 检查 ===\n';
+          for (var rk of Object.keys(ih.rightship.quarters).sort()) {
+            var rdata = ih.rightship.quarters[rk];
+            ctx += rk + ': ' + rdata.inspection_count + '条船, ' + rdata.total_defects + '条缺陷\n';
+            if (rdata.summary) ctx += '  摘要: ' + rdata.summary.slice(0, 200) + '\n';
+          }
+          ctx += '\n';
+        }
+        
+        // 按缺陷类别查询
+        var catQuery = null;
+        var catKeywords = { '消防': '消防安全', '救生': '救生设备', '航行': '航行安全', '结构': '船舶结构', '机电': '机电设备', '应急': '应急系统', '通讯': '无线电通讯', '证书': '证书文件', '污染': '防污染', 'ISM': 'ISM管理', 'MLC': 'MLC' };
+        for (var ck in catKeywords) {
+          if (q.includes(ck)) { catQuery = catKeywords[ck]; break; }
+        }
+        
+        if (catQuery && ih.psc && ih.psc.by_category && ih.psc.by_category[catQuery]) {
+          var entries = ih.psc.by_category[catQuery];
+          ctx += '=== 【' + catQuery + '】缺陷分布 ===\n';
+          for (var ei = 0; ei < entries.length; ei++) {
+            var e = entries[ei];
+            ctx += '- ' + e.ship + ' (' + e.quarter + '): ' + e.defects.length + '条\n';
+            for (var di = 0; di < e.defects.length; di++) {
+              var dd = e.defects[di];
+              ctx += '  ' + dd.code + ': ' + dd.desc.slice(0, 80) + '\n';
+            }
+          }
+          ctx += '\n';
+        }
+        
+        return ctx.slice(0, 16000);
       }
       
       // 按证书类型/到期日关键词搜索（非船名查询场景）
@@ -2423,6 +2509,32 @@ function buildThinkingContext(structuredData, aspects, message) {
       if (withExp.length > showN) ctx += '  ... 还有' + (withExp.length - showN) + '份\n';
     }
     ctx += '\n';
+  }
+
+  // PSC/RightShip 检查记录
+  if (structuredData.inspections) {
+    var insp = structuredData.inspections;
+    ctx += '## PSC/RightShip检查记录\n';
+    if (insp.psc && insp.psc.length > 0) {
+      ctx += '### PSC（' + insp.psc.length + '次）\n';
+      for (var pi = 0; pi < insp.psc.length; pi++) {
+        var p = insp.psc[pi];
+        ctx += '- ' + p.date + ' ' + p.port + ': ' + p.count + '条缺陷\n';
+        for (var pd = 0; pd < p.defects.length; pd++) {
+          var d = p.defects[pd];
+          ctx += '  [' + d.category + '] (' + d.code + ') ' + d.desc + '\n';
+        }
+      }
+      ctx += '\n';
+    }
+    if (insp.rightship && insp.rightship.length > 0) {
+      ctx += '### RightShip（' + insp.rightship.length + '次）\n';
+      for (var ri = 0; ri < insp.rightship.length; ri++) {
+        var r = insp.rightship[ri];
+        ctx += '- ' + r.date + ' ' + r.port + ': ' + r.count + '条缺陷\n';
+      }
+      ctx += '\n';
+    }
   }
   
   // 4. 意图预分析
