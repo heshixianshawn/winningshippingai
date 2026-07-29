@@ -1298,11 +1298,15 @@ function buildShipsContext(message) {
     ship: matchedShip,
     params: params ? {
       imo: params.imo,
+      call_sign: params.call_sign,
       flag: params.flag,
       class_notation: params.class_notation,
       class_society: params.class_society,
       built: params.built,
       builder: params.builder,
+      takeover_date: params.takeover_date,
+      owner: params.owner,
+      manager: params.manager,
       gt: params.gt,
       nt: params.nt,
       dwt: params.dwt,
@@ -1498,8 +1502,8 @@ async function callAPI(message, module, imageData) {
     var sq = message.toUpperCase();
     if (sq.includes('到期') || sq.includes('过期') || sq.includes('效期') || sq.includes('EXPIR')) aspects.push('证书到期');
     if (sq.includes('证书') || sq.includes('CERT')) aspects.push('证书信息');
-    if (sq.includes('参数') || sq.includes('船旗') || sq.includes('船级') || sq.includes('吨位') || sq.includes('主机')) aspects.push('技术参数');
-    if (sq.includes('位置') || sq.includes('在哪') || sq.includes('航速') || sq.includes('目的港')) aspects.push('船舶动态');
+    if (sq.includes('参数') || sq.includes('船旗') || sq.includes('船级') || sq.includes('吨位') || sq.includes('主机') || sq.includes('资料') || sq.includes('PARTICULAR') || sq.includes('呼号') || sq.includes('CALL SIGN') || sq.includes('建造') || sq.includes('船厂') || sq.includes('船东') || sq.includes('管理公司') || sq.includes('辅机') || sq.includes('姊妹') || sq.includes('压载水') || sq.includes('脱硫塔') || sq.includes('舱容') || sq.includes('轻吨')) aspects.push('技术参数');
+    if (sq.includes('位置') || sq.includes('在哪') || sq.includes('航速') || sq.includes('目的港') || sq.includes('ETA')) aspects.push('船舶动态');
     if (sq.includes('建议') || sq.includes('提醒') || sq.includes('注意') || sq.includes('应该')) aspects.push('建议/提醒');
     var thinkCtx = buildThinkingContext(structuredData, aspects, message);
     messages.push({ role: 'user', content: thinkCtx + '\n\n[用户问题]\n' + message });
@@ -2370,33 +2374,34 @@ function buildThinkingContext(structuredData, aspects, message) {
   if (!structuredData) return '';
   var ctx = '【思考引擎 — 船舶综合分析】\n\n';
   
-  // 1. 船舶基本信息
+  // 1. 船舶基本参数（使用【基本参数】标记匹配系统提示词中的权威数据来源声明）
   if (structuredData.params) {
     var p = structuredData.params;
-    ctx += '## 船舶基本信息\n';
+    ctx += '【基本参数】（以下数据来自船队统计表Excel，为权威技术参数，请直接引用）\n';
     ctx += '- 船名: ' + (structuredData.ship || '未知') + '\n';
-    ctx += '- IMO: ' + (p.imo || '—') + '\n';
-    ctx += '- 船旗国: ' + (p.flag || '—') + '\n';
-    ctx += '- 船级社: ' + (p.class_notation || '—') + '\n';
-    ctx += '- 建造年份: ' + ((p.built || '—').slice(0,4)) + '\n';
-    ctx += '- 建造船厂: ' + (p.builder || '—') + '\n';
+    ctx += '- IMO: ' + (p.imo || '—') + ' | 呼号: ' + (p.call_sign || '—') + '\n';
+    ctx += '- 船旗国: ' + (p.flag || '—') + ' | 船级社: ' + (p.class_notation || '—') + '\n';
+    ctx += '- 建造年份: ' + ((p.built || '—').slice(0,4)) + ' | 船厂: ' + (p.builder || '—') + '\n';
     ctx += '- 接管日期: ' + (p.takeover_date || '—') + '\n';
     ctx += '- 船东: ' + (p.owner || '—') + '\n';
-    ctx += '- DWT: ' + (p.dwt || '—') + ' | GT: ' + (p.gt || '—') + '\n';
+    ctx += '- 管理公司: ' + (p.manager || '—') + '\n';
+    ctx += '- DWT: ' + (p.dwt || '—') + ' | GT: ' + (p.gt || '—') + ' | NT: ' + (p.nt || '—') + ' | 轻吨: ' + (p.light_ton || '—') + '\n';
     ctx += '- 主机: ' + (p.me || '—') + '\n';
+    ctx += '- 副机: ' + (p.ae || '—') + '\n';
     if (p.scrubber) ctx += '- 脱硫塔: ' + p.scrubber + '\n';
     if (p.bwt) ctx += '- 压载水: ' + p.bwt + '\n';
     ctx += '\n';
   }
   
-  // 2. 当前动态
+  // 2. 当前动态（使用【当前动态】标记匹配系统提示词）
   if (structuredData.dynamic) {
     var d = structuredData.dynamic;
-    ctx += '## 当前动态\n';
+    ctx += '【当前动态】（以下数据来自AIS实时数据，请直接引用）\n';
     ctx += '- 状态: ' + (d.status || '未知') + '\n';
     ctx += '- 位置: (' + (d.position || '未知') + ')\n';
     ctx += '- 航速: ' + (d.speed_kn || '—') + ' kn\n';
     ctx += '- 目的港: ' + (d.destination || '未知') + '\n';
+    ctx += '- ETA: ' + (d.eta || '—') + '\n';
     ctx += '- 更新时间: ' + (d.updateTime || '—') + '\n\n';
   }
   
