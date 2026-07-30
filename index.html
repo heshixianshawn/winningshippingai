@@ -2679,9 +2679,9 @@ function buildThinkingContext(structuredData, aspects, message) {
   // PSC/RightShip 检查记录
   if (structuredData.inspections) {
     var insp = structuredData.inspections;
-    ctx += '## PSC/RightShip检查记录\n';
+    ctx += '## 检查记录（PSC/RightShip）\n';
     if (insp.psc && insp.psc.length > 0) {
-      ctx += '### PSC（' + insp.psc.length + '次）\n';
+      ctx += '### 港口国检查 PSC（' + insp.psc.length + '次）\n';
       for (var pi = 0; pi < insp.psc.length; pi++) {
         var p = insp.psc[pi];
         ctx += '- ' + p.date + ' ' + p.port + ': ' + p.count + '条缺陷\n';
@@ -2693,7 +2693,7 @@ function buildThinkingContext(structuredData, aspects, message) {
       ctx += '\n';
     }
     if (insp.rightship && insp.rightship.length > 0) {
-      ctx += '### RightShip（' + insp.rightship.length + '次）\n';
+      ctx += '### RightShip检查（' + insp.rightship.length + '次）\n';
       for (var ri = 0; ri < insp.rightship.length; ri++) {
         var r = insp.rightship[ri];
         ctx += '- ' + r.date + ' ' + r.port + ': ' + r.count + '条缺陷\n';
@@ -2701,8 +2701,29 @@ function buildThinkingContext(structuredData, aspects, message) {
       ctx += '\n';
     }
   }
+
+  // 修船历史（SMIS数据）
+  if (structuredData.repair_summary) {
+    var rs = structuredData.repair_summary;
+    ctx += '## 修船历史（SMIS船舶管理系统）\n';
+    ctx += '- 总修理次数: ' + rs.total + ' 次（2025: ' + rs.total2025 + '次, 2026: ' + rs.total2026 + '次）\n';
+    var catStr = [];
+    for (var k in rs.categories) catStr.push(k + '×' + rs.categories[k]);
+    ctx += '- 修理类别: ' + catStr.join(', ') + '\n';
+    var portStr = [];
+    for (var pk in rs.ports) portStr.push(pk + '×' + rs.ports[pk]);
+    ctx += '- 修理港口: ' + portStr.join(', ') + '\n';
+    if (rs.recent && rs.recent.length > 0) {
+      ctx += '- 最近修理记录:\n';
+      for (var rj = 0; rj < rs.recent.length; rj++) {
+        var r = rs.recent[rj];
+        ctx += '  ' + (r.y || '—') + ' | ' + (r.c || '—') + ' | ' + (r.p || '—') + ' | ' + (r.s || '—') + ' | ' + (r.d || '—') + ' | 厂商: ' + (r.v || '—') + '\n';
+      }
+    }
+    ctx += '\n';
+  }
   
-  // 4. 意图预分析
+  // 意图预分析
   ctx += '## 思考引擎预分析\n';
   ctx += '检测到用户关注: ' + (aspects && aspects.length > 0 ? aspects.join('、') : '船舶综合信息') + '\n';
   ctx += '匹配证书类型: ' + (structuredData.matched_cert_type || '全部') + '\n\n';
