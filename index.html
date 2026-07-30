@@ -355,7 +355,8 @@ var STATE = {
   fleetFilter: 'all',
   fleetParams: null,
   inspectionHistory: null,
-  repairData: null
+  repairData: null,
+  nkSurveyData: null
 };
 
 try {
@@ -504,6 +505,7 @@ els.sendBtn.disabled = false;
 
 // 惰性加载船队参数
 loadFleetParams();
+loadNkSurveyData();
 
 // ====== 船舶知识库加载 ======
 var SHIP_DATA_URL = 'data/ship_knowledge.json';
@@ -836,6 +838,16 @@ async function loadFleetParams() {
     STATE.fleetParams = await resp.json();
   } catch(e) {
     console.warn('fleet_params.json 加载失败:', e.message);
+  }
+}
+
+async function loadNkSurveyData() {
+  try {
+    const resp = await fetch('data/nk_survey_knowledge.json?_t=' + Date.now());
+    STATE.nkSurveyData = await resp.json();
+    console.log('NK Survey Status 加载完成:', Object.keys(STATE.nkSurveyData).length, '艘船');
+  } catch(e) {
+    console.warn('nk_survey_knowledge.json 加载失败:', e.message);
   }
 }
 
@@ -1384,7 +1396,18 @@ function buildShipsContext(message) {
     }
   }
   
-  // 4. 打包结构化数据
+  // 4. 获取NK Survey Status（船级社证书到期日）
+  let nkSurvey = null;
+  if (STATE.nkSurveyData) {
+    for (const [name, data] of Object.entries(STATE.nkSurveyData)) {
+      if (name.toUpperCase() === matchedShip.toUpperCase()) {
+        nkSurvey = data.certificates || null;
+        break;
+      }
+    }
+  }
+  
+  // 5. 打包结构化数据
   var structuredData = {
     type: 'ship_query',
     ship: matchedShip,
@@ -1411,6 +1434,7 @@ function buildShipsContext(message) {
     certificates: certList,
     cert_count: certs.length,
     dynamic: dynamic,
+    nkSurvey: nkSurvey,
     inspections: getShipInspections(matchedShip),
     matched_cert_type: matchedCertType,
     repair_summary: getRepairSummary(matchedShip)
