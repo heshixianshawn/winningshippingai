@@ -354,7 +354,8 @@ var STATE = {
   fleetData: null,
   fleetFilter: 'all',
   fleetParams: null,
-  inspectionHistory: null
+  inspectionHistory: null,
+  repairData: null
 };
 
 try {
@@ -516,6 +517,68 @@ async function loadShipKnowledge() {
     const el = document.getElementById('shipContent');
     if (el) el.innerHTML = '<div class="empty-fleet"><p>⚠️ 加载失败: ' + e.message + '</p></div>';
   }
+}
+
+// ====== SMIS修船记录 ======
+async function loadRepairData() {
+  if (STATE.repairData) return STATE.repairData;
+  try {
+    var resp = await fetch('data/smis_repair.json?_t=' + Date.now());
+    STATE.repairData = await resp.json();
+    return STATE.repairData;
+  } catch(e) {
+    console.warn('SMIS repair data load failed:', e.message);
+    return null;
+  }
+}
+
+function getRepairStats(shipName) {
+  var rd = STATE.repairData;
+  if (!rd || !rd.by_imo) return null;
+  // 按船名搜索所有IMO分组
+  var records = [];
+  for (var imo in rd.by_imo) {
+    var rs = rd.by_imo[imo];
+    for (var i = 0; i < rs.length; i++) {
+      if (rs[i].ship === shipName || rs[i].s === shipName) {
+        records.push(rs[i]);
+      }
+    }
+  }
+  // 也查找完整记录里的
+  if (records.length === 0 && rd.by_imo) {
+    // ship名不在字段里，跳过
+  }
+  return records;
+}
+
+function getRepairSummary(shipName) {
+  var records = getRepairStats(shipName);
+  if (!records || records.length === 0) return null;
+  
+  // Use the field from the lite format: y, c, pd, s, d, p, f, v
+  // or full format: year, ship, imo, category, plan_date, status, description, plan_fee, vendor, port
+  var cats = {}, ports = {};
+  var total2025 = 0, total2026 = 0;
+  records.forEach(function(r) {
+    var cat = r.c || r.category || '未知';
+    var port = r.p || r.port || '';
+    var year = r.y || r.year || '';
+    cats[cat] = (cats[cat] || 0) + 1;
+    if (port) ports[port] = (ports[port] || 0) + 1;
+    if (year === '2025') total2025++;
+    else if (year === '2026') total2026++;
+  });
+  
+  var recent = records.slice(-5).reverse();
+  return {
+    total: records.length,
+    total2025: total2025,
+    total2026: total2026,
+    categories: cats,
+    ports: ports,
+    recent: recent
+  };
 }
 
 function renderShipKnowledge(searchText) {
@@ -1349,7 +1412,8 @@ function buildShipsContext(message) {
     cert_count: certs.length,
     dynamic: dynamic,
     inspections: getShipInspections(matchedShip),
-    matched_cert_type: matchedCertType
+    matched_cert_type: matchedCertType,
+    repair_summary: getRepairSummary(matchedShip)
   };
   
   // 序列化为JSON字符串，传给Worker
@@ -1610,8 +1674,23 @@ async function buildFrontendContext(message, module) {
       }
 
       if (matchedShip) {
-        // 委托给 buildShipsContext 生成结构化 JSON（含参数+证书+动态）
+        // 委托给 buildShipsContext 生成结构化 JSON（含参数+证书+动态+修船）
         return buildShipsContext(message);
+      }
+      
+      // === 修船记录查询 ===
+      var isRepairQuery = /修船|修理|航修|\u5382\u4fee|维修|修了|SMIS/.test(q);
+      if (isRepairQuery && STATE.repairData) {
+        var rd = STATE.repairData;
+        var meta = rd._meta || {};
+        var ctx = '【SMIS修船记录 — 船队概览】\n\n';
+        ctx += '修船安排总记录：' + meta.total_records + ' 条\n';
+        ctx += '涉及船舶：' + (meta.ships_count || '?') + ' 艘\n';
+        var cats = meta.categories || {};
+        ctx += '类别分布：' + Object.keys(cats).map(function(k){return k+'\u00d7'+cats[k];}).join(' | ') + '\n\n';
+        ctx += '数据来源：SMIS船舶管理信息平台（2025-2026）\n';
+        ctx += '提示：如需查询特定船舶的修船记录，请说出船名。';
+        return ctx;
       }
       
       // === PSC/RightShip 跨船聚合查询 ===
@@ -1967,7 +2046,9 @@ window.openOverlay = function(contentId, title) {
     loadCrewDataOverlay();
   } else if (contentId === 'sysSafety' || contentId === 'sysShipMgt' || contentId === 'sysEmergency' || contentId === 'sysLabor') {
     searchKnowledgeBaseOverlay(contentId);
-  } else if (contentId === 'techManual' || contentId === 'techDrawing' || contentId === 'techReport' || contentId === 'techVendor') {
+  } else if (contentId === 'techReport') {
+    loadRepairReportOverlay();
+  } else if (contentId === 'techManual' || contentId === 'techDrawing' || contentId === 'techVendor') {
     searchKnowledgeBaseOverlay(contentId, 'tech');
   } else if (contentId === 'pdf') {
     // PDF预览占位，内容由 openRegulationPdf 填充
@@ -2030,6 +2111,90 @@ function renderToOverlay(category, type, db) {
   });
   h += '</div>';
   contentEl.innerHTML = h;
+}
+
+// ====== 修船报告覆盖面板 ======
+async function loadRepairReportOverlay() {
+  var contentEl = document.getElementById('overlayContent');
+  contentEl.innerHTML = '<div class=panel-placeholder><p>\u23f3 \u52a0\u8f7d\u4fee\u8239\u6570\u636e...</p></div>';
+  
+  var rd = await loadRepairData();
+  if (!rd || !rd.by_imo) {
+    contentEl.innerHTML = '<div class=panel-placeholder><p>\u26a0\ufe0f \u4fee\u8239\u6570\u636e\u52a0\u8f7d\u5931\u8d25</p></div>';
+    return;
+  }
+  
+  var meta = rd._meta || {};
+  var shipRecords = {};
+  for (var imo in rd.by_imo) {
+    var recs = rd.by_imo[imo];
+    for (var j = 0; j < recs.length; j++) {
+      var r = recs[j];
+      var ship = r.ship || '';
+      if (!shipRecords[ship]) shipRecords[ship] = [];
+      shipRecords[ship].push(r);
+    }
+  }
+  
+  var cats = meta.categories || {};
+  var catStr = Object.keys(cats).map(function(k){return k+' '+cats[k];}).join(' | ');
+  var h = '<div class=ship-stat-bar>';
+  h += '<span class="ship-stat total">\ud83d\udcdd ' + meta.total_records + ' \u6761\u4fee\u8239\u8bb0\u5f55</span>';
+  h += '<span class=ship-stat>\ud83d\udee0 ' + catStr + '</span>';
+  h += '</div>';
+  
+  h += '<div style="padding:8px 0"><input type=text id=repairSearchBox placeholder="\u641c\u7d22\u8239\u540d" style="width:60%;padding:6px 10px;border:1px solid #ddd;border-radius:4px" oninput="filterRepairCards()"></div>';
+  
+  var shipNames = Object.keys(shipRecords).sort();
+  h += '<div class=ship-grid>';
+  shipNames.forEach(function(ship) {
+    var recs = shipRecords[ship];
+    var catMap = {};
+    recs.forEach(function(r) { var c = r.c || ''; catMap[c] = (catMap[c] || 0) + 1; });
+    var catBadge = Object.keys(catMap).map(function(k){return k+'\u00d7'+catMap[k];}).join(' ');
+    
+    h += '<div class="ship-card repair-card" onclick="this.classList.toggle(\'expanded\')" data-ship="' + ship + '"><h4>\ud83d\udd27 ' + ship + ' <span>' + recs.length + '\u6761</span></h4>';
+    h += '<div class=certs><span>' + catBadge + '</span></div>';
+    h += '<div class=ship-detail>';
+    var sorted = recs.slice().sort(function(a,b){return (b.pd||'').localeCompare(a.pd||'');});
+    sorted.slice(0, 5).forEach(function(r) {
+      var desc = (r.d || '').substring(0, 80);
+      var cat = r.c || '';
+      var date = r.pd || '';
+      var port = r.p || '';
+      var status = r.s || '';
+      h += '<div class=ship-detail-item><b>[' + cat + ']</b> ' + desc + '<span style="font-size:11px;color:#888;margin-left:4px">' + date + ' ' + port + ' ' + status + '</span></div>';
+    });
+    if (recs.length > 5) h += '<div style="text-align:center;padding:4px;color:#999;font-size:11px">... \u8fd8\u6709' + (recs.length-5) + '\u6761</div>';
+    h += '</div></div>';
+  });
+  h += '</div>';
+  
+  h += '<div style="margin-top:16px"><h3 style="font-size:15px;margin:8px 0">\ud83d\udcca \u5404\u8239\u4fee\u8239\u6c47\u603b</h3>';
+  h += '<table style="width:100%;border-collapse:collapse;font-size:12px">';
+  h += '<tr style="background:#f5f5f5"><th style="text-align:left;padding:4px">\u8239\u540d</th><th>2025</th><th>2026</th><th>\u5408\u8ba1</th><th>\u822a\u4fee</th><th>\u5382\u4fee</th><th>\u4e3b\u8981\u6e2f\u53e3</th></tr>';
+  shipNames.forEach(function(ship) {
+    var summary = getRepairSummary(ship) || {total:0,total2025:0,total2026:0,categories:{},ports:{}};
+    var topPort = Object.keys(summary.ports||{}).sort(function(a,b){return (summary.ports[b]||0)-(summary.ports[a]||0);}).slice(0,2).join(', ');
+    h += '<tr><td style="padding:3px 4px"><b>' + ship + '</b></td>';
+    h += '<td style="text-align:center">' + (summary.total2025||0) + '</td>';
+    h += '<td style="text-align:center">' + (summary.total2026||0) + '</td>';
+    h += '<td style="text-align:center"><b>' + summary.total + '</b></td>';
+    h += '<td style="text-align:center">' + ((summary.categories||{})['\u822a\u4fee']||0) + '</td>';
+    h += '<td style="text-align:center">' + ((summary.categories||{})['\u5382\u4fee']||0) + '</td>';
+    h += '<td style="font-size:11px;color:#666">' + topPort + '</td></tr>';
+  });
+  h += '</table></div>';
+  contentEl.innerHTML = h;
+}
+
+function filterRepairCards() {
+  var q = (document.getElementById('repairSearchBox').value || '').toUpperCase();
+  var cards = document.querySelectorAll('.repair-card');
+  cards.forEach(function(c) {
+    var ship = (c.getAttribute('data-ship') || '').toUpperCase();
+    c.style.display = (!q || ship.includes(q)) ? '' : 'none';
+  });
 }
 
 function loadShipCertificates() {
