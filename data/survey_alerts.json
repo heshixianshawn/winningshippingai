@@ -1,681 +1,578 @@
 {
-  "generated": "2026-08-09",
-  "urgent_7d": [
+  "generated": "2026-08-09 23:31",
+  "expired": [
     {
-      "ship": "SUNNY STAR",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "2026-08-09",
-      "days": 0,
-      "status": "VALID"
+      "ship": "WINNING SPIRIT",
+      "class": "KR",
+      "description": "Load Line",
+      "date": "2026-08-03",
+      "days": -6
     },
     {
-      "ship": "SUNNY FRIA",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "2026-08-09",
-      "days": 0,
-      "status": "VALID"
+      "ship": "WINNING SPIRIT",
+      "class": "KR",
+      "description": "Safety Construction",
+      "date": "2026-08-03",
+      "days": -6
+    },
+    {
+      "ship": "WINNING SPIRIT",
+      "class": "KR",
+      "description": "Safety Equipment",
+      "date": "2026-08-03",
+      "days": -6
+    },
+    {
+      "ship": "WINNING SPIRIT",
+      "class": "KR",
+      "description": "Safety Radio",
+      "date": "2026-08-03",
+      "days": -6
+    },
+    {
+      "ship": "WINNING SPIRIT",
+      "class": "KR",
+      "description": "Cargo Gear",
+      "date": "2026-08-03",
+      "days": -6
     },
     {
       "ship": "WINNING JOY",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "2026-08-09",
-      "days": 0,
-      "status": "VALID"
+      "class": "CCS",
+      "description": "Class Annual Survey",
+      "date": "2026-08-01",
+      "days": -8
     },
     {
-      "ship": "WINNING RESILIENCE",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "2026-08-09",
-      "days": 0,
-      "status": "VALID"
+      "ship": "WINNING JOY",
+      "class": "CCS",
+      "description": "IOPP",
+      "date": "2026-08-01",
+      "days": -8
+    },
+    {
+      "ship": "WINNING JOY",
+      "class": "CCS",
+      "description": "IAPP",
+      "date": "2026-08-01",
+      "days": -8
     },
     {
       "ship": "WINNING WEALTH",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "2026-08-09",
-      "days": 0,
-      "status": "VALID"
+      "class": "CCS",
+      "description": "ISPP",
+      "date": "2026-07-13",
+      "days": -27
+    },
+    {
+      "ship": "WINNING WEALTH",
+      "class": "CCS",
+      "description": "IHM",
+      "date": "2026-07-13",
+      "days": -27
+    },
+    {
+      "ship": "SUNNY FRIA",
+      "class": "CCS",
+      "description": "Class Intermediate Survey",
+      "date": "2026-07-10",
+      "days": -30
+    },
+    {
+      "ship": "SUNNY FRIA",
+      "class": "CCS",
+      "description": "ISM DOC",
+      "date": "2026-07-10",
+      "days": -30
+    },
+    {
+      "ship": "SUNNY FRIA",
+      "class": "CCS",
+      "description": "Safety Construction",
+      "date": "2026-07-10",
+      "days": -30
+    },
+    {
+      "ship": "SUNNY FRIA",
+      "class": "CCS",
+      "description": "Safety Equipment",
+      "date": "2026-07-10",
+      "days": -30
+    },
+    {
+      "ship": "SUNNY FRIA",
+      "class": "CCS",
+      "description": "Safety Radio",
+      "date": "2026-07-10",
+      "days": -30
+    },
+    {
+      "ship": "SUNNY FRIA",
+      "class": "CCS",
+      "description": "Cargo Gear",
+      "date": "2026-07-10",
+      "days": -30
+    },
+    {
+      "ship": "SUNNY STAR",
+      "class": "NK",
+      "description": "Class Special Survey for",
+      "date": "2026-06-17",
+      "days": -53
+    },
+    {
+      "ship": "SUNNY STAR",
+      "class": "NK",
+      "description": "ISM DOC",
+      "date": "2026-06-17",
+      "days": -53
+    },
+    {
+      "ship": "SUNNY STAR",
+      "class": "NK",
+      "description": "Safety Construction",
+      "date": "2026-06-17",
+      "days": -53
+    },
+    {
+      "ship": "SUNNY STAR",
+      "class": "NK",
+      "description": "Safety Equipment",
+      "date": "2026-06-17",
+      "days": -53
+    },
+    {
+      "ship": "SUNNY STAR",
+      "class": "NK",
+      "description": "Safety Radio",
+      "date": "2026-06-17",
+      "days": -53
+    },
+    {
+      "ship": "SUNNY STAR",
+      "class": "NK",
+      "description": "Cargo Gear",
+      "date": "2026-06-17",
+      "days": -53
+    },
+    {
+      "ship": "WINNING AMBITION",
+      "class": "DNV",
+      "description": "Statement of Drydock Inspection",
+      "date": "2026-06-16",
+      "days": -54
+    },
+    {
+      "ship": "WINNING AMBITION",
+      "class": "DNV",
+      "description": "ISPP",
+      "date": "2026-06-16",
+      "days": -54
+    },
+    {
+      "ship": "WINNING AMBITION",
+      "class": "DNV",
+      "description": "Safety Construction",
+      "date": "2026-06-16",
+      "days": -54
+    },
+    {
+      "ship": "WINNING AMBITION",
+      "class": "DNV",
+      "description": "Safety Equipment",
+      "date": "2026-06-16",
+      "days": -54
+    },
+    {
+      "ship": "WINNING AMBITION",
+      "class": "DNV",
+      "description": "Safety Radio",
+      "date": "2026-06-16",
+      "days": -54
+    },
+    {
+      "ship": "WINNING AMBITION",
+      "class": "DNV",
+      "description": "Cargo Gear",
+      "date": "2026-06-16",
+      "days": -54
+    },
+    {
+      "ship": "WINNING RESILIENCE",
+      "class": "CCS",
+      "description": "Class Annual Survey",
+      "date": "2026-06-01",
+      "days": -69
+    },
+    {
+      "ship": "WINNING RESILIENCE",
+      "class": "CCS",
+      "description": "IOPP",
+      "date": "2026-06-01",
+      "days": -69
+    },
+    {
+      "ship": "WINNING RESILIENCE",
+      "class": "CCS",
+      "description": "IAPP",
+      "date": "2026-06-01",
+      "days": -69
+    },
+    {
+      "ship": "WINNING JOY",
+      "class": "CCS",
+      "description": "Class Intermediate Survey",
+      "date": "2026-05-02",
+      "days": -99
+    },
+    {
+      "ship": "WINNING JOY",
+      "class": "CCS",
+      "description": "ISM DOC",
+      "date": "2025-11-04",
+      "days": -278
+    },
+    {
+      "ship": "WINNING KINDNESS",
+      "class": "KR",
+      "description": "Load Line",
+      "date": "2025-10-05",
+      "days": -308
+    },
+    {
+      "ship": "WINNING KINDNESS",
+      "class": "KR",
+      "description": "Safety Construction",
+      "date": "2025-10-05",
+      "days": -308
+    },
+    {
+      "ship": "WINNING KINDNESS",
+      "class": "KR",
+      "description": "Safety Equipment",
+      "date": "2025-10-05",
+      "days": -308
+    },
+    {
+      "ship": "WINNING KINDNESS",
+      "class": "KR",
+      "description": "Safety Radio",
+      "date": "2025-10-05",
+      "days": -308
+    },
+    {
+      "ship": "WINNING KINDNESS",
+      "class": "KR",
+      "description": "Cargo Gear",
+      "date": "2025-10-05",
+      "days": -308
+    },
+    {
+      "ship": "WINNING WEALTH",
+      "class": "CCS",
+      "description": "Class Annual Survey",
+      "date": "2025-09-09",
+      "days": -334
+    },
+    {
+      "ship": "WINNING WEALTH",
+      "class": "CCS",
+      "description": "IOPP",
+      "date": "2025-09-09",
+      "days": -334
+    },
+    {
+      "ship": "WINNING WEALTH",
+      "class": "CCS",
+      "description": "IAPP",
+      "date": "2025-09-09",
+      "days": -334
+    },
+    {
+      "ship": "WINNING RESILIENCE",
+      "class": "CCS",
+      "description": "Class Intermediate Survey",
+      "date": "2025-08-05",
+      "days": -369
     },
     {
       "ship": "WINNING WISDOM",
-      "type": "certificate",
-      "name": "DOC",
+      "class": "CCS",
+      "description": "Class Special Survey for",
+      "date": "2025-06-15",
+      "days": -420
+    },
+    {
+      "ship": "WINNING WISDOM",
+      "class": "CCS",
+      "description": "Safety Construction",
+      "date": "2025-06-15",
+      "days": -420
+    },
+    {
+      "ship": "WINNING WISDOM",
+      "class": "CCS",
+      "description": "Safety Equipment",
+      "date": "2025-06-15",
+      "days": -420
+    },
+    {
+      "ship": "WINNING WISDOM",
+      "class": "CCS",
+      "description": "Safety Radio",
+      "date": "2025-06-15",
+      "days": -420
+    },
+    {
+      "ship": "WINNING WISDOM",
+      "class": "CCS",
+      "description": "Cargo Gear",
+      "date": "2025-06-15",
+      "days": -420
+    },
+    {
+      "ship": "WINNING WEALTH",
+      "class": "CCS",
+      "description": "Class Intermediate Survey",
+      "date": "2024-12-24",
+      "days": -593
+    },
+    {
+      "ship": "WINNING WEALTH",
+      "class": "CCS",
+      "description": "ISM DOC",
+      "date": "2024-12-24",
+      "days": -593
+    },
+    {
+      "ship": "WINNING WEALTH",
+      "class": "CCS",
+      "description": "Safety Construction",
+      "date": "2024-12-24",
+      "days": -593
+    },
+    {
+      "ship": "WINNING WEALTH",
+      "class": "CCS",
+      "description": "Safety Equipment",
+      "date": "2024-12-24",
+      "days": -593
+    },
+    {
+      "ship": "WINNING WEALTH",
+      "class": "CCS",
+      "description": "Safety Radio",
+      "date": "2024-12-24",
+      "days": -593
+    },
+    {
+      "ship": "WINNING WEALTH",
+      "class": "CCS",
+      "description": "Cargo Gear",
+      "date": "2024-12-24",
+      "days": -593
+    },
+    {
+      "ship": "WINNING WEALTH",
+      "class": "CCS",
+      "description": "AFS",
+      "date": "2024-12-24",
+      "days": -593
+    },
+    {
+      "ship": "WINNING WISDOM",
+      "class": "CCS",
+      "description": "ISM DOC",
+      "date": "2024-10-05",
+      "days": -673
+    },
+    {
+      "ship": "WINNING WISDOM",
+      "class": "CCS",
+      "description": "MLC",
+      "date": "2024-10-05",
+      "days": -673
+    },
+    {
+      "ship": "WINNING WISDOM",
+      "class": "CCS",
+      "description": "AFS",
+      "date": "2024-10-05",
+      "days": -673
+    },
+    {
+      "ship": "WINNING RICH",
+      "class": "KR",
+      "description": "Load Line",
+      "date": "2024-09-11",
+      "days": -697
+    },
+    {
+      "ship": "WINNING RICH",
+      "class": "KR",
+      "description": "Safety Construction",
+      "date": "2024-09-11",
+      "days": -697
+    },
+    {
+      "ship": "WINNING RICH",
+      "class": "KR",
+      "description": "Safety Equipment",
+      "date": "2024-09-11",
+      "days": -697
+    },
+    {
+      "ship": "WINNING RICH",
+      "class": "KR",
+      "description": "Safety Radio",
+      "date": "2024-09-11",
+      "days": -697
+    },
+    {
+      "ship": "WINNING RICH",
+      "class": "KR",
+      "description": "Cargo Gear",
+      "date": "2024-09-11",
+      "days": -697
+    },
+    {
+      "ship": "SUNNY FRIA",
+      "class": "CCS",
+      "description": "Class Special Survey for",
+      "date": "2024-09-10",
+      "days": -698
+    },
+    {
+      "ship": "WINNING SPIRIT",
+      "class": "KR",
+      "description": "AFS",
+      "date": "2024-08-25",
+      "days": -714
+    },
+    {
+      "ship": "WINNING JOY",
+      "class": "CCS",
+      "description": "Class Special Survey for",
+      "date": "2024-08-09",
+      "days": -730
+    },
+    {
+      "ship": "WINNING JOY",
+      "class": "CCS",
+      "description": "Safety Construction",
+      "date": "2024-08-09",
+      "days": -730
+    },
+    {
+      "ship": "WINNING JOY",
+      "class": "CCS",
+      "description": "Safety Equipment",
+      "date": "2024-08-09",
+      "days": -730
+    },
+    {
+      "ship": "WINNING JOY",
+      "class": "CCS",
+      "description": "Safety Radio",
+      "date": "2024-08-09",
+      "days": -730
+    },
+    {
+      "ship": "WINNING JOY",
+      "class": "CCS",
+      "description": "Cargo Gear",
+      "date": "2024-08-09",
+      "days": -730
+    },
+    {
+      "ship": "WINNING JOY",
+      "class": "CCS",
+      "description": "AFS",
+      "date": "2024-03-21",
+      "days": -871
+    },
+    {
+      "ship": "WINNING RICH",
+      "class": "KR",
+      "description": "AFS",
+      "date": "2023-09-15",
+      "days": -1059
+    },
+    {
+      "ship": "WINNING KINDNESS",
+      "class": "KR",
+      "description": "AFS",
+      "date": "2023-07-08",
+      "days": -1128
+    }
+  ],
+  "urgent_7d": [
+    {
+      "ship": "SUNNY STAR",
+      "class": "NK",
+      "description": "DOC",
       "date": "2026-08-09",
-      "days": 0,
-      "status": "VALID"
+      "days": 0
+    },
+    {
+      "ship": "SUNNY FRIA",
+      "class": "CCS",
+      "description": "DOC",
+      "date": "2026-08-09",
+      "days": 0
+    },
+    {
+      "ship": "WINNING JOY",
+      "class": "CCS",
+      "description": "DOC",
+      "date": "2026-08-09",
+      "days": 0
+    },
+    {
+      "ship": "WINNING WEALTH",
+      "class": "CCS",
+      "description": "DOC",
+      "date": "2026-08-09",
+      "days": 0
+    },
+    {
+      "ship": "WINNING WISDOM",
+      "class": "CCS",
+      "description": "DOC",
+      "date": "2026-08-09",
+      "days": 0
     }
   ],
   "warning_30d": [
     {
       "ship": "WINNING PEACE",
-      "type": "certificate",
-      "name": "ISM Renewal Audit 2",
+      "class": "ABS",
+      "description": "ISM Renewal Audit 2",
       "date": "2026-08-19",
-      "days": 10,
-      "status": "DUE 🔴"
+      "days": 10
     },
     {
       "ship": "WINNING PEACE",
-      "type": "certificate",
-      "name": "ISPS Renewal Verification 2",
+      "class": "ABS",
+      "description": "ISPS Renewal Verification 2",
       "date": "2026-08-19",
-      "days": 10,
-      "status": "DUE 🔴"
+      "days": 10
     },
     {
       "ship": "WINNING PEACE",
-      "type": "certificate",
-      "name": "MLC Renewal Inspection 2",
+      "class": "ABS",
+      "description": "MLC Renewal Inspection 2",
       "date": "2026-08-19",
-      "days": 10,
-      "status": "DUE 🔴"
-    },
-    {
-      "ship": "SUNNY SAILOR",
-      "type": "certificate",
-      "name": "Load Line",
-      "date": "07 Sep 2026",
-      "days": 29,
-      "status": "EXPIRING"
-    },
-    {
-      "ship": "SUNNY SAILOR",
-      "type": "certificate",
-      "name": "Safety Construction",
-      "date": "07 Sep 2026",
-      "days": 29,
-      "status": "EXPIRING"
-    },
-    {
-      "ship": "SUNNY SAILOR",
-      "type": "certificate",
-      "name": "Safety Equipment",
-      "date": "07 Sep 2026",
-      "days": 29,
-      "status": "EXPIRING"
-    },
-    {
-      "ship": "SUNNY SAILOR",
-      "type": "certificate",
-      "name": "Safety Radio",
-      "date": "07 Sep 2026",
-      "days": 29,
-      "status": "EXPIRING"
-    },
-    {
-      "ship": "SUNNY SAILOR",
-      "type": "survey",
-      "name": "Load Line",
-      "date": "07 Sep 2026",
-      "days": 29,
-      "status": "Not Due"
-    },
-    {
-      "ship": "SUNNY SAILOR",
-      "type": "survey",
-      "name": "Safety Construction",
-      "date": "07 Sep 2026",
-      "days": 29,
-      "status": "Not Due"
-    },
-    {
-      "ship": "SUNNY SAILOR",
-      "type": "survey",
-      "name": "Safety Equipment",
-      "date": "07 Sep 2026",
-      "days": 29,
-      "status": "Not Due"
-    },
-    {
-      "ship": "SUNNY SAILOR",
-      "type": "survey",
-      "name": "Safety Radio",
-      "date": "07 Sep 2026",
-      "days": 29,
-      "status": "Not Due"
-    }
-  ],
-  "expired_recent": [
-    {
-      "ship": "WINNING DILIGENCE",
-      "type": "certificate",
-      "name": "BWM",
-      "date": "12 May 2026",
-      "days": -89,
-      "status": "EXPIRED"
-    },
-    {
-      "ship": "WINNING DILIGENCE",
-      "type": "survey",
-      "name": "BWM",
-      "date": "12 May 2026",
-      "days": -89,
-      "status": "Not Due"
-    },
-    {
-      "ship": "WINNING RESILIENCE",
-      "type": "certificate",
-      "name": "IOPP",
-      "date": "2026-06-01",
-      "days": -69,
-      "status": "VALID"
-    },
-    {
-      "ship": "WINNING RESILIENCE",
-      "type": "certificate",
-      "name": "IAPP",
-      "date": "2026-06-01",
-      "days": -69,
-      "status": "VALID"
-    },
-    {
-      "ship": "WINNING RESILIENCE",
-      "type": "survey",
-      "name": "Class Annual Survey",
-      "date": "2026-06-01",
-      "days": -69,
-      "status": "Not Due"
-    },
-    {
-      "ship": "WINNING OCEAN",
-      "type": "certificate",
-      "name": "BWM",
-      "date": "07 Jun 2026",
-      "days": -63,
-      "status": "EXPIRED"
-    },
-    {
-      "ship": "WINNING OCEAN",
-      "type": "survey",
-      "name": "BWM",
-      "date": "07 Jun 2026",
-      "days": -63,
-      "status": "Not Due"
-    },
-    {
-      "ship": "WINNING TEAM",
-      "type": "certificate",
-      "name": "BWM",
-      "date": "07 Jun 2026",
-      "days": -63,
-      "status": "EXPIRED"
-    },
-    {
-      "ship": "WINNING TEAM",
-      "type": "survey",
-      "name": "BWM",
-      "date": "07 Jun 2026",
-      "days": -63,
-      "status": "Not Due"
-    },
-    {
-      "ship": "WINNING SEA",
-      "type": "certificate",
-      "name": "BWM",
-      "date": "07 Jun 2026",
-      "days": -63,
-      "status": "EXPIRED"
-    },
-    {
-      "ship": "WINNING SEA",
-      "type": "survey",
-      "name": "BWM",
-      "date": "07 Jun 2026",
-      "days": -63,
-      "status": "Not Due"
-    },
-    {
-      "ship": "WINNING INTEGRITY",
-      "type": "certificate",
-      "name": "BWM",
-      "date": "07 Jun 2026",
-      "days": -63,
-      "status": "EXPIRED"
-    },
-    {
-      "ship": "WINNING INTEGRITY",
-      "type": "survey",
-      "name": "BWM",
-      "date": "07 Jun 2026",
-      "days": -63,
-      "status": "Not Due"
-    },
-    {
-      "ship": "WINNING LOYALTY",
-      "type": "certificate",
-      "name": "BWM",
-      "date": "07 Jun 2026",
-      "days": -63,
-      "status": "EXPIRED"
-    },
-    {
-      "ship": "WINNING LOYALTY",
-      "type": "survey",
-      "name": "BWM",
-      "date": "07 Jun 2026",
-      "days": -63,
-      "status": "Not Due"
-    },
-    {
-      "ship": "WINNING UNIVERSE",
-      "type": "certificate",
-      "name": "BWM",
-      "date": "07 Jun 2026",
-      "days": -63,
-      "status": "EXPIRED"
-    },
-    {
-      "ship": "WINNING UNIVERSE",
-      "type": "survey",
-      "name": "BWM",
-      "date": "07 Jun 2026",
-      "days": -63,
-      "status": "Not Due"
-    },
-    {
-      "ship": "WINNING YOUTH",
-      "type": "certificate",
-      "name": "BWM",
-      "date": "07 Jun 2026",
-      "days": -63,
-      "status": "EXPIRED"
-    },
-    {
-      "ship": "WINNING YOUTH",
-      "type": "survey",
-      "name": "BWM",
-      "date": "07 Jun 2026",
-      "days": -63,
-      "status": "Not Due"
-    },
-    {
-      "ship": "WINNING WORLD",
-      "type": "certificate",
-      "name": "BWM",
-      "date": "07 Jun 2026",
-      "days": -63,
-      "status": "EXPIRED"
-    },
-    {
-      "ship": "WINNING WORLD",
-      "type": "survey",
-      "name": "BWM",
-      "date": "07 Jun 2026",
-      "days": -63,
-      "status": "Not Due"
-    },
-    {
-      "ship": "WINNING MISSION",
-      "type": "certificate",
-      "name": "BWM",
-      "date": "07 Jun 2026",
-      "days": -63,
-      "status": "EXPIRED"
-    },
-    {
-      "ship": "WINNING MISSION",
-      "type": "survey",
-      "name": "BWM",
-      "date": "07 Jun 2026",
-      "days": -63,
-      "status": "Not Due"
-    },
-    {
-      "ship": "WINNING NATURE",
-      "type": "certificate",
-      "name": "BWM",
-      "date": "07 Jun 2026",
-      "days": -63,
-      "status": "EXPIRED"
-    },
-    {
-      "ship": "WINNING NATURE",
-      "type": "survey",
-      "name": "BWM",
-      "date": "07 Jun 2026",
-      "days": -63,
-      "status": "Not Due"
-    },
-    {
-      "ship": "WINNING VISION",
-      "type": "certificate",
-      "name": "BWM",
-      "date": "07 Jun 2026",
-      "days": -63,
-      "status": "EXPIRED"
-    },
-    {
-      "ship": "WINNING VISION",
-      "type": "survey",
-      "name": "BWM",
-      "date": "07 Jun 2026",
-      "days": -63,
-      "status": "Not Due"
-    },
-    {
-      "ship": "WINNING RISING",
-      "type": "certificate",
-      "name": "BWM",
-      "date": "07 Jun 2026",
-      "days": -63,
-      "status": "EXPIRED"
-    },
-    {
-      "ship": "WINNING RISING",
-      "type": "survey",
-      "name": "BWM",
-      "date": "07 Jun 2026",
-      "days": -63,
-      "status": "Not Due"
-    },
-    {
-      "ship": "WINNING QUEEN",
-      "type": "certificate",
-      "name": "BWM",
-      "date": "07 Jun 2026",
-      "days": -63,
-      "status": "EXPIRED"
-    },
-    {
-      "ship": "WINNING QUEEN",
-      "type": "survey",
-      "name": "BWM",
-      "date": "07 Jun 2026",
-      "days": -63,
-      "status": "Not Due"
-    },
-    {
-      "ship": "WINNING PRIDE",
-      "type": "certificate",
-      "name": "BWM",
-      "date": "07 Jun 2026",
-      "days": -63,
-      "status": "EXPIRED"
-    },
-    {
-      "ship": "WINNING PRIDE",
-      "type": "survey",
-      "name": "BWM",
-      "date": "07 Jun 2026",
-      "days": -63,
-      "status": "Not Due"
-    },
-    {
-      "ship": "SUNNY KAMSAR",
-      "type": "certificate",
-      "name": "SMC",
-      "date": "15 Jun 2026",
-      "days": -55,
-      "status": "EXPIRED"
-    },
-    {
-      "ship": "SUNNY KAMSAR",
-      "type": "certificate",
-      "name": "MLC",
-      "date": "15 Jun 2026",
-      "days": -55,
-      "status": "EXPIRED"
-    },
-    {
-      "ship": "SUNNY KAMSAR",
-      "type": "survey",
-      "name": "SMC",
-      "date": "15 Jun 2026",
-      "days": -55,
-      "status": "Not Due"
-    },
-    {
-      "ship": "SUNNY KAMSAR",
-      "type": "survey",
-      "name": "MLC",
-      "date": "15 Jun 2026",
-      "days": -55,
-      "status": "Not Due"
-    },
-    {
-      "ship": "WINNING AMBITION",
-      "type": "certificate",
-      "name": "ISPP",
-      "date": "2026-06-16",
-      "days": -54,
-      "status": "VALID"
-    },
-    {
-      "ship": "WINNING AMBITION",
-      "type": "certificate",
-      "name": "Safety Construction",
-      "date": "2026-06-16",
-      "days": -54,
-      "status": "VALID"
-    },
-    {
-      "ship": "WINNING AMBITION",
-      "type": "certificate",
-      "name": "Safety Equipment",
-      "date": "2026-06-16",
-      "days": -54,
-      "status": "VALID"
-    },
-    {
-      "ship": "WINNING AMBITION",
-      "type": "certificate",
-      "name": "Safety Radio",
-      "date": "2026-06-16",
-      "days": -54,
-      "status": "VALID"
-    },
-    {
-      "ship": "WINNING AMBITION",
-      "type": "certificate",
-      "name": "Cargo Gear",
-      "date": "2026-06-16",
-      "days": -54,
-      "status": "VALID"
-    },
-    {
-      "ship": "WINNING AMBITION",
-      "type": "survey",
-      "name": "Statement of Drydock Inspection",
-      "date": "2026-06-16",
-      "days": -54,
-      "status": "Not Due"
-    },
-    {
-      "ship": "SUNNY STAR",
-      "type": "certificate",
-      "name": "ISM DOC",
-      "date": "2026-06-17",
-      "days": -53,
-      "status": "VALID"
-    },
-    {
-      "ship": "SUNNY STAR",
-      "type": "certificate",
-      "name": "Safety Construction",
-      "date": "2026-06-17",
-      "days": -53,
-      "status": "VALID"
-    },
-    {
-      "ship": "SUNNY STAR",
-      "type": "certificate",
-      "name": "Safety Equipment",
-      "date": "2026-06-17",
-      "days": -53,
-      "status": "VALID"
-    },
-    {
-      "ship": "SUNNY STAR",
-      "type": "certificate",
-      "name": "Safety Radio",
-      "date": "2026-06-17",
-      "days": -53,
-      "status": "VALID"
-    },
-    {
-      "ship": "SUNNY STAR",
-      "type": "certificate",
-      "name": "Cargo Gear",
-      "date": "2026-06-17",
-      "days": -53,
-      "status": "VALID"
-    },
-    {
-      "ship": "SUNNY STAR",
-      "type": "survey",
-      "name": "Class Special Survey for",
-      "date": "2026-06-17",
-      "days": -53,
-      "status": "Not Due"
-    },
-    {
-      "ship": "SUNNY FRIA",
-      "type": "certificate",
-      "name": "ISM DOC",
-      "date": "2026-07-10",
-      "days": -30,
-      "status": "VALID"
-    },
-    {
-      "ship": "SUNNY FRIA",
-      "type": "certificate",
-      "name": "Safety Construction",
-      "date": "2026-07-10",
-      "days": -30,
-      "status": "VALID"
-    },
-    {
-      "ship": "SUNNY FRIA",
-      "type": "certificate",
-      "name": "Safety Equipment",
-      "date": "2026-07-10",
-      "days": -30,
-      "status": "VALID"
-    },
-    {
-      "ship": "SUNNY FRIA",
-      "type": "certificate",
-      "name": "Safety Radio",
-      "date": "2026-07-10",
-      "days": -30,
-      "status": "VALID"
-    },
-    {
-      "ship": "SUNNY FRIA",
-      "type": "certificate",
-      "name": "Cargo Gear",
-      "date": "2026-07-10",
-      "days": -30,
-      "status": "VALID"
-    },
-    {
-      "ship": "SUNNY FRIA",
-      "type": "survey",
-      "name": "Class Intermediate Survey",
-      "date": "2026-07-10",
-      "days": -30,
-      "status": "Not Due"
-    },
-    {
-      "ship": "WINNING WEALTH",
-      "type": "certificate",
-      "name": "ISPP",
-      "date": "2026-07-13",
-      "days": -27,
-      "status": "VALID"
-    },
-    {
-      "ship": "WINNING WEALTH",
-      "type": "certificate",
-      "name": "IHM",
-      "date": "2026-07-13",
-      "days": -27,
-      "status": "VALID"
-    },
-    {
-      "ship": "WINNING JOY",
-      "type": "certificate",
-      "name": "IOPP",
-      "date": "2026-08-01",
-      "days": -8,
-      "status": "VALID"
-    },
-    {
-      "ship": "WINNING JOY",
-      "type": "certificate",
-      "name": "IAPP",
-      "date": "2026-08-01",
-      "days": -8,
-      "status": "VALID"
-    },
-    {
-      "ship": "WINNING JOY",
-      "type": "survey",
-      "name": "Class Annual Survey",
-      "date": "2026-08-01",
-      "days": -8,
-      "status": "Not Due"
-    },
-    {
-      "ship": "WINNING SPIRIT",
-      "type": "certificate",
-      "name": "Load Line",
-      "date": "2026-08-03",
-      "days": -6,
-      "status": "VALID"
-    },
-    {
-      "ship": "WINNING SPIRIT",
-      "type": "certificate",
-      "name": "Safety Construction",
-      "date": "2026-08-03",
-      "days": -6,
-      "status": "VALID"
-    },
-    {
-      "ship": "WINNING SPIRIT",
-      "type": "certificate",
-      "name": "Safety Equipment",
-      "date": "2026-08-03",
-      "days": -6,
-      "status": "VALID"
-    },
-    {
-      "ship": "WINNING SPIRIT",
-      "type": "certificate",
-      "name": "Safety Radio",
-      "date": "2026-08-03",
-      "days": -6,
-      "status": "VALID"
-    },
-    {
-      "ship": "WINNING SPIRIT",
-      "type": "certificate",
-      "name": "Cargo Gear",
-      "date": "2026-08-03",
-      "days": -6,
-      "status": "VALID"
+      "days": 10
     }
   ],
   "info_90d": [
     {
       "ship": "WINNING WEALTH",
-      "type": "survey",
-      "name": "Class Special Survey for",
+      "class": "CCS",
+      "description": "Class Special Survey for",
       "date": "2026-10-12",
-      "days": 64,
-      "status": "Not Due"
+      "days": 64
     }
-  ],
-  "summary": {
-    "urgent_count": 6,
-    "warning_count": 11,
-    "expired_count": 65,
-    "total_active": 17
-  }
+  ]
 }
