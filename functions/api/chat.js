@@ -7,6 +7,7 @@ import {
   TECH_SYSTEM_PROMPT,
   SHIP_SYSTEM_PROMPT
 } from './_system_prompts.js';
+import { querySurveyKnowledge, getAlertSummary } from './_survey_knowledge.js';
 import { autoSearchKnowledge } from './_knowledge.js';
 import { logToKV } from './_logger.js';
 import { analyzeIntent, buildThinkingContext } from './_thinking_engine.js';
@@ -78,6 +79,16 @@ export async function onRequest(context) {
     } else if (clientContext && typeof clientContext === 'string' && clientContext.length > 0) {
       kbContext = clientContext;
       ragUsed = true;
+    } else if (module === 'ships') {
+      // Survey knowledge base search for ship queries
+      const surveyResult = querySurveyKnowledge(message);
+      if (surveyResult) {
+        kbContext = surveyResult;
+        ragUsed = true;
+      } else {
+        kbContext = await autoSearchKnowledge(module, message, request);
+        ragUsed = !!kbContext;
+      }
     } else {
       kbContext = await autoSearchKnowledge(module, message, request);
       ragUsed = !!kbContext;
@@ -97,6 +108,18 @@ export async function onRequest(context) {
     }
     if (memoryEntries.length > 0) {
       systemContent = injectMemoryPrompt(systemContent, memoryEntries);
+    }
+
+    // ====== Survey Alert Summary for ships module ======
+    if (module === 'ships') {
+      try {
+        const alerts = getAlertSummary();
+        if (alerts) {
+          systemContent += '\n\n【📊 当前检验与证书预警状态】\n' + alerts;
+        }
+      } catch (e) {
+        console.error('[Survey] alert summary failed:', e.message);
+      }
     }
 
     if (ragUsed && kbContext) {
