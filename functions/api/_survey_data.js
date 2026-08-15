@@ -1,5 +1,5 @@
 // Auto-generated. NK Survey Status v2 extraction + full fleet merge.
-// Updated: 2026-08-15 20:40 | Ships: 55
+// Updated: 2026-08-15 21:18 | Ships: 56
 
 const ships = {
   "SUNNY_BEYLA": {
@@ -76,9 +76,9 @@ const ships = {
   },
   "SUNNY_FARANAH": {
     name: "SUNNY FARANAH",
-    imo: "9337107",
+    imo: "",
     classSociety: "CCS",
-    flag: "Panama",
+    flag: "",
     gt: "101933",
     dwt: null,
     buildDate: "2004-11-26",
@@ -88,9 +88,9 @@ const ships = {
   },
   "SUNNY_FRIA": {
     name: "SUNNY FRIA",
-    imo: "9330305",
+    imo: "",
     classSociety: "CCS",
-    flag: "Panama",
+    flag: "",
     gt: "89877",
     dwt: null,
     buildDate: "2004-06-30",
@@ -148,7 +148,7 @@ const ships = {
   },
   "SUNNY_KOGON": {
     name: "SUNNY KOGON",
-    imo: "9312303",
+    imo: "",
     classSociety: "CCS",
     flag: "Liberia",
     gt: "106312",
@@ -242,9 +242,21 @@ const ships = {
     certificates: [{"name": "Load Line", "type": "STATUTORY", "expiry_date": "24 Apr 2027", "status": "VALID"}, {"name": "Safety Construction", "type": "STATUTORY", "expiry_date": "24 Apr 2027", "status": "VALID"}, {"name": "Safety Equipment", "type": "STATUTORY", "expiry_date": "24 Apr 2027", "status": "VALID"}, {"name": "Safety Radio", "type": "STATUTORY", "expiry_date": "24 Apr 2027", "status": "VALID"}, {"name": "BWM", "type": "STATUTORY", "expiry_date": "23 Jul 2022", "status": "EXPIRED"}, {"name": "IHM", "type": "STATUTORY", "expiry_date": "23 Jul 2022", "status": "EXPIRED"}],
     source: {"class_society": "NK", "report_date": "2026-08-15", "extraction_method": "api", "confidence": "high"},
   },
+  "SUNNY_SKY": {
+    name: "SUNNY SKY",
+    imo: "",
+    classSociety: "BV",
+    flag: "",
+    gt: "94145",
+    dwt: null,
+    buildDate: "",
+    surveys: [{"type": "annual_survey", "description": "Annual survey of structure", "due_date": "", "status": "Not Due"}, {"type": "dry_docking", "description": "Bottom Survey in Dry Dock or afloat", "due_date": "", "status": "Not Due"}, {"type": "tail_shaft", "description": "Centre Tailshaft-Complete Survey", "due_date": "", "status": "Not Due"}, {"type": "special_survey", "description": "Garbage Renewal Survey", "due_date": "", "status": "Not Due"}],
+    certificates: [{"name": "ISM SMC", "type": "STATUTORY", "expiry_date": "", "status": "VALID"}, {"name": "ISPS", "type": "STATUTORY", "expiry_date": "", "status": "VALID"}, {"name": "MLC", "type": "STATUTORY", "expiry_date": "", "status": "VALID"}, {"name": "IOPP", "type": "STATUTORY", "expiry_date": "", "status": "VALID"}, {"name": "IAPP", "type": "STATUTORY", "expiry_date": "", "status": "VALID"}, {"name": "ISPP", "type": "STATUTORY", "expiry_date": "", "status": "VALID"}, {"name": "Load Line", "type": "STATUTORY", "expiry_date": "", "status": "VALID"}, {"name": "Safety Construction", "type": "STATUTORY", "expiry_date": "", "status": "VALID"}, {"name": "Safety Equipment", "type": "STATUTORY", "expiry_date": "", "status": "VALID"}, {"name": "Safety Radio", "type": "STATUTORY", "expiry_date": "", "status": "VALID"}, {"name": "BWM", "type": "STATUTORY", "expiry_date": "", "status": "VALID"}, {"name": "IHM", "type": "STATUTORY", "expiry_date": "", "status": "VALID"}, {"name": "Cargo Gear", "type": "STATUTORY", "expiry_date": "", "status": "VALID"}, {"name": "AFS", "type": "STATUTORY", "expiry_date": "", "status": "VALID"}, {"name": "SMC", "type": "STATUTORY", "expiry_date": "", "status": "VALID"}],
+    source: {"class_society": "BV", "report_date": "2026-08-15", "extraction_method": "pdf_text", "confidence": "medium"},
+  },
   "SUNNY_STAR": {
     name: "SUNNY STAR",
-    imo: "9461300",
+    imo: "",
     classSociety: "CCS",
     flag: "Singapore",
     gt: "94175",
@@ -256,7 +268,7 @@ const ships = {
   },
   "WINNING_AMBITION": {
     name: "WINNING AMBITION",
-    imo: "1037393",
+    imo: "",
     classSociety: "DNV",
     flag: "Singapore",
     gt: "174863",
@@ -264,7 +276,7 @@ const ships = {
     buildDate: "2025-10-22",
     surveys: [{"type": "boiler", "description": "锅炉", "due_date": "", "status": "Not Due"}, {"type": "annual_survey", "description": "Class Annual Survey", "due_date": "2027-03-16", "status": "Not Due"}, {"type": "intermediate_survey", "description": "Class Intermediate Survey", "due_date": "2028-03-16", "status": "Not Due"}, {"type": "special_survey", "description": "Class Special Survey for", "due_date": "2031-03-16", "status": "Not Due"}, {"type": "tail_shaft", "description": "尾轴检验", "due_date": "2036-06-15", "status": "Not Due"}, {"type": "dry_docking", "description": "Statement of Drydock Inspection", "due_date": "2026-06-16", "status": "Not Due"}],
     certificates: [{"name": "ISPS", "type": "STATUTORY", "expiry_date": "", "status": "VALID"}, {"name": "ISPP", "type": "STATUTORY", "expiry_date": "2026-06-16", "status": "VALID"}, {"name": "Load Line", "type": "STATUTORY", "expiry_date": "", "status": "VALID"}, {"name": "Safety Construction", "type": "STATUTORY", "expiry_date": "2026-06-16", "status": "VALID"}, {"name": "Safety Equipment", "type": "STATUTORY", "expiry_date": "2026-06-16", "status": "VALID"}, {"name": "Safety Radio", "type": "STATUTORY", "expiry_date": "2026-06-16", "status": "VALID"}, {"name": "BWM", "type": "STATUTORY", "expiry_date": "", "status": "VALID"}, {"name": "IHM", "type": "STATUTORY", "expiry_date": "2031-03-16", "status": "VALID"}, {"name": "Cargo Gear", "type": "STATUTORY", "expiry_date": "2026-06-16", "status": "VALID"}, {"name": "AFS", "type": "STATUTORY", "expiry_date": "", "status": "VALID"}],
-    source: {"class_society": "DNV", "report_date": "2026-08-15", "extraction_method": "pdf_text", "confidence": "medium", "note": "实际DNV，原误入CCS目录"},
+    source: {"class_society": "DNV", "report_date": "2026-08-15", "extraction_method": "pdf_text", "confidence": "medium"},
   },
   "WINNING_ANGEL": {
     name: "WINNING ANGEL",
@@ -400,7 +412,7 @@ const ships = {
   },
   "WINNING_JOY": {
     name: "WINNING JOY",
-    imo: "9492220",
+    imo: "",
     classSociety: "CCS",
     flag: "Singapore",
     gt: "106884",
@@ -496,7 +508,7 @@ const ships = {
   },
   "WINNING_RESILIENCE": {
     name: "WINNING RESILIENCE",
-    imo: "9410430",
+    imo: "",
     classSociety: "CCS",
     flag: "Panama",
     gt: "114026",
@@ -568,7 +580,7 @@ const ships = {
   },
   "WINNING_TIMES": {
     name: "WINNING TIMES",
-    imo: "9727352",
+    imo: "",
     classSociety: "CCS",
     flag: "Singapore",
     gt: "107514",
@@ -604,7 +616,7 @@ const ships = {
   },
   "WINNING_WAVE": {
     name: "WINNING WAVE",
-    imo: "9748100",
+    imo: "",
     classSociety: "CCS",
     flag: "Singapore",
     gt: "107222",
@@ -616,7 +628,7 @@ const ships = {
   },
   "WINNING_WEALTH": {
     name: "WINNING WEALTH",
-    imo: "9362994",
+    imo: "",
     classSociety: "CCS",
     flag: "Singapore",
     gt: "114019",
@@ -628,7 +640,7 @@ const ships = {
   },
   "WINNING_WISDOM": {
     name: "WINNING WISDOM",
-    imo: "9738583",
+    imo: "",
     classSociety: "CCS",
     flag: "Singapore",
     gt: "108208",
@@ -666,6 +678,6 @@ const ships = {
 
 module.exports = {
   ships,
-  lastUpdated: "2026-08-15 20:40",
-  totalShips: 55,
+  lastUpdated: "2026-08-15 21:18",
+  totalShips: 56,
 };

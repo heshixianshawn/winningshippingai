@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-08-15 20:40",
-  "total_ships": 55,
+  "last_updated": "2026-08-15 21:18",
+  "total_ships": 56,
   "ships": {
     "WINNING_ENDURANCE": {
       "name": "WINNING ENDURANCE",
@@ -1827,7 +1827,7 @@
     },
     "SUNNY_STAR": {
       "name": "SUNNY STAR",
-      "imo": "9461300",
+      "imo": "",
       "class_society": "CCS",
       "flag": "Singapore",
       "gt": "94175",
@@ -2659,9 +2659,9 @@
     },
     "SUNNY_FARANAH": {
       "name": "SUNNY FARANAH",
-      "imo": "9337107",
+      "imo": "",
       "class_society": "CCS",
-      "flag": "Panama",
+      "flag": "",
       "gt": "101933",
       "dwt": "",
       "surveys": [
@@ -2751,9 +2751,9 @@
     },
     "SUNNY_FRIA": {
       "name": "SUNNY FRIA",
-      "imo": "9330305",
+      "imo": "",
       "class_society": "CCS",
-      "flag": "Panama",
+      "flag": "",
       "gt": "89877",
       "dwt": "",
       "surveys": [
@@ -2847,7 +2847,7 @@
     },
     "SUNNY_KOGON": {
       "name": "SUNNY KOGON",
-      "imo": "9312303",
+      "imo": "",
       "class_society": "CCS",
       "flag": "Liberia",
       "gt": "106312",
@@ -2940,93 +2940,9 @@
       },
       "extraction_confidence": "medium"
     },
-    "WINNING_AMBITION": {
-      "name": "WINNING AMBITION",
-      "imo": "1037393",
-      "class_society": "DNV",
-      "flag": "Singapore",
-      "gt": "174863",
-      "dwt": "",
-      "surveys": [
-        {
-          "type": "boiler",
-          "desc": "锅炉"
-        },
-        {
-          "type": "annual_survey",
-          "desc": "Class Annual Survey",
-          "due_date": "2027-03-16"
-        },
-        {
-          "type": "intermediate_survey",
-          "desc": "Class Intermediate Survey",
-          "due_date": "2028-03-16"
-        },
-        {
-          "type": "special_survey",
-          "desc": "Class Special Survey for",
-          "due_date": "2031-03-16"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "尾轴检验",
-          "due_date": "2036-06-15"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Statement of Drydock Inspection",
-          "due_date": "2026-06-16"
-        }
-      ],
-      "certificates": [
-        {
-          "name": "ISPS"
-        },
-        {
-          "name": "ISPP",
-          "expiry": "2026-06-16"
-        },
-        {
-          "name": "Load Line"
-        },
-        {
-          "name": "Safety Construction",
-          "expiry": "2026-06-16"
-        },
-        {
-          "name": "Safety Equipment",
-          "expiry": "2026-06-16"
-        },
-        {
-          "name": "Safety Radio",
-          "expiry": "2026-06-16"
-        },
-        {
-          "name": "BWM"
-        },
-        {
-          "name": "IHM",
-          "expiry": "2031-03-16"
-        },
-        {
-          "name": "Cargo Gear",
-          "expiry": "2026-06-16"
-        },
-        {
-          "name": "AFS"
-        }
-      ],
-      "alerts": {
-        "expired": 5,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "medium"
-    },
     "WINNING_JOY": {
       "name": "WINNING JOY",
-      "imo": "9492220",
+      "imo": "",
       "class_society": "CCS",
       "flag": "Singapore",
       "gt": "106884",
@@ -3122,7 +3038,7 @@
     },
     "WINNING_RESILIENCE": {
       "name": "WINNING RESILIENCE",
-      "imo": "9410430",
+      "imo": "",
       "class_society": "CCS",
       "flag": "Panama",
       "gt": "114026",
@@ -3213,7 +3129,7 @@
     },
     "WINNING_TIMES": {
       "name": "WINNING TIMES",
-      "imo": "9727352",
+      "imo": "",
       "class_society": "CCS",
       "flag": "Singapore",
       "gt": "107514",
@@ -3304,7 +3220,7 @@
     },
     "WINNING_WAVE": {
       "name": "WINNING WAVE",
-      "imo": "9748100",
+      "imo": "",
       "class_society": "CCS",
       "flag": "Singapore",
       "gt": "107222",
@@ -3395,7 +3311,7 @@
     },
     "WINNING_WEALTH": {
       "name": "WINNING WEALTH",
-      "imo": "9362994",
+      "imo": "",
       "class_society": "CCS",
       "flag": "Singapore",
       "gt": "114019",
@@ -3491,7 +3407,7 @@
     },
     "WINNING_WISDOM": {
       "name": "WINNING WISDOM",
-      "imo": "9738583",
+      "imo": "",
       "class_society": "CCS",
       "flag": "Singapore",
       "gt": "108208",
@@ -3584,6 +3500,170 @@
       ],
       "alerts": {
         "expired": 8,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "medium"
+    },
+    "WINNING_AMBITION": {
+      "name": "WINNING AMBITION",
+      "imo": "",
+      "class_society": "DNV",
+      "flag": "Singapore",
+      "gt": "174863",
+      "dwt": "",
+      "surveys": [
+        {
+          "type": "boiler",
+          "desc": "锅炉"
+        },
+        {
+          "type": "annual_survey",
+          "desc": "Class Annual Survey",
+          "due_date": "2027-03-16"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Class Intermediate Survey",
+          "due_date": "2028-03-16"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Class Special Survey for",
+          "due_date": "2031-03-16"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "尾轴检验",
+          "due_date": "2036-06-15"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Statement of Drydock Inspection",
+          "due_date": "2026-06-16"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "ISPS"
+        },
+        {
+          "name": "ISPP",
+          "expiry": "2026-06-16"
+        },
+        {
+          "name": "Load Line"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2026-06-16"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2026-06-16"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2026-06-16"
+        },
+        {
+          "name": "BWM"
+        },
+        {
+          "name": "IHM",
+          "expiry": "2031-03-16"
+        },
+        {
+          "name": "Cargo Gear",
+          "expiry": "2026-06-16"
+        },
+        {
+          "name": "AFS"
+        }
+      ],
+      "alerts": {
+        "expired": 5,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "medium"
+    },
+    "SUNNY_SKY": {
+      "name": "SUNNY SKY",
+      "imo": "",
+      "class_society": "BV",
+      "flag": "",
+      "gt": "94145",
+      "dwt": "180000",
+      "surveys": [
+        {
+          "type": "annual_survey",
+          "desc": "Annual survey of structure"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Bottom Survey in Dry Dock or afloat"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Centre Tailshaft-Complete Survey"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Garbage Renewal Survey"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "ISM SMC"
+        },
+        {
+          "name": "ISPS"
+        },
+        {
+          "name": "MLC"
+        },
+        {
+          "name": "IOPP"
+        },
+        {
+          "name": "IAPP"
+        },
+        {
+          "name": "ISPP"
+        },
+        {
+          "name": "Load Line"
+        },
+        {
+          "name": "Safety Construction"
+        },
+        {
+          "name": "Safety Equipment"
+        },
+        {
+          "name": "Safety Radio"
+        },
+        {
+          "name": "BWM"
+        },
+        {
+          "name": "IHM"
+        },
+        {
+          "name": "Cargo Gear"
+        },
+        {
+          "name": "AFS"
+        },
+        {
+          "name": "SMC"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
         "urgent_7d": 0,
         "warning_30d": 0,
         "info_90d": 0
