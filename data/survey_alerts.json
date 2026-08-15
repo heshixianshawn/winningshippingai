@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-15 20:33",
+  "generated": "2026-08-15 20:40",
   "expired": [
     {
       "ship": "SUNNY STAR",
@@ -234,42 +234,42 @@
     },
     {
       "ship": "WINNING AMBITION",
-      "class": "CCS",
+      "class": "DNV",
       "description": "Statement of Drydock Inspection",
       "date": "2026-06-16",
       "days": -60
     },
     {
       "ship": "WINNING AMBITION",
-      "class": "CCS",
+      "class": "DNV",
       "description": "ISPP",
       "date": "2026-06-16",
       "days": -60
     },
     {
       "ship": "WINNING AMBITION",
-      "class": "CCS",
+      "class": "DNV",
       "description": "Safety Construction",
       "date": "2026-06-16",
       "days": -60
     },
     {
       "ship": "WINNING AMBITION",
-      "class": "CCS",
+      "class": "DNV",
       "description": "Safety Equipment",
       "date": "2026-06-16",
       "days": -60
     },
     {
       "ship": "WINNING AMBITION",
-      "class": "CCS",
+      "class": "DNV",
       "description": "Safety Radio",
       "date": "2026-06-16",
       "days": -60
     },
     {
       "ship": "WINNING AMBITION",
-      "class": "CCS",
+      "class": "DNV",
       "description": "Cargo Gear",
       "date": "2026-06-16",
       "days": -60

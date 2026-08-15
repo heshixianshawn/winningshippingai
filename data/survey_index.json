@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-15 20:33",
+  "last_updated": "2026-08-15 20:40",
   "total_ships": 55,
   "ships": {
     "WINNING_ENDURANCE": {
@@ -1830,8 +1830,8 @@
       "imo": "9461300",
       "class_society": "CCS",
       "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
+      "gt": "94175",
+      "dwt": "",
       "surveys": [
         {
           "type": "boiler",
@@ -2355,8 +2355,8 @@
       "imo": "09",
       "class_society": "KR",
       "flag": "SINGAPORE",
-      "gt": null,
-      "dwt": null,
+      "gt": "",
+      "dwt": "",
       "surveys": [
         {
           "type": "tail_shaft",
@@ -2457,8 +2457,8 @@
       "imo": "09",
       "class_society": "KR",
       "flag": "SINGAPORE",
-      "gt": null,
-      "dwt": null,
+      "gt": "",
+      "dwt": "",
       "surveys": [
         {
           "type": "tail_shaft",
@@ -2559,8 +2559,8 @@
       "imo": "09",
       "class_society": "KR",
       "flag": "SINGAPORE",
-      "gt": null,
-      "dwt": null,
+      "gt": "",
+      "dwt": "",
       "surveys": [
         {
           "type": "tail_shaft",
@@ -2662,8 +2662,8 @@
       "imo": "9337107",
       "class_society": "CCS",
       "flag": "Panama",
-      "gt": null,
-      "dwt": null,
+      "gt": "101933",
+      "dwt": "",
       "surveys": [
         {
           "type": "boiler",
@@ -2754,8 +2754,8 @@
       "imo": "9330305",
       "class_society": "CCS",
       "flag": "Panama",
-      "gt": null,
-      "dwt": null,
+      "gt": "89877",
+      "dwt": "",
       "surveys": [
         {
           "type": "boiler",
@@ -2850,8 +2850,8 @@
       "imo": "9312303",
       "class_society": "CCS",
       "flag": "Liberia",
-      "gt": null,
-      "dwt": null,
+      "gt": "106312",
+      "dwt": "",
       "surveys": [
         {
           "type": "boiler",
@@ -2943,10 +2943,10 @@
     "WINNING_AMBITION": {
       "name": "WINNING AMBITION",
       "imo": "1037393",
-      "class_society": "CCS",
+      "class_society": "DNV",
       "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
+      "gt": "174863",
+      "dwt": "",
       "surveys": [
         {
           "type": "boiler",
@@ -3029,8 +3029,8 @@
       "imo": "9492220",
       "class_society": "CCS",
       "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
+      "gt": "106884",
+      "dwt": "205940",
       "surveys": [
         {
           "type": "boiler",
@@ -3125,8 +3125,8 @@
       "imo": "9410430",
       "class_society": "CCS",
       "flag": "Panama",
-      "gt": null,
-      "dwt": null,
+      "gt": "114026",
+      "dwt": "",
       "surveys": [
         {
           "type": "boiler",
@@ -3216,8 +3216,8 @@
       "imo": "9727352",
       "class_society": "CCS",
       "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
+      "gt": "107514",
+      "dwt": "",
       "surveys": [
         {
           "type": "boiler",
@@ -3307,8 +3307,8 @@
       "imo": "9748100",
       "class_society": "CCS",
       "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
+      "gt": "107222",
+      "dwt": "",
       "surveys": [
         {
           "type": "boiler",
@@ -3398,8 +3398,8 @@
       "imo": "9362994",
       "class_society": "CCS",
       "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
+      "gt": "114019",
+      "dwt": "",
       "surveys": [
         {
           "type": "boiler",
@@ -3494,8 +3494,8 @@
       "imo": "9738583",
       "class_society": "CCS",
       "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
+      "gt": "108208",
+      "dwt": "206298",
       "surveys": [
         {
           "type": "boiler",
