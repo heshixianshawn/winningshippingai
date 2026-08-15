@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-15 21:18",
+  "last_updated": "2026-08-15 21:51",
   "total_ships": 56,
   "ships": {
     "WINNING_ENDURANCE": {
@@ -7,8 +7,8 @@
       "imo": "9232058",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
+      "gt": "87590",
+      "dwt": "170578",
       "surveys": [
         {
           "type": "other",
@@ -55,8 +55,8 @@
       "imo": "9314076",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
+      "gt": "107791",
+      "dwt": "209513",
       "surveys": [
         {
           "type": "other",
@@ -108,8 +108,8 @@
       "imo": "9722950",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
+      "gt": "102207",
+      "dwt": "203315",
       "surveys": [
         {
           "type": "other",
@@ -161,8 +161,8 @@
       "imo": "9406453",
       "class_society": "NK",
       "flag": "Panama",
-      "gt": null,
-      "dwt": null,
+      "gt": "94779",
+      "dwt": "184887",
       "surveys": [
         {
           "type": "other",
@@ -214,8 +214,8 @@
       "imo": "9722950",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
+      "gt": "102319",
+      "dwt": "203091",
       "surveys": [
         {
           "type": "other",
@@ -267,8 +267,8 @@
       "imo": "9722950",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
+      "gt": "101953",
+      "dwt": "203508",
       "surveys": [
         {
           "type": "other",
@@ -320,8 +320,8 @@
       "imo": "9722950",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
+      "gt": "92758",
+      "dwt": "181501",
       "surveys": [
         {
           "type": "other",
@@ -373,8 +373,8 @@
       "imo": "9722950",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
+      "gt": "90091",
+      "dwt": "180310",
       "surveys": [
         {
           "type": "other",
@@ -426,8 +426,8 @@
       "imo": "9722950",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
+      "gt": "102092",
+      "dwt": "203233",
       "surveys": [
         {
           "type": "other",
@@ -479,8 +479,8 @@
       "imo": "9325001",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
+      "gt": "90091",
+      "dwt": "180265",
       "surveys": [
         {
           "type": "other",
@@ -532,8 +532,8 @@
       "imo": "9314076",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
+      "gt": "107791",
+      "dwt": "209545",
       "surveys": [
         {
           "type": "other",
@@ -585,8 +585,8 @@
       "imo": "9722950",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
+      "gt": "101933",
+      "dwt": "203195",
       "surveys": [
         {
           "type": "other",
@@ -638,8 +638,8 @@
       "imo": "9722950",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
+      "gt": "107786",
+      "dwt": "208970",
       "surveys": [
         {
           "type": "other",
@@ -691,8 +691,8 @@
       "imo": "9374088",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
+      "gt": "90091",
+      "dwt": "180277",
       "surveys": [
         {
           "type": "other",
@@ -744,8 +744,8 @@
       "imo": "9722950",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
+      "gt": "92752",
+      "dwt": "181371",
       "surveys": [
         {
           "type": "other",
@@ -797,8 +797,8 @@
       "imo": "9722950",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
+      "gt": "92752",
+      "dwt": "181387",
       "surveys": [
         {
           "type": "other",
@@ -850,8 +850,8 @@
       "imo": "9722950",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
+      "gt": "107791",
+      "dwt": "208951",
       "surveys": [
         {
           "type": "other",
@@ -903,8 +903,8 @@
       "imo": "9314076",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
+      "gt": "90091",
+      "dwt": "180310",
       "surveys": [
         {
           "type": "other",
@@ -956,8 +956,8 @@
       "imo": "9722950",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
+      "gt": "90421",
+      "dwt": "180140",
       "surveys": [
         {
           "type": "other",
@@ -1009,8 +1009,8 @@
       "imo": "9232058",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
+      "gt": "113929",
+      "dwt": "229186",
       "surveys": [
         {
           "type": "other",
@@ -1057,8 +1057,8 @@
       "imo": "9492218",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
+      "gt": "106884",
+      "dwt": "206125",
       "surveys": [
         {
           "type": "other",
@@ -1110,8 +1110,8 @@
       "imo": "9722950",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
+      "gt": "89726",
+      "dwt": "176967",
       "surveys": [
         {
           "type": "other",
@@ -1163,8 +1163,8 @@
       "imo": "9722950",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
+      "gt": "89603",
+      "dwt": "176890",
       "surveys": [
         {
           "type": "other",
@@ -1216,8 +1216,8 @@
       "imo": "9406506",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
+      "gt": "104761",
+      "dwt": "206306",
       "surveys": [
         {
           "type": "other",
@@ -1269,8 +1269,8 @@
       "imo": "9336957",
       "class_society": "NK",
       "flag": "Hong Kong",
-      "gt": null,
-      "dwt": null,
+      "gt": "101953",
+      "dwt": "203200",
       "surveys": [
         {
           "type": "other",
@@ -1344,8 +1344,8 @@
       "imo": "9398113",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": null,
-      "dwt": null,
+      "gt": "106367",
+      "dwt": "207945",
       "surveys": [
         {
           "type": "other",
@@ -1388,8 +1388,8 @@
       "imo": "9406453",
       "class_society": "NK",
       "flag": "Panama",
-      "gt": null,
-      "dwt": null,
+      "gt": "104721",
+      "dwt": "206312",
       "surveys": [
         {
           "type": "other",
@@ -1441,8 +1441,8 @@
       "imo": "9331426",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": null,
-      "dwt": null,
+      "gt": "101953",
+      "dwt": "203264",
       "surveys": [
         {
           "type": "other",
@@ -1512,8 +1512,8 @@
       "imo": "9374064",
       "class_society": "NK",
       "flag": "Hong Kong",
-      "gt": null,
-      "dwt": null,
+      "gt": "90396",
+      "dwt": "180182",
       "surveys": [
         {
           "type": "other",
@@ -1565,8 +1565,8 @@
       "imo": "9336969",
       "class_society": "NK",
       "flag": "Panama",
-      "gt": null,
-      "dwt": null,
+      "gt": "106367",
+      "dwt": "208014",
       "surveys": [
         {
           "type": "other",
@@ -1618,8 +1618,8 @@
       "imo": "9439125",
       "class_society": "NK",
       "flag": "Panama",
-      "gt": null,
-      "dwt": null,
+      "gt": "90091",
+      "dwt": "180176",
       "surveys": [
         {
           "type": "other",
@@ -1691,8 +1691,8 @@
       "imo": "9387114",
       "class_society": "NK",
       "flag": "Hong Kong",
-      "gt": null,
-      "dwt": null,
+      "gt": "106367",
+      "dwt": "207991",
       "surveys": [
         {
           "type": "other",
@@ -1739,8 +1739,8 @@
       "imo": "9364320",
       "class_society": "NK",
       "flag": "Panama",
-      "gt": null,
-      "dwt": null,
+      "gt": "90092",
+      "dwt": "180201",
       "surveys": [],
       "certificates": [
         {
@@ -1777,8 +1777,8 @@
       "imo": "9271597",
       "class_society": "NK",
       "flag": "Panama",
-      "gt": null,
-      "dwt": null,
+      "gt": "102101",
+      "dwt": "203248",
       "surveys": [
         {
           "type": "other",
@@ -1925,8 +1925,8 @@
       "imo": "9387114",
       "class_society": "NK",
       "flag": "Hong Kong",
-      "gt": null,
-      "dwt": null,
+      "gt": "90125",
+      "dwt": "180201",
       "surveys": [
         {
           "type": "other",
@@ -1973,8 +1973,8 @@
       "imo": "9254666",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": null,
-      "dwt": null,
+      "gt": "88674",
+      "dwt": "176391",
       "surveys": [
         {
           "type": "other",
@@ -2021,8 +2021,8 @@
       "imo": "9253090",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": null,
-      "dwt": null,
+      "gt": "87413",
+      "dwt": "172565",
       "surveys": [
         {
           "type": "other",
@@ -2121,8 +2121,8 @@
       "imo": "9346342",
       "class_society": "NK",
       "flag": "Panama",
-      "gt": null,
-      "dwt": null,
+      "gt": "90111",
+      "dwt": "180129",
       "surveys": [
         {
           "type": "other",
@@ -2174,8 +2174,8 @@
       "imo": "9346342",
       "class_society": "NK",
       "flag": "Panama",
-      "gt": null,
-      "dwt": null,
+      "gt": "104725",
+      "dwt": "206296",
       "surveys": [
         {
           "type": "other",
@@ -2227,8 +2227,8 @@
       "imo": "9406489",
       "class_society": "NK",
       "flag": "Hong Kong",
-      "gt": null,
-      "dwt": null,
+      "gt": "90092",
+      "dwt": "180181",
       "surveys": [
         {
           "type": "other",
@@ -2280,8 +2280,8 @@
       "imo": "9198240",
       "class_society": "NK",
       "flag": "Panama",
-      "gt": null,
-      "dwt": null,
+      "gt": "87473",
+      "dwt": "172498",
       "surveys": [
         {
           "type": "other",
@@ -3038,7 +3038,7 @@
     },
     "WINNING_RESILIENCE": {
       "name": "WINNING RESILIENCE",
-      "imo": "",
+      "imo": "9410430",
       "class_society": "CCS",
       "flag": "Panama",
       "gt": "114026",
@@ -3125,7 +3125,7 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "medium"
+      "extraction_confidence": "high"
     },
     "WINNING_TIMES": {
       "name": "WINNING TIMES",
