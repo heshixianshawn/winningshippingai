@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-08-15 21:51",
-  "total_ships": 56,
+  "last_updated": "2026-08-15 22:23",
+  "total_ships": 58,
   "ships": {
     "WINNING_ENDURANCE": {
       "name": "WINNING ENDURANCE",
@@ -52,7 +52,7 @@
     },
     "WINNING_GRACE": {
       "name": "WINNING GRACE",
-      "imo": "9314076",
+      "imo": "9722948",
       "class_society": "NK",
       "flag": "Singapore",
       "gt": "107791",
@@ -105,9 +105,9 @@
     },
     "WINNING_OCEAN": {
       "name": "WINNING OCEAN",
-      "imo": "9722950",
+      "imo": "9271602",
       "class_society": "NK",
-      "flag": "Singapore",
+      "flag": "Liberia",
       "gt": "102207",
       "dwt": "203315",
       "surveys": [
@@ -158,9 +158,9 @@
     },
     "WINNING_BROTHER": {
       "name": "WINNING BROTHER",
-      "imo": "9406453",
+      "imo": "9250610",
       "class_society": "NK",
-      "flag": "Panama",
+      "flag": "Liberia",
       "gt": "94779",
       "dwt": "184887",
       "surveys": [
@@ -211,7 +211,7 @@
     },
     "WINNING_TEAM": {
       "name": "WINNING TEAM",
-      "imo": "9722950",
+      "imo": "9336945",
       "class_society": "NK",
       "flag": "Singapore",
       "gt": "102319",
@@ -264,9 +264,9 @@
     },
     "WINNING_SEA": {
       "name": "WINNING SEA",
-      "imo": "9722950",
+      "imo": "9254678",
       "class_society": "NK",
-      "flag": "Singapore",
+      "flag": "Liberia",
       "gt": "101953",
       "dwt": "203508",
       "surveys": [
@@ -317,7 +317,7 @@
     },
     "WINNING_INTEGRITY": {
       "name": "WINNING INTEGRITY",
-      "imo": "9722950",
+      "imo": "9633068",
       "class_society": "NK",
       "flag": "Singapore",
       "gt": "92758",
@@ -370,7 +370,7 @@
     },
     "WINNING_LOYALTY": {
       "name": "WINNING LOYALTY",
-      "imo": "9722950",
+      "imo": "9314052",
       "class_society": "NK",
       "flag": "Singapore",
       "gt": "90091",
@@ -423,7 +423,7 @@
     },
     "WINNING_UNIVERSE": {
       "name": "WINNING UNIVERSE",
-      "imo": "9722950",
+      "imo": "9346172",
       "class_society": "NK",
       "flag": "Singapore",
       "gt": "102092",
@@ -529,7 +529,7 @@
     },
     "WINNING_HOPE": {
       "name": "WINNING HOPE",
-      "imo": "9314076",
+      "imo": "9722950",
       "class_society": "NK",
       "flag": "Singapore",
       "gt": "107791",
@@ -582,7 +582,7 @@
     },
     "WINNING_YOUTH": {
       "name": "WINNING YOUTH",
-      "imo": "9722950",
+      "imo": "9278636",
       "class_society": "NK",
       "flag": "Singapore",
       "gt": "101933",
@@ -635,7 +635,7 @@
     },
     "WINNING_WORLD": {
       "name": "WINNING WORLD",
-      "imo": "9722950",
+      "imo": "9859777",
       "class_society": "NK",
       "flag": "Singapore",
       "gt": "107786",
@@ -741,7 +741,7 @@
     },
     "WINNING_MISSION": {
       "name": "WINNING MISSION",
-      "imo": "9722950",
+      "imo": "9659854",
       "class_society": "NK",
       "flag": "Singapore",
       "gt": "92752",
@@ -794,7 +794,7 @@
     },
     "WINNING_NATURE": {
       "name": "WINNING NATURE",
-      "imo": "9722950",
+      "imo": "9659866",
       "class_society": "NK",
       "flag": "Singapore",
       "gt": "92752",
@@ -847,7 +847,7 @@
     },
     "WINNING_VISION": {
       "name": "WINNING VISION",
-      "imo": "9722950",
+      "imo": "9859765",
       "class_society": "NK",
       "flag": "Singapore",
       "gt": "107791",
@@ -953,9 +953,9 @@
     },
     "WINNING_RISING": {
       "name": "WINNING RISING",
-      "imo": "9722950",
+      "imo": "9393199",
       "class_society": "NK",
-      "flag": "Singapore",
+      "flag": "Liberia",
       "gt": "90421",
       "dwt": "180140",
       "surveys": [
@@ -1006,7 +1006,7 @@
     },
     "WINNING_EXCELLENCE": {
       "name": "WINNING EXCELLENCE",
-      "imo": "9232058",
+      "imo": "9279393",
       "class_society": "NK",
       "flag": "Singapore",
       "gt": "113929",
@@ -1107,9 +1107,9 @@
     },
     "WINNING_QUEEN": {
       "name": "WINNING QUEEN",
-      "imo": "9722950",
+      "imo": "9311282",
       "class_society": "NK",
-      "flag": "Singapore",
+      "flag": "Hong Kong, China",
       "gt": "89726",
       "dwt": "176967",
       "surveys": [
@@ -1160,9 +1160,9 @@
     },
     "WINNING_PRIDE": {
       "name": "WINNING PRIDE",
-      "imo": "9722950",
+      "imo": "9450234",
       "class_society": "NK",
-      "flag": "Singapore",
+      "flag": "Hong Kong, China",
       "gt": "89603",
       "dwt": "176890",
       "surveys": [
@@ -1268,7 +1268,7 @@
       "name": "SUNNY KAMSAR",
       "imo": "9336957",
       "class_society": "NK",
-      "flag": "Hong Kong",
+      "flag": "Hong Kong, China",
       "gt": "101953",
       "dwt": "203200",
       "surveys": [
@@ -1387,7 +1387,7 @@
       "name": "SUNNY SIGUIRI",
       "imo": "9406453",
       "class_society": "NK",
-      "flag": "Panama",
+      "flag": "Hong Kong, China",
       "gt": "104721",
       "dwt": "206312",
       "surveys": [
@@ -1511,7 +1511,7 @@
       "name": "SUNNY KINDIA",
       "imo": "9374064",
       "class_society": "NK",
-      "flag": "Hong Kong",
+      "flag": "Hong Kong, China",
       "gt": "90396",
       "dwt": "180182",
       "surveys": [
@@ -1564,7 +1564,7 @@
       "name": "SUNNY KALOUM",
       "imo": "9336969",
       "class_society": "NK",
-      "flag": "Panama",
+      "flag": "Hong Kong, China",
       "gt": "106367",
       "dwt": "208014",
       "surveys": [
@@ -1617,7 +1617,7 @@
       "name": "SUNNY SAILOR",
       "imo": "9439125",
       "class_society": "NK",
-      "flag": "Panama",
+      "flag": "Hong Kong, China",
       "gt": "90091",
       "dwt": "180176",
       "surveys": [
@@ -1688,9 +1688,9 @@
     },
     "SUNNY_DABOLA": {
       "name": "SUNNY DABOLA",
-      "imo": "9387114",
+      "imo": "9398149",
       "class_society": "NK",
-      "flag": "Hong Kong",
+      "flag": "Panama",
       "gt": "106367",
       "dwt": "207991",
       "surveys": [
@@ -1827,11 +1827,11 @@
     },
     "SUNNY_STAR": {
       "name": "SUNNY STAR",
-      "imo": "",
+      "imo": "9461300",
       "class_society": "CCS",
       "flag": "Singapore",
       "gt": "94175",
-      "dwt": "",
+      "dwt": "179843",
       "surveys": [
         {
           "type": "boiler",
@@ -1918,13 +1918,13 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "medium"
+      "extraction_confidence": "high"
     },
     "SUNNY_COYAH": {
       "name": "SUNNY COYAH",
       "imo": "9387114",
       "class_society": "NK",
-      "flag": "Hong Kong",
+      "flag": "Hong Kong, China",
       "gt": "90125",
       "dwt": "180201",
       "surveys": [
@@ -2118,9 +2118,9 @@
     },
     "SUNNY_NZKORE": {
       "name": "SUNNY NZKORE",
-      "imo": "9346342",
+      "imo": "9393187",
       "class_society": "NK",
-      "flag": "Panama",
+      "flag": "Liberia",
       "gt": "90111",
       "dwt": "180129",
       "surveys": [
@@ -2173,7 +2173,7 @@
       "name": "SUNNY MAMOU",
       "imo": "9346342",
       "class_society": "NK",
-      "flag": "Panama",
+      "flag": "Hong Kong, China",
       "gt": "104725",
       "dwt": "206296",
       "surveys": [
@@ -2226,7 +2226,7 @@
       "name": "SUNNY CONAKRY",
       "imo": "9406489",
       "class_society": "NK",
-      "flag": "Hong Kong",
+      "flag": "Hong Kong, China",
       "gt": "90092",
       "dwt": "180181",
       "surveys": [
@@ -2352,11 +2352,11 @@
     },
     "WINNING_KINDNESS": {
       "name": "WINNING KINDNESS",
-      "imo": "09",
+      "imo": "9335240",
       "class_society": "KR",
       "flag": "SINGAPORE",
-      "gt": "",
-      "dwt": "",
+      "gt": "89651",
+      "dwt": "176924",
       "surveys": [
         {
           "type": "tail_shaft",
@@ -2450,15 +2450,15 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "medium"
+      "extraction_confidence": "high"
     },
     "WINNING_RICH": {
       "name": "WINNING RICH",
-      "imo": "09",
+      "imo": "9498054",
       "class_society": "KR",
       "flag": "SINGAPORE",
-      "gt": "",
-      "dwt": "",
+      "gt": "93175",
+      "dwt": "179221",
       "surveys": [
         {
           "type": "tail_shaft",
@@ -2552,15 +2552,15 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "medium"
+      "extraction_confidence": "high"
     },
     "WINNING_SPIRIT": {
       "name": "WINNING SPIRIT",
-      "imo": "09",
+      "imo": "9597824",
       "class_society": "KR",
       "flag": "SINGAPORE",
-      "gt": "",
-      "dwt": "",
+      "gt": "93198",
+      "dwt": "179213",
       "surveys": [
         {
           "type": "tail_shaft",
@@ -2655,15 +2655,15 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "medium"
+      "extraction_confidence": "high"
     },
     "SUNNY_FARANAH": {
       "name": "SUNNY FARANAH",
-      "imo": "",
+      "imo": "9337107",
       "class_society": "CCS",
-      "flag": "",
+      "flag": "Hong Kong, China",
       "gt": "101933",
-      "dwt": "",
+      "dwt": "203185",
       "surveys": [
         {
           "type": "boiler",
@@ -2747,15 +2747,15 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "medium"
+      "extraction_confidence": "high"
     },
     "SUNNY_FRIA": {
       "name": "SUNNY FRIA",
-      "imo": "",
+      "imo": "9330305",
       "class_society": "CCS",
-      "flag": "",
+      "flag": "Hong Kong, China",
       "gt": "89877",
-      "dwt": "",
+      "dwt": "177003",
       "surveys": [
         {
           "type": "boiler",
@@ -2843,15 +2843,15 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "medium"
+      "extraction_confidence": "high"
     },
     "SUNNY_KOGON": {
       "name": "SUNNY KOGON",
-      "imo": "",
+      "imo": "9312303",
       "class_society": "CCS",
       "flag": "Liberia",
       "gt": "106312",
-      "dwt": "",
+      "dwt": "207960",
       "surveys": [
         {
           "type": "boiler",
@@ -2938,11 +2938,11 @@
         "warning_30d": 3,
         "info_90d": 0
       },
-      "extraction_confidence": "medium"
+      "extraction_confidence": "high"
     },
     "WINNING_JOY": {
       "name": "WINNING JOY",
-      "imo": "",
+      "imo": "9492220",
       "class_society": "CCS",
       "flag": "Singapore",
       "gt": "106884",
@@ -3034,7 +3034,7 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "medium"
+      "extraction_confidence": "high"
     },
     "WINNING_RESILIENCE": {
       "name": "WINNING RESILIENCE",
@@ -3042,7 +3042,7 @@
       "class_society": "CCS",
       "flag": "Panama",
       "gt": "114026",
-      "dwt": "",
+      "dwt": "229069",
       "surveys": [
         {
           "type": "boiler",
@@ -3129,11 +3129,11 @@
     },
     "WINNING_TIMES": {
       "name": "WINNING TIMES",
-      "imo": "",
+      "imo": "9727352",
       "class_society": "CCS",
       "flag": "Singapore",
       "gt": "107514",
-      "dwt": "",
+      "dwt": "207219",
       "surveys": [
         {
           "type": "boiler",
@@ -3216,15 +3216,15 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "medium"
+      "extraction_confidence": "high"
     },
     "WINNING_WAVE": {
       "name": "WINNING WAVE",
-      "imo": "",
+      "imo": "9748100",
       "class_society": "CCS",
       "flag": "Singapore",
       "gt": "107222",
-      "dwt": "",
+      "dwt": "207469",
       "surveys": [
         {
           "type": "boiler",
@@ -3307,15 +3307,15 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "medium"
+      "extraction_confidence": "high"
     },
     "WINNING_WEALTH": {
       "name": "WINNING WEALTH",
-      "imo": "",
+      "imo": "9362994",
       "class_society": "CCS",
       "flag": "Singapore",
       "gt": "114019",
-      "dwt": "",
+      "dwt": "229117",
       "surveys": [
         {
           "type": "boiler",
@@ -3403,11 +3403,11 @@
         "warning_30d": 0,
         "info_90d": 1
       },
-      "extraction_confidence": "medium"
+      "extraction_confidence": "high"
     },
     "WINNING_WISDOM": {
       "name": "WINNING WISDOM",
-      "imo": "",
+      "imo": "9738583",
       "class_society": "CCS",
       "flag": "Singapore",
       "gt": "108208",
@@ -3504,15 +3504,15 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "medium"
+      "extraction_confidence": "high"
     },
     "WINNING_AMBITION": {
       "name": "WINNING AMBITION",
-      "imo": "",
+      "imo": "1037393",
       "class_society": "DNV",
       "flag": "Singapore",
       "gt": "174863",
-      "dwt": "",
+      "dwt": "325000",
       "surveys": [
         {
           "type": "boiler",
@@ -3588,13 +3588,13 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "medium"
+      "extraction_confidence": "high"
     },
     "SUNNY_SKY": {
       "name": "SUNNY SKY",
-      "imo": "",
+      "imo": "9461295",
       "class_society": "BV",
-      "flag": "",
+      "flag": "Singapore",
       "gt": "94145",
       "dwt": "180000",
       "surveys": [
@@ -3668,7 +3668,41 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "medium"
+      "extraction_confidence": "high"
+    },
+    "WINNING_PEACE": {
+      "name": "WINNING PEACE",
+      "imo": "9500625",
+      "class_society": "ABS",
+      "flag": "Hong Kong",
+      "gt": "94862",
+      "dwt": "180725",
+      "surveys": [],
+      "certificates": [],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "high"
+    },
+    "WINNING_PROGRESS": {
+      "name": "WINNING PROGRESS",
+      "imo": "9576296",
+      "class_society": "ABS",
+      "flag": "Republic of Singapore",
+      "gt": "93217",
+      "dwt": "179166",
+      "surveys": [],
+      "certificates": [],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "high"
     }
   }
 }
