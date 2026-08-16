@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-08-15 22:23",
-  "total_ships": 58,
+  "last_updated": "2026-08-16 10:09",
+  "total_ships": 61,
   "ships": {
     "WINNING_ENDURANCE": {
       "name": "WINNING ENDURANCE",
       "imo": "9232058",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "87590",
-      "dwt": "170578",
+      "gt": null,
+      "dwt": null,
       "surveys": [
         {
           "type": "other",
@@ -52,11 +52,11 @@
     },
     "WINNING_GRACE": {
       "name": "WINNING GRACE",
-      "imo": "9722948",
+      "imo": "9314076",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "107791",
-      "dwt": "209513",
+      "gt": null,
+      "dwt": null,
       "surveys": [
         {
           "type": "other",
@@ -105,11 +105,11 @@
     },
     "WINNING_OCEAN": {
       "name": "WINNING OCEAN",
-      "imo": "9271602",
+      "imo": "9722950",
       "class_society": "NK",
-      "flag": "Liberia",
-      "gt": "102207",
-      "dwt": "203315",
+      "flag": "Singapore",
+      "gt": null,
+      "dwt": null,
       "surveys": [
         {
           "type": "other",
@@ -158,11 +158,11 @@
     },
     "WINNING_BROTHER": {
       "name": "WINNING BROTHER",
-      "imo": "9250610",
+      "imo": "9406453",
       "class_society": "NK",
-      "flag": "Liberia",
-      "gt": "94779",
-      "dwt": "184887",
+      "flag": "Panama",
+      "gt": null,
+      "dwt": null,
       "surveys": [
         {
           "type": "other",
@@ -211,11 +211,11 @@
     },
     "WINNING_TEAM": {
       "name": "WINNING TEAM",
-      "imo": "9336945",
+      "imo": "9722950",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "102319",
-      "dwt": "203091",
+      "gt": null,
+      "dwt": null,
       "surveys": [
         {
           "type": "other",
@@ -264,11 +264,11 @@
     },
     "WINNING_SEA": {
       "name": "WINNING SEA",
-      "imo": "9254678",
+      "imo": "9722950",
       "class_society": "NK",
-      "flag": "Liberia",
-      "gt": "101953",
-      "dwt": "203508",
+      "flag": "Singapore",
+      "gt": null,
+      "dwt": null,
       "surveys": [
         {
           "type": "other",
@@ -317,11 +317,11 @@
     },
     "WINNING_INTEGRITY": {
       "name": "WINNING INTEGRITY",
-      "imo": "9633068",
+      "imo": "9722950",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "92758",
-      "dwt": "181501",
+      "gt": null,
+      "dwt": null,
       "surveys": [
         {
           "type": "other",
@@ -370,11 +370,11 @@
     },
     "WINNING_LOYALTY": {
       "name": "WINNING LOYALTY",
-      "imo": "9314052",
+      "imo": "9722950",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "90091",
-      "dwt": "180310",
+      "gt": null,
+      "dwt": null,
       "surveys": [
         {
           "type": "other",
@@ -423,11 +423,11 @@
     },
     "WINNING_UNIVERSE": {
       "name": "WINNING UNIVERSE",
-      "imo": "9346172",
+      "imo": "9722950",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "102092",
-      "dwt": "203233",
+      "gt": null,
+      "dwt": null,
       "surveys": [
         {
           "type": "other",
@@ -479,8 +479,8 @@
       "imo": "9325001",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "90091",
-      "dwt": "180265",
+      "gt": null,
+      "dwt": null,
       "surveys": [
         {
           "type": "other",
@@ -529,11 +529,11 @@
     },
     "WINNING_HOPE": {
       "name": "WINNING HOPE",
-      "imo": "9722950",
+      "imo": "9314076",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "107791",
-      "dwt": "209545",
+      "gt": null,
+      "dwt": null,
       "surveys": [
         {
           "type": "other",
@@ -582,11 +582,11 @@
     },
     "WINNING_YOUTH": {
       "name": "WINNING YOUTH",
-      "imo": "9278636",
+      "imo": "9722950",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "101933",
-      "dwt": "203195",
+      "gt": null,
+      "dwt": null,
       "surveys": [
         {
           "type": "other",
@@ -635,11 +635,11 @@
     },
     "WINNING_WORLD": {
       "name": "WINNING WORLD",
-      "imo": "9859777",
+      "imo": "9722950",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "107786",
-      "dwt": "208970",
+      "gt": null,
+      "dwt": null,
       "surveys": [
         {
           "type": "other",
@@ -691,8 +691,8 @@
       "imo": "9374088",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "90091",
-      "dwt": "180277",
+      "gt": null,
+      "dwt": null,
       "surveys": [
         {
           "type": "other",
@@ -741,11 +741,11 @@
     },
     "WINNING_MISSION": {
       "name": "WINNING MISSION",
-      "imo": "9659854",
+      "imo": "9722950",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "92752",
-      "dwt": "181371",
+      "gt": null,
+      "dwt": null,
       "surveys": [
         {
           "type": "other",
@@ -794,11 +794,11 @@
     },
     "WINNING_NATURE": {
       "name": "WINNING NATURE",
-      "imo": "9659866",
+      "imo": "9722950",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "92752",
-      "dwt": "181387",
+      "gt": null,
+      "dwt": null,
       "surveys": [
         {
           "type": "other",
@@ -847,11 +847,11 @@
     },
     "WINNING_VISION": {
       "name": "WINNING VISION",
-      "imo": "9859765",
+      "imo": "9722950",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "107791",
-      "dwt": "208951",
+      "gt": null,
+      "dwt": null,
       "surveys": [
         {
           "type": "other",
@@ -903,8 +903,8 @@
       "imo": "9314076",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "90091",
-      "dwt": "180310",
+      "gt": null,
+      "dwt": null,
       "surveys": [
         {
           "type": "other",
@@ -953,11 +953,11 @@
     },
     "WINNING_RISING": {
       "name": "WINNING RISING",
-      "imo": "9393199",
+      "imo": "9722950",
       "class_society": "NK",
-      "flag": "Liberia",
-      "gt": "90421",
-      "dwt": "180140",
+      "flag": "Singapore",
+      "gt": null,
+      "dwt": null,
       "surveys": [
         {
           "type": "other",
@@ -1006,11 +1006,11 @@
     },
     "WINNING_EXCELLENCE": {
       "name": "WINNING EXCELLENCE",
-      "imo": "9279393",
+      "imo": "9232058",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "113929",
-      "dwt": "229186",
+      "gt": null,
+      "dwt": null,
       "surveys": [
         {
           "type": "other",
@@ -1057,8 +1057,8 @@
       "imo": "9492218",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "106884",
-      "dwt": "206125",
+      "gt": null,
+      "dwt": null,
       "surveys": [
         {
           "type": "other",
@@ -1107,11 +1107,11 @@
     },
     "WINNING_QUEEN": {
       "name": "WINNING QUEEN",
-      "imo": "9311282",
+      "imo": "9722950",
       "class_society": "NK",
-      "flag": "Hong Kong, China",
-      "gt": "89726",
-      "dwt": "176967",
+      "flag": "Singapore",
+      "gt": null,
+      "dwt": null,
       "surveys": [
         {
           "type": "other",
@@ -1160,11 +1160,11 @@
     },
     "WINNING_PRIDE": {
       "name": "WINNING PRIDE",
-      "imo": "9450234",
+      "imo": "9722950",
       "class_society": "NK",
-      "flag": "Hong Kong, China",
-      "gt": "89603",
-      "dwt": "176890",
+      "flag": "Singapore",
+      "gt": null,
+      "dwt": null,
       "surveys": [
         {
           "type": "other",
@@ -1216,8 +1216,8 @@
       "imo": "9406506",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "104761",
-      "dwt": "206306",
+      "gt": null,
+      "dwt": null,
       "surveys": [
         {
           "type": "other",
@@ -1268,9 +1268,9 @@
       "name": "SUNNY KAMSAR",
       "imo": "9336957",
       "class_society": "NK",
-      "flag": "Hong Kong, China",
-      "gt": "101953",
-      "dwt": "203200",
+      "flag": "Hong Kong",
+      "gt": null,
+      "dwt": null,
       "surveys": [
         {
           "type": "other",
@@ -1344,8 +1344,8 @@
       "imo": "9398113",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": "106367",
-      "dwt": "207945",
+      "gt": null,
+      "dwt": null,
       "surveys": [
         {
           "type": "other",
@@ -1387,9 +1387,9 @@
       "name": "SUNNY SIGUIRI",
       "imo": "9406453",
       "class_society": "NK",
-      "flag": "Hong Kong, China",
-      "gt": "104721",
-      "dwt": "206312",
+      "flag": "Panama",
+      "gt": null,
+      "dwt": null,
       "surveys": [
         {
           "type": "other",
@@ -1441,8 +1441,8 @@
       "imo": "9331426",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": "101953",
-      "dwt": "203264",
+      "gt": null,
+      "dwt": null,
       "surveys": [
         {
           "type": "other",
@@ -1511,9 +1511,9 @@
       "name": "SUNNY KINDIA",
       "imo": "9374064",
       "class_society": "NK",
-      "flag": "Hong Kong, China",
-      "gt": "90396",
-      "dwt": "180182",
+      "flag": "Hong Kong",
+      "gt": null,
+      "dwt": null,
       "surveys": [
         {
           "type": "other",
@@ -1564,9 +1564,9 @@
       "name": "SUNNY KALOUM",
       "imo": "9336969",
       "class_society": "NK",
-      "flag": "Hong Kong, China",
-      "gt": "106367",
-      "dwt": "208014",
+      "flag": "Panama",
+      "gt": null,
+      "dwt": null,
       "surveys": [
         {
           "type": "other",
@@ -1617,9 +1617,9 @@
       "name": "SUNNY SAILOR",
       "imo": "9439125",
       "class_society": "NK",
-      "flag": "Hong Kong, China",
-      "gt": "90091",
-      "dwt": "180176",
+      "flag": "Panama",
+      "gt": null,
+      "dwt": null,
       "surveys": [
         {
           "type": "other",
@@ -1688,11 +1688,11 @@
     },
     "SUNNY_DABOLA": {
       "name": "SUNNY DABOLA",
-      "imo": "9398149",
+      "imo": "9387114",
       "class_society": "NK",
-      "flag": "Panama",
-      "gt": "106367",
-      "dwt": "207991",
+      "flag": "Hong Kong",
+      "gt": null,
+      "dwt": null,
       "surveys": [
         {
           "type": "other",
@@ -1739,8 +1739,8 @@
       "imo": "9364320",
       "class_society": "NK",
       "flag": "Panama",
-      "gt": "90092",
-      "dwt": "180201",
+      "gt": null,
+      "dwt": null,
       "surveys": [],
       "certificates": [
         {
@@ -1777,8 +1777,8 @@
       "imo": "9271597",
       "class_society": "NK",
       "flag": "Panama",
-      "gt": "102101",
-      "dwt": "203248",
+      "gt": null,
+      "dwt": null,
       "surveys": [
         {
           "type": "other",
@@ -1831,7 +1831,7 @@
       "class_society": "CCS",
       "flag": "Singapore",
       "gt": "94175",
-      "dwt": "179843",
+      "dwt": "",
       "surveys": [
         {
           "type": "boiler",
@@ -1918,15 +1918,15 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "SUNNY_COYAH": {
       "name": "SUNNY COYAH",
       "imo": "9387114",
       "class_society": "NK",
-      "flag": "Hong Kong, China",
-      "gt": "90125",
-      "dwt": "180201",
+      "flag": "Hong Kong",
+      "gt": null,
+      "dwt": null,
       "surveys": [
         {
           "type": "other",
@@ -1973,8 +1973,8 @@
       "imo": "9254666",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": "88674",
-      "dwt": "176391",
+      "gt": null,
+      "dwt": null,
       "surveys": [
         {
           "type": "other",
@@ -2021,8 +2021,8 @@
       "imo": "9253090",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": "87413",
-      "dwt": "172565",
+      "gt": null,
+      "dwt": null,
       "surveys": [
         {
           "type": "other",
@@ -2118,11 +2118,11 @@
     },
     "SUNNY_NZKORE": {
       "name": "SUNNY NZKORE",
-      "imo": "9393187",
+      "imo": "9346342",
       "class_society": "NK",
-      "flag": "Liberia",
-      "gt": "90111",
-      "dwt": "180129",
+      "flag": "Panama",
+      "gt": null,
+      "dwt": null,
       "surveys": [
         {
           "type": "other",
@@ -2173,9 +2173,9 @@
       "name": "SUNNY MAMOU",
       "imo": "9346342",
       "class_society": "NK",
-      "flag": "Hong Kong, China",
-      "gt": "104725",
-      "dwt": "206296",
+      "flag": "Panama",
+      "gt": null,
+      "dwt": null,
       "surveys": [
         {
           "type": "other",
@@ -2226,9 +2226,9 @@
       "name": "SUNNY CONAKRY",
       "imo": "9406489",
       "class_society": "NK",
-      "flag": "Hong Kong, China",
-      "gt": "90092",
-      "dwt": "180181",
+      "flag": "Hong Kong",
+      "gt": null,
+      "dwt": null,
       "surveys": [
         {
           "type": "other",
@@ -2280,8 +2280,8 @@
       "imo": "9198240",
       "class_society": "NK",
       "flag": "Panama",
-      "gt": "87473",
-      "dwt": "172498",
+      "gt": null,
+      "dwt": null,
       "surveys": [
         {
           "type": "other",
@@ -2350,13 +2350,207 @@
       },
       "extraction_confidence": "high"
     },
+    "WINNING_PEACE": {
+      "name": "WINNING PEACE",
+      "imo": "9500625",
+      "class_society": "ABS",
+      "flag": "",
+      "gt": "",
+      "dwt": "180725",
+      "surveys": [
+        {
+          "type": "tail_shaft",
+          "desc": "TCM (Tailshaft Condition Monitoring) class notation assigned, Tailshaft Survey interval is 15 years "
+        },
+        {
+          "type": "annual_survey",
+          "desc": "Annual Hull Survey 3"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey - Composite Boiler"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Drydocking Survey"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Hull Survey 4"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Periodical Survey - Automation"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "ISM DOC"
+        },
+        {
+          "name": "ISM SMC"
+        },
+        {
+          "name": "ISPS"
+        },
+        {
+          "name": "MLC"
+        },
+        {
+          "name": "IOPP"
+        },
+        {
+          "name": "IAPP"
+        },
+        {
+          "name": "ISPP"
+        },
+        {
+          "name": "Load Line"
+        },
+        {
+          "name": "Safety Construction"
+        },
+        {
+          "name": "Safety Equipment"
+        },
+        {
+          "name": "Safety Radio"
+        },
+        {
+          "name": "BWM"
+        },
+        {
+          "name": "IHM"
+        },
+        {
+          "name": "Cargo Gear"
+        },
+        {
+          "name": "AFS"
+        },
+        {
+          "name": "EIAPP"
+        },
+        {
+          "name": "DOC"
+        },
+        {
+          "name": "SMC"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "medium"
+    },
+    "WINNING_PROGRESS": {
+      "name": "WINNING PROGRESS",
+      "imo": "9576296",
+      "class_society": "ABS",
+      "flag": "Republic of Singapore",
+      "gt": "",
+      "dwt": "179166",
+      "surveys": [
+        {
+          "type": "annual_survey",
+          "desc": "Annual Hull Survey 1"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey - Composite Boiler"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Drydocking Survey"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Hull Survey 4"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Periodical Survey - Automation"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Tailshaft Propeller Connection - Survey"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "ISM DOC"
+        },
+        {
+          "name": "ISM SMC"
+        },
+        {
+          "name": "ISPS"
+        },
+        {
+          "name": "MLC"
+        },
+        {
+          "name": "IOPP"
+        },
+        {
+          "name": "IAPP"
+        },
+        {
+          "name": "ISPP"
+        },
+        {
+          "name": "Load Line"
+        },
+        {
+          "name": "Safety Construction"
+        },
+        {
+          "name": "Safety Equipment"
+        },
+        {
+          "name": "Safety Radio"
+        },
+        {
+          "name": "BWM"
+        },
+        {
+          "name": "IHM"
+        },
+        {
+          "name": "Cargo Gear"
+        },
+        {
+          "name": "AFS"
+        },
+        {
+          "name": "EIAPP"
+        },
+        {
+          "name": "DOC"
+        },
+        {
+          "name": "SMC"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "medium"
+    },
     "WINNING_KINDNESS": {
       "name": "WINNING KINDNESS",
       "imo": "9335240",
       "class_society": "KR",
       "flag": "SINGAPORE",
-      "gt": "89651",
-      "dwt": "176924",
+      "gt": "",
+      "dwt": "",
       "surveys": [
         {
           "type": "tail_shaft",
@@ -2450,15 +2644,15 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "WINNING_RICH": {
       "name": "WINNING RICH",
       "imo": "9498054",
       "class_society": "KR",
       "flag": "SINGAPORE",
-      "gt": "93175",
-      "dwt": "179221",
+      "gt": "",
+      "dwt": "",
       "surveys": [
         {
           "type": "tail_shaft",
@@ -2552,15 +2746,15 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "WINNING_SPIRIT": {
       "name": "WINNING SPIRIT",
       "imo": "9597824",
       "class_society": "KR",
       "flag": "SINGAPORE",
-      "gt": "93198",
-      "dwt": "179213",
+      "gt": "",
+      "dwt": "",
       "surveys": [
         {
           "type": "tail_shaft",
@@ -2655,15 +2849,15 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "SUNNY_FARANAH": {
       "name": "SUNNY FARANAH",
       "imo": "9337107",
       "class_society": "CCS",
-      "flag": "Hong Kong, China",
+      "flag": "",
       "gt": "101933",
-      "dwt": "203185",
+      "dwt": "",
       "surveys": [
         {
           "type": "boiler",
@@ -2742,20 +2936,20 @@
         }
       ],
       "alerts": {
-        "expired": 7,
-        "urgent_7d": 2,
+        "expired": 9,
+        "urgent_7d": 0,
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "SUNNY_FRIA": {
       "name": "SUNNY FRIA",
       "imo": "9330305",
       "class_society": "CCS",
-      "flag": "Hong Kong, China",
+      "flag": "",
       "gt": "89877",
-      "dwt": "177003",
+      "dwt": "",
       "surveys": [
         {
           "type": "boiler",
@@ -2843,7 +3037,7 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "SUNNY_KOGON": {
       "name": "SUNNY KOGON",
@@ -2851,7 +3045,7 @@
       "class_society": "CCS",
       "flag": "Liberia",
       "gt": "106312",
-      "dwt": "207960",
+      "dwt": "",
       "surveys": [
         {
           "type": "boiler",
@@ -2933,12 +3127,12 @@
         }
       ],
       "alerts": {
-        "expired": 5,
-        "urgent_7d": 1,
+        "expired": 6,
+        "urgent_7d": 0,
         "warning_30d": 3,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "WINNING_JOY": {
       "name": "WINNING JOY",
@@ -3034,7 +3228,7 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "WINNING_RESILIENCE": {
       "name": "WINNING RESILIENCE",
@@ -3042,7 +3236,7 @@
       "class_society": "CCS",
       "flag": "Panama",
       "gt": "114026",
-      "dwt": "229069",
+      "dwt": "",
       "surveys": [
         {
           "type": "boiler",
@@ -3125,7 +3319,7 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "WINNING_TIMES": {
       "name": "WINNING TIMES",
@@ -3133,7 +3327,7 @@
       "class_society": "CCS",
       "flag": "Singapore",
       "gt": "107514",
-      "dwt": "207219",
+      "dwt": "",
       "surveys": [
         {
           "type": "boiler",
@@ -3211,12 +3405,12 @@
         }
       ],
       "alerts": {
-        "expired": 4,
-        "urgent_7d": 1,
+        "expired": 5,
+        "urgent_7d": 0,
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "WINNING_WAVE": {
       "name": "WINNING WAVE",
@@ -3224,7 +3418,7 @@
       "class_society": "CCS",
       "flag": "Singapore",
       "gt": "107222",
-      "dwt": "207469",
+      "dwt": "",
       "surveys": [
         {
           "type": "boiler",
@@ -3302,12 +3496,12 @@
         }
       ],
       "alerts": {
-        "expired": 4,
-        "urgent_7d": 1,
+        "expired": 5,
+        "urgent_7d": 0,
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "WINNING_WEALTH": {
       "name": "WINNING WEALTH",
@@ -3315,7 +3509,7 @@
       "class_society": "CCS",
       "flag": "Singapore",
       "gt": "114019",
-      "dwt": "229117",
+      "dwt": "",
       "surveys": [
         {
           "type": "boiler",
@@ -3403,7 +3597,7 @@
         "warning_30d": 0,
         "info_90d": 1
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "WINNING_WISDOM": {
       "name": "WINNING WISDOM",
@@ -3504,15 +3698,15 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "WINNING_AMBITION": {
       "name": "WINNING AMBITION",
-      "imo": "1037393",
+      "imo": "1037397",
       "class_society": "DNV",
       "flag": "Singapore",
       "gt": "174863",
-      "dwt": "325000",
+      "dwt": "",
       "surveys": [
         {
           "type": "boiler",
@@ -3588,13 +3782,13 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "SUNNY_SKY": {
       "name": "SUNNY SKY",
       "imo": "9461295",
       "class_society": "BV",
-      "flag": "Singapore",
+      "flag": "",
       "gt": "94145",
       "dwt": "180000",
       "surveys": [
@@ -3668,41 +3862,1418 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
-    "WINNING_PEACE": {
-      "name": "WINNING PEACE",
-      "imo": "9500625",
-      "class_society": "ABS",
+    "SUNNY_KANKAN": {
+      "name": "Downloaded on 16Aug2026 03",
+      "imo": "9287273",
+      "class_society": "RINA",
+      "flag": "Liberia",
+      "gt": "",
+      "dwt": "203266",
+      "surveys": [
+        {
+          "type": "",
+          "desc": "Hull Hull Renewal",
+          "due_date": "2029-06-07",
+          "last_done": "2024-07-17",
+          "window_start": "2028-03-08",
+          "window_end": "2029-06-07"
+        },
+        {
+          "type": "",
+          "desc": "Hull Intermediate",
+          "last_done": "2026-12-07",
+          "window_start": "2026-03-08",
+          "window_end": "2027-09-07"
+        },
+        {
+          "type": "",
+          "desc": "Hull Annual",
+          "due_date": "2027-06-07",
+          "last_done": "2026-04-15",
+          "window_start": "2027-03-08",
+          "window_end": "2027-09-07"
+        },
+        {
+          "type": "",
+          "desc": "Bottom - Dry Condition at Renewal",
+          "last_done": "2024-07-17"
+        },
+        {
+          "type": "",
+          "desc": "Bottom - Dry Condition",
+          "due_date": "2027-07-17",
+          "last_done": "2022-10-25"
+        },
+        {
+          "type": "",
+          "desc": "- 17Jul2027 Machinery (under continuous survey) Mach. Renewal",
+          "due_date": "2029-06-07",
+          "last_done": "2024-07-17",
+          "window_start": "2028-03-08",
+          "window_end": "2029-06-07"
+        },
+        {
+          "type": "",
+          "desc": "Mach. Annual",
+          "due_date": "2027-06-07",
+          "last_done": "2026-04-15",
+          "window_start": "2027-03-08",
+          "window_end": "2027-09-07"
+        },
+        {
+          "type": "",
+          "desc": "644a Boiler  - Aux. boiler (fuel) (oil fired - exhaust gas)",
+          "due_date": "2027-07-17",
+          "last_done": "2024-07-17"
+        },
+        {
+          "type": "",
+          "desc": "- 17Jul2027 631a.03 Tailshaft (cl.oil-keyless) Met.1 (withdr.+prop. removal) (Aft)",
+          "last_done": "2002-09-02"
+        },
+        {
+          "type": "",
+          "desc": "631a.03 Tailshaft (cl.oil-keyless) Met.2 (prop. removal) (Aft)",
+          "due_date": "2029-07-31",
+          "last_done": "2014-08-01",
+          "window_start": "2029-05-01",
+          "window_end": "2029-07-31"
+        },
+        {
+          "type": "",
+          "desc": "631a.03 Tailshaft (cl.oil-keyless) Met.3 (Aft)",
+          "due_date": "2029-07-17",
+          "last_done": "2024-07-17",
+          "window_start": "2029-04-18",
+          "window_end": "2029-07-17"
+        },
+        {
+          "type": "",
+          "desc": "ILL H Renewal",
+          "due_date": "2029-06-07",
+          "last_done": "2024-07-17",
+          "window_start": "2029-03-08",
+          "window_end": "2029-06-07"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2027-06-07",
+          "last_done": "2026-04-15",
+          "window_start": "2027-03-08",
+          "window_end": "2027-09-07"
+        },
+        {
+          "type": "",
+          "desc": "IMSBC Code Renewal",
+          "due_date": "2029-06-07",
+          "last_done": "2024-06-26",
+          "window_start": "2029-03-08",
+          "window_end": "2029-06-07"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2027-06-07",
+          "last_done": "2026-04-15",
+          "window_start": "2027-03-08",
+          "window_end": "2027-09-07"
+        },
+        {
+          "type": "",
+          "desc": "DG (SOLAS) (cargo) First Issue (Initial)",
+          "last_done": "2026-04-15"
+        },
+        {
+          "type": "",
+          "desc": "Renewal",
+          "last_done": "2029-06-07",
+          "window_start": "2029-03-08",
+          "window_end": "2029-06-07"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "last_done": "2027-06-07",
+          "window_start": "2027-03-08",
+          "window_end": "2027-09-07"
+        },
+        {
+          "type": "",
+          "desc": "SC H Renewal",
+          "due_date": "2029-06-07",
+          "last_done": "2024-07-17",
+          "window_start": "2029-03-08",
+          "window_end": "2029-06-07"
+        },
+        {
+          "type": "",
+          "desc": "Intermediate (1)",
+          "last_done": "2027-06-07",
+          "window_start": "2027-03-08",
+          "window_end": "2027-09-07"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2028-06-07",
+          "last_done": "2026-04-15",
+          "window_start": "2028-03-08",
+          "window_end": "2028-09-07"
+        },
+        {
+          "type": "",
+          "desc": "SE H Renewal",
+          "due_date": "2029-06-07",
+          "last_done": "2024-07-17",
+          "window_start": "2029-03-08",
+          "window_end": "2029-06-07"
+        },
+        {
+          "type": "",
+          "desc": "Periodical (1)",
+          "last_done": "2027-06-07",
+          "window_start": "2027-03-08",
+          "window_end": "2027-09-07"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2028-06-07",
+          "last_done": "2026-04-15",
+          "window_start": "2028-03-08",
+          "window_end": "2028-09-07"
+        },
+        {
+          "type": "",
+          "desc": "SR H Renewal",
+          "due_date": "2029-06-07",
+          "last_done": "2024-06-26",
+          "window_start": "2029-03-08",
+          "window_end": "2029-06-07"
+        },
+        {
+          "type": "",
+          "desc": "Periodical",
+          "due_date": "2027-06-07",
+          "last_done": "2026-04-15",
+          "window_start": "2027-03-08",
+          "window_end": "2027-09-07"
+        },
+        {
+          "type": "",
+          "desc": "SMC Renewal",
+          "last_done": "2028-11-06",
+          "window_start": "2028-08-07",
+          "window_end": "2028-11-06"
+        },
+        {
+          "type": "",
+          "desc": "Intermediate",
+          "last_done": "2026-04-15"
+        },
+        {
+          "type": "",
+          "desc": "MLC Renewal",
+          "last_done": "2028-11-06",
+          "window_start": "2028-08-07",
+          "window_end": "2028-11-06"
+        },
+        {
+          "type": "",
+          "desc": "Intermediate",
+          "last_done": "2026-04-15"
+        },
+        {
+          "type": "",
+          "desc": "ISSC Renewal",
+          "last_done": "2028-11-06",
+          "window_start": "2028-08-07",
+          "window_end": "2028-11-06"
+        },
+        {
+          "type": "",
+          "desc": "For any enquiries please contact: Greater China Marine Telephone : E-mail : china.marine@rina.org Direct fax line : +86 ",
+          "last_done": "2026-04-15"
+        },
+        {
+          "type": "",
+          "desc": "IAPP Renewal",
+          "due_date": "2029-06-07",
+          "last_done": "2024-07-17",
+          "window_start": "2029-03-08",
+          "window_end": "2029-06-07"
+        },
+        {
+          "type": "",
+          "desc": "Intermediate (1)",
+          "last_done": "2027-06-07",
+          "window_start": "2027-03-08",
+          "window_end": "2027-09-07"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2028-06-07",
+          "last_done": "2026-04-15",
+          "window_start": "2028-03-08",
+          "window_end": "2028-09-07"
+        },
+        {
+          "type": "",
+          "desc": "IOPP Renewal",
+          "due_date": "2029-06-07",
+          "last_done": "2024-07-17",
+          "window_start": "2029-03-08",
+          "window_end": "2029-06-07"
+        },
+        {
+          "type": "",
+          "desc": "Intermediate (1)",
+          "last_done": "2027-06-07",
+          "window_start": "2027-03-08",
+          "window_end": "2027-09-07"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2028-06-07",
+          "last_done": "2026-04-15",
+          "window_start": "2028-03-08",
+          "window_end": "2028-09-07"
+        },
+        {
+          "type": "",
+          "desc": "ISPP Renewal",
+          "due_date": "2029-06-07",
+          "last_done": "2024-07-17",
+          "window_start": "2029-03-08",
+          "window_end": "2029-06-07"
+        },
+        {
+          "type": "",
+          "desc": "RECYCL_HKC First Issue (Renewal)",
+          "last_done": "2023-07-25"
+        },
+        {
+          "type": "",
+          "desc": "Renewal",
+          "last_done": "2028-07-24",
+          "window_start": "2028-04-25",
+          "window_end": "2028-07-24"
+        },
+        {
+          "type": "",
+          "desc": "IBWM Renewal",
+          "due_date": "2029-06-07",
+          "last_done": "2024-07-17",
+          "window_start": "2029-03-08",
+          "window_end": "2029-06-07"
+        },
+        {
+          "type": "",
+          "desc": "Intermediate (1)",
+          "last_done": "2027-06-07",
+          "window_start": "2027-03-08",
+          "window_end": "2027-09-07"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2028-06-07",
+          "last_done": "2026-04-15",
+          "window_start": "2028-03-08",
+          "window_end": "2028-09-07"
+        },
+        {
+          "type": "",
+          "desc": "IEEC First Issue (Initial)",
+          "last_done": "2023-07-25"
+        },
+        {
+          "type": "",
+          "desc": "L.A. 452.05a CRANE ILO Test (port,Hose Davit)",
+          "due_date": "2029-07-17",
+          "last_done": "2024-07-17"
+        },
+        {
+          "type": "",
+          "desc": "- 17Jul2029 452.05b CRANE ILO Test (central,Engine room crane)",
+          "last_done": "2029-07-17"
+        },
+        {
+          "type": "",
+          "desc": "- 17Jul2029 563.01a CRANE ILO Test (port,Provision Crane (Port))",
+          "due_date": "2029-07-17",
+          "last_done": "2024-07-17"
+        },
+        {
+          "type": "",
+          "desc": "- 17Jul2029 563.01b CRANE ILO Test (stbd,Provision Crane (Starboard))",
+          "due_date": "2029-07-17",
+          "last_done": "2024-07-17"
+        },
+        {
+          "type": "",
+          "desc": "- 17Jul2029 452.05a CRANE ILO Annual (port,Hose Davit)",
+          "due_date": "2027-04-15",
+          "last_done": "2026-04-15"
+        },
+        {
+          "type": "",
+          "desc": "- 15Apr2027 452.05b CRANE ILO Annual (central,Engine room crane)",
+          "due_date": "2027-04-15",
+          "last_done": "2026-04-15"
+        },
+        {
+          "type": "",
+          "desc": "- 15Apr2027 563.01a CRANE ILO Annual (port,Provision Crane (Port))",
+          "due_date": "2027-04-15",
+          "last_done": "2026-04-15"
+        },
+        {
+          "type": "",
+          "desc": "- 15Apr2027 563.01b CRANE ILO Annual (stbd,Provision Crane (Starboard))",
+          "due_date": "2027-04-15",
+          "last_done": "2026-04-15"
+        },
+        {
+          "type": "",
+          "desc": "- 15Apr2027 563.10a DERRICK ILO Quinquennial (Hose Davit,stbd)",
+          "due_date": "2029-07-17",
+          "last_done": "2024-07-17"
+        },
+        {
+          "type": "",
+          "desc": "- 17Jul2029 563.10a DERRICK ILO  Annual (Hose Davit,stbd)",
+          "due_date": "2027-04-15",
+          "last_done": "2026-04-15"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "",
+          "expiry": "2029-06-07"
+        },
+        {
+          "name": "",
+          "expiry": "2029-06-07"
+        },
+        {
+          "name": "",
+          "expiry": "2029-06-07"
+        },
+        {
+          "name": "",
+          "expiry": "2029-06-07"
+        },
+        {
+          "name": "",
+          "expiry": "2029-06-07"
+        },
+        {
+          "name": "",
+          "expiry": "2029-06-07"
+        },
+        {
+          "name": "",
+          "expiry": "2029-06-07"
+        },
+        {
+          "name": "",
+          "expiry": "2029-06-07"
+        },
+        {
+          "name": "",
+          "expiry": "2028-11-06"
+        },
+        {
+          "name": "",
+          "expiry": "2028-11-06"
+        },
+        {
+          "name": "",
+          "expiry": "2028-11-06"
+        },
+        {
+          "name": "",
+          "expiry": "2029-06-07"
+        },
+        {
+          "name": "",
+          "expiry": "2029-06-07"
+        },
+        {
+          "name": "",
+          "expiry": "2029-06-07"
+        },
+        {
+          "name": "",
+          "expiry": "2028-07-24"
+        },
+        {
+          "name": "",
+          "expiry": "2024-07-17"
+        },
+        {
+          "name": "",
+          "expiry": "2023-07-25"
+        }
+      ],
+      "alerts": {
+        "expired": 2,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "medium"
+    },
+    "SUNNY_RIVER": {
+      "name": "Downloaded on 16Aug2026 03",
+      "imo": "9337169",
+      "class_society": "RINA",
       "flag": "Hong Kong",
-      "gt": "94862",
-      "dwt": "180725",
-      "surveys": [],
-      "certificates": [],
+      "gt": "",
+      "dwt": "207923",
+      "surveys": [
+        {
+          "type": "",
+          "desc": "Hull Hull Renewal",
+          "due_date": "2028-08-25",
+          "last_done": "2023-08-10",
+          "window_start": "2027-05-26",
+          "window_end": "2028-08-25"
+        },
+        {
+          "type": "",
+          "desc": "Hull Intermediate",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "Hull Annual",
+          "due_date": "2027-08-25",
+          "last_done": "2026-06-04",
+          "window_start": "2027-05-26",
+          "window_end": "2027-11-25"
+        },
+        {
+          "type": "",
+          "desc": "Bottom - Dry Condition at Renewal",
+          "due_date": "2028-08-25",
+          "last_done": "2023-08-10"
+        },
+        {
+          "type": "",
+          "desc": "- 25Aug2028 Bottom - Dry Condition",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "Bottom - in Water",
+          "last_done": "2021-08-13"
+        },
+        {
+          "type": "",
+          "desc": "Machinery (under continuous survey) Mach. Renewal",
+          "due_date": "2028-08-25",
+          "last_done": "2023-08-10",
+          "window_start": "2027-05-26",
+          "window_end": "2028-08-25"
+        },
+        {
+          "type": "",
+          "desc": "Mach. Annual",
+          "due_date": "2027-08-25",
+          "last_done": "2026-06-04",
+          "window_start": "2027-05-26",
+          "window_end": "2027-11-25"
+        },
+        {
+          "type": "",
+          "desc": "644a Boiler  - Aux. boiler (fuel) (oil fired - exhaust gas)",
+          "due_date": "2028-08-25",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "- 25Aug2028 631a.03 Tailshaft (cl.oil-keyless) Met.1 (withdr.+prop. removal) (Aft,central)",
+          "last_done": "2008-08-26"
+        },
+        {
+          "type": "",
+          "desc": "631a.03 Tailshaft (cl.oil-keyless) Met.2 (prop. removal) (Aft,central)",
+          "due_date": "2028-07-15",
+          "last_done": "2013-07-15",
+          "window_start": "2028-04-16",
+          "window_end": "2028-07-15"
+        },
+        {
+          "type": "",
+          "desc": "631a.03 Tailshaft (cl.oil-keyless) Met.3 (Aft,central)",
+          "last_done": "2023-08-10"
+        },
+        {
+          "type": "",
+          "desc": "ILL H Renewal",
+          "last_done": "2028-08-25",
+          "window_start": "2028-05-26",
+          "window_end": "2028-08-25"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2027-08-25",
+          "last_done": "2025-09-17",
+          "window_start": "2027-05-26",
+          "window_end": "2027-11-25"
+        },
+        {
+          "type": "",
+          "desc": "Change of flag (Annual) (1)",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "IMSBC Code Renewal",
+          "last_done": "2028-08-25",
+          "window_start": "2028-05-26",
+          "window_end": "2028-08-25"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2027-08-25",
+          "last_done": "2025-09-17",
+          "window_start": "2027-05-26",
+          "window_end": "2027-11-25"
+        },
+        {
+          "type": "",
+          "desc": "Change of flag (Annual) (1)",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "DG (SOLAS) (cargo) Renewal",
+          "last_done": "2028-08-25",
+          "window_start": "2028-05-26",
+          "window_end": "2028-08-25"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "last_done": "2027-08-25",
+          "window_start": "2027-05-26",
+          "window_end": "2027-11-25"
+        },
+        {
+          "type": "",
+          "desc": "Change of flag (Annual) (1)",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "SC H Renewal",
+          "last_done": "2028-08-25",
+          "window_start": "2028-05-26",
+          "window_end": "2028-08-25"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2027-08-25",
+          "last_done": "2025-09-17",
+          "window_start": "2027-05-26",
+          "window_end": "2027-11-25"
+        },
+        {
+          "type": "",
+          "desc": "Change of flag (Intermediate) (1)",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "SE H Renewal",
+          "last_done": "2028-08-25",
+          "window_start": "2028-05-26",
+          "window_end": "2028-08-25"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2027-08-25",
+          "last_done": "2025-09-17",
+          "window_start": "2027-05-26",
+          "window_end": "2027-11-25"
+        },
+        {
+          "type": "",
+          "desc": "Change of flag (Periodical) (1)",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "SR H Renewal",
+          "last_done": "2028-08-25",
+          "window_start": "2028-05-26",
+          "window_end": "2028-08-25"
+        },
+        {
+          "type": "",
+          "desc": "Periodical",
+          "due_date": "2027-08-25",
+          "last_done": "2025-09-17",
+          "window_start": "2027-05-26",
+          "window_end": "2027-11-25"
+        },
+        {
+          "type": "",
+          "desc": "Change of flag (Periodical) (1)",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "For any enquiries please contact: Greater China Marine Telephone : E-mail : china.marine@rina.org Direct fax line : +86 ",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "First Issue",
+          "last_done": "2026-12-04"
+        },
+        {
+          "type": "",
+          "desc": "- 04Dec2026 • MLC Interim Audit",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "First Issue",
+          "last_done": "2026-12-04"
+        },
+        {
+          "type": "",
+          "desc": "- 04Dec2026 • ISSC Pre-Verification",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "First Issue",
+          "last_done": "2026-12-04"
+        },
+        {
+          "type": "",
+          "desc": "- 04Dec2026 • GARBAGE Renewal",
+          "last_done": "2028-08-25",
+          "window_start": "2028-05-26",
+          "window_end": "2028-08-25"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2027-08-25",
+          "last_done": "2025-09-17",
+          "window_start": "2027-05-26",
+          "window_end": "2027-11-25"
+        },
+        {
+          "type": "",
+          "desc": "Change of flag (Annual) (1)",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "IAPP Renewal",
+          "last_done": "2028-08-25",
+          "window_start": "2028-05-26",
+          "window_end": "2028-08-25"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2027-08-25",
+          "last_done": "2025-09-17",
+          "window_start": "2027-05-26",
+          "window_end": "2027-11-25"
+        },
+        {
+          "type": "",
+          "desc": "Change of flag (Intermediate) (1)",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "IOPP Renewal",
+          "last_done": "2028-08-25",
+          "window_start": "2028-05-26",
+          "window_end": "2028-08-25"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2027-08-25",
+          "last_done": "2025-09-17",
+          "window_start": "2027-05-26",
+          "window_end": "2027-11-25"
+        },
+        {
+          "type": "",
+          "desc": "Change of flag (Intermediate) (1)",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "ISPP Renewal",
+          "last_done": "2028-08-25",
+          "window_start": "2028-05-26",
+          "window_end": "2028-08-25"
+        },
+        {
+          "type": "",
+          "desc": "Change of flag (Renewal) (1)",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "RECYCL_1257 _EU_ST Renewal",
+          "last_done": "2028-08-25",
+          "window_start": "2028-05-26",
+          "window_end": "2028-08-25"
+        },
+        {
+          "type": "",
+          "desc": "Change of flag (Renewal) (1)",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "RECYCL_HKC Renewal",
+          "last_done": "2028-08-25",
+          "window_start": "2028-05-26",
+          "window_end": "2028-08-25"
+        },
+        {
+          "type": "",
+          "desc": "Change of flag (Renewal) (1)",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "IAFSC First Issue (Occasional)",
+          "last_done": "2025-01-25"
+        },
+        {
+          "type": "",
+          "desc": "IBWM Renewal",
+          "last_done": "2028-08-25",
+          "window_start": "2028-05-26",
+          "window_end": "2028-08-25"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "last_done": "2027-08-25",
+          "window_start": "2027-05-26",
+          "window_end": "2027-11-25"
+        },
+        {
+          "type": "",
+          "desc": "Change of flag (Intermediate) (1)",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "IEEC First Issue (Initial)",
+          "last_done": "2025-01-25"
+        },
+        {
+          "type": "",
+          "desc": "ILO 92/133 First Issue (Initial)",
+          "last_done": "2018-05-28"
+        },
+        {
+          "type": "",
+          "desc": "Change of flag (Initial) (1)",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "L.A. 334a CRANE ILO Test (FO Hose Handling Davit,port)",
+          "due_date": "2028-08-10",
+          "last_done": "2023-08-10"
+        },
+        {
+          "type": "",
+          "desc": "- 10Aug2028 334b CRANE ILO Test (FO Hose and SUEZ Handling Davit,stbd)",
+          "due_date": "2028-08-10",
+          "last_done": "2023-08-10"
+        },
+        {
+          "type": "",
+          "desc": "- 10Aug2028 452.01a CRANE ILO Test (central)",
+          "due_date": "2028-08-10",
+          "last_done": "2023-08-10"
+        },
+        {
+          "type": "",
+          "desc": "- 10Aug2028 563.01a CRANE ILO Test (PROVISION CRANE,port)",
+          "due_date": "2028-08-10",
+          "last_done": "2023-08-10"
+        },
+        {
+          "type": "",
+          "desc": "- 10Aug2028 563.01b CRANE ILO Test (PROVISION CRANE,stbd)",
+          "due_date": "2028-08-10",
+          "last_done": "2023-08-10"
+        },
+        {
+          "type": "",
+          "desc": "- 10Aug2028 334a CRANE LA Annual (FO Hose Handling Davit,port)",
+          "due_date": "2027-06-04",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "- 04Jun2027 334b CRANE LA Annual (FO Hose and SUEZ Handling Davit,stbd)",
+          "due_date": "2027-06-04",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "- 04Jun2027 For any enquiries please contact: Greater China Marine Telephone : E-mail : china.marine@rina.org Direct fax",
+          "due_date": "2027-06-04",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "- 04Jun2027 563.01a CRANE LA Annual (PROVISION CRANE,port)",
+          "due_date": "2027-06-04",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "- 04Jun2027 563.01b CRANE LA Annual (PROVISION CRANE,stbd)",
+          "due_date": "2027-06-04",
+          "last_done": "2026-06-04"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "",
+          "expiry": "2028-08-25"
+        },
+        {
+          "name": "",
+          "expiry": "2028-08-25"
+        },
+        {
+          "name": "",
+          "expiry": "2028-08-25"
+        },
+        {
+          "name": "",
+          "expiry": "2028-08-25"
+        },
+        {
+          "name": "",
+          "expiry": "2028-08-25"
+        },
+        {
+          "name": "",
+          "expiry": "2028-08-25"
+        },
+        {
+          "name": "",
+          "expiry": "2028-08-25"
+        },
+        {
+          "name": "",
+          "expiry": "2028-08-25"
+        },
+        {
+          "name": "",
+          "expiry": "2026-12-04"
+        },
+        {
+          "name": "",
+          "expiry": "2026-12-04"
+        },
+        {
+          "name": "",
+          "expiry": "2026-12-04"
+        },
+        {
+          "name": "",
+          "expiry": "2028-08-25"
+        },
+        {
+          "name": "",
+          "expiry": "2028-08-25"
+        },
+        {
+          "name": "",
+          "expiry": "2028-08-25"
+        },
+        {
+          "name": "",
+          "expiry": "2028-08-25"
+        },
+        {
+          "name": "",
+          "expiry": "2028-08-25"
+        },
+        {
+          "name": "",
+          "expiry": "2028-08-25"
+        },
+        {
+          "name": "",
+          "expiry": "2026-06-11"
+        },
+        {
+          "name": "",
+          "expiry": "2026-06-04"
+        },
+        {
+          "name": "",
+          "expiry": "2008-08-26"
+        }
+      ],
       "alerts": {
-        "expired": 0,
+        "expired": 3,
         "urgent_7d": 0,
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
-    "WINNING_PROGRESS": {
-      "name": "WINNING PROGRESS",
-      "imo": "9576296",
-      "class_society": "ABS",
-      "flag": "Republic of Singapore",
-      "gt": "93217",
-      "dwt": "179166",
-      "surveys": [],
-      "certificates": [],
+    "SUNNY_ROUTE": {
+      "name": "Downloaded on 16Aug2026 03",
+      "imo": "9296420",
+      "class_society": "RINA",
+      "flag": "Liberia",
+      "gt": "",
+      "dwt": "203180",
+      "surveys": [
+        {
+          "type": "",
+          "desc": "Hull Hull Renewal",
+          "due_date": "2030-05-11",
+          "last_done": "2025-03-26",
+          "window_start": "2029-02-12",
+          "window_end": "2030-05-11"
+        },
+        {
+          "type": "",
+          "desc": "Hull Intermediate",
+          "last_done": "2027-11-11",
+          "window_start": "2027-02-12",
+          "window_end": "2028-08-11"
+        },
+        {
+          "type": "",
+          "desc": "Hull Annual",
+          "due_date": "2027-05-11",
+          "last_done": "2026-02-25",
+          "window_start": "2027-02-12",
+          "window_end": "2027-08-11"
+        },
+        {
+          "type": "",
+          "desc": "Bottom - Dry Condition at Renewal",
+          "last_done": "2025-03-26"
+        },
+        {
+          "type": "",
+          "desc": "Bottom - Dry Condition",
+          "due_date": "2028-03-26",
+          "last_done": "2022-06-25"
+        },
+        {
+          "type": "",
+          "desc": "- 26Mar2028 Bottom - in Water",
+          "last_done": "2017-10-26"
+        },
+        {
+          "type": "",
+          "desc": "Machinery (under continuous survey) Mach. Renewal",
+          "due_date": "2030-05-11",
+          "last_done": "2025-03-26",
+          "window_start": "2029-02-12",
+          "window_end": "2030-05-11"
+        },
+        {
+          "type": "",
+          "desc": "Mach. Annual",
+          "due_date": "2027-05-11",
+          "last_done": "2026-02-25",
+          "window_start": "2027-02-12",
+          "window_end": "2027-08-11"
+        },
+        {
+          "type": "",
+          "desc": "644a Boiler  - Aux. boiler (fuel) (oil fired - exhaust gas)",
+          "due_date": "2028-03-26",
+          "last_done": "2025-03-26"
+        },
+        {
+          "type": "",
+          "desc": "- 26Mar2028 631a.03 Tailshaft (cl.oil-keyless) Met.1 (withdr.+prop. removal) (Aft)",
+          "last_done": "2025-03-26"
+        },
+        {
+          "type": "",
+          "desc": "631a.03 Tailshaft (cl.oil-keyless) Met.2 (prop. removal) (Aft)",
+          "last_done": "2040-03-26",
+          "window_start": "2039-12-27",
+          "window_end": "2040-03-26"
+        },
+        {
+          "type": "",
+          "desc": "631a.03 Tailshaft (cl.oil-keyless) Met.3 (Aft)",
+          "due_date": "2030-03-26",
+          "last_done": "2022-06-25",
+          "window_start": "2029-12-27",
+          "window_end": "2030-03-26"
+        },
+        {
+          "type": "",
+          "desc": "ILL H Renewal",
+          "due_date": "2030-05-11",
+          "last_done": "2025-03-26",
+          "window_start": "2030-02-12",
+          "window_end": "2030-05-11"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2027-05-11",
+          "last_done": "2026-02-25",
+          "window_start": "2027-02-12",
+          "window_end": "2027-08-11"
+        },
+        {
+          "type": "",
+          "desc": "IMSBC Code Renewal",
+          "due_date": "2030-05-11",
+          "last_done": "2025-03-26",
+          "window_start": "2030-02-12",
+          "window_end": "2030-05-11"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2027-05-11",
+          "last_done": "2026-02-25",
+          "window_start": "2027-02-12",
+          "window_end": "2027-08-11"
+        },
+        {
+          "type": "",
+          "desc": "SC H Renewal",
+          "due_date": "2030-05-11",
+          "last_done": "2025-03-26",
+          "window_start": "2030-02-12",
+          "window_end": "2030-05-11"
+        },
+        {
+          "type": "",
+          "desc": "Intermediate (1)",
+          "last_done": "2027-05-11",
+          "window_start": "2027-02-12",
+          "window_end": "2027-08-11"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2027-05-11",
+          "last_done": "2026-02-25",
+          "window_start": "2027-02-12",
+          "window_end": "2027-08-11"
+        },
+        {
+          "type": "",
+          "desc": "SE H Renewal",
+          "due_date": "2030-05-11",
+          "last_done": "2025-03-26",
+          "window_start": "2030-02-12",
+          "window_end": "2030-05-11"
+        },
+        {
+          "type": "",
+          "desc": "Periodical (1)",
+          "last_done": "2027-05-11",
+          "window_start": "2027-02-12",
+          "window_end": "2027-08-11"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2027-05-11",
+          "last_done": "2026-02-25",
+          "window_start": "2027-02-12",
+          "window_end": "2027-08-11"
+        },
+        {
+          "type": "",
+          "desc": "SR H Renewal",
+          "due_date": "2030-05-11",
+          "last_done": "2025-03-26",
+          "window_start": "2030-02-12",
+          "window_end": "2030-05-11"
+        },
+        {
+          "type": "",
+          "desc": "Periodical",
+          "due_date": "2027-05-11",
+          "last_done": "2026-02-25",
+          "window_start": "2027-02-12",
+          "window_end": "2027-08-11"
+        },
+        {
+          "type": "",
+          "desc": "SMC Renewal",
+          "last_done": "2026-10-31",
+          "window_start": "2026-08-01",
+          "window_end": "2026-10-31"
+        },
+        {
+          "type": "",
+          "desc": "• Intermediate",
+          "last_done": "2024-07-26"
+        },
+        {
+          "type": "",
+          "desc": "MLC Renewal",
+          "last_done": "2026-10-31",
+          "window_start": "2026-08-01",
+          "window_end": "2026-10-31"
+        },
+        {
+          "type": "",
+          "desc": "• Intermediate",
+          "last_done": "2024-07-26"
+        },
+        {
+          "type": "",
+          "desc": "ISSC Renewal",
+          "last_done": "2026-10-31",
+          "window_start": "2026-08-01",
+          "window_end": "2026-10-31"
+        },
+        {
+          "type": "",
+          "desc": "• Intermediate",
+          "last_done": "2024-07-26"
+        },
+        {
+          "type": "",
+          "desc": "For any enquiries please contact: Greater China Marine Telephone : E-mail : china.marine@rina.org Direct fax line : +86 ",
+          "due_date": "2030-05-11",
+          "last_done": "2025-03-26",
+          "window_start": "2030-02-12",
+          "window_end": "2030-05-11"
+        },
+        {
+          "type": "",
+          "desc": "Intermediate (1)",
+          "last_done": "2027-05-11",
+          "window_start": "2027-02-12",
+          "window_end": "2027-08-11"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2027-05-11",
+          "last_done": "2026-02-25",
+          "window_start": "2027-02-12",
+          "window_end": "2027-08-11"
+        },
+        {
+          "type": "",
+          "desc": "IOPP Renewal",
+          "due_date": "2030-05-11",
+          "last_done": "2025-03-26",
+          "window_start": "2030-02-12",
+          "window_end": "2030-05-11"
+        },
+        {
+          "type": "",
+          "desc": "Intermediate (1)",
+          "last_done": "2027-05-11",
+          "window_start": "2027-02-12",
+          "window_end": "2027-08-11"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2027-05-11",
+          "last_done": "2026-02-25",
+          "window_start": "2027-02-12",
+          "window_end": "2027-08-11"
+        },
+        {
+          "type": "",
+          "desc": "ISPP Renewal",
+          "due_date": "2030-05-11",
+          "last_done": "2025-03-26",
+          "window_start": "2030-02-12",
+          "window_end": "2030-05-11"
+        },
+        {
+          "type": "",
+          "desc": "IAFSC First Issue (Occasional)",
+          "last_done": "2021-07-30"
+        },
+        {
+          "type": "",
+          "desc": "IBWM Renewal",
+          "due_date": "2030-05-11",
+          "last_done": "2025-03-26",
+          "window_start": "2030-02-12",
+          "window_end": "2030-05-11"
+        },
+        {
+          "type": "",
+          "desc": "Intermediate (1)",
+          "last_done": "2027-05-11",
+          "window_start": "2027-02-12",
+          "window_end": "2027-08-11"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2027-05-11",
+          "last_done": "2026-02-25",
+          "window_start": "2027-02-12",
+          "window_end": "2027-08-11"
+        },
+        {
+          "type": "",
+          "desc": "IEEC First Issue (Initial)",
+          "last_done": "2021-07-30"
+        },
+        {
+          "type": "",
+          "desc": "L.A. 452.05a CRANE ILO Test (central,Main Engine Overhead Travelling Crane)",
+          "due_date": "2030-03-26",
+          "last_done": "2025-03-26"
+        },
+        {
+          "type": "",
+          "desc": "- 26Mar2030 563.01a CRANE ILO Test (port,Provision Crane (Port))",
+          "due_date": "2030-03-26",
+          "last_done": "2025-03-26"
+        },
+        {
+          "type": "",
+          "desc": "- 26Mar2030 563.01b CRANE ILO Test (stbd,Provision Crane (Starboard))",
+          "due_date": "2030-03-26",
+          "last_done": "2025-03-26"
+        },
+        {
+          "type": "",
+          "desc": "- 26Mar2030 452.05a CRANE ILO Annual (central,Main Engine Overhead Travelling Crane)",
+          "due_date": "2027-02-25",
+          "last_done": "2026-02-25"
+        },
+        {
+          "type": "",
+          "desc": "- 25Feb2027 563.01a CRANE ILO Annual (port,Provision Crane (Port))",
+          "due_date": "2027-02-25",
+          "last_done": "2026-02-25"
+        },
+        {
+          "type": "",
+          "desc": "- 25Feb2027 563.01b CRANE ILO Annual (stbd,Provision Crane (Starboard))",
+          "due_date": "2027-02-25",
+          "last_done": "2026-02-25"
+        },
+        {
+          "type": "",
+          "desc": "- 25Feb2027 563.10a DERRICK ILO Quinquennial (Provision Davit,stbd)",
+          "due_date": "2030-03-26",
+          "last_done": "2025-03-26"
+        },
+        {
+          "type": "",
+          "desc": "- 26Mar2030 563.10a DERRICK ILO  Annual (Provision Davit,stbd)",
+          "due_date": "2027-02-25",
+          "last_done": "2026-02-25"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "",
+          "expiry": "2030-05-11"
+        },
+        {
+          "name": "",
+          "expiry": "2030-05-11"
+        },
+        {
+          "name": "",
+          "expiry": "2030-05-11"
+        },
+        {
+          "name": "",
+          "expiry": "2030-05-11"
+        },
+        {
+          "name": "",
+          "expiry": "2030-05-11"
+        },
+        {
+          "name": "",
+          "expiry": "2030-05-11"
+        },
+        {
+          "name": "",
+          "expiry": "2030-05-11"
+        },
+        {
+          "name": "",
+          "expiry": "2026-10-31"
+        },
+        {
+          "name": "",
+          "expiry": "2026-10-31"
+        },
+        {
+          "name": "",
+          "expiry": "2026-10-31"
+        },
+        {
+          "name": "",
+          "expiry": "2030-05-11"
+        },
+        {
+          "name": "",
+          "expiry": "2030-05-11"
+        },
+        {
+          "name": "",
+          "expiry": "2030-05-11"
+        },
+        {
+          "name": "",
+          "expiry": "2023-05-11"
+        },
+        {
+          "name": "",
+          "expiry": "2030-05-11"
+        }
+      ],
       "alerts": {
-        "expired": 0,
+        "expired": 1,
         "urgent_7d": 0,
         "warning_30d": 0,
-        "info_90d": 0
+        "info_90d": 3
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     }
   }
 }
