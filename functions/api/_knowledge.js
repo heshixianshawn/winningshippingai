@@ -110,21 +110,49 @@ function searchShipKnowledge(kb, query) {
   return results.flat().join('\n');
 }
 
-/** 搜索技术知识库 */
-function searchTechIndex(ti, query) {
-  if (!ti || !ti.devices) return '';
+/** 搜索技术知识库（v2: 兼容 keyword_map/device_shards 格式） */
+export function searchTechIndex(ti, query) {
+  if (!ti) return '';
   const q = query.toLowerCase();
   const results = [];
 
-  for (const dev of ti.devices) {
-    const nameMatch = (dev.name || '').toLowerCase().includes(q) || (dev.category || '').toLowerCase().includes(q);
-    const kwMatch = (dev.keywords || []).some(k => k.toLowerCase().includes(q));
-    if (nameMatch || kwMatch) {
-      results.push(`【技术知识库 - ${dev.name || '未命名'}】(分类: ${dev.category || '未分类'})\n描述: ${(dev.description || '').slice(0, 200)}\n知识条目数: ${(dev.shard_count || (dev.files ? dev.files.length : '?'))}`);
-      if (results.length >= 10) break;
+  // v1 格式：devices 列表
+  if (Array.isArray(ti.devices)) {
+    for (const dev of ti.devices) {
+      const nameMatch = (dev.name || '').toLowerCase().includes(q) || (dev.category || '').toLowerCase().includes(q);
+      const kwMatch = (dev.keywords || []).some(k => k.toLowerCase().includes(q));
+      if (nameMatch || kwMatch) {
+        results.push(`【技术知识库 - ${dev.name || '未命名'}】(分类: ${dev.category || '未分类'})\n描述: ${(dev.description || '').slice(0, 200)}\n知识条目数: ${(dev.shard_count || (dev.files ? dev.files.length : '?'))}`);
+        if (results.length >= 10) break;
+      }
     }
+    return results.join('\n');
   }
 
+  // v2 格式：keyword_map → device_shards
+  const km = ti.keyword_map || {};
+  const shards = ti.device_shards || {};
+  const matchedDevices = new Set();
+  // 1. keyword_map 精确命中
+  for (const kw in km) {
+    if (q.includes(kw.toLowerCase())) matchedDevices.add(km[kw]);
+  }
+  // 2. word_index 单分片命中
+  const wi = ti.word_index || {};
+  for (const w in wi) {
+    if (q.includes(w.toLowerCase()) && Array.isArray(wi[w]) && wi[w].length === 1) {
+      matchedDevices.add(wi[w][0]);
+    }
+  }
+  // 3. 分片名直接匹配（如“主机”“锅炉”）
+  for (const dev in shards) {
+    if (dev.toLowerCase().includes(q) || q.includes(dev.toLowerCase())) matchedDevices.add(dev);
+  }
+  for (const dev of matchedDevices) {
+    const info = shards[dev];
+    results.push(`【技术知识库 - ${dev}】\n文档数: ${info ? (info.count || '?') : '?'}\n分片大小: ${info ? Math.round((info.size || 0) / 1024) + ' KB' : '?'}\n提示: 前端已加载该分片检索具体文档，此处为后端索引摘要。`);
+    if (results.length >= 10) break;
+  }
   return results.join('\n');
 }
 
