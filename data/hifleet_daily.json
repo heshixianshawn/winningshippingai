@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-18 11:51:32",
+  "timestamp": "2026-08-18 11:51:56",
   "group": "A.WINNING FLEET",
   "total": 62,
   "winning": 37,
@@ -8,22 +8,22 @@
     {
       "name": "WINNING AMBITION",
       "status": "在航",
-      "lon": 25.1552,
-      "lat": -34.3584,
+      "lon": 25.157,
+      "lat": -34.3586,
       "speed_kn": 10.6,
-      "heading_deg": 97.0,
+      "heading_deg": 98.0,
       "destination": "CN YNT",
       "eta": "2026-09-18 10:00",
       "draught_m": 22.3,
       "mmsi": "563333900",
       "imo": "1037397",
-      "updateTime": "2026-08-18 11:51:14"
+      "updateTime": "2026-08-18 11:51:43"
     },
     {
       "name": "WINNING ANGEL",
       "status": "在航",
-      "lon": 123.8769,
-      "lat": 30.5687,
+      "lon": 123.8789,
+      "lat": 30.5659,
       "speed_kn": 11.7,
       "heading_deg": 148.0,
       "destination": "SG SIN",
@@ -31,7 +31,7 @@
       "draught_m": 9.9,
       "mmsi": "563174400",
       "imo": "9406506",
-      "updateTime": "2026-08-18 11:50:34"
+      "updateTime": "2026-08-18 11:51:34"
     },
     {
       "name": "WINNING BRIGHT",
@@ -64,16 +64,16 @@
     {
       "name": "WINNING CONFIDENCE",
       "status": "在航",
-      "lon": -4.6467,
-      "lat": -6.7333,
-      "speed_kn": 10.0,
-      "heading_deg": 142.0,
+      "lon": -4.6445,
+      "lat": -6.7383,
+      "speed_kn": 10.2,
+      "heading_deg": 145.0,
       "destination": "CN YNT",
       "eta": "2026-09-26 18:00",
       "draught_m": 18.5,
       "mmsi": "566311000",
       "imo": "9325001",
-      "updateTime": "2026-08-18 11:49:35"
+      "updateTime": "2026-08-18 11:51:25"
     },
     {
       "name": "WINNING DILIGENCE",
@@ -106,16 +106,16 @@
     {
       "name": "WINNING EXCELLENCE",
       "status": "在航",
-      "lon": 13.9283,
-      "lat": -30.452,
-      "speed_kn": 10.4,
+      "lon": 13.9225,
+      "lat": -30.4464,
+      "speed_kn": 10.3,
       "heading_deg": 322.0,
       "destination": "PORT DE BOKE GUINEA",
       "eta": "2026-08-30 06:00",
       "draught_m": 12.0,
       "mmsi": "563114700",
       "imo": "9279393",
-      "updateTime": "2026-08-18 11:48:35"
+      "updateTime": "2026-08-18 11:51:13"
     },
     {
       "name": "WINNING FAITH",
@@ -123,13 +123,13 @@
       "lon": 118.4552,
       "lat": 39.0039,
       "speed_kn": null,
-      "heading_deg": 359.0,
+      "heading_deg": null,
       "destination": "CNCFD",
       "eta": "2026-08-14 00:30",
       "draught_m": 18.2,
       "mmsi": "566963000",
       "imo": "9314076",
-      "updateTime": "2026-08-18 11:49:34"
+      "updateTime": "2026-08-18 11:49:49"
     },
     {
       "name": "WINNING GRACE",
@@ -148,30 +148,30 @@
     {
       "name": "WINNING HOPE",
       "status": "在航",
-      "lon": 9.1829,
-      "lat": -25.0129,
-      "speed_kn": 9.2,
+      "lon": 9.1843,
+      "lat": -25.0146,
+      "speed_kn": 9.3,
       "heading_deg": 142.0,
       "destination": "MAJISHAN CHINA",
       "eta": "2026-09-20 18:00",
       "draught_m": 18.8,
       "mmsi": "563152000",
       "imo": "9722950",
-      "updateTime": "2026-08-18 11:50:09"
+      "updateTime": "2026-08-18 11:50:58"
     },
     {
       "name": "WINNING INTEGRITY",
       "status": "在航",
-      "lon": -9.6574,
-      "lat": 1.1869,
-      "speed_kn": 10.2,
+      "lon": -9.6566,
+      "lat": 1.1857,
+      "speed_kn": 10.1,
       "heading_deg": 143.0,
       "destination": "CN YNT",
       "eta": "2026-09-29 22:00",
       "draught_m": 18.6,
       "mmsi": "563312300",
       "imo": "9633068",
-      "updateTime": "2026-08-18 11:50:52"
+      "updateTime": "2026-08-18 11:51:21"
     },
     {
       "name": "WINNING JOY",
@@ -218,30 +218,30 @@
     {
       "name": "WINNING MISSION",
       "status": "在航",
-      "lon": 2.1919,
-      "lat": -16.1496,
+      "lon": 2.1983,
+      "lat": -16.1582,
       "speed_kn": 9.8,
-      "heading_deg": 144.0,
+      "heading_deg": 146.0,
       "destination": "CNYNT",
       "eta": "2026-09-24 08:00",
       "draught_m": 18.7,
       "mmsi": "564266000",
       "imo": "9659854",
-      "updateTime": "2026-08-18 11:47:04"
+      "updateTime": "2026-08-18 11:50:55"
     },
     {
       "name": "WINNING NATURE",
       "status": "在航",
-      "lon": 75.7283,
-      "lat": -7.555,
+      "lon": 75.729,
+      "lat": -7.557,
       "speed_kn": 10.0,
-      "heading_deg": 233.0,
+      "heading_deg": null,
       "destination": "TUBARAO",
       "eta": "2026-09-15 08:00",
       "draught_m": 10.5,
       "mmsi": "563001300",
       "imo": "9659866",
-      "updateTime": "2026-08-18 11:49:51"
+      "updateTime": "2026-08-18 11:50:00"
     },
     {
       "name": "WINNING OCEAN",
@@ -288,8 +288,8 @@
     {
       "name": "WINNING PROGRESS",
       "status": "在航",
-      "lon": -10.5599,
-      "lat": 0.1163,
+      "lon": -10.5588,
+      "lat": 0.1141,
       "speed_kn": 10.5,
       "heading_deg": 148.0,
       "destination": "YANTAI CHINA",
@@ -297,7 +297,7 @@
       "draught_m": 18.7,
       "mmsi": "563005100",
       "imo": "9576296",
-      "updateTime": "2026-08-18 11:50:29"
+      "updateTime": "2026-08-18 11:51:20"
     },
     {
       "name": "WINNING QUEEN",
@@ -344,16 +344,16 @@
     {
       "name": "WINNING RISING",
       "status": "在航",
-      "lon": 7.3809,
-      "lat": -22.8018,
+      "lon": 7.379,
+      "lat": -22.7997,
       "speed_kn": 12.0,
-      "heading_deg": 319.0,
+      "heading_deg": 320.0,
       "destination": "PORT DE BOKE",
       "eta": "2026-08-26 07:00",
       "draught_m": 10.0,
       "mmsi": "636017588",
       "imo": "9393199",
-      "updateTime": "2026-08-18 11:50:24"
+      "updateTime": "2026-08-18 11:51:24"
     },
     {
       "name": "WINNING SEA",
@@ -372,16 +372,16 @@
     {
       "name": "WINNING SPIRIT",
       "status": "在航",
-      "lon": 75.214,
-      "lat": -8.2462,
-      "speed_kn": 11.7,
+      "lon": 75.207,
+      "lat": -8.2512,
+      "speed_kn": 11.8,
       "heading_deg": 227.0,
       "destination": "MUPLU",
       "eta": "2026-08-24 04:00",
       "draught_m": 10.8,
       "mmsi": "563015700",
       "imo": "9597824",
-      "updateTime": "2026-08-18 11:48:28"
+      "updateTime": "2026-08-18 11:51:08"
     },
     {
       "name": "WINNING TEAM",
@@ -484,8 +484,8 @@
     {
       "name": "WINNING WORLD",
       "status": "在航",
-      "lon": 121.3523,
-      "lat": 25.7876,
+      "lon": 121.3511,
+      "lat": 25.7862,
       "speed_kn": 12.8,
       "heading_deg": 208.0,
       "destination": "SGP PJSB",
@@ -493,7 +493,7 @@
       "draught_m": 8.4,
       "mmsi": "563099400",
       "imo": "9859777",
-      "updateTime": "2026-08-18 11:50:58"
+      "updateTime": "2026-08-18 11:51:28"
     },
     {
       "name": "WINNING YOUTH",
@@ -526,16 +526,16 @@
     {
       "name": "SUNNY BEYLA",
       "status": "在航",
-      "lon": 123.9938,
-      "lat": 32.2923,
-      "speed_kn": 11.4,
-      "heading_deg": 311.0,
+      "lon": 123.9932,
+      "lat": 32.2929,
+      "speed_kn": 11.1,
+      "heading_deg": 304.0,
       "destination": "CNYNT",
       "eta": "2026-08-20 02:00",
       "draught_m": 18.5,
       "mmsi": "353351000",
       "imo": "9364320",
-      "updateTime": "2026-08-18 11:51:14"
+      "updateTime": "2026-08-18 11:51:29"
     },
     {
       "name": "SUNNY BOFFA",
@@ -596,16 +596,16 @@
     {
       "name": "SUNNY DABOLA",
       "status": "在航",
-      "lon": 0.9467,
-      "lat": -13.0183,
-      "speed_kn": 9.0,
-      "heading_deg": 141.0,
+      "lon": 0.9492,
+      "lat": -13.0203,
+      "speed_kn": 9.6,
+      "heading_deg": 144.0,
       "destination": "YANTAI",
       "eta": "2026-09-28 18:00",
       "draught_m": 18.3,
       "mmsi": "356849000",
       "imo": "9398149",
-      "updateTime": "2026-08-18 11:50:25"
+      "updateTime": "2026-08-18 11:51:02"
     },
     {
       "name": "SUNNY FARANAH",
@@ -652,16 +652,16 @@
     {
       "name": "SUNNY KAMSAR",
       "status": "在航",
-      "lon": 25.5018,
-      "lat": -34.2554,
+      "lon": 25.5029,
+      "lat": -34.2553,
       "speed_kn": 9.2,
-      "heading_deg": 87.0,
+      "heading_deg": 86.0,
       "destination": "CN BEI LUN",
       "eta": "2026-09-16 20:00",
       "draught_m": 18.3,
       "mmsi": "477255800",
       "imo": "9336957",
-      "updateTime": "2026-08-18 11:51:14"
+      "updateTime": "2026-08-18 11:51:34"
     },
     {
       "name": "SUNNY KANKAN",
@@ -680,50 +680,50 @@
     {
       "name": "SUNNY KEROUANE",
       "status": "在航",
-      "lon": 64.2873,
-      "lat": -15.1666,
-      "speed_kn": 12.1,
-      "heading_deg": 232.0,
+      "lon": 64.2831,
+      "lat": -15.1695,
+      "speed_kn": 11.9,
+      "heading_deg": 233.0,
       "destination": "PORT DE BOKE",
       "eta": "2026-09-08 09:00",
       "draught_m": 10.3,
       "mmsi": "636025112",
       "imo": "9398113",
-      "updateTime": "2026-08-18 11:49:45"
+      "updateTime": "2026-08-18 11:51:16"
     },
     {
       "name": "SUNNY KINDIA",
       "status": "在航",
-      "lon": 17.6284,
-      "lat": -33.8027,
-      "speed_kn": 10.3,
+      "lon": 17.63,
+      "lat": -33.8041,
+      "speed_kn": 10.4,
       "heading_deg": 139.0,
       "destination": "CNFAN",
       "eta": "2026-09-15 08:30",
       "draught_m": 18.6,
       "mmsi": "477255400",
       "imo": "9374064",
-      "updateTime": "2026-08-18 11:51:01"
+      "updateTime": "2026-08-18 11:51:40"
     },
     {
       "name": "SUNNY KOGON",
       "status": "在航",
-      "lon": 105.8643,
-      "lat": 4.1444,
-      "speed_kn": 12.0,
+      "lon": 105.8635,
+      "lat": 4.1428,
+      "speed_kn": 11.9,
       "heading_deg": 207.0,
       "destination": "PJSB SG",
       "eta": "2026-08-19 02:00",
       "draught_m": 9.3,
       "mmsi": "636025854",
       "imo": "9312303",
-      "updateTime": "2026-08-18 11:51:09"
+      "updateTime": "2026-08-18 11:51:41"
     },
     {
       "name": "SUNNY LABE",
       "status": "在航",
-      "lon": 121.8222,
-      "lat": 23.2959,
+      "lon": 121.8225,
+      "lat": 23.297,
       "speed_kn": 12.5,
       "heading_deg": 17.0,
       "destination": "CNYNT",
@@ -731,7 +731,7 @@
       "draught_m": 18.0,
       "mmsi": "352002765",
       "imo": "9271597",
-      "updateTime": "2026-08-18 11:51:13"
+      "updateTime": "2026-08-18 11:51:33"
     },
     {
       "name": "SUNNY LINK",
@@ -792,16 +792,16 @@
     {
       "name": "SUNNY RIVER",
       "status": "在航",
-      "lon": 19.6779,
-      "lat": -34.9604,
-      "speed_kn": 10.3,
-      "heading_deg": 115.0,
+      "lon": 19.6791,
+      "lat": -34.9608,
+      "speed_kn": 10.2,
+      "heading_deg": 114.0,
       "destination": "CN YANTAI",
       "eta": "2026-09-24 08:00",
       "draught_m": 18.6,
       "mmsi": "477254500",
       "imo": "9337169",
-      "updateTime": "2026-08-18 11:51:11"
+      "updateTime": "2026-08-18 11:51:31"
     },
     {
       "name": "SUNNY ROUTE",
@@ -821,21 +821,21 @@
       "name": "SUNNY SAILOR",
       "status": "锚泊",
       "lon": 104.0439,
-      "lat": 1.2977,
-      "speed_kn": null,
-      "heading_deg": 81.0,
+      "lat": 1.2978,
+      "speed_kn": 0.1,
+      "heading_deg": null,
       "destination": "GN PORT DE BOKE",
       "eta": "2026-09-17 17:15",
       "draught_m": 9.2,
       "mmsi": "477267100",
       "imo": "9439125",
-      "updateTime": "2026-08-18 11:49:22"
+      "updateTime": "2026-08-18 11:49:44"
     },
     {
       "name": "SUNNY SIGUIRI",
       "status": "在航",
-      "lon": 55.2349,
-      "lat": -22.5153,
+      "lon": 55.2339,
+      "lat": -22.5157,
       "speed_kn": 11.6,
       "heading_deg": 243.0,
       "destination": "GN MOR",
@@ -843,21 +843,21 @@
       "draught_m": 11.5,
       "mmsi": "477267400",
       "imo": "9406453",
-      "updateTime": "2026-08-18 11:51:14"
+      "updateTime": "2026-08-18 11:51:33"
     },
     {
       "name": "SUNNY SKY",
       "status": "在航",
-      "lon": 26.2506,
-      "lat": -34.3083,
-      "speed_kn": 9.5,
+      "lon": 26.2521,
+      "lat": -34.3084,
+      "speed_kn": 9.4,
       "heading_deg": 90.0,
       "destination": "CN QDG",
       "eta": "2026-09-19 04:00",
       "draught_m": 18.5,
       "mmsi": "563335400",
       "imo": "9461295",
-      "updateTime": "2026-08-18 11:51:09"
+      "updateTime": "2026-08-18 11:51:39"
     },
     {
       "name": "SUNNY STAR",
