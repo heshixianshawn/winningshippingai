@@ -1591,6 +1591,8 @@ async function callAPI(message, module, imageData) {
   const lastHistory = history.slice(-6).map(h => ({ role: h.role, content: h.text }));
   
   // ═══ 前端知识库检索（思考引擎版） ═══
+  var context = null;
+  var userContent = null;
   const moduleContext = await buildFrontendContext(message, module);
   var isShipStructured = false;
   var structuredData = null;
@@ -1732,6 +1734,11 @@ async function buildFrontendContext(message, module) {
       if (matchedShip) {
         // 委托给 buildShipsContext 生成结构化 JSON（含参数+证书+动态+修船）
         return buildShipsContext(message);
+      }
+
+      // 坞检/检验到期类问题（无船名时）→ 交给后端 Survey 知识库处理（坞检专项检索）
+      if (/坞检|坞修|特检|年检|中检|检验到期|SURVEY.*到期|DOCKING/i.test(q)) {
+        return null;
       }
       
       // === 修船记录查询 ===
