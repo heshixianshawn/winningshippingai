@@ -1272,6 +1272,11 @@ function buildShipsContext(message) {
     }
   }
   
+  // 坞检/检验到期类问题（无船名时）→ 交给后端 Survey 知识库处理（坞检专项检索）
+  if (module === 'ships' && !matchedShip && /坞检|坞修|特检|年检|中检|检验到期|SURVEY.*到期|DOCKING/i.test(q)) {
+    return null;
+  }
+
   if (!matchedShip) {
     // 按证书类型/到期日关键词搜索
     var certTypePats = ['证书', '到期', '到期日', 'DOCK', 'SURVEY', '舱室', 'ILL', 'IOPP', 'SMC', 'ISSC', 'SSEC', 'SC', 'SE', 'SR', 'IAPP'];
@@ -1645,6 +1650,32 @@ async function callAPI(message, module, imageData) {
   console.log('[DEBUG] system prompt last 300:', systemContent.substring(systemContent.length - 300));
   console.log('[DEBUG] user content first 200:', userContent.substring(0, 200));
   console.log('[DEBUG] model:', model);
+  
+  // ═══ 船舶模块改调 CF Pages 后端（多源检索：Survey坞检/参数库/PSC风险，2026-08-23） ═══
+  if (module === 'ships') {
+    var cfBody = { message: message, module: 'ships', history: lastHistory };
+    if (isShipStructured && structuredData) {
+      cfBody.context = JSON.stringify(structuredData);
+    } else if (context) {
+      cfBody.context = context;
+    }
+    try {
+      var cfResp = await fetch(CONFIG.API_BASE_URL + '/api/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(cfBody)
+      });
+      if (cfResp.ok) {
+        var cfData = await cfResp.json();
+        if (cfData && cfData.reply) {
+          return { reply: cfData.reply, model: cfData.model, usage: cfData.usage };
+        }
+      }
+      console.error('[ships] CF API 失败, 回退APIYI:', cfResp.status);
+    } catch (e) {
+      console.error('[ships] CF API 异常, 回退APIYI:', e.message);
+    }
+  }
   
   // ═══ 调API易 ═══
   const response = await fetch(APIYI_BASE + '/chat/completions', {
