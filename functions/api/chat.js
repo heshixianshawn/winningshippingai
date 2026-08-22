@@ -9,6 +9,7 @@ import {
 } from './_system_prompts.js';
 import { querySurveyKnowledge, getAlertSummary } from './_survey_knowledge.js';
 import { autoSearchKnowledge } from './_knowledge.js';
+import { searchFleetKnowledge } from './_fleet_data.js';
 import { logToKV } from './_logger.js';
 import { analyzeIntent, buildThinkingContext } from './_thinking_engine.js';
 import { queryMemory, injectMemoryPrompt, logQuery } from './memory/_memory_core.js';
@@ -80,15 +81,22 @@ export async function onRequest(context) {
       kbContext = clientContext;
       ragUsed = true;
     } else if (module === 'ships') {
-      // Survey knowledge base search for ship queries
+      // 多源检索（合并）：Survey 检验证书 + 参数库(GT/DWT/主机) + TMOU PSC 风险档案
+      const parts = [];
       const surveyResult = querySurveyKnowledge(message);
-      if (surveyResult) {
-        kbContext = surveyResult;
-        ragUsed = true;
-      } else {
-        kbContext = await autoSearchKnowledge(module, message, request);
-        ragUsed = !!kbContext;
+      if (surveyResult) parts.push(surveyResult);
+      try {
+        const fleetCtx = await searchFleetKnowledge(message, request);
+        if (fleetCtx) parts.push(fleetCtx);
+      } catch (e) {
+        console.error('[Fleet] search failed:', e.message);
       }
+      if (parts.length === 0) {
+        const kb = await autoSearchKnowledge(module, message, request);
+        if (kb) parts.push(kb);
+      }
+      kbContext = parts.join('\n\n');
+      ragUsed = !!kbContext;
     } else {
       kbContext = await autoSearchKnowledge(module, message, request);
       ragUsed = !!kbContext;
