@@ -73,9 +73,15 @@ export async function onRequest(context) {
     let ragUsed = false;
 
     if (isThinkingMode && awareData) {
-      // 思考引擎模式：前端已分析结构数据，我们在Worker侧再做意图分析
+      // 思考引擎模式：前端已分析结构数据，Worker侧再补充后端权威检索（参数库 + PSC 风险）
       const intent = analyzeIntent(awareData, message);
       kbContext = buildThinkingContext(awareData, intent);
+      try {
+        const fleetCtx = await searchFleetKnowledge(message, request);
+        if (fleetCtx) kbContext += '\n\n' + fleetCtx;
+      } catch (e) {
+        console.error('[Fleet] thinking-mode search failed:', e.message);
+      }
       ragUsed = true;
     } else if (clientContext && typeof clientContext === 'string' && clientContext.length > 0) {
       kbContext = clientContext;
