@@ -1592,7 +1592,7 @@ async function callAPI(message, module, imageData) {
   
   // ═══ 前端知识库检索（思考引擎版） ═══
   var context = null;
-  var userContent = null;
+  var userContent = message || '';
   const moduleContext = await buildFrontendContext(message, module);
   var isShipStructured = false;
   var structuredData = null;
@@ -1650,7 +1650,7 @@ async function callAPI(message, module, imageData) {
   
   // 🐛 DEBUG: 打印实际发送的消息结构
   console.log('[DEBUG] system prompt last 300:', systemContent.substring(systemContent.length - 300));
-  console.log('[DEBUG] user content first 200:', userContent.substring(0, 200));
+  console.log('[DEBUG] user content first 200:', (userContent || '').substring(0, 200));
   console.log('[DEBUG] model:', model);
   
   // ═══ 船舶模块改调 CF Pages 后端（多源检索：Survey坞检/参数库/PSC风险，2026-08-23） ═══
