@@ -1,2011 +1,121 @@
 {
-  "last_updated": "2026-08-16 10:39",
+  "last_updated": "2026-08-22 15:05",
   "total_ships": 61,
   "ships": {
-    "WINNING_ENDURANCE": {
-      "name": "WINNING ENDURANCE",
-      "imo": "9232058",
-      "class_society": "NK",
-      "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
-      "surveys": [
-        {
-          "type": "other",
-          "desc": "BWM",
-          "due_date": "16 Jul 2025"
-        }
-      ],
-      "certificates": [
-        {
-          "name": "Load Line",
-          "expiry": "15 Jul 2030"
-        },
-        {
-          "name": "Safety Construction",
-          "expiry": "15 Jul 2030"
-        },
-        {
-          "name": "Safety Equipment",
-          "expiry": "15 Jul 2030"
-        },
-        {
-          "name": "Safety Radio",
-          "expiry": "15 Jul 2030"
-        },
-        {
-          "name": "BWM",
-          "expiry": "16 Jul 2025"
-        },
-        {
-          "name": "IHM",
-          "expiry": "15 Jul 2030"
-        }
-      ],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
-    },
-    "WINNING_GRACE": {
-      "name": "WINNING GRACE",
-      "imo": "9314076",
-      "class_society": "NK",
-      "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
-      "surveys": [
-        {
-          "type": "other",
-          "desc": "BWM",
-          "due_date": "07 Oct 2024"
-        },
-        {
-          "type": "other",
-          "desc": "IHM",
-          "due_date": "07 Oct 2024"
-        }
-      ],
-      "certificates": [
-        {
-          "name": "Load Line",
-          "expiry": "19 Oct 2029"
-        },
-        {
-          "name": "Safety Construction",
-          "expiry": "19 Oct 2029"
-        },
-        {
-          "name": "Safety Equipment",
-          "expiry": "19 Oct 2029"
-        },
-        {
-          "name": "Safety Radio",
-          "expiry": "19 Oct 2029"
-        },
-        {
-          "name": "BWM",
-          "expiry": "07 Oct 2024"
-        },
-        {
-          "name": "IHM",
-          "expiry": "07 Oct 2024"
-        }
-      ],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
-    },
-    "WINNING_OCEAN": {
-      "name": "WINNING OCEAN",
-      "imo": "9722950",
-      "class_society": "NK",
-      "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
-      "surveys": [
-        {
-          "type": "other",
-          "desc": "BWM",
-          "due_date": "07 Jun 2026"
-        },
-        {
-          "type": "other",
-          "desc": "IHM",
-          "due_date": "15 Jun 2021"
-        }
-      ],
-      "certificates": [
-        {
-          "name": "Load Line",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Construction",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Equipment",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Radio",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "BWM",
-          "expiry": "07 Jun 2026"
-        },
-        {
-          "name": "IHM",
-          "expiry": "15 Jun 2021"
-        }
-      ],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
-    },
-    "WINNING_BROTHER": {
-      "name": "WINNING BROTHER",
-      "imo": "9406453",
-      "class_society": "NK",
-      "flag": "Panama",
-      "gt": null,
-      "dwt": null,
-      "surveys": [
-        {
-          "type": "other",
-          "desc": "BWM",
-          "due_date": "23 Jul 2022"
-        },
-        {
-          "type": "other",
-          "desc": "IHM",
-          "due_date": "23 Jul 2022"
-        }
-      ],
-      "certificates": [
-        {
-          "name": "Load Line",
-          "expiry": "24 Apr 2027"
-        },
-        {
-          "name": "Safety Construction",
-          "expiry": "24 Apr 2027"
-        },
-        {
-          "name": "Safety Equipment",
-          "expiry": "24 Apr 2027"
-        },
-        {
-          "name": "Safety Radio",
-          "expiry": "24 Apr 2027"
-        },
-        {
-          "name": "BWM",
-          "expiry": "23 Jul 2022"
-        },
-        {
-          "name": "IHM",
-          "expiry": "23 Jul 2022"
-        }
-      ],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
-    },
-    "WINNING_TEAM": {
-      "name": "WINNING TEAM",
-      "imo": "9722950",
-      "class_society": "NK",
-      "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
-      "surveys": [
-        {
-          "type": "other",
-          "desc": "BWM",
-          "due_date": "07 Jun 2026"
-        },
-        {
-          "type": "other",
-          "desc": "IHM",
-          "due_date": "15 Jun 2021"
-        }
-      ],
-      "certificates": [
-        {
-          "name": "Load Line",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Construction",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Equipment",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Radio",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "BWM",
-          "expiry": "07 Jun 2026"
-        },
-        {
-          "name": "IHM",
-          "expiry": "15 Jun 2021"
-        }
-      ],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
-    },
-    "WINNING_SEA": {
-      "name": "WINNING SEA",
-      "imo": "9722950",
-      "class_society": "NK",
-      "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
-      "surveys": [
-        {
-          "type": "other",
-          "desc": "BWM",
-          "due_date": "07 Jun 2026"
-        },
-        {
-          "type": "other",
-          "desc": "IHM",
-          "due_date": "15 Jun 2021"
-        }
-      ],
-      "certificates": [
-        {
-          "name": "Load Line",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Construction",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Equipment",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Radio",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "BWM",
-          "expiry": "07 Jun 2026"
-        },
-        {
-          "name": "IHM",
-          "expiry": "15 Jun 2021"
-        }
-      ],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
-    },
-    "WINNING_INTEGRITY": {
-      "name": "WINNING INTEGRITY",
-      "imo": "9722950",
-      "class_society": "NK",
-      "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
-      "surveys": [
-        {
-          "type": "other",
-          "desc": "BWM",
-          "due_date": "07 Jun 2026"
-        },
-        {
-          "type": "other",
-          "desc": "IHM",
-          "due_date": "15 Jun 2021"
-        }
-      ],
-      "certificates": [
-        {
-          "name": "Load Line",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Construction",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Equipment",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Radio",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "BWM",
-          "expiry": "07 Jun 2026"
-        },
-        {
-          "name": "IHM",
-          "expiry": "15 Jun 2021"
-        }
-      ],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
-    },
-    "WINNING_LOYALTY": {
-      "name": "WINNING LOYALTY",
-      "imo": "9722950",
-      "class_society": "NK",
-      "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
-      "surveys": [
-        {
-          "type": "other",
-          "desc": "BWM",
-          "due_date": "07 Jun 2026"
-        },
-        {
-          "type": "other",
-          "desc": "IHM",
-          "due_date": "15 Jun 2021"
-        }
-      ],
-      "certificates": [
-        {
-          "name": "Load Line",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Construction",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Equipment",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Radio",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "BWM",
-          "expiry": "07 Jun 2026"
-        },
-        {
-          "name": "IHM",
-          "expiry": "15 Jun 2021"
-        }
-      ],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
-    },
-    "WINNING_UNIVERSE": {
-      "name": "WINNING UNIVERSE",
-      "imo": "9722950",
-      "class_society": "NK",
-      "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
-      "surveys": [
-        {
-          "type": "other",
-          "desc": "BWM",
-          "due_date": "07 Jun 2026"
-        },
-        {
-          "type": "other",
-          "desc": "IHM",
-          "due_date": "15 Jun 2021"
-        }
-      ],
-      "certificates": [
-        {
-          "name": "Load Line",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Construction",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Equipment",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Radio",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "BWM",
-          "expiry": "07 Jun 2026"
-        },
-        {
-          "name": "IHM",
-          "expiry": "15 Jun 2021"
-        }
-      ],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
-    },
-    "WINNING_CONFIDENCE": {
-      "name": "WINNING CONFIDENCE",
-      "imo": "9325001",
-      "class_society": "NK",
-      "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
-      "surveys": [
-        {
-          "type": "other",
-          "desc": "BWM",
-          "due_date": "28 Dec 2024"
-        },
-        {
-          "type": "other",
-          "desc": "IHM",
-          "due_date": "28 Dec 2024"
-        }
-      ],
-      "certificates": [
-        {
-          "name": "Load Line",
-          "expiry": "31 Jan 2030"
-        },
-        {
-          "name": "Safety Construction",
-          "expiry": "31 Jan 2030"
-        },
-        {
-          "name": "Safety Equipment",
-          "expiry": "31 Jan 2030"
-        },
-        {
-          "name": "Safety Radio",
-          "expiry": "31 Jan 2030"
-        },
-        {
-          "name": "BWM",
-          "expiry": "28 Dec 2024"
-        },
-        {
-          "name": "IHM",
-          "expiry": "28 Dec 2024"
-        }
-      ],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
-    },
-    "WINNING_HOPE": {
-      "name": "WINNING HOPE",
-      "imo": "9314076",
-      "class_society": "NK",
-      "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
-      "surveys": [
-        {
-          "type": "other",
-          "desc": "BWM",
-          "due_date": "07 Oct 2024"
-        },
-        {
-          "type": "other",
-          "desc": "IHM",
-          "due_date": "07 Oct 2024"
-        }
-      ],
-      "certificates": [
-        {
-          "name": "Load Line",
-          "expiry": "19 Oct 2029"
-        },
-        {
-          "name": "Safety Construction",
-          "expiry": "19 Oct 2029"
-        },
-        {
-          "name": "Safety Equipment",
-          "expiry": "19 Oct 2029"
-        },
-        {
-          "name": "Safety Radio",
-          "expiry": "19 Oct 2029"
-        },
-        {
-          "name": "BWM",
-          "expiry": "07 Oct 2024"
-        },
-        {
-          "name": "IHM",
-          "expiry": "07 Oct 2024"
-        }
-      ],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
-    },
-    "WINNING_YOUTH": {
-      "name": "WINNING YOUTH",
-      "imo": "9722950",
-      "class_society": "NK",
-      "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
-      "surveys": [
-        {
-          "type": "other",
-          "desc": "BWM",
-          "due_date": "07 Jun 2026"
-        },
-        {
-          "type": "other",
-          "desc": "IHM",
-          "due_date": "15 Jun 2021"
-        }
-      ],
-      "certificates": [
-        {
-          "name": "Load Line",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Construction",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Equipment",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Radio",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "BWM",
-          "expiry": "07 Jun 2026"
-        },
-        {
-          "name": "IHM",
-          "expiry": "15 Jun 2021"
-        }
-      ],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
-    },
-    "WINNING_WORLD": {
-      "name": "WINNING WORLD",
-      "imo": "9722950",
-      "class_society": "NK",
-      "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
-      "surveys": [
-        {
-          "type": "other",
-          "desc": "BWM",
-          "due_date": "07 Jun 2026"
-        },
-        {
-          "type": "other",
-          "desc": "IHM",
-          "due_date": "15 Jun 2021"
-        }
-      ],
-      "certificates": [
-        {
-          "name": "Load Line",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Construction",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Equipment",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Radio",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "BWM",
-          "expiry": "07 Jun 2026"
-        },
-        {
-          "name": "IHM",
-          "expiry": "15 Jun 2021"
-        }
-      ],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
-    },
-    "WINNING_DILIGENCE": {
-      "name": "WINNING DILIGENCE",
-      "imo": "9374088",
-      "class_society": "NK",
-      "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
-      "surveys": [
-        {
-          "type": "other",
-          "desc": "BWM",
-          "due_date": "12 May 2026"
-        },
-        {
-          "type": "other",
-          "desc": "IHM",
-          "due_date": "14 Apr 2021"
-        }
-      ],
-      "certificates": [
-        {
-          "name": "Load Line",
-          "expiry": "17 May 2031"
-        },
-        {
-          "name": "Safety Construction",
-          "expiry": "17 May 2031"
-        },
-        {
-          "name": "Safety Equipment",
-          "expiry": "17 May 2031"
-        },
-        {
-          "name": "Safety Radio",
-          "expiry": "17 May 2031"
-        },
-        {
-          "name": "BWM",
-          "expiry": "12 May 2026"
-        },
-        {
-          "name": "IHM",
-          "expiry": "14 Apr 2021"
-        }
-      ],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
-    },
-    "WINNING_MISSION": {
-      "name": "WINNING MISSION",
-      "imo": "9722950",
-      "class_society": "NK",
-      "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
-      "surveys": [
-        {
-          "type": "other",
-          "desc": "BWM",
-          "due_date": "07 Jun 2026"
-        },
-        {
-          "type": "other",
-          "desc": "IHM",
-          "due_date": "15 Jun 2021"
-        }
-      ],
-      "certificates": [
-        {
-          "name": "Load Line",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Construction",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Equipment",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Radio",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "BWM",
-          "expiry": "07 Jun 2026"
-        },
-        {
-          "name": "IHM",
-          "expiry": "15 Jun 2021"
-        }
-      ],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
-    },
-    "WINNING_NATURE": {
-      "name": "WINNING NATURE",
-      "imo": "9722950",
-      "class_society": "NK",
-      "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
-      "surveys": [
-        {
-          "type": "other",
-          "desc": "BWM",
-          "due_date": "07 Jun 2026"
-        },
-        {
-          "type": "other",
-          "desc": "IHM",
-          "due_date": "15 Jun 2021"
-        }
-      ],
-      "certificates": [
-        {
-          "name": "Load Line",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Construction",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Equipment",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Radio",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "BWM",
-          "expiry": "07 Jun 2026"
-        },
-        {
-          "name": "IHM",
-          "expiry": "15 Jun 2021"
-        }
-      ],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
-    },
-    "WINNING_VISION": {
-      "name": "WINNING VISION",
-      "imo": "9722950",
-      "class_society": "NK",
-      "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
-      "surveys": [
-        {
-          "type": "other",
-          "desc": "BWM",
-          "due_date": "07 Jun 2026"
-        },
-        {
-          "type": "other",
-          "desc": "IHM",
-          "due_date": "15 Jun 2021"
-        }
-      ],
-      "certificates": [
-        {
-          "name": "Load Line",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Construction",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Equipment",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Radio",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "BWM",
-          "expiry": "07 Jun 2026"
-        },
-        {
-          "name": "IHM",
-          "expiry": "15 Jun 2021"
-        }
-      ],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
-    },
-    "WINNING_FAITH": {
-      "name": "WINNING FAITH",
-      "imo": "9314076",
-      "class_society": "NK",
-      "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
-      "surveys": [
-        {
-          "type": "other",
-          "desc": "BWM",
-          "due_date": "07 Oct 2024"
-        },
-        {
-          "type": "other",
-          "desc": "IHM",
-          "due_date": "07 Oct 2024"
-        }
-      ],
-      "certificates": [
-        {
-          "name": "Load Line",
-          "expiry": "19 Oct 2029"
-        },
-        {
-          "name": "Safety Construction",
-          "expiry": "19 Oct 2029"
-        },
-        {
-          "name": "Safety Equipment",
-          "expiry": "19 Oct 2029"
-        },
-        {
-          "name": "Safety Radio",
-          "expiry": "19 Oct 2029"
-        },
-        {
-          "name": "BWM",
-          "expiry": "07 Oct 2024"
-        },
-        {
-          "name": "IHM",
-          "expiry": "07 Oct 2024"
-        }
-      ],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
-    },
-    "WINNING_RISING": {
-      "name": "WINNING RISING",
-      "imo": "9722950",
-      "class_society": "NK",
-      "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
-      "surveys": [
-        {
-          "type": "other",
-          "desc": "BWM",
-          "due_date": "07 Jun 2026"
-        },
-        {
-          "type": "other",
-          "desc": "IHM",
-          "due_date": "15 Jun 2021"
-        }
-      ],
-      "certificates": [
-        {
-          "name": "Load Line",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Construction",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Equipment",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Radio",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "BWM",
-          "expiry": "07 Jun 2026"
-        },
-        {
-          "name": "IHM",
-          "expiry": "15 Jun 2021"
-        }
-      ],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
-    },
-    "WINNING_EXCELLENCE": {
-      "name": "WINNING EXCELLENCE",
-      "imo": "9232058",
-      "class_society": "NK",
-      "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
-      "surveys": [
-        {
-          "type": "other",
-          "desc": "BWM",
-          "due_date": "16 Jul 2025"
-        }
-      ],
-      "certificates": [
-        {
-          "name": "Load Line",
-          "expiry": "15 Jul 2030"
-        },
-        {
-          "name": "Safety Construction",
-          "expiry": "15 Jul 2030"
-        },
-        {
-          "name": "Safety Equipment",
-          "expiry": "15 Jul 2030"
-        },
-        {
-          "name": "Safety Radio",
-          "expiry": "15 Jul 2030"
-        },
-        {
-          "name": "BWM",
-          "expiry": "16 Jul 2025"
-        },
-        {
-          "name": "IHM",
-          "expiry": "15 Jul 2030"
-        }
-      ],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
-    },
-    "WINNING_BRIGHT": {
-      "name": "WINNING BRIGHT",
-      "imo": "9492218",
-      "class_society": "NK",
-      "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
-      "surveys": [
-        {
-          "type": "other",
-          "desc": "BWM",
-          "due_date": "27 Sep 2024"
-        },
-        {
-          "type": "other",
-          "desc": "IHM",
-          "due_date": "27 Sep 2024"
-        }
-      ],
-      "certificates": [
-        {
-          "name": "Load Line",
-          "expiry": "21 Aug 2029"
-        },
-        {
-          "name": "Safety Construction",
-          "expiry": "21 Aug 2029"
-        },
-        {
-          "name": "Safety Equipment",
-          "expiry": "21 Aug 2029"
-        },
-        {
-          "name": "Safety Radio",
-          "expiry": "21 Aug 2029"
-        },
-        {
-          "name": "BWM",
-          "expiry": "27 Sep 2024"
-        },
-        {
-          "name": "IHM",
-          "expiry": "27 Sep 2024"
-        }
-      ],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
-    },
-    "WINNING_QUEEN": {
-      "name": "WINNING QUEEN",
-      "imo": "9722950",
-      "class_society": "NK",
-      "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
-      "surveys": [
-        {
-          "type": "other",
-          "desc": "BWM",
-          "due_date": "07 Jun 2026"
-        },
-        {
-          "type": "other",
-          "desc": "IHM",
-          "due_date": "15 Jun 2021"
-        }
-      ],
-      "certificates": [
-        {
-          "name": "Load Line",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Construction",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Equipment",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Radio",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "BWM",
-          "expiry": "07 Jun 2026"
-        },
-        {
-          "name": "IHM",
-          "expiry": "15 Jun 2021"
-        }
-      ],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
-    },
-    "WINNING_PRIDE": {
-      "name": "WINNING PRIDE",
-      "imo": "9722950",
-      "class_society": "NK",
-      "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
-      "surveys": [
-        {
-          "type": "other",
-          "desc": "BWM",
-          "due_date": "07 Jun 2026"
-        },
-        {
-          "type": "other",
-          "desc": "IHM",
-          "due_date": "15 Jun 2021"
-        }
-      ],
-      "certificates": [
-        {
-          "name": "Load Line",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Construction",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Equipment",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "Safety Radio",
-          "expiry": "09 Aug 2031"
-        },
-        {
-          "name": "BWM",
-          "expiry": "07 Jun 2026"
-        },
-        {
-          "name": "IHM",
-          "expiry": "15 Jun 2021"
-        }
-      ],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
-    },
-    "WINNING_ANGEL": {
-      "name": "WINNING ANGEL",
-      "imo": "9406506",
-      "class_society": "NK",
-      "flag": "Singapore",
-      "gt": null,
-      "dwt": null,
-      "surveys": [
-        {
-          "type": "other",
-          "desc": "BWM",
-          "due_date": "03 Mar 2023"
-        },
-        {
-          "type": "other",
-          "desc": "IHM",
-          "due_date": "03 Nov 2021"
-        }
-      ],
-      "certificates": [
-        {
-          "name": "Load Line",
-          "expiry": "18 Dec 2027"
-        },
-        {
-          "name": "Safety Construction",
-          "expiry": "18 Dec 2027"
-        },
-        {
-          "name": "Safety Equipment",
-          "expiry": "18 Dec 2027"
-        },
-        {
-          "name": "Safety Radio",
-          "expiry": "18 Dec 2027"
-        },
-        {
-          "name": "BWM",
-          "expiry": "03 Mar 2023"
-        },
-        {
-          "name": "IHM",
-          "expiry": "03 Nov 2021"
-        }
-      ],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
-    },
-    "SUNNY_KAMSAR": {
-      "name": "SUNNY KAMSAR",
-      "imo": "9336957",
-      "class_society": "NK",
-      "flag": "Hong Kong",
-      "gt": null,
-      "dwt": null,
-      "surveys": [
-        {
-          "type": "other",
-          "desc": "BWM",
-          "due_date": "16 Jul 2025"
-        },
-        {
-          "type": "other",
-          "desc": "DOC",
-          "due_date": "23 Apr 2026"
-        },
-        {
-          "type": "other",
-          "desc": "SMC",
-          "due_date": "15 Jun 2026"
-        },
-        {
-          "type": "other",
-          "desc": "MLC",
-          "due_date": "15 Jun 2026"
-        }
-      ],
-      "certificates": [
-        {
-          "name": "Load Line",
-          "expiry": "24 Jun 2030"
-        },
-        {
-          "name": "Safety Construction",
-          "expiry": "24 Jun 2030"
-        },
-        {
-          "name": "Safety Equipment",
-          "expiry": "24 Jun 2030"
-        },
-        {
-          "name": "Safety Radio",
-          "expiry": "24 Jun 2030"
-        },
-        {
-          "name": "BWM",
-          "expiry": "16 Jul 2025"
-        },
-        {
-          "name": "IHM",
-          "expiry": "24 Jun 2030"
-        },
-        {
-          "name": "DOC",
-          "expiry": "23 Apr 2026"
-        },
-        {
-          "name": "SMC",
-          "expiry": "15 Jun 2026"
-        },
-        {
-          "name": "MLC",
-          "expiry": "15 Jun 2026"
-        }
-      ],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
-    },
-    "SUNNY_KEROUANE": {
-      "name": "SUNNY KEROUANE",
-      "imo": "9398113",
-      "class_society": "NK",
-      "flag": "Liberia",
-      "gt": null,
-      "dwt": null,
-      "surveys": [
-        {
-          "type": "other",
-          "desc": "BWM",
-          "due_date": "06 Jun 2025"
-        }
-      ],
-      "certificates": [
-        {
-          "name": "Load Line",
-          "expiry": "24 May 2030"
-        },
-        {
-          "name": "Safety Construction",
-          "expiry": "24 May 2030"
-        },
-        {
-          "name": "Safety Equipment",
-          "expiry": "24 May 2030"
-        },
-        {
-          "name": "Safety Radio",
-          "expiry": "24 May 2030"
-        },
-        {
-          "name": "BWM",
-          "expiry": "06 Jun 2025"
-        }
-      ],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
-    },
-    "SUNNY_SIGUIRI": {
-      "name": "SUNNY SIGUIRI",
-      "imo": "9406453",
-      "class_society": "NK",
-      "flag": "Panama",
-      "gt": null,
-      "dwt": null,
-      "surveys": [
-        {
-          "type": "other",
-          "desc": "BWM",
-          "due_date": "23 Jul 2022"
-        },
-        {
-          "type": "other",
-          "desc": "IHM",
-          "due_date": "23 Jul 2022"
-        }
-      ],
-      "certificates": [
-        {
-          "name": "Load Line",
-          "expiry": "24 Apr 2027"
-        },
-        {
-          "name": "Safety Construction",
-          "expiry": "24 Apr 2027"
-        },
-        {
-          "name": "Safety Equipment",
-          "expiry": "24 Apr 2027"
-        },
-        {
-          "name": "Safety Radio",
-          "expiry": "24 Apr 2027"
-        },
-        {
-          "name": "BWM",
-          "expiry": "23 Jul 2022"
-        },
-        {
-          "name": "IHM",
-          "expiry": "23 Jul 2022"
-        }
-      ],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
-    },
-    "SUNNY_MOREBAYA": {
-      "name": "SUNNY MOREBAYA",
-      "imo": "9331426",
-      "class_society": "NK",
-      "flag": "Liberia",
-      "gt": null,
-      "dwt": null,
-      "surveys": [
-        {
-          "type": "other",
-          "desc": "BWM",
-          "due_date": "08 Sep 2025"
-        },
-        {
-          "type": "other",
-          "desc": "DOC",
-          "due_date": "29 Jul 2021"
-        },
-        {
-          "type": "other",
-          "desc": "SMC",
-          "due_date": "29 Dec 2025"
-        },
-        {
-          "type": "other",
-          "desc": "MLC",
-          "due_date": "29 Dec 2025"
-        }
-      ],
-      "certificates": [
-        {
-          "name": "Load Line",
-          "expiry": "14 Nov 2030"
-        },
-        {
-          "name": "Safety Construction",
-          "expiry": "14 Nov 2030"
-        },
-        {
-          "name": "Safety Equipment",
-          "expiry": "14 Nov 2030"
-        },
-        {
-          "name": "Safety Radio",
-          "expiry": "14 Nov 2030"
-        },
-        {
-          "name": "BWM",
-          "expiry": "08 Sep 2025"
-        },
-        {
-          "name": "DOC",
-          "expiry": "29 Jul 2021"
-        },
-        {
-          "name": "SMC",
-          "expiry": "29 Dec 2025"
-        },
-        {
-          "name": "MLC",
-          "expiry": "29 Dec 2025"
-        }
-      ],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
-    },
-    "SUNNY_KINDIA": {
-      "name": "SUNNY KINDIA",
-      "imo": "9374064",
-      "class_society": "NK",
-      "flag": "Hong Kong",
-      "gt": null,
-      "dwt": null,
-      "surveys": [
-        {
-          "type": "other",
-          "desc": "BWM",
-          "due_date": "20 Apr 2024"
-        },
-        {
-          "type": "other",
-          "desc": "IHM",
-          "due_date": "20 Apr 2024"
-        }
-      ],
-      "certificates": [
-        {
-          "name": "Load Line",
-          "expiry": "01 Jul 2029"
-        },
-        {
-          "name": "Safety Construction",
-          "expiry": "01 Jul 2029"
-        },
-        {
-          "name": "Safety Equipment",
-          "expiry": "01 Jul 2029"
-        },
-        {
-          "name": "Safety Radio",
-          "expiry": "01 Jul 2029"
-        },
-        {
-          "name": "BWM",
-          "expiry": "20 Apr 2024"
-        },
-        {
-          "name": "IHM",
-          "expiry": "20 Apr 2024"
-        }
-      ],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
-    },
-    "SUNNY_KALOUM": {
-      "name": "SUNNY KALOUM",
-      "imo": "9336969",
-      "class_society": "NK",
-      "flag": "Panama",
-      "gt": null,
-      "dwt": null,
-      "surveys": [
-        {
-          "type": "other",
-          "desc": "BWM",
-          "due_date": "16 Jul 2025"
-        },
-        {
-          "type": "other",
-          "desc": "IHM",
-          "due_date": "16 Jul 2025"
-        }
-      ],
-      "certificates": [
-        {
-          "name": "Load Line",
-          "expiry": "07 Oct 2030"
-        },
-        {
-          "name": "Safety Construction",
-          "expiry": "07 Oct 2030"
-        },
-        {
-          "name": "Safety Equipment",
-          "expiry": "07 Oct 2030"
-        },
-        {
-          "name": "Safety Radio",
-          "expiry": "07 Oct 2030"
-        },
-        {
-          "name": "BWM",
-          "expiry": "16 Jul 2025"
-        },
-        {
-          "name": "IHM",
-          "expiry": "16 Jul 2025"
-        }
-      ],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
-    },
-    "SUNNY_SAILOR": {
-      "name": "SUNNY SAILOR",
-      "imo": "9439125",
-      "class_society": "NK",
-      "flag": "Panama",
-      "gt": null,
-      "dwt": null,
-      "surveys": [
-        {
-          "type": "other",
-          "desc": "Load Line",
-          "due_date": "07 Sep 2026"
-        },
-        {
-          "type": "other",
-          "desc": "Safety Construction",
-          "due_date": "07 Sep 2026"
-        },
-        {
-          "type": "other",
-          "desc": "Safety Equipment",
-          "due_date": "07 Sep 2026"
-        },
-        {
-          "type": "other",
-          "desc": "Safety Radio",
-          "due_date": "07 Sep 2026"
-        },
-        {
-          "type": "other",
-          "desc": "BWM",
-          "due_date": "12 Jun 2021"
-        },
-        {
-          "type": "other",
-          "desc": "IHM",
-          "due_date": "12 Jun 2021"
-        }
-      ],
-      "certificates": [
-        {
-          "name": "Load Line",
-          "expiry": "07 Sep 2026"
-        },
-        {
-          "name": "Safety Construction",
-          "expiry": "07 Sep 2026"
-        },
-        {
-          "name": "Safety Equipment",
-          "expiry": "07 Sep 2026"
-        },
-        {
-          "name": "Safety Radio",
-          "expiry": "07 Sep 2026"
-        },
-        {
-          "name": "BWM",
-          "expiry": "12 Jun 2021"
-        },
-        {
-          "name": "IHM",
-          "expiry": "12 Jun 2021"
-        }
-      ],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
-    },
-    "SUNNY_DABOLA": {
-      "name": "SUNNY DABOLA",
-      "imo": "9387114",
-      "class_society": "NK",
-      "flag": "Hong Kong",
-      "gt": null,
-      "dwt": null,
-      "surveys": [
-        {
-          "type": "other",
-          "desc": "BWM",
-          "due_date": "05 May 2022"
-        }
-      ],
-      "certificates": [
-        {
-          "name": "Load Line",
-          "expiry": "25 Apr 2027"
-        },
-        {
-          "name": "Safety Construction",
-          "expiry": "25 Apr 2027"
-        },
-        {
-          "name": "Safety Equipment",
-          "expiry": "25 Apr 2027"
-        },
-        {
-          "name": "Safety Radio",
-          "expiry": "25 Apr 2027"
-        },
-        {
-          "name": "BWM",
-          "expiry": "05 May 2022"
-        },
-        {
-          "name": "IHM",
-          "expiry": "25 Apr 2027"
-        }
-      ],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
-    },
     "SUNNY_BEYLA": {
       "name": "SUNNY BEYLA",
       "imo": "9364320",
       "class_society": "NK",
       "flag": "Panama",
-      "gt": null,
-      "dwt": null,
-      "surveys": [],
-      "certificates": [
-        {
-          "name": "Load Line",
-          "expiry": "21 Jan 2031"
-        },
-        {
-          "name": "Safety Construction",
-          "expiry": "21 Jan 2031"
-        },
-        {
-          "name": "Safety Equipment",
-          "expiry": "21 Jan 2031"
-        },
-        {
-          "name": "Safety Radio",
-          "expiry": "21 Jan 2031"
-        },
-        {
-          "name": "BWM",
-          "expiry": "21 Oct 2027"
-        }
-      ],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
-    },
-    "SUNNY_LABE": {
-      "name": "SUNNY LABE",
-      "imo": "9271597",
-      "class_society": "NK",
-      "flag": "Panama",
-      "gt": null,
-      "dwt": null,
-      "surveys": [
-        {
-          "type": "other",
-          "desc": "BWM",
-          "due_date": "08 Sep 2024"
-        },
-        {
-          "type": "other",
-          "desc": "IHM",
-          "due_date": "08 Sep 2024"
-        }
-      ],
-      "certificates": [
-        {
-          "name": "Load Line",
-          "expiry": "18 Aug 2029"
-        },
-        {
-          "name": "Safety Construction",
-          "expiry": "18 Aug 2029"
-        },
-        {
-          "name": "Safety Equipment",
-          "expiry": "18 Aug 2029"
-        },
-        {
-          "name": "Safety Radio",
-          "expiry": "18 Aug 2029"
-        },
-        {
-          "name": "BWM",
-          "expiry": "08 Sep 2024"
-        },
-        {
-          "name": "IHM",
-          "expiry": "08 Sep 2024"
-        }
-      ],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
-    },
-    "SUNNY_STAR": {
-      "name": "SUNNY STAR",
-      "imo": "9461300",
-      "class_society": "CCS",
-      "flag": "Singapore",
-      "gt": "94175",
+      "gt": 90092,
       "dwt": "",
       "surveys": [
         {
-          "type": "boiler",
-          "desc": "锅炉"
-        },
-        {
-          "type": "annual_survey",
-          "desc": "Class Annual Survey",
-          "due_date": "2027-03-10"
-        },
-        {
-          "type": "intermediate_survey",
-          "desc": "Class Intermediate Survey",
-          "due_date": "2028-03-10"
-        },
-        {
           "type": "special_survey",
-          "desc": "Class Special Survey for",
-          "due_date": "2026-06-17"
+          "desc": "Special Survey (特检)",
+          "due_date": "2031-01-21",
+          "last_done": "2026-01-22"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (锅炉检验)",
+          "due_date": "2029-01-21",
+          "last_done": "2026-01-22"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey (坞检)",
+          "due_date": "2029-01-21",
+          "last_done": "2026-01-22"
         },
         {
           "type": "tail_shaft",
-          "desc": "尾轴检验",
-          "due_date": "2031-06-16"
-        }
-      ],
-      "certificates": [
-        {
-          "name": "ISM DOC",
-          "expiry": "2026-06-17"
+          "desc": "Propeller Shaft Survey (尾轴检验)",
+          "due_date": "2031-01-21",
+          "last_done": "2026-01-22"
         },
         {
-          "name": "ISPS"
+          "type": "statutory",
+          "desc": "Load Line Renewal (载重线换证)",
+          "due_date": "2031-01-21"
         },
         {
-          "name": "IOPP",
-          "expiry": "2027-02-09"
+          "type": "statutory",
+          "desc": "Safety Construction Renewal (构造安全换证)",
+          "due_date": "2031-01-21"
         },
         {
-          "name": "IAPP",
-          "expiry": "2027-03-10"
+          "type": "statutory",
+          "desc": "Safety Equipment Renewal (设备安全换证)",
+          "due_date": "2031-01-21"
         },
         {
-          "name": "ISPP",
-          "expiry": "2031-06-09"
+          "type": "statutory",
+          "desc": "Safety Radio Renewal (无线电安全换证)",
+          "due_date": "2031-01-21"
         },
         {
-          "name": "Load Line"
+          "type": "statutory",
+          "desc": "OPP Renewal (防油污换证)",
+          "due_date": "2031-01-21"
         },
         {
-          "name": "Safety Construction",
-          "expiry": "2026-06-17"
+          "type": "statutory",
+          "desc": "SPP Renewal (生活污水换证)",
+          "due_date": "2031-01-21"
         },
         {
-          "name": "Safety Equipment",
-          "expiry": "2026-06-17"
+          "type": "statutory",
+          "desc": "APP Renewal (防空气污染换证)",
+          "due_date": "2031-01-21"
         },
         {
-          "name": "Safety Radio",
-          "expiry": "2026-06-17"
+          "type": "statutory",
+          "desc": "IHM Renewal (有害物质清单换证)",
+          "due_date": "2031-01-21"
         },
         {
-          "name": "BWM"
-        },
-        {
-          "name": "IHM",
-          "expiry": "2031-06-09"
-        },
-        {
-          "name": "Cargo Gear",
-          "expiry": "2026-06-17"
-        },
-        {
-          "name": "AFS"
-        },
-        {
-          "name": "DOC",
-          "expiry": "2026-08-09"
-        }
-      ],
-      "alerts": {
-        "expired": 6,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "medium"
-    },
-    "SUNNY_COYAH": {
-      "name": "SUNNY COYAH",
-      "imo": "9387114",
-      "class_society": "NK",
-      "flag": "Hong Kong",
-      "gt": null,
-      "dwt": null,
-      "surveys": [
-        {
-          "type": "other",
-          "desc": "BWM",
-          "due_date": "05 May 2022"
+          "type": "statutory",
+          "desc": "BWM Renewal (压载水换证)",
+          "due_date": "2031-01-21"
         }
       ],
       "certificates": [
         {
           "name": "Load Line",
-          "expiry": "25 Apr 2027"
+          "expiry": "2031-01-21"
         },
         {
           "name": "Safety Construction",
-          "expiry": "25 Apr 2027"
+          "expiry": "2031-01-21"
         },
         {
           "name": "Safety Equipment",
-          "expiry": "25 Apr 2027"
+          "expiry": "2031-01-21"
         },
         {
           "name": "Safety Radio",
-          "expiry": "25 Apr 2027"
+          "expiry": "2031-01-21"
         },
         {
-          "name": "BWM",
-          "expiry": "05 May 2022"
+          "name": "OPP (MARPOL Annex I)",
+          "expiry": "2031-01-21"
         },
         {
-          "name": "IHM",
-          "expiry": "25 Apr 2027"
-        }
-      ],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
-    },
-    "SUNNY_LINK": {
-      "name": "SUNNY LINK",
-      "imo": "9254666",
-      "class_society": "NK",
-      "flag": "Liberia",
-      "gt": null,
-      "dwt": null,
-      "surveys": [
-        {
-          "type": "other",
-          "desc": "BWM",
-          "due_date": "14 Jul 2022"
-        }
-      ],
-      "certificates": [
-        {
-          "name": "Load Line",
-          "expiry": "25 Jun 2027"
+          "name": "SPP (MARPOL Annex IV)",
+          "expiry": "2031-01-21"
         },
         {
-          "name": "Safety Construction",
-          "expiry": "25 Jun 2027"
+          "name": "APP (MARPOL Annex VI)",
+          "expiry": "2031-01-21"
         },
         {
-          "name": "Safety Equipment",
-          "expiry": "25 Jun 2027"
+          "name": "IMSBC code",
+          "expiry": "2031-01-21"
         },
         {
-          "name": "Safety Radio",
-          "expiry": "25 Jun 2027"
-        },
-        {
-          "name": "BWM",
-          "expiry": "14 Jul 2022"
-        },
-        {
-          "name": "IHM",
-          "expiry": "25 Jun 2027"
+          "name": "Lifting Appliances(Cranes / Hoists)",
+          "expiry": "2031-01-21"
         }
       ],
       "alerts": {
@@ -2021,197 +131,229 @@
       "imo": "9253090",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": null,
-      "dwt": null,
+      "gt": 87413,
+      "dwt": "",
       "surveys": [
         {
-          "type": "other",
-          "desc": "Load Line",
-          "due_date": "27 Nov 2026"
+          "type": "special_survey",
+          "desc": "Special Survey (特检)",
+          "due_date": "2026-11-27",
+          "last_done": "2021-11-19"
         },
         {
-          "type": "other",
-          "desc": "Safety Construction",
-          "due_date": "27 Nov 2026"
+          "type": "boiler",
+          "desc": "Boiler Survey (锅炉检验)",
+          "due_date": "2026-11-27",
+          "last_done": "2024-11-30"
         },
         {
-          "type": "other",
-          "desc": "Safety Equipment",
-          "due_date": "27 Nov 2026"
+          "type": "dry_docking",
+          "desc": "Docking Survey (坞检)",
+          "due_date": "2026-11-27",
+          "last_done": "2024-11-30"
         },
         {
-          "type": "other",
-          "desc": "Safety Radio",
-          "due_date": "27 Nov 2026"
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft Survey (尾轴检验)",
+          "due_date": "2026-11-18",
+          "last_done": "2021-11-19"
         },
         {
-          "type": "other",
-          "desc": "BWM",
-          "due_date": "19 Nov 2021"
+          "type": "statutory",
+          "desc": "Load Line Renewal (载重线换证)",
+          "due_date": "2026-11-27"
         },
         {
-          "type": "other",
-          "desc": "IHM",
-          "due_date": "27 Nov 2026"
+          "type": "statutory",
+          "desc": "Safety Construction Renewal (构造安全换证)",
+          "due_date": "2026-11-27"
         },
         {
-          "type": "other",
-          "desc": "DOC",
-          "due_date": "29 Jul 2021"
+          "type": "statutory",
+          "desc": "Safety Equipment Renewal (设备安全换证)",
+          "due_date": "2026-11-27"
         },
         {
-          "type": "other",
-          "desc": "SMC",
-          "due_date": "07 Jan 2023"
+          "type": "statutory",
+          "desc": "Safety Radio Renewal (无线电安全换证)",
+          "due_date": "2026-11-27"
         },
         {
-          "type": "other",
-          "desc": "MLC",
-          "due_date": "07 Jan 2023"
+          "type": "statutory",
+          "desc": "OPP Renewal (防油污换证)",
+          "due_date": "2026-11-27"
+        },
+        {
+          "type": "statutory",
+          "desc": "SPP Renewal (生活污水换证)",
+          "due_date": "2026-11-27"
+        },
+        {
+          "type": "statutory",
+          "desc": "APP Renewal (防空气污染换证)",
+          "due_date": "2026-11-27"
+        },
+        {
+          "type": "statutory",
+          "desc": "BWM Renewal (压载水换证)",
+          "due_date": "2026-11-27"
         }
       ],
       "certificates": [
         {
           "name": "Load Line",
-          "expiry": "27 Nov 2026"
+          "expiry": "2026-11-27"
         },
         {
           "name": "Safety Construction",
-          "expiry": "27 Nov 2026"
+          "expiry": "2026-11-27"
         },
         {
           "name": "Safety Equipment",
-          "expiry": "27 Nov 2026"
+          "expiry": "2026-11-27"
         },
         {
           "name": "Safety Radio",
-          "expiry": "27 Nov 2026"
+          "expiry": "2026-11-27"
         },
         {
-          "name": "BWM",
-          "expiry": "19 Nov 2021"
+          "name": "OPP (MARPOL Annex I)",
+          "expiry": "2026-11-27"
+        },
+        {
+          "name": "SPP (MARPOL Annex IV)",
+          "expiry": "2026-11-27"
+        },
+        {
+          "name": "APP (MARPOL Annex VI)",
+          "expiry": "2026-11-27"
+        },
+        {
+          "name": "EE Anti Fouling System BWM",
+          "expiry": "2026-11-27"
         },
         {
           "name": "IHM",
-          "expiry": "27 Nov 2026"
+          "expiry": "2026-11-27"
         },
         {
-          "name": "DOC",
-          "expiry": "29 Jul 2021"
-        },
-        {
-          "name": "SMC",
-          "expiry": "07 Jan 2023"
-        },
-        {
-          "name": "MLC",
-          "expiry": "07 Jan 2023"
+          "name": "IMSBC code",
+          "expiry": "2026-11-27"
         }
       ],
       "alerts": {
         "expired": 0,
         "urgent_7d": 0,
         "warning_30d": 0,
-        "info_90d": 0
+        "info_90d": 1
       },
       "extraction_confidence": "high"
     },
-    "SUNNY_NZKORE": {
-      "name": "SUNNY NZKORE",
-      "imo": "9346342",
+    "SUNNY_BOKE": {
+      "name": "SUNNY BOKE",
+      "imo": "9198240",
       "class_society": "NK",
       "flag": "Panama",
-      "gt": null,
-      "dwt": null,
+      "gt": 87473,
+      "dwt": "",
       "surveys": [
         {
-          "type": "other",
-          "desc": "BWM",
-          "due_date": "29 Sep 2025"
+          "type": "special_survey",
+          "desc": "Special Survey (特检)",
+          "due_date": "2030-06-29",
+          "last_done": "2025-06-30"
         },
         {
-          "type": "other",
-          "desc": "IHM",
-          "due_date": "29 Sep 2025"
+          "type": "boiler",
+          "desc": "Boiler Survey (锅炉检验)",
+          "due_date": "2028-06-29",
+          "last_done": "2025-06-30"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey (坞检)",
+          "due_date": "2028-06-29",
+          "last_done": "2025-06-30"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft Survey (尾轴检验)",
+          "due_date": "2030-06-29",
+          "last_done": "2020-10-05"
+        },
+        {
+          "type": "statutory",
+          "desc": "Load Line Renewal (载重线换证)",
+          "due_date": "2030-06-29"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Construction Renewal (构造安全换证)",
+          "due_date": "2030-06-29"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Equipment Renewal (设备安全换证)",
+          "due_date": "2030-06-29"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Radio Renewal (无线电安全换证)",
+          "due_date": "2030-06-29"
+        },
+        {
+          "type": "statutory",
+          "desc": "OPP Renewal (防油污换证)",
+          "due_date": "2030-06-29"
+        },
+        {
+          "type": "statutory",
+          "desc": "SPP Renewal (生活污水换证)",
+          "due_date": "2030-06-29"
+        },
+        {
+          "type": "statutory",
+          "desc": "APP Renewal (防空气污染换证)",
+          "due_date": "2030-06-29"
+        },
+        {
+          "type": "statutory",
+          "desc": "BWM Renewal (压载水换证)",
+          "due_date": "2030-06-29"
         }
       ],
       "certificates": [
         {
           "name": "Load Line",
-          "expiry": "06 Oct 2030"
+          "expiry": "2030-06-29"
         },
         {
           "name": "Safety Construction",
-          "expiry": "06 Oct 2030"
+          "expiry": "2030-06-29"
         },
         {
           "name": "Safety Equipment",
-          "expiry": "06 Oct 2030"
+          "expiry": "2030-06-29"
         },
         {
           "name": "Safety Radio",
-          "expiry": "06 Oct 2030"
+          "expiry": "2030-06-29"
         },
         {
-          "name": "BWM",
-          "expiry": "29 Sep 2025"
+          "name": "OPP (MARPOL Annex I)",
+          "expiry": "2030-06-29"
         },
         {
-          "name": "IHM",
-          "expiry": "29 Sep 2025"
-        }
-      ],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
-    },
-    "SUNNY_MAMOU": {
-      "name": "SUNNY MAMOU",
-      "imo": "9346342",
-      "class_society": "NK",
-      "flag": "Panama",
-      "gt": null,
-      "dwt": null,
-      "surveys": [
-        {
-          "type": "other",
-          "desc": "BWM",
-          "due_date": "29 Sep 2025"
+          "name": "SPP (MARPOL Annex IV)",
+          "expiry": "2030-06-29"
         },
         {
-          "type": "other",
-          "desc": "IHM",
-          "due_date": "29 Sep 2025"
-        }
-      ],
-      "certificates": [
-        {
-          "name": "Load Line",
-          "expiry": "06 Oct 2030"
+          "name": "APP (MARPOL Annex VI)",
+          "expiry": "2030-06-29"
         },
         {
-          "name": "Safety Construction",
-          "expiry": "06 Oct 2030"
-        },
-        {
-          "name": "Safety Equipment",
-          "expiry": "06 Oct 2030"
-        },
-        {
-          "name": "Safety Radio",
-          "expiry": "06 Oct 2030"
-        },
-        {
-          "name": "BWM",
-          "expiry": "29 Sep 2025"
-        },
-        {
-          "name": "IHM",
-          "expiry": "29 Sep 2025"
+          "name": "IMSBC code",
+          "expiry": "2030-06-29"
         }
       ],
       "alerts": {
@@ -2226,45 +368,120 @@
       "name": "SUNNY CONAKRY",
       "imo": "9406489",
       "class_society": "NK",
-      "flag": "Hong Kong",
-      "gt": null,
-      "dwt": null,
+      "flag": "Hong Kong, China",
+      "gt": 90092,
+      "dwt": "",
       "surveys": [
         {
-          "type": "other",
-          "desc": "BWM",
-          "due_date": "26 Nov 2022"
+          "type": "special_survey",
+          "desc": "Special Survey (特检)",
+          "due_date": "2027-11-21",
+          "last_done": "2022-11-26"
         },
         {
-          "type": "other",
-          "desc": "IHM",
-          "due_date": "20 Oct 2025"
+          "type": "boiler",
+          "desc": "Boiler Survey (锅炉检验)",
+          "due_date": "2027-11-21",
+          "last_done": "2025-10-20"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey (坞检)",
+          "due_date": "2027-11-21",
+          "last_done": "2025-10-20"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft Survey (尾轴检验)",
+          "due_date": "2030-10-19",
+          "last_done": "2025-10-20"
+        },
+        {
+          "type": "statutory",
+          "desc": "Load Line Renewal (载重线换证)",
+          "due_date": "2027-11-21"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Construction Renewal (构造安全换证)",
+          "due_date": "2027-11-21"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Equipment Renewal (设备安全换证)",
+          "due_date": "2027-11-21"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Radio Renewal (无线电安全换证)",
+          "due_date": "2027-11-21"
+        },
+        {
+          "type": "statutory",
+          "desc": "OPP Renewal (防油污换证)",
+          "due_date": "2027-11-21"
+        },
+        {
+          "type": "statutory",
+          "desc": "SPP Renewal (生活污水换证)",
+          "due_date": "2027-11-21"
+        },
+        {
+          "type": "statutory",
+          "desc": "APP Renewal (防空气污染换证)",
+          "due_date": "2027-11-21"
+        },
+        {
+          "type": "statutory",
+          "desc": "IHM Renewal (有害物质清单换证)",
+          "due_date": "2027-11-21"
+        },
+        {
+          "type": "statutory",
+          "desc": "BWM Renewal (压载水换证)",
+          "due_date": "2027-11-21"
         }
       ],
       "certificates": [
         {
           "name": "Load Line",
-          "expiry": "21 Nov 2027"
+          "expiry": "2027-11-21"
         },
         {
           "name": "Safety Construction",
-          "expiry": "21 Nov 2027"
+          "expiry": "2027-11-21"
         },
         {
           "name": "Safety Equipment",
-          "expiry": "21 Nov 2027"
+          "expiry": "2027-11-21"
         },
         {
           "name": "Safety Radio",
-          "expiry": "21 Nov 2027"
+          "expiry": "2027-11-21"
         },
         {
-          "name": "BWM",
-          "expiry": "26 Nov 2022"
+          "name": "OPP (MARPOL Annex I)",
+          "expiry": "2027-11-21"
+        },
+        {
+          "name": "SPP (MARPOL Annex IV)",
+          "expiry": "2027-11-21"
+        },
+        {
+          "name": "APP (MARPOL Annex VI)",
+          "expiry": "2027-11-21"
+        },
+        {
+          "name": "EE Anti Fouling System BWM",
+          "expiry": "2027-11-21"
         },
         {
           "name": "IHM",
-          "expiry": "20 Oct 2025"
+          "expiry": "2027-11-21"
+        },
+        {
+          "name": "IMSBC code",
+          "expiry": "2027-11-21"
         }
       ],
       "alerts": {
@@ -2275,71 +492,4729 @@
       },
       "extraction_confidence": "high"
     },
-    "SUNNY_BOKE": {
-      "name": "SUNNY BOKE",
-      "imo": "9198240",
+    "SUNNY_COYAH": {
+      "name": "SUNNY COYAH",
+      "imo": "9387114",
       "class_society": "NK",
-      "flag": "Panama",
-      "gt": null,
-      "dwt": null,
+      "flag": "Hong Kong, China",
+      "gt": 90125,
+      "dwt": "",
       "surveys": [
         {
-          "type": "other",
-          "desc": "BWM",
-          "due_date": "30 Jun 2025"
+          "type": "special_survey",
+          "desc": "Special Survey (特检)",
+          "due_date": "2027-04-25",
+          "last_done": "2022-05-05"
         },
         {
-          "type": "other",
-          "desc": "DOC",
-          "due_date": "29 Jul 2021"
+          "type": "boiler",
+          "desc": "Boiler Survey (锅炉检验)",
+          "due_date": "2027-04-25",
+          "last_done": "2025-07-06"
         },
         {
-          "type": "other",
-          "desc": "SMC",
-          "due_date": "28 Oct 2025"
+          "type": "dry_docking",
+          "desc": "Docking Survey (坞检)",
+          "due_date": "2027-04-25",
+          "last_done": "2025-07-06"
         },
         {
-          "type": "other",
-          "desc": "MLC",
-          "due_date": "28 Oct 2025"
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft Survey (尾轴检验)",
+          "due_date": "2027-05-04",
+          "last_done": "2007-04-26"
+        },
+        {
+          "type": "statutory",
+          "desc": "Load Line Renewal (载重线换证)",
+          "due_date": "2027-04-25"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Construction Renewal (构造安全换证)",
+          "due_date": "2027-04-25"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Equipment Renewal (设备安全换证)",
+          "due_date": "2027-04-25"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Radio Renewal (无线电安全换证)",
+          "due_date": "2027-04-25"
+        },
+        {
+          "type": "statutory",
+          "desc": "OPP Renewal (防油污换证)",
+          "due_date": "2027-04-25"
+        },
+        {
+          "type": "statutory",
+          "desc": "SPP Renewal (生活污水换证)",
+          "due_date": "2027-04-25"
+        },
+        {
+          "type": "statutory",
+          "desc": "APP Renewal (防空气污染换证)",
+          "due_date": "2027-04-25"
+        },
+        {
+          "type": "statutory",
+          "desc": "BWM Renewal (压载水换证)",
+          "due_date": "2027-04-25"
         }
       ],
       "certificates": [
         {
           "name": "Load Line",
-          "expiry": "29 Jun 2030"
+          "expiry": "2027-04-25"
         },
         {
           "name": "Safety Construction",
-          "expiry": "29 Jun 2030"
+          "expiry": "2027-04-25"
         },
         {
           "name": "Safety Equipment",
-          "expiry": "29 Jun 2030"
+          "expiry": "2027-04-25"
         },
         {
           "name": "Safety Radio",
-          "expiry": "29 Jun 2030"
+          "expiry": "2027-04-25"
         },
         {
-          "name": "BWM",
-          "expiry": "30 Jun 2025"
+          "name": "OPP (MARPOL Annex I)",
+          "expiry": "2027-04-25"
+        },
+        {
+          "name": "SPP (MARPOL Annex IV)",
+          "expiry": "2027-04-25"
+        },
+        {
+          "name": "APP (MARPOL Annex VI)",
+          "expiry": "2027-04-25"
+        },
+        {
+          "name": "EE Anti Fouling System BWM",
+          "expiry": "2027-04-25"
         },
         {
           "name": "IHM",
-          "expiry": "29 Jun 2030"
+          "expiry": "2027-04-25"
+        },
+        {
+          "name": "IMSBC code",
+          "expiry": "2027-04-25"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "high"
+    },
+    "SUNNY_DABOLA": {
+      "name": "SUNNY DABOLA",
+      "imo": "9398149",
+      "class_society": "NK",
+      "flag": "Panama",
+      "gt": 106367,
+      "dwt": "",
+      "surveys": [
+        {
+          "type": "special_survey",
+          "desc": "Special Survey (特检)",
+          "due_date": "2029-10-22",
+          "last_done": "2024-09-10"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (锅炉检验)",
+          "due_date": "2027-09-09",
+          "last_done": "2024-09-10"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey (坞检)",
+          "due_date": "2027-09-09",
+          "last_done": "2024-09-10"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft Survey (尾轴检验)",
+          "due_date": "2029-10-23",
+          "last_done": "2024-09-10"
+        },
+        {
+          "type": "statutory",
+          "desc": "Load Line Renewal (载重线换证)",
+          "due_date": "2029-10-22"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Construction Renewal (构造安全换证)",
+          "due_date": "2029-10-22"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Equipment Renewal (设备安全换证)",
+          "due_date": "2029-10-22"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Radio Renewal (无线电安全换证)",
+          "due_date": "2029-10-22"
+        },
+        {
+          "type": "statutory",
+          "desc": "OPP Renewal (防油污换证)",
+          "due_date": "2029-10-22"
+        },
+        {
+          "type": "statutory",
+          "desc": "SPP Renewal (生活污水换证)",
+          "due_date": "2029-10-22"
+        },
+        {
+          "type": "statutory",
+          "desc": "APP Renewal (防空气污染换证)",
+          "due_date": "2029-10-22"
+        },
+        {
+          "type": "statutory",
+          "desc": "IHM Renewal (有害物质清单换证)",
+          "due_date": "2029-10-22"
+        },
+        {
+          "type": "statutory",
+          "desc": "BWM Renewal (压载水换证)",
+          "due_date": "2029-10-22"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "Load Line",
+          "expiry": "2029-10-22"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2029-10-22"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2029-10-22"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2029-10-22"
+        },
+        {
+          "name": "OPP (MARPOL Annex I)",
+          "expiry": "2029-10-22"
+        },
+        {
+          "name": "SPP (MARPOL Annex IV)",
+          "expiry": "2029-10-22"
+        },
+        {
+          "name": "APP (MARPOL Annex VI)",
+          "expiry": "2029-10-22"
+        },
+        {
+          "name": "IMSBC code",
+          "expiry": "2029-10-22"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "high"
+    },
+    "SUNNY_KALOUM": {
+      "name": "SUNNY KALOUM",
+      "imo": "9336969",
+      "class_society": "NK",
+      "flag": "Hong Kong, China",
+      "gt": 106367,
+      "dwt": "",
+      "surveys": [
+        {
+          "type": "special_survey",
+          "desc": "Special Survey (特检)",
+          "due_date": "2030-10-07",
+          "last_done": "2025-07-16"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (锅炉检验)",
+          "due_date": "2028-07-15",
+          "last_done": "2025-07-16"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey (坞检)",
+          "due_date": "2028-07-15",
+          "last_done": "2025-07-16"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft Survey (尾轴检验)",
+          "due_date": "2027-09-21",
+          "last_done": "2007-11-06"
+        },
+        {
+          "type": "statutory",
+          "desc": "Load Line Renewal (载重线换证)",
+          "due_date": "2030-10-07"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Construction Renewal (构造安全换证)",
+          "due_date": "2030-10-07"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Equipment Renewal (设备安全换证)",
+          "due_date": "2030-10-07"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Radio Renewal (无线电安全换证)",
+          "due_date": "2030-10-07"
+        },
+        {
+          "type": "statutory",
+          "desc": "OPP Renewal (防油污换证)",
+          "due_date": "2030-10-07"
+        },
+        {
+          "type": "statutory",
+          "desc": "SPP Renewal (生活污水换证)",
+          "due_date": "2030-10-07"
+        },
+        {
+          "type": "statutory",
+          "desc": "APP Renewal (防空气污染换证)",
+          "due_date": "2030-10-07"
+        },
+        {
+          "type": "statutory",
+          "desc": "IHM Renewal (有害物质清单换证)",
+          "due_date": "2030-10-07"
+        },
+        {
+          "type": "statutory",
+          "desc": "BWM Renewal (压载水换证)",
+          "due_date": "2030-10-07"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "Load Line",
+          "expiry": "2030-10-07"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2030-10-07"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2030-10-07"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2030-10-07"
+        },
+        {
+          "name": "Dangerous Goods",
+          "expiry": "2030-10-07"
+        },
+        {
+          "name": "OPP (MARPOL Annex I)",
+          "expiry": "2030-10-07"
+        },
+        {
+          "name": "SPP (MARPOL Annex IV)",
+          "expiry": "2030-10-07"
+        },
+        {
+          "name": "APP (MARPOL Annex VI)",
+          "expiry": "2030-10-07"
+        },
+        {
+          "name": "IMSBC code",
+          "expiry": "2030-10-07"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "high"
+    },
+    "SUNNY_KAMSAR": {
+      "name": "SUNNY KAMSAR",
+      "imo": "9336957",
+      "class_society": "NK",
+      "flag": "Hong Kong, China",
+      "gt": 101953,
+      "dwt": "",
+      "surveys": [
+        {
+          "type": "special_survey",
+          "desc": "Special Survey (特检)",
+          "due_date": "2030-06-24",
+          "last_done": "2025-07-16"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (锅炉检验)",
+          "due_date": "2028-07-15",
+          "last_done": "2025-07-16"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey (坞检)",
+          "due_date": "2028-07-15",
+          "last_done": "2025-07-16"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft Survey (尾轴检验)",
+          "due_date": "2030-07-15",
+          "last_done": "2007-05-25"
+        },
+        {
+          "type": "statutory",
+          "desc": "Load Line Renewal (载重线换证)",
+          "due_date": "2030-06-24"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Construction Renewal (构造安全换证)",
+          "due_date": "2030-06-24"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Equipment Renewal (设备安全换证)",
+          "due_date": "2030-06-24"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Radio Renewal (无线电安全换证)",
+          "due_date": "2030-06-24"
+        },
+        {
+          "type": "statutory",
+          "desc": "OPP Renewal (防油污换证)",
+          "due_date": "2030-06-24"
+        },
+        {
+          "type": "statutory",
+          "desc": "SPP Renewal (生活污水换证)",
+          "due_date": "2030-06-24"
+        },
+        {
+          "type": "statutory",
+          "desc": "APP Renewal (防空气污染换证)",
+          "due_date": "2030-06-24"
+        },
+        {
+          "type": "statutory",
+          "desc": "BWM Renewal (压载水换证)",
+          "due_date": "2030-06-24"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "Load Line",
+          "expiry": "2030-06-24"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2030-06-24"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2030-06-24"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2030-06-24"
+        },
+        {
+          "name": "OPP (MARPOL Annex I)",
+          "expiry": "2030-06-24"
+        },
+        {
+          "name": "SPP (MARPOL Annex IV)",
+          "expiry": "2030-06-24"
+        },
+        {
+          "name": "APP (MARPOL Annex VI)",
+          "expiry": "2030-06-24"
+        },
+        {
+          "name": "IMSBC code",
+          "expiry": "2030-06-24"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "high"
+    },
+    "SUNNY_KEROUANE": {
+      "name": "SUNNY KEROUANE",
+      "imo": "9398113",
+      "class_society": "NK",
+      "flag": "Liberia",
+      "gt": 106367,
+      "dwt": "",
+      "surveys": [
+        {
+          "type": "special_survey",
+          "desc": "Special Survey (特检)",
+          "due_date": "2030-05-24",
+          "last_done": "2025-08-22"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (锅炉检验)",
+          "due_date": "2028-08-21",
+          "last_done": "2025-08-22"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey (坞检)",
+          "due_date": "2028-08-21",
+          "last_done": "2025-08-22"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft Survey (尾轴检验)",
+          "due_date": "2030-08-21",
+          "last_done": "2020-05-22"
+        },
+        {
+          "type": "statutory",
+          "desc": "Load Line Renewal (载重线换证)",
+          "due_date": "2030-05-24"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Construction Renewal (构造安全换证)",
+          "due_date": "2030-05-24"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Equipment Renewal (设备安全换证)",
+          "due_date": "2030-05-24"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Radio Renewal (无线电安全换证)",
+          "due_date": "2030-05-24"
+        },
+        {
+          "type": "statutory",
+          "desc": "OPP Renewal (防油污换证)",
+          "due_date": "2030-05-24"
+        },
+        {
+          "type": "statutory",
+          "desc": "SPP Renewal (生活污水换证)",
+          "due_date": "2030-05-24"
+        },
+        {
+          "type": "statutory",
+          "desc": "APP Renewal (防空气污染换证)",
+          "due_date": "2030-05-24"
+        },
+        {
+          "type": "statutory",
+          "desc": "BWM Renewal (压载水换证)",
+          "due_date": "2030-05-24"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "Load Line",
+          "expiry": "2030-05-24"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2030-05-24"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2030-05-24"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2030-05-24"
+        },
+        {
+          "name": "Dangerous Goods",
+          "expiry": "2030-05-24"
+        },
+        {
+          "name": "OPP (MARPOL Annex I)",
+          "expiry": "2030-05-24"
+        },
+        {
+          "name": "SPP (MARPOL Annex IV)",
+          "expiry": "2030-05-24"
+        },
+        {
+          "name": "APP (MARPOL Annex VI)",
+          "expiry": "2030-05-24"
+        },
+        {
+          "name": "EE Anti Fouling System BWM",
+          "expiry": "2030-05-24"
+        },
+        {
+          "name": "IMSBC code",
+          "expiry": "2030-05-24"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "high"
+    },
+    "SUNNY_KINDIA": {
+      "name": "SUNNY KINDIA",
+      "imo": "9374064",
+      "class_society": "NK",
+      "flag": "Hong Kong, China",
+      "gt": 90396,
+      "dwt": "",
+      "surveys": [
+        {
+          "type": "special_survey",
+          "desc": "Special Survey (特检)",
+          "due_date": "2029-07-01",
+          "last_done": "2024-04-20"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (锅炉检验)",
+          "due_date": "2027-04-19",
+          "last_done": "2024-04-20"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey (坞检)",
+          "due_date": "2027-04-19",
+          "last_done": "2024-04-20"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft Survey (尾轴检验)",
+          "due_date": "2029-05-21",
+          "last_done": "2014-05-23"
+        },
+        {
+          "type": "statutory",
+          "desc": "Load Line Renewal (载重线换证)",
+          "due_date": "2029-07-01"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Construction Renewal (构造安全换证)",
+          "due_date": "2029-07-01"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Equipment Renewal (设备安全换证)",
+          "due_date": "2029-07-01"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Radio Renewal (无线电安全换证)",
+          "due_date": "2029-07-01"
+        },
+        {
+          "type": "statutory",
+          "desc": "OPP Renewal (防油污换证)",
+          "due_date": "2029-07-01"
+        },
+        {
+          "type": "statutory",
+          "desc": "SPP Renewal (生活污水换证)",
+          "due_date": "2029-07-01"
+        },
+        {
+          "type": "statutory",
+          "desc": "APP Renewal (防空气污染换证)",
+          "due_date": "2029-07-01"
+        },
+        {
+          "type": "statutory",
+          "desc": "IHM Renewal (有害物质清单换证)",
+          "due_date": "2029-07-01"
+        },
+        {
+          "type": "statutory",
+          "desc": "BWM Renewal (压载水换证)",
+          "due_date": "2029-07-01"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "Load Line",
+          "expiry": "2029-07-01"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2029-07-01"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2029-07-01"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2029-07-01"
+        },
+        {
+          "name": "OPP (MARPOL Annex I)",
+          "expiry": "2029-07-01"
+        },
+        {
+          "name": "SPP (MARPOL Annex IV)",
+          "expiry": "2029-07-01"
+        },
+        {
+          "name": "APP (MARPOL Annex VI)",
+          "expiry": "2029-07-01"
+        },
+        {
+          "name": "EE Anti Fouling System BWM",
+          "expiry": "2029-07-01"
+        },
+        {
+          "name": "IHM",
+          "expiry": "2029-07-01"
+        },
+        {
+          "name": "IMSBC code",
+          "expiry": "2029-07-01"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "high"
+    },
+    "SUNNY_LABE": {
+      "name": "SUNNY LABE",
+      "imo": "9271597",
+      "class_society": "NK",
+      "flag": "Panama",
+      "gt": 102101,
+      "dwt": "",
+      "surveys": [
+        {
+          "type": "special_survey",
+          "desc": "Special Survey (特检)",
+          "due_date": "2029-08-18",
+          "last_done": "2024-09-08"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (锅炉检验)",
+          "due_date": "2027-09-07",
+          "last_done": "2024-09-08"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey (坞检)",
+          "due_date": "2027-09-07",
+          "last_done": "2024-09-08"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft Survey (尾轴检验)",
+          "due_date": "2027-08-26",
+          "last_done": "2012-08-27"
+        },
+        {
+          "type": "statutory",
+          "desc": "Load Line Renewal (载重线换证)",
+          "due_date": "2029-08-18"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Construction Renewal (构造安全换证)",
+          "due_date": "2029-08-18"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Equipment Renewal (设备安全换证)",
+          "due_date": "2029-08-18"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Radio Renewal (无线电安全换证)",
+          "due_date": "2029-08-18"
+        },
+        {
+          "type": "statutory",
+          "desc": "OPP Renewal (防油污换证)",
+          "due_date": "2029-08-18"
+        },
+        {
+          "type": "statutory",
+          "desc": "SPP Renewal (生活污水换证)",
+          "due_date": "2029-08-18"
+        },
+        {
+          "type": "statutory",
+          "desc": "APP Renewal (防空气污染换证)",
+          "due_date": "2029-08-18"
+        },
+        {
+          "type": "statutory",
+          "desc": "IHM Renewal (有害物质清单换证)",
+          "due_date": "2029-08-18"
+        },
+        {
+          "type": "statutory",
+          "desc": "BWM Renewal (压载水换证)",
+          "due_date": "2029-08-18"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "Load Line",
+          "expiry": "2029-08-18"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2029-08-18"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2029-08-18"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2029-08-18"
+        },
+        {
+          "name": "OPP (MARPOL Annex I)",
+          "expiry": "2029-08-18"
+        },
+        {
+          "name": "SPP (MARPOL Annex IV)",
+          "expiry": "2029-08-18"
+        },
+        {
+          "name": "APP (MARPOL Annex VI)",
+          "expiry": "2029-08-18"
+        },
+        {
+          "name": "IMSBC code",
+          "expiry": "2029-08-18"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "high"
+    },
+    "SUNNY_LINK": {
+      "name": "SUNNY LINK",
+      "imo": "9254666",
+      "class_society": "NK",
+      "flag": "Liberia",
+      "gt": 88674,
+      "dwt": "",
+      "surveys": [
+        {
+          "type": "special_survey",
+          "desc": "Special Survey (特检)",
+          "due_date": "2027-06-25",
+          "last_done": "2022-07-14"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (锅炉检验)",
+          "due_date": "2027-06-25",
+          "last_done": "2025-06-06"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey (坞检)",
+          "due_date": "2027-06-25",
+          "last_done": "2025-06-06"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft Survey (尾轴检验)",
+          "due_date": "2027-07-26",
+          "last_done": "2017-07-27"
+        },
+        {
+          "type": "statutory",
+          "desc": "Load Line Renewal (载重线换证)",
+          "due_date": "2027-06-25"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Construction Renewal (构造安全换证)",
+          "due_date": "2027-06-25"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Equipment Renewal (设备安全换证)",
+          "due_date": "2027-06-25"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Radio Renewal (无线电安全换证)",
+          "due_date": "2027-06-25"
+        },
+        {
+          "type": "statutory",
+          "desc": "OPP Renewal (防油污换证)",
+          "due_date": "2027-06-25"
+        },
+        {
+          "type": "statutory",
+          "desc": "SPP Renewal (生活污水换证)",
+          "due_date": "2027-06-25"
+        },
+        {
+          "type": "statutory",
+          "desc": "APP Renewal (防空气污染换证)",
+          "due_date": "2027-06-25"
+        },
+        {
+          "type": "statutory",
+          "desc": "BWM Renewal (压载水换证)",
+          "due_date": "2027-06-25"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "Load Line",
+          "expiry": "2027-06-25"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2027-06-25"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2027-06-25"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2027-06-25"
+        },
+        {
+          "name": "OPP (MARPOL Annex I)",
+          "expiry": "2027-06-25"
+        },
+        {
+          "name": "SPP (MARPOL Annex IV)",
+          "expiry": "2027-06-25"
+        },
+        {
+          "name": "APP (MARPOL Annex VI)",
+          "expiry": "2027-06-25"
+        },
+        {
+          "name": "EE Anti Fouling System BWM",
+          "expiry": "2027-06-25"
+        },
+        {
+          "name": "IHM",
+          "expiry": "2027-06-25"
+        },
+        {
+          "name": "IMSBC code",
+          "expiry": "2027-06-25"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "high"
+    },
+    "SUNNY_MAMOU": {
+      "name": "SUNNY MAMOU",
+      "imo": "9346342",
+      "class_society": "NK",
+      "flag": "Hong Kong, China",
+      "gt": 104725,
+      "dwt": "",
+      "surveys": [
+        {
+          "type": "special_survey",
+          "desc": "Special Survey (特检)",
+          "due_date": "2030-10-06",
+          "last_done": "2025-09-29"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (锅炉检验)",
+          "due_date": "2028-09-28",
+          "last_done": "2025-09-29"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey (坞检)",
+          "due_date": "2028-09-28",
+          "last_done": "2025-09-29"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft Survey (尾轴检验)",
+          "due_date": "2030-09-28",
+          "last_done": "2025-09-29"
+        },
+        {
+          "type": "statutory",
+          "desc": "Load Line Renewal (载重线换证)",
+          "due_date": "2030-10-06"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Construction Renewal (构造安全换证)",
+          "due_date": "2030-10-06"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Equipment Renewal (设备安全换证)",
+          "due_date": "2030-10-06"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Radio Renewal (无线电安全换证)",
+          "due_date": "2030-10-06"
+        },
+        {
+          "type": "statutory",
+          "desc": "OPP Renewal (防油污换证)",
+          "due_date": "2030-10-06"
+        },
+        {
+          "type": "statutory",
+          "desc": "SPP Renewal (生活污水换证)",
+          "due_date": "2030-10-06"
+        },
+        {
+          "type": "statutory",
+          "desc": "APP Renewal (防空气污染换证)",
+          "due_date": "2030-10-06"
+        },
+        {
+          "type": "statutory",
+          "desc": "IHM Renewal (有害物质清单换证)",
+          "due_date": "2030-10-06"
+        },
+        {
+          "type": "statutory",
+          "desc": "BWM Renewal (压载水换证)",
+          "due_date": "2030-10-06"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "Load Line",
+          "expiry": "2030-10-06"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2030-10-06"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2030-10-06"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2030-10-06"
+        },
+        {
+          "name": "Dangerous Goods",
+          "expiry": "2030-10-06"
+        },
+        {
+          "name": "OPP (MARPOL Annex I)",
+          "expiry": "2030-10-06"
+        },
+        {
+          "name": "SPP (MARPOL Annex IV)",
+          "expiry": "2030-10-06"
+        },
+        {
+          "name": "APP (MARPOL Annex VI)",
+          "expiry": "2030-10-06"
+        },
+        {
+          "name": "IMSBC code",
+          "expiry": "2030-10-06"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "high"
+    },
+    "SUNNY_MOREBAYA": {
+      "name": "SUNNY MOREBAYA",
+      "imo": "9331426",
+      "class_society": "NK",
+      "flag": "Liberia",
+      "gt": 101953,
+      "dwt": "",
+      "surveys": [
+        {
+          "type": "special_survey",
+          "desc": "Special Survey (特检)",
+          "due_date": "2030-11-14",
+          "last_done": "2025-09-08"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (锅炉检验)",
+          "due_date": "2028-09-07",
+          "last_done": "2025-09-08"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey (坞检)",
+          "due_date": "2028-09-07",
+          "last_done": "2025-09-08"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft Survey (尾轴检验)",
+          "due_date": "2030-08-12",
+          "last_done": "2015-08-13"
+        },
+        {
+          "type": "statutory",
+          "desc": "Load Line Renewal (载重线换证)",
+          "due_date": "2030-11-14"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Construction Renewal (构造安全换证)",
+          "due_date": "2030-11-14"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Equipment Renewal (设备安全换证)",
+          "due_date": "2030-11-14"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Radio Renewal (无线电安全换证)",
+          "due_date": "2030-11-14"
+        },
+        {
+          "type": "statutory",
+          "desc": "OPP Renewal (防油污换证)",
+          "due_date": "2030-11-14"
+        },
+        {
+          "type": "statutory",
+          "desc": "SPP Renewal (生活污水换证)",
+          "due_date": "2030-11-14"
+        },
+        {
+          "type": "statutory",
+          "desc": "APP Renewal (防空气污染换证)",
+          "due_date": "2030-11-14"
+        },
+        {
+          "type": "statutory",
+          "desc": "BWM Renewal (压载水换证)",
+          "due_date": "2030-11-14"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "Load Line",
+          "expiry": "2030-11-14"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2030-11-14"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2030-11-14"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2030-11-14"
+        },
+        {
+          "name": "OPP (MARPOL Annex I)",
+          "expiry": "2030-11-14"
+        },
+        {
+          "name": "SPP (MARPOL Annex IV)",
+          "expiry": "2030-11-14"
+        },
+        {
+          "name": "APP (MARPOL Annex VI)",
+          "expiry": "2030-11-14"
+        },
+        {
+          "name": "EE Anti Fouling System BWM",
+          "expiry": "2030-11-14"
+        },
+        {
+          "name": "IMSBC code",
+          "expiry": "2030-11-14"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "high"
+    },
+    "SUNNY_NZKORE": {
+      "name": "SUNNY NZKORE",
+      "imo": "9393187",
+      "class_society": "NK",
+      "flag": "Liberia",
+      "gt": 90111,
+      "dwt": "",
+      "surveys": [
+        {
+          "type": "special_survey",
+          "desc": "Special Survey (特检)",
+          "due_date": "2029-04-09",
+          "last_done": "2024-04-22"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (锅炉检验)",
+          "due_date": "2027-04-21",
+          "last_done": "2024-04-22"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey (坞检)",
+          "due_date": "2027-04-21",
+          "last_done": "2024-04-22"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft Survey (尾轴检验)",
+          "due_date": "2029-04-21",
+          "last_done": "2024-04-22"
+        },
+        {
+          "type": "statutory",
+          "desc": "Load Line Renewal (载重线换证)",
+          "due_date": "2029-04-09"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Construction Renewal (构造安全换证)",
+          "due_date": "2029-04-09"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Equipment Renewal (设备安全换证)",
+          "due_date": "2029-04-09"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Radio Renewal (无线电安全换证)",
+          "due_date": "2029-04-09"
+        },
+        {
+          "type": "statutory",
+          "desc": "OPP Renewal (防油污换证)",
+          "due_date": "2029-04-09"
+        },
+        {
+          "type": "statutory",
+          "desc": "SPP Renewal (生活污水换证)",
+          "due_date": "2029-04-09"
+        },
+        {
+          "type": "statutory",
+          "desc": "APP Renewal (防空气污染换证)",
+          "due_date": "2029-04-09"
+        },
+        {
+          "type": "statutory",
+          "desc": "BWM Renewal (压载水换证)",
+          "due_date": "2029-04-09"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "Load Line",
+          "expiry": "2029-04-09"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2029-04-09"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2029-04-09"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2029-04-09"
+        },
+        {
+          "name": "Dangerous Goods",
+          "expiry": "2029-04-09"
+        },
+        {
+          "name": "OPP (MARPOL Annex I)",
+          "expiry": "2029-04-09"
+        },
+        {
+          "name": "SPP (MARPOL Annex IV)",
+          "expiry": "2029-04-09"
+        },
+        {
+          "name": "APP (MARPOL Annex VI)",
+          "expiry": "2029-04-09"
+        },
+        {
+          "name": "EE Anti Fouling System BWM",
+          "expiry": "2029-04-09"
+        },
+        {
+          "name": "IMSBC code",
+          "expiry": "2029-04-09"
+        },
+        {
+          "name": "Lifting Appliances(Cranes / Hoists)",
+          "expiry": "2029-04-21"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "high"
+    },
+    "SUNNY_SAILOR": {
+      "name": "SUNNY SAILOR",
+      "imo": "9439125",
+      "class_society": "NK",
+      "flag": "Hong Kong, China",
+      "gt": 90091,
+      "dwt": "",
+      "surveys": [
+        {
+          "type": "special_survey",
+          "desc": "Special Survey (特检)",
+          "due_date": "2031-09-07",
+          "last_done": "2026-07-30"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (锅炉检验)",
+          "due_date": "2029-07-29",
+          "last_done": "2026-07-30"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey (坞检)",
+          "due_date": "2029-07-29",
+          "last_done": "2026-07-30"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft Survey (尾轴检验)",
+          "due_date": "2031-07-29",
+          "last_done": "2021-06-12"
+        },
+        {
+          "type": "statutory",
+          "desc": "Load Line Renewal (载重线换证)",
+          "due_date": "2031-09-07"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Construction Renewal (构造安全换证)",
+          "due_date": "2031-09-07"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Equipment Renewal (设备安全换证)",
+          "due_date": "2031-09-07"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Radio Renewal (无线电安全换证)",
+          "due_date": "2031-09-07"
+        },
+        {
+          "type": "statutory",
+          "desc": "OPP Renewal (防油污换证)",
+          "due_date": "2031-09-07"
+        },
+        {
+          "type": "statutory",
+          "desc": "SPP Renewal (生活污水换证)",
+          "due_date": "2031-09-07"
+        },
+        {
+          "type": "statutory",
+          "desc": "APP Renewal (防空气污染换证)",
+          "due_date": "2031-09-07"
+        },
+        {
+          "type": "statutory",
+          "desc": "IHM Renewal (有害物质清单换证)",
+          "due_date": "2031-07-29"
+        },
+        {
+          "type": "statutory",
+          "desc": "BWM Renewal (压载水换证)",
+          "due_date": "2031-09-07"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "Load Line",
+          "expiry": "2031-09-07"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2031-09-07"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2031-09-07"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2031-09-07"
+        },
+        {
+          "name": "Dangerous Goods",
+          "expiry": "2031-09-07"
+        },
+        {
+          "name": "OPP (MARPOL Annex I)",
+          "expiry": "2031-09-07"
+        },
+        {
+          "name": "SPP (MARPOL Annex IV)",
+          "expiry": "2031-09-07"
+        },
+        {
+          "name": "APP (MARPOL Annex VI)",
+          "expiry": "2031-09-07"
+        },
+        {
+          "name": "IMSBC code",
+          "expiry": "2031-09-07"
+        },
+        {
+          "name": "Lifting Appliances(Cranes / Hoists)",
+          "expiry": "2031-07-29"
+        },
+        {
+          "name": "Factual Statement",
+          "expiry": "2031-07-29"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "high"
+    },
+    "SUNNY_SIGUIRI": {
+      "name": "SUNNY SIGUIRI",
+      "imo": "9406453",
+      "class_society": "NK",
+      "flag": "Hong Kong, China",
+      "gt": 104721,
+      "dwt": "",
+      "surveys": [
+        {
+          "type": "special_survey",
+          "desc": "Special Survey (特检)",
+          "due_date": "2027-04-24",
+          "last_done": "2022-07-23"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (锅炉检验)",
+          "due_date": "2027-04-24",
+          "last_done": "2025-08-15"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey (坞检)",
+          "due_date": "2027-04-24",
+          "last_done": "2025-08-15"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft Survey (尾轴检验)",
+          "due_date": "2027-07-24",
+          "last_done": "2022-07-23"
+        },
+        {
+          "type": "statutory",
+          "desc": "Load Line Renewal (载重线换证)",
+          "due_date": "2027-04-24"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Construction Renewal (构造安全换证)",
+          "due_date": "2027-04-24"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Equipment Renewal (设备安全换证)",
+          "due_date": "2027-04-24"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Radio Renewal (无线电安全换证)",
+          "due_date": "2027-04-24"
+        },
+        {
+          "type": "statutory",
+          "desc": "OPP Renewal (防油污换证)",
+          "due_date": "2027-04-24"
+        },
+        {
+          "type": "statutory",
+          "desc": "SPP Renewal (生活污水换证)",
+          "due_date": "2027-04-24"
+        },
+        {
+          "type": "statutory",
+          "desc": "APP Renewal (防空气污染换证)",
+          "due_date": "2027-04-24"
+        },
+        {
+          "type": "statutory",
+          "desc": "IHM Renewal (有害物质清单换证)",
+          "due_date": "2027-04-24"
+        },
+        {
+          "type": "statutory",
+          "desc": "BWM Renewal (压载水换证)",
+          "due_date": "2027-04-24"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "Load Line",
+          "expiry": "2027-04-24"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2027-04-24"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2027-04-24"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2027-04-24"
+        },
+        {
+          "name": "Dangerous Goods",
+          "expiry": "2027-04-24"
+        },
+        {
+          "name": "OPP (MARPOL Annex I)",
+          "expiry": "2027-04-24"
+        },
+        {
+          "name": "SPP (MARPOL Annex IV)",
+          "expiry": "2027-04-24"
+        },
+        {
+          "name": "APP (MARPOL Annex VI)",
+          "expiry": "2027-04-24"
+        },
+        {
+          "name": "IMSBC code",
+          "expiry": "2027-04-24"
+        },
+        {
+          "name": "Lifting Appliances(Cranes / Hoists)",
+          "expiry": "2027-07-22"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "high"
+    },
+    "WINNING_ANGEL": {
+      "name": "WINNING ANGEL",
+      "imo": "9406506",
+      "class_society": "NK",
+      "flag": "Singapore",
+      "gt": 104761,
+      "dwt": "",
+      "surveys": [
+        {
+          "type": "special_survey",
+          "desc": "Special Survey (特检)",
+          "due_date": "2027-12-18",
+          "last_done": "2023-03-03"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (锅炉检验)",
+          "due_date": "2027-12-18",
+          "last_done": "2025-12-23"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey (坞检)",
+          "due_date": "2027-12-18",
+          "last_done": "2025-12-23"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft Survey (尾轴检验)",
+          "due_date": "2030-12-22",
+          "last_done": "2025-12-23"
+        },
+        {
+          "type": "statutory",
+          "desc": "Load Line Renewal (载重线换证)",
+          "due_date": "2027-12-18"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Construction Renewal (构造安全换证)",
+          "due_date": "2027-12-18"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Equipment Renewal (设备安全换证)",
+          "due_date": "2027-12-18"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Radio Renewal (无线电安全换证)",
+          "due_date": "2027-12-18"
+        },
+        {
+          "type": "statutory",
+          "desc": "OPP Renewal (防油污换证)",
+          "due_date": "2027-12-18"
+        },
+        {
+          "type": "statutory",
+          "desc": "SPP Renewal (生活污水换证)",
+          "due_date": "2027-12-18"
+        },
+        {
+          "type": "statutory",
+          "desc": "APP Renewal (防空气污染换证)",
+          "due_date": "2027-12-18"
+        },
+        {
+          "type": "statutory",
+          "desc": "IHM Renewal (有害物质清单换证)",
+          "due_date": "2027-12-18"
+        },
+        {
+          "type": "statutory",
+          "desc": "BWM Renewal (压载水换证)",
+          "due_date": "2027-12-18"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "Load Line",
+          "expiry": "2027-12-18"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2027-12-18"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2027-12-18"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2027-12-18"
+        },
+        {
+          "name": "OPP (MARPOL Annex I)",
+          "expiry": "2027-12-18"
+        },
+        {
+          "name": "SPP (MARPOL Annex IV)",
+          "expiry": "2027-12-18"
+        },
+        {
+          "name": "APP (MARPOL Annex VI)",
+          "expiry": "2027-12-18"
+        },
+        {
+          "name": "EE Anti Fouling System BWM",
+          "expiry": "2027-12-18"
+        },
+        {
+          "name": "IHM",
+          "expiry": "2027-12-18"
+        },
+        {
+          "name": "IMSBC code",
+          "expiry": "2027-12-18"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "high"
+    },
+    "WINNING_BRIGHT": {
+      "name": "WINNING BRIGHT",
+      "imo": "9492218",
+      "class_society": "NK",
+      "flag": "Singapore",
+      "gt": 106884,
+      "dwt": "",
+      "surveys": [
+        {
+          "type": "special_survey",
+          "desc": "Special Survey (特检)",
+          "due_date": "2029-08-21",
+          "last_done": "2024-09-27"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (锅炉检验)",
+          "due_date": "2027-09-26",
+          "last_done": "2024-09-27"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey (坞检)",
+          "due_date": "2027-09-26",
+          "last_done": "2024-09-27"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft Survey (尾轴检验)",
+          "due_date": "2027-01-03"
+        },
+        {
+          "type": "statutory",
+          "desc": "Load Line Renewal (载重线换证)",
+          "due_date": "2029-08-21"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Construction Renewal (构造安全换证)",
+          "due_date": "2029-08-21"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Equipment Renewal (设备安全换证)",
+          "due_date": "2029-08-21"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Radio Renewal (无线电安全换证)",
+          "due_date": "2029-08-21"
+        },
+        {
+          "type": "statutory",
+          "desc": "OPP Renewal (防油污换证)",
+          "due_date": "2029-08-21"
+        },
+        {
+          "type": "statutory",
+          "desc": "SPP Renewal (生活污水换证)",
+          "due_date": "2029-08-21"
+        },
+        {
+          "type": "statutory",
+          "desc": "APP Renewal (防空气污染换证)",
+          "due_date": "2029-08-21"
+        },
+        {
+          "type": "statutory",
+          "desc": "IHM Renewal (有害物质清单换证)",
+          "due_date": "2029-08-21"
+        },
+        {
+          "type": "statutory",
+          "desc": "BWM Renewal (压载水换证)",
+          "due_date": "2029-08-21"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "Load Line",
+          "expiry": "2029-08-21"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2029-08-21"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2029-08-21"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2029-08-21"
+        },
+        {
+          "name": "OPP (MARPOL Annex I)",
+          "expiry": "2029-08-21"
+        },
+        {
+          "name": "SPP (MARPOL Annex IV)",
+          "expiry": "2029-08-21"
+        },
+        {
+          "name": "APP (MARPOL Annex VI)",
+          "expiry": "2029-08-21"
+        },
+        {
+          "name": "EE Anti Fouling System BWM",
+          "expiry": "2029-08-21"
+        },
+        {
+          "name": "IHM",
+          "expiry": "2029-08-21"
+        },
+        {
+          "name": "IMSBC code",
+          "expiry": "2029-08-21"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "high"
+    },
+    "WINNING_BROTHER": {
+      "name": "WINNING BROTHER",
+      "imo": "9250610",
+      "class_society": "NK",
+      "flag": "Liberia",
+      "gt": 94779,
+      "dwt": "",
+      "surveys": [
+        {
+          "type": "special_survey",
+          "desc": "Special Survey (特检)",
+          "due_date": "2030-10-17",
+          "last_done": "2025-09-25"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (锅炉检验)",
+          "due_date": "2028-09-24",
+          "last_done": "2025-09-25"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey (坞检)",
+          "due_date": "2028-09-24",
+          "last_done": "2025-09-25"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft Survey (尾轴检验)",
+          "due_date": "2030-09-24",
+          "last_done": "2025-09-25"
+        },
+        {
+          "type": "statutory",
+          "desc": "Load Line Renewal (载重线换证)",
+          "due_date": "2030-10-17"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "Load Line",
+          "expiry": "2030-10-17"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2030-10-17"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2030-10-17"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2030-10-17"
+        },
+        {
+          "name": "OPP (MARPOL Annex I)",
+          "expiry": "2030-10-17"
+        },
+        {
+          "name": "SPP (MARPOL Annex IV)",
+          "expiry": "2030-10-17"
+        },
+        {
+          "name": "APP (MARPOL Annex VI)",
+          "expiry": "2030-10-17"
+        },
+        {
+          "name": "EE Anti Fouling System BWM",
+          "expiry": "2030-10-17"
+        },
+        {
+          "name": "IMSBC code",
+          "expiry": "2030-10-17"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "high"
+    },
+    "WINNING_CONFIDENCE": {
+      "name": "WINNING CONFIDENCE",
+      "imo": "9325001",
+      "class_society": "NK",
+      "flag": "Singapore",
+      "gt": 90091,
+      "dwt": "",
+      "surveys": [
+        {
+          "type": "special_survey",
+          "desc": "Special Survey (特检)",
+          "due_date": "2030-01-31",
+          "last_done": "2024-12-28"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (锅炉检验)",
+          "due_date": "2027-12-27",
+          "last_done": "2024-12-28"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey (坞检)",
+          "due_date": "2027-12-27",
+          "last_done": "2024-12-28"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft Survey (尾轴检验)",
+          "due_date": "2030-01-30",
+          "last_done": "2019-12-14"
+        },
+        {
+          "type": "statutory",
+          "desc": "Load Line Renewal (载重线换证)",
+          "due_date": "2030-01-31"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Construction Renewal (构造安全换证)",
+          "due_date": "2030-01-31"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Equipment Renewal (设备安全换证)",
+          "due_date": "2030-01-31"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Radio Renewal (无线电安全换证)",
+          "due_date": "2030-01-31"
+        },
+        {
+          "type": "statutory",
+          "desc": "OPP Renewal (防油污换证)",
+          "due_date": "2030-01-31"
+        },
+        {
+          "type": "statutory",
+          "desc": "SPP Renewal (生活污水换证)",
+          "due_date": "2030-01-31"
+        },
+        {
+          "type": "statutory",
+          "desc": "APP Renewal (防空气污染换证)",
+          "due_date": "2030-01-31"
+        },
+        {
+          "type": "statutory",
+          "desc": "IHM Renewal (有害物质清单换证)",
+          "due_date": "2030-01-31"
+        },
+        {
+          "type": "statutory",
+          "desc": "BWM Renewal (压载水换证)",
+          "due_date": "2030-01-31"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "Load Line",
+          "expiry": "2030-01-31"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2030-01-31"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2030-01-31"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2030-01-31"
+        },
+        {
+          "name": "OPP (MARPOL Annex I)",
+          "expiry": "2030-01-31"
+        },
+        {
+          "name": "SPP (MARPOL Annex IV)",
+          "expiry": "2030-01-31"
+        },
+        {
+          "name": "APP (MARPOL Annex VI)",
+          "expiry": "2030-01-31"
+        },
+        {
+          "name": "EE Anti Fouling System BWM",
+          "expiry": "2030-01-31"
+        },
+        {
+          "name": "IHM",
+          "expiry": "2030-01-31"
+        },
+        {
+          "name": "IMSBC code",
+          "expiry": "2030-01-31"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "high"
+    },
+    "WINNING_DILIGENCE": {
+      "name": "WINNING DILIGENCE",
+      "imo": "9374088",
+      "class_society": "NK",
+      "flag": "Singapore",
+      "gt": 90091,
+      "dwt": "",
+      "surveys": [
+        {
+          "type": "special_survey",
+          "desc": "Special Survey (特检)",
+          "due_date": "2031-05-17",
+          "last_done": "2026-05-12"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (锅炉检验)",
+          "due_date": "2028-10-23",
+          "last_done": "2025-10-24"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey (坞检)",
+          "due_date": "2028-10-23",
+          "last_done": "2025-10-24"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft Survey (尾轴检验)",
+          "due_date": "2028-08-02",
+          "last_done": "2023-06-27"
+        },
+        {
+          "type": "statutory",
+          "desc": "Load Line Renewal (载重线换证)",
+          "due_date": "2031-05-17"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Construction Renewal (构造安全换证)",
+          "due_date": "2031-05-17"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Equipment Renewal (设备安全换证)",
+          "due_date": "2031-05-17"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Radio Renewal (无线电安全换证)",
+          "due_date": "2031-05-17"
+        },
+        {
+          "type": "statutory",
+          "desc": "OPP Renewal (防油污换证)",
+          "due_date": "2031-05-17"
+        },
+        {
+          "type": "statutory",
+          "desc": "SPP Renewal (生活污水换证)",
+          "due_date": "2031-05-17"
+        },
+        {
+          "type": "statutory",
+          "desc": "APP Renewal (防空气污染换证)",
+          "due_date": "2031-05-17"
+        },
+        {
+          "type": "statutory",
+          "desc": "IHM Renewal (有害物质清单换证)",
+          "due_date": "2031-05-17"
+        },
+        {
+          "type": "statutory",
+          "desc": "BWM Renewal (压载水换证)",
+          "due_date": "2031-05-17"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "Load Line",
+          "expiry": "2031-05-17"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2031-05-17"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2031-05-17"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2031-05-17"
+        },
+        {
+          "name": "OPP (MARPOL Annex I)",
+          "expiry": "2031-05-17"
+        },
+        {
+          "name": "SPP (MARPOL Annex IV)",
+          "expiry": "2031-05-17"
+        },
+        {
+          "name": "APP (MARPOL Annex VI)",
+          "expiry": "2031-05-17"
+        },
+        {
+          "name": "EE Anti Fouling System BWM",
+          "expiry": "2031-05-17"
+        },
+        {
+          "name": "IHM",
+          "expiry": "2031-05-17"
+        },
+        {
+          "name": "IMSBC code",
+          "expiry": "2031-05-17"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "high"
+    },
+    "WINNING_ENDURANCE": {
+      "name": "WINNING ENDURANCE",
+      "imo": "9232058",
+      "class_society": "NK",
+      "flag": "Singapore",
+      "gt": 87590,
+      "dwt": "",
+      "surveys": [
+        {
+          "type": "special_survey",
+          "desc": "Special Survey (特检)",
+          "due_date": "2030-07-15",
+          "last_done": "2025-07-16"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (锅炉检验)",
+          "due_date": "2028-07-15",
+          "last_done": "2025-07-16"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey (坞检)",
+          "due_date": "2028-07-15",
+          "last_done": "2025-07-16"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft Survey (尾轴检验)",
+          "due_date": "2030-07-15",
+          "last_done": "2025-07-16"
+        },
+        {
+          "type": "statutory",
+          "desc": "Load Line Renewal (载重线换证)",
+          "due_date": "2030-07-15"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Construction Renewal (构造安全换证)",
+          "due_date": "2030-07-15"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Equipment Renewal (设备安全换证)",
+          "due_date": "2030-07-15"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Radio Renewal (无线电安全换证)",
+          "due_date": "2030-07-15"
+        },
+        {
+          "type": "statutory",
+          "desc": "OPP Renewal (防油污换证)",
+          "due_date": "2030-07-15"
+        },
+        {
+          "type": "statutory",
+          "desc": "SPP Renewal (生活污水换证)",
+          "due_date": "2030-07-15"
+        },
+        {
+          "type": "statutory",
+          "desc": "APP Renewal (防空气污染换证)",
+          "due_date": "2030-07-15"
+        },
+        {
+          "type": "statutory",
+          "desc": "BWM Renewal (压载水换证)",
+          "due_date": "2030-07-15"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "Load Line",
+          "expiry": "2030-07-15"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2030-07-15"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2030-07-15"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2030-07-15"
+        },
+        {
+          "name": "OPP (MARPOL Annex I)",
+          "expiry": "2030-07-15"
+        },
+        {
+          "name": "SPP (MARPOL Annex IV)",
+          "expiry": "2030-07-15"
+        },
+        {
+          "name": "APP (MARPOL Annex VI)",
+          "expiry": "2030-07-15"
+        },
+        {
+          "name": "EE Anti Fouling System BWM",
+          "expiry": "2030-07-15"
+        },
+        {
+          "name": "IHM",
+          "expiry": "2030-07-15"
+        },
+        {
+          "name": "IMSBC code",
+          "expiry": "2030-07-15"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "high"
+    },
+    "WINNING_EXCELLENCE": {
+      "name": "WINNING EXCELLENCE",
+      "imo": "9279393",
+      "class_society": "NK",
+      "flag": "Singapore",
+      "gt": 113929,
+      "dwt": "",
+      "surveys": [
+        {
+          "type": "special_survey",
+          "desc": "Special Survey (特检)",
+          "due_date": "2029-05-25",
+          "last_done": "2024-04-08"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (锅炉检验)",
+          "due_date": "2027-04-07",
+          "last_done": "2024-04-08"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey (坞检)",
+          "due_date": "2027-04-07",
+          "last_done": "2024-04-08"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft Survey (尾轴检验)",
+          "due_date": "2029-05-24",
+          "last_done": "2024-04-08"
+        },
+        {
+          "type": "statutory",
+          "desc": "Load Line Renewal (载重线换证)",
+          "due_date": "2029-05-25"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Construction Renewal (构造安全换证)",
+          "due_date": "2029-05-25"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Equipment Renewal (设备安全换证)",
+          "due_date": "2029-05-25"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Radio Renewal (无线电安全换证)",
+          "due_date": "2029-05-25"
+        },
+        {
+          "type": "statutory",
+          "desc": "OPP Renewal (防油污换证)",
+          "due_date": "2029-05-25"
+        },
+        {
+          "type": "statutory",
+          "desc": "SPP Renewal (生活污水换证)",
+          "due_date": "2029-05-25"
+        },
+        {
+          "type": "statutory",
+          "desc": "APP Renewal (防空气污染换证)",
+          "due_date": "2029-05-25"
+        },
+        {
+          "type": "statutory",
+          "desc": "IHM Renewal (有害物质清单换证)",
+          "due_date": "2029-05-25"
+        },
+        {
+          "type": "statutory",
+          "desc": "BWM Renewal (压载水换证)",
+          "due_date": "2029-05-25"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "Load Line",
+          "expiry": "2029-05-25"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2029-05-25"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2029-05-25"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2029-05-25"
+        },
+        {
+          "name": "OPP (MARPOL Annex I)",
+          "expiry": "2029-05-25"
+        },
+        {
+          "name": "SPP (MARPOL Annex IV)",
+          "expiry": "2029-05-25"
+        },
+        {
+          "name": "APP (MARPOL Annex VI)",
+          "expiry": "2029-05-25"
+        },
+        {
+          "name": "EE Anti Fouling System BWM",
+          "expiry": "2029-05-25"
+        },
+        {
+          "name": "IHM",
+          "expiry": "2029-05-25"
+        },
+        {
+          "name": "IMSBC code",
+          "expiry": "2029-05-25"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "high"
+    },
+    "WINNING_FAITH": {
+      "name": "WINNING FAITH",
+      "imo": "9314076",
+      "class_society": "NK",
+      "flag": "Singapore",
+      "gt": 90091,
+      "dwt": "",
+      "surveys": [
+        {
+          "type": "special_survey",
+          "desc": "Special Survey (特检)",
+          "due_date": "2029-10-19",
+          "last_done": "2024-10-07"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (锅炉检验)",
+          "due_date": "2027-10-06",
+          "last_done": "2024-10-07"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey (坞检)",
+          "due_date": "2027-10-06",
+          "last_done": "2024-10-07"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft Survey (尾轴检验)",
+          "due_date": "2029-10-21",
+          "last_done": "2014-10-23"
+        },
+        {
+          "type": "statutory",
+          "desc": "Load Line Renewal (载重线换证)",
+          "due_date": "2029-10-19"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Construction Renewal (构造安全换证)",
+          "due_date": "2029-10-19"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Equipment Renewal (设备安全换证)",
+          "due_date": "2029-10-19"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Radio Renewal (无线电安全换证)",
+          "due_date": "2029-10-19"
+        },
+        {
+          "type": "statutory",
+          "desc": "OPP Renewal (防油污换证)",
+          "due_date": "2029-10-19"
+        },
+        {
+          "type": "statutory",
+          "desc": "SPP Renewal (生活污水换证)",
+          "due_date": "2029-10-19"
+        },
+        {
+          "type": "statutory",
+          "desc": "APP Renewal (防空气污染换证)",
+          "due_date": "2029-10-19"
+        },
+        {
+          "type": "statutory",
+          "desc": "IHM Renewal (有害物质清单换证)",
+          "due_date": "2029-10-19"
+        },
+        {
+          "type": "statutory",
+          "desc": "BWM Renewal (压载水换证)",
+          "due_date": "2029-10-19"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "Load Line",
+          "expiry": "2029-10-19"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2029-10-19"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2029-10-19"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2029-10-19"
+        },
+        {
+          "name": "OPP (MARPOL Annex I)",
+          "expiry": "2029-10-19"
+        },
+        {
+          "name": "SPP (MARPOL Annex IV)",
+          "expiry": "2029-10-19"
+        },
+        {
+          "name": "APP (MARPOL Annex VI)",
+          "expiry": "2029-10-19"
+        },
+        {
+          "name": "EE Anti Fouling System BWM",
+          "expiry": "2029-10-19"
+        },
+        {
+          "name": "IHM",
+          "expiry": "2029-10-19"
+        },
+        {
+          "name": "IMSBC code",
+          "expiry": "2029-10-19"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "high"
+    },
+    "WINNING_GRACE": {
+      "name": "WINNING GRACE",
+      "imo": "9722948",
+      "class_society": "NK",
+      "flag": "Singapore",
+      "gt": 107791,
+      "dwt": "",
+      "surveys": [
+        {
+          "type": "special_survey",
+          "desc": "Special Survey (特检)",
+          "due_date": "2031-04-25",
+          "last_done": "2026-03-02"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (锅炉检验)",
+          "due_date": "2029-03-01",
+          "last_done": "2026-03-02"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey (坞检)",
+          "due_date": "2029-03-01",
+          "last_done": "2026-03-02"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft Survey (尾轴检验)",
+          "due_date": "2031-04-25",
+          "last_done": "2021-05-16"
+        },
+        {
+          "type": "statutory",
+          "desc": "Load Line Renewal (载重线换证)",
+          "due_date": "2031-04-25"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Construction Renewal (构造安全换证)",
+          "due_date": "2031-04-25"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Equipment Renewal (设备安全换证)",
+          "due_date": "2031-04-25"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Radio Renewal (无线电安全换证)",
+          "due_date": "2031-04-25"
+        },
+        {
+          "type": "statutory",
+          "desc": "OPP Renewal (防油污换证)",
+          "due_date": "2031-04-25"
+        },
+        {
+          "type": "statutory",
+          "desc": "SPP Renewal (生活污水换证)",
+          "due_date": "2031-04-25"
+        },
+        {
+          "type": "statutory",
+          "desc": "APP Renewal (防空气污染换证)",
+          "due_date": "2031-04-25"
+        },
+        {
+          "type": "statutory",
+          "desc": "IHM Renewal (有害物质清单换证)",
+          "due_date": "2031-03-01"
+        },
+        {
+          "type": "statutory",
+          "desc": "BWM Renewal (压载水换证)",
+          "due_date": "2031-04-25"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "Load Line",
+          "expiry": "2031-04-25"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2031-04-25"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2031-04-25"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2031-04-25"
+        },
+        {
+          "name": "OPP (MARPOL Annex I)",
+          "expiry": "2031-04-25"
+        },
+        {
+          "name": "SPP (MARPOL Annex IV)",
+          "expiry": "2031-04-25"
+        },
+        {
+          "name": "APP (MARPOL Annex VI)",
+          "expiry": "2031-04-25"
+        },
+        {
+          "name": "EE Anti Fouling System BWM",
+          "expiry": "2031-04-25"
+        },
+        {
+          "name": "IHM",
+          "expiry": "2031-03-01"
+        },
+        {
+          "name": "IMSBC code",
+          "expiry": "2031-04-25"
+        },
+        {
+          "name": "Lifting Appliances(Cranes / Hoists)",
+          "expiry": "2031-03-01"
+        },
+        {
+          "name": "Factual Statement",
+          "expiry": "2031-03-01"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "high"
+    },
+    "WINNING_HOPE": {
+      "name": "WINNING HOPE",
+      "imo": "9722950",
+      "class_society": "NK",
+      "flag": "Singapore",
+      "gt": 107791,
+      "dwt": "",
+      "surveys": [
+        {
+          "type": "special_survey",
+          "desc": "Special Survey (特检)",
+          "due_date": "2031-08-09",
+          "last_done": "2026-06-07"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (锅炉检验)",
+          "due_date": "2029-06-06",
+          "last_done": "2026-06-07"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey (坞检)",
+          "due_date": "2029-06-06",
+          "last_done": "2026-06-07"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft Survey (尾轴检验)",
+          "due_date": "2031-08-08",
+          "last_done": "2021-06-15"
+        },
+        {
+          "type": "statutory",
+          "desc": "Load Line Renewal (载重线换证)",
+          "due_date": "2031-08-09"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Construction Renewal (构造安全换证)",
+          "due_date": "2031-08-09"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Equipment Renewal (设备安全换证)",
+          "due_date": "2031-08-09"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Radio Renewal (无线电安全换证)",
+          "due_date": "2031-08-09"
+        },
+        {
+          "type": "statutory",
+          "desc": "OPP Renewal (防油污换证)",
+          "due_date": "2031-08-09"
+        },
+        {
+          "type": "statutory",
+          "desc": "SPP Renewal (生活污水换证)",
+          "due_date": "2031-08-09"
+        },
+        {
+          "type": "statutory",
+          "desc": "APP Renewal (防空气污染换证)",
+          "due_date": "2031-08-09"
+        },
+        {
+          "type": "statutory",
+          "desc": "IHM Renewal (有害物质清单换证)",
+          "due_date": "2031-06-06"
+        },
+        {
+          "type": "statutory",
+          "desc": "BWM Renewal (压载水换证)",
+          "due_date": "2031-08-09"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "Load Line",
+          "expiry": "2031-08-09"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2031-08-09"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2031-08-09"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2031-08-09"
+        },
+        {
+          "name": "OPP (MARPOL Annex I)",
+          "expiry": "2031-08-09"
+        },
+        {
+          "name": "SPP (MARPOL Annex IV)",
+          "expiry": "2031-08-09"
+        },
+        {
+          "name": "APP (MARPOL Annex VI)",
+          "expiry": "2031-08-09"
+        },
+        {
+          "name": "EE Anti Fouling System BWM",
+          "expiry": "2031-08-09"
+        },
+        {
+          "name": "IHM",
+          "expiry": "2031-06-06"
+        },
+        {
+          "name": "IMSBC code",
+          "expiry": "2031-08-09"
+        },
+        {
+          "name": "Lifting Appliances(Cranes / Hoists)",
+          "expiry": "2031-06-06"
+        },
+        {
+          "name": "Factual Statement",
+          "expiry": "2031-06-06"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "high"
+    },
+    "WINNING_INTEGRITY": {
+      "name": "WINNING INTEGRITY",
+      "imo": "9633068",
+      "class_society": "NK",
+      "flag": "Singapore",
+      "gt": 92758,
+      "dwt": "",
+      "surveys": [
+        {
+          "type": "special_survey",
+          "desc": "Special Survey (特检)",
+          "due_date": "2030-07-25",
+          "last_done": "2025-07-24"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (锅炉检验)",
+          "due_date": "2028-07-23",
+          "last_done": "2025-07-24"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey (坞检)",
+          "due_date": "2028-07-23",
+          "last_done": "2025-07-24"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft Survey (尾轴检验)",
+          "due_date": "2030-07-23",
+          "last_done": "2025-07-24"
+        },
+        {
+          "type": "statutory",
+          "desc": "Load Line Renewal (载重线换证)",
+          "due_date": "2030-07-25"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Construction Renewal (构造安全换证)",
+          "due_date": "2030-07-25"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Equipment Renewal (设备安全换证)",
+          "due_date": "2030-07-25"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Radio Renewal (无线电安全换证)",
+          "due_date": "2030-07-25"
+        },
+        {
+          "type": "statutory",
+          "desc": "OPP Renewal (防油污换证)",
+          "due_date": "2030-07-25"
+        },
+        {
+          "type": "statutory",
+          "desc": "SPP Renewal (生活污水换证)",
+          "due_date": "2030-07-25"
+        },
+        {
+          "type": "statutory",
+          "desc": "APP Renewal (防空气污染换证)",
+          "due_date": "2030-07-25"
+        },
+        {
+          "type": "statutory",
+          "desc": "BWM Renewal (压载水换证)",
+          "due_date": "2030-07-25"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "Load Line",
+          "expiry": "2030-07-25"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2030-07-25"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2030-07-25"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2030-07-25"
+        },
+        {
+          "name": "OPP (MARPOL Annex I)",
+          "expiry": "2030-07-25"
+        },
+        {
+          "name": "SPP (MARPOL Annex IV)",
+          "expiry": "2030-07-25"
+        },
+        {
+          "name": "APP (MARPOL Annex VI)",
+          "expiry": "2030-07-25"
+        },
+        {
+          "name": "EE Anti Fouling System BWM",
+          "expiry": "2030-07-25"
+        },
+        {
+          "name": "IMSBC code",
+          "expiry": "2030-07-25"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "high"
+    },
+    "WINNING_LOYALTY": {
+      "name": "WINNING LOYALTY",
+      "imo": "9314052",
+      "class_society": "NK",
+      "flag": "Singapore",
+      "gt": 90091,
+      "dwt": "",
+      "surveys": [
+        {
+          "type": "special_survey",
+          "desc": "Special Survey (特检)",
+          "due_date": "2029-08-08",
+          "last_done": "2024-08-16"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (锅炉检验)",
+          "due_date": "2027-08-15",
+          "last_done": "2024-08-16"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey (坞检)",
+          "due_date": "2027-08-15",
+          "last_done": "2024-08-16"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft Survey (尾轴检验)",
+          "due_date": "2026-11-24",
+          "last_done": "2021-11-25"
+        },
+        {
+          "type": "statutory",
+          "desc": "Load Line Renewal (载重线换证)",
+          "due_date": "2029-08-08"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Construction Renewal (构造安全换证)",
+          "due_date": "2029-08-08"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Equipment Renewal (设备安全换证)",
+          "due_date": "2029-08-08"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Radio Renewal (无线电安全换证)",
+          "due_date": "2029-08-08"
+        },
+        {
+          "type": "statutory",
+          "desc": "OPP Renewal (防油污换证)",
+          "due_date": "2029-08-08"
+        },
+        {
+          "type": "statutory",
+          "desc": "SPP Renewal (生活污水换证)",
+          "due_date": "2029-08-08"
+        },
+        {
+          "type": "statutory",
+          "desc": "APP Renewal (防空气污染换证)",
+          "due_date": "2029-08-08"
+        },
+        {
+          "type": "statutory",
+          "desc": "IHM Renewal (有害物质清单换证)",
+          "due_date": "2029-08-08"
+        },
+        {
+          "type": "statutory",
+          "desc": "BWM Renewal (压载水换证)",
+          "due_date": "2029-08-08"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "Load Line",
+          "expiry": "2029-08-08"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2029-08-08"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2029-08-08"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2029-08-08"
+        },
+        {
+          "name": "OPP (MARPOL Annex I)",
+          "expiry": "2029-08-08"
+        },
+        {
+          "name": "SPP (MARPOL Annex IV)",
+          "expiry": "2029-08-08"
+        },
+        {
+          "name": "APP (MARPOL Annex VI)",
+          "expiry": "2029-08-08"
+        },
+        {
+          "name": "EE Anti Fouling System BWM",
+          "expiry": "2029-08-08"
+        },
+        {
+          "name": "IHM",
+          "expiry": "2029-08-08"
+        },
+        {
+          "name": "IMSBC code",
+          "expiry": "2029-08-08"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "high"
+    },
+    "WINNING_MISSION": {
+      "name": "WINNING MISSION",
+      "imo": "9659854",
+      "class_society": "NK",
+      "flag": "Singapore",
+      "gt": 92752,
+      "dwt": "",
+      "surveys": [
+        {
+          "type": "special_survey",
+          "desc": "Special Survey (特检)",
+          "due_date": "2028-07-21",
+          "last_done": "2023-07-04"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (锅炉检验)",
+          "due_date": "2028-07-21",
+          "last_done": "2026-06-09"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey (坞检)",
+          "due_date": "2028-07-21",
+          "last_done": "2026-06-09"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft Survey (尾轴检验)",
+          "due_date": "2028-07-03",
+          "last_done": "2023-07-04"
+        },
+        {
+          "type": "statutory",
+          "desc": "Load Line Renewal (载重线换证)",
+          "due_date": "2028-07-21"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Construction Renewal (构造安全换证)",
+          "due_date": "2028-07-21"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Equipment Renewal (设备安全换证)",
+          "due_date": "2028-07-21"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Radio Renewal (无线电安全换证)",
+          "due_date": "2028-07-21"
+        },
+        {
+          "type": "statutory",
+          "desc": "OPP Renewal (防油污换证)",
+          "due_date": "2028-07-21"
+        },
+        {
+          "type": "statutory",
+          "desc": "SPP Renewal (生活污水换证)",
+          "due_date": "2028-07-21"
+        },
+        {
+          "type": "statutory",
+          "desc": "APP Renewal (防空气污染换证)",
+          "due_date": "2028-07-21"
+        },
+        {
+          "type": "statutory",
+          "desc": "IHM Renewal (有害物质清单换证)",
+          "due_date": "2028-07-21"
+        },
+        {
+          "type": "statutory",
+          "desc": "BWM Renewal (压载水换证)",
+          "due_date": "2028-07-21"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "Load Line",
+          "expiry": "2028-07-21"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2028-07-21"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2028-07-21"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2028-07-21"
+        },
+        {
+          "name": "OPP (MARPOL Annex I)",
+          "expiry": "2028-07-21"
+        },
+        {
+          "name": "SPP (MARPOL Annex IV)",
+          "expiry": "2028-07-21"
+        },
+        {
+          "name": "APP (MARPOL Annex VI)",
+          "expiry": "2028-07-21"
+        },
+        {
+          "name": "EE Anti Fouling System BWM",
+          "expiry": "2028-07-21"
+        },
+        {
+          "name": "IHM",
+          "expiry": "2028-07-21"
+        },
+        {
+          "name": "IMSBC code",
+          "expiry": "2028-07-21"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "high"
+    },
+    "WINNING_NATURE": {
+      "name": "WINNING NATURE",
+      "imo": "9659866",
+      "class_society": "NK",
+      "flag": "Singapore",
+      "gt": 92752,
+      "dwt": "",
+      "surveys": [
+        {
+          "type": "special_survey",
+          "desc": "Special Survey (特检)",
+          "due_date": "2029-02-27",
+          "last_done": "2023-12-04"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (锅炉检验)",
+          "due_date": "2026-12-03",
+          "last_done": "2023-12-04"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey (坞检)",
+          "due_date": "2026-12-03",
+          "last_done": "2023-12-04"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft Survey (尾轴检验)",
+          "due_date": "2029-02-26",
+          "last_done": "2014-02-28"
+        },
+        {
+          "type": "statutory",
+          "desc": "Load Line Renewal (载重线换证)",
+          "due_date": "2029-02-27"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Construction Renewal (构造安全换证)",
+          "due_date": "2029-02-27"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Equipment Renewal (设备安全换证)",
+          "due_date": "2029-02-27"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Radio Renewal (无线电安全换证)",
+          "due_date": "2029-02-27"
+        },
+        {
+          "type": "statutory",
+          "desc": "OPP Renewal (防油污换证)",
+          "due_date": "2029-02-27"
+        },
+        {
+          "type": "statutory",
+          "desc": "SPP Renewal (生活污水换证)",
+          "due_date": "2029-02-27"
+        },
+        {
+          "type": "statutory",
+          "desc": "APP Renewal (防空气污染换证)",
+          "due_date": "2029-02-27"
+        },
+        {
+          "type": "statutory",
+          "desc": "IHM Renewal (有害物质清单换证)",
+          "due_date": "2029-02-27"
+        },
+        {
+          "type": "statutory",
+          "desc": "BWM Renewal (压载水换证)",
+          "due_date": "2029-02-27"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "Load Line",
+          "expiry": "2029-02-27"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2029-02-27"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2029-02-27"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2029-02-27"
+        },
+        {
+          "name": "OPP (MARPOL Annex I)",
+          "expiry": "2029-02-27"
+        },
+        {
+          "name": "SPP (MARPOL Annex IV)",
+          "expiry": "2029-02-27"
+        },
+        {
+          "name": "APP (MARPOL Annex VI)",
+          "expiry": "2029-02-27"
+        },
+        {
+          "name": "EE Anti Fouling System BWM",
+          "expiry": "2029-02-27"
+        },
+        {
+          "name": "IHM",
+          "expiry": "2029-02-27"
+        },
+        {
+          "name": "IMSBC code",
+          "expiry": "2029-02-27"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "high"
+    },
+    "WINNING_OCEAN": {
+      "name": "WINNING OCEAN",
+      "imo": "9271602",
+      "class_society": "NK",
+      "flag": "Liberia",
+      "gt": 102207,
+      "dwt": "",
+      "surveys": [
+        {
+          "type": "special_survey",
+          "desc": "Special Survey (特检)",
+          "due_date": "2031-01-04",
+          "last_done": "2026-01-05"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (锅炉检验)",
+          "due_date": "2029-01-04",
+          "last_done": "2026-01-05"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey (坞检)",
+          "due_date": "2029-01-04",
+          "last_done": "2026-01-05"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft Survey (尾轴检验)",
+          "due_date": "2029-04-05",
+          "last_done": "2019-04-04"
+        },
+        {
+          "type": "statutory",
+          "desc": "Load Line Renewal (载重线换证)",
+          "due_date": "2031-01-04"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Construction Renewal (构造安全换证)",
+          "due_date": "2031-01-04"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Equipment Renewal (设备安全换证)",
+          "due_date": "2031-01-04"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Radio Renewal (无线电安全换证)",
+          "due_date": "2031-01-04"
+        },
+        {
+          "type": "statutory",
+          "desc": "OPP Renewal (防油污换证)",
+          "due_date": "2031-01-04"
+        },
+        {
+          "type": "statutory",
+          "desc": "SPP Renewal (生活污水换证)",
+          "due_date": "2031-01-04"
+        },
+        {
+          "type": "statutory",
+          "desc": "APP Renewal (防空气污染换证)",
+          "due_date": "2031-01-04"
+        },
+        {
+          "type": "statutory",
+          "desc": "BWM Renewal (压载水换证)",
+          "due_date": "2031-01-04"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "Load Line",
+          "expiry": "2031-01-04"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2031-01-04"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2031-01-04"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2031-01-04"
+        },
+        {
+          "name": "OPP (MARPOL Annex I)",
+          "expiry": "2031-01-04"
+        },
+        {
+          "name": "SPP (MARPOL Annex IV)",
+          "expiry": "2031-01-04"
+        },
+        {
+          "name": "APP (MARPOL Annex VI)",
+          "expiry": "2031-01-04"
+        },
+        {
+          "name": "EE Anti Fouling System BWM",
+          "expiry": "2031-01-04"
+        },
+        {
+          "name": "IMSBC code",
+          "expiry": "2031-01-04"
+        },
+        {
+          "name": "Lifting Appliances (Liberia)",
+          "expiry": "2031-01-04"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "high"
+    },
+    "WINNING_PRIDE": {
+      "name": "WINNING PRIDE",
+      "imo": "9450234",
+      "class_society": "NK",
+      "flag": "Hong Kong, China",
+      "gt": 89603,
+      "dwt": "",
+      "surveys": [
+        {
+          "type": "special_survey",
+          "desc": "Special Survey (特检)",
+          "due_date": "2029-02-16",
+          "last_done": "2024-02-07"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (锅炉检验)",
+          "due_date": "2027-02-06",
+          "last_done": "2024-02-07"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey (坞检)",
+          "due_date": "2027-02-06",
+          "last_done": "2024-02-07"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft Survey (尾轴检验)",
+          "due_date": "2029-02-12",
+          "last_done": "2018-12-31"
+        },
+        {
+          "type": "statutory",
+          "desc": "Load Line Renewal (载重线换证)",
+          "due_date": "2029-02-16"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Construction Renewal (构造安全换证)",
+          "due_date": "2029-02-16"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Equipment Renewal (设备安全换证)",
+          "due_date": "2029-02-16"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Radio Renewal (无线电安全换证)",
+          "due_date": "2029-02-16"
+        },
+        {
+          "type": "statutory",
+          "desc": "OPP Renewal (防油污换证)",
+          "due_date": "2029-02-16"
+        },
+        {
+          "type": "statutory",
+          "desc": "SPP Renewal (生活污水换证)",
+          "due_date": "2029-02-16"
+        },
+        {
+          "type": "statutory",
+          "desc": "APP Renewal (防空气污染换证)",
+          "due_date": "2029-02-16"
+        },
+        {
+          "type": "statutory",
+          "desc": "IHM Renewal (有害物质清单换证)",
+          "due_date": "2029-02-16"
+        },
+        {
+          "type": "statutory",
+          "desc": "BWM Renewal (压载水换证)",
+          "due_date": "2029-02-16"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "Load Line",
+          "expiry": "2029-02-16"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2029-02-16"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2029-02-16"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2029-02-16"
+        },
+        {
+          "name": "Dangerous Goods",
+          "expiry": "2029-02-16"
+        },
+        {
+          "name": "OPP (MARPOL Annex I)",
+          "expiry": "2029-02-16"
+        },
+        {
+          "name": "SPP (MARPOL Annex IV)",
+          "expiry": "2029-02-16"
+        },
+        {
+          "name": "APP (MARPOL Annex VI)",
+          "expiry": "2029-02-16"
+        },
+        {
+          "name": "EE Anti Fouling System BWM",
+          "expiry": "2029-02-16"
+        },
+        {
+          "name": "IHM",
+          "expiry": "2029-02-16"
+        },
+        {
+          "name": "IMSBC code",
+          "expiry": "2029-02-16"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "high"
+    },
+    "WINNING_QUEEN": {
+      "name": "WINNING QUEEN",
+      "imo": "9311282",
+      "class_society": "NK",
+      "flag": "Hong Kong, China",
+      "gt": 89726,
+      "dwt": "",
+      "surveys": [
+        {
+          "type": "special_survey",
+          "desc": "Special Survey (特检)",
+          "due_date": "2031-06-01",
+          "last_done": "2026-06-17"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (锅炉检验)",
+          "due_date": "2029-06-16",
+          "last_done": "2026-06-17"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey (坞检)",
+          "due_date": "2029-06-16",
+          "last_done": "2026-06-17"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft Survey (尾轴检验)",
+          "due_date": "2031-07-05",
+          "last_done": "2021-07-07"
+        },
+        {
+          "type": "statutory",
+          "desc": "Load Line Renewal (载重线换证)",
+          "due_date": "2031-06-01"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Construction Renewal (构造安全换证)",
+          "due_date": "2031-06-01"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Equipment Renewal (设备安全换证)",
+          "due_date": "2031-06-01"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Radio Renewal (无线电安全换证)",
+          "due_date": "2031-06-01"
+        },
+        {
+          "type": "statutory",
+          "desc": "OPP Renewal (防油污换证)",
+          "due_date": "2031-06-01"
+        },
+        {
+          "type": "statutory",
+          "desc": "SPP Renewal (生活污水换证)",
+          "due_date": "2031-06-01"
+        },
+        {
+          "type": "statutory",
+          "desc": "APP Renewal (防空气污染换证)",
+          "due_date": "2031-06-01"
+        },
+        {
+          "type": "statutory",
+          "desc": "IHM Renewal (有害物质清单换证)",
+          "due_date": "2031-06-01"
+        },
+        {
+          "type": "statutory",
+          "desc": "BWM Renewal (压载水换证)",
+          "due_date": "2031-06-01"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "Load Line",
+          "expiry": "2031-06-01"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2031-06-01"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2031-06-01"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2031-06-01"
+        },
+        {
+          "name": "OPP (MARPOL Annex I)",
+          "expiry": "2031-06-01"
+        },
+        {
+          "name": "SPP (MARPOL Annex IV)",
+          "expiry": "2031-06-01"
+        },
+        {
+          "name": "APP (MARPOL Annex VI)",
+          "expiry": "2031-06-01"
+        },
+        {
+          "name": "EE Anti Fouling System BWM",
+          "expiry": "2031-06-01"
+        },
+        {
+          "name": "IHM",
+          "expiry": "2031-06-01"
+        },
+        {
+          "name": "IMSBC code",
+          "expiry": "2031-06-01"
+        },
+        {
+          "name": "Lifting Appliances(Cranes / Hoists)",
+          "expiry": "2029-07-30"
+        },
+        {
+          "name": "Factual Statement",
+          "expiry": "2031-06-16"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "high"
+    },
+    "WINNING_RESILIENCE": {
+      "name": "WINNING RESILIENCE",
+      "imo": "9410430",
+      "class_society": "CCS",
+      "flag": "Panama",
+      "gt": "114026",
+      "dwt": "",
+      "surveys": [
+        {
+          "type": "boiler",
+          "desc": "锅炉"
+        },
+        {
+          "type": "annual_survey",
+          "desc": "Class Annual Survey",
+          "due_date": "2026-06-01"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Class Intermediate Survey",
+          "due_date": "2025-08-05"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Class Special Survey for",
+          "due_date": "2027-08-31"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "尾轴检验",
+          "due_date": "2027-08-31"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "BTS (船底外部检验)",
+          "due_date": "2027-08-31",
+          "last_done": "2025-08-05"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "ISPS"
+        },
+        {
+          "name": "IOPP",
+          "expiry": "2026-06-01"
+        },
+        {
+          "name": "IAPP",
+          "expiry": "2026-06-01"
+        },
+        {
+          "name": "ISPP",
+          "expiry": "2027-06-01"
+        },
+        {
+          "name": "Load Line"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2026-04-25"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2026-04-25"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2026-04-25"
+        },
+        {
+          "name": "BWM"
+        },
+        {
+          "name": "IHM",
+          "expiry": "2027-06-01"
+        },
+        {
+          "name": "Cargo Gear",
+          "expiry": "2026-04-25"
+        },
+        {
+          "name": "AFS"
         },
         {
           "name": "DOC",
-          "expiry": "29 Jul 2021"
+          "expiry": "2026-08-09"
+        }
+      ],
+      "alerts": {
+        "expired": 7,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "medium"
+    },
+    "WINNING_RISING": {
+      "name": "WINNING RISING",
+      "imo": "9393199",
+      "class_society": "NK",
+      "flag": "Liberia",
+      "gt": 90421,
+      "dwt": "",
+      "surveys": [
+        {
+          "type": "special_survey",
+          "desc": "Special Survey (特检)",
+          "due_date": "2029-06-29",
+          "last_done": "2024-05-03"
         },
         {
-          "name": "SMC",
-          "expiry": "28 Oct 2025"
+          "type": "boiler",
+          "desc": "Boiler Survey (锅炉检验)",
+          "due_date": "2027-05-02",
+          "last_done": "2024-05-03"
         },
         {
-          "name": "MLC",
-          "expiry": "28 Oct 2025"
+          "type": "dry_docking",
+          "desc": "Docking Survey (坞检)",
+          "due_date": "2027-05-02",
+          "last_done": "2024-05-03"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft Survey (尾轴检验)",
+          "due_date": "2029-05-03",
+          "last_done": "2024-05-03"
+        },
+        {
+          "type": "statutory",
+          "desc": "Load Line Renewal (载重线换证)",
+          "due_date": "2029-06-29"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Construction Renewal (构造安全换证)",
+          "due_date": "2029-06-29"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Equipment Renewal (设备安全换证)",
+          "due_date": "2029-06-29"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Radio Renewal (无线电安全换证)",
+          "due_date": "2029-06-29"
+        },
+        {
+          "type": "statutory",
+          "desc": "OPP Renewal (防油污换证)",
+          "due_date": "2029-06-29"
+        },
+        {
+          "type": "statutory",
+          "desc": "SPP Renewal (生活污水换证)",
+          "due_date": "2029-06-29"
+        },
+        {
+          "type": "statutory",
+          "desc": "APP Renewal (防空气污染换证)",
+          "due_date": "2029-06-29"
+        },
+        {
+          "type": "statutory",
+          "desc": "BWM Renewal (压载水换证)",
+          "due_date": "2029-06-29"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "Load Line",
+          "expiry": "2029-06-29"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2029-06-29"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2029-06-29"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2029-06-29"
+        },
+        {
+          "name": "Dangerous Goods",
+          "expiry": "2029-06-29"
+        },
+        {
+          "name": "OPP (MARPOL Annex I)",
+          "expiry": "2029-06-29"
+        },
+        {
+          "name": "SPP (MARPOL Annex IV)",
+          "expiry": "2029-06-29"
+        },
+        {
+          "name": "APP (MARPOL Annex VI)",
+          "expiry": "2029-06-29"
+        },
+        {
+          "name": "EE Anti Fouling System BWM",
+          "expiry": "2029-06-29"
+        },
+        {
+          "name": "IMSBC code",
+          "expiry": "2029-06-29"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "high"
+    },
+    "WINNING_SEA": {
+      "name": "WINNING SEA",
+      "imo": "9254678",
+      "class_society": "NK",
+      "flag": "Liberia",
+      "gt": 101953,
+      "dwt": "",
+      "surveys": [
+        {
+          "type": "special_survey",
+          "desc": "Special Survey (特检)",
+          "due_date": "2030-12-22",
+          "last_done": "2025-12-23"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (锅炉检验)",
+          "due_date": "2028-12-22",
+          "last_done": "2025-12-23"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey (坞检)",
+          "due_date": "2028-12-22",
+          "last_done": "2025-12-23"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft Survey (尾轴检验)",
+          "due_date": "2029-07-04",
+          "last_done": "2018-06-25"
+        },
+        {
+          "type": "statutory",
+          "desc": "Load Line Renewal (载重线换证)",
+          "due_date": "2030-12-22"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Construction Renewal (构造安全换证)",
+          "due_date": "2030-12-22"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Equipment Renewal (设备安全换证)",
+          "due_date": "2030-12-22"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Radio Renewal (无线电安全换证)",
+          "due_date": "2030-12-22"
+        },
+        {
+          "type": "statutory",
+          "desc": "OPP Renewal (防油污换证)",
+          "due_date": "2030-12-22"
+        },
+        {
+          "type": "statutory",
+          "desc": "SPP Renewal (生活污水换证)",
+          "due_date": "2030-12-22"
+        },
+        {
+          "type": "statutory",
+          "desc": "APP Renewal (防空气污染换证)",
+          "due_date": "2030-12-22"
+        },
+        {
+          "type": "statutory",
+          "desc": "BWM Renewal (压载水换证)",
+          "due_date": "2030-12-22"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "Load Line",
+          "expiry": "2030-12-22"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2030-12-22"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2030-12-22"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2030-12-22"
+        },
+        {
+          "name": "OPP (MARPOL Annex I)",
+          "expiry": "2030-12-22"
+        },
+        {
+          "name": "SPP (MARPOL Annex IV)",
+          "expiry": "2030-12-22"
+        },
+        {
+          "name": "APP (MARPOL Annex VI)",
+          "expiry": "2030-12-22"
+        },
+        {
+          "name": "EE Anti Fouling System BWM",
+          "expiry": "2030-12-22"
+        },
+        {
+          "name": "IMSBC code",
+          "expiry": "2030-12-22"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "high"
+    },
+    "WINNING_TEAM": {
+      "name": "WINNING TEAM",
+      "imo": "9336945",
+      "class_society": "NK",
+      "flag": "Singapore",
+      "gt": 102319,
+      "dwt": "",
+      "surveys": [
+        {
+          "type": "special_survey",
+          "desc": "Special Survey (特检)",
+          "due_date": "2031-02-09",
+          "last_done": "2026-01-13"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (锅炉检验)",
+          "due_date": "2029-01-12",
+          "last_done": "2026-01-13"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey (坞检)",
+          "due_date": "2029-01-12",
+          "last_done": "2026-01-13"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft Survey (尾轴检验)",
+          "due_date": "2031-01-28",
+          "last_done": "2026-01-13"
+        },
+        {
+          "type": "statutory",
+          "desc": "Load Line Renewal (载重线换证)",
+          "due_date": "2031-02-09"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Construction Renewal (构造安全换证)",
+          "due_date": "2031-02-09"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Equipment Renewal (设备安全换证)",
+          "due_date": "2031-02-09"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Radio Renewal (无线电安全换证)",
+          "due_date": "2031-02-09"
+        },
+        {
+          "type": "statutory",
+          "desc": "OPP Renewal (防油污换证)",
+          "due_date": "2031-02-09"
+        },
+        {
+          "type": "statutory",
+          "desc": "SPP Renewal (生活污水换证)",
+          "due_date": "2031-02-09"
+        },
+        {
+          "type": "statutory",
+          "desc": "APP Renewal (防空气污染换证)",
+          "due_date": "2031-02-09"
+        },
+        {
+          "type": "statutory",
+          "desc": "IHM Renewal (有害物质清单换证)",
+          "due_date": "2031-01-12"
+        },
+        {
+          "type": "statutory",
+          "desc": "BWM Renewal (压载水换证)",
+          "due_date": "2031-02-09"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "Load Line",
+          "expiry": "2031-02-09"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2031-02-09"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2031-02-09"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2031-02-09"
+        },
+        {
+          "name": "Dangerous Goods",
+          "expiry": "2031-02-09"
+        },
+        {
+          "name": "OPP (MARPOL Annex I)",
+          "expiry": "2031-02-09"
+        },
+        {
+          "name": "SPP (MARPOL Annex IV)",
+          "expiry": "2031-02-09"
+        },
+        {
+          "name": "APP (MARPOL Annex VI)",
+          "expiry": "2031-02-09"
+        },
+        {
+          "name": "EE Anti Fouling System BWM",
+          "expiry": "2031-02-09"
+        },
+        {
+          "name": "IHM",
+          "expiry": "2031-01-12"
+        },
+        {
+          "name": "IMSBC code",
+          "expiry": "2031-02-09"
+        },
+        {
+          "name": "Lifting Appliances(Cranes / Hoists)",
+          "expiry": "2031-01-12"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "high"
+    },
+    "WINNING_UNIVERSE": {
+      "name": "WINNING UNIVERSE",
+      "imo": "9346172",
+      "class_society": "NK",
+      "flag": "Singapore",
+      "gt": 102092,
+      "dwt": "",
+      "surveys": [
+        {
+          "type": "special_survey",
+          "desc": "Special Survey (特检)",
+          "due_date": "2030-10-04",
+          "last_done": "2025-10-05"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (锅炉检验)",
+          "due_date": "2028-10-04",
+          "last_done": "2025-10-05"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey (坞检)",
+          "due_date": "2028-10-04",
+          "last_done": "2025-10-05"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft Survey (尾轴检验)",
+          "due_date": "2030-10-04",
+          "last_done": "2025-10-05"
+        },
+        {
+          "type": "statutory",
+          "desc": "Load Line Renewal (载重线换证)",
+          "due_date": "2030-10-04"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Construction Renewal (构造安全换证)",
+          "due_date": "2030-10-04"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Equipment Renewal (设备安全换证)",
+          "due_date": "2030-10-04"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Radio Renewal (无线电安全换证)",
+          "due_date": "2030-10-04"
+        },
+        {
+          "type": "statutory",
+          "desc": "OPP Renewal (防油污换证)",
+          "due_date": "2030-10-04"
+        },
+        {
+          "type": "statutory",
+          "desc": "SPP Renewal (生活污水换证)",
+          "due_date": "2030-10-04"
+        },
+        {
+          "type": "statutory",
+          "desc": "APP Renewal (防空气污染换证)",
+          "due_date": "2030-10-04"
+        },
+        {
+          "type": "statutory",
+          "desc": "IHM Renewal (有害物质清单换证)",
+          "due_date": "2030-10-04"
+        },
+        {
+          "type": "statutory",
+          "desc": "BWM Renewal (压载水换证)",
+          "due_date": "2030-10-04"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "Load Line",
+          "expiry": "2030-10-04"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2030-10-04"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2030-10-04"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2030-10-04"
+        },
+        {
+          "name": "OPP (MARPOL Annex I)",
+          "expiry": "2030-10-04"
+        },
+        {
+          "name": "SPP (MARPOL Annex IV)",
+          "expiry": "2030-10-04"
+        },
+        {
+          "name": "APP (MARPOL Annex VI)",
+          "expiry": "2030-10-04"
+        },
+        {
+          "name": "EE Anti Fouling System BWM",
+          "expiry": "2030-10-04"
+        },
+        {
+          "name": "IHM",
+          "expiry": "2030-10-04"
+        },
+        {
+          "name": "IMSBC code",
+          "expiry": "2030-10-04"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "high"
+    },
+    "WINNING_VISION": {
+      "name": "WINNING VISION",
+      "imo": "9859765",
+      "class_society": "NK",
+      "flag": "Singapore",
+      "gt": 107791,
+      "dwt": "",
+      "surveys": [
+        {
+          "type": "special_survey",
+          "desc": "Special Survey (特检)",
+          "due_date": "2029-11-24",
+          "last_done": "2024-11-23"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (锅炉检验)",
+          "due_date": "2027-11-22",
+          "last_done": "2024-11-23"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey (坞检)",
+          "due_date": "2027-11-22",
+          "last_done": "2024-11-23"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft Survey (尾轴检验)",
+          "due_date": "2029-11-23",
+          "last_done": "2019-11-25"
+        },
+        {
+          "type": "statutory",
+          "desc": "Load Line Renewal (载重线换证)",
+          "due_date": "2029-11-24"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Construction Renewal (构造安全换证)",
+          "due_date": "2029-11-24"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Equipment Renewal (设备安全换证)",
+          "due_date": "2029-11-24"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Radio Renewal (无线电安全换证)",
+          "due_date": "2029-11-24"
+        },
+        {
+          "type": "statutory",
+          "desc": "OPP Renewal (防油污换证)",
+          "due_date": "2029-11-24"
+        },
+        {
+          "type": "statutory",
+          "desc": "SPP Renewal (生活污水换证)",
+          "due_date": "2029-11-24"
+        },
+        {
+          "type": "statutory",
+          "desc": "APP Renewal (防空气污染换证)",
+          "due_date": "2029-11-24"
+        },
+        {
+          "type": "statutory",
+          "desc": "IHM Renewal (有害物质清单换证)",
+          "due_date": "2029-11-24"
+        },
+        {
+          "type": "statutory",
+          "desc": "BWM Renewal (压载水换证)",
+          "due_date": "2029-11-24"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "Load Line",
+          "expiry": "2029-11-24"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2029-11-24"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2029-11-24"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2029-11-24"
+        },
+        {
+          "name": "OPP (MARPOL Annex I)",
+          "expiry": "2029-11-24"
+        },
+        {
+          "name": "SPP (MARPOL Annex IV)",
+          "expiry": "2029-11-24"
+        },
+        {
+          "name": "APP (MARPOL Annex VI)",
+          "expiry": "2029-11-24"
+        },
+        {
+          "name": "EE Anti Fouling System BWM",
+          "expiry": "2029-11-24"
+        },
+        {
+          "name": "IHM",
+          "expiry": "2029-11-24"
+        },
+        {
+          "name": "IMSBC code",
+          "expiry": "2029-11-24"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "high"
+    },
+    "WINNING_WORLD": {
+      "name": "WINNING WORLD",
+      "imo": "9859777",
+      "class_society": "NK",
+      "flag": "Singapore",
+      "gt": 107786,
+      "dwt": "",
+      "surveys": [
+        {
+          "type": "special_survey",
+          "desc": "Special Survey (特检)",
+          "due_date": "2030-01-02",
+          "last_done": "2024-11-14"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (锅炉检验)",
+          "due_date": "2027-11-13",
+          "last_done": "2024-11-14"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey (坞检)",
+          "due_date": "2027-11-13",
+          "last_done": "2024-11-14"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft Survey (尾轴检验)",
+          "due_date": "2030-01-01",
+          "last_done": "2020-01-03"
+        },
+        {
+          "type": "statutory",
+          "desc": "Load Line Renewal (载重线换证)",
+          "due_date": "2030-01-02"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Construction Renewal (构造安全换证)",
+          "due_date": "2030-01-02"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Equipment Renewal (设备安全换证)",
+          "due_date": "2030-01-02"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Radio Renewal (无线电安全换证)",
+          "due_date": "2030-01-02"
+        },
+        {
+          "type": "statutory",
+          "desc": "OPP Renewal (防油污换证)",
+          "due_date": "2030-01-02"
+        },
+        {
+          "type": "statutory",
+          "desc": "SPP Renewal (生活污水换证)",
+          "due_date": "2030-01-02"
+        },
+        {
+          "type": "statutory",
+          "desc": "APP Renewal (防空气污染换证)",
+          "due_date": "2030-01-02"
+        },
+        {
+          "type": "statutory",
+          "desc": "IHM Renewal (有害物质清单换证)",
+          "due_date": "2030-01-02"
+        },
+        {
+          "type": "statutory",
+          "desc": "BWM Renewal (压载水换证)",
+          "due_date": "2030-01-02"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "Load Line",
+          "expiry": "2030-01-02"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2030-01-02"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2030-01-02"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2030-01-02"
+        },
+        {
+          "name": "OPP (MARPOL Annex I)",
+          "expiry": "2030-01-02"
+        },
+        {
+          "name": "SPP (MARPOL Annex IV)",
+          "expiry": "2030-01-02"
+        },
+        {
+          "name": "APP (MARPOL Annex VI)",
+          "expiry": "2030-01-02"
+        },
+        {
+          "name": "EE Anti Fouling System BWM",
+          "expiry": "2030-01-02"
+        },
+        {
+          "name": "IHM",
+          "expiry": "2030-01-02"
+        },
+        {
+          "name": "IMSBC code",
+          "expiry": "2030-01-02"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "high"
+    },
+    "WINNING_YOUTH": {
+      "name": "WINNING YOUTH",
+      "imo": "9278636",
+      "class_society": "NK",
+      "flag": "Singapore",
+      "gt": 101933,
+      "dwt": "",
+      "surveys": [
+        {
+          "type": "special_survey",
+          "desc": "Special Survey (特检)",
+          "due_date": "2028-05-20",
+          "last_done": "2023-03-19"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (锅炉检验)",
+          "due_date": "2028-05-20",
+          "last_done": "2025-09-19"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey (坞检)",
+          "due_date": "2028-05-20",
+          "last_done": "2025-09-19"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft Survey (尾轴检验)",
+          "due_date": "2030-09-18",
+          "last_done": "2025-09-19"
+        },
+        {
+          "type": "statutory",
+          "desc": "Load Line Renewal (载重线换证)",
+          "due_date": "2028-05-20"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Construction Renewal (构造安全换证)",
+          "due_date": "2028-05-20"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Equipment Renewal (设备安全换证)",
+          "due_date": "2028-05-20"
+        },
+        {
+          "type": "statutory",
+          "desc": "Safety Radio Renewal (无线电安全换证)",
+          "due_date": "2028-05-20"
+        },
+        {
+          "type": "statutory",
+          "desc": "OPP Renewal (防油污换证)",
+          "due_date": "2028-05-20"
+        },
+        {
+          "type": "statutory",
+          "desc": "SPP Renewal (生活污水换证)",
+          "due_date": "2028-05-20"
+        },
+        {
+          "type": "statutory",
+          "desc": "APP Renewal (防空气污染换证)",
+          "due_date": "2028-05-20"
+        },
+        {
+          "type": "statutory",
+          "desc": "IHM Renewal (有害物质清单换证)",
+          "due_date": "2028-05-20"
+        },
+        {
+          "type": "statutory",
+          "desc": "BWM Renewal (压载水换证)",
+          "due_date": "2028-05-20"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "Load Line",
+          "expiry": "2028-05-20"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2028-05-20"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2028-05-20"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2028-05-20"
+        },
+        {
+          "name": "OPP (MARPOL Annex I)",
+          "expiry": "2028-05-20"
+        },
+        {
+          "name": "SPP (MARPOL Annex IV)",
+          "expiry": "2028-05-20"
+        },
+        {
+          "name": "APP (MARPOL Annex VI)",
+          "expiry": "2028-05-20"
+        },
+        {
+          "name": "EE Anti Fouling System BWM",
+          "expiry": "2028-05-20"
+        },
+        {
+          "name": "IHM",
+          "expiry": "2028-05-20"
+        },
+        {
+          "name": "IMSBC code",
+          "expiry": "2028-05-20"
         }
       ],
       "alerts": {
@@ -2364,23 +5239,28 @@
         },
         {
           "type": "annual_survey",
-          "desc": "Annual Hull Survey 3"
+          "desc": "Annual Hull Survey 3",
+          "due_date": "2027-12-28"
         },
         {
           "type": "boiler",
-          "desc": "Boiler Survey - Composite Boiler"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Drydocking Survey"
+          "desc": "Boiler Survey - Composite Boiler",
+          "due_date": "2027-10-24"
         },
         {
           "type": "intermediate_survey",
-          "desc": "Intermediate Hull Survey 4"
+          "desc": "Intermediate Hull Survey 4",
+          "due_date": "2027-12-28"
         },
         {
           "type": "special_survey",
-          "desc": "Special Periodical Survey - Automation"
+          "desc": "Special Periodical Survey - Automation",
+          "due_date": "2029-09-28"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Drydocking Survey",
+          "due_date": "2027-09-27"
         }
       ],
       "certificates": [
@@ -2457,27 +5337,33 @@
       "surveys": [
         {
           "type": "annual_survey",
-          "desc": "Annual Hull Survey 1"
+          "desc": "Annual Hull Survey 1",
+          "due_date": "2027-04-24"
         },
         {
           "type": "boiler",
-          "desc": "Boiler Survey - Composite Boiler"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Drydocking Survey"
+          "desc": "Boiler Survey - Composite Boiler",
+          "due_date": "2029-01-30"
         },
         {
           "type": "intermediate_survey",
-          "desc": "Intermediate Hull Survey 4"
+          "desc": "Intermediate Hull Survey 4",
+          "due_date": "2029-04-24"
         },
         {
           "type": "special_survey",
-          "desc": "Special Periodical Survey - Automation"
+          "desc": "Special Periodical Survey - Automation",
+          "due_date": "2031-01-24"
         },
         {
           "type": "tail_shaft",
-          "desc": "Tailshaft Propeller Connection - Survey"
+          "desc": "Tailshaft Propeller Connection - Survey",
+          "due_date": "2041-01-30"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Drydocking Survey",
+          "due_date": "2029-01-30"
         }
       ],
       "certificates": [
@@ -2561,10 +5447,6 @@
           "desc": "Next Special Survey No."
         },
         {
-          "type": "dry_docking",
-          "desc": "Kind of Last Docking Survey"
-        },
-        {
           "type": "intermediate_survey",
           "desc": "Intermediate Survey",
           "due_date": "2028-12-28"
@@ -2578,6 +5460,12 @@
           "type": "boiler",
           "desc": "No.1 Aux. Boiler Survey",
           "due_date": "2028-10-05"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey",
+          "due_date": "2028-10-05",
+          "last_done": "2025-10-05"
         }
       ],
       "certificates": [
@@ -2663,10 +5551,6 @@
           "desc": "Next Special Survey No."
         },
         {
-          "type": "dry_docking",
-          "desc": "Kind of Last Docking Survey"
-        },
-        {
           "type": "intermediate_survey",
           "desc": "Intermediate Survey",
           "due_date": "2028-02-16"
@@ -2680,6 +5564,12 @@
           "type": "boiler",
           "desc": "No.1 Aux. Boiler Survey",
           "due_date": "2027-09-11"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey",
+          "due_date": "2027-09-11",
+          "last_done": "2024-09-11"
         }
       ],
       "certificates": [
@@ -2765,10 +5655,6 @@
           "desc": "Next Special Survey No."
         },
         {
-          "type": "dry_docking",
-          "desc": "Kind of Last Docking Survey"
-        },
-        {
           "type": "intermediate_survey",
           "desc": "Intermediate Survey",
           "due_date": "2029-11-11"
@@ -2782,6 +5668,12 @@
           "type": "boiler",
           "desc": "No.1 Aux. Boiler Survey",
           "due_date": "2029-08-03"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey",
+          "due_date": "2029-08-03",
+          "last_done": "2026-08-03"
         }
       ],
       "certificates": [
@@ -2882,6 +5774,12 @@
           "type": "tail_shaft",
           "desc": "尾轴检验",
           "due_date": "2027-08-08"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "BTS (船底外部检验)",
+          "due_date": "2027-03-01",
+          "last_done": "2025-04-18"
         }
       ],
       "certificates": [
@@ -2974,6 +5872,12 @@
           "type": "tail_shaft",
           "desc": "尾轴检验",
           "due_date": "2029-09-09"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "BTS (船底外部检验)",
+          "due_date": "2029-06-03",
+          "last_done": "2026-06-29"
         }
       ],
       "certificates": [
@@ -3073,7 +5977,9 @@
         },
         {
           "type": "dry_docking",
-          "desc": "Rudder bearing bushes of starlite 11630 to be specially examined at each scheduled drydocking and"
+          "desc": "BTS (船底外部检验)",
+          "due_date": "2027-12-06",
+          "last_done": "2026-01-02"
         }
       ],
       "certificates": [
@@ -3134,6 +6040,107 @@
       },
       "extraction_confidence": "medium"
     },
+    "SUNNY_STAR": {
+      "name": "SUNNY STAR",
+      "imo": "9461300",
+      "class_society": "CCS",
+      "flag": "Singapore",
+      "gt": "94175",
+      "dwt": "",
+      "surveys": [
+        {
+          "type": "boiler",
+          "desc": "锅炉"
+        },
+        {
+          "type": "annual_survey",
+          "desc": "Class Annual Survey",
+          "due_date": "2027-03-10"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Class Intermediate Survey",
+          "due_date": "2028-03-10"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Class Special Survey for",
+          "due_date": "2026-06-17"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "尾轴检验",
+          "due_date": "2031-06-16"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "BTS (船底外部检验)",
+          "due_date": "2029-06-11",
+          "last_done": "2026-06-12"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "ISM DOC",
+          "expiry": "2026-06-17"
+        },
+        {
+          "name": "ISPS"
+        },
+        {
+          "name": "IOPP",
+          "expiry": "2027-02-09"
+        },
+        {
+          "name": "IAPP",
+          "expiry": "2027-03-10"
+        },
+        {
+          "name": "ISPP",
+          "expiry": "2031-06-09"
+        },
+        {
+          "name": "Load Line"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2026-06-17"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2026-06-17"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2026-06-17"
+        },
+        {
+          "name": "BWM"
+        },
+        {
+          "name": "IHM",
+          "expiry": "2031-06-09"
+        },
+        {
+          "name": "Cargo Gear",
+          "expiry": "2026-06-17"
+        },
+        {
+          "name": "AFS"
+        },
+        {
+          "name": "DOC",
+          "expiry": "2026-08-09"
+        }
+      ],
+      "alerts": {
+        "expired": 6,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "medium"
+    },
     "WINNING_JOY": {
       "name": "WINNING JOY",
       "imo": "9492220",
@@ -3165,6 +6172,12 @@
           "type": "tail_shaft",
           "desc": "尾轴检验",
           "due_date": "2029-08-08"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "BTS (船底外部检验)",
+          "due_date": "2027-08-08",
+          "last_done": "2024-08-09"
         }
       ],
       "certificates": [
@@ -3230,97 +6243,6 @@
       },
       "extraction_confidence": "medium"
     },
-    "WINNING_RESILIENCE": {
-      "name": "WINNING RESILIENCE",
-      "imo": "9410430",
-      "class_society": "CCS",
-      "flag": "Panama",
-      "gt": "114026",
-      "dwt": "",
-      "surveys": [
-        {
-          "type": "boiler",
-          "desc": "锅炉"
-        },
-        {
-          "type": "annual_survey",
-          "desc": "Class Annual Survey",
-          "due_date": "2026-06-01"
-        },
-        {
-          "type": "intermediate_survey",
-          "desc": "Class Intermediate Survey",
-          "due_date": "2025-08-05"
-        },
-        {
-          "type": "special_survey",
-          "desc": "Class Special Survey for",
-          "due_date": "2027-08-31"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "尾轴检验",
-          "due_date": "2027-08-31"
-        }
-      ],
-      "certificates": [
-        {
-          "name": "ISPS"
-        },
-        {
-          "name": "IOPP",
-          "expiry": "2026-06-01"
-        },
-        {
-          "name": "IAPP",
-          "expiry": "2026-06-01"
-        },
-        {
-          "name": "ISPP",
-          "expiry": "2027-06-01"
-        },
-        {
-          "name": "Load Line"
-        },
-        {
-          "name": "Safety Construction",
-          "expiry": "2026-04-25"
-        },
-        {
-          "name": "Safety Equipment",
-          "expiry": "2026-04-25"
-        },
-        {
-          "name": "Safety Radio",
-          "expiry": "2026-04-25"
-        },
-        {
-          "name": "BWM"
-        },
-        {
-          "name": "IHM",
-          "expiry": "2027-06-01"
-        },
-        {
-          "name": "Cargo Gear",
-          "expiry": "2026-04-25"
-        },
-        {
-          "name": "AFS"
-        },
-        {
-          "name": "DOC",
-          "expiry": "2026-08-09"
-        }
-      ],
-      "alerts": {
-        "expired": 7,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "medium"
-    },
     "WINNING_TIMES": {
       "name": "WINNING TIMES",
       "imo": "9727352",
@@ -3352,6 +6274,12 @@
           "type": "tail_shaft",
           "desc": "尾轴检验",
           "due_date": "2030-04-16"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "BTS (船底外部检验)",
+          "due_date": "2028-04-10",
+          "last_done": "2025-04-11"
         }
       ],
       "certificates": [
@@ -3443,6 +6371,12 @@
           "type": "tail_shaft",
           "desc": "尾轴检验",
           "due_date": "2031-02-15"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "BTS (船底外部检验)",
+          "due_date": "2029-02-15",
+          "last_done": "2026-02-16"
         }
       ],
       "certificates": [
@@ -3499,7 +6433,7 @@
         "expired": 5,
         "urgent_7d": 0,
         "warning_30d": 0,
-        "info_90d": 0
+        "info_90d": 3
       },
       "extraction_confidence": "medium"
     },
@@ -3534,6 +6468,12 @@
           "type": "tail_shaft",
           "desc": "尾轴检验",
           "due_date": "2029-12-23"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "BTS (船底外部检验)",
+          "due_date": "2026-10-12",
+          "last_done": "2024-12-18"
         }
       ],
       "certificates": [
@@ -3595,7 +6535,7 @@
         "expired": 11,
         "urgent_7d": 0,
         "warning_30d": 0,
-        "info_90d": 1
+        "info_90d": 2
       },
       "extraction_confidence": "medium"
     },
@@ -3630,6 +6570,12 @@
           "type": "tail_shaft",
           "desc": "尾轴检验",
           "due_date": "2030-07-01"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "BTS (船底外部检验)",
+          "due_date": "2027-10-04",
+          "last_done": "2024-10-05"
         }
       ],
       "certificates": [
@@ -3734,8 +6680,9 @@
         },
         {
           "type": "dry_docking",
-          "desc": "Statement of Drydock Inspection",
-          "due_date": "2026-06-16"
+          "desc": "BTS (船底外部检验)",
+          "due_date": "2031-06-15",
+          "last_done": "2026-06-16"
         }
       ],
       "certificates": [
@@ -3794,19 +6741,24 @@
       "surveys": [
         {
           "type": "annual_survey",
-          "desc": "Annual survey of structure"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Bottom Survey in Dry Dock or afloat"
+          "desc": "Annual survey of structure",
+          "due_date": "2027-12-05"
         },
         {
           "type": "tail_shaft",
-          "desc": "Centre Tailshaft-Complete Survey"
+          "desc": "Centre Tailshaft-Complete Survey",
+          "due_date": "2031-07-13"
         },
         {
           "type": "special_survey",
-          "desc": "Garbage Renewal Survey"
+          "desc": "Garbage Renewal Survey",
+          "due_date": "2031-09-05"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Bottom Survey in Dry Dock or afloat",
+          "due_date": "2029-06-15",
+          "last_done": "2026-06-15"
         }
       ],
       "certificates": [
@@ -3865,7 +6817,7 @@
       "extraction_confidence": "medium"
     },
     "SUNNY_KANKAN": {
-      "name": "Downloaded on 16Aug2026 03",
+      "name": "SUNNY KANKAN",
       "imo": "9287273",
       "class_society": "RINA",
       "flag": "Liberia",
@@ -4331,7 +7283,7 @@
       "extraction_confidence": "medium"
     },
     "SUNNY_RIVER": {
-      "name": "Downloaded on 16Aug2026 03",
+      "name": "SUNNY RIVER",
       "imo": "9337169",
       "class_society": "RINA",
       "flag": "Hong Kong",
@@ -4851,7 +7803,7 @@
       "extraction_confidence": "medium"
     },
     "SUNNY_ROUTE": {
-      "name": "Downloaded on 16Aug2026 03",
+      "name": "SUNNY ROUTE",
       "imo": "9296420",
       "class_society": "RINA",
       "flag": "Liberia",
