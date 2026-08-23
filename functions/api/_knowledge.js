@@ -595,3 +595,89 @@ export async function searchRegsAllKnowledge(request, query) {
   }
   return out.length ? '【MARPOL/MLC/ISM/LSA 等公约原文检索结果】\n\n' + out.join('\n\n---\n\n') : '';
 }
+
+// ═══════════════ PSC 检查前准备清单（2026-08-23 新增） ═══════════════
+let fleetParams = null;
+
+async function ensureFleetParams(request) {
+  if (fleetParams) return fleetParams;
+  try {
+    const baseUrl = getPagesUrl(request);
+    const resp = await fetch(`${baseUrl}/data/fleet_params.json`);
+    if (resp.ok) fleetParams = await resp.json();
+  } catch (e) { console.error('fleet_params load fail:', e.message); }
+  return fleetParams;
+}
+
+let pscRisk = null;
+async function ensurePscRisk(request) {
+  if (pscRisk) return pscRisk;
+  try {
+    const baseUrl = getPagesUrl(request);
+    const resp = await fetch(`${baseUrl}/data/psc_risk.json`);
+    if (resp.ok) pscRisk = await resp.json();
+  } catch (e) { console.error('psc_risk load fail:', e.message); }
+  return pscRisk;
+}
+
+/** 识别 message 中的船名 → IMO 或 null */
+async function detectShipInMessage(request, message) {
+  const fp = await ensureFleetParams(request);
+  if (!fp || !fp.ships) return null;
+  const q = message.toUpperCase();
+  for (const [imo, s] of Object.entries(fp.ships)) {
+    const names = [s.name_en, s.name_cn, s.name_full, s.imo].filter(Boolean);
+    if (names.some(n => n && q.includes(String(n).toUpperCase().replace(/\s+/g, ' ').trim().slice(0, 12)))) {
+      return { imo, ship: s };
+    }
+  }
+  // 简化匹配：按 name_en 前 2-3 个词
+  for (const [imo, s] of Object.entries(fp.ships)) {
+    const en = String(s.name_en || '').toUpperCase();
+    const enShort = en.replace(/[^A-Z0-9]/g, '');
+    if (enShort.length >= 6 && q.replace(/[^A-Z0-9]/g, '').includes(enShort)) {
+      return { imo, ship: s };
+    }
+  }
+  return null;
+}
+
+/** 构建 PSC 检查前准备清单 context */
+export async function buildPscPrepChecklist(request, message) {
+  const det = await detectShipInMessage(request, message);
+  if (!det) return '';
+  const { imo, ship } = det;
+  const parts = [];
+  const name = ship.name_en || imo;
+
+  // 1. 船舶参数
+  parts.push(`【船舶】${name}（${ship.name_cn || ''}）| 船旗:${ship.flag || '?'} | 船级社:${ship.class_notation || '?'} | 建造:${ship.built || '?'} | IMO:${imo}${ship.gt ? ' | GT:' + ship.gt : ''}${ship.dwt ? ' | DWT:' + ship.dwt : ''}`);
+
+  // 2. PSC 风险档案
+  const pr = await ensurePscRisk(request);
+  if (pr && pr.ships) {
+    const risk = pr.ships[name] || pr.ships[imo];
+    if (risk) {
+      parts.push(`【PSC风险】等级:${risk.risk_level} | 优先级:${risk.priority} | 检查窗口:${risk.inspection_window || 'N/A'} | 加权分:${risk.weighting_points}`);
+      const last = (risk.inspections || [])[0];
+      if (last) {
+        parts.push(`【最近PSC】${last.date} @ ${last.place} | 缺陷:${last.deficiencies || 0}项 | 滞留:${last.detention || 'no'} | 风险:${last.risk_at_inspection || '?'}`);
+      }
+      // 历史缺陷分类
+      const defects = {};
+      (risk.inspections || []).forEach(ins => {
+        const d = ins.defects_list || ins.deficiencies_list || [];
+        if (Array.isArray(d)) d.forEach(x => { const cat = typeof x === 'string' ? x : (x.category || x.type || '其他'); defects[cat] = (defects[cat] || 0) + 1; });
+      });
+      if (Object.keys(defects).length) {
+        parts.push(`【历史缺陷分布】${Object.entries(defects).map(([k, v]) => `${k}:${v}`).join(' | ')}`);
+      }
+    }
+  }
+
+  // 3. 高频速查（救生/消防/油水分离等）
+  const quick = await searchQuickRef(request, message + ' 救生艇 消防 演习');
+  if (quick) parts.push(quick.substring(0, 1500));
+
+  return parts.join('\n\n');
+}

@@ -8,7 +8,7 @@ import {
   SHIP_SYSTEM_PROMPT
 } from './_system_prompts.js';
 import { querySurveyKnowledge, getAlertSummary } from './_survey_knowledge.js';
-import { autoSearchKnowledge, searchImoConventions, searchOfficialSources, searchQuickRef, searchRegsAllKnowledge } from './_knowledge.js';
+import { autoSearchKnowledge, buildPscPrepChecklist, searchImoConventions, searchOfficialSources, searchQuickRef, searchRegsAllKnowledge } from './_knowledge.js';
 import { searchFleetKnowledge } from './_fleet_data.js';
 import { logToKV } from './_logger.js';
 import { analyzeIntent, buildThinkingContext } from './_thinking_engine.js';
@@ -121,6 +121,14 @@ export async function onRequest(context) {
     } else if (module === 'ships') {
       // 多源检索（合并）：Survey 检验证书 + 参数库(GT/DWT/主机) + TMOU PSC 风险档案
       const parts = [];
+      // 🚢 PSC 检查前准备清单（2026-08-23）：识别"PSC准备/检查注意"意图
+      const pscPrepPats = /(PSC\s*(检查|准备|注意|要点|风险|注意什么)|检查前准备|检查准备|进港.*检查|检查.*注意|准备.*PSC)/i;
+      if (pscPrepPats.test(message)) {
+        try {
+          const prep = await buildPscPrepChecklist(request, message);
+          if (prep) parts.push('【🚢 PSC 检查前准备清单】\n' + prep);
+        } catch (e) { console.error('[PscPrep] failed:', e.message); }
+      }
       const surveyResult = querySurveyKnowledge(message);
       if (surveyResult) parts.push(surveyResult);
       try {
