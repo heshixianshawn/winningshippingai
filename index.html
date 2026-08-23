@@ -1656,6 +1656,7 @@ async function callAPI(message, module, imageData) {
   // ═══ 船舶/体系/法规模块改调 CF Pages 后端（多源检索：Survey坞检/参数库/PSC/体系知识库/法规检索，2026-08-23） ═══
   if (module === 'ships' || module === 'systems' || module === 'regulations') {
     var cfBody = { message: message, module: module, history: lastHistory };
+    if (imageData) cfBody.imageUrl = imageData;  // 🖼️ 2026-08-23 修复：图片必须随请求传给 CF 后端（否则 hasImage=false 走 text 模型）
     if (isShipStructured && structuredData) {
       cfBody.context = JSON.stringify(structuredData);
     } else if (context) {
