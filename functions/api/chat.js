@@ -71,6 +71,7 @@ export async function onRequest(context) {
     // ====== Knowledge Base Search ======
     let kbContext = '';
     let ragUsed = false;
+    let quickAnswer = null;  // PSC 速查命中内容（强制原样输出）
 
     if (isThinkingMode && awareData) {
       // 思考引擎模式：前端已分析结构数据，Worker侧再补充后端权威检索（参数库 + PSC 风险）
@@ -91,7 +92,10 @@ export async function onRequest(context) {
         // ⭐ 速查库最优先（权威答案，防 AI 编造）：命中时放在 kbContext 最前面
         try {
           const quickInfo = await searchQuickRef(request, message);
-          if (quickInfo) kbContext = quickInfo + '\n\n' + kbContext;
+          if (quickInfo) {
+            kbContext = quickInfo + '\n\n' + kbContext;
+            quickAnswer = quickInfo;
+          }
         } catch (e) { console.error('[Regs] quickref search failed:', e.message); }
         try {
           const regKb = await autoSearchKnowledge('regulations', message, request);
@@ -162,6 +166,11 @@ export async function onRequest(context) {
       } else {
         systemContent += '\n\n【⚠️ 知识库约束】用户消息开头已包含知识库原文。必须严格基于该结果回答，不添加原文中没有的信息。没有的信息回答"未找到"。';
       }
+    }
+
+    // 🚨 速查命中强制指令（2026-08-23）：速查条目=标准答案，必须原样输出其【速查：】段内容
+    if (quickAnswer) {
+      systemContent += '\n\n【🚨 强制指令】用户消息中的【PSC 高频速查】段是标准答案，必须：\n1. 原样完整输出该段中每个「速查：」条目的答案内容（从问号到来源标注之间的全部文字），作为回答主体；\n2. 禁止修改其中的任何周期/数值/条款号（如不得把"每5年"改成"每年"，不得把"释放钩不脱钩"改成"必须脱钩"）；\n3. 速查内容输出后，再补充一段 WINNING 船队适用性分析和实操建议；\n4. 末尾保留免责声明。';
     }
 
     const systemMsg = { role: 'system', content: systemContent };
