@@ -205,12 +205,12 @@ export async function onRequest(context) {
     messages.push(userMsg);
 
     // ====== Call AI ======
+    // 2026-08-23 策略：无图→DeepSeek(省钱无限)；有图→APIYI vision(必须)；APIYI 失败自动回退 DeepSeek
     let response;
     let apiUsed;
 
-    if (apiYiKey) {
-      const model = hasImage ? APIYI_MODEL_VISION : APIYI_MODEL_TEXT;
-      apiUsed = hasImage ? 'API易 GPT-4o' : 'API易 GPT-4o-mini';
+    if (hasImage && apiYiKey) {
+      apiUsed = 'API易 GPT-4o';
       response = await fetch(`${APIYI_BASE}/chat/completions`, {
         method: 'POST',
         headers: {
@@ -218,13 +218,19 @@ export async function onRequest(context) {
           'Authorization': `Bearer ${apiYiKey}`
         },
         body: JSON.stringify({
-          model,
+          model: APIYI_MODEL_VISION,
           messages,
           temperature: 0.2,
           max_tokens: 4096,
           stream: false
         })
       });
+      if (!response.ok) {
+        // APIYI 失败（配额/网络）→ 图片无法走 DeepSeek，返回错误信息
+        const errText = await response.text().catch(() => '');
+        console.error('[APIYI vision failed]', response.status, errText.substring(0, 200));
+        return { reply: '⚠️ 图片分析服务暂时不可用（配额限制），请稍后重试，或直接描述缺陷内容，我将依据法规知识库回答。', model: 'error' };
+      }
     } else {
       apiUsed = 'DeepSeek';
       response = await fetch(`${DEEPSEEK_BASE}/chat/completions`, {
