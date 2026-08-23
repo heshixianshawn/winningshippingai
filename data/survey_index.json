@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-08-22 15:05",
-  "total_ships": 61,
+  "last_updated": "2026-08-23 08:16",
+  "total_ships": 63,
   "ships": {
     "SUNNY_BEYLA": {
       "name": "SUNNY BEYLA",
@@ -8226,6 +8226,46 @@
         "info_90d": 3
       },
       "extraction_confidence": "medium"
+    },
+    "WINNING_BRAVE": {
+      "name": "WINNING BRAVE",
+      "imo": "1037402",
+      "class_society": "?",
+      "flag": "Singapore",
+      "gt": "174863",
+      "dwt": "324965",
+      "surveys": [
+        {
+          "type": "special_survey",
+          "desc": "下次特检（CCS船舶录）",
+          "due_date": "2031-08-11"
+        }
+      ],
+      "certificates": [],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "low"
+    },
+    "WINNING_CREATION": {
+      "name": "WINNING CREATION",
+      "imo": "",
+      "class_society": "?",
+      "flag": "",
+      "gt": "",
+      "dwt": "",
+      "surveys": [],
+      "certificates": [],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "low"
     }
   }
 }

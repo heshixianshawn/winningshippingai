@@ -1,5 +1,5 @@
 // Auto-generated. NK Survey Status v2 extraction + full fleet merge.
-// Updated: 2026-08-22 15:05 | Ships: 61
+// Updated: 2026-08-23 08:16 | Ships: 63
 
 const ships = {
   "SUNNY_BEYLA": {
@@ -326,6 +326,18 @@ const ships = {
     certificates: [{"name": "Load Line", "type": "STATUTORY", "expiry_date": "2027-12-18", "status": "VALID"}, {"name": "Safety Construction", "type": "STATUTORY", "expiry_date": "2027-12-18", "status": "VALID"}, {"name": "Safety Equipment", "type": "STATUTORY", "expiry_date": "2027-12-18", "status": "VALID"}, {"name": "Safety Radio", "type": "STATUTORY", "expiry_date": "2027-12-18", "status": "VALID"}, {"name": "OPP (MARPOL Annex I)", "type": "CLASS", "expiry_date": "2027-12-18", "status": "VALID"}, {"name": "SPP (MARPOL Annex IV)", "type": "CLASS", "expiry_date": "2027-12-18", "status": "VALID"}, {"name": "APP (MARPOL Annex VI)", "type": "CLASS", "expiry_date": "2027-12-18", "status": "VALID"}, {"name": "EE Anti Fouling System BWM", "type": "STATUTORY", "expiry_date": "2027-12-18", "status": "VALID"}, {"name": "IHM", "type": "STATUTORY", "expiry_date": "2027-12-18", "status": "VALID"}, {"name": "IMSBC code", "type": "CLASS", "expiry_date": "2027-12-18", "status": "VALID"}],
     source: {"class_society": "NK", "report_date": "2026-08-22", "extraction_method": "api", "confidence": "high"},
   },
+  "WINNING_BRAVE": {
+    name: "WINNING BRAVE",
+    imo: "1037402",
+    classSociety: "?",
+    flag: "Singapore",
+    gt: "174863",
+    dwt: null,
+    buildDate: "2026-08-12",
+    surveys: [{"type": "special_survey", "description": "下次特检（CCS船舶录）", "due_date": "2031-08-11", "status": "Not Due"}],
+    certificates: [],
+    source: {},
+  },
   "WINNING_BRIGHT": {
     name: "WINNING BRIGHT",
     imo: "9492218",
@@ -361,6 +373,18 @@ const ships = {
     surveys: [{"type": "special_survey", "description": "Special Survey (特检)", "due_date": "2030-01-31", "last_done": "2024-12-28", "status": "Not Due"}, {"type": "boiler", "description": "Boiler Survey (锅炉检验)", "due_date": "2027-12-27", "last_done": "2024-12-28", "status": "Not Due"}, {"type": "dry_docking", "description": "Docking Survey (坞检)", "due_date": "2027-12-27", "last_done": "2024-12-28", "status": "Not Due"}, {"type": "tail_shaft", "description": "Propeller Shaft Survey (尾轴检验)", "due_date": "2030-01-30", "last_done": "2019-12-14", "status": "Not Due"}, {"type": "statutory", "description": "Load Line Renewal (载重线换证)", "due_date": "2030-01-31", "last_done": "", "status": "Not Due"}, {"type": "statutory", "description": "Safety Construction Renewal (构造安全换证)", "due_date": "2030-01-31", "last_done": "", "status": "Not Due"}, {"type": "statutory", "description": "Safety Equipment Renewal (设备安全换证)", "due_date": "2030-01-31", "last_done": "", "status": "Not Due"}, {"type": "statutory", "description": "Safety Radio Renewal (无线电安全换证)", "due_date": "2030-01-31", "last_done": "", "status": "Not Due"}, {"type": "statutory", "description": "OPP Renewal (防油污换证)", "due_date": "2030-01-31", "last_done": "", "status": "Not Due"}, {"type": "statutory", "description": "SPP Renewal (生活污水换证)", "due_date": "2030-01-31", "last_done": "", "status": "Not Due"}, {"type": "statutory", "description": "APP Renewal (防空气污染换证)", "due_date": "2030-01-31", "last_done": "", "status": "Not Due"}, {"type": "statutory", "description": "IHM Renewal (有害物质清单换证)", "due_date": "2030-01-31", "last_done": "", "status": "Not Due"}, {"type": "statutory", "description": "BWM Renewal (压载水换证)", "due_date": "2030-01-31", "last_done": "", "status": "Not Due"}],
     certificates: [{"name": "Load Line", "type": "STATUTORY", "expiry_date": "2030-01-31", "status": "VALID"}, {"name": "Safety Construction", "type": "STATUTORY", "expiry_date": "2030-01-31", "status": "VALID"}, {"name": "Safety Equipment", "type": "STATUTORY", "expiry_date": "2030-01-31", "status": "VALID"}, {"name": "Safety Radio", "type": "STATUTORY", "expiry_date": "2030-01-31", "status": "VALID"}, {"name": "OPP (MARPOL Annex I)", "type": "CLASS", "expiry_date": "2030-01-31", "status": "VALID"}, {"name": "SPP (MARPOL Annex IV)", "type": "CLASS", "expiry_date": "2030-01-31", "status": "VALID"}, {"name": "APP (MARPOL Annex VI)", "type": "CLASS", "expiry_date": "2030-01-31", "status": "VALID"}, {"name": "EE Anti Fouling System BWM", "type": "STATUTORY", "expiry_date": "2030-01-31", "status": "VALID"}, {"name": "IHM", "type": "STATUTORY", "expiry_date": "2030-01-31", "status": "VALID"}, {"name": "IMSBC code", "type": "CLASS", "expiry_date": "2030-01-31", "status": "VALID"}],
     source: {"class_society": "NK", "report_date": "2026-08-22", "extraction_method": "api", "confidence": "high"},
+  },
+  "WINNING_CREATION": {
+    name: "WINNING CREATION",
+    imo: "",
+    classSociety: "?",
+    flag: "",
+    gt: "",
+    dwt: null,
+    buildDate: "",
+    surveys: [],
+    certificates: [],
+    source: {},
   },
   "WINNING_DILIGENCE": {
     name: "WINNING DILIGENCE",
@@ -738,6 +762,6 @@ const ships = {
 
 export const SURVEY_DATA = {
   ships,
-  lastUpdated: "2026-08-22 15:05",
-  totalShips: 61,
+  lastUpdated: "2026-08-23 08:16",
+  totalShips: 63,
 };
