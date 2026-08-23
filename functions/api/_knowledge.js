@@ -167,6 +167,9 @@ export async function autoSearchKnowledge(module, message, request) {
       const ti = await ensureTechIndex(request);
       return ti ? searchTechIndex(ti, message) : '';
     }
+    case 'systems': {
+      return await searchSystemsKnowledge(request, message);
+    }
     default:
       return '';
   }
@@ -177,4 +180,89 @@ export function resetKbCache() {
   shipKnowledge = null;
   techIndex = null;
   kbLoadAttempted = false;
+}
+
+// ═══════════════ 体系知识库检索（2026-08-23 新增） ═══════════════
+let systemsIndex = null;
+let systemsShards = null;
+
+async function ensureSystemsIndex(request) {
+  if (systemsIndex) return systemsIndex;
+  try {
+    const baseUrl = getPagesUrl(request);
+    const resp = await fetch(`${baseUrl}/data/systems_index.json`);
+    if (resp.ok) systemsIndex = await resp.json();
+  } catch (e) {
+    console.error('Failed to load systems_index.json:', e.message);
+  }
+  return systemsIndex;
+}
+
+/** 检索体系知识库：关键词命中分片，返回命中分片的标题+内容片段 */
+export async function searchSystemsKnowledge(request, query) {
+  const index = await ensureSystemsIndex(request);
+  if (!index) return '';
+  const q = query.toLowerCase();
+  const qCn = query.replace(/[^\u4e00-\u9fff]/g, '');
+  const km = index.keyword_map || {};
+  const shards = index.shard_files || {};
+
+  // 1. 关键词命中（英文词 + 中文词）
+  const hitIds = new Set();
+  const hits = [];
+  // 中文：query 中的 2-4 字片段
+  if (qCn.length >= 2) {
+    const grams = new Set();
+    for (let n = 2; n <= Math.min(4, qCn.length); n++) {
+      for (let i = 0; i + n <= qCn.length; i++) grams.add(qCn.substring(i, i + n));
+    }
+    for (const g of grams) {
+      if (km[g]) for (const sid of km[g]) hitIds.add(sid);
+    }
+  }
+  // 英文单词
+  const enWords = q.toLowerCase().match(/[a-z][a-z\-]{2,}/g) || [];
+  for (const w of enWords) {
+    if (km[w]) for (const sid of km[w]) hitIds.add(sid);
+  }
+
+  if (hitIds.size === 0) return '';
+
+  // 2. 按命中数排序
+  const scored = [...hitIds].map(id => ({ id, score: 0 }));
+  for (const g of (qCn.length >= 2 ? Array.from(new Set((() => { const s = new Set(); for (let n = 2; n <= Math.min(4, qCn.length); n++) for (let i = 0; i + n <= qCn.length; i++) s.add(qCn.substring(i, i + n)); return s; })())) : [])) {
+    if (km[g] && km[g].includes) for (const sid of km[g]) { const t = scored.find(x => x.id === sid); if (t) t.score += 2; }
+  }
+  for (const w of enWords) {
+    if (km[w]) for (const sid of km[w]) { const t = scored.find(x => x.id === sid); if (t) t.score += 1; }
+  }
+  scored.sort((a, b) => b.score - a.score);
+
+  // 3. 取 top 3 分片内容（从分片文件加载）
+  const topIds = scored.slice(0, 3).map(x => x.id);
+  const shardName = id => id.split('_')[0] + '_' + (MANUAL_EN_BY_CODE[id.split('_')[0]] || '');
+  // 简化：直接按 id 前缀找分片文件
+  const MANUAL_EN_BY_CODE = { '01': 'SAFETY_MANAGEMENT_MANUAL', '02': 'PROCEDURE_MANUAL', '03': 'SHOREBASE_INSTRUCTION_MANUAL', '04': 'SHIPBOARD_MANUAL', '05': 'CONTINGENCY_PLAN', '06': 'ENERGY_EFFICIENCY_MANAGEMENT_MANUAL', '07': 'MARITIME_LABOUR_MANAGEMENT_MANUAL' };
+  const needShards = new Set(topIds.map(id => MANUAL_EN_BY_CODE[id.split('_')[0]]));
+  if (!systemsShards) systemsShards = {};
+  for (const sn of needShards) {
+    if (!systemsShards[sn]) {
+      try {
+        const baseUrl = getPagesUrl(request);
+        const resp = await fetch(`${baseUrl}/data/systems_shards/${sn}.json`);
+        if (resp.ok) systemsShards[sn] = await resp.json();
+      } catch (e) { console.error('shard load fail:', sn, e.message); }
+    }
+  }
+
+  const out = [];
+  for (const id of topIds) {
+    const code = id.split('_')[0];
+    const sn = MANUAL_EN_BY_CODE[code];
+    const sec = systemsShards[sn] && systemsShards[sn][id];
+    if (!sec) continue;
+    const text = (sec.text || '').slice(0, 1500);
+    out.push(`【${sec.manual}·${sec.chapter}】\n${text}`);
+  }
+  return out.length ? '【公司体系知识库检索结果】\n\n' + out.join('\n\n---\n\n') : '';
 }

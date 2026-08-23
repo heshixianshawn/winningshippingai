@@ -1653,9 +1653,9 @@ async function callAPI(message, module, imageData) {
   console.log('[DEBUG] user content first 200:', (userContent || '').substring(0, 200));
   console.log('[DEBUG] model:', model);
   
-  // ═══ 船舶模块改调 CF Pages 后端（多源检索：Survey坞检/参数库/PSC风险，2026-08-23） ═══
-  if (module === 'ships') {
-    var cfBody = { message: message, module: 'ships', history: lastHistory };
+  // ═══ 船舶/体系/法规模块改调 CF Pages 后端（多源检索：Survey坞检/参数库/PSC/体系知识库/法规检索，2026-08-23） ═══
+  if (module === 'ships' || module === 'systems' || module === 'regulations') {
+    var cfBody = { message: message, module: module, history: lastHistory };
     if (isShipStructured && structuredData) {
       cfBody.context = JSON.stringify(structuredData);
     } else if (context) {
@@ -1673,9 +1673,9 @@ async function callAPI(message, module, imageData) {
           return { reply: cfData.reply, model: cfData.model, usage: cfData.usage };
         }
       }
-      console.error('[ships] CF API 失败, 回退APIYI:', cfResp.status);
+      console.error('[' + module + '] CF API 失败, 回退APIYI:', cfResp.status);
     } catch (e) {
-      console.error('[ships] CF API 异常, 回退APIYI:', e.message);
+      console.error('[' + module + '] CF API 异常, 回退APIYI:', e.message);
     }
   }
   
