@@ -519,6 +519,18 @@ async function runOcr(dataUrl) {
   }
 }
 
+// ═══ OCR 后台预热（2026-08-23）：页面空闲时预下载模型，用户传图时秒级可用 ═══
+(function prewarmOcr() {
+  var schedule = window.requestIdleCallback || function(cb) { setTimeout(cb, 3000); };
+  schedule(function() {
+    if (document.hidden) return;
+    loadOcrScript().then(function() {
+      var tiny = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==';
+      Tesseract.recognize(tiny, 'eng', { logger: function() {} }).catch(function() {});
+    }).catch(function() {});
+  }, { timeout: 20000 });
+})();
+
 window.analyzeImage = function() {
   els.imagePreview.classList.add('hidden');
   els.input.value = '请分析这张图片中的设备状态，判断是否存在不合规情况，并引用相关法规条款。';
