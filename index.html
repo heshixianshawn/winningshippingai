@@ -480,11 +480,44 @@ function compressImage(dataUrl, maxWidth, quality) {
       }
       els.previewImg.src = STATE.imageData;
       els.imagePreview.classList.remove('hidden');
+      // 🖼️ OCR 兜底（2026-08-23）：后台提取图片文字，报告/证书类图片可引用原文
+      STATE.ocrText = null;
+      runOcr(STATE.imageData).then(function(t) { if (t) STATE.ocrText = t; });
     };
     reader.readAsDataURL(file);
     e.target.value = '';
   };
 })();
+
+// ═══ OCR 图片文字提取（Tesseract.js 动态加载，失败静默降级不影响 vision 链路） ═══
+var OCR_TIMEOUT = 20000;
+var ocrScriptLoading = null;
+function loadOcrScript() {
+  if (typeof Tesseract !== 'undefined') return Promise.resolve();
+  if (ocrScriptLoading) return ocrScriptLoading;
+  ocrScriptLoading = new Promise(function(resolve, reject) {
+    var s = document.createElement('script');
+    s.src = 'https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js';
+    s.onload = resolve;
+    s.onerror = function() { ocrScriptLoading = null; reject(new Error('OCR CDN 加载失败')); };
+    document.head.appendChild(s);
+  });
+  return ocrScriptLoading;
+}
+async function runOcr(dataUrl) {
+  try {
+    await loadOcrScript();
+    var result = await Promise.race([
+      Tesseract.recognize(dataUrl, 'eng', { logger: function() {} }),
+      new Promise(function(_, reject) { setTimeout(function() { reject(new Error('OCR timeout')); }, OCR_TIMEOUT); })
+    ]);
+    var text = (result && result.data && result.data.text || '').replace(/\s+/g, ' ').trim();
+    return text.length >= 15 ? text : null;
+  } catch (e) {
+    console.warn('[OCR] 不可用（降级，不影响图片分析）:', e.message);
+    return null;
+  }
+}
 
 window.analyzeImage = function() {
   els.imagePreview.classList.add('hidden');
@@ -1197,6 +1230,7 @@ async function sendMessage() {
     addMessage({ role: 'assistant', text: response.reply });
     saveHistory(text, response.reply);
     if (STATE.imageData) STATE.imageData = null;
+    STATE.ocrText = null;
   } catch (err) {
     els.loading.classList.add('hidden');
     addMessage({ role: 'assistant', text: `⚠️ 抱歉，请求失败了：${err.message || '网络错误，请稍后重试'}` });
@@ -1657,6 +1691,7 @@ async function callAPI(message, module, imageData) {
   if (module === 'ships' || module === 'systems' || module === 'regulations') {
     var cfBody = { message: message, module: module, history: lastHistory };
     if (imageData) cfBody.imageUrl = imageData;  // 🖼️ 2026-08-23 修复：图片必须随请求传给 CF 后端（否则 hasImage=false 走 text 模型）
+    if (imageData && STATE.ocrText) cfBody.ocrText = STATE.ocrText;  // 🔤 OCR 文字层（报告/证书类图片引用原文）
     if (isShipStructured && structuredData) {
       cfBody.context = JSON.stringify(structuredData);
     } else if (context) {
