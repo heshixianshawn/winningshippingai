@@ -296,7 +296,7 @@ export async function searchRegulationsKnowledge(request, query) {
 
   // ═══ 中文→英文关键词映射（2026-08-23 新增：解决中文提问无法命中英文索引导致 AI 编造） ═══
   const CN_TO_EN = {
-    '救生艇': ['lifeboat', 'rescue boat'], '救生筏': ['life raft', 'liferaft'], '脱钩': ['release gear', 'release mechanism', 'on-load', 'release hook'],
+    '救生艇': ['lifeboat', 'rescue boat'], '救生筏': ['life raft', 'liferaft'], '脱钩': ['release gear', 'release mechanism', 'on-load', 'release hook', 'release'],
     '释放': ['release', 'launch', 'lowering'], '降落': ['lowering', 'launch', 'davit'], '吊架': ['davit'],
     '消防': ['fire'], '防火': ['fire'], '灭火': ['fire extinguishing', 'fire extinguisher'], '消防泵': ['fire pump'],
     '压载水': ['ballast water'], '压载': ['ballast'], '油水分离': ['oily water', 'oil filtering', 'oil-water'], '含油': ['oily'],
@@ -344,7 +344,7 @@ export async function searchRegulationsKnowledge(request, query) {
       if (km[en]) for (const sid of km[en]) score[sid] = (score[sid] || 0) + 1;
     }
   }
-  const ranked = Object.entries(score).sort((a, b) => b[1] - a[1]).slice(0, 3).map(x => x[0]);
+  const ranked = Object.entries(score).sort((a, b) => b[1] - a[1]).slice(0, 5).map(x => x[0]);
 
   // 加载分片
   const needChapters = new Set(ranked.map(id => id.split('_')[0]));
