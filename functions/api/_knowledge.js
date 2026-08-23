@@ -294,13 +294,41 @@ export async function searchRegulationsKnowledge(request, query) {
   const q = query.toLowerCase();
   const qCn = query.replace(/[^\u4e00-\u9fff]/g, '');
 
+  // ═══ 中文→英文关键词映射（2026-08-23 新增：解决中文提问无法命中英文索引导致 AI 编造） ═══
+  const CN_TO_EN = {
+    '救生艇': ['lifeboat', 'rescue boat'], '救生筏': ['life raft', 'liferaft'], '脱钩': ['release gear', 'release mechanism', 'on-load', 'release hook'],
+    '释放': ['release', 'launch', 'lowering'], '降落': ['lowering', 'launch', 'davit'], '吊架': ['davit'],
+    '消防': ['fire'], '防火': ['fire'], '灭火': ['fire extinguishing', 'fire extinguisher'], '消防泵': ['fire pump'],
+    '压载水': ['ballast water'], '压载': ['ballast'], '油水分离': ['oily water', 'oil filtering', 'oil-water'], '含油': ['oily'],
+    '报警': ['alarm'], '应急': ['emergency'], '逃生': ['escape'], '无线电': ['radio'], '航行灯': ['navigation light'],
+    '锚': ['anchor'], '舵': ['steering'], '主机': ['main engine', 'propulsion'], '发电机': ['generator'],
+    '水密': ['watertight'], '通风': ['ventilation'], '货舱': ['cargo hold'],
+    '检验': ['survey'], '特检': ['special survey'], '坞检': ['docking', 'dry dock'], '年度': ['annual'], '中间': ['intermediate'],
+    '证书': ['certificate'], '有效期': ['validity', 'expiry'], '记录': ['record', 'log'],
+    '训练': ['drill', 'training'], '演练': ['drill'], '每月': ['monthly'], '每周': ['weekly'], '每季': ['quarterly'],
+    '五年': ['5 year', 'five year'], '排放': ['discharge'], '生活污水': ['sewage'], '垃圾': ['garbage'],
+    '硫': ['sulphur', 'sulfur'], '能效': ['energy efficiency', 'eedi', 'eexi', 'cii'], '救生衣': ['lifejacket'],
+    '保温服': ['immersion suit'], '雷达': ['radar'], '甚高频': ['vhf'], '航行安全': ['navigation'], '操舵': ['steering'],
+    '烟火': ['pyrotechnic'], '雷达应答': ['sart'], '双向': ['two-way'], '通风筒': ['ventilator'], '舱口': ['hatch'],
+    '防火控制': ['fire control'], '应急照明': ['emergency lighting'], '应急电源': ['emergency power'], '断电': ['blackout'],
+    '机舱': ['machinery space', 'engine room'], '泵': ['pump'], '管系': ['piping'], '阀门': ['valve'],
+    '稳性': ['stability'], '吃水': ['draft', 'draught'], '吨位': ['tonnage'], '干舷': ['freeboard'],
+    '载重线': ['load line'], '防污': ['pollution prevention'], '压舱水': ['ballast water']
+  };
+
   const hitIds = new Set();
   // 英文关键词命中（法规条文关键词多为英文）
   const enWords = q.toLowerCase().match(/[a-z][a-z\-]{2,}/g) || [];
   for (const w of enWords) {
     if (km[w]) for (const sid of km[w]) hitIds.add(sid);
   }
-  // 中文：用户可能用中文问（如"防火"），索引里无中文关键词，跳过
+  // 中文 → 英文映射命中
+  for (const cn in CN_TO_EN) {
+    if (!qCn.includes(cn)) continue;
+    for (const en of CN_TO_EN[cn]) {
+      if (km[en]) for (const sid of km[en]) hitIds.add(sid);
+    }
+  }
 
   if (hitIds.size === 0) return '';
 
@@ -309,6 +337,12 @@ export async function searchRegulationsKnowledge(request, query) {
   for (const sid of hitIds) score[sid] = 0;
   for (const w of enWords) {
     if (km[w]) for (const sid of km[w]) score[sid] = (score[sid] || 0) + 1;
+  }
+  for (const cn in CN_TO_EN) {
+    if (!qCn.includes(cn)) continue;
+    for (const en of CN_TO_EN[cn]) {
+      if (km[en]) for (const sid of km[en]) score[sid] = (score[sid] || 0) + 1;
+    }
   }
   const ranked = Object.entries(score).sort((a, b) => b[1] - a[1]).slice(0, 3).map(x => x[0]);
 
