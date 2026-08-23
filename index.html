@@ -490,7 +490,7 @@ function compressImage(dataUrl, maxWidth, quality) {
 })();
 
 // ═══ OCR 图片文字提取（Tesseract.js 动态加载，失败静默降级不影响 vision 链路） ═══
-var OCR_TIMEOUT = 20000;
+var OCR_TIMEOUT = 45000;  // 后台异步不阻塞发送；预热后识别约5-15s，首次含模型下载需更久
 var ocrScriptLoading = null;
 function loadOcrScript() {
   if (typeof Tesseract !== 'undefined') return Promise.resolve();
