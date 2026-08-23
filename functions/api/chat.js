@@ -88,6 +88,11 @@ export async function onRequest(context) {
       ragUsed = true;
       // 法规模块：即使有 TYPE 标签也追加法规原文检索（SOLAS 知识库）+ IMO 官方公约信息
       if (module === 'regulations') {
+        // ⭐ 速查库最优先（权威答案，防 AI 编造）：命中时放在 kbContext 最前面
+        try {
+          const quickInfo = await searchQuickRef(request, message);
+          if (quickInfo) kbContext = quickInfo + '\n\n' + kbContext;
+        } catch (e) { console.error('[Regs] quickref search failed:', e.message); }
         try {
           const regKb = await autoSearchKnowledge('regulations', message, request);
           if (regKb) kbContext += '\n\n' + regKb;
@@ -100,10 +105,6 @@ export async function onRequest(context) {
           const offInfo = await searchOfficialSources(request, message);
           if (offInfo) kbContext += '\n\n' + offInfo;
         } catch (e) { console.error('[Regs] official search failed:', e.message); }
-        try {
-          const quickInfo = await searchQuickRef(request, message);
-          if (quickInfo) kbContext += '\n\n' + quickInfo;
-        } catch (e) { console.error('[Regs] quickref search failed:', e.message); }
       }
     } else if (module === 'ships') {
       // 多源检索（合并）：Survey 检验证书 + 参数库(GT/DWT/主机) + TMOU PSC 风险档案
