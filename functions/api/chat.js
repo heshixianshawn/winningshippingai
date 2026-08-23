@@ -89,12 +89,15 @@ export async function onRequest(context) {
       ragUsed = true;
       // 法规模块：即使有 TYPE 标签也追加法规原文检索（SOLAS 知识库）+ IMO 官方公约信息
       if (module === 'regulations') {
-        // ⭐ 速查库最优先（权威答案，防 AI 编造）：命中时放在 kbContext 最前面
+        // ⭐ 速查库最优先（权威答案，防 AI 编造）：命中时直接模板化返回（可靠优先，不依赖模型遵循）
         try {
           const quickInfo = await searchQuickRef(request, message);
           if (quickInfo) {
-            kbContext = quickInfo + '\n\n' + kbContext;
-            quickAnswer = quickInfo;
+            return {
+              reply: quickInfo + '\n\n⚠️ 以上为 PSC 高频速查权威内容（人工精编，基于 SOLAS 2024 原文，来源可溯）。如需针对特定船型/船队的补充分析或实操建议，请继续追问。',
+              model: 'quickref-knowledge',
+              source: 'PSC速查库'
+            };
           }
         } catch (e) { console.error('[Regs] quickref search failed:', e.message); }
         try {
