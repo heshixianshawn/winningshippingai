@@ -299,8 +299,8 @@ export async function searchRegulationsKnowledge(request, query) {
 const CN_TO_EN = {
     '救生艇': ['lifeboat', 'rescue boat'], '救生筏': ['life raft', 'liferaft'], '脱钩': ['release gear', 'release mechanism', 'on-load', 'release hook', 'release'],
     '释放': ['release', 'launch', 'lowering'], '降落': ['lowering', 'launch', 'davit'], '吊架': ['davit'],
-    '消防': ['fire'], '防火': ['fire'], '灭火': ['fire extinguishing', 'fire extinguisher'], '消防泵': ['fire pump'],
-    '压载水': ['ballast water'], '压载': ['ballast'], '油水分离': ['oily water', 'oil filtering', 'oil-water'], '含油': ['oily'],
+    '消防': ['fire'], '防火': ['fire'], '灭火': ['fire extinguishing', 'fire extinguisher'], '消防泵': ['fire', 'pump'],
+    '压载水': ['ballast'], '压载': ['ballast'], '油水分离': ['oily'], '含油': ['oily'],
     '报警': ['alarm'], '应急': ['emergency'], '逃生': ['escape'], '无线电': ['radio'], '航行灯': ['navigation light'],
     '锚': ['anchor'], '舵': ['steering'], '主机': ['main engine', 'propulsion'], '发电机': ['generator'],
     '水密': ['watertight'], '通风': ['ventilation'], '货舱': ['cargo hold'],
@@ -314,7 +314,7 @@ const CN_TO_EN = {
     '防火控制': ['fire control'], '应急照明': ['emergency lighting'], '应急电源': ['emergency power'], '断电': ['blackout'],
     '机舱': ['machinery space', 'engine room'], '泵': ['pump'], '管系': ['piping'], '阀门': ['valve'],
     '稳性': ['stability'], '吃水': ['draft', 'draught'], '吨位': ['tonnage'], '干舷': ['freeboard'],
-    '载重线': ['load line'], '防污': ['pollution prevention'], '压舱水': ['ballast water']
+    '载重线': ['load', 'line'], '防污': ['pollution'], '压舱水': ['ballast']
 };
 
   const hitIds = new Set();
