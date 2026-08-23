@@ -681,3 +681,53 @@ export async function buildPscPrepChecklist(request, message) {
 
   return parts.join('\n\n');
 }
+
+// ═══════════════ IMO 法规动态检索（2026-08-23 新增，月度抓取） ═══════════════
+let imoUpdates = null;
+async function ensureImoUpdates(request) {
+  if (imoUpdates) return imoUpdates;
+  try {
+    const baseUrl = getPagesUrl(request);
+    const resp = await fetch(`${baseUrl}/data/imo_updates.json`);
+    if (resp.ok) imoUpdates = await resp.json();
+  } catch (e) { console.error('imo_updates load fail:', e.message); }
+  return imoUpdates;
+}
+
+/** 按关键词匹配最新会议动态 → 返回法规变更信息 */
+export async function searchImoUpdates(request, query) {
+  const data = await ensureImoUpdates(request);
+  if (!data || !data.committees) return '';
+  const q = query.toLowerCase();
+  const qCn = query.replace(/[^\u4e00-\u9fff]/g, '');
+  // 关键词映射：中文问题 → 会议要点匹配
+  const KW = {
+    '压载水': ['ballast'], '排放控制区': ['emission control', 'eca'], 'ghg': ['ghg', 'greenhouse'],
+    '碳': ['carbon'], 'mepc': ['mepc'], 'msc': ['msc'], '修正案': ['amendment'], '新规': ['amendment', 'new requirement'],
+    'mas': ['mass code', 'autonomous'], '自主': ['autonomous'], '安全': ['safety'], '能效': ['energy efficiency'],
+    '防污': ['pollution'], '船舶回收': ['recycling'], '网络安全': ['cyber']
+  };
+  const hitItems = [];
+  for (const [label, items] of Object.entries(data.committees)) {
+    for (const it of items) {
+      const text = (it.key_points || []).join(' ').toLowerCase();
+      const matched = Object.entries(KW).some(([cn, ens]) =>
+        (qCn.includes(cn) || q.includes(cn.toLowerCase())) && ens.some(e => text.includes(e))
+      ) || Object.entries(KW).some(([cn, ens]) =>
+        (qCn.includes(cn) || q.includes(cn.toLowerCase())) && ens.some(e => (it.meeting + ' ' + it.date).toLowerCase().includes(e))
+      );
+      if (matched) hitItems.push(it);
+    }
+  }
+  if (hitItems.length === 0) {
+    // 兜底：问题含"最新/动态/修正案"时返回最新会议
+    const latest = Object.values(data.committees).flatMap(x => x).slice(0, 2);
+    if (/最新|动态|法规变化|修正案|updates?|latest/i.test(query)) hitItems.push(...latest);
+  }
+  if (hitItems.length === 0) return '';
+  const out = hitItems.slice(0, 3).map(it => {
+    const pts = (it.key_points || []).slice(0, 4).map(p => '- ' + p).join('\n');
+    return `【${it.meeting}】（${it.date}）\n${pts}\n📖 会议摘要：<${it.url}>`;
+  }).join('\n\n---\n\n');
+  return '【IMO 最新法规动态（会议结果）】\n\n' + out;
+}
