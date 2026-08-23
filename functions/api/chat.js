@@ -162,11 +162,13 @@ export async function onRequest(context) {
     // User message
     let userMsg;
     if (hasImage && apiYiKey) {
+      // 图片 + 法规/体系知识库上下文合并（2026-08-23 修复：图片请求也注入检索结果）
+      const textPart = (ragUsed && kbContext ? kbContext + '\n\n[用户问题]\n' : '') + message;
       userMsg = {
         role: 'user',
         content: [
           { type: 'image_url', image_url: { url: imageUrl } },
-          { type: 'text', text: message }
+          { type: 'text', text: textPart }
         ]
       };
     } else if (ragUsed && kbContext) {
