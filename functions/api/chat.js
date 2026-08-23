@@ -86,6 +86,13 @@ export async function onRequest(context) {
     } else if (clientContext && typeof clientContext === 'string' && clientContext.length > 0) {
       kbContext = clientContext;
       ragUsed = true;
+      // 法规模块：即使有 TYPE 标签也追加法规原文检索（SOLAS 知识库）
+      if (module === 'regulations') {
+        try {
+          const regKb = await autoSearchKnowledge('regulations', message, request);
+          if (regKb) kbContext += '\n\n' + regKb;
+        } catch (e) { console.error('[Regs] kb search failed:', e.message); }
+      }
     } else if (module === 'ships') {
       // 多源检索（合并）：Survey 检验证书 + 参数库(GT/DWT/主机) + TMOU PSC 风险档案
       const parts = [];

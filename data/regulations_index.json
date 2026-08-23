@@ -1,0 +1,9258 @@
+{
+ "version": "1.0",
+ "updated": "2026-08-23",
+ "source": "SOLAS 2024 Consolidated (IMO)",
+ "total_regs": 285,
+ "chapters": {
+  "I": 22,
+  "II-1": 58,
+  "II-2": 27,
+  "III": 38,
+  "IV": 19,
+  "V": 35,
+  "VI": 9,
+  "VII": 16,
+  "VIII": 12,
+  "IX": 7,
+  "X": 4,
+  "XI-1": 8,
+  "XI-2": 13,
+  "XII": 14,
+  "XIV": 2,
+  "XV": 1
+ },
+ "keyword_map": {
+  "amendment": [
+   "I_R19",
+   "IV_R18",
+   "IX_R6",
+   "XI-1_R5",
+   "XV_ROVERVIEW"
+  ],
+  "changes": [
+   "I_R19",
+   "I_R21",
+   "II-1_R55",
+   "IV_R18",
+   "IX_R6",
+   "X_R3",
+   "XI-1_R5",
+   "XI-2_R3",
+   "XI-2_R13"
+  ],
+  "text": [
+   "I_R19",
+   "I_R15",
+   "I_R16",
+   "IV_R18",
+   "IX_R6",
+   "X_R3",
+   "XI-1_R5"
+  ],
+  "color": [
+   "I_R19",
+   "IV_R18",
+   "IX_R6",
+   "X_R3",
+   "XI-1_R5"
+  ],
+  "coded": [
+   "I_R19",
+   "IV_R18",
+   "IX_R6",
+   "X_R3",
+   "XI-1_R5"
+  ],
+  "corresponding": [
+   "I_R19",
+   "I_R15",
+   "II-1_R11",
+   "II-1_R18",
+   "IV_R18",
+   "IX_R6",
+   "X_R3",
+   "XI-1_R5"
+  ],
+  "colors": [
+   "I_R19",
+   "IV_R18",
+   "IX_R6",
+   "X_R3",
+   "XI-1_R5"
+  ],
+  "table": [
+   "I_R19",
+   "II-2_R19",
+   "IV_R18",
+   "V_R29",
+   "IX_R6",
+   "X_R3",
+   "XI-1_R5"
+  ],
+  "consolidated": [
+   "I_R19",
+   "II-1_R42",
+   "II-1_R55",
+   "II-1_R54",
+   "II-1_R57",
+   "II-2_R8",
+   "II-2_R19",
+   "III_R18",
+   "III_R24",
+   "III_R32",
+   "IV_R18",
+   "IV_R4",
+   "V_R25",
+   "VIII_R6",
+   "VIII_R10",
+   "VIII_R12",
+   "IX_R6",
+   "IX_R2",
+   "IX_R5",
+   "X_R3",
+   "XI-1_R5",
+   "XV_ROVERVIEW"
+  ],
+  "version": [
+   "I_R19",
+   "II-1_R42",
+   "II-1_R55",
+   "II-1_R57",
+   "II-2_R8",
+   "II-2_R19",
+   "III_R18",
+   "III_R24",
+   "III_R32",
+   "IV_R18",
+   "IV_R4",
+   "V_R25",
+   "VIII_R6",
+   "IX_R6",
+   "IX_R2",
+   "IX_R5",
+   "X_R3",
+   "XI-1_R5",
+   "XV_ROVERVIEW"
+  ],
+  "made": [
+   "I_R19",
+   "I_R5",
+   "I_R11",
+   "II-1_R42",
+   "II-1_R55",
+   "II-1_R7",
+   "II-1_R17",
+   "II-1_R20",
+   "II-1_R25",
+   "II-1_R34",
+   "II-1_R35",
+   "II-1_R44",
+   "II-1_R46",
+   "II-1_R48",
+   "II-1_R53",
+   "II-1_R57",
+   "II-2_R8",
+   "II-2_R9",
+   "II-2_R11",
+   "II-2_R18",
+   "II-2_R19",
+   "III_R7",
+   "III_R18",
+   "III_R19",
+   "III_R24",
+   "III_R27",
+   "III_R32",
+   "IV_R18",
+   "IV_R2",
+   "IV_R4"
+  ],
+  "rights": [
+   "I_R19",
+   "II-1_R42",
+   "II-1_R55",
+   "II-1_R57",
+   "II-2_R19",
+   "III_R18",
+   "III_R24",
+   "III_R32",
+   "IV_R18",
+   "IV_R4",
+   "V_R11",
+   "V_R25",
+   "VII_R15",
+   "VIII_R6",
+   "VIII_R12",
+   "IX_R6",
+   "IX_R2",
+   "IX_R5",
+   "X_R3",
+   "XI-1_R5",
+   "XI-1_R4",
+   "XI-2_R2",
+   "XIV_R1"
+  ],
+  "reserved": [
+   "I_R19",
+   "II-1_R42",
+   "II-1_R55",
+   "II-1_R57",
+   "II-2_R19",
+   "III_R18",
+   "III_R24",
+   "III_R32",
+   "IV_R18",
+   "IV_R4",
+   "V_R25",
+   "VIII_R6",
+   "IX_R6",
+   "IX_R2",
+   "IX_R5",
+   "X_R3",
+   "XI-1_R5"
+  ],
+  "international": [
+   "I_R19",
+   "I_R1",
+   "I_R2",
+   "I_R4",
+   "I_R7",
+   "I_R8",
+   "I_R12",
+   "II-1_R42",
+   "II-1_R55",
+   "II-1_R1",
+   "II-1_R2",
+   "II-1_R3",
+   "II-1_R4",
+   "II-1_R15",
+   "II-1_R18",
+   "II-1_R20",
+   "II-1_R57",
+   "II-2_R23",
+   "II-2_R189",
+   "II-2_R3",
+   "II-2_R14",
+   "II-2_R16",
+   "II-2_R18",
+   "II-2_R19",
+   "II-2_R20",
+   "III_R1",
+   "III_R3",
+   "III_R18",
+   "III_R21",
+   "III_R24"
+  ],
+  "maritime": [
+   "I_R19",
+   "II-1_R42",
+   "II-1_R55",
+   "II-1_R2",
+   "II-1_R3",
+   "II-1_R6",
+   "II-1_R57",
+   "II-2_R16",
+   "II-2_R19",
+   "III_R3",
+   "III_R18",
+   "III_R24",
+   "III_R29",
+   "IV_R18",
+   "IV_R2",
+   "IV_R4",
+   "IV_R5",
+   "IV_R7",
+   "IV_R12",
+   "IV_R15",
+   "V_R7",
+   "V_R13",
+   "V_R21",
+   "V_R25",
+   "V_R29",
+   "VI_R1",
+   "VI_R8",
+   "VII_R1",
+   "VII_R8",
+   "VII_R11"
+  ],
+  "organization": [
+   "I_R19",
+   "I_R4",
+   "I_R5",
+   "I_R6",
+   "I_R11",
+   "I_R21",
+   "II-1_R42",
+   "II-1_R45",
+   "II-1_R55",
+   "II-1_R2",
+   "II-1_R3",
+   "II-1_R4",
+   "II-1_R6",
+   "II-1_R7",
+   "II-1_R57",
+   "II-2_R3",
+   "II-2_R14",
+   "II-2_R15",
+   "II-2_R16",
+   "II-2_R17",
+   "II-2_R18",
+   "II-2_R19",
+   "II-2_R20",
+   "II-2_R23",
+   "III_R3",
+   "III_R4",
+   "III_R5",
+   "III_R6",
+   "III_R9",
+   "III_R18"
+  ],
+  "updated": [
+   "I_R19",
+   "II-1_R42",
+   "II-1_R55",
+   "II-1_R57",
+   "II-2_R19",
+   "III_R18",
+   "IV_R18",
+   "IV_R4",
+   "V_R25",
+   "IX_R6",
+   "IX_R5",
+   "X_R3",
+   "XI-1_R5",
+   "XI-2_R3"
+  ],
+  "solas": [
+   "I_R19",
+   "I_R4",
+   "I_R21",
+   "II-1_R42",
+   "II-1_R55",
+   "II-1_R1",
+   "II-1_R4",
+   "II-1_R57",
+   "II-2_R189",
+   "II-2_R16",
+   "II-2_R18",
+   "II-2_R19",
+   "II-2_R23",
+   "III_R18",
+   "III_R29",
+   "III_R38",
+   "IV_R18",
+   "IV_R4",
+   "V_R3",
+   "V_R19",
+   "V_R23",
+   "VI_R9",
+   "VII_R16",
+   "VIII_R12",
+   "IX_R6",
+   "IX_R5",
+   "X_R3",
+   "XI-1_R5",
+   "XI-1_R7",
+   "XII_R14"
+  ],
+  "application": [
+   "I_R19",
+   "I_R1",
+   "II-1_R1",
+   "II-1_R56",
+   "II-2_R189",
+   "II-2_R19",
+   "II-2_R23",
+   "III_R1",
+   "III_R2",
+   "IV_R1",
+   "V_R1",
+   "V_R3",
+   "VI_R1",
+   "VII_R2",
+   "VII_R9",
+   "VII_R12",
+   "VII_R15",
+   "VIII_R1",
+   "VIII_R2",
+   "IX_R2",
+   "X_R2",
+   "XI-2_R2",
+   "XII_R2",
+   "XII_R9"
+  ],
+  "definitions": [
+   "I_R19",
+   "I_R2",
+   "V_R2",
+   "VI_R8",
+   "VII_R1",
+   "VII_R7",
+   "VII_R8",
+   "VII_R11",
+   "VII_R14",
+   "IX_R1",
+   "X_R1"
+  ],
+  "each": [
+   "I_R1",
+   "I_R21",
+   "II-1_R7",
+   "II-1_R10",
+   "II-1_R12",
+   "II-1_R18",
+   "II-1_R19",
+   "II-1_R49",
+   "II-1_R51",
+   "II-2_R10",
+   "II-2_R15",
+   "II-2_R20",
+   "III_R7",
+   "III_R11",
+   "III_R13",
+   "III_R21",
+   "III_R26",
+   "III_R30",
+   "III_R31",
+   "III_R35",
+   "III_R36",
+   "IV_R3",
+   "IV_R5",
+   "V_R3",
+   "V_R4",
+   "V_R7",
+   "V_R13",
+   "V_R14",
+   "V_R22",
+   "XI-1_R6"
+  ],
+  "unless": [
+   "I_R1",
+   "I_R3",
+   "I_R20",
+   "II-1_R42",
+   "II-1_R1",
+   "II-1_R4",
+   "II-1_R43",
+   "II-1_R44",
+   "II-1_R47",
+   "III_R25",
+   "IV_R1",
+   "VI_R1",
+   "VI_R8",
+   "VII_R1",
+   "VII_R2",
+   "VII_R8",
+   "VII_R9",
+   "VII_R11",
+   "VII_R12",
+   "XII_R10",
+   "XII_R11"
+  ],
+  "expressly": [
+   "I_R1",
+   "I_R3",
+   "II-1_R1",
+   "II-1_R4",
+   "IV_R1",
+   "VI_R1",
+   "VI_R8",
+   "VII_R1",
+   "VII_R2",
+   "VII_R8",
+   "VII_R9",
+   "VII_R11",
+   "VII_R12"
+  ],
+  "provided": [
+   "I_R1",
+   "I_R2",
+   "I_R3",
+   "II-1_R1",
+   "II-1_R3",
+   "II-1_R4",
+   "II-1_R12",
+   "II-1_R15",
+   "II-1_R17",
+   "II-1_R19",
+   "II-1_R26",
+   "II-1_R27",
+   "II-1_R28",
+   "II-1_R29",
+   "II-1_R30",
+   "II-1_R31",
+   "II-1_R32",
+   "II-1_R33",
+   "II-1_R34",
+   "II-1_R35",
+   "II-1_R37",
+   "II-1_R38",
+   "II-1_R41",
+   "II-1_R42",
+   "II-1_R43",
+   "II-1_R44",
+   "II-1_R45",
+   "II-1_R46",
+   "II-1_R47",
+   "II-1_R48"
+  ],
+  "otherwise": [
+   "I_R1",
+   "I_R3",
+   "I_R5",
+   "II-1_R1",
+   "II-1_R4",
+   "IV_R1",
+   "VI_R1",
+   "VI_R8",
+   "VII_R1",
+   "VII_R8",
+   "VII_R9",
+   "VII_R11",
+   "VII_R12",
+   "XII_R11"
+  ],
+  "present": [
+   "I_R1",
+   "I_R2",
+   "I_R3",
+   "I_R5",
+   "I_R7",
+   "I_R9",
+   "I_R11",
+   "I_R12",
+   "I_R13",
+   "I_R15",
+   "I_R17",
+   "I_R18",
+   "I_R20",
+   "I_R21",
+   "II-1_R52",
+   "IV_R1",
+   "V_R21",
+   "VI_R1",
+   "VI_R9",
+   "VII_R16",
+   "VIII_R2",
+   "VIII_R10",
+   "XI-1_R1",
+   "XI-1_R4",
+   "XI-1_R6"
+  ],
+  "regulations": [
+   "I_R1",
+   "I_R2",
+   "I_R3",
+   "I_R4",
+   "I_R5",
+   "I_R7",
+   "I_R8",
+   "I_R11",
+   "I_R12",
+   "I_R13",
+   "I_R14",
+   "I_R16",
+   "I_R18",
+   "I_R21",
+   "II-1_R6",
+   "II-1_R54",
+   "II-1_R57",
+   "II-2_R23",
+   "II-2_R189",
+   "IV_R1",
+   "IV_R2",
+   "IV_R3",
+   "IV_R11",
+   "IV_R16",
+   "IV_R17",
+   "V_R3",
+   "V_R16",
+   "V_R30",
+   "VI_R9",
+   "VII_R10"
+  ],
+  "apply": [
+   "I_R1",
+   "I_R3",
+   "II-1_R42",
+   "II-1_R45",
+   "II-1_R4",
+   "II-1_R56",
+   "IV_R1",
+   "V_R1",
+   "VI_R1",
+   "VII_R2",
+   "VII_R15",
+   "VIII_R2",
+   "VIII_R10",
+   "XII_R3"
+  ],
+  "only": [
+   "I_R1",
+   "II-2_R19",
+   "V_R1"
+  ],
+  "engaged": [
+   "I_R1",
+   "I_R4",
+   "IV_R7",
+   "IV_R8",
+   "IV_R9",
+   "IV_R11",
+   "V_R1",
+   "V_R8",
+   "V_R28",
+   "VII_R15",
+   "XI-2_R2"
+  ],
+  "voyages": [
+   "I_R1",
+   "I_R4",
+   "IV_R7",
+   "IV_R8",
+   "IV_R9",
+   "IV_R11",
+   "V_R1",
+   "V_R28",
+   "XI-2_R2",
+   "XI-2_R11"
+  ],
+  "classes": [
+   "I_R1",
+   "II-2_R19",
+   "III_R2"
+  ],
+  "applies": [
+   "I_R1",
+   "II-1_R14",
+   "III_R8",
+   "III_R9",
+   "III_R10",
+   "III_R30",
+   "IV_R1",
+   "IV_R14",
+   "V_R14",
+   "V_R29",
+   "V_R30",
+   "VII_R12",
+   "VIII_R1",
+   "IX_R2",
+   "XI-1_R3",
+   "XI-1_R7",
+   "XI-2_R2",
+   "XI-2_R10",
+   "XII_R10",
+   "XII_R11",
+   "XII_R12",
+   "XII_R13",
+   "XIV_R1"
+  ],
+  "more": [
+   "I_R1",
+   "II-1_R7",
+   "II-1_R8",
+   "II-1_R9",
+   "II-2_R21",
+   "II-2_R22",
+   "III_R14",
+   "III_R31",
+   "V_R25",
+   "X_R2",
+   "XV_ROVERVIEW"
+  ],
+  "precisely": [
+   "I_R1"
+  ],
+  "defined": [
+   "I_R1",
+   "II-1_R2",
+   "II-1_R56",
+   "II-2_R21",
+   "II-2_R22",
+   "IV_R2",
+   "V_R2",
+   "VII_R6",
+   "IX_R1",
+   "XI-1_R2",
+   "XI-1_R3",
+   "XI-1_R5",
+   "XI-2_R1",
+   "XII_R1"
+  ],
+  "extent": [
+   "I_R1",
+   "II-1_R8",
+   "II-1_R9",
+   "II-1_R24",
+   "V_R1",
+   "VII_R6"
+  ],
+  "shown": [
+   "I_R1"
+  ],
+  "code": [
+   "I_R2",
+   "I_R19",
+   "II-1_R2",
+   "II-1_R4",
+   "II-1_R57",
+   "II-2_R23",
+   "II-2_R189",
+   "II-2_R3",
+   "II-2_R6",
+   "II-2_R10",
+   "II-2_R16",
+   "II-2_R19",
+   "III_R4",
+   "III_R7",
+   "III_R16",
+   "III_R18",
+   "III_R21",
+   "III_R22",
+   "III_R26",
+   "III_R31",
+   "III_R32",
+   "III_R34",
+   "V_R21",
+   "VI_R1",
+   "VI_R7",
+   "VI_R8",
+   "VI_R9",
+   "VII_R1",
+   "VII_R3",
+   "VII_R4"
+  ],
+  "means": [
+   "I_R2",
+   "I_R3",
+   "I_R7",
+   "I_R8",
+   "II-1_R42",
+   "II-1_R1",
+   "II-1_R2",
+   "II-1_R3",
+   "II-1_R15",
+   "II-1_R20",
+   "II-1_R26",
+   "II-1_R27",
+   "II-1_R28",
+   "II-1_R32",
+   "II-1_R33",
+   "II-1_R34",
+   "II-1_R37",
+   "II-1_R47",
+   "II-1_R50",
+   "II-2_R2",
+   "II-2_R4",
+   "II-2_R5",
+   "II-2_R8",
+   "II-2_R11",
+   "II-2_R12",
+   "II-2_R13",
+   "II-2_R15",
+   "III_R1",
+   "III_R15",
+   "IV_R2"
+  ],
+  "other": [
+   "I_R2",
+   "I_R5",
+   "I_R7",
+   "I_R8",
+   "I_R10",
+   "I_R11",
+   "I_R12",
+   "I_R17",
+   "II-1_R55",
+   "II-1_R9",
+   "II-1_R12",
+   "II-1_R15",
+   "II-1_R25",
+   "II-1_R26",
+   "II-1_R29",
+   "II-1_R32",
+   "II-1_R35",
+   "II-1_R39",
+   "II-1_R41",
+   "II-1_R45",
+   "II-1_R56",
+   "II-2_R3",
+   "II-2_R4",
+   "II-2_R6",
+   "II-2_R9",
+   "II-2_R10",
+   "II-2_R11",
+   "II-2_R12",
+   "II-2_R13",
+   "II-2_R18"
+  ],
+  "resolution": [
+   "I_R2",
+   "I_R6",
+   "I_R19",
+   "II-1_R4",
+   "II-2_R23",
+   "II-2_R189",
+   "III_R5",
+   "III_R9",
+   "III_R13",
+   "III_R20",
+   "III_R32",
+   "IV_R15",
+   "IV_R18",
+   "V_R7",
+   "V_R10",
+   "V_R11",
+   "V_R15",
+   "V_R18",
+   "V_R20",
+   "VI_R1",
+   "VI_R8",
+   "VII_R1",
+   "VII_R6",
+   "VII_R8",
+   "X_R1",
+   "XI-1_R2",
+   "XII_R4"
+  ],
+  "passenger": [
+   "I_R2",
+   "I_R7",
+   "I_R12",
+   "I_R14",
+   "I_R18",
+   "II-1_R42",
+   "II-1_R1",
+   "II-1_R6",
+   "II-1_R7",
+   "II-1_R8",
+   "II-1_R9",
+   "II-1_R10",
+   "II-1_R14",
+   "II-1_R15",
+   "II-1_R17",
+   "II-1_R18",
+   "II-1_R19",
+   "II-1_R21",
+   "II-1_R22",
+   "II-1_R23",
+   "II-1_R39",
+   "II-1_R54",
+   "II-2_R23",
+   "II-2_R189",
+   "II-2_R5",
+   "II-2_R7",
+   "II-2_R10",
+   "II-2_R12",
+   "II-2_R13",
+   "II-2_R14"
+  ],
+  "purpose": [
+   "I_R2",
+   "II-2_R6",
+   "II-2_R8",
+   "II-2_R11",
+   "II-2_R12",
+   "II-2_R14",
+   "II-2_R15",
+   "II-2_R17",
+   "II-2_R22",
+   "II-2_R23",
+   "III_R1",
+   "III_R9",
+   "III_R38",
+   "V_R2",
+   "V_R6",
+   "V_R14",
+   "VI_R9",
+   "VII_R1",
+   "VII_R8",
+   "VII_R10",
+   "VII_R11",
+   "VII_R13",
+   "VII_R16",
+   "IX_R3",
+   "IX_R6"
+  ],
+  "convention": [
+   "I_R2",
+   "I_R15",
+   "I_R17",
+   "I_R20",
+   "I_R21",
+   "II-1_R2",
+   "II-1_R18",
+   "II-1_R57",
+   "III_R3",
+   "IV_R2",
+   "V_R21",
+   "VI_R2",
+   "VIII_R2",
+   "VIII_R3",
+   "XI-1_R1",
+   "XI-1_R6",
+   "XII_R1",
+   "XII_R4",
+   "XII_R14",
+   "XV_ROVERVIEW"
+  ],
+  "administration": [
+   "I_R2",
+   "I_R4",
+   "I_R5",
+   "I_R6",
+   "I_R11",
+   "I_R13",
+   "I_R14",
+   "I_R21",
+   "II-1_R1",
+   "II-1_R3",
+   "II-1_R4",
+   "II-1_R5",
+   "II-1_R9",
+   "II-1_R12",
+   "II-1_R15",
+   "II-1_R16",
+   "II-1_R20",
+   "II-1_R22",
+   "II-1_R23",
+   "II-1_R24",
+   "II-1_R26",
+   "II-1_R44",
+   "II-1_R45",
+   "II-1_R46",
+   "II-1_R47",
+   "II-1_R53",
+   "II-1_R54",
+   "II-1_R55",
+   "II-2_R189",
+   "II-2_R4"
+  ],
+  "approved": [
+   "I_R2",
+   "II-1_R18",
+   "II-1_R55",
+   "II-2_R17",
+   "III_R4",
+   "III_R5",
+   "III_R11",
+   "III_R28",
+   "III_R38",
+   "IV_R14",
+   "IV_R15",
+   "V_R18",
+   "VII_R5",
+   "XI-2_R10",
+   "XI-2_R13",
+   "XII_R11"
+  ],
+  "voyage": [
+   "I_R2",
+   "I_R4",
+   "I_R18",
+   "II-1_R21",
+   "II-1_R22",
+   "II-1_R23",
+   "III_R2",
+   "III_R3",
+   "IV_R6",
+   "V_R3",
+   "V_R18",
+   "V_R20",
+   "V_R27",
+   "V_R28",
+   "V_R34",
+   "VI_R5",
+   "VII_R5",
+   "X_R2"
+  ],
+  "country": [
+   "I_R2",
+   "VIII_R12"
+  ],
+  "year": [
+   "I_R2",
+   "IV_R3",
+   "V_R3",
+   "V_R6",
+   "VIII_R9"
+  ],
+  "cargo": [
+   "I_R2",
+   "I_R3",
+   "I_R8",
+   "I_R9",
+   "I_R10",
+   "I_R12",
+   "I_R14",
+   "II-1_R45",
+   "II-1_R3",
+   "II-1_R4",
+   "II-1_R6",
+   "II-1_R7",
+   "II-1_R9",
+   "II-1_R10",
+   "II-1_R11",
+   "II-1_R12",
+   "II-1_R15",
+   "II-1_R16",
+   "II-1_R22",
+   "II-1_R24",
+   "II-1_R25",
+   "II-1_R35",
+   "II-2_R23",
+   "II-2_R189",
+   "II-2_R2",
+   "II-2_R3",
+   "II-2_R4",
+   "II-2_R5",
+   "II-2_R9",
+   "II-2_R10"
+  ],
+  "bulk": [
+   "I_R2",
+   "II-1_R3",
+   "II-1_R25",
+   "II-2_R19",
+   "V_R2",
+   "V_R3",
+   "VI_R1",
+   "VI_R3",
+   "VI_R5",
+   "VI_R6",
+   "VI_R7",
+   "VI_R8",
+   "VII_R7",
+   "VII_R8",
+   "VII_R10",
+   "VII_R11",
+   "IX_R1",
+   "IX_R2",
+   "XI-1_R2",
+   "XII_R1",
+   "XII_R2",
+   "XII_R3",
+   "XII_R4",
+   "XII_R5",
+   "XII_R6",
+   "XII_R7",
+   "XII_R8",
+   "XII_R9",
+   "XII_R10",
+   "XII_R11"
+  ],
+  "liquid": [
+   "I_R2",
+   "II-2_R19",
+   "VI_R5",
+   "VII_R14"
+  ],
+  "inflammable": [
+   "I_R2"
+  ],
+  "nuclear": [
+   "I_R2",
+   "VII_R14",
+   "VIII_R1",
+   "VIII_R2",
+   "VIII_R3",
+   "VIII_R6",
+   "VIII_R7",
+   "VIII_R8",
+   "VIII_R9",
+   "VIII_R10",
+   "VIII_R11",
+   "VIII_R12"
+  ],
+  "safety": [
+   "I_R2",
+   "I_R4",
+   "I_R8",
+   "I_R9",
+   "I_R10",
+   "I_R12",
+   "I_R14",
+   "I_R18",
+   "II-1_R9",
+   "II-1_R27",
+   "II-1_R31",
+   "II-1_R32",
+   "II-1_R39",
+   "II-1_R40",
+   "II-1_R46",
+   "II-1_R52",
+   "II-1_R53",
+   "II-1_R54",
+   "II-2_R23",
+   "II-2_R2",
+   "II-2_R10",
+   "II-2_R14",
+   "II-2_R16",
+   "II-2_R17",
+   "II-2_R20",
+   "III_R17",
+   "III_R38",
+   "IV_R2",
+   "IV_R3",
+   "IV_R4"
+  ],
+  "amended": [
+   "I_R2",
+   "III_R9",
+   "III_R32",
+   "V_R10",
+   "V_R11",
+   "V_R15",
+   "V_R18",
+   "V_R21",
+   "VI_R1",
+   "VI_R2",
+   "VI_R5",
+   "VI_R8",
+   "VII_R1",
+   "VII_R6",
+   "X_R1"
+  ],
+  "construction": [
+   "I_R2",
+   "I_R10",
+   "I_R12",
+   "II-1_R45",
+   "II-1_R1",
+   "II-1_R3",
+   "II-1_R4",
+   "II-1_R10",
+   "II-1_R16",
+   "II-1_R26",
+   "II-1_R56",
+   "II-2_R19",
+   "III_R1",
+   "V_R2",
+   "VII_R8",
+   "VII_R9",
+   "VII_R11",
+   "VII_R12",
+   "VII_R15",
+   "VIII_R4",
+   "IX_R2",
+   "X_R1",
+   "XII_R1",
+   "XII_R5",
+   "XII_R7",
+   "XII_R11",
+   "XII_R13",
+   "XII_R14"
+  ],
+  "exceptions": [
+   "I_R3"
+  ],
+  "north": [
+   "I_R3",
+   "IV_R1",
+   "V_R6",
+   "V_R35"
+  ],
+  "anticosti": [
+   "I_R3"
+  ],
+  "island": [
+   "I_R3"
+  ],
+  "troopships": [
+   "I_R3"
+  ],
+  "less": [
+   "I_R3",
+   "I_R18",
+   "II-1_R6",
+   "II-1_R8",
+   "II-1_R9",
+   "II-1_R25",
+   "II-1_R32",
+   "II-2_R19",
+   "III_R7",
+   "III_R13",
+   "III_R16",
+   "III_R22",
+   "III_R31",
+   "V_R22",
+   "VII_R15",
+   "VIII_R9",
+   "XII_R1",
+   "XII_R3",
+   "XII_R6"
+  ],
+  "tons": [
+   "I_R3",
+   "II-1_R29",
+   "IV_R1"
+  ],
+  "gross": [
+   "I_R3",
+   "II-1_R29",
+   "II-2_R23",
+   "II-2_R189",
+   "III_R6",
+   "III_R33",
+   "IV_R1",
+   "V_R1",
+   "V_R19",
+   "V_R20",
+   "VI_R2",
+   "VI_R4",
+   "VII_R15",
+   "IX_R2",
+   "XI-2_R6",
+   "XIV_R1"
+  ],
+  "tonnage": [
+   "I_R3",
+   "II-1_R29",
+   "II-2_R23",
+   "II-2_R189",
+   "III_R6",
+   "III_R33",
+   "IV_R1",
+   "V_R1",
+   "V_R19",
+   "V_R20",
+   "VII_R15",
+   "IX_R2",
+   "XI-2_R6",
+   "XIV_R1"
+  ],
+  "propelled": [
+   "I_R3"
+  ],
+  "mechanical": [
+   "I_R3",
+   "V_R3"
+  ],
+  "wooden": [
+   "I_R3"
+  ],
+  "primitive": [
+   "I_R3"
+  ],
+  "build": [
+   "I_R3"
+  ],
+  "pleasure": [
+   "I_R3"
+  ],
+  "yachts": [
+   "I_R3"
+  ],
+  "such": [
+   "I_R4",
+   "I_R5",
+   "I_R6",
+   "I_R7",
+   "I_R19",
+   "I_R21",
+   "II-1_R45",
+   "II-1_R1",
+   "II-1_R3",
+   "II-1_R4",
+   "II-1_R9",
+   "II-1_R12",
+   "II-1_R14",
+   "II-1_R15",
+   "II-1_R16",
+   "II-1_R22",
+   "II-1_R23",
+   "II-1_R24",
+   "II-1_R27",
+   "II-1_R30",
+   "II-1_R40",
+   "II-1_R41",
+   "II-1_R42",
+   "II-1_R46",
+   "II-1_R48",
+   "II-1_R49",
+   "II-1_R56",
+   "II-2_R189",
+   "II-2_R3",
+   "II-2_R4"
+  ],
+  "exemptions": [
+   "I_R4",
+   "III_R2",
+   "IV_R3",
+   "V_R3",
+   "V_R30",
+   "VIII_R3"
+  ],
+  "adequate": [
+   "I_R4",
+   "II-1_R32",
+   "V_R16",
+   "V_R27"
+  ],
+  "opinion": [
+   "I_R4",
+   "V_R21"
+  ],
+  "features": [
+   "I_R4"
+  ],
+  "their": [
+   "I_R4",
+   "II-1_R54",
+   "II-2_R14",
+   "II-2_R20",
+   "III_R2",
+   "III_R9",
+   "III_R37",
+   "IV_R1",
+   "V_R5",
+   "V_R12",
+   "V_R33",
+   "VIII_R8",
+   "X_R2",
+   "XI-1_R5",
+   "XI-2_R2",
+   "XI-2_R3",
+   "XI-2_R7",
+   "XI-2_R10",
+   "XI-2_R13",
+   "XII_R9",
+   "XII_R11",
+   "XII_R13"
+  ],
+  "governments": [
+   "I_R4",
+   "I_R17",
+   "IV_R3",
+   "V_R4",
+   "V_R5",
+   "V_R6",
+   "V_R8",
+   "V_R9",
+   "V_R10",
+   "V_R11",
+   "V_R12",
+   "V_R13",
+   "V_R14",
+   "V_R35",
+   "VIII_R11",
+   "XI-2_R2",
+   "XI-2_R3",
+   "XI-2_R7",
+   "XI-2_R10",
+   "XI-2_R11",
+   "XI-2_R13"
+  ],
+  "exemption": [
+   "I_R4"
+  ],
+  "information": [
+   "I_R4",
+   "I_R6",
+   "I_R16",
+   "I_R19",
+   "I_R21",
+   "II-1_R5",
+   "II-1_R8",
+   "II-1_R19",
+   "II-2_R16",
+   "III_R27",
+   "III_R35",
+   "IV_R2",
+   "IV_R4",
+   "IV_R7",
+   "IV_R12",
+   "IV_R18",
+   "V_R5",
+   "V_R9",
+   "V_R11",
+   "V_R19",
+   "V_R31",
+   "V_R32",
+   "VI_R2",
+   "VI_R6",
+   "VII_R4",
+   "VIII_R8",
+   "XI-1_R5",
+   "XI-2_R3",
+   "XI-2_R5",
+   "XI-2_R7"
+  ],
+  "circ": [
+   "I_R4",
+   "I_R6",
+   "I_R8",
+   "I_R11",
+   "I_R12",
+   "I_R16",
+   "I_R19",
+   "II-1_R3",
+   "II-1_R8",
+   "II-1_R19",
+   "II-2_R16",
+   "II-2_R17",
+   "III_R18",
+   "III_R24",
+   "III_R29",
+   "V_R15",
+   "V_R19",
+   "V_R20",
+   "VI_R2",
+   "VI_R4",
+   "VII_R2",
+   "VII_R6",
+   "XIV_R4"
+  ],
+  "normally": [
+   "I_R4",
+   "II-1_R37",
+   "II-1_R53",
+   "II-1_R54",
+   "III_R32",
+   "IV_R7",
+   "IV_R8",
+   "IV_R9",
+   "IV_R10"
+  ],
+  "exceptional": [
+   "I_R4",
+   "VIII_R5"
+  ],
+  "circumstances": [
+   "I_R4",
+   "I_R19",
+   "II-1_R28",
+   "V_R24",
+   "V_R33",
+   "VIII_R3",
+   "VIII_R5"
+  ],
+  "undertake": [
+   "I_R4",
+   "V_R8",
+   "V_R9",
+   "V_R13",
+   "V_R14"
+  ],
+  "single": [
+   "I_R4",
+   "II-1_R25"
+  ],
+  "exempted": [
+   "I_R4",
+   "VIII_R3"
+  ],
+  "thereof": [
+   "I_R5",
+   "XI-2_R12"
+  ],
+  "fitting": [
+   "I_R5",
+   "II-1_R33"
+  ],
+  "material": [
+   "I_R5",
+   "II-2_R11",
+   "VII_R14"
+  ],
+  "appliance": [
+   "I_R5",
+   "II-1_R55",
+   "II-1_R2",
+   "III_R3",
+   "III_R9",
+   "III_R18",
+   "III_R36",
+   "III_R38"
+  ],
+  "apparatus": [
+   "I_R5",
+   "III_R6"
+  ],
+  "type": [
+   "I_R5",
+   "II-1_R27",
+   "III_R14",
+   "IV_R14"
+  ],
+  "provision": [
+   "I_R5",
+   "II-1_R42",
+   "II-1_R44",
+   "IV_R5",
+   "XI-2_R3",
+   "XI-2_R7"
+  ],
+  "equivalents": [
+   "I_R5",
+   "V_R3"
+  ],
+  "particular": [
+   "I_R5",
+   "I_R18",
+   "II-1_R47",
+   "III_R12",
+   "VI_R1",
+   "VI_R4",
+   "XI-2_R12"
+  ],
+  "fitted": [
+   "I_R5",
+   "II-1_R9",
+   "II-1_R12",
+   "II-1_R14",
+   "II-1_R15",
+   "II-1_R17",
+   "II-1_R19",
+   "II-1_R25",
+   "II-1_R32",
+   "II-1_R35",
+   "II-2_R4",
+   "II-2_R9",
+   "II-2_R19",
+   "III_R28",
+   "IV_R12",
+   "V_R20",
+   "XII_R11",
+   "XII_R12"
+  ],
+  "carried": [
+   "I_R5",
+   "II-1_R8",
+   "II-1_R11",
+   "II-2_R17",
+   "II-2_R19",
+   "III_R7",
+   "III_R16",
+   "III_R20",
+   "III_R38",
+   "V_R21",
+   "VI_R2",
+   "VIII_R9"
+  ],
+  "particulars": [
+   "I_R5",
+   "XI-2_R12"
+  ],
+  "where": [
+   "I_R5",
+   "I_R13",
+   "II-1_R5",
+   "II-1_R6",
+   "II-1_R7",
+   "II-1_R11",
+   "II-1_R14",
+   "II-1_R16",
+   "II-1_R17",
+   "II-1_R27",
+   "II-1_R29",
+   "II-1_R31",
+   "II-1_R35",
+   "II-1_R41",
+   "II-1_R42",
+   "II-1_R43",
+   "II-1_R45",
+   "II-1_R48",
+   "II-1_R53",
+   "II-2_R4",
+   "II-2_R7",
+   "II-2_R9",
+   "III_R3",
+   "III_R35",
+   "V_R16",
+   "V_R24",
+   "V_R25",
+   "V_R26",
+   "VI_R7",
+   "XII_R1"
+  ],
+  "require": [
+   "I_R5",
+   "III_R5"
+  ],
+  "allow": [
+   "I_R5",
+   "XI-2_R12"
+  ],
+  "satisfied": [
+   "I_R5",
+   "I_R13",
+   "V_R16",
+   "VIII_R7",
+   "VIII_R8"
+  ],
+  "trial": [
+   "I_R5"
+  ],
+  "survey": [
+   "I_R6",
+   "I_R7",
+   "I_R8",
+   "I_R9",
+   "I_R10",
+   "I_R11",
+   "I_R12",
+   "I_R14",
+   "III_R26",
+   "V_R19",
+   "VIII_R9",
+   "VIII_R10",
+   "XI-2_R6",
+   "XII_R3",
+   "XII_R7",
+   "XII_R9"
+  ],
+  "recognized": [
+   "I_R6",
+   "I_R11",
+   "IV_R8",
+   "IX_R4",
+   "IX_R6",
+   "XI-1_R1"
+  ],
+  "port": [
+   "I_R6",
+   "I_R11",
+   "I_R19",
+   "II-2_R21",
+   "III_R3",
+   "VII_R4",
+   "VIII_R6",
+   "VIII_R7",
+   "VIII_R11",
+   "XI-1_R4",
+   "XI-2_R1",
+   "XI-2_R2",
+   "XI-2_R3",
+   "XI-2_R4",
+   "XI-2_R9",
+   "XI-2_R10",
+   "XI-2_R11",
+   "XI-2_R13"
+  ],
+  "organizations": [
+   "I_R6",
+   "XI-1_R1"
+  ],
+  "nominated": [
+   "I_R6",
+   "I_R11"
+  ],
+  "surveyor": [
+   "I_R6",
+   "I_R11"
+  ],
+  "state": [
+   "I_R6",
+   "I_R19",
+   "III_R8",
+   "III_R14",
+   "V_R30",
+   "VII_R4",
+   "XI-1_R4",
+   "XI-1_R5"
+  ],
+  "inspection": [
+   "I_R6",
+   "I_R8",
+   "I_R9",
+   "I_R10",
+   "II-1_R21",
+   "VIII_R4",
+   "VIII_R10"
+  ],
+  "inspections": [
+   "I_R6",
+   "I_R10",
+   "III_R36",
+   "XI-1_R2",
+   "XII_R7",
+   "XII_R9"
+  ],
+  "surveys": [
+   "I_R6",
+   "I_R7",
+   "I_R8",
+   "I_R9",
+   "I_R10",
+   "VIII_R4",
+   "VIII_R9",
+   "XI-1_R2",
+   "XII_R7"
+  ],
+  "appropriate": [
+   "I_R6",
+   "I_R13",
+   "I_R20",
+   "II-1_R38",
+   "II-1_R50",
+   "III_R11",
+   "III_R35",
+   "III_R36",
+   "IV_R5",
+   "IV_R12",
+   "IV_R13",
+   "IV_R14",
+   "IV_R16",
+   "V_R5",
+   "V_R14",
+   "VI_R3",
+   "VI_R4",
+   "XI-1_R7",
+   "XI-2_R1",
+   "XII_R8"
+  ],
+  "guidelines": [
+   "I_R6",
+   "I_R8",
+   "I_R16",
+   "II-1_R3",
+   "II-1_R55",
+   "II-2_R17",
+   "III_R18",
+   "III_R24",
+   "III_R29",
+   "III_R38",
+   "V_R10",
+   "V_R11",
+   "V_R12",
+   "V_R13",
+   "V_R15",
+   "V_R29",
+   "V_R34",
+   "VI_R4",
+   "VI_R6",
+   "VII_R5",
+   "VII_R6",
+   "VII_R7",
+   "XIV_R4"
+  ],
+  "system": [
+   "I_R6",
+   "I_R16",
+   "II-1_R29",
+   "II-1_R31",
+   "II-1_R35",
+   "II-1_R39",
+   "II-1_R41",
+   "II-1_R49",
+   "II-1_R51",
+   "II-1_R52",
+   "II-1_R53",
+   "II-2_R4",
+   "II-2_R7",
+   "II-2_R8",
+   "II-2_R10",
+   "II-2_R11",
+   "II-2_R12",
+   "II-2_R16",
+   "II-2_R19",
+   "II-2_R20",
+   "II-2_R21",
+   "II-2_R23",
+   "III_R6",
+   "III_R15",
+   "III_R19",
+   "III_R29",
+   "IV_R2",
+   "IV_R5",
+   "IV_R15",
+   "V_R10"
+  ],
+  "ensure": [
+   "I_R6",
+   "I_R7",
+   "I_R9",
+   "I_R10",
+   "II-1_R1",
+   "II-1_R23",
+   "II-1_R27",
+   "II-1_R46",
+   "II-1_R52",
+   "II-1_R53",
+   "III_R1",
+   "III_R4",
+   "III_R5",
+   "III_R12",
+   "III_R15",
+   "V_R4",
+   "V_R7",
+   "V_R9",
+   "V_R16",
+   "V_R17",
+   "V_R23",
+   "V_R34",
+   "VI_R7",
+   "VIII_R6",
+   "VIII_R7",
+   "XI-2_R3",
+   "XI-2_R5",
+   "XI-2_R7",
+   "XI-2_R10"
+  ],
+  "surveyors": [
+   "I_R6"
+  ],
+  "authorities": [
+   "I_R6"
+  ],
+  "global": [
+   "I_R6",
+   "I_R16",
+   "IV_R5"
+  ],
+  "immediately": [
+   "I_R6",
+   "III_R23",
+   "III_R33",
+   "V_R24",
+   "VIII_R12"
+  ],
+  "notified": [
+   "I_R6"
+  ],
+  "equipment": [
+   "I_R7",
+   "I_R8",
+   "I_R10",
+   "I_R11",
+   "I_R12",
+   "I_R15",
+   "I_R19",
+   "II-1_R3",
+   "II-1_R41",
+   "II-1_R42",
+   "II-1_R43",
+   "II-1_R45",
+   "II-1_R46",
+   "II-2_R18",
+   "II-2_R19",
+   "II-2_R20",
+   "III_R17",
+   "III_R19",
+   "III_R20",
+   "IV_R6",
+   "IV_R7",
+   "IV_R8",
+   "IV_R9",
+   "IV_R10",
+   "IV_R11",
+   "IV_R14",
+   "IV_R15",
+   "IV_R18",
+   "V_R15",
+   "V_R16"
+  ],
+  "appliances": [
+   "I_R7",
+   "I_R8",
+   "I_R9",
+   "I_R18",
+   "II-2_R14",
+   "II-2_R15",
+   "II-2_R18",
+   "III_R1",
+   "III_R4",
+   "III_R5",
+   "III_R18",
+   "III_R19",
+   "III_R20",
+   "III_R22",
+   "III_R32",
+   "III_R34",
+   "III_R35",
+   "III_R36",
+   "III_R37",
+   "III_R38",
+   "XIV_R4"
+  ],
+  "including": [
+   "I_R7",
+   "I_R9",
+   "II-1_R55",
+   "II-1_R26",
+   "II-1_R46",
+   "II-1_R49",
+   "II-1_R56",
+   "II-2_R14",
+   "II-2_R15",
+   "III_R35",
+   "IV_R13",
+   "V_R2",
+   "V_R11",
+   "V_R30",
+   "V_R35",
+   "VII_R15",
+   "IX_R2",
+   "XI-1_R1",
+   "XI-2_R2"
+  ],
+  "boilers": [
+   "I_R7",
+   "II-1_R26",
+   "II-1_R32"
+  ],
+  "service": [
+   "I_R7",
+   "I_R8",
+   "I_R10",
+   "II-1_R18",
+   "II-1_R26",
+   "II-2_R5",
+   "II-2_R7",
+   "II-2_R14",
+   "IV_R2",
+   "IV_R5",
+   "IV_R7",
+   "IV_R8",
+   "IV_R9",
+   "IV_R10",
+   "IV_R17",
+   "IV_R18",
+   "V_R1",
+   "V_R6",
+   "V_R33",
+   "VIII_R5"
+  ],
+  "structure": [
+   "I_R7",
+   "I_R10",
+   "II-2_R11",
+   "VI_R7",
+   "XII_R6"
+  ],
+  "machinery": [
+   "I_R7",
+   "I_R10",
+   "II-1_R26",
+   "II-1_R27",
+   "II-1_R28",
+   "II-1_R30",
+   "II-1_R31",
+   "II-1_R35",
+   "II-1_R37",
+   "II-1_R43",
+   "II-1_R46",
+   "II-1_R47",
+   "II-1_R48",
+   "II-1_R49",
+   "II-1_R50",
+   "II-1_R51",
+   "II-1_R52",
+   "II-1_R53",
+   "II-1_R54",
+   "II-1_R55",
+   "II-2_R4",
+   "II-2_R5",
+   "II-2_R8",
+   "II-2_R9",
+   "II-2_R10",
+   "II-2_R13",
+   "XIV_R4"
+  ],
+  "pressure": [
+   "I_R7",
+   "II-1_R10",
+   "II-1_R16",
+   "II-1_R26",
+   "II-1_R27",
+   "II-1_R33",
+   "II-1_R34",
+   "II-2_R11"
+  ],
+  "life-saving": [
+   "I_R7",
+   "I_R8",
+   "I_R9",
+   "I_R18",
+   "III_R1",
+   "III_R4",
+   "III_R5",
+   "III_R20",
+   "III_R22",
+   "III_R32",
+   "III_R34",
+   "III_R35",
+   "III_R36",
+   "III_R37",
+   "III_R38",
+   "V_R8",
+   "V_R29",
+   "XIV_R4"
+  ],
+  "fire": [
+   "I_R7",
+   "II-1_R39",
+   "II-1_R45",
+   "II-1_R47",
+   "II-2_R23",
+   "II-2_R189",
+   "II-2_R2",
+   "II-2_R3",
+   "II-2_R4",
+   "II-2_R5",
+   "II-2_R6",
+   "II-2_R7",
+   "II-2_R8",
+   "II-2_R9",
+   "II-2_R10",
+   "II-2_R11",
+   "II-2_R12",
+   "II-2_R13",
+   "II-2_R14",
+   "II-2_R15",
+   "II-2_R16",
+   "II-2_R17",
+   "II-2_R18",
+   "II-2_R19",
+   "II-2_R20",
+   "II-2_R21",
+   "II-2_R22",
+   "III_R19",
+   "III_R30",
+   "III_R37"
+  ],
+  "laws": [
+   "I_R7"
+  ],
+  "decrees": [
+   "I_R7"
+  ],
+  "orders": [
+   "I_R7",
+   "II-1_R37"
+  ],
+  "respects": [
+   "I_R7"
+  ],
+  "signals": [
+   "I_R7",
+   "V_R8",
+   "V_R21",
+   "V_R29"
+  ],
+  "referred": [
+   "I_R8",
+   "I_R9",
+   "I_R10",
+   "I_R12",
+   "V_R19",
+   "IX_R3",
+   "XI-1_R1",
+   "XI-1_R3",
+   "XII_R8"
+  ],
+  "paragraph": [
+   "I_R8",
+   "I_R9",
+   "I_R10",
+   "I_R19",
+   "II-1_R42",
+   "II-1_R8",
+   "II-1_R9",
+   "II-1_R12",
+   "II-1_R22",
+   "II-1_R23",
+   "II-1_R25",
+   "II-1_R29",
+   "II-1_R31",
+   "II-1_R43",
+   "II-2_R23",
+   "II-2_R2",
+   "II-2_R4",
+   "II-2_R10",
+   "II-2_R11",
+   "II-2_R14",
+   "II-2_R19",
+   "II-2_R20",
+   "II-2_R21",
+   "III_R1",
+   "III_R6",
+   "III_R7",
+   "III_R20",
+   "III_R21",
+   "III_R22",
+   "III_R26"
+  ],
+  "before": [
+   "I_R8",
+   "I_R9",
+   "I_R10",
+   "I_R14",
+   "II-1_R42",
+   "II-1_R45",
+   "II-1_R1",
+   "II-1_R21",
+   "II-1_R22",
+   "II-1_R23",
+   "II-1_R56",
+   "II-2_R23",
+   "II-2_R189",
+   "III_R1",
+   "III_R4",
+   "III_R26",
+   "IV_R11",
+   "V_R20",
+   "V_R23",
+   "VII_R9",
+   "VII_R12",
+   "VIII_R11",
+   "X_R3",
+   "XI-2_R6",
+   "XII_R3",
+   "XII_R7",
+   "XII_R9"
+  ],
+  "annual": [
+   "I_R8",
+   "I_R10",
+   "V_R35"
+  ],
+  "specified": [
+   "I_R8",
+   "I_R9",
+   "II-1_R55",
+   "II-1_R8",
+   "II-1_R9",
+   "II-1_R10",
+   "IV_R16",
+   "V_R31",
+   "XII_R4"
+  ],
+  "systems": [
+   "I_R8",
+   "II-1_R19",
+   "II-1_R26",
+   "II-1_R31",
+   "II-1_R32",
+   "II-1_R33",
+   "II-1_R34",
+   "II-1_R45",
+   "II-1_R52",
+   "II-1_R55",
+   "II-2_R23",
+   "II-2_R4",
+   "II-2_R7",
+   "II-2_R10",
+   "II-2_R12",
+   "II-2_R14",
+   "II-2_R15",
+   "II-2_R20",
+   "II-2_R21",
+   "II-2_R22",
+   "III_R15",
+   "V_R10",
+   "V_R11",
+   "V_R15",
+   "V_R17",
+   "V_R18",
+   "V_R24",
+   "V_R26",
+   "XII_R13"
+  ],
+  "periodical": [
+   "I_R8",
+   "I_R9",
+   "II-1_R21",
+   "XII_R3",
+   "XII_R7"
+  ],
+  "within": [
+   "I_R8",
+   "II-1_R44",
+   "II-2_R7",
+   "II-2_R22",
+   "IV_R1",
+   "IV_R2",
+   "IV_R9",
+   "IV_R11",
+   "V_R26",
+   "XI-2_R3",
+   "XI-2_R10"
+  ],
+  "months": [
+   "I_R8",
+   "I_R10",
+   "I_R14",
+   "III_R19"
+  ],
+  "after": [
+   "I_R8",
+   "I_R11",
+   "I_R12",
+   "II-1_R42",
+   "II-1_R45",
+   "II-1_R1",
+   "II-1_R2",
+   "II-1_R3",
+   "II-1_R8",
+   "II-1_R56",
+   "II-2_R23",
+   "II-2_R189",
+   "II-2_R21",
+   "II-2_R22",
+   "III_R1",
+   "III_R5",
+   "III_R26",
+   "III_R28",
+   "V_R17",
+   "V_R19",
+   "V_R20",
+   "VII_R9",
+   "VII_R12",
+   "VIII_R10",
+   "X_R2",
+   "X_R3",
+   "XI-2_R6",
+   "XII_R3",
+   "XII_R4",
+   "XII_R5"
+  ],
+  "radio": [
+   "I_R9",
+   "I_R12",
+   "IV_R2",
+   "IV_R4",
+   "IV_R6",
+   "IV_R7",
+   "IV_R8",
+   "IV_R9",
+   "IV_R10",
+   "IV_R11",
+   "IV_R12",
+   "IV_R13",
+   "IV_R15",
+   "IV_R16",
+   "IV_R17",
+   "IV_R18",
+   "V_R18",
+   "V_R21",
+   "V_R31",
+   "XI-2_R6"
+  ],
+  "installations": [
+   "I_R9",
+   "II-1_R39",
+   "II-1_R40",
+   "II-1_R53",
+   "II-1_R55",
+   "IV_R6",
+   "IV_R11",
+   "IV_R13",
+   "IV_R15",
+   "V_R12"
+  ],
+  "those": [
+   "I_R9",
+   "II-1_R55",
+   "II-1_R39",
+   "II-1_R41",
+   "II-1_R54",
+   "II-2_R3",
+   "III_R2",
+   "III_R4",
+   "IV_R14",
+   "V_R4",
+   "V_R18",
+   "XI-2_R8",
+   "XI-2_R12"
+  ],
+  "used": [
+   "I_R9",
+   "I_R15",
+   "II-1_R2",
+   "II-1_R8",
+   "II-1_R45",
+   "II-2_R3",
+   "II-2_R5",
+   "II-2_R6",
+   "II-2_R12",
+   "V_R1",
+   "V_R8",
+   "V_R23",
+   "V_R29",
+   "VII_R7",
+   "XI-2_R2"
+  ],
+  "initial": [
+   "I_R9",
+   "I_R12",
+   "II-1_R11",
+   "II-1_R16"
+  ],
+  "renewal": [
+   "I_R9",
+   "I_R12",
+   "I_R14"
+  ],
+  "certificate": [
+   "I_R9",
+   "I_R10",
+   "I_R12",
+   "I_R13",
+   "I_R14",
+   "I_R16",
+   "I_R18",
+   "VII_R10",
+   "VII_R13",
+   "VII_R16",
+   "VIII_R10",
+   "VIII_R11",
+   "IX_R4",
+   "IX_R6",
+   "XI-1_R5",
+   "XI-2_R9"
+  ],
+  "include": [
+   "I_R9",
+   "I_R10",
+   "I_R15",
+   "II-1_R14",
+   "II-1_R19",
+   "II-2_R16",
+   "III_R19",
+   "III_R36",
+   "V_R7",
+   "V_R26",
+   "VIII_R9"
+  ],
+  "they": [
+   "I_R9",
+   "I_R10",
+   "I_R17",
+   "II-1_R17",
+   "II-1_R27",
+   "II-2_R23",
+   "II-2_R3",
+   "V_R28",
+   "VIII_R9"
+  ],
+  "comply": [
+   "I_R9",
+   "II-1_R56",
+   "II-1_R57",
+   "II-2_R23",
+   "II-2_R189",
+   "II-2_R2",
+   "II-2_R18",
+   "III_R4",
+   "III_R17",
+   "III_R26",
+   "III_R34",
+   "IV_R3",
+   "IV_R11",
+   "VI_R9",
+   "VII_R9",
+   "VII_R10",
+   "VII_R12",
+   "VII_R13",
+   "VII_R16",
+   "IX_R3",
+   "X_R2",
+   "XI-2_R4",
+   "XI-2_R10",
+   "XII_R2",
+   "XII_R3",
+   "XII_R10"
+  ],
+  "satisfactory": [
+   "I_R10",
+   "II-1_R46"
+  ],
+  "intended": [
+   "I_R10",
+   "II-1_R4",
+   "II-1_R11",
+   "II-2_R19",
+   "IV_R6",
+   "V_R27",
+   "V_R34"
+  ],
+  "outside": [
+   "I_R10",
+   "II-2_R8"
+  ],
+  "bottom": [
+   "I_R10",
+   "II-1_R9",
+   "II-1_R25",
+   "XII_R6"
+  ],
+  "maintenance": [
+   "I_R11",
+   "II-2_R14",
+   "III_R20",
+   "III_R36",
+   "IV_R15",
+   "V_R16",
+   "IX_R5",
+   "XII_R7"
+  ],
+  "report": [
+   "I_R11",
+   "V_R28",
+   "VII_R6",
+   "VII_R7"
+  ],
+  "conditions": [
+   "I_R11",
+   "II-1_R5",
+   "II-1_R8",
+   "II-1_R19",
+   "II-1_R26",
+   "II-1_R40",
+   "II-1_R46",
+   "III_R2",
+   "III_R16",
+   "V_R6",
+   "V_R15",
+   "V_R24",
+   "VI_R6",
+   "VIII_R5",
+   "IX_R5"
+  ],
+  "without": [
+   "I_R11",
+   "II-1_R40",
+   "V_R3",
+   "VI_R9"
+  ],
+  "been": [
+   "I_R11",
+   "II-2_R16",
+   "III_R4",
+   "V_R33",
+   "V_R34",
+   "VII_R14",
+   "X_R3",
+   "XI-2_R13"
+  ],
+  "master": [
+   "I_R11",
+   "II-1_R5",
+   "II-1_R20",
+   "II-1_R22",
+   "II-1_R23",
+   "III_R27",
+   "V_R31",
+   "V_R33",
+   "V_R34",
+   "VI_R2",
+   "VI_R6",
+   "VI_R7",
+   "VI_R9",
+   "VII_R6",
+   "VIII_R12",
+   "IX_R4",
+   "XI-2_R5",
+   "XI-2_R8"
+  ],
+  "owner": [
+   "I_R11",
+   "II-2_R14",
+   "IX_R1",
+   "XI-1_R3"
+  ],
+  "condition": [
+   "I_R11",
+   "II-1_R51",
+   "III_R14",
+   "III_R15",
+   "III_R16",
+   "VIII_R12",
+   "XII_R4",
+   "XII_R14"
+  ],
+  "maintained": [
+   "I_R11",
+   "II-1_R44",
+   "IV_R15",
+   "V_R16",
+   "V_R28",
+   "IX_R5"
+  ],
+  "conform": [
+   "I_R11",
+   "IV_R14"
+  ],
+  "provisions": [
+   "I_R11",
+   "I_R18",
+   "I_R21",
+   "II-1_R2",
+   "II-1_R20",
+   "II-2_R19",
+   "III_R24",
+   "V_R10",
+   "V_R11",
+   "V_R19",
+   "VI_R1",
+   "VII_R2",
+   "VII_R3",
+   "VII_R4",
+   "VII_R7",
+   "VII_R10",
+   "VII_R13",
+   "VII_R16",
+   "VIII_R9",
+   "VIII_R10",
+   "IX_R5",
+   "IX_R6",
+   "X_R3",
+   "XI-1_R1",
+   "XI-1_R2",
+   "XI-1_R6",
+   "XI-2_R1",
+   "XI-2_R2",
+   "XI-2_R10",
+   "XII_R3"
+  ],
+  "certificates": [
+   "I_R12",
+   "I_R13",
+   "I_R14",
+   "I_R15",
+   "I_R16",
+   "I_R17",
+   "I_R18",
+   "I_R19",
+   "I_R20",
+   "IV_R16",
+   "VIII_R10",
+   "X_R3",
+   "XI-1_R3"
+  ],
+  "relevant": [
+   "I_R12",
+   "I_R14",
+   "II-1_R20",
+   "II-2_R2",
+   "III_R9",
+   "IV_R2",
+   "V_R10",
+   "VII_R3",
+   "VII_R4",
+   "VIII_R10",
+   "XI-2_R4",
+   "XI-2_R10",
+   "XII_R10"
+  ],
+  "issued": [
+   "I_R12",
+   "I_R13",
+   "I_R14",
+   "I_R16",
+   "I_R17",
+   "I_R18",
+   "VII_R10",
+   "VII_R13",
+   "VII_R16",
+   "VIII_R10",
+   "IX_R4",
+   "IX_R6",
+   "X_R3",
+   "XI-1_R3",
+   "XI-1_R5"
+  ],
+  "called": [
+   "I_R12",
+   "VIII_R10"
+  ],
+  "complies": [
+   "I_R12",
+   "VIII_R10",
+   "IX_R4",
+   "X_R3"
+  ],
+  "chapters": [
+   "I_R12",
+   "VIII_R2",
+   "VIII_R10",
+   "X_R3",
+   "XII_R2",
+   "XIV_R4"
+  ],
+  "issue": [
+   "I_R12",
+   "I_R13"
+  ],
+  "endorsement": [
+   "I_R12",
+   "I_R13"
+  ],
+  "government": [
+   "I_R13",
+   "I_R17",
+   "I_R19",
+   "II-1_R56",
+   "IV_R5",
+   "V_R1",
+   "V_R2",
+   "V_R4",
+   "V_R7",
+   "V_R10",
+   "V_R11",
+   "V_R13",
+   "V_R35",
+   "VII_R15",
+   "IX_R4",
+   "IX_R6",
+   "XI-1_R4",
+   "XI-1_R5",
+   "XI-2_R1",
+   "XI-2_R2",
+   "XI-2_R4",
+   "XI-2_R5",
+   "XI-2_R8",
+   "XI-2_R9",
+   "XI-2_R12",
+   "XIV_R1"
+  ],
+  "another": [
+   "I_R13",
+   "IX_R4",
+   "IX_R6",
+   "XI-1_R4",
+   "XI-1_R5"
+  ],
+  "request": [
+   "I_R13",
+   "IX_R4",
+   "IX_R6"
+  ],
+  "authorize": [
+   "I_R13",
+   "XI-1_R1"
+  ],
+  "same": [
+   "I_R13",
+   "I_R17",
+   "III_R5",
+   "III_R25",
+   "IV_R13",
+   "X_R3"
+  ],
+  "contracting": [
+   "I_R13",
+   "I_R17",
+   "IV_R3",
+   "IV_R5",
+   "V_R1",
+   "V_R4",
+   "V_R5",
+   "V_R6",
+   "V_R7",
+   "V_R8",
+   "V_R9",
+   "V_R10",
+   "V_R11",
+   "V_R12",
+   "V_R13",
+   "V_R14",
+   "V_R19",
+   "V_R33",
+   "VIII_R11",
+   "IX_R4",
+   "IX_R6",
+   "XI-1_R4",
+   "XI-1_R5",
+   "XI-2_R1",
+   "XI-2_R2",
+   "XI-2_R3",
+   "XI-2_R4",
+   "XI-2_R5",
+   "XI-2_R7",
+   "XI-2_R8"
+  ],
+  "cause": [
+   "I_R13",
+   "VI_R3"
+  ],
+  "surveyed": [
+   "I_R13",
+   "VII_R10",
+   "VII_R13",
+   "VII_R16",
+   "X_R3"
+  ],
+  "complied": [
+   "I_R13",
+   "II-1_R1",
+   "III_R1",
+   "X_R3",
+   "XII_R8"
+  ],
+  "endorse": [
+   "I_R13"
+  ],
+  "accordance": [
+   "I_R13",
+   "I_R18",
+   "II-1_R3",
+   "II-1_R6",
+   "II-2_R3",
+   "II-2_R6",
+   "III_R4",
+   "IV_R12",
+   "V_R10",
+   "V_R11",
+   "V_R21",
+   "VII_R4",
+   "VII_R5",
+   "VII_R14",
+   "IX_R5",
+   "IX_R6",
+   "XI-1_R1",
+   "XI-1_R2",
+   "XI-1_R6",
+   "XI-2_R10",
+   "XII_R7",
+   "XII_R8",
+   "XV_ROVERVIEW"
+  ],
+  "contain": [
+   "I_R13",
+   "V_R28"
+  ],
+  "statement": [
+   "I_R13"
+  ],
+  "effect": [
+   "I_R13",
+   "X_R1",
+   "XI-1_R1"
+  ],
+  "date": [
+   "I_R14",
+   "II-1_R55",
+   "II-1_R1",
+   "II-1_R56",
+   "II-2_R189",
+   "V_R9",
+   "V_R27",
+   "VII_R9",
+   "VII_R12",
+   "VII_R15",
+   "IX_R2",
+   "X_R2",
+   "XI-2_R13",
+   "XII_R3",
+   "XII_R11",
+   "XII_R12",
+   "XII_R13",
+   "XV_ROVERVIEW"
+  ],
+  "expiry": [
+   "I_R14"
+  ],
+  "existing": [
+   "I_R14",
+   "III_R1"
+  ],
+  "exceeding": [
+   "I_R14",
+   "II-1_R5"
+  ],
+  "period": [
+   "I_R14",
+   "II-1_R42",
+   "II-1_R43",
+   "II-1_R48",
+   "IV_R13"
+  ],
+  "completed": [
+   "I_R14"
+  ],
+  "years": [
+   "I_R14",
+   "XII_R3",
+   "XII_R7"
+  ],
+  "valid": [
+   "I_R14",
+   "I_R19",
+   "I_R20",
+   "II-1_R17",
+   "II-1_R22",
+   "V_R2",
+   "VIII_R11",
+   "XI-2_R9",
+   "XIV_R1"
+  ],
+  "completion": [
+   "I_R14",
+   "II-1_R20"
+  ],
+  "extension": [
+   "I_R14"
+  ],
+  "five": [
+   "I_R14"
+  ],
+  "granted": [
+   "I_R14",
+   "IV_R3"
+  ],
+  "records": [
+   "I_R15",
+   "IV_R17",
+   "V_R28"
+  ],
+  "forms": [
+   "I_R15"
+  ],
+  "drawn": [
+   "I_R15",
+   "III_R8",
+   "VII_R5"
+  ],
+  "form": [
+   "I_R15",
+   "V_R5",
+   "VII_R1",
+   "VII_R2",
+   "VII_R3",
+   "VII_R4",
+   "VII_R6",
+   "VII_R7"
+  ],
+  "models": [
+   "I_R15"
+  ],
+  "given": [
+   "I_R15",
+   "II-1_R52",
+   "II-2_R19",
+   "XI-2_R4",
+   "XI-2_R10"
+  ],
+  "appendix": [
+   "I_R15",
+   "XV_ROVERVIEW"
+  ],
+  "language": [
+   "I_R15",
+   "III_R8",
+   "V_R14",
+   "VI_R7"
+  ],
+  "neither": [
+   "I_R15",
+   "III_R14"
+  ],
+  "english": [
+   "I_R15",
+   "III_R8",
+   "V_R14"
+  ],
+  "french": [
+   "I_R15"
+  ],
+  "translation": [
+   "I_R15",
+   "I_R16"
+  ],
+  "into": [
+   "I_R15",
+   "II-1_R34",
+   "III_R24",
+   "IV_R3",
+   "V_R14",
+   "V_R17",
+   "V_R34",
+   "VI_R8",
+   "VII_R1",
+   "VII_R7",
+   "VII_R14",
+   "X_R1",
+   "XI-1_R1",
+   "XI-1_R6",
+   "XI-2_R4",
+   "XI-2_R9",
+   "XI-2_R10",
+   "XII_R5"
+  ],
+  "these": [
+   "I_R15",
+   "II-1_R37",
+   "II-1_R54",
+   "III_R8",
+   "III_R22",
+   "III_R30",
+   "IV_R5",
+   "V_R6",
+   "V_R30",
+   "XI-1_R7"
+  ],
+  "languages": [
+   "I_R15",
+   "III_R8"
+  ],
+  "availability": [
+   "I_R16",
+   "XII_R13"
+  ],
+  "board": [
+   "I_R16",
+   "I_R18",
+   "II-1_R6",
+   "II-1_R26",
+   "III_R5",
+   "III_R7",
+   "III_R8",
+   "III_R10",
+   "III_R16",
+   "III_R19",
+   "III_R21",
+   "III_R27",
+   "III_R31",
+   "V_R28",
+   "VI_R5",
+   "VIII_R5",
+   "VIII_R11",
+   "IX_R4",
+   "XI-2_R5",
+   "XV_ROVERVIEW"
+  ],
+  "msc-mepc": [
+   "I_R16"
+  ],
+  "under": [
+   "I_R16",
+   "I_R17",
+   "I_R19",
+   "II-1_R7",
+   "II-1_R40",
+   "II-2_R19",
+   "III_R16",
+   "III_R22",
+   "III_R32",
+   "IV_R3",
+   "VII_R13",
+   "X_R3",
+   "XI-2_R2",
+   "XIV_R1"
+  ],
+  "readily": [
+   "I_R16",
+   "IV_R15",
+   "V_R29"
+  ],
+  "available": [
+   "I_R16",
+   "II-2_R12",
+   "IV_R5",
+   "V_R29",
+   "VII_R4",
+   "XI-2_R5",
+   "XI-2_R13"
+  ],
+  "examination": [
+   "I_R16",
+   "III_R20"
+  ],
+  "times": [
+   "I_R16",
+   "III_R14",
+   "XI-2_R5"
+  ],
+  "electronic": [
+   "I_R16",
+   "V_R17",
+   "V_R18"
+  ],
+  "corr": [
+   "I_R16",
+   "II-1_R55",
+   "II-2_R17",
+   "XIV_R4"
+  ],
+  "collected": [
+   "I_R16"
+  ],
+  "integrated": [
+   "I_R16",
+   "V_R15"
+  ],
+  "shipping": [
+   "I_R16",
+   "VI_R2"
+  ],
+  "gisis": [
+   "I_R16"
+  ],
+  "acceptance": [
+   "I_R17",
+   "II-1_R51"
+  ],
+  "authority": [
+   "I_R17",
+   "VII_R4",
+   "VIII_R12",
+   "XI-2_R1"
+  ],
+  "accepted": [
+   "I_R17",
+   "IV_R11"
+  ],
+  "purposes": [
+   "I_R17",
+   "IV_R16",
+   "VI_R4",
+   "VI_R8"
+  ],
+  "covered": [
+   "I_R17",
+   "XI-2_R11",
+   "XI-2_R13"
+  ],
+  "regarded": [
+   "I_R17"
+  ],
+  "having": [
+   "I_R17",
+   "II-1_R10",
+   "II-1_R46",
+   "II-2_R19",
+   "II-2_R21",
+   "II-2_R22",
+   "III_R12",
+   "III_R28",
+   "VIII_R5",
+   "VIII_R8",
+   "XI-2_R7",
+   "XII_R5",
+   "XII_R8",
+   "XII_R10",
+   "XII_R14"
+  ],
+  "force": [
+   "I_R17",
+   "II-1_R2",
+   "II-1_R18",
+   "V_R31",
+   "V_R32",
+   "VI_R8",
+   "VII_R1",
+   "X_R1",
+   "XI-1_R1"
+  ],
+  "them": [
+   "I_R17"
+  ],
+  "number": [
+   "I_R18",
+   "II-1_R14",
+   "II-2_R10",
+   "III_R7",
+   "III_R10",
+   "III_R21",
+   "III_R22",
+   "III_R31",
+   "III_R32",
+   "XI-1_R3"
+  ],
+  "qualification": [
+   "I_R18"
+  ],
+  "stated": [
+   "I_R18"
+  ],
+  "course": [
+   "I_R18",
+   "III_R2",
+   "V_R32",
+   "X_R2"
+  ],
+  "persons": [
+   "I_R18",
+   "II-1_R6",
+   "II-1_R8",
+   "III_R3",
+   "III_R7",
+   "III_R10",
+   "III_R11",
+   "III_R17",
+   "III_R18",
+   "III_R21",
+   "III_R27",
+   "III_R31",
+   "V_R7",
+   "V_R8",
+   "V_R29",
+   "V_R33"
+  ],
+  "total": [
+   "I_R18",
+   "II-1_R14",
+   "III_R21",
+   "III_R31"
+  ],
+  "consequence": [
+   "I_R18"
+  ],
+  "free": [
+   "I_R18"
+  ],
+  "carry": [
+   "I_R18",
+   "III_R22",
+   "III_R31",
+   "IV_R16",
+   "V_R21",
+   "XI-1_R7",
+   "XII_R5",
+   "XII_R7"
+  ],
+  "smaller": [
+   "I_R18"
+  ],
+  "control": [
+   "I_R19",
+   "II-1_R12",
+   "II-1_R19",
+   "II-1_R24",
+   "II-1_R28",
+   "II-1_R29",
+   "II-1_R30",
+   "II-1_R31",
+   "II-1_R37",
+   "II-1_R38",
+   "II-1_R49",
+   "II-1_R50",
+   "II-1_R51",
+   "II-1_R53",
+   "II-2_R3",
+   "II-2_R4",
+   "II-2_R5",
+   "II-2_R7",
+   "II-2_R8",
+   "II-2_R9",
+   "II-2_R15",
+   "II-2_R23",
+   "III_R30",
+   "V_R24",
+   "V_R26",
+   "VII_R10",
+   "VII_R13",
+   "VII_R16",
+   "VIII_R11",
+   "IX_R6"
+  ],
+  "mepc": [
+   "I_R19"
+  ],
+  "officers": [
+   "I_R19",
+   "II-1_R50",
+   "XI-1_R4",
+   "XI-2_R5",
+   "XI-2_R9"
+  ],
+  "intervention": [
+   "I_R19"
+  ],
+  "officer": [
+   "I_R19",
+   "V_R24",
+   "V_R29"
+  ],
+  "carrying": [
+   "I_R19",
+   "II-1_R14",
+   "III_R36",
+   "VI_R4",
+   "VI_R9",
+   "VII_R2",
+   "VII_R7",
+   "VII_R8",
+   "VII_R11",
+   "VII_R15",
+   "VII_R16",
+   "XI-1_R4",
+   "XII_R14"
+  ],
+  "take": [
+   "I_R19",
+   "II-1_R21",
+   "III_R24",
+   "III_R30",
+   "V_R4",
+   "V_R16",
+   "VIII_R4",
+   "VIII_R6",
+   "IX_R1",
+   "X_R1",
+   "XI-1_R1"
+  ],
+  "proceed": [
+   "I_R19",
+   "III_R2",
+   "V_R33",
+   "X_R2"
+  ],
+  "entitled": [
+   "I_R19",
+   "XI-2_R3"
+  ],
+  "addition": [
+   "I_R19",
+   "II-1_R6",
+   "III_R25",
+   "III_R27",
+   "III_R31",
+   "IV_R9",
+   "IV_R10",
+   "IV_R11",
+   "VI_R9",
+   "VII_R10",
+   "VII_R13",
+   "VII_R16",
+   "VIII_R9",
+   "VIII_R11",
+   "XII_R2",
+   "XII_R10"
+  ],
+  "procedures": [
+   "I_R19",
+   "II-2_R3",
+   "II-2_R6",
+   "II-2_R15",
+   "III_R9",
+   "III_R17",
+   "III_R18",
+   "V_R15",
+   "V_R26",
+   "XI-1_R4"
+  ],
+  "privileges": [
+   "I_R20"
+  ],
+  "claimed": [
+   "I_R20"
+  ],
+  "favour": [
+   "I_R20"
+  ],
+  "holds": [
+   "I_R20",
+   "II-1_R11",
+   "II-1_R25",
+   "XII_R1",
+   "XII_R9"
+  ],
+  "casualties": [
+   "I_R20",
+   "I_R21",
+   "VIII_R12",
+   "XI-1_R6"
+  ],
+  "investigation": [
+   "I_R21",
+   "XI-1_R6"
+  ],
+  "undertakes": [
+   "I_R21",
+   "IV_R5",
+   "V_R7",
+   "V_R13"
+  ],
+  "upon": [
+   "I_R21"
+  ],
+  "conduct": [
+   "I_R21",
+   "XI-1_R6"
+  ],
+  "casualty": [
+   "I_R21",
+   "II-2_R21",
+   "II-2_R22",
+   "XI-1_R6"
+  ],
+  "occurring": [
+   "I_R21"
+  ],
+  "subject": [
+   "I_R21",
+   "II-1_R2",
+   "II-1_R27",
+   "VII_R10",
+   "VII_R13",
+   "VII_R16",
+   "VIII_R4",
+   "VIII_R11",
+   "IX_R6",
+   "XI-1_R2",
+   "XI-1_R4",
+   "XIV_R1"
+  ],
+  "judges": [
+   "I_R21"
+  ],
+  "assist": [
+   "I_R21",
+   "V_R20"
+  ],
+  "determining": [
+   "I_R21"
+  ],
+  "what": [
+   "I_R21",
+   "V_R1"
+  ],
+  "might": [
+   "I_R21",
+   "II-1_R34"
+  ],
+  "desirable": [
+   "I_R21",
+   "IV_R3"
+  ],
+  "constructed": [
+   "II-1_R42",
+   "II-1_R45",
+   "II-1_R1",
+   "II-1_R3",
+   "II-1_R10",
+   "II-1_R25",
+   "II-1_R33",
+   "II-1_R56",
+   "II-2_R23",
+   "II-2_R189",
+   "II-2_R22",
+   "III_R1",
+   "III_R28",
+   "IV_R11",
+   "V_R2",
+   "V_R17",
+   "V_R19",
+   "V_R20",
+   "VII_R8",
+   "VII_R9",
+   "VII_R11",
+   "VII_R12",
+   "X_R2",
+   "X_R3",
+   "XI-1_R3",
+   "XI-2_R6",
+   "XII_R1",
+   "XII_R3",
+   "XII_R4",
+   "XII_R5"
+  ],
+  "july": [
+   "II-1_R42",
+   "II-1_R45",
+   "II-2_R23",
+   "II-2_R189",
+   "III_R1",
+   "III_R17",
+   "III_R22",
+   "III_R26",
+   "III_R28",
+   "III_R29",
+   "III_R32",
+   "V_R17",
+   "V_R19",
+   "V_R20",
+   "V_R23",
+   "VII_R9",
+   "VII_R12",
+   "IX_R2",
+   "X_R3",
+   "XI-1_R3",
+   "XI-2_R6",
+   "XI-2_R13",
+   "XII_R3",
+   "XII_R4",
+   "XII_R5",
+   "XII_R7",
+   "XII_R9",
+   "XII_R11",
+   "XII_R13"
+  ],
+  "starting": [
+   "II-1_R42",
+   "II-1_R30",
+   "II-1_R31",
+   "II-1_R34",
+   "II-1_R43",
+   "II-1_R44",
+   "II-1_R49"
+  ],
+  "emergency": [
+   "II-1_R42",
+   "II-1_R45",
+   "II-1_R3",
+   "II-1_R39",
+   "II-1_R40",
+   "II-1_R41",
+   "II-1_R43",
+   "II-1_R44",
+   "II-2_R12",
+   "II-2_R13",
+   "II-2_R14",
+   "II-2_R15",
+   "II-2_R23",
+   "III_R6",
+   "III_R8",
+   "III_R11",
+   "III_R27",
+   "III_R29",
+   "III_R37",
+   "IV_R13",
+   "IV_R15",
+   "V_R26",
+   "VII_R2"
+  ],
+  "october": [
+   "II-1_R42"
+  ],
+  "second": [
+   "II-1_R42",
+   "II-1_R44"
+  ],
+  "independent": [
+   "II-1_R42",
+   "II-1_R29",
+   "II-1_R37",
+   "II-1_R49"
+  ],
+  "january": [
+   "II-1_R45",
+   "II-1_R55",
+   "II-1_R1",
+   "II-1_R2",
+   "II-1_R3",
+   "II-1_R25",
+   "II-1_R56",
+   "II-2_R23",
+   "II-2_R189",
+   "X_R3",
+   "XIV_R1"
+  ],
+  "building": [
+   "II-1_R45",
+   "II-1_R1",
+   "II-1_R56"
+  ],
+  "contract": [
+   "II-1_R45",
+   "II-1_R1",
+   "II-1_R56"
+  ],
+  "tankers": [
+   "II-1_R45",
+   "II-1_R3",
+   "II-2_R23",
+   "II-2_R189",
+   "VII_R9",
+   "VII_R10",
+   "IX_R2",
+   "XI-1_R2",
+   "XI-2_R6"
+  ],
+  "absence": [
+   "II-1_R45"
+  ],
+  "laid": [
+   "II-1_R45",
+   "II-1_R1",
+   "III_R1"
+  ],
+  "similar": [
+   "II-1_R45",
+   "II-1_R1",
+   "III_R1",
+   "VII_R8",
+   "VII_R11"
+  ],
+  "stage": [
+   "II-1_R45",
+   "II-1_R1",
+   "II-1_R47",
+   "III_R1",
+   "V_R2",
+   "VII_R8",
+   "VII_R11",
+   "VII_R14",
+   "X_R1"
+  ],
+  "towing": [
+   "II-1_R45",
+   "II-1_R3"
+  ],
+  "arrangements": [
+   "II-1_R45",
+   "II-1_R9",
+   "II-1_R17",
+   "II-1_R26",
+   "II-1_R27",
+   "II-1_R32",
+   "II-1_R34",
+   "II-1_R44",
+   "II-1_R46",
+   "II-1_R55",
+   "II-2_R2",
+   "II-2_R4",
+   "II-2_R17",
+   "III_R1",
+   "III_R4",
+   "III_R11",
+   "III_R13",
+   "III_R14",
+   "III_R16",
+   "III_R17",
+   "III_R23",
+   "III_R33",
+   "III_R34",
+   "III_R38",
+   "V_R7",
+   "V_R16",
+   "V_R23",
+   "XI-2_R11",
+   "XI-2_R12",
+   "XIV_R4"
+  ],
+  "carriers": [
+   "II-1_R45",
+   "II-1_R25",
+   "VII_R12",
+   "VII_R13",
+   "IX_R1",
+   "IX_R2",
+   "XI-1_R2",
+   "XI-2_R6",
+   "XII_R1",
+   "XII_R2",
+   "XII_R3",
+   "XII_R4",
+   "XII_R5",
+   "XII_R6",
+   "XII_R7",
+   "XII_R8",
+   "XII_R9",
+   "XII_R10",
+   "XII_R11",
+   "XII_R12",
+   "XII_R13",
+   "XII_R14"
+  ],
+  "deck": [
+   "II-1_R45",
+   "II-1_R2",
+   "II-1_R7",
+   "II-1_R10",
+   "II-1_R12",
+   "II-1_R14",
+   "II-1_R15",
+   "II-1_R16",
+   "II-1_R17",
+   "II-1_R22",
+   "II-1_R23",
+   "II-1_R24",
+   "II-1_R25",
+   "II-1_R35",
+   "II-2_R3",
+   "II-2_R4",
+   "II-2_R6",
+   "II-2_R8",
+   "II-2_R9",
+   "II-2_R13",
+   "II-2_R16",
+   "II-2_R19",
+   "III_R3",
+   "III_R10",
+   "III_R11",
+   "III_R23",
+   "V_R22",
+   "V_R23"
+  ],
+  "placed": [
+   "II-1_R45",
+   "III_R10"
+  ],
+  "delivery": [
+   "II-1_R45",
+   "II-1_R55"
+  ],
+  "later": [
+   "II-1_R45",
+   "III_R26",
+   "III_R27",
+   "V_R19",
+   "V_R20",
+   "IX_R2",
+   "XI-2_R6",
+   "XII_R3",
+   "XII_R13"
+  ],
+  "contractual": [
+   "II-1_R55"
+  ],
+  "lifting": [
+   "II-1_R55"
+  ],
+  "anchor": [
+   "II-1_R55",
+   "II-1_R39"
+  ],
+  "handling": [
+   "II-1_R55",
+   "II-1_R2",
+   "II-2_R16",
+   "VI_R6"
+  ],
+  "winches": [
+   "II-1_R55"
+  ],
+  "expression": [
+   "II-1_R1",
+   "III_R1"
+  ],
+  "draught": [
+   "II-1_R2",
+   "II-1_R5",
+   "II-1_R7",
+   "II-1_R15"
+  ],
+  "subdivision": [
+   "II-1_R2",
+   "II-1_R4",
+   "II-1_R6",
+   "II-1_R7",
+   "II-1_R8",
+   "II-1_R10",
+   "II-1_R11",
+   "II-1_R15",
+   "II-1_R18"
+  ],
+  "length": [
+   "II-1_R2",
+   "II-1_R4",
+   "II-1_R5",
+   "II-1_R6",
+   "II-1_R8",
+   "II-1_R9",
+   "III_R13",
+   "III_R28",
+   "V_R2",
+   "V_R23",
+   "XII_R4",
+   "XII_R5",
+   "XII_R6",
+   "XII_R7",
+   "XII_R10",
+   "XII_R11",
+   "XII_R14"
+  ],
+  "keel": [
+   "II-1_R2",
+   "II-1_R9",
+   "III_R3"
+  ],
+  "water": [
+   "II-1_R2",
+   "II-1_R10",
+   "II-1_R11",
+   "II-1_R16",
+   "II-1_R17",
+   "II-1_R20",
+   "II-1_R24",
+   "II-1_R25",
+   "II-1_R32",
+   "II-1_R33",
+   "II-1_R34",
+   "II-1_R35",
+   "II-2_R10",
+   "II-2_R19",
+   "III_R16",
+   "III_R17",
+   "III_R18",
+   "VIII_R6",
+   "VIII_R7",
+   "XII_R5",
+   "XII_R12"
+  ],
+  "load": [
+   "II-1_R2",
+   "II-1_R18",
+   "VI_R9",
+   "XII_R4",
+   "XII_R14"
+  ],
+  "line": [
+   "II-1_R2",
+   "II-1_R9",
+   "II-1_R18",
+   "XII_R4"
+  ],
+  "adopted": [
+   "II-1_R2",
+   "II-2_R23",
+   "II-2_R189",
+   "III_R28",
+   "IV_R14",
+   "V_R10",
+   "V_R11",
+   "V_R15",
+   "V_R18",
+   "VI_R1",
+   "VI_R8",
+   "VII_R1",
+   "VII_R8",
+   "VII_R11",
+   "VII_R14",
+   "IX_R1",
+   "X_R1",
+   "XI-1_R1",
+   "XI-1_R2",
+   "XI-1_R3",
+   "XI-1_R6",
+   "XI-2_R1",
+   "XII_R7",
+   "XII_R14"
+  ],
+  "forward": [
+   "II-1_R2",
+   "II-1_R39",
+   "III_R13",
+   "V_R22",
+   "XII_R13"
+  ],
+  "access": [
+   "II-1_R3",
+   "II-1_R23",
+   "II-2_R13",
+   "III_R11",
+   "III_R25",
+   "V_R23"
+  ],
+  "safe": [
+   "II-1_R3",
+   "II-2_R12",
+   "II-2_R13",
+   "II-2_R21",
+   "III_R12",
+   "III_R15",
+   "V_R9",
+   "V_R14",
+   "V_R15",
+   "V_R23",
+   "V_R34",
+   "VI_R1",
+   "VI_R2",
+   "VI_R4",
+   "VI_R8"
+  ],
+  "power": [
+   "II-1_R3",
+   "II-1_R12",
+   "II-1_R28",
+   "II-1_R29",
+   "II-1_R30",
+   "II-1_R35",
+   "II-1_R39",
+   "II-1_R40",
+   "II-1_R41",
+   "II-1_R42",
+   "II-1_R43",
+   "II-1_R45",
+   "II-1_R51",
+   "II-1_R53",
+   "III_R11",
+   "IV_R13",
+   "V_R25",
+   "V_R26",
+   "VIII_R7",
+   "VIII_R8"
+  ],
+  "spaces": [
+   "II-1_R3",
+   "II-1_R11",
+   "II-1_R14",
+   "II-1_R17",
+   "II-1_R23",
+   "II-1_R35",
+   "II-1_R39",
+   "II-1_R42",
+   "II-1_R45",
+   "II-1_R46",
+   "II-1_R48",
+   "II-1_R54",
+   "II-2_R3",
+   "II-2_R4",
+   "II-2_R5",
+   "II-2_R6",
+   "II-2_R7",
+   "II-2_R8",
+   "II-2_R9",
+   "II-2_R10",
+   "II-2_R13",
+   "II-2_R19",
+   "II-2_R20",
+   "III_R8",
+   "XI-1_R3",
+   "XI-1_R7"
+  ],
+  "tanks": [
+   "II-1_R3",
+   "II-1_R20",
+   "II-2_R4",
+   "II-2_R11",
+   "II-2_R16",
+   "IX_R1",
+   "XII_R13"
+  ],
+  "stability": [
+   "II-1_R4",
+   "II-1_R5",
+   "II-1_R6",
+   "II-1_R19",
+   "II-1_R20",
+   "VI_R6",
+   "XII_R11"
+  ],
+  "damage": [
+   "II-1_R4",
+   "II-1_R5",
+   "II-1_R6",
+   "II-1_R7",
+   "II-1_R8",
+   "II-1_R9",
+   "II-1_R19",
+   "II-1_R24",
+   "II-2_R21",
+   "III_R29",
+   "III_R30",
+   "VI_R5"
+  ],
+  "compliance": [
+   "II-1_R4",
+   "II-1_R20",
+   "III_R23",
+   "III_R33",
+   "V_R18",
+   "VII_R3",
+   "VIII_R3",
+   "IX_R3",
+   "IX_R4",
+   "XI-2_R4",
+   "XI-2_R9",
+   "XII_R8"
+  ],
+  "parts": [
+   "II-1_R4",
+   "II-1_R41",
+   "II-1_R55",
+   "II-2_R2",
+   "III_R36",
+   "XI-1_R6"
+  ],
+  "except": [
+   "II-1_R4",
+   "II-1_R39",
+   "II-1_R45",
+   "II-1_R52",
+   "II-1_R56",
+   "II-1_R57",
+   "II-2_R5",
+   "II-2_R19",
+   "III_R12",
+   "IV_R4",
+   "IV_R11",
+   "V_R3",
+   "V_R16",
+   "VII_R15",
+   "VIII_R1",
+   "VIII_R2",
+   "VIII_R9"
+  ],
+  "carriage": [
+   "II-1_R4",
+   "II-1_R14",
+   "II-2_R19",
+   "VI_R1",
+   "VI_R8",
+   "VII_R2",
+   "VII_R3",
+   "VII_R4",
+   "VII_R7",
+   "VII_R15",
+   "XII_R8",
+   "XII_R10"
+  ],
+  "degree": [
+   "II-1_R4"
+  ],
+  "general": [
+   "II-1_R4",
+   "II-1_R40",
+   "II-1_R46",
+   "II-2_R12",
+   "II-2_R14",
+   "II-2_R15",
+   "III_R37",
+   "IV_R18",
+   "IV_R7",
+   "IV_R15",
+   "V_R3",
+   "V_R10",
+   "V_R11",
+   "V_R17",
+   "VII_R6"
+  ],
+  "trim": [
+   "II-1_R5",
+   "II-1_R20",
+   "III_R16",
+   "V_R30"
+  ],
+  "intact": [
+   "II-1_R5"
+  ],
+  "data": [
+   "II-1_R5",
+   "V_R5",
+   "V_R9",
+   "V_R18",
+   "V_R20"
+  ],
+  "curves": [
+   "II-1_R5"
+  ],
+  "maximum": [
+   "II-1_R5",
+   "II-1_R16",
+   "II-1_R29",
+   "II-1_R33",
+   "II-2_R11",
+   "VI_R7"
+  ],
+  "lightship": [
+   "II-1_R5"
+  ],
+  "centre": [
+   "II-1_R5",
+   "II-2_R23"
+  ],
+  "gravity": [
+   "II-1_R5"
+  ],
+  "minimum": [
+   "II-1_R5",
+   "V_R14",
+   "XI-1_R7",
+   "XII_R6"
+  ],
+  "displacement": [
+   "II-1_R5"
+  ],
+  "longitudinal": [
+   "II-1_R5",
+   "II-1_R10"
+  ],
+  "determined": [
+   "II-1_R5",
+   "II-1_R6",
+   "II-1_R18",
+   "II-2_R6"
+  ],
+  "deviation": [
+   "II-1_R5"
+  ],
+  "values": [
+   "II-1_R5"
+  ],
+  "tables": [
+   "II-1_R5",
+   "II-2_R9",
+   "III_R9",
+   "V_R27"
+  ],
+  "index": [
+   "II-1_R6",
+   "II-1_R8"
+  ],
+  "case": [
+   "II-1_R6",
+   "II-1_R9",
+   "II-1_R11",
+   "II-1_R18",
+   "II-1_R31",
+   "II-1_R47",
+   "II-1_R49",
+   "III_R8",
+   "VI_R2",
+   "XI-1_R3"
+  ],
+  "calculated": [
+   "II-1_R6",
+   "II-1_R7"
+  ],
+  "greater": [
+   "II-1_R6",
+   "III_R7"
+  ],
+  "considered": [
+   "II-1_R6",
+   "II-1_R54",
+   "V_R16"
+  ],
+  "sufficient": [
+   "II-1_R6",
+   "II-1_R28",
+   "II-2_R19",
+   "III_R10"
+  ],
+  "attained": [
+   "II-1_R6",
+   "II-1_R8"
+  ],
+  "partial": [
+   "II-1_R6",
+   "II-1_R17",
+   "IV_R3"
+  ],
+  "indices": [
+   "II-1_R6"
+  ],
+  "flooding": [
+   "II-1_R7",
+   "II-1_R8",
+   "II-1_R16",
+   "II-1_R48",
+   "XII_R4"
+  ],
+  "compartments": [
+   "II-1_R7",
+   "II-1_R35"
+  ],
+  "assumed": [
+   "II-1_R7",
+   "II-1_R8",
+   "XII_R4"
+  ],
+  "compartment": [
+   "II-1_R7",
+   "II-1_R35",
+   "V_R26"
+  ],
+  "taken": [
+   "II-1_R7",
+   "II-1_R46",
+   "III_R37",
+   "IV_R3",
+   "V_R16",
+   "VI_R4"
+  ],
+  "factor": [
+   "II-1_R7"
+  ],
+  "consideration": [
+   "II-1_R7",
+   "II-1_R26",
+   "II-1_R54",
+   "II-2_R19"
+  ],
+  "watertight": [
+   "II-1_R7",
+   "II-1_R8",
+   "II-1_R10",
+   "II-1_R11",
+   "II-1_R12",
+   "II-1_R14",
+   "II-1_R15",
+   "II-1_R16",
+   "II-1_R17",
+   "II-1_R19",
+   "II-1_R21",
+   "II-1_R22",
+   "II-1_R24"
+  ],
+  "group": [
+   "II-1_R7",
+   "XI-2_R12"
+  ],
+  "openings": [
+   "II-1_R7",
+   "II-1_R15",
+   "II-1_R17",
+   "II-1_R24",
+   "II-2_R11",
+   "III_R15"
+  ],
+  "obtained": [
+   "II-1_R7"
+  ],
+  "horizontal": [
+   "II-1_R7",
+   "V_R22"
+  ],
+  "operational": [
+   "II-1_R8",
+   "II-1_R21",
+   "II-1_R40",
+   "II-2_R14",
+   "II-2_R16",
+   "II-2_R22",
+   "III_R20",
+   "V_R15",
+   "V_R30",
+   "X_R2",
+   "XI-1_R4"
+  ],
+  "loading": [
+   "II-1_R8",
+   "II-1_R20",
+   "VI_R2",
+   "VI_R5",
+   "VI_R6",
+   "VI_R7",
+   "XII_R10",
+   "XII_R11"
+  ],
+  "side": [
+   "II-1_R8",
+   "III_R11",
+   "III_R13",
+   "III_R15",
+   "III_R21",
+   "III_R31",
+   "V_R22",
+   "V_R23",
+   "XII_R1"
+  ],
+  "position": [
+   "II-1_R8",
+   "II-1_R30",
+   "II-1_R37",
+   "II-1_R49",
+   "II-1_R50",
+   "II-1_R51",
+   "II-2_R13",
+   "III_R13",
+   "III_R14",
+   "III_R16",
+   "III_R23",
+   "III_R33",
+   "IV_R6",
+   "IV_R7",
+   "IV_R8",
+   "IV_R9",
+   "IV_R10",
+   "IV_R12",
+   "IV_R18",
+   "V_R22",
+   "V_R28"
+  ],
+  "double": [
+   "II-1_R9",
+   "XII_R1",
+   "XII_R6"
+  ],
+  "whichever": [
+   "II-1_R9"
+  ],
+  "vertical": [
+   "II-1_R9",
+   "II-1_R24",
+   "II-2_R22"
+  ],
+  "distance": [
+   "II-1_R9"
+  ],
+  "damages": [
+   "II-1_R9"
+  ],
+  "protection": [
+   "II-1_R9",
+   "II-1_R30",
+   "II-1_R48",
+   "II-2_R7",
+   "II-2_R14",
+   "III_R24",
+   "III_R32",
+   "V_R12",
+   "V_R34"
+  ],
+  "bulkheads": [
+   "II-1_R10",
+   "II-1_R11",
+   "II-1_R12",
+   "II-1_R17",
+   "II-2_R5",
+   "II-2_R9"
+  ],
+  "bulkhead": [
+   "II-1_R10",
+   "II-1_R12",
+   "II-1_R15",
+   "II-1_R16",
+   "II-1_R17",
+   "II-1_R22",
+   "II-1_R35",
+   "II-1_R39",
+   "XII_R1",
+   "XII_R6",
+   "XII_R13"
+  ],
+  "whether": [
+   "II-1_R10",
+   "II-1_R54",
+   "V_R30"
+  ],
+  "transverse": [
+   "II-1_R10",
+   "XII_R6"
+  ],
+  "scantlings": [
+   "II-1_R10"
+  ],
+  "cases": [
+   "II-1_R10",
+   "II-1_R52",
+   "VIII_R9",
+   "XI-2_R8"
+  ],
+  "capable": [
+   "II-1_R10",
+   "II-1_R12",
+   "II-1_R29",
+   "III_R33",
+   "IV_R4",
+   "IV_R7",
+   "IV_R8",
+   "IV_R9",
+   "IV_R10",
+   "IV_R13",
+   "IV_R15",
+   "IV_R18",
+   "V_R25",
+   "XI-1_R7",
+   "XII_R9",
+   "XII_R11"
+  ],
+  "supporting": [
+   "II-1_R10"
+  ],
+  "least": [
+   "II-1_R10",
+   "II-1_R21",
+   "II-1_R32",
+   "II-1_R37",
+   "II-1_R41",
+   "II-2_R10",
+   "II-2_R13",
+   "II-2_R18",
+   "III_R6",
+   "III_R7",
+   "III_R11",
+   "III_R19",
+   "III_R21",
+   "III_R25",
+   "IV_R12",
+   "IV_R16",
+   "V_R22",
+   "VII_R5",
+   "VII_R9",
+   "VII_R12",
+   "X_R2",
+   "XI-2_R12"
+  ],
+  "head": [
+   "II-1_R10",
+   "II-1_R11",
+   "II-1_R16"
+  ],
+  "freeboard": [
+   "II-1_R10",
+   "II-1_R15",
+   "II-1_R22",
+   "II-1_R25"
+  ],
+  "steps": [
+   "II-1_R10",
+   "V_R4",
+   "V_R16",
+   "XI-2_R9"
+  ],
+  "test": [
+   "II-1_R11",
+   "II-1_R16",
+   "II-2_R3",
+   "II-2_R6",
+   "III_R20",
+   "V_R18"
+  ],
+  "testing": [
+   "II-1_R11",
+   "III_R4",
+   "III_R5",
+   "III_R20",
+   "V_R26",
+   "XI-1_R7"
+  ],
+  "hold": [
+   "II-1_R11",
+   "II-1_R25",
+   "VI_R9",
+   "IX_R6",
+   "XII_R1",
+   "XII_R4",
+   "XII_R5",
+   "XII_R6",
+   "XII_R9",
+   "XII_R12",
+   "XII_R14"
+  ],
+  "liquids": [
+   "II-1_R11",
+   "II-2_R19"
+  ],
+  "filling": [
+   "II-1_R11"
+  ],
+  "hose": [
+   "II-1_R11"
+  ],
+  "practicable": [
+   "II-1_R11",
+   "III_R13",
+   "V_R5"
+  ],
+  "connections": [
+   "II-1_R11"
+  ],
+  "tested": [
+   "II-1_R11",
+   "III_R4",
+   "V_R17"
+  ],
+  "structural": [
+   "II-1_R11",
+   "II-2_R2",
+   "II-2_R11",
+   "XII_R5",
+   "XII_R6"
+  ],
+  "tank": [
+   "II-1_R11",
+   "II-2_R4",
+   "II-2_R11",
+   "II-2_R16",
+   "III_R13",
+   "XII_R12"
+  ],
+  "door": [
+   "II-1_R12",
+   "II-1_R14",
+   "II-1_R16",
+   "II-1_R22"
+  ],
+  "doors": [
+   "II-1_R12",
+   "II-1_R14",
+   "II-1_R16",
+   "II-1_R17",
+   "II-1_R21",
+   "II-1_R22",
+   "II-1_R24",
+   "II-2_R9",
+   "II-2_R13",
+   "II-2_R23"
+  ],
+  "closed": [
+   "II-1_R12",
+   "II-1_R17",
+   "II-1_R22",
+   "II-1_R24",
+   "II-2_R3",
+   "II-2_R19"
+  ],
+  "operating": [
+   "II-1_R12",
+   "III_R9",
+   "III_R10",
+   "V_R30",
+   "VIII_R8",
+   "XI-2_R7",
+   "XIV_R1"
+  ],
+  "above": [
+   "II-1_R12",
+   "II-1_R15",
+   "II-1_R17",
+   "II-1_R25",
+   "II-2_R2",
+   "II-2_R3",
+   "V_R24",
+   "XII_R5",
+   "XII_R6",
+   "XII_R8",
+   "XII_R10",
+   "XII_R12",
+   "XII_R14"
+  ],
+  "being": [
+   "II-1_R12",
+   "II-1_R44",
+   "II-2_R6",
+   "IV_R1",
+   "IV_R7",
+   "IV_R8",
+   "XII_R9"
+  ],
+  "sliding": [
+   "II-1_R12"
+  ],
+  "hydraulic": [
+   "II-1_R12",
+   "II-1_R29"
+  ],
+  "open": [
+   "II-1_R12",
+   "II-2_R3",
+   "II-2_R13"
+  ],
+  "electrical": [
+   "II-1_R12",
+   "II-1_R39",
+   "II-1_R40",
+   "II-1_R41",
+   "II-1_R42",
+   "II-1_R43",
+   "II-1_R45",
+   "II-1_R53",
+   "II-1_R55",
+   "II-2_R20",
+   "III_R11",
+   "IV_R6",
+   "IV_R13",
+   "V_R17",
+   "XIV_R4"
+  ],
+  "vehicles": [
+   "II-1_R14",
+   "II-2_R20"
+  ],
+  "goods": [
+   "II-1_R14",
+   "II-2_R19",
+   "VII_R1",
+   "VII_R2",
+   "VII_R3",
+   "VII_R4",
+   "VII_R6",
+   "VII_R7"
+  ],
+  "accompanying": [
+   "II-1_R14"
+  ],
+  "personnel": [
+   "II-1_R14",
+   "IV_R16",
+   "VIII_R8",
+   "XV_ROVERVIEW"
+  ],
+  "passengers": [
+   "II-1_R14",
+   "II-1_R23",
+   "II-1_R40",
+   "II-2_R12",
+   "III_R19",
+   "III_R25",
+   "III_R27",
+   "III_R30",
+   "III_R37",
+   "VIII_R6",
+   "VIII_R7"
+  ],
+  "stowage": [
+   "II-1_R14",
+   "II-2_R19",
+   "III_R13",
+   "III_R14",
+   "III_R15",
+   "III_R24",
+   "VI_R2",
+   "VI_R5",
+   "VI_R7"
+  ],
+  "designed": [
+   "II-1_R14",
+   "II-1_R31",
+   "II-1_R33",
+   "III_R3",
+   "III_R12",
+   "III_R23",
+   "III_R33",
+   "VIII_R5",
+   "XII_R5"
+  ],
+  "adapted": [
+   "II-1_R14"
+  ],
+  "does": [
+   "II-1_R14",
+   "II-1_R45",
+   "IV_R1"
+  ],
+  "exceed": [
+   "II-1_R14",
+   "V_R22"
+  ],
+  "below": [
+   "II-1_R15",
+   "II-1_R17",
+   "II-1_R24",
+   "V_R1"
+  ],
+  "shell": [
+   "II-1_R15",
+   "II-1_R17",
+   "II-1_R24",
+   "XII_R1",
+   "XII_R6"
+  ],
+  "plating": [
+   "II-1_R15",
+   "II-1_R24"
+  ],
+  "deepest": [
+   "II-1_R15"
+  ],
+  "opening": [
+   "II-1_R15"
+  ],
+  "sidescuttles": [
+   "II-1_R15",
+   "II-1_R21",
+   "II-1_R22"
+  ],
+  "accessible": [
+   "II-1_R15",
+   "XII_R13"
+  ],
+  "closing": [
+   "II-1_R15",
+   "II-1_R21",
+   "II-1_R23"
+  ],
+  "hatches": [
+   "II-1_R16"
+  ],
+  "hatch": [
+   "II-1_R16"
+  ],
+  "closures": [
+   "II-1_R16"
+  ],
+  "trunks": [
+   "II-1_R16"
+  ],
+  "trunk": [
+   "II-1_R16"
+  ],
+  "tests": [
+   "II-1_R16",
+   "II-1_R21",
+   "III_R5",
+   "V_R26"
+  ],
+  "valves": [
+   "II-1_R16",
+   "II-1_R21",
+   "II-1_R27",
+   "II-1_R32"
+  ],
+  "satisfaction": [
+   "II-1_R16",
+   "II-1_R46",
+   "III_R4",
+   "IV_R16",
+   "IV_R17",
+   "VI_R6",
+   "VIII_R4"
+  ],
+  "navigation": [
+   "II-1_R17",
+   "II-1_R22",
+   "II-1_R23",
+   "II-1_R24",
+   "II-1_R37",
+   "II-2_R23",
+   "III_R29",
+   "V_R9",
+   "V_R10",
+   "V_R12",
+   "V_R13",
+   "V_R22",
+   "V_R25",
+   "V_R26",
+   "V_R28",
+   "V_R31",
+   "V_R34",
+   "VIII_R5"
+  ],
+  "bridge": [
+   "II-1_R17",
+   "II-1_R29",
+   "II-1_R31",
+   "II-1_R37",
+   "II-1_R49",
+   "II-1_R50",
+   "II-2_R23",
+   "III_R29",
+   "V_R14",
+   "V_R15",
+   "V_R17",
+   "V_R22",
+   "V_R26"
+  ],
+  "integrity": [
+   "II-1_R17",
+   "II-2_R9",
+   "II-2_R11"
+  ],
+  "until": [
+   "II-1_R17",
+   "II-1_R22",
+   "II-1_R23",
+   "II-1_R51",
+   "IV_R12",
+   "VI_R9"
+  ],
+  "lines": [
+   "II-1_R18",
+   "XII_R4"
+  ],
+  "configuration": [
+   "II-1_R18",
+   "XII_R9"
+  ],
+  "assigned": [
+   "II-1_R18",
+   "III_R37",
+   "XII_R4"
+  ],
+  "marked": [
+   "II-1_R18"
+  ],
+  "operation": [
+   "II-1_R18",
+   "II-1_R21",
+   "II-1_R26",
+   "II-1_R31",
+   "II-1_R42",
+   "II-1_R43",
+   "II-1_R53",
+   "II-2_R15",
+   "II-2_R16",
+   "III_R14",
+   "V_R6",
+   "V_R7",
+   "V_R13",
+   "V_R25",
+   "V_R26",
+   "V_R30",
+   "VIII_R8",
+   "IX_R1",
+   "XII_R13"
+  ],
+  "mark": [
+   "II-1_R18"
+  ],
+  "assigning": [
+   "II-1_R18"
+  ],
+  "marking": [
+   "II-1_R18",
+   "XI-1_R3"
+  ],
+  "recording": [
+   "II-1_R18",
+   "V_R29"
+  ],
+  "modes": [
+   "II-1_R18"
+  ],
+  "alternative": [
+   "II-1_R18",
+   "II-1_R55",
+   "II-2_R17",
+   "III_R38",
+   "IV_R11",
+   "XI-2_R11",
+   "XIV_R4"
+  ],
+  "configurations": [
+   "II-1_R18"
+  ],
+  "drill": [
+   "II-1_R19",
+   "III_R19",
+   "III_R30"
+  ],
+  "crew": [
+   "II-1_R19",
+   "II-1_R40",
+   "II-2_R12",
+   "II-2_R15",
+   "III_R10",
+   "III_R19",
+   "III_R30",
+   "III_R35",
+   "III_R37",
+   "VIII_R6",
+   "VIII_R7",
+   "VIII_R11",
+   "XI-2_R5"
+  ],
+  "list": [
+   "II-1_R19",
+   "III_R8",
+   "III_R10",
+   "III_R16",
+   "III_R36",
+   "III_R37",
+   "V_R30"
+  ],
+  "support": [
+   "II-1_R19",
+   "III_R29"
+  ],
+  "duties": [
+   "II-1_R19",
+   "II-2_R15",
+   "III_R37",
+   "VIII_R8"
+  ],
+  "shore-based": [
+   "II-1_R19",
+   "IV_R5"
+  ],
+  "every": [
+   "II-1_R19",
+   "II-1_R32",
+   "II-1_R33",
+   "II-1_R34",
+   "III_R6",
+   "III_R8",
+   "III_R19",
+   "III_R25",
+   "III_R26",
+   "III_R30",
+   "IV_R4",
+   "IV_R6",
+   "IV_R7",
+   "IV_R12",
+   "IV_R16",
+   "V_R29",
+   "V_R31",
+   "IX_R4",
+   "XI-1_R7"
+  ],
+  "responsibilities": [
+   "II-1_R19"
+  ],
+  "simulated": [
+   "II-1_R19"
+  ],
+  "muster": [
+   "II-1_R19",
+   "III_R8",
+   "III_R11",
+   "III_R22",
+   "III_R25",
+   "III_R35",
+   "III_R37"
+  ],
+  "bilge": [
+   "II-1_R19",
+   "II-1_R25",
+   "II-1_R35",
+   "II-1_R39",
+   "II-1_R48",
+   "II-2_R19"
+  ],
+  "there": [
+   "II-1_R19",
+   "III_R10",
+   "VIII_R6",
+   "VIII_R7",
+   "VIII_R11",
+   "XI-1_R4"
+  ],
+  "ballast": [
+   "II-1_R20",
+   "XII_R12"
+  ],
+  "fuel": [
+   "II-1_R20",
+   "II-1_R26",
+   "II-1_R55",
+   "II-2_R4",
+   "II-2_R18",
+   "VII_R14"
+  ],
+  "oily-water": [
+   "II-1_R20"
+  ],
+  "prior": [
+   "II-1_R20",
+   "III_R27",
+   "III_R33",
+   "V_R34",
+   "VI_R6",
+   "XI-2_R3",
+   "XI-2_R4",
+   "XII_R10"
+  ],
+  "departure": [
+   "II-1_R20",
+   "III_R27"
+  ],
+  "determine": [
+   "II-1_R20"
+  ],
+  "also": [
+   "II-1_R20",
+   "III_R10",
+   "III_R23",
+   "III_R37",
+   "IV_R12",
+   "V_R21",
+   "VIII_R12"
+  ],
+  "ascertain": [
+   "II-1_R20"
+  ],
+  "record": [
+   "II-1_R20",
+   "IV_R17",
+   "V_R28",
+   "XI-1_R5"
+  ],
+  "upright": [
+   "II-1_R20"
+  ],
+  "criteria": [
+   "II-1_R20",
+   "II-1_R55",
+   "II-2_R17",
+   "II-2_R22",
+   "III_R38",
+   "V_R10",
+   "V_R11"
+  ],
+  "week": [
+   "II-1_R21"
+  ],
+  "mechanisms": [
+   "II-1_R21"
+  ],
+  "once": [
+   "II-1_R21",
+   "VIII_R9"
+  ],
+  "scuppers": [
+   "II-1_R21"
+  ],
+  "place": [
+   "II-1_R21",
+   "II-1_R23",
+   "III_R30",
+   "III_R37",
+   "V_R16",
+   "X_R2",
+   "XI-2_R7"
+  ],
+  "weekly": [
+   "II-1_R21",
+   "III_R30"
+  ],
+  "exceeds": [
+   "II-1_R21"
+  ],
+  "duration": [
+   "II-1_R21"
+  ],
+  "complete": [
+   "II-1_R21"
+  ],
+  "held": [
+   "II-1_R21"
+  ],
+  "during": [
+   "II-1_R22",
+   "II-1_R23",
+   "II-1_R24",
+   "II-2_R6",
+   "III_R16",
+   "III_R20",
+   "IV_R16",
+   "V_R6",
+   "VI_R5",
+   "VI_R7",
+   "XI-1_R2",
+   "XII_R7"
+  ],
+  "opened": [
+   "II-1_R22",
+   "II-1_R24"
+  ],
+  "commences": [
+   "II-1_R22",
+   "II-1_R23"
+  ],
+  "kept": [
+   "II-1_R22",
+   "II-1_R24",
+   "II-2_R14",
+   "IV_R12",
+   "IV_R17",
+   "V_R30",
+   "VIII_R8",
+   "IX_R4"
+  ],
+  "time": [
+   "II-1_R22",
+   "II-1_R28",
+   "II-1_R48",
+   "II-1_R51",
+   "III_R3",
+   "III_R17",
+   "IV_R13",
+   "V_R32"
+  ],
+  "locked": [
+   "II-1_R22"
+  ],
+  "ro-ro": [
+   "II-1_R23",
+   "II-2_R19",
+   "II-2_R20",
+   "III_R26",
+   "III_R28",
+   "V_R20"
+  ],
+  "accesses": [
+   "II-1_R23"
+  ],
+  "special": [
+   "II-1_R23",
+   "II-1_R26",
+   "II-1_R53",
+   "II-1_R54",
+   "II-2_R19",
+   "II-2_R20",
+   "III_R2",
+   "III_R27",
+   "V_R25",
+   "VII_R2",
+   "VII_R7",
+   "VIII_R5",
+   "VIII_R9",
+   "VIII_R11"
+  ],
+  "permit": [
+   "II-1_R23",
+   "III_R25",
+   "VIII_R7"
+  ],
+  "effective": [
+   "II-1_R23",
+   "II-2_R12",
+   "V_R15",
+   "XI-2_R12"
+  ],
+  "secured": [
+   "II-1_R23",
+   "VI_R5",
+   "VII_R5"
+  ],
+  "category": [
+   "II-1_R23",
+   "II-2_R9",
+   "II-2_R13",
+   "II-2_R20"
+  ],
+  "additional": [
+   "II-1_R24",
+   "II-1_R30",
+   "II-1_R44",
+   "II-1_R54",
+   "XI-1_R6"
+  ],
+  "prevention": [
+   "II-1_R24"
+  ],
+  "ingress": [
+   "II-1_R24",
+   "XII_R12"
+  ],
+  "limiting": [
+   "II-1_R24"
+  ],
+  "permanently": [
+   "II-1_R24"
+  ],
+  "level": [
+   "II-1_R25",
+   "II-1_R32",
+   "II-1_R48",
+   "III_R38",
+   "XI-2_R3",
+   "XI-2_R4",
+   "XI-2_R7",
+   "XII_R12"
+  ],
+  "detectors": [
+   "II-1_R25",
+   "II-2_R7",
+   "XII_R12"
+  ],
+  "height": [
+   "II-1_R25",
+   "III_R24",
+   "V_R22",
+   "XI-1_R3",
+   "XII_R12"
+  ],
+  "visual": [
+   "II-1_R25",
+   "II-1_R37",
+   "II-1_R51",
+   "XII_R12"
+  ],
+  "alarm": [
+   "II-1_R25",
+   "II-1_R30",
+   "II-1_R32",
+   "II-1_R38",
+   "II-1_R51",
+   "II-1_R52",
+   "II-1_R53",
+   "II-2_R7",
+   "II-2_R12",
+   "II-2_R14",
+   "II-2_R23",
+   "III_R37",
+   "XII_R12"
+  ],
+  "inner": [
+   "II-1_R25",
+   "XII_R6"
+  ],
+  "propulsion": [
+   "II-1_R26",
+   "II-1_R27",
+   "II-1_R31",
+   "II-1_R41",
+   "II-1_R47",
+   "II-1_R49",
+   "II-1_R50",
+   "II-1_R52",
+   "II-1_R53",
+   "V_R3"
+  ],
+  "design": [
+   "II-1_R26",
+   "II-1_R29",
+   "II-1_R55",
+   "II-2_R17",
+   "II-2_R22",
+   "II-2_R23",
+   "III_R38",
+   "V_R15",
+   "VIII_R4",
+   "XII_R9",
+   "XIV_R4"
+  ],
+  "essential": [
+   "II-1_R26",
+   "II-1_R32",
+   "II-1_R39",
+   "II-1_R40",
+   "II-1_R53"
+  ],
+  "normal": [
+   "II-1_R26",
+   "II-1_R28",
+   "II-1_R40",
+   "II-1_R41",
+   "II-1_R48",
+   "II-1_R51",
+   "VIII_R5"
+  ],
+  "main": [
+   "II-1_R26",
+   "II-1_R27",
+   "II-1_R29",
+   "II-1_R30",
+   "II-1_R31",
+   "II-1_R34",
+   "II-1_R35",
+   "II-1_R41",
+   "II-1_R42",
+   "II-1_R43",
+   "II-1_R49",
+   "II-1_R50",
+   "II-1_R53",
+   "II-2_R10",
+   "II-2_R21",
+   "II-2_R22"
+  ],
+  "regard": [
+   "II-1_R26",
+   "III_R12",
+   "III_R28",
+   "VI_R7",
+   "VIII_R5"
+  ],
+  "sources": [
+   "II-1_R26",
+   "II-1_R39",
+   "IV_R13"
+  ],
+  "internal": [
+   "II-1_R27",
+   "II-1_R34",
+   "II-2_R21"
+  ],
+  "relief": [
+   "II-1_R27"
+  ],
+  "auxiliary": [
+   "II-1_R27",
+   "II-1_R30",
+   "II-1_R40"
+  ],
+  "engines": [
+   "II-1_R27",
+   "II-1_R34",
+   "II-1_R37"
+  ],
+  "combustion": [
+   "II-1_R27"
+  ],
+  "crankcase": [
+   "II-1_R27"
+  ],
+  "explosion": [
+   "II-1_R27",
+   "II-2_R2"
+  ],
+  "automatic": [
+   "II-1_R27",
+   "II-1_R31",
+   "II-1_R49",
+   "II-1_R52",
+   "II-1_R53"
+  ],
+  "risk": [
+   "II-1_R27",
+   "II-2_R2",
+   "II-2_R9",
+   "II-2_R19"
+  ],
+  "overspeeding": [
+   "II-1_R27"
+  ],
+  "going": [
+   "II-1_R28"
+  ],
+  "astern": [
+   "II-1_R28"
+  ],
+  "recorded": [
+   "II-1_R28",
+   "III_R27",
+   "XII_R8"
+  ],
+  "ability": [
+   "II-1_R28"
+  ],
+  "demonstrated": [
+   "II-1_R28",
+   "II-1_R44"
+  ],
+  "stopping": [
+   "II-1_R28"
+  ],
+  "trials": [
+   "II-1_R28"
+  ],
+  "propellers": [
+   "II-1_R28",
+   "II-1_R31"
+  ],
+  "secure": [
+   "II-1_R28"
+  ],
+  "proper": [
+   "II-1_R28",
+   "V_R17",
+   "IX_R6"
+  ],
+  "reverse": [
+   "II-1_R28"
+  ],
+  "direction": [
+   "II-1_R28",
+   "II-1_R49"
+  ],
+  "thrust": [
+   "II-1_R28",
+   "II-1_R49"
+  ],
+  "propeller": [
+   "II-1_R28",
+   "II-1_R31",
+   "II-1_R49",
+   "III_R12",
+   "III_R13"
+  ],
+  "bring": [
+   "II-1_R28"
+  ],
+  "rest": [
+   "II-1_R28"
+  ],
+  "steering": [
+   "II-1_R29",
+   "II-1_R30",
+   "II-1_R53",
+   "V_R24",
+   "V_R25",
+   "V_R26"
+  ],
+  "gear": [
+   "II-1_R29",
+   "II-1_R30",
+   "III_R20",
+   "V_R25",
+   "V_R26"
+  ],
+  "rudder": [
+   "II-1_R29",
+   "V_R26"
+  ],
+  "speed": [
+   "II-1_R29",
+   "II-1_R31",
+   "II-1_R49",
+   "V_R30",
+   "IX_R2",
+   "X_R1",
+   "X_R2"
+  ],
+  "ahead": [
+   "II-1_R29",
+   "V_R22"
+  ],
+  "navigating": [
+   "II-1_R29",
+   "II-1_R31",
+   "II-1_R37",
+   "II-1_R49",
+   "II-1_R50"
+  ],
+  "tanker": [
+   "II-1_R29",
+   "VII_R9",
+   "VII_R10",
+   "IX_R1",
+   "XI-2_R1"
+  ],
+  "failure": [
+   "II-1_R29",
+   "II-1_R31",
+   "II-1_R32"
+  ],
+  "electric": [
+   "II-1_R30",
+   "II-1_R41"
+  ],
+  "electrohydraulic": [
+   "II-1_R30"
+  ],
+  "circuits": [
+   "II-1_R30",
+   "II-1_R45"
+  ],
+  "motors": [
+   "II-1_R30"
+  ],
+  "switchboard": [
+   "II-1_R30",
+   "II-1_R41",
+   "II-1_R42",
+   "II-1_R43"
+  ],
+  "supplying": [
+   "II-1_R30"
+  ],
+  "circuit": [
+   "II-1_R30"
+  ],
+  "current": [
+   "II-1_R30",
+   "II-1_R45"
+  ],
+  "motor": [
+   "II-1_R30"
+  ],
+  "connected": [
+   "II-1_R30",
+   "II-1_R33",
+   "IV_R17"
+  ],
+  "simultaneously": [
+   "II-1_R30"
+  ],
+  "remote": [
+   "II-1_R31",
+   "II-1_R49",
+   "IV_R8",
+   "V_R26"
+  ],
+  "pitch": [
+   "II-1_R31",
+   "II-1_R49"
+  ],
+  "navigational": [
+   "II-1_R31",
+   "V_R4",
+   "V_R15",
+   "V_R17",
+   "V_R18",
+   "V_R19",
+   "V_R24",
+   "V_R28"
+  ],
+  "following": [
+   "II-1_R31",
+   "II-2_R14",
+   "II-2_R18",
+   "III_R36",
+   "XI-2_R2",
+   "XII_R3"
+  ],
+  "steam": [
+   "II-1_R32",
+   "II-1_R33"
+  ],
+  "boiler": [
+   "II-1_R32",
+   "II-1_R47",
+   "II-1_R52",
+   "II-1_R53"
+  ],
+  "feed": [
+   "II-1_R32"
+  ],
+  "overpressure": [
+   "II-1_R32",
+   "II-1_R34"
+  ],
+  "supply": [
+   "II-1_R32",
+   "II-1_R41",
+   "II-1_R42",
+   "II-1_R43",
+   "II-1_R47",
+   "II-1_R51",
+   "IV_R13"
+  ],
+  "unfired": [
+   "II-1_R32"
+  ],
+  "generator": [
+   "II-1_R32",
+   "II-1_R43",
+   "II-1_R53"
+  ],
+  "pipe": [
+   "II-1_R33"
+  ],
+  "valve": [
+   "II-1_R33",
+   "XII_R13"
+  ],
+  "thereto": [
+   "II-1_R33",
+   "VII_R9",
+   "VII_R12",
+   "X_R2"
+  ],
+  "through": [
+   "II-1_R33",
+   "II-1_R45",
+   "IV_R6",
+   "IV_R10",
+   "V_R35",
+   "XI-2_R5",
+   "XI-2_R7"
+  ],
+  "pass": [
+   "II-1_R33"
+  ],
+  "installed": [
+   "II-1_R33",
+   "II-1_R45",
+   "II-2_R7",
+   "III_R5",
+   "IV_R6",
+   "V_R18",
+   "XII_R12"
+  ],
+  "withstand": [
+   "II-1_R33"
+  ],
+  "working": [
+   "II-1_R33",
+   "V_R14",
+   "V_R16"
+  ],
+  "stresses": [
+   "II-1_R33"
+  ],
+  "subjected": [
+   "II-1_R33",
+   "III_R5"
+  ],
+  "draining": [
+   "II-1_R33",
+   "XII_R13"
+  ],
+  "dangerous": [
+   "II-1_R33",
+   "II-2_R19",
+   "V_R31",
+   "V_R34",
+   "VII_R1",
+   "VII_R2",
+   "VII_R3",
+   "VII_R4",
+   "VII_R6",
+   "VII_R7",
+   "VII_R8"
+  ],
+  "hammer": [
+   "II-1_R33"
+  ],
+  "pipes": [
+   "II-1_R34"
+  ],
+  "compressors": [
+   "II-1_R34"
+  ],
+  "discharge": [
+   "II-1_R34"
+  ],
+  "receivers": [
+   "II-1_R34"
+  ],
+  "prevent": [
+   "II-1_R34"
+  ],
+  "compressed": [
+   "II-1_R34",
+   "II-1_R44"
+  ],
+  "wherever": [
+   "II-1_R34",
+   "III_R36"
+  ],
+  "jackets": [
+   "II-1_R34"
+  ],
+  "casings": [
+   "II-1_R34",
+   "II-1_R47"
+  ],
+  "coolers": [
+   "II-1_R34"
+  ],
+  "pump": [
+   "II-1_R35",
+   "II-1_R48",
+   "II-2_R10"
+  ],
+  "pumping": [
+   "II-1_R35",
+   "XII_R13"
+  ],
+  "space": [
+   "II-1_R35",
+   "II-1_R37",
+   "II-1_R48",
+   "II-2_R4",
+   "II-2_R5",
+   "II-2_R7",
+   "II-2_R8",
+   "II-2_R9",
+   "II-2_R10",
+   "II-2_R13",
+   "II-2_R17",
+   "II-2_R19",
+   "II-2_R20",
+   "II-2_R21",
+   "II-2_R23",
+   "V_R5",
+   "VI_R3",
+   "XII_R12"
+  ],
+  "pumps": [
+   "II-1_R35",
+   "II-1_R39",
+   "II-1_R48",
+   "II-2_R10"
+  ],
+  "suction": [
+   "II-1_R35"
+  ],
+  "suctions": [
+   "II-1_R35"
+  ],
+  "diameter": [
+   "II-1_R35"
+  ],
+  "situated": [
+   "II-1_R35"
+  ],
+  "communication": [
+   "II-1_R37",
+   "II-1_R50",
+   "II-2_R12",
+   "IV_R17"
+  ],
+  "controlled": [
+   "II-1_R37"
+  ],
+  "room": [
+   "II-1_R37",
+   "II-1_R38",
+   "II-1_R50",
+   "III_R25",
+   "III_R35"
+  ],
+  "between": [
+   "II-1_R37",
+   "II-1_R50",
+   "II-2_R23",
+   "III_R15",
+   "IV_R5",
+   "XII_R6"
+  ],
+  "communicating": [
+   "II-1_R37",
+   "V_R8"
+  ],
+  "telegraph": [
+   "II-1_R37"
+  ],
+  "provides": [
+   "II-1_R37"
+  ],
+  "indication": [
+   "II-1_R37"
+  ],
+  "responses": [
+   "II-1_R37"
+  ],
+  "engineer": [
+   "II-1_R38",
+   "II-1_R50"
+  ],
+  "operated": [
+   "II-1_R38",
+   "II-2_R7",
+   "V_R1",
+   "VII_R15",
+   "IX_R3"
+  ],
+  "engine": [
+   "II-1_R38"
+  ],
+  "manoeuvring": [
+   "II-1_R38",
+   "II-1_R46"
+  ],
+  "platform": [
+   "II-1_R38",
+   "II-2_R18",
+   "V_R23"
+  ],
+  "clearly": [
+   "II-1_R38"
+  ],
+  "audible": [
+   "II-1_R38",
+   "II-1_R51",
+   "XII_R12"
+  ],
+  "engineers": [
+   "II-1_R38",
+   "II-1_R51"
+  ],
+  "accommodation": [
+   "II-1_R38",
+   "II-1_R50",
+   "II-2_R5",
+   "II-2_R7",
+   "II-2_R9",
+   "III_R11",
+   "V_R23"
+  ],
+  "location": [
+   "II-1_R39",
+   "II-1_R49",
+   "III_R25",
+   "XI-2_R13",
+   "XII_R13"
+  ],
+  "collision": [
+   "II-1_R39",
+   "XII_R13"
+  ],
+  "specifically": [
+   "II-1_R39"
+  ],
+  "serving": [
+   "II-1_R39"
+  ],
+  "fixed": [
+   "II-1_R39",
+   "II-2_R7",
+   "II-2_R10",
+   "II-2_R20",
+   "XI-2_R11"
+  ],
+  "fire-extinguishing": [
+   "II-1_R39",
+   "II-2_R10",
+   "II-2_R15"
+  ],
+  "ensured": [
+   "II-1_R40"
+  ],
+  "services": [
+   "II-1_R40",
+   "II-1_R41",
+   "II-1_R42",
+   "II-1_R43",
+   "IV_R5",
+   "V_R5",
+   "V_R6",
+   "V_R7",
+   "V_R9",
+   "V_R12"
+  ],
+  "necessary": [
+   "II-1_R40",
+   "II-1_R41",
+   "II-1_R53",
+   "II-1_R54",
+   "III_R5",
+   "V_R4",
+   "V_R7",
+   "V_R13",
+   "V_R14",
+   "V_R27",
+   "XI-2_R8"
+  ],
+  "maintaining": [
+   "II-1_R40"
+  ],
+  "habitable": [
+   "II-1_R40"
+  ],
+  "recourse": [
+   "II-1_R40"
+  ],
+  "source": [
+   "II-1_R40",
+   "II-1_R41",
+   "II-1_R42",
+   "II-1_R43",
+   "II-1_R44",
+   "III_R11",
+   "IV_R13",
+   "V_R4"
+  ],
+  "various": [
+   "II-1_R40"
+  ],
+  "hazards": [
+   "II-1_R40",
+   "II-2_R19",
+   "VIII_R6",
+   "VIII_R7",
+   "VIII_R11"
+  ],
+  "lighting": [
+   "II-1_R41",
+   "II-1_R42",
+   "II-1_R43",
+   "III_R11"
+  ],
+  "generating": [
+   "II-1_R41",
+   "II-1_R44"
+  ],
+  "sets": [
+   "II-1_R41",
+   "II-1_R44"
+  ],
+  "provide": [
+   "II-1_R41",
+   "II-1_R55",
+   "II-2_R13",
+   "II-2_R17",
+   "III_R38",
+   "V_R13",
+   "XI-1_R5",
+   "XI-2_R7",
+   "XIV_R4"
+  ],
+  "battery": [
+   "II-1_R42",
+   "II-1_R43",
+   "IV_R13"
+  ],
+  "accumulator": [
+   "II-1_R42",
+   "II-1_R43"
+  ],
+  "located": [
+   "II-1_R42",
+   "II-1_R48"
+  ],
+  "hours": [
+   "II-1_R42",
+   "IV_R13"
+  ],
+  "automatically": [
+   "II-1_R43",
+   "II-1_R48",
+   "II-1_R52"
+  ],
+  "transitional": [
+   "II-1_R43"
+  ],
+  "associated": [
+   "II-1_R43",
+   "II-2_R18"
+  ],
+  "transforming": [
+   "II-1_R43"
+  ],
+  "energy": [
+   "II-1_R44",
+   "IV_R13"
+  ],
+  "manual": [
+   "II-1_R44",
+   "II-2_R15",
+   "III_R29",
+   "III_R35",
+   "V_R21",
+   "V_R24",
+   "VI_R5",
+   "VII_R5",
+   "VIII_R8"
+  ],
+  "devices": [
+   "II-1_R44",
+   "II-2_R11",
+   "III_R6"
+  ],
+  "stored": [
+   "II-1_R44"
+  ],
+  "three": [
+   "II-1_R44",
+   "V_R35"
+  ],
+  "starts": [
+   "II-1_R44"
+  ],
+  "started": [
+   "II-1_R44"
+  ],
+  "cables": [
+   "II-1_R45"
+  ],
+  "earthed": [
+   "II-1_R45"
+  ],
+  "wiring": [
+   "II-1_R45"
+  ],
+  "precautions": [
+   "II-1_R45",
+   "II-1_R47",
+   "VI_R1",
+   "VI_R4"
+  ],
+  "reliable": [
+   "II-1_R46",
+   "II-1_R50",
+   "V_R4"
+  ],
+  "sailing": [
+   "II-1_R46",
+   "V_R27",
+   "XII_R14"
+  ],
+  "equivalent": [
+   "II-1_R46",
+   "II-1_R54",
+   "II-2_R11",
+   "II-2_R18",
+   "III_R4",
+   "VII_R5",
+   "XI-2_R12"
+  ],
+  "manned": [
+   "II-1_R46"
+  ],
+  "measures": [
+   "II-1_R46",
+   "V_R14",
+   "VIII_R6",
+   "XI-2_R7",
+   "XI-2_R8",
+   "XI-2_R9",
+   "XI-2_R12",
+   "XIV_R4"
+  ],
+  "functioning": [
+   "II-1_R46",
+   "IX_R6"
+  ],
+  "manner": [
+   "II-1_R46"
+  ],
+  "detect": [
+   "II-1_R47"
+  ],
+  "give": [
+   "II-1_R47",
+   "III_R9"
+  ],
+  "alarms": [
+   "II-1_R47",
+   "II-1_R51",
+   "XII_R12"
+  ],
+  "early": [
+   "II-1_R47"
+  ],
+  "fires": [
+   "II-1_R47"
+  ],
+  "exhausts": [
+   "II-1_R47"
+  ],
+  "uptakes": [
+   "II-1_R47"
+  ],
+  "scavenging": [
+   "II-1_R47"
+  ],
+  "belts": [
+   "II-1_R47"
+  ],
+  "considers": [
+   "II-1_R47",
+   "III_R2"
+  ],
+  "unnecessary": [
+   "II-1_R47",
+   "III_R2"
+  ],
+  "controls": [
+   "II-1_R48",
+   "III_R9"
+  ],
+  "against": [
+   "II-1_R48"
+  ],
+  "wells": [
+   "II-1_R48"
+  ],
+  "unattended": [
+   "II-1_R48",
+   "II-1_R54"
+  ],
+  "influx": [
+   "II-1_R48"
+  ],
+  "operate": [
+   "II-1_R48"
+  ],
+  "periodically": [
+   "II-1_R48",
+   "II-1_R54",
+   "IX_R6"
+  ],
+  "possible": [
+   "II-1_R49",
+   "III_R12",
+   "III_R17",
+   "III_R36",
+   "V_R9",
+   "V_R12",
+   "V_R13",
+   "V_R24",
+   "V_R33",
+   "VII_R6"
+  ],
+  "controllable": [
+   "II-1_R49"
+  ],
+  "device": [
+   "II-1_R49",
+   "III_R26"
+  ],
+  "vocal": [
+   "II-1_R50"
+  ],
+  "fault": [
+   "II-1_R51"
+  ],
+  "attention": [
+   "II-1_R51"
+  ],
+  "indicate": [
+   "II-1_R51",
+   "XII_R8"
+  ],
+  "function": [
+   "II-1_R51",
+   "V_R17"
+  ],
+  "connection": [
+   "II-1_R51"
+  ],
+  "cabins": [
+   "II-1_R51"
+  ],
+  "activate": [
+   "II-1_R51"
+  ],
+  "indicated": [
+   "II-1_R51"
+  ],
+  "shut-down": [
+   "II-1_R52"
+  ],
+  "serious": [
+   "II-1_R52"
+  ],
+  "activated": [
+   "II-1_R52",
+   "XI-2_R6"
+  ],
+  "malfunction": [
+   "II-1_R52"
+  ],
+  "operations": [
+   "II-1_R52",
+   "II-2_R16",
+   "II-2_R18",
+   "V_R8",
+   "VI_R7"
+  ],
+  "immediate": [
+   "II-1_R52"
+  ],
+  "danger": [
+   "II-1_R52",
+   "V_R31",
+   "V_R32"
+  ],
+  "initiate": [
+   "II-1_R52"
+  ],
+  "plant": [
+   "II-1_R52",
+   "VIII_R7",
+   "VIII_R8"
+  ],
+  "could": [
+   "II-1_R52"
+  ],
+  "supplied": [
+   "II-1_R53",
+   "III_R11"
+  ],
+  "respect": [
+   "II-1_R54",
+   "V_R2",
+   "XI-1_R4",
+   "XI-2_R3"
+  ],
+  "specially": [
+   "II-1_R54",
+   "III_R12"
+  ],
+  "stipulated": [
+   "II-1_R54"
+  ],
+  "achieve": [
+   "II-1_R54",
+   "II-2_R2"
+  ],
+  "attended": [
+   "II-1_R54"
+  ],
+  "low-flashpoint": [
+   "II-1_R55",
+   "II-1_R56",
+   "II-1_R57"
+  ],
+  "engineering": [
+   "II-1_R55",
+   "II-2_R17",
+   "III_R38"
+  ],
+  "storage": [
+   "II-1_R55"
+  ],
+  "distribution": [
+   "II-1_R55",
+   "VI_R6"
+  ],
+  "prescriptive": [
+   "II-1_R55",
+   "II-2_R2",
+   "II-2_R17",
+   "III_R38",
+   "XIV_R4"
+  ],
+  "analysis": [
+   "II-1_R55",
+   "II-2_R17",
+   "III_R38",
+   "VI_R3"
+  ],
+  "performance": [
+   "II-1_R55",
+   "II-2_R17",
+   "III_R6",
+   "III_R38",
+   "IV_R14",
+   "V_R16",
+   "V_R18",
+   "V_R20",
+   "XI-2_R6"
+  ],
+  "meet": [
+   "II-1_R55",
+   "II-2_R17",
+   "III_R38",
+   "V_R22"
+  ],
+  "concerned": [
+   "II-1_R55",
+   "II-2_R17",
+   "III_R38",
+   "V_R4",
+   "V_R10",
+   "V_R11",
+   "V_R31",
+   "XI-2_R7"
+  ],
+  "fuels": [
+   "II-1_R56",
+   "II-1_R57"
+  ],
+  "using": [
+   "II-1_R56",
+   "II-1_R57",
+   "IV_R8",
+   "IV_R9",
+   "IV_R10",
+   "V_R34",
+   "VI_R4"
+  ],
+  "paragraphs": [
+   "II-1_R56",
+   "V_R26",
+   "XI-1_R3"
+  ],
+  "irrespective": [
+   "II-1_R56",
+   "VII_R9",
+   "VII_R12"
+  ],
+  "treated": [
+   "II-1_R56",
+   "VI_R9",
+   "VII_R10",
+   "VII_R13",
+   "VII_R16",
+   "IX_R3",
+   "XI-1_R1"
+  ],
+  "commenced": [
+   "II-1_R56"
+  ],
+  "upwards": [
+   "II-2_R23",
+   "III_R28",
+   "III_R33",
+   "IV_R1",
+   "V_R19",
+   "V_R20",
+   "IX_R2",
+   "XII_R5",
+   "XII_R7",
+   "XII_R10",
+   "XII_R11",
+   "XII_R14"
+  ],
+  "need": [
+   "II-2_R23",
+   "III_R27",
+   "III_R30",
+   "V_R21",
+   "XII_R12"
+  ],
+  "first": [
+   "II-2_R23",
+   "III_R17",
+   "III_R26",
+   "V_R19",
+   "V_R20",
+   "VII_R2",
+   "XI-2_R6",
+   "XII_R3"
+  ],
+  "foam": [
+   "II-2_R189",
+   "II-2_R18"
+  ],
+  "chemical": [
+   "II-2_R189",
+   "VII_R8",
+   "VII_R9",
+   "VII_R10",
+   "IX_R1",
+   "IX_R2"
+  ],
+  "objectives": [
+   "II-2_R2"
+  ],
+  "functional": [
+   "II-2_R2",
+   "IV_R3",
+   "IV_R4"
+  ],
+  "origin": [
+   "II-2_R2",
+   "II-2_R21"
+  ],
+  "designs": [
+   "II-2_R2",
+   "XIV_R4"
+  ],
+  "reduce": [
+   "II-2_R2"
+  ],
+  "caused": [
+   "II-2_R2"
+  ],
+  "escape": [
+   "II-2_R2",
+   "II-2_R7",
+   "II-2_R13",
+   "II-2_R15",
+   "III_R24"
+  ],
+  "thermal": [
+   "II-2_R2",
+   "III_R22",
+   "III_R24"
+  ],
+  "boundaries": [
+   "II-2_R2"
+  ],
+  "whole": [
+   "II-2_R2"
+  ],
+  "damper": [
+   "II-2_R3"
+  ],
+  "class": [
+   "II-2_R3",
+   "II-2_R9",
+   "II-2_R19"
+  ],
+  "temperature": [
+   "II-2_R3",
+   "V_R32"
+  ],
+  "smoke": [
+   "II-2_R3",
+   "II-2_R6",
+   "II-2_R7",
+   "II-2_R8"
+  ],
+  "area": [
+   "II-2_R3",
+   "II-2_R21",
+   "III_R28",
+   "IV_R2",
+   "IV_R8",
+   "IV_R9",
+   "IV_R18"
+  ],
+  "ignition": [
+   "II-2_R4",
+   "II-2_R20"
+  ],
+  "inert": [
+   "II-2_R4",
+   "II-2_R11",
+   "II-2_R16"
+  ],
+  "slop": [
+   "II-2_R4"
+  ],
+  "flammable": [
+   "II-2_R4",
+   "II-2_R16",
+   "II-2_R19",
+   "VI_R3",
+   "XI-1_R7"
+  ],
+  "materials": [
+   "II-2_R5"
+  ],
+  "combustible": [
+   "II-2_R5"
+  ],
+  "linings": [
+   "II-2_R5"
+  ],
+  "ventilation": [
+   "II-2_R5",
+   "II-2_R8",
+   "II-2_R9",
+   "II-2_R19",
+   "II-2_R20"
+  ],
+  "non-combustible": [
+   "II-2_R5"
+  ],
+  "surfaces": [
+   "II-2_R5"
+  ],
+  "ceilings": [
+   "II-2_R5"
+  ],
+  "cabin": [
+   "II-2_R5"
+  ],
+  "balconies": [
+   "II-2_R5"
+  ],
+  "stations": [
+   "II-2_R5",
+   "II-2_R8",
+   "II-2_R22",
+   "III_R11",
+   "III_R12",
+   "III_R22",
+   "III_R25",
+   "IV_R8"
+  ],
+  "toxic": [
+   "II-2_R6",
+   "VI_R3"
+  ],
+  "products": [
+   "II-2_R6"
+  ],
+  "finishes": [
+   "II-2_R6"
+  ],
+  "paints": [
+   "II-2_R6"
+  ],
+  "varnishes": [
+   "II-2_R6"
+  ],
+  "primary": [
+   "II-2_R6",
+   "IV_R16"
+  ],
+  "coverings": [
+   "II-2_R6"
+  ],
+  "generation": [
+   "II-2_R6"
+  ],
+  "potential": [
+   "II-2_R6",
+   "II-2_R17"
+  ],
+  "toxicity": [
+   "II-2_R6"
+  ],
+  "exposed": [
+   "II-2_R6"
+  ],
+  "detection": [
+   "II-2_R7",
+   "II-2_R14",
+   "VI_R3"
+  ],
+  "corridors": [
+   "II-2_R7"
+  ],
+  "arranged": [
+   "II-2_R7"
+  ],
+  "stairways": [
+   "II-2_R7",
+   "II-2_R13"
+  ],
+  "routes": [
+   "II-2_R7",
+   "II-2_R13",
+   "V_R35",
+   "XI-2_R11"
+  ],
+  "spread": [
+   "II-2_R8"
+  ],
+  "atriums": [
+   "II-2_R8"
+  ],
+  "event": [
+   "II-2_R8",
+   "III_R8",
+   "VIII_R12"
+  ],
+  "release": [
+   "II-2_R8",
+   "III_R20"
+  ],
+  "extraction": [
+   "II-2_R8",
+   "VII_R14"
+  ],
+  "order": [
+   "II-2_R8",
+   "III_R37",
+   "V_R9",
+   "V_R16",
+   "IX_R4"
+  ],
+  "decks": [
+   "II-2_R9"
+  ],
+  "divisions": [
+   "II-2_R9",
+   "II-2_R11"
+  ],
+  "ducts": [
+   "II-2_R9"
+  ],
+  "duct": [
+   "II-2_R9"
+  ],
+  "extinguishers": [
+   "II-2_R10"
+  ],
+  "vacuum": [
+   "II-2_R11"
+  ],
+  "venting": [
+   "II-2_R11"
+  ],
+  "steel": [
+   "II-2_R11",
+   "II-2_R18"
+  ],
+  "public": [
+   "II-2_R12",
+   "III_R6",
+   "VIII_R6",
+   "VIII_R7"
+  ],
+  "address": [
+   "II-2_R12",
+   "III_R6",
+   "XI-1_R5"
+  ],
+  "notification": [
+   "II-2_R12"
+  ],
+  "notify": [
+   "II-2_R12"
+  ],
+  "evacuation": [
+   "II-2_R12",
+   "II-2_R22",
+   "III_R15"
+  ],
+  "notifying": [
+   "II-2_R12"
+  ],
+  "complying": [
+   "II-2_R12",
+   "III_R7",
+   "III_R8",
+   "III_R16",
+   "III_R18",
+   "III_R21",
+   "III_R22",
+   "III_R25",
+   "III_R26",
+   "III_R31",
+   "III_R32",
+   "IV_R6",
+   "XII_R9"
+  ],
+  "route": [
+   "II-2_R13"
+  ],
+  "embarkation": [
+   "II-2_R13",
+   "III_R11",
+   "III_R15",
+   "III_R17",
+   "III_R23",
+   "III_R25",
+   "III_R33"
+  ],
+  "stairway": [
+   "II-2_R13"
+  ],
+  "fire-fighting": [
+   "II-2_R14",
+   "II-2_R15",
+   "II-2_R18",
+   "II-2_R22"
+  ],
+  "plan": [
+   "II-2_R14",
+   "III_R29",
+   "V_R7",
+   "VI_R7",
+   "XI-2_R13"
+  ],
+  "readiness": [
+   "II-2_R14",
+   "III_R14"
+  ],
+  "training": [
+   "II-2_R15",
+   "III_R19",
+   "III_R35"
+  ],
+  "onboard": [
+   "II-2_R15"
+  ],
+  "drills": [
+   "II-2_R15",
+   "III_R19",
+   "III_R30",
+   "V_R26"
+  ],
+  "plans": [
+   "II-2_R15",
+   "III_R17",
+   "III_R18",
+   "III_R29"
+  ],
+  "instructions": [
+   "II-2_R15",
+   "III_R8",
+   "III_R9",
+   "III_R35",
+   "III_R36",
+   "III_R37",
+   "VI_R3"
+  ],
+  "members": [
+   "II-2_R15",
+   "XI-2_R5"
+  ],
+  "booklet": [
+   "II-2_R16",
+   "VI_R7",
+   "XII_R8"
+  ],
+  "gas-freeing": [
+   "II-2_R16"
+  ],
+  "identification": [
+   "II-2_R17",
+   "III_R38",
+   "V_R19",
+   "XI-1_R3"
+  ],
+  "deviate": [
+   "II-2_R17",
+   "III_R38",
+   "IV_R3",
+   "XIV_R4"
+  ],
+  "helicopter": [
+   "II-2_R18",
+   "III_R28",
+   "III_R29"
+  ],
+  "facilities": [
+   "II-2_R18",
+   "IV_R5",
+   "V_R7",
+   "V_R8",
+   "XI-2_R2",
+   "XI-2_R3",
+   "XI-2_R10",
+   "XI-2_R11"
+  ],
+  "helideck": [
+   "II-2_R18"
+  ],
+  "refuelling": [
+   "II-2_R18"
+  ],
+  "helidecks": [
+   "II-2_R18"
+  ],
+  "capacity": [
+   "II-2_R19",
+   "III_R21",
+   "III_R31"
+  ],
+  "drainage": [
+   "II-2_R19"
+  ],
+  "ammonium": [
+   "II-2_R19"
+  ],
+  "nitrate": [
+   "II-2_R19"
+  ],
+  "solids": [
+   "II-2_R19"
+  ],
+  "applicable": [
+   "II-2_R19",
+   "III_R34",
+   "V_R26",
+   "VI_R4",
+   "VI_R9",
+   "VII_R9",
+   "VII_R10",
+   "VII_R12",
+   "VII_R13",
+   "VII_R16",
+   "VIII_R9",
+   "XII_R2",
+   "XII_R10",
+   "XII_R14",
+   "XV_ROVERVIEW"
+  ],
+  "fertilizers": [
+   "II-2_R19"
+  ],
+  "notes": [
+   "II-2_R19"
+  ],
+  "substances": [
+   "II-2_R19"
+  ],
+  "involved": [
+   "II-2_R19",
+   "III_R30"
+  ],
+  "different": [
+   "II-2_R19",
+   "III_R37"
+  ],
+  "solid": [
+   "II-2_R19",
+   "VI_R1",
+   "VI_R3",
+   "VI_R6",
+   "VI_R7",
+   "VII_R7",
+   "XII_R5",
+   "XII_R8",
+   "XII_R10"
+  ],
+  "non-": [
+   "II-2_R19"
+  ],
+  "imdg": [
+   "II-2_R19",
+   "VII_R1",
+   "VII_R3",
+   "VII_R4"
+  ],
+  "flashpoint": [
+   "II-2_R19"
+  ],
+  "enclosed": [
+   "II-2_R19",
+   "III_R19",
+   "XI-1_R7"
+  ],
+  "prohibited": [
+   "II-2_R19"
+  ],
+  "listed": [
+   "II-2_R19"
+  ],
+  "subsidiary": [
+   "II-2_R19"
+  ],
+  "mechanically-ventilated": [
+   "II-2_R19"
+  ],
+  "stow": [
+   "II-2_R19"
+  ],
+  "horizontally": [
+   "II-2_R19"
+  ],
+  "vehicle": [
+   "II-2_R20",
+   "VII_R4"
+  ],
+  "threshold": [
+   "II-2_R21"
+  ],
+  "return": [
+   "II-2_R21"
+  ],
+  "areas": [
+   "II-2_R21",
+   "III_R28",
+   "III_R29",
+   "IV_R9",
+   "IV_R10",
+   "IV_R11",
+   "V_R12",
+   "V_R24",
+   "V_R25",
+   "V_R30"
+  ],
+  "alternate": [
+   "II-2_R21"
+  ],
+  "medical": [
+   "II-2_R21",
+   "V_R2",
+   "VII_R2"
+  ],
+  "care": [
+   "II-2_R21",
+   "III_R27"
+  ],
+  "remain": [
+   "II-2_R22"
+  ],
+  "unserviceable": [
+   "II-2_R22"
+  ],
+  "zone": [
+   "II-2_R22"
+  ],
+  "zones": [
+   "II-2_R22"
+  ],
+  "communications": [
+   "II-2_R22",
+   "IV_R2",
+   "IV_R4",
+   "IV_R15",
+   "IV_R18",
+   "V_R14"
+  ],
+  "guidance": [
+   "II-2_R22",
+   "VIII_R8",
+   "XI-2_R4",
+   "XI-2_R10"
+  ],
+  "center": [
+   "II-2_R23"
+  ],
+  "management": [
+   "II-2_R23",
+   "V_R6",
+   "IX_R1",
+   "IX_R3",
+   "IX_R4",
+   "IX_R5",
+   "IX_R6"
+  ],
+  "layout": [
+   "II-2_R23"
+  ],
+  "ergonomic": [
+   "II-2_R23"
+  ],
+  "central": [
+   "II-2_R23"
+  ],
+  "station": [
+   "II-2_R23",
+   "III_R11",
+   "III_R15",
+   "IV_R2"
+  ],
+  "replaced": [
+   "III_R1"
+  ],
+  "keels": [
+   "III_R1"
+  ],
+  "trade": [
+   "III_R2"
+  ],
+  "exempt": [
+   "III_R2",
+   "IV_R11"
+  ],
+  "rules": [
+   "III_R2"
+  ],
+  "annexed": [
+   "III_R2"
+  ],
+  "sheltered": [
+   "III_R2"
+  ],
+  "nature": [
+   "III_R2",
+   "V_R3"
+  ],
+  "render": [
+   "III_R2"
+  ],
+  "specific": [
+   "III_R2",
+   "XI-2_R5"
+  ],
+  "unreasonable": [
+   "III_R2",
+   "VIII_R6",
+   "VIII_R7",
+   "VIII_R11"
+  ],
+  "individual": [
+   "III_R2",
+   "IV_R3"
+  ],
+  "craft": [
+   "III_R3",
+   "III_R6",
+   "III_R9",
+   "III_R10",
+   "III_R11",
+   "III_R12",
+   "III_R13",
+   "III_R14",
+   "III_R16",
+   "III_R21",
+   "III_R23",
+   "III_R24",
+   "III_R31",
+   "III_R33",
+   "III_R35",
+   "III_R37",
+   "V_R2",
+   "IX_R1",
+   "IX_R2",
+   "X_R1",
+   "X_R2",
+   "X_R3",
+   "XI-2_R1",
+   "XI-2_R2",
+   "XI-2_R6",
+   "XV_ROVERVIEW"
+  ],
+  "rescue": [
+   "III_R3",
+   "III_R6",
+   "III_R14",
+   "III_R17",
+   "III_R19",
+   "III_R20",
+   "III_R21",
+   "III_R23",
+   "III_R26",
+   "III_R27",
+   "III_R31",
+   "III_R35",
+   "V_R2",
+   "V_R7",
+   "V_R8",
+   "V_R29",
+   "V_R33"
+  ],
+  "boat": [
+   "III_R3",
+   "III_R14",
+   "III_R17",
+   "III_R21",
+   "III_R23",
+   "III_R26"
+  ],
+  "survival": [
+   "III_R3",
+   "III_R6",
+   "III_R9",
+   "III_R10",
+   "III_R11",
+   "III_R12",
+   "III_R13",
+   "III_R14",
+   "III_R16",
+   "III_R17",
+   "III_R21",
+   "III_R23",
+   "III_R24",
+   "III_R31",
+   "III_R33",
+   "III_R35",
+   "III_R37"
+  ],
+  "launching": [
+   "III_R3",
+   "III_R9",
+   "III_R12",
+   "III_R13",
+   "III_R14",
+   "III_R15",
+   "III_R16",
+   "III_R17",
+   "III_R19",
+   "III_R21",
+   "III_R33",
+   "III_R35"
+  ],
+  "moulded": [
+   "III_R3"
+  ],
+  "measured": [
+   "III_R3"
+  ],
+  "depth": [
+   "III_R3"
+  ],
+  "suit": [
+   "III_R3"
+  ],
+  "recovery": [
+   "III_R3",
+   "III_R14",
+   "III_R16",
+   "III_R17",
+   "III_R18"
+  ],
+  "person": [
+   "III_R3",
+   "III_R8",
+   "III_R10",
+   "VII_R4",
+   "XI-2_R8"
+  ],
+  "approval": [
+   "III_R4",
+   "V_R18",
+   "VIII_R4"
+  ],
+  "evaluation": [
+   "III_R4",
+   "VIII_R7"
+  ],
+  "giving": [
+   "III_R4",
+   "XII_R12"
+  ],
+  "recommendations": [
+   "III_R4",
+   "III_R28",
+   "V_R9",
+   "V_R13",
+   "V_R17",
+   "VI_R4"
+  ],
+  "successfully": [
+   "III_R4"
+  ],
+  "undergone": [
+   "III_R4"
+  ],
+  "would": [
+   "III_R4",
+   "IV_R1"
+  ],
+  "production": [
+   "III_R5",
+   "VI_R5"
+  ],
+  "recommendation": [
+   "III_R5",
+   "V_R18"
+  ],
+  "manufactured": [
+   "III_R5"
+  ],
+  "standard": [
+   "III_R5",
+   "VI_R6",
+   "VII_R5"
+  ],
+  "prototype": [
+   "III_R5"
+  ],
+  "revised": [
+   "III_R5",
+   "VI_R4"
+  ],
+  "life": [
+   "III_R5",
+   "IV_R17",
+   "V_R12"
+  ],
+  "saving": [
+   "III_R5"
+  ],
+  "search": [
+   "III_R6",
+   "III_R26",
+   "III_R27",
+   "V_R2",
+   "V_R7",
+   "V_R8",
+   "V_R21",
+   "V_R29",
+   "V_R33"
+  ],
+  "locating": [
+   "III_R6",
+   "III_R26"
+  ],
+  "two-way": [
+   "III_R6"
+  ],
+  "radiotelephone": [
+   "III_R6"
+  ],
+  "standards": [
+   "III_R6",
+   "IV_R14",
+   "V_R18",
+   "V_R20",
+   "VIII_R4",
+   "XI-1_R6",
+   "XI-2_R6"
+  ],
+  "lifejackets": [
+   "III_R7",
+   "III_R22"
+  ],
+  "lifebuoys": [
+   "III_R7",
+   "III_R22",
+   "III_R32"
+  ],
+  "lifebuoy": [
+   "III_R7"
+  ],
+  "lifeboat": [
+   "III_R7",
+   "III_R13",
+   "III_R17",
+   "III_R19"
+  ],
+  "stowed": [
+   "III_R7",
+   "III_R13",
+   "III_R14",
+   "III_R15",
+   "III_R16",
+   "III_R22",
+   "III_R23",
+   "III_R31",
+   "III_R33",
+   "VII_R5"
+  ],
+  "equal": [
+   "III_R7"
+  ],
+  "lights": [
+   "III_R7",
+   "III_R22",
+   "III_R32",
+   "V_R27"
+  ],
+  "infant": [
+   "III_R7"
+  ],
+  "watch": [
+   "III_R7",
+   "IV_R9",
+   "IV_R10",
+   "IV_R11",
+   "IV_R12",
+   "V_R29"
+  ],
+  "lifeboats": [
+   "III_R7",
+   "III_R10",
+   "III_R13",
+   "III_R20",
+   "III_R21",
+   "III_R23",
+   "III_R31",
+   "III_R33"
+  ],
+  "personal": [
+   "III_R7",
+   "III_R22",
+   "III_R32"
+  ],
+  "clear": [
+   "III_R8",
+   "XI-1_R4",
+   "XI-2_R9"
+  ],
+  "followed": [
+   "III_R8"
+  ],
+  "flag": [
+   "III_R8",
+   "XI-1_R5",
+   "XI-2_R3"
+  ],
+  "lists": [
+   "III_R8",
+   "V_R27"
+  ],
+  "exhibited": [
+   "III_R8"
+  ],
+  "symbols": [
+   "III_R9",
+   "III_R13"
+  ],
+  "signs": [
+   "III_R9"
+  ],
+  "refer": [
+   "III_R9",
+   "III_R13",
+   "V_R3",
+   "V_R29",
+   "VII_R2",
+   "VII_R6",
+   "VII_R7"
+  ],
+  "posters": [
+   "III_R9"
+  ],
+  "vicinity": [
+   "III_R9",
+   "III_R25",
+   "V_R17"
+  ],
+  "illustrate": [
+   "III_R9"
+  ],
+  "warnings": [
+   "III_R9",
+   "V_R4",
+   "V_R5"
+  ],
+  "charge": [
+   "III_R10",
+   "IV_R13",
+   "V_R24"
+  ],
+  "manning": [
+   "III_R10",
+   "V_R14",
+   "V_R15"
+  ],
+  "supervision": [
+   "III_R10"
+  ],
+  "certificated": [
+   "III_R10"
+  ],
+  "liferafts": [
+   "III_R10",
+   "III_R11",
+   "III_R13",
+   "III_R21",
+   "III_R23",
+   "III_R26",
+   "III_R31",
+   "III_R33"
+  ],
+  "command": [
+   "III_R10"
+  ],
+  "trained": [
+   "III_R10"
+  ],
+  "mustering": [
+   "III_R10"
+  ],
+  "assisting": [
+   "III_R10"
+  ],
+  "close": [
+   "III_R11",
+   "IV_R8"
+  ],
+  "positions": [
+   "III_R12",
+   "III_R15"
+  ],
+  "clearance": [
+   "III_R12",
+   "XII_R6"
+  ],
+  "steeply": [
+   "III_R12"
+  ],
+  "overhanging": [
+   "III_R12"
+  ],
+  "portions": [
+   "III_R12"
+  ],
+  "hull": [
+   "III_R12",
+   "XII_R11"
+  ],
+  "free-fall": [
+   "III_R12"
+  ],
+  "launched": [
+   "III_R12",
+   "III_R17",
+   "III_R23",
+   "III_R33"
+  ],
+  "down": [
+   "III_R12",
+   "V_R32"
+  ],
+  "straight": [
+   "III_R12"
+  ],
+  "liferaft": [
+   "III_R13",
+   "III_R23",
+   "III_R26",
+   "III_R31",
+   "III_R33"
+  ],
+  "either": [
+   "III_R13",
+   "III_R16",
+   "III_R23",
+   "IV_R6",
+   "IV_R8",
+   "IV_R9",
+   "IV_R10",
+   "V_R13",
+   "XI-1_R3"
+  ],
+  "boats": [
+   "III_R14",
+   "III_R20",
+   "III_R21",
+   "III_R26",
+   "III_R35"
+  ],
+  "inflated": [
+   "III_R14"
+  ],
+  "continuous": [
+   "III_R14",
+   "IV_R2",
+   "IV_R9",
+   "IV_R12",
+   "V_R15",
+   "XI-1_R5"
+  ],
+  "fully": [
+   "III_R14",
+   "IV_R13",
+   "VIII_R8",
+   "X_R2"
+  ],
+  "suitable": [
+   "III_R14",
+   "V_R5"
+  ],
+  "interfere": [
+   "III_R14"
+  ],
+  "marine": [
+   "III_R15",
+   "III_R35",
+   "V_R11",
+   "V_R12",
+   "V_R34",
+   "XI-1_R6"
+  ],
+  "waterline": [
+   "III_R15"
+  ],
+  "lightest": [
+   "III_R15",
+   "III_R16"
+  ],
+  "seagoing": [
+   "III_R15",
+   "III_R16"
+  ],
+  "protect": [
+   "III_R15"
+  ],
+  "projections": [
+   "III_R15"
+  ],
+  "unfavourable": [
+   "III_R16"
+  ],
+  "directly": [
+   "III_R16",
+   "III_R23",
+   "III_R33"
+  ],
+  "loaded": [
+   "III_R17",
+   "VI_R5",
+   "VII_R5",
+   "VII_R7",
+   "XII_R4"
+  ],
+  "complement": [
+   "III_R17"
+  ],
+  "boarded": [
+   "III_R17",
+   "III_R23",
+   "III_R33"
+  ],
+  "shortest": [
+   "III_R17"
+  ],
+  "line-throwing": [
+   "III_R18"
+  ],
+  "development": [
+   "III_R18"
+  ],
+  "checking": [
+   "III_R19"
+  ],
+  "abandon": [
+   "III_R19",
+   "III_R30"
+  ],
+  "entry": [
+   "III_R19"
+  ],
+  "servicing": [
+   "III_R20"
+  ],
+  "intervals": [
+   "III_R20"
+  ],
+  "thorough": [
+   "III_R20"
+  ],
+  "repair": [
+   "III_R20",
+   "III_R36"
+  ],
+  "inflatable": [
+   "III_R20"
+  ],
+  "accommodate": [
+   "III_R21",
+   "III_R31"
+  ],
+  "aggregate": [
+   "III_R21",
+   "III_R31"
+  ],
+  "immersion": [
+   "III_R22",
+   "III_R32"
+  ],
+  "lifejacket": [
+   "III_R22",
+   "III_R32"
+  ],
+  "suits": [
+   "III_R22",
+   "III_R32",
+   "III_R35"
+  ],
+  "protective": [
+   "III_R22"
+  ],
+  "both": [
+   "III_R23",
+   "VIII_R5"
+  ],
+  "davit-launched": [
+   "III_R23",
+   "III_R33"
+  ],
+  "adjacent": [
+   "III_R23",
+   "III_R33",
+   "V_R12"
+  ],
+  "account": [
+   "III_R24",
+   "V_R17",
+   "V_R34",
+   "VIII_R4",
+   "XI-1_R6",
+   "XI-2_R4",
+   "XI-2_R10",
+   "XII_R5"
+  ],
+  "size": [
+   "III_R24",
+   "VII_R15"
+  ],
+  "weather": [
+   "III_R24",
+   "V_R5",
+   "V_R30"
+  ],
+  "assessment": [
+   "III_R24",
+   "VIII_R7",
+   "VIII_R9"
+  ],
+  "ready": [
+   "III_R25"
+  ],
+  "ample": [
+   "III_R25"
+  ],
+  "marshalling": [
+   "III_R25"
+  ],
+  "instruction": [
+   "III_R25"
+  ],
+  "fast": [
+   "III_R26"
+  ],
+  "served": [
+   "III_R26"
+  ],
+  "survivors": [
+   "III_R26"
+  ],
+  "counted": [
+   "III_R27"
+  ],
+  "details": [
+   "III_R27",
+   "XI-2_R13"
+  ],
+  "declared": [
+   "III_R27"
+  ],
+  "assistance": [
+   "III_R27",
+   "V_R33"
+  ],
+  "situations": [
+   "III_R27",
+   "III_R29",
+   "V_R24",
+   "V_R33",
+   "V_R34"
+  ],
+  "communicated": [
+   "III_R27",
+   "V_R4",
+   "XI-2_R7",
+   "XI-2_R13"
+  ],
+  "landing": [
+   "III_R28"
+  ],
+  "pick-up": [
+   "III_R28"
+  ],
+  "decision": [
+   "III_R29"
+  ],
+  "masters": [
+   "III_R29",
+   "V_R33"
+  ],
+  "emergencies": [
+   "III_R29"
+  ],
+  "printed": [
+   "III_R29"
+  ],
+  "foreseeable": [
+   "III_R29"
+  ],
+  "accidents": [
+   "III_R29"
+  ],
+  "entire": [
+   "III_R30"
+  ],
+  "member": [
+   "III_R30"
+  ],
+  "participate": [
+   "III_R30"
+  ],
+  "month": [
+   "III_R30"
+  ],
+  "strongly": [
+   "III_R30"
+  ],
+  "encouraged": [
+   "III_R30"
+  ],
+  "attend": [
+   "III_R30"
+  ],
+  "transferred": [
+   "III_R33",
+   "XI-1_R5"
+  ],
+  "miscellaneous": [
+   "III_R34"
+  ],
+  "aids": [
+   "III_R35",
+   "V_R13"
+  ],
+  "on-board": [
+   "III_R35",
+   "III_R36"
+  ],
+  "methods": [
+   "III_R35"
+  ],
+  "best": [
+   "III_R35"
+  ],
+  "easily": [
+   "III_R36"
+  ],
+  "understood": [
+   "III_R36"
+  ],
+  "illustrated": [
+   "III_R36",
+   "V_R29"
+  ],
+  "checklist": [
+   "III_R36"
+  ],
+  "schedule": [
+   "III_R36",
+   "XII_R3"
+  ],
+  "periodic": [
+   "III_R36"
+  ],
+  "diagram": [
+   "III_R36"
+  ],
+  "lubrication": [
+   "III_R36"
+  ],
+  "specify": [
+   "III_R37"
+  ],
+  "show": [
+   "III_R37"
+  ],
+  "while": [
+   "IV_R1",
+   "IV_R4",
+   "IV_R12",
+   "V_R16"
+  ],
+  "navigated": [
+   "IV_R1",
+   "IV_R7",
+   "IV_R8",
+   "IV_R9",
+   "IV_R10",
+   "IV_R18"
+  ],
+  "great": [
+   "IV_R1"
+  ],
+  "lakes": [
+   "IV_R1"
+  ],
+  "america": [
+   "IV_R1",
+   "V_R35"
+  ],
+  "satellite": [
+   "IV_R2",
+   "IV_R4",
+   "IV_R7",
+   "IV_R8",
+   "IV_R9",
+   "IV_R10",
+   "IV_R12",
+   "IV_R15",
+   "IV_R18"
+  ],
+  "distress": [
+   "IV_R2",
+   "IV_R4",
+   "IV_R5",
+   "IV_R6",
+   "IV_R7",
+   "IV_R9",
+   "IV_R10",
+   "IV_R12",
+   "IV_R15",
+   "IV_R16",
+   "IV_R18",
+   "V_R7",
+   "V_R8",
+   "V_R29",
+   "V_R33",
+   "V_R35"
+  ],
+  "terms": [
+   "IV_R2"
+  ],
+  "telegraphy": [
+   "IV_R2",
+   "IV_R10"
+  ],
+  "inmarsat": [
+   "IV_R2"
+  ],
+  "consider": [
+   "IV_R3"
+  ],
+  "highly": [
+   "IV_R3"
+  ],
+  "nevertheless": [
+   "IV_R3"
+  ],
+  "grant": [
+   "IV_R3",
+   "V_R3"
+  ],
+  "conditional": [
+   "IV_R3"
+  ],
+  "transmitting": [
+   "IV_R4",
+   "IV_R7",
+   "IV_R9",
+   "IV_R10"
+  ],
+  "receiving": [
+   "IV_R4",
+   "IV_R7",
+   "IV_R9",
+   "IV_R10",
+   "IV_R18"
+  ],
+  "alerts": [
+   "IV_R4",
+   "IV_R10"
+  ],
+  "gmdss": [
+   "IV_R4"
+  ],
+  "radiocommunication": [
+   "IV_R5",
+   "IV_R6",
+   "IV_R16"
+  ],
+  "mobile": [
+   "IV_R5",
+   "IV_R8",
+   "IV_R18",
+   "V_R2",
+   "XI-2_R1"
+  ],
+  "identities": [
+   "IV_R5"
+  ],
+  "mobile-satellite": [
+   "IV_R5"
+  ],
+  "bands": [
+   "IV_R5"
+  ],
+  "panel": [
+   "IV_R6"
+  ],
+  "button": [
+   "IV_R6"
+  ],
+  "installation": [
+   "IV_R6",
+   "IV_R7",
+   "IV_R9",
+   "IV_R10",
+   "IV_R12",
+   "IV_R13",
+   "IV_R18",
+   "V_R21",
+   "VIII_R4",
+   "VIII_R5",
+   "XI-2_R6"
+  ],
+  "conning": [
+   "IV_R6",
+   "V_R22"
+  ],
+  "harmful": [
+   "IV_R6"
+  ],
+  "pressed": [
+   "IV_R6"
+  ],
+  "alert": [
+   "IV_R6",
+   "XI-2_R6"
+  ],
+  "buttons": [
+   "IV_R6"
+  ],
+  "channel": [
+   "IV_R7",
+   "IV_R12"
+  ],
+  "frequencies": [
+   "IV_R7",
+   "IV_R9",
+   "IV_R10",
+   "IV_R12"
+  ],
+  "navtex": [
+   "IV_R7"
+  ],
+  "epirb": [
+   "IV_R8",
+   "IV_R10"
+  ],
+  "requirement": [
+   "IV_R8"
+  ],
+  "earth": [
+   "IV_R8"
+  ],
+  "fulfilled": [
+   "IV_R8"
+  ],
+  "installing": [
+   "IV_R8"
+  ],
+  "activation": [
+   "IV_R8"
+  ],
+  "radiotelephony": [
+   "IV_R9",
+   "IV_R10"
+  ],
+  "direct-printing": [
+   "IV_R10",
+   "IV_R15"
+  ],
+  "meeting": [
+   "IV_R11"
+  ],
+  "always": [
+   "IV_R11"
+  ],
+  "february": [
+   "IV_R11"
+  ],
+  "exclusively": [
+   "IV_R11"
+  ],
+  "maintain": [
+   "IV_R11",
+   "IV_R12",
+   "V_R14",
+   "V_R16",
+   "XI-2_R8"
+  ],
+  "watches": [
+   "IV_R12"
+  ],
+  "frequency": [
+   "IV_R12"
+  ],
+  "reserve": [
+   "IV_R13"
+  ],
+  "batteries": [
+   "IV_R13"
+  ],
+  "inferior": [
+   "IV_R14",
+   "V_R18"
+  ],
+  "assembly": [
+   "IV_R15",
+   "VIII_R4",
+   "XI-1_R2"
+  ],
+  "shipborne": [
+   "IV_R15",
+   "V_R18",
+   "V_R20"
+  ],
+  "float-free": [
+   "IV_R15"
+  ],
+  "voice": [
+   "IV_R15"
+  ],
+  "qualified": [
+   "IV_R16"
+  ],
+  "incidents": [
+   "IV_R16",
+   "IV_R17",
+   "V_R28",
+   "VII_R6",
+   "VII_R7",
+   "XI-1_R6"
+  ],
+  "holders": [
+   "IV_R16"
+  ],
+  "whom": [
+   "IV_R16"
+  ],
+  "designated": [
+   "IV_R16",
+   "VII_R4",
+   "XI-2_R1"
+  ],
+  "responsibility": [
+   "IV_R16",
+   "IX_R1",
+   "XI-2_R5"
+  ],
+  "radiocommunications": [
+   "IV_R16"
+  ],
+  "appear": [
+   "IV_R17"
+  ],
+  "importance": [
+   "IV_R17",
+   "V_R28"
+  ],
+  "warships": [
+   "V_R1"
+  ],
+  "naval": [
+   "V_R1"
+  ],
+  "auxiliaries": [
+   "V_R1"
+  ],
+  "owned": [
+   "V_R1",
+   "VII_R15"
+  ],
+  "non-commercial": [
+   "V_R1"
+  ],
+  "solely": [
+   "V_R1"
+  ],
+  "waters": [
+   "V_R1",
+   "VIII_R12",
+   "XIV_R1"
+  ],
+  "nautical": [
+   "V_R2",
+   "V_R9",
+   "V_R27",
+   "V_R34"
+  ],
+  "book": [
+   "V_R2"
+  ],
+  "offshore": [
+   "V_R2",
+   "V_R12",
+   "XI-2_R1"
+  ],
+  "drilling": [
+   "V_R2",
+   "IX_R1",
+   "XI-2_R1"
+  ],
+  "unit": [
+   "V_R2",
+   "V_R25",
+   "XI-2_R1"
+  ],
+  "carrier": [
+   "V_R2",
+   "VII_R11",
+   "VII_R12",
+   "VII_R13",
+   "IX_R1",
+   "XI-2_R1",
+   "XII_R1"
+  ],
+  "term": [
+   "V_R3"
+  ],
+  "intelligence": [
+   "V_R4"
+  ],
+  "dangers": [
+   "V_R4",
+   "V_R31"
+  ],
+  "received": [
+   "V_R4",
+   "V_R31"
+  ],
+  "whatever": [
+   "V_R4"
+  ],
+  "promptly": [
+   "V_R4"
+  ],
+  "brought": [
+   "V_R4",
+   "VI_R8",
+   "VII_R1",
+   "X_R1",
+   "XI-1_R2"
+  ],
+  "knowledge": [
+   "V_R4"
+  ],
+  "interested": [
+   "V_R4"
+  ],
+  "meteorological": [
+   "V_R5"
+  ],
+  "observations": [
+   "V_R5"
+  ],
+  "encourage": [
+   "V_R5"
+  ],
+  "arrange": [
+   "V_R5",
+   "V_R8",
+   "V_R9"
+  ],
+  "terrestrial": [
+   "V_R5"
+  ],
+  "forecasts": [
+   "V_R5"
+  ],
+  "transmitted": [
+   "V_R5",
+   "V_R28"
+  ],
+  "transmission": [
+   "V_R5",
+   "VI_R4"
+  ],
+  "instruments": [
+   "V_R5",
+   "XI-1_R7"
+  ],
+  "patrol": [
+   "V_R6",
+   "V_R35"
+  ],
+  "study": [
+   "V_R6"
+  ],
+  "observation": [
+   "V_R6"
+  ],
+  "atlantic": [
+   "V_R6",
+   "V_R35"
+  ],
+  "region": [
+   "V_R6"
+  ],
+  "united": [
+   "V_R6",
+   "V_R35"
+  ],
+  "states": [
+   "V_R6",
+   "V_R35"
+  ],
+  "icebergs": [
+   "V_R6",
+   "V_R35"
+  ],
+  "guarded": [
+   "V_R6"
+  ],
+  "season": [
+   "V_R6"
+  ],
+  "continue": [
+   "V_R6"
+  ],
+  "developed": [
+   "V_R7",
+   "V_R10",
+   "V_R11",
+   "V_R17",
+   "VII_R5"
+  ],
+  "homing": [
+   "V_R7"
+  ],
+  "capability": [
+   "V_R7"
+  ],
+  "hydrographic": [
+   "V_R9"
+  ],
+  "charts": [
+   "V_R9",
+   "V_R27"
+  ],
+  "publications": [
+   "V_R9",
+   "V_R27"
+  ],
+  "greatest": [
+   "V_R9"
+  ],
+  "resolutions": [
+   "V_R9"
+  ],
+  "collection": [
+   "V_R9"
+  ],
+  "compilation": [
+   "V_R9"
+  ],
+  "routeing": [
+   "V_R10"
+  ],
+  "adoption": [
+   "V_R10",
+   "V_R11"
+  ],
+  "mandatory": [
+   "V_R10",
+   "VI_R9",
+   "VII_R13",
+   "IX_R3"
+  ],
+  "reporting": [
+   "V_R11",
+   "V_R28",
+   "VII_R6",
+   "VII_R7"
+  ],
+  "traffic": [
+   "V_R12",
+   "V_R13",
+   "V_R24"
+  ],
+  "contribute": [
+   "V_R12"
+  ],
+  "efficiency": [
+   "V_R12"
+  ],
+  "environment": [
+   "V_R12",
+   "V_R34"
+  ],
+  "shore": [
+   "V_R12"
+  ],
+  "work": [
+   "V_R12"
+  ],
+  "sites": [
+   "V_R12"
+  ],
+  "adverse": [
+   "V_R12"
+  ],
+  "establishment": [
+   "V_R13"
+  ],
+  "deems": [
+   "V_R13"
+  ],
+  "practical": [
+   "V_R13"
+  ],
+  "individually": [
+   "V_R13"
+  ],
+  "co-operation": [
+   "V_R13"
+  ],
+  "national": [
+   "V_R14"
+  ],
+  "adopt": [
+   "V_R14"
+  ],
+  "ensuring": [
+   "V_R14"
+  ],
+  "point": [
+   "V_R14",
+   "V_R23",
+   "XI-2_R7"
+  ],
+  "view": [
+   "V_R14",
+   "V_R22"
+  ],
+  "team": [
+   "V_R15"
+  ],
+  "pilot": [
+   "V_R15",
+   "V_R23"
+  ],
+  "principles": [
+   "V_R15",
+   "VII_R6"
+  ],
+  "arrangement": [
+   "V_R15",
+   "XIV_R4"
+  ],
+  "relating": [
+   "V_R15",
+   "VII_R4",
+   "VIII_R8",
+   "XI-1_R4"
+  ],
+  "reasonable": [
+   "V_R16"
+  ],
+  "efficient": [
+   "V_R16"
+  ],
+  "malfunctions": [
+   "V_R16"
+  ],
+  "electromagnetic": [
+   "V_R17"
+  ],
+  "compatibility": [
+   "V_R17"
+  ],
+  "affect": [
+   "V_R17"
+  ],
+  "administrations": [
+   "V_R17",
+   "XI-2_R3"
+  ],
+  "taking": [
+   "V_R17",
+   "V_R34",
+   "XI-1_R6",
+   "XI-2_R4",
+   "XI-2_R8",
+   "XI-2_R9",
+   "XI-2_R10",
+   "XII_R5"
+  ],
+  "receiver": [
+   "V_R18"
+  ],
+  "tracking": [
+   "V_R19"
+  ],
+  "recorders": [
+   "V_R20"
+  ],
+  "recorder": [
+   "V_R20"
+  ],
+  "iamsar": [
+   "V_R21"
+  ],
+  "up-to-date": [
+   "V_R21"
+  ],
+  "copy": [
+   "V_R21",
+   "IX_R4"
+  ],
+  "volume": [
+   "V_R21"
+  ],
+  "aeronautical": [
+   "V_R21"
+  ],
+  "degrees": [
+   "V_R22",
+   "V_R32"
+  ],
+  "windows": [
+   "V_R22"
+  ],
+  "blind": [
+   "V_R22"
+  ],
+  "right": [
+   "V_R22"
+  ],
+  "sectors": [
+   "V_R22"
+  ],
+  "vision": [
+   "V_R22"
+  ],
+  "front": [
+   "V_R22"
+  ],
+  "visibility": [
+   "V_R22",
+   "V_R24"
+  ],
+  "ladder": [
+   "V_R23"
+  ],
+  "transfer": [
+   "V_R23"
+  ],
+  "embark": [
+   "V_R23"
+  ],
+  "disembark": [
+   "V_R23"
+  ],
+  "heading": [
+   "V_R24"
+  ],
+  "track": [
+   "V_R24"
+  ],
+  "high": [
+   "V_R24",
+   "IX_R2"
+  ],
+  "density": [
+   "V_R24",
+   "XII_R5",
+   "XII_R8",
+   "XII_R10",
+   "XII_R14"
+  ],
+  "restricted": [
+   "V_R24"
+  ],
+  "hazardous": [
+   "V_R24"
+  ],
+  "establish": [
+   "V_R24",
+   "XI-2_R5"
+  ],
+  "demands": [
+   "V_R25"
+  ],
+  "caution": [
+   "V_R25"
+  ],
+  "units": [
+   "V_R25",
+   "VI_R2",
+   "VI_R5",
+   "VII_R5"
+  ],
+  "simultaneous": [
+   "V_R25"
+  ],
+  "checks": [
+   "V_R26"
+  ],
+  "prescribed": [
+   "V_R26",
+   "XI-2_R12",
+   "XII_R9"
+  ],
+  "procedure": [
+   "V_R26"
+  ],
+  "directions": [
+   "V_R27"
+  ],
+  "notices": [
+   "V_R27"
+  ],
+  "mariners": [
+   "V_R27"
+  ],
+  "tide": [
+   "V_R27"
+  ],
+  "daily": [
+   "V_R28"
+  ],
+  "activities": [
+   "V_R28"
+  ],
+  "company": [
+   "V_R28",
+   "IX_R3",
+   "IX_R4",
+   "XI-1_R3",
+   "XI-1_R5",
+   "XI-2_R5",
+   "XI-2_R8"
+  ],
+  "reports": [
+   "V_R28"
+  ],
+  "keep": [
+   "V_R28"
+  ],
+  "aircraft": [
+   "V_R29"
+  ],
+  "describing": [
+   "V_R29"
+  ],
+  "events": [
+   "V_R29"
+  ],
+  "related": [
+   "V_R29",
+   "VII_R9",
+   "VII_R12",
+   "X_R2"
+  ],
+  "limitations": [
+   "V_R30",
+   "VIII_R4"
+  ],
+  "restrictions": [
+   "V_R30",
+   "XII_R6",
+   "XII_R8",
+   "XII_R14"
+  ],
+  "permissible": [
+   "V_R30"
+  ],
+  "loads": [
+   "V_R30"
+  ],
+  "imposed": [
+   "V_R30",
+   "V_R33",
+   "VIII_R4",
+   "XI-2_R9",
+   "XII_R8"
+  ],
+  "established": [
+   "V_R30",
+   "VII_R10",
+   "VII_R13",
+   "VII_R16",
+   "VIII_R11"
+  ],
+  "messages": [
+   "V_R31",
+   "V_R32"
+  ],
+  "storm": [
+   "V_R31",
+   "V_R32"
+  ],
+  "winds": [
+   "V_R31"
+  ],
+  "meets": [
+   "V_R31"
+  ],
+  "derelict": [
+   "V_R31",
+   "V_R32"
+  ],
+  "direct": [
+   "V_R31"
+  ],
+  "tropical": [
+   "V_R31",
+   "V_R32"
+  ],
+  "encounters": [
+   "V_R31"
+  ],
+  "sub-freezing": [
+   "V_R31"
+  ],
+  "temperatures": [
+   "V_R31"
+  ],
+  "wind": [
+   "V_R32"
+  ],
+  "cyclone": [
+   "V_R32"
+  ],
+  "corrected": [
+   "V_R32"
+  ],
+  "millibars": [
+   "V_R32"
+  ],
+  "tendency": [
+   "V_R32"
+  ],
+  "barometer": [
+   "V_R32"
+  ],
+  "observed": [
+   "V_R32"
+  ],
+  "barometric": [
+   "V_R32"
+  ],
+  "swell": [
+   "V_R32"
+  ],
+  "knots": [
+   "V_R32"
+  ],
+  "obligation": [
+   "V_R33"
+  ],
+  "requisitioned": [
+   "V_R33"
+  ],
+  "obligations": [
+   "V_R33",
+   "XI-2_R3"
+  ],
+  "released": [
+   "V_R33"
+  ],
+  "requisition": [
+   "V_R33"
+  ],
+  "avoidance": [
+   "V_R34"
+  ],
+  "takes": [
+   "V_R34"
+  ],
+  "proceeding": [
+   "V_R34"
+  ],
+  "planned": [
+   "V_R34"
+  ],
+  "ports": [
+   "V_R35",
+   "VIII_R11"
+  ],
+  "contributing": [
+   "V_R35"
+  ],
+  "newfoundland": [
+   "V_R35"
+  ],
+  "coast": [
+   "V_R35"
+  ],
+  "canada": [
+   "V_R35"
+  ],
+  "approached": [
+   "V_R35"
+  ],
+  "straits": [
+   "V_R35"
+  ],
+  "managing": [
+   "V_R35"
+  ],
+  "cargoes": [
+   "VI_R1",
+   "VI_R5",
+   "VI_R7",
+   "XII_R5",
+   "XII_R6",
+   "XII_R8",
+   "XII_R10",
+   "XII_R14"
+  ],
+  "imsbc": [
+   "VI_R1"
+  ],
+  "mass": [
+   "VI_R2",
+   "VI_R4"
+  ],
+  "container": [
+   "VI_R2",
+   "VI_R4",
+   "VII_R4"
+  ],
+  "representative": [
+   "VI_R2",
+   "VI_R7"
+  ],
+  "shipper": [
+   "VI_R2",
+   "XII_R10"
+  ],
+  "containers": [
+   "VI_R2"
+  ],
+  "verified": [
+   "VI_R2",
+   "VI_R4",
+   "XI-2_R4"
+  ],
+  "packed": [
+   "VI_R2"
+  ],
+  "documents": [
+   "VI_R2",
+   "VII_R4",
+   "VII_R7"
+  ],
+  "document": [
+   "VI_R2",
+   "VI_R4",
+   "VI_R9",
+   "IX_R3",
+   "IX_R4",
+   "XI-1_R5",
+   "XV_ROVERVIEW"
+  ],
+  "oxygen": [
+   "VI_R3",
+   "XI-1_R7"
+  ],
+  "instrument": [
+   "VI_R3",
+   "XI-1_R7",
+   "XII_R11"
+  ],
+  "transporting": [
+   "VI_R3"
+  ],
+  "liable": [
+   "VI_R3"
+  ],
+  "emit": [
+   "VI_R3"
+  ],
+  "depletion": [
+   "VI_R3"
+  ],
+  "measuring": [
+   "VI_R3",
+   "XI-1_R7"
+  ],
+  "concentration": [
+   "VI_R3"
+  ],
+  "together": [
+   "VI_R3"
+  ],
+  "detailed": [
+   "VI_R3",
+   "VIII_R8",
+   "XII_R9"
+  ],
+  "pesticides": [
+   "VI_R4"
+  ],
+  "fumigation": [
+   "VI_R4"
+  ],
+  "signature": [
+   "VI_R4"
+  ],
+  "regarding": [
+   "VI_R4"
+  ],
+  "submitted": [
+   "VI_R4"
+  ],
+  "securing": [
+   "VI_R5",
+   "VII_R5",
+   "VII_R6"
+  ],
+  "transport": [
+   "VI_R5",
+   "VI_R6",
+   "VII_R4",
+   "VII_R5"
+  ],
+  "throughout": [
+   "VI_R5",
+   "VII_R5"
+  ],
+  "prohibition": [
+   "VI_R5"
+  ],
+  "blending": [
+   "VI_R5"
+  ],
+  "physical": [
+   "VI_R5"
+  ],
+  "acceptability": [
+   "VI_R6"
+  ],
+  "shipment": [
+   "VI_R6"
+  ],
+  "possession": [
+   "VI_R6"
+  ],
+  "comprehensive": [
+   "VI_R6"
+  ],
+  "method": [
+   "VI_R6"
+  ],
+  "providing": [
+   "VI_R6",
+   "XII_R10",
+   "XII_R11"
+  ],
+  "limited": [
+   "VI_R6",
+   "VIII_R9"
+  ],
+  "amounts": [
+   "VI_R6"
+  ],
+  "unloading": [
+   "VI_R7"
+  ],
+  "terminal": [
+   "VI_R7"
+  ],
+  "ballasting": [
+   "VI_R7"
+  ],
+  "facility": [
+   "VI_R7",
+   "XI-2_R1",
+   "XI-2_R10",
+   "XI-2_R13"
+  ],
+  "conducted": [
+   "VI_R7"
+  ],
+  "grain": [
+   "VI_R8",
+   "VI_R9"
+  ],
+  "committee": [
+   "VI_R8",
+   "VII_R1",
+   "VII_R8",
+   "VII_R11",
+   "X_R1",
+   "XI-1_R1"
+  ],
+  "amendments": [
+   "VI_R8",
+   "VII_R1",
+   "X_R1",
+   "XI-1_R1",
+   "XI-1_R2"
+  ],
+  "authorization": [
+   "VI_R9",
+   "XI-1_R1"
+  ],
+  "satisfies": [
+   "VI_R9",
+   "VIII_R10"
+  ],
+  "packaged": [
+   "VII_R2",
+   "VII_R3",
+   "VII_R4",
+   "VII_R14"
+  ],
+  "supplement": [
+   "VII_R2"
+  ],
+  "response": [
+   "VII_R2"
+  ],
+  "involving": [
+   "VII_R2",
+   "VII_R6",
+   "VII_R7"
+  ],
+  "contains": [
+   "VII_R2"
+  ],
+  "guide": [
+   "VII_R2"
+  ],
+  "packing": [
+   "VII_R4"
+  ],
+  "incident": [
+   "VII_R6"
+  ],
+  "loss": [
+   "VII_R6"
+  ],
+  "fullest": [
+   "VII_R6"
+  ],
+  "chemicals": [
+   "VII_R8"
+  ],
+  "repairs": [
+   "VII_R9",
+   "VII_R12",
+   "X_R2"
+  ],
+  "alterations": [
+   "VII_R9",
+   "VII_R12",
+   "X_R2"
+  ],
+  "modifications": [
+   "VII_R9",
+   "VII_R12",
+   "X_R2"
+  ],
+  "outfitting": [
+   "VII_R9",
+   "VII_R12",
+   "X_R2"
+  ],
+  "certified": [
+   "VII_R10",
+   "VII_R13",
+   "VII_R16",
+   "X_R3",
+   "XI-2_R4",
+   "XIV_R1"
+  ],
+  "holding": [
+   "VII_R10",
+   "VII_R13",
+   "VII_R16",
+   "IX_R3"
+  ],
+  "pursuant": [
+   "VII_R10",
+   "VII_R13",
+   "VII_R16",
+   "IX_R6"
+  ],
+  "liquefied": [
+   "VII_R11"
+  ],
+  "gases": [
+   "VII_R11",
+   "XI-1_R7"
+  ],
+  "wastes": [
+   "VII_R14"
+  ],
+  "irradiated": [
+   "VII_R14"
+  ],
+  "plutonium": [
+   "VII_R14"
+  ],
+  "high-level": [
+   "VII_R14"
+  ],
+  "radioactive": [
+   "VII_R14"
+  ],
+  "isotopes": [
+   "VII_R14"
+  ],
+  "reprocessing": [
+   "VII_R14"
+  ],
+  "consistent": [
+   "VII_R15"
+  ],
+  "regardless": [
+   "VII_R15",
+   "IX_R2",
+   "XII_R11",
+   "XII_R13"
+  ],
+  "contained": [
+   "VIII_R2"
+  ],
+  "modified": [
+   "VIII_R2"
+  ],
+  "reactor": [
+   "VIII_R4",
+   "VIII_R5"
+  ],
+  "presence": [
+   "VIII_R4",
+   "VIII_R9"
+  ],
+  "radiation": [
+   "VIII_R4",
+   "VIII_R6",
+   "VIII_R7",
+   "VIII_R9",
+   "VIII_R11"
+  ],
+  "suitability": [
+   "VIII_R5"
+  ],
+  "waterways": [
+   "VIII_R6",
+   "VIII_R7"
+  ],
+  "food": [
+   "VIII_R6",
+   "VIII_R7"
+  ],
+  "resources": [
+   "VIII_R6",
+   "VIII_R7"
+  ],
+  "prepared": [
+   "VIII_R7",
+   "VIII_R8"
+  ],
+  "approve": [
+   "VIII_R7",
+   "VIII_R8"
+  ],
+  "matters": [
+   "VIII_R8"
+  ],
+  "important": [
+   "VIII_R8"
+  ],
+  "bearing": [
+   "VIII_R8"
+  ],
+  "notwithstanding": [
+   "VIII_R9",
+   "X_R3"
+  ],
+  "frequently": [
+   "VIII_R9"
+  ],
+  "viii": [
+   "VIII_R10"
+  ],
+  "entering": [
+   "VIII_R11",
+   "XI-2_R3",
+   "XI-2_R4"
+  ],
+  "directed": [
+   "VIII_R11"
+  ],
+  "towards": [
+   "VIII_R11"
+  ],
+  "verifying": [
+   "VIII_R11"
+  ],
+  "inform": [
+   "VIII_R12"
+  ],
+  "whose": [
+   "VIII_R12"
+  ],
+  "accident": [
+   "VIII_R12"
+  ],
+  "likely": [
+   "VIII_R12"
+  ],
+  "lead": [
+   "VIII_R12"
+  ],
+  "environmental": [
+   "VIII_R12"
+  ],
+  "hazard": [
+   "VIII_R12"
+  ],
+  "competent": [
+   "VIII_R12"
+  ],
+  "governmental": [
+   "VIII_R12"
+  ],
+  "approaches": [
+   "VIII_R12"
+  ],
+  "damaged": [
+   "VIII_R12"
+  ],
+  "follows": [
+   "IX_R2"
+  ],
+  "certification": [
+   "IX_R4"
+  ],
+  "produce": [
+   "IX_R4"
+  ],
+  "verification": [
+   "IX_R6"
+  ],
+  "verify": [
+   "IX_R6"
+  ],
+  "high-speed": [
+   "X_R1",
+   "X_R3",
+   "XI-2_R2",
+   "XV_ROVERVIEW"
+  ],
+  "high-": [
+   "X_R1"
+  ],
+  "refuge": [
+   "X_R2"
+  ],
+  "laden": [
+   "X_R2"
+  ],
+  "entirety": [
+   "X_R3"
+  ],
+  "deemed": [
+   "X_R3"
+  ],
+  "classification": [
+   "XI-1_R1"
+  ],
+  "societies": [
+   "XI-1_R1"
+  ],
+  "enhanced": [
+   "XI-1_R2",
+   "XII_R7"
+  ],
+  "programme": [
+   "XI-1_R2",
+   "XII_R7"
+  ],
+  "periods": [
+   "XI-1_R2"
+  ],
+  "registered": [
+   "XI-1_R3",
+   "XI-1_R5"
+  ],
+  "permanent": [
+   "XI-1_R3"
+  ],
+  "scheme": [
+   "XI-1_R3"
+  ],
+  "visible": [
+   "XI-1_R3"
+  ],
+  "duly": [
+   "XI-1_R4",
+   "XI-2_R5",
+   "XI-2_R9"
+  ],
+  "authorized": [
+   "XI-1_R4",
+   "XI-2_R9"
+  ],
+  "concerning": [
+   "XI-1_R4"
+  ],
+  "grounds": [
+   "XI-1_R4",
+   "XI-2_R9"
+  ],
+  "believing": [
+   "XI-1_R4"
+  ],
+  "synopsis": [
+   "XI-1_R5"
+  ],
+  "name": [
+   "XI-1_R5"
+  ],
+  "history": [
+   "XI-1_R5"
+  ],
+  "investigations": [
+   "XI-1_R6"
+  ],
+  "supplemented": [
+   "XI-1_R6"
+  ],
+  "recommended": [
+   "XI-1_R6"
+  ],
+  "atmosphere": [
+   "XI-1_R7"
+  ],
+  "portable": [
+   "XI-1_R7"
+  ],
+  "concentrations": [
+   "XI-1_R7"
+  ],
+  "vapours": [
+   "XI-1_R7"
+  ],
+  "hydrogen": [
+   "XI-1_R7"
+  ],
+  "sulphide": [
+   "XI-1_R7"
+  ],
+  "carbon": [
+   "XI-1_R7"
+  ],
+  "monoxide": [
+   "XI-1_R7"
+  ],
+  "security": [
+   "XI-2_R1",
+   "XI-2_R2",
+   "XI-2_R3",
+   "XI-2_R4",
+   "XI-2_R6",
+   "XI-2_R7",
+   "XI-2_R8",
+   "XI-2_R9",
+   "XI-2_R10",
+   "XI-2_R11",
+   "XI-2_R12",
+   "XI-2_R13"
+  ],
+  "interface": [
+   "XI-2_R1"
+  ],
+  "activity": [
+   "XI-2_R1"
+  ],
+  "includes": [
+   "XI-2_R1"
+  ],
+  "isps": [
+   "XI-2_R2",
+   "XI-2_R4",
+   "XI-2_R9",
+   "XI-2_R10",
+   "XI-2_R11",
+   "XI-2_R12"
+  ],
+  "types": [
+   "XI-2_R2"
+  ],
+  "levels": [
+   "XI-2_R3",
+   "XI-2_R7"
+  ],
+  "occur": [
+   "XI-2_R3"
+  ],
+  "circumstance": [
+   "XI-2_R3"
+  ],
+  "dictates": [
+   "XI-2_R3"
+  ],
+  "territory": [
+   "XI-2_R3",
+   "XI-2_R10"
+  ],
+  "companies": [
+   "XI-2_R4",
+   "XI-2_R5"
+  ],
+  "higher": [
+   "XI-2_R4"
+  ],
+  "whilst": [
+   "XI-2_R4"
+  ],
+  "responsible": [
+   "XI-2_R5"
+  ],
+  "employed": [
+   "XI-2_R5"
+  ],
+  "charter": [
+   "XI-2_R5"
+  ],
+  "party": [
+   "XI-2_R5"
+  ],
+  "authorised": [
+   "XI-2_R5"
+  ],
+  "appointing": [
+   "XI-2_R5"
+  ],
+  "threats": [
+   "XI-2_R7"
+  ],
+  "territorial": [
+   "XI-2_R7"
+  ],
+  "attack": [
+   "XI-2_R7"
+  ],
+  "intention": [
+   "XI-2_R7"
+  ],
+  "enter": [
+   "XI-2_R7",
+   "XI-2_R9"
+  ],
+  "contact": [
+   "XI-2_R7",
+   "XI-2_R13"
+  ],
+  "discretion": [
+   "XI-2_R8"
+  ],
+  "professional": [
+   "XI-2_R8"
+  ],
+  "judgement": [
+   "XI-2_R8"
+  ],
+  "identified": [
+   "XI-2_R8",
+   "XII_R8"
+  ],
+  "temporary": [
+   "XI-2_R8"
+  ],
+  "constrained": [
+   "XI-2_R8"
+  ],
+  "charterer": [
+   "XI-2_R8"
+  ],
+  "executing": [
+   "XI-2_R8"
+  ],
+  "reviewed": [
+   "XI-2_R10"
+  ],
+  "assessments": [
+   "XI-2_R10"
+  ],
+  "agreement": [
+   "XI-2_R11",
+   "XI-2_R13"
+  ],
+  "agreements": [
+   "XI-2_R11"
+  ],
+  "implementing": [
+   "XI-2_R11"
+  ],
+  "conclude": [
+   "XI-2_R11"
+  ],
+  "writing": [
+   "XI-2_R11"
+  ],
+  "bilateral": [
+   "XI-2_R11"
+  ],
+  "multilateral": [
+   "XI-2_R11"
+  ],
+  "covering": [
+   "XI-2_R11"
+  ],
+  "short": [
+   "XI-2_R11"
+  ],
+  "implement": [
+   "XI-2_R12"
+  ],
+  "allows": [
+   "XI-2_R12"
+  ],
+  "communicate": [
+   "XI-2_R12",
+   "XI-2_R13"
+  ],
+  "names": [
+   "XI-2_R13"
+  ],
+  "locations": [
+   "XI-2_R13"
+  ],
+  "skin": [
+   "XII_R1",
+   "XII_R5",
+   "XII_R6",
+   "XII_R7",
+   "XII_R14"
+  ],
+  "bounded": [
+   "XII_R1"
+  ],
+  "double-side": [
+   "XII_R1",
+   "XII_R6"
+  ],
+  "combination": [
+   "XII_R1"
+  ],
+  "implementation": [
+   "XII_R3"
+  ],
+  "over": [
+   "XII_R3",
+   "XII_R7"
+  ],
+  "reaches": [
+   "XII_R3",
+   "XII_R12"
+  ],
+  "according": [
+   "XII_R3"
+  ],
+  "reference": [
+   "XII_R3"
+  ],
+  "equilibrium": [
+   "XII_R4"
+  ],
+  "summer": [
+   "XII_R4"
+  ],
+  "permeability": [
+   "XII_R4"
+  ],
+  "strength": [
+   "XII_R5"
+  ],
+  "single-side": [
+   "XII_R5",
+   "XII_R7",
+   "XII_R14"
+  ],
+  "outer": [
+   "XII_R6"
+  ],
+  "endorsed": [
+   "XII_R8"
+  ],
+  "behalf": [
+   "XII_R8"
+  ],
+  "declaration": [
+   "XII_R10"
+  ],
+  "declare": [
+   "XII_R10"
+  ],
+  "girder": [
+   "XII_R11"
+  ],
+  "bilges": [
+   "XII_R13"
+  ],
+  "empty": [
+   "XII_R14"
+  ],
+  "full": [
+   "XII_R14"
+  ],
+  "polar": [
+   "XIV_R1",
+   "XIV_R4"
+  ],
+  "latitude": [
+   "XIV_R1"
+  ],
+  "longitude": [
+   "XIV_R1"
+  ],
+  "thence": [
+   "XIV_R1"
+  ],
+  "introduction": [
+   "XIV_R1"
+  ],
+  "goal": [
+   "XIV_R4"
+  ],
+  "industrial": [
+   "XV_ROVERVIEW"
+  ]
+ }
+}

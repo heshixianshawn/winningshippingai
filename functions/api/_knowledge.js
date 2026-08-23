@@ -170,6 +170,9 @@ export async function autoSearchKnowledge(module, message, request) {
     case 'systems': {
       return await searchSystemsKnowledge(request, message);
     }
+    case 'regulations': {
+      return await searchRegulationsKnowledge(request, message);
+    }
     default:
       return '';
   }
@@ -265,4 +268,69 @@ export async function searchSystemsKnowledge(request, query) {
     out.push(`【${sec.manual}·${sec.chapter}】\n${text}`);
   }
   return out.length ? '【公司体系知识库检索结果】\n\n' + out.join('\n\n---\n\n') : '';
+}
+
+// ═══════════════ 法规知识库检索（SOLAS 2024，2026-08-23 新增） ═══════════════
+let regsIndex = null;
+let regsShards = {};
+
+async function ensureRegsIndex(request) {
+  if (regsIndex) return regsIndex;
+  try {
+    const baseUrl = getPagesUrl(request);
+    const resp = await fetch(`${baseUrl}/data/regulations_index.json`);
+    if (resp.ok) regsIndex = await resp.json();
+  } catch (e) {
+    console.error('Failed to load regulations_index.json:', e.message);
+  }
+  return regsIndex;
+}
+
+/** 检索 SOLAS 法规知识库：关键词 → Regulation 分片命中 */
+export async function searchRegulationsKnowledge(request, query) {
+  const index = await ensureRegsIndex(request);
+  if (!index) return '';
+  const km = index.keyword_map || {};
+  const q = query.toLowerCase();
+  const qCn = query.replace(/[^\u4e00-\u9fff]/g, '');
+
+  const hitIds = new Set();
+  // 英文关键词命中（法规条文关键词多为英文）
+  const enWords = q.toLowerCase().match(/[a-z][a-z\-]{2,}/g) || [];
+  for (const w of enWords) {
+    if (km[w]) for (const sid of km[w]) hitIds.add(sid);
+  }
+  // 中文：用户可能用中文问（如"防火"），索引里无中文关键词，跳过
+
+  if (hitIds.size === 0) return '';
+
+  // 计分：命中词数
+  const score = {};
+  for (const sid of hitIds) score[sid] = 0;
+  for (const w of enWords) {
+    if (km[w]) for (const sid of km[w]) score[sid] = (score[sid] || 0) + 1;
+  }
+  const ranked = Object.entries(score).sort((a, b) => b[1] - a[1]).slice(0, 3).map(x => x[0]);
+
+  // 加载分片
+  const needChapters = new Set(ranked.map(id => id.split('_')[0]));
+  for (const ch of needChapters) {
+    if (!regsShards[ch]) {
+      try {
+        const baseUrl = getPagesUrl(request);
+        const resp = await fetch(`${baseUrl}/data/regulations_shards/chapter_${ch}.json`);
+        if (resp.ok) regsShards[ch] = await resp.json();
+      } catch (e) { console.error('regs shard fail:', ch, e.message); }
+    }
+  }
+
+  const out = [];
+  for (const id of ranked) {
+    const ch = id.split('_')[0];
+    const sec = regsShards[ch] && regsShards[ch][id];
+    if (!sec) continue;
+    const text = (sec.text || '').slice(0, 2000);
+    out.push(`【SOLAS ${sec.chapter} ${sec.reg ? 'Reg.' + sec.reg : ''}${sec.title ? ' - ' + sec.title : ''}】\n${text}`);
+  }
+  return out.length ? '【SOLAS 2024 法规原文检索结果】\n\n' + out.join('\n\n---\n\n') : '';
 }
