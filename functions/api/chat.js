@@ -8,7 +8,7 @@ import {
   SHIP_SYSTEM_PROMPT
 } from './_system_prompts.js';
 import { querySurveyKnowledge, getAlertSummary } from './_survey_knowledge.js';
-import { autoSearchKnowledge, searchImoConventions, searchOfficialSources, searchQuickRef } from './_knowledge.js';
+import { autoSearchKnowledge, searchImoConventions, searchOfficialSources, searchQuickRef, searchRegsAllKnowledge } from './_knowledge.js';
 import { searchFleetKnowledge } from './_fleet_data.js';
 import { logToKV } from './_logger.js';
 import { analyzeIntent, buildThinkingContext } from './_thinking_engine.js';
@@ -104,6 +104,10 @@ export async function onRequest(context) {
           const regKb = await autoSearchKnowledge('regulations', message, request);
           if (regKb) kbContext += '\n\n' + regKb;
         } catch (e) { console.error('[Regs] kb search failed:', e.message); }
+        try {
+          const regsAll = await searchRegsAllKnowledge(request, message);
+          if (regsAll) kbContext += '\n\n' + regsAll;
+        } catch (e) { console.error('[Regs] regsAll search failed:', e.message); }
         try {
           const imoInfo = await searchImoConventions(request, message);
           if (imoInfo) kbContext += '\n\n' + imoInfo;

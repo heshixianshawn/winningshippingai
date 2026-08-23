@@ -295,7 +295,8 @@ export async function searchRegulationsKnowledge(request, query) {
   const qCn = query.replace(/[^\u4e00-\u9fff]/g, '');
 
   // ═══ 中文→英文关键词映射（2026-08-23 新增：解决中文提问无法命中英文索引导致 AI 编造） ═══
-  const CN_TO_EN = {
+// 中文→英文关键词映射（模块级，供法规检索共用）
+const CN_TO_EN = {
     '救生艇': ['lifeboat', 'rescue boat'], '救生筏': ['life raft', 'liferaft'], '脱钩': ['release gear', 'release mechanism', 'on-load', 'release hook', 'release'],
     '释放': ['release', 'launch', 'lowering'], '降落': ['lowering', 'launch', 'davit'], '吊架': ['davit'],
     '消防': ['fire'], '防火': ['fire'], '灭火': ['fire extinguishing', 'fire extinguisher'], '消防泵': ['fire pump'],
@@ -314,7 +315,7 @@ export async function searchRegulationsKnowledge(request, query) {
     '机舱': ['machinery space', 'engine room'], '泵': ['pump'], '管系': ['piping'], '阀门': ['valve'],
     '稳性': ['stability'], '吃水': ['draft', 'draught'], '吨位': ['tonnage'], '干舷': ['freeboard'],
     '载重线': ['load line'], '防污': ['pollution prevention'], '压舱水': ['ballast water']
-  };
+};
 
   const hitIds = new Set();
   // 英文关键词命中（法规条文关键词多为英文）
@@ -539,4 +540,58 @@ export async function searchQuickRef(request, query) {
     `【速查：${it.question}】（来源：${it.source}）\n${it.answer}\n📖 官方原文：<${it.official_url}>`
   ).join('\n\n---\n\n');
   return '【PSC 高频速查（权威依据，引用此内容作答）】\n\n' + out;
+}
+
+// ═══════════════ 多公约法规知识库检索（MARPOL/MLC/ISM/LSA/FSS/BWM，2026-08-23 新增） ═══════════════
+let regsAllIndex = null;
+let regsAllShards = null;
+
+async function ensureRegsAll(request) {
+  if (regsAllIndex && regsAllShards) return true;
+  try {
+    const baseUrl = getPagesUrl(request);
+    const [r1, r2] = await Promise.all([
+      fetch(`${baseUrl}/data/regs_all_index.json`),
+      fetch(`${baseUrl}/data/regs_all_shards.json`)
+    ]);
+    if (r1.ok && r2.ok) {
+      regsAllIndex = await r1.json();
+      regsAllShards = await r2.json();
+      return true;
+    }
+  } catch (e) { console.error('regs_all load fail:', e.message); }
+  return false;
+}
+
+/** 多公约法规检索（MARPOL/MLC/ISM/LSA/FSS/BWM/SOLAS补充），英文词 + 中文映射 */
+export async function searchRegsAllKnowledge(request, query) {
+  if (!(await ensureRegsAll(request))) return '';
+  const km = regsAllIndex.keyword_map || {};
+  const q = query.toLowerCase();
+  const qCn = query.replace(/[^\u4e00-\u9fff]/g, '');
+
+  const hitIds = new Set();
+  const enWords = q.toLowerCase().match(/[a-z][a-z\-]{2,}/g) || [];
+  for (const w of enWords) if (km[w]) for (const sid of km[w]) hitIds.add(sid);
+  for (const cn in CN_TO_EN) {
+    if (!qCn.includes(cn)) continue;
+    for (const en of CN_TO_EN[cn]) if (km[en]) for (const sid of km[en]) hitIds.add(sid);
+  }
+  if (hitIds.size === 0) return '';
+
+  const score = {};
+  for (const sid of hitIds) score[sid] = 0;
+  for (const w of enWords) if (km[w]) for (const sid of km[w]) score[sid] = (score[sid] || 0) + 1;
+  for (const cn in CN_TO_EN) {
+    if (!qCn.includes(cn)) continue;
+    for (const en of CN_TO_EN[cn]) if (km[en]) for (const sid of km[en]) score[sid] = (score[sid] || 0) + 1;
+  }
+  const ranked = Object.entries(score).sort((a, b) => b[1] - a[1]).slice(0, 4).map(x => x[0]);
+  const out = [];
+  for (const sid of ranked) {
+    const s = regsAllShards[sid];
+    if (!s) continue;
+    out.push(`【${s.title}】\n${(s.text || '').slice(0, 1800)}`);
+  }
+  return out.length ? '【MARPOL/MLC/ISM/LSA 等公约原文检索结果】\n\n' + out.join('\n\n---\n\n') : '';
 }
