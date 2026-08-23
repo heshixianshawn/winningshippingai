@@ -8,7 +8,7 @@ import {
   SHIP_SYSTEM_PROMPT
 } from './_system_prompts.js';
 import { querySurveyKnowledge, getAlertSummary } from './_survey_knowledge.js';
-import { autoSearchKnowledge, searchImoConventions } from './_knowledge.js';
+import { autoSearchKnowledge, searchImoConventions, searchOfficialSources } from './_knowledge.js';
 import { searchFleetKnowledge } from './_fleet_data.js';
 import { logToKV } from './_logger.js';
 import { analyzeIntent, buildThinkingContext } from './_thinking_engine.js';
@@ -96,6 +96,10 @@ export async function onRequest(context) {
           const imoInfo = await searchImoConventions(request, message);
           if (imoInfo) kbContext += '\n\n' + imoInfo;
         } catch (e) { console.error('[Regs] imo search failed:', e.message); }
+        try {
+          const offInfo = await searchOfficialSources(request, message);
+          if (offInfo) kbContext += '\n\n' + offInfo;
+        } catch (e) { console.error('[Regs] official search failed:', e.message); }
       }
     } else if (module === 'ships') {
       // 多源检索（合并）：Survey 检验证书 + 参数库(GT/DWT/主机) + TMOU PSC 风险档案

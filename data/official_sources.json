@@ -1,0 +1,102 @@
+{
+  "version": "1.0",
+  "updated": "2026-08-23",
+  "note": "官方法规/规范来源索引（免费公开），AI 回答法规问题时注入官方链接供原文核对",
+  "flag_states": {
+    "Singapore": {
+      "name": "新加坡海事及港务管理局 MPA",
+      "urls": [
+        {"title": "MPA 海事法规与咨询", "url": "https://www.mpa.gov.sg/regulations-advisory"},
+        {"title": "新加坡海事立法", "url": "https://www.mpa.gov.sg/regulations-advisory/maritime-legislation-of-singapore"},
+        {"title": "商船法 Merchant Shipping Act", "url": "https://www.mpa.gov.sg/regulations-advisory/maritime-legislation-of-singapore/merchant-shipping-act"},
+        {"title": "MPA 通函 Shipping Circulars", "url": "https://www.mpa.gov.sg/media-centre?year=All&type=Shipping+Circulars"},
+        {"title": "新加坡法规在线 SSO", "url": "https://sso.agc.gov.sg/"}
+      ]
+    },
+    "Panama": {
+      "name": "巴拿马海事局 AMP",
+      "urls": [
+        {"title": "AMP 法规 Normatividad", "url": "https://www.amp.gob.pa/normatividad/"},
+        {"title": "AMP 官网", "url": "https://www.amp.gob.pa/"}
+      ]
+    },
+    "Liberia": {
+      "name": "利比里亚船籍 LISCR",
+      "urls": [
+        {"title": "LISCR 法规与标准", "url": "https://www.liscr.com/maritime/regulations-and-standards"},
+        {"title": "LISCR 船舶登记要求", "url": "https://www.liscr.com/vessel-registration"},
+        {"title": "LISCR 在线图书馆", "url": "https://www.liscr.com/onlinelibrary/"}
+      ]
+    }
+  },
+  "class_societies": {
+    "NK": {
+      "name": "日本海事协会 ClassNK",
+      "urls": [
+        {"title": "NK 官网规则", "url": "https://www.classnk.or.jp/hp/en/"},
+        {"title": "NK 客户服务门户", "url": "https://portal.classnk.or.jp/portal/index.jsp"}
+      ]
+    },
+    "CCS": {
+      "name": "中国船级社 CCS",
+      "urls": [
+        {"title": "CCS 官网（规范与指南）", "url": "https://www.ccs.org.cn/ccswz/"},
+        {"title": "CCS 客户服务系统", "url": "https://www.ccs-service.net/"}
+      ]
+    },
+    "KR": {
+      "name": "韩国船级社 KR",
+      "urls": [
+        {"title": "KR 官网", "url": "http://www.krs.co.kr/"},
+        {"title": "KR e-Fleet", "url": "http://e-fleet.krs.co.kr/"}
+      ]
+    },
+    "ABS": {
+      "name": "美国船级社 ABS",
+      "urls": [
+        {"title": "ABS 官网", "url": "https://www.eagle.org/"},
+        {"title": "ABS Rules & Guides", "url": "https://ww2.eagle.org/en/rules-and-resources.html"}
+      ]
+    },
+    "DNV": {
+      "name": "挪威船级社 DNV",
+      "urls": [
+        {"title": "DNV Rules & Standards", "url": "https://www.dnv.com/rules-standards/"},
+        {"title": "DNV Vessel Register", "url": "https://vesselregister.dnv.com/"}
+      ]
+    },
+    "BV": {
+      "name": "法国船级社 BV",
+      "urls": [
+        {"title": "BV Marine & Offshore", "url": "https://marine-offshore.bureauveritas.com/"}
+      ]
+    },
+    "RINA": {
+      "name": "意大利船级社 RINA",
+      "urls": [
+        {"title": "RINA 官网", "url": "https://www.rina.org/"}
+      ]
+    }
+  },
+  "china": {
+    "name": "中华人民共和国海事局",
+    "urls": [
+      {"title": "中国海事局官网", "url": "https://www.msa.gov.cn/"},
+      {"title": "交通运输部海事法规", "url": "https://www.mot.gov.cn/"}
+    ]
+  },
+  "industry": {
+    "RightShip": {
+      "name": "RightShip",
+      "urls": [
+        {"title": "RightShip 官网", "url": "https://www.rightship.com/"}
+      ]
+    },
+    "TokyoMoU": {
+      "name": "东京备忘录",
+      "urls": [
+        {"title": "Tokyo MOU APCIS", "url": "https://apcis.tmou.org/"}
+      ]
+    }
+  }
+}

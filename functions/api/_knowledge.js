@@ -415,3 +415,65 @@ export async function searchImoConventions(request, query) {
   );
   return '【IMO 官方公约信息（来源：imo.org）】\n\n' + lines.join('\n\n');
 }
+
+// ═══════════════ 官方源索引检索（船旗国/船级社/海事局，2026-08-23 新增） ═══════════════
+let officialSources = null;
+
+async function ensureOfficialSources(request) {
+  if (officialSources) return officialSources;
+  try {
+    const baseUrl = getPagesUrl(request);
+    const resp = await fetch(`${baseUrl}/data/official_sources.json`);
+    if (resp.ok) officialSources = await resp.json();
+  } catch (e) {
+    console.error('Failed to load official_sources.json:', e.message);
+  }
+  return officialSources;
+}
+
+/** 按查询匹配官方源 → 返回官方链接清单（供 AI 附原文支持） */
+export async function searchOfficialSources(request, query) {
+  const data = await ensureOfficialSources(request);
+  if (!data) return '';
+  const q = query.toLowerCase();
+  const qn = query.replace(/[^\u4e00-\u9fff]/g, '');
+
+  const KEYWORDS = {
+    'flag_states': {
+      '新加坡': ['singapore', 'mpa', '新加坡', 'srs'],
+      '巴拿马': ['panama', 'amp', '巴拿马'],
+      '利比里亚': ['liberia', 'liscr', '利比里亚']
+    },
+    'class_societies': {
+      'NK': ['nk', 'classnk', '日本海事', 'nk船级'],
+      'CCS': ['ccs', '中国船级', 'ccs船级'],
+      'KR': ['kr', 'krs', '韩国船级', 'kr船级'],
+      'ABS': ['abs', '美国船级', 'abs船级'],
+      'DNV': ['dnv', '挪威船级', 'dnv船级'],
+      'BV': ['bv', '法国船级', 'bv船级'],
+      'RINA': ['rina', '意大利船级', 'rina船级']
+    },
+    'china': {
+      '海事局': ['海事局', '中国海事', 'msa', '交通运输部']
+    },
+    'industry': {
+      'RightShip': ['rightship', 'right ship'],
+      'TokyoMoU': ['tokyo mou', '东京备忘录', 'apcis', '港口国']
+    }
+  };
+
+  const matched = [];
+  for (const cat in KEYWORDS) {
+    for (const name in KEYWORDS[cat]) {
+      const kws = KEYWORDS[cat][name];
+      if (kws.some(k => q.includes(k) || qn.includes(k))) {
+        const src = data[cat] && data[cat][name];
+        if (src && src.urls) {
+          const links = src.urls.map(u => `- ${u.title}：<${u.url}>`).join('\n');
+          matched.push(`### ${src.name}\n${links}`);
+        }
+      }
+    }
+  }
+  return matched.length ? '【官方来源（供原文核对）】\n\n' + matched.join('\n\n') : '';
+}
