@@ -17,6 +17,7 @@ import { queryMemory, injectMemoryPrompt, logQuery } from './memory/_memory_core
 // ====== AI 调用配置 ======
 const DEEPSEEK_BASE = 'https://api.deepseek.com/v1';
 const DEEPSEEK_MODEL_TEXT = 'deepseek-chat';
+const DEEPSEEK_MODEL_VISION = 'deepseek-v4-flash-vision-exp';  // 2026-08-23 DeepSeek 官方多模态视觉模型
 const APIYI_BASE = 'https://api.apiyi.com/v1';
 const APIYI_MODEL_VISION = 'gpt-4o-2024-11-20';
 const APIYI_MODEL_TEXT = 'gpt-4o-mini-2024-07-18';
@@ -209,27 +210,53 @@ export async function onRequest(context) {
     let response;
     let apiUsed;
 
-    if (hasImage && apiYiKey) {
-      apiUsed = 'API易 GPT-4o';
-      response = await fetch(`${APIYI_BASE}/chat/completions`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${apiYiKey}`
-        },
-        body: JSON.stringify({
-          model: APIYI_MODEL_VISION,
-          messages,
-          temperature: 0.2,
-          max_tokens: 4096,
-          stream: false
-        })
-      });
-      if (!response.ok) {
-        // APIYI 失败（配额/网络）→ 图片无法走 DeepSeek，返回错误信息
-        const errText = await response.text().catch(() => '');
-        console.error('[APIYI vision failed]', response.status, errText.substring(0, 200));
-        return { reply: '⚠️ 图片分析服务暂时不可用（配额限制），请稍后重试，或直接描述缺陷内容，我将依据法规知识库回答。', model: 'error' };
+    if (hasImage) {
+      // 2026-08-23 策略：图片优先 DeepSeek V4-Flash-Vision（官方多模态，便宜），失败回退 APIYI GPT-4o
+      const dsKey = env.DEEPSEEK_API_KEY_ENV || '';
+      let dsVisionOk = false;
+      if (dsKey) {
+        try {
+          const dsResp = await fetch(`${DEEPSEEK_BASE}/chat/completions`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${dsKey}` },
+            body: JSON.stringify({
+              model: DEEPSEEK_MODEL_VISION,
+              messages,
+              temperature: 0.2,
+              max_tokens: 4096,
+              stream: false
+            })
+          });
+          if (dsResp.ok) {
+            apiUsed = 'DeepSeek Vision';
+            response = dsResp;
+            dsVisionOk = true;
+          } else {
+            const errText = await dsResp.text().catch(() => '');
+            console.error('[DeepSeek vision failed]', dsResp.status, errText.substring(0, 200));
+          }
+        } catch (e) { console.error('[DeepSeek vision error]', e.message); }
+      }
+      if (!dsVisionOk && apiYiKey) {
+        apiUsed = 'API易 GPT-4o';
+        response = await fetch(`${APIYI_BASE}/chat/completions`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${apiYiKey}` },
+          body: JSON.stringify({
+            model: APIYI_MODEL_VISION,
+            messages,
+            temperature: 0.2,
+            max_tokens: 4096,
+            stream: false
+          })
+        });
+        if (!response.ok) {
+          const errText = await response.text().catch(() => '');
+          console.error('[APIYI vision failed]', response.status, errText.substring(0, 200));
+          return { reply: '⚠️ 图片分析服务暂时不可用（视觉模型均失败），请稍后重试，或直接描述缺陷内容，我将依据法规知识库回答。', model: 'error' };
+        }
+      } else if (!dsVisionOk && !apiYiKey) {
+        return { reply: '⚠️ 图片分析服务暂时不可用（视觉模型未配置），请稍后重试，或直接描述缺陷内容。', model: 'error' };
       }
     } else {
       apiUsed = 'DeepSeek';
