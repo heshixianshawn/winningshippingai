@@ -1,0 +1,34 @@
+{
+  "version": "1.0",
+  "updated": "2026-08-23",
+  "note": "PSC 高频检查速查库（人工精编，基于 SOLAS 2024 原文，来源可溯）。后端按关键词匹配注入回答，防止 AI 编造。",
+  "items": [
+    {
+      "id": "lifeboat_release_test",
+      "category": "救生设备",
+      "keywords": ["救生艇释放", "救生艇测试", "脱钩测试", "lifeboat release", "lifeboat test", "脱钩", "释放测试", "release test", "release gear"],
+      "question": "救生艇释放/脱钩测试的要求和周期",
+      "answer": "救生艇释放装置测试分几个周期：\n1. **每周**：目视检查所有救生设备、救援艇和降落装置，报告记入航海日志（SOLAS Ch.III Reg.20.6）；\n2. **每月**：除自由降落式（free-fall）外，救生艇从存放位置转出检查（天气海况允许时，Reg.20.7.1）；\n3. **每3个月**：弃船演习中，救生艇由指定船员释放并水中操艇至少一次（Reg.19.3.4.5）；free-fall 救生艇每3个月训练至释放前一步（**释放钩不得脱钩**，Reg.19.3.4.4）；\n4. **年度检验**：释放装置彻底检查并操作测试（Reg.20.11.2.1，结合 SOLAS I/7、I/8 年度检验）；\n5. **每5年**：on-load（带载）释放装置按救生艇满载总质量 **1.1 倍负载**进行操作测试（每次大修时，且至少每5年一次，Reg.20.11.2.2；相关指南 MSC.1/Circ.1206/Rev.1，已被 MSC.1/Circ.1578 取代）；\n6. **吊索**：视磨损更换，间隔不超过5年（Reg.20.4）。",
+      "source": "SOLAS 2024 Ch.III Reg.19.3.4.4 / 19.3.4.5 / 20.4 / 20.6 / 20.7 / 20.11.2；MSC.1/Circ.1206/Rev.1（被 MSC.1/Circ.1578 取代）",
+      "official_url": "https://www.imo.org/en/About/Conventions/Pages/International-Convention-for-the-Safety-of-Life-at-Sea-(SOLAS),-1974.aspx"
+    },
+    {
+      "id": "lifeboat_release_hook",
+      "category": "救生设备",
+      "keywords": ["释放钩", "必须脱钩", "release hook", "是否脱钩", "每次释放"],
+      "question": "救生艇每次释放测试是否必须脱钩",
+      "answer": "**不需要每次脱钩**。日常每3个月弃船演习的释放测试（非 free-fall 船）是释放救生艇入水并操艇，free-fall 船的训练只进行到释放前一步——SOLAS Reg.19.3.4.4 明确要求"释放钩不得脱钩"（the release hook shall not be released）。真正带载脱钩测试（on-load release，1.1倍负载）只在年度检验操作测试和每5年大修时进行（Reg.20.11.2）。",
+      "source": "SOLAS 2024 Ch.III Reg.19.3.4.4 / 20.11.2",
+      "official_url": "https://www.imo.org/en/About/Conventions/Pages/International-Convention-for-the-Safety-of-Life-at-Sea-(SOLAS),-1974.aspx"
+    },
+    {
+      "id": "lifeboat_freefall",
+      "category": "救生设备",
+      "keywords": ["free-fall", "自由降落", "自由落体", "救生艇下水"],
+      "question": "free-fall 救生艇释放测试要求",
+      "answer": "free-fall（自由降落式）救生艇：\n1. 每3个月弃船演习训练：船员就座系安全带，启动释放程序**但不实际释放**（Reg.19.3.4.4）；\n2. 释放系统操作测试：可通过仅载操作船员的 free-fall 释放，或不放艇的测试方式进行（Reg.20.11.2.3）；\n3. 释放系统大修/每5年：按要求进行测试（Reg.20.11.2.2-2.3）。",
+      "source": "SOLAS 2024 Ch.III Reg.19.3.4.4 / 20.11.2.3",
+      "official_url": "https://www.imo.org/en/About/Conventions/Pages/International-Convention-for-the-Safety-of-Life-at-Sea-(SOLAS),-1974.aspx"
+    }
+  ]
+}

@@ -511,3 +511,32 @@ export async function searchOfficialSources(request, query) {
   }
   return matched.length ? '【官方来源（供原文核对）】\n\n' + matched.join('\n\n') : '';
 }
+
+// ═══════════════ PSC 高频速查库检索（2026-08-23 新增，人工精编防编造） ═══════════════
+let quickRef = null;
+
+async function ensureQuickRef(request) {
+  if (quickRef) return quickRef;
+  try {
+    const baseUrl = getPagesUrl(request);
+    const resp = await fetch(`${baseUrl}/data/psc_quick_ref.json`);
+    if (resp.ok) quickRef = await resp.json();
+  } catch (e) { console.error('Failed to load psc_quick_ref:', e.message); }
+  return quickRef;
+}
+
+/** 按关键词匹配速查条目 → 返回速查内容（有出处，防 AI 编造） */
+export async function searchQuickRef(request, query) {
+  const data = await ensureQuickRef(request);
+  if (!data || !data.items) return '';
+  const q = query.toLowerCase();
+  const qCn = query.replace(/[^\u4e00-\u9fff]/g, '');
+  const hits = data.items.filter(it =>
+    it.keywords.some(k => q.includes(k.toLowerCase()) || (qCn && qCn.includes(k)))
+  );
+  if (hits.length === 0) return '';
+  const out = hits.map(it =>
+    `【速查：${it.question}】（来源：${it.source}）\n${it.answer}\n📖 官方原文：<${it.official_url}>`
+  ).join('\n\n---\n\n');
+  return '【PSC 高频速查（权威依据，引用此内容作答）】\n\n' + out;
+}
