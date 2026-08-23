@@ -8,7 +8,7 @@ import {
   SHIP_SYSTEM_PROMPT
 } from './_system_prompts.js';
 import { querySurveyKnowledge, getAlertSummary } from './_survey_knowledge.js';
-import { autoSearchKnowledge } from './_knowledge.js';
+import { autoSearchKnowledge, searchImoConventions } from './_knowledge.js';
 import { searchFleetKnowledge } from './_fleet_data.js';
 import { logToKV } from './_logger.js';
 import { analyzeIntent, buildThinkingContext } from './_thinking_engine.js';
@@ -86,12 +86,16 @@ export async function onRequest(context) {
     } else if (clientContext && typeof clientContext === 'string' && clientContext.length > 0) {
       kbContext = clientContext;
       ragUsed = true;
-      // 法规模块：即使有 TYPE 标签也追加法规原文检索（SOLAS 知识库）
+      // 法规模块：即使有 TYPE 标签也追加法规原文检索（SOLAS 知识库）+ IMO 官方公约信息
       if (module === 'regulations') {
         try {
           const regKb = await autoSearchKnowledge('regulations', message, request);
           if (regKb) kbContext += '\n\n' + regKb;
         } catch (e) { console.error('[Regs] kb search failed:', e.message); }
+        try {
+          const imoInfo = await searchImoConventions(request, message);
+          if (imoInfo) kbContext += '\n\n' + imoInfo;
+        } catch (e) { console.error('[Regs] imo search failed:', e.message); }
       }
     } else if (module === 'ships') {
       // 多源检索（合并）：Survey 检验证书 + 参数库(GT/DWT/主机) + TMOU PSC 风险档案

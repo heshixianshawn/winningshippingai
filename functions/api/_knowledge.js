@@ -334,3 +334,84 @@ export async function searchRegulationsKnowledge(request, query) {
   }
   return out.length ? '【SOLAS 2024 法规原文检索结果】\n\n' + out.join('\n\n---\n\n') : '';
 }
+
+// ═══════════════ IMO 官方公约检索（2026-08-23 新增） ═══════════════
+let imoConvs = null;
+
+async function ensureImoConventions(request) {
+  if (imoConvs) return imoConvs;
+  try {
+    const baseUrl = getPagesUrl(request);
+    const resp = await fetch(`${baseUrl}/data/imo_conventions.json`);
+    if (resp.ok) imoConvs = await resp.json();
+  } catch (e) {
+    console.error('Failed to load imo_conventions.json:', e.message);
+  }
+  return imoConvs;
+}
+
+const CONV_ALIASES = {
+  'solas': ['solas', 'safety of life at sea'],
+  'marpol': ['marpol', 'prevention of pollution from ships'],
+  'stcw': ['stcw', 'standards of training', 'watchkeeping'],
+  'colreg': ['colreg', 'collision'],
+  'load line': ['load line', 'loadlines'],
+  'bwm': ['ballast water', 'bwm'],
+  'afs': ['anti-fouling', 'afs'],
+  'mlc': ['maritime labour'],
+  'tonnage': ['tonnage'],
+  'salvage': ['salvage'],
+  'wrecks': ['wrecks', 'removal of wrecks'],
+  'bunker': ['bunker oil'],
+  'hns': ['hazardous and noxious', 'hns'],
+  'csc': ['safe containers', 'csc'],
+  'sfv': ['fishing vessels'],
+  'sar': ['search and rescue', 'sar'],
+  'crc': ['recycling of ships', 'hong kong'],
+};
+
+/** 按查询匹配 IMO 公约 → 返回官方链接+摘要 */
+export async function searchImoConventions(request, query) {
+  const data = await ensureImoConventions(request);
+  if (!data || !data.conventions) return '';
+  const q = query.toLowerCase();
+  const qn = q.replace(/[^\u4e00-\u9fff]/g, '');
+  // 中文→英文映射（常见法规中文关键词）
+  const CN_MAP = {
+    '压载水': 'ballast water', '救生': 'life', '消防': 'fire', '生活污水': 'sewage',
+    '油污': 'oil pollution', '垃圾': 'garbage', '防污底': 'anti-fouling', '防污': 'pollution',
+    '劳工': 'labour', '配员': 'crew', '载重线': 'load line', '碰撞': 'collision',
+    '危险货物': 'dangerous', '拆船': 'recycling', '沉船': 'wrecks', '海难救助': 'salvage',
+    '吨位': 'tonnage', '安全': 'safety', '培训': 'training', '保安': 'security'
+  };
+  let qEn = q;
+  for (const cn in CN_MAP) {
+    if (qn.includes(cn)) qEn += ' ' + CN_MAP[cn];
+  }
+
+  const matched = [];
+  for (const name in data.conventions) {
+    const c = data.conventions[name];
+    const nameLower = name.toLowerCase();
+    let hit = false;
+    for (const aliasList of Object.values(CONV_ALIASES)) {
+      if (aliasList.some(a => qEn.includes(a))) {
+        if (aliasList.some(a => nameLower.includes(a))) { hit = true; break; }
+      }
+    }
+    if (!hit) {
+      // 直接名称包含匹配
+      const words = qEn.match(/[a-z][a-z\-]{2,}/g) || [];
+      if (words.some(w => w.length > 3 && nameLower.includes(w))) hit = true;
+    }
+    if (hit) {
+      matched.push({ name, url: c.url, summary: (c.summary || '').slice(0, 600) });
+    }
+  }
+
+  if (matched.length === 0) return '';
+  const lines = matched.slice(0, 3).map(c =>
+    `### ${c.name}\n官方原文: ${c.url}\n概述: ${c.summary || '（见IMO官网）'}`
+  );
+  return '【IMO 官方公约信息（来源：imo.org）】\n\n' + lines.join('\n\n');
+}
