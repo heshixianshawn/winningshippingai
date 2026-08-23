@@ -2005,6 +2005,8 @@ function formatMessage(text) {
   html = html.replace(/`([^`]+)`/g, '<code>$1</code>');
   html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
   html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+  // <https://...> 尖括号 URL → 可点击链接（2026-08-23 法规官方原文）
+  html = html.replace(/<((?:https?:\/\/|www\.)[^>\s]+)>/g, '<a href="$1" target="_blank" rel="noopener">$1</a>');
   // 【法规条款→可点击查看原文】
   // 使用 RegulationsMap 将法规条款名称转换为可点击链接
   if (typeof window.RegulationsMap !== 'undefined' && window.RegulationsMap.htmlify) {
