@@ -251,21 +251,26 @@ export async function onRequest(context) {
       }
       if (!dsVisionOk && apiYiKey) {
         apiUsed = 'API易 GPT-4o';
-        response = await fetch(`${APIYI_BASE}/chat/completions`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${apiYiKey}` },
-          body: JSON.stringify({
-            model: APIYI_MODEL_VISION,
-            messages,
-            temperature: 0.2,
-            max_tokens: 4096,
-            stream: false
-          })
-        });
-        if (!response.ok) {
-          const errText = await response.text().catch(() => '');
-          console.error('[APIYI vision failed]', response.status, errText.substring(0, 200));
-          return { reply: '⚠️ 图片分析服务暂时不可用（视觉模型均失败），请稍后重试，或直接描述缺陷内容，我将依据法规知识库回答。', model: 'error' };
+        try {
+          response = await fetch(`${APIYI_BASE}/chat/completions`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${apiYiKey}` },
+            body: JSON.stringify({
+              model: APIYI_MODEL_VISION,
+              messages,
+              temperature: 0.2,
+              max_tokens: 4096,
+              stream: false
+            })
+          });
+          if (!response.ok) {
+            const errText = await response.text().catch(() => '');
+            console.error('[APIYI vision failed]', response.status, errText.substring(0, 200));
+            return { reply: '⚠️ 图片分析服务暂时不可用（视觉模型均失败，配额或网络问题），请稍后重试，或直接描述缺陷内容，我将依据法规知识库回答。', model: 'error' };
+          }
+        } catch (e) {
+          console.error('[APIYI vision error]', e.message);
+          return { reply: '⚠️ 图片分析服务暂时不可用（视觉模型均失败，配额或网络问题），请稍后重试，或直接描述缺陷内容，我将依据法规知识库回答。', model: 'error' };
         }
       } else if (!dsVisionOk && !apiYiKey) {
         return { reply: '⚠️ 图片分析服务暂时不可用（视觉模型未配置），请稍后重试，或直接描述缺陷内容。', model: 'error' };

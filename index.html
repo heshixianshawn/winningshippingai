@@ -473,11 +473,13 @@ function compressImage(dataUrl, maxWidth, quality) {
           var page = await pdf.getPage(pageNo);
           var viewport = page.getViewport({ scale: scale || 2 });
           var canvas = document.createElement('canvas');
-          canvas.width = Math.min(viewport.width, 2200);
+          // 压缩：宽度≤1600，JPEG 0.7（扫描件大图曾导致 CF 500→回退APIYI→配额不足）
+          var maxW = 1600;
+          canvas.width = Math.min(viewport.width, maxW);
           canvas.height = Math.round(canvas.width * viewport.height / viewport.width);
           var ctx = canvas.getContext('2d');
           await page.render({ canvasContext: ctx, viewport: viewport }).promise;
-          return canvas.toDataURL('image/jpeg', 0.85);
+          return canvas.toDataURL('image/jpeg', 0.7);
         }
         var result = await Promise.race([
           (async function() {
@@ -1819,21 +1821,32 @@ async function callAPI(message, module, imageData) {
     }
   }
   
-  // ═══ 调API易 ═══
-  const response = await fetch(APIYI_BASE + '/chat/completions', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + APIYI_KEY },
-    body: JSON.stringify({ model, messages, temperature: 0.01, max_tokens: 4096, stream: false })
-  });
-  
-  if (!response.ok) {
-    const err = await response.json().catch(() => ({}));
-    throw new Error(err.error?.message || `HTTP ${response.status}`);
+  // ═══ 调API易（回退） ═══
+  try {
+    const response = await fetch(APIYI_BASE + '/chat/completions', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + APIYI_KEY },
+      body: JSON.stringify({ model, messages, temperature: 0.01, max_tokens: 4096, stream: false })
+    });
+    
+    if (!response.ok) {
+      const err = await response.json().catch(() => ({}));
+      // APIYI 配额/余额错误友好化（2026-08-24：APIYI 配额不足时不再透传原始错误）
+      if (/配额|余额|insufficient|quota/i.test(err.error?.message || '')) {
+        throw new Error('AI 服务暂时不可用（图片分析通道配额不足），请稍后重试或直接描述内容');
+      }
+      throw new Error(err.error?.message || `HTTP ${response.status}`);
+    }
+    
+    const data = await response.json();
+    console.log('[DEBUG] API reply (first 200 chars):', data.choices[0].message.content.substring(0, 200));
+    return { reply: data.choices[0].message.content, model: data.model, usage: data.usage };
+  } catch (e) {
+    if (/配额|余额|insufficient|quota|Failed to fetch/i.test(e.message || '')) {
+      throw new Error('AI 服务暂时不可用，请稍后重试（' + (e.message || '').slice(0, 60) + '）');
+    }
+    throw e;
   }
-  
-  const data = await response.json();
-  console.log('[DEBUG] API reply (first 200 chars):', data.choices[0].message.content.substring(0, 200));
-  return { reply: data.choices[0].message.content, model: data.model, usage: data.usage };
 }
 
 // 前端知识库检索
