@@ -292,7 +292,8 @@
 <script>
 // ====== 防止CF Pages/浏览器对const声明的干扰，改为var全局声明 ======
 var CONFIG = {
-  API_BASE_URL: 'https://winningshippingai.pages.dev',
+  // 同源优先：避免跨域 CORS 拦截（2026-08-24 修复：硬编码 pages.dev 导致 api.winningshippingai.com 访问时 CORS 失败→回退APIYI→配额不足）
+  API_BASE_URL: (typeof location !== 'undefined' && location.origin) ? location.origin : 'https://winningshippingai.pages.dev',
   modules: {
     regulations: {
       name: '法规', icon: '📋',
