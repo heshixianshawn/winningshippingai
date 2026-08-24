@@ -495,21 +495,16 @@ function compressImage(dataUrl, maxWidth, quality) {
             }
             var content = texts.join('\n');
             if (!content.trim()) {
-              // 扫描件 → 渲染前3页 OCR（chi_sim+eng）
-              var ocrPages = [];
-              var ocrMax = Math.min(pdf.numPages, 3);
-              for (var k = 1; k <= ocrMax; k++) {
-                try {
-                  var imgUrl = await renderPdfPageToImage(pdf, k, 2);
-                  var t = await runOcr(imgUrl, 'chi_sim+eng');
-                  if (t && t.length >= 10) ocrPages.push('【第' + k + '页·OCR】' + t);
-                } catch (e) { /* 单页失败跳过 */ }
-              }
-              if (ocrPages.length) {
-                content = '（扫描件OCR识别，个别字词可能有误）\n' + ocrPages.join('\n');
-              } else {
-                throw new Error('该PDF无文本层且OCR未能识别（可能是纯图片或清晰度不足）');
-              }
+              // 扫描件 → 渲染前2页为图片，走 DeepSeek Vision 识别分析（中文识别远强于本地OCR）
+              var imgUrl = await renderPdfPageToImage(pdf, 1, 3);
+              STATE.imageData = imgUrl;
+              STATE.ocrText = null;
+              if (els.previewImg) { els.previewImg.src = imgUrl; els.imagePreview.classList.remove('hidden'); }
+              // 多页扫描件：附上后续页提示
+              var pageNote = pdf.numPages > 1 ? '（共' + pdf.numPages + '页，当前展示第1页，如需其他页可截图上传）' : '';
+              els.input.value = '📄 这是扫描件PDF【' + file.name + '】' + pageNote + '，请识别图片中的文字内容并分析（重点：检查缺陷/结论/日期），引用相关公约条款：';
+              sendMessage();
+              return 'handled-as-image';
             }
             return content;
           })(),
