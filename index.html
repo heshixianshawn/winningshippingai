@@ -443,25 +443,86 @@ function compressImage(dataUrl, maxWidth, quality) {
   }
   bindClick(els.imageUploadBtn, els.imageInput);
   bindClick(els.fileUploadBtn, els.fileInput);
+  // PDF 解析（pdf.js 动态加载，复用 OCR 模式）
+  var PDF_TIMEOUT = 60000;
+  var pdfScriptLoading = null;
+  function loadPdfJs() {
+    if (typeof pdfjsLib !== 'undefined') return Promise.resolve();
+    if (pdfScriptLoading) return pdfScriptLoading;
+    pdfScriptLoading = new Promise(function(resolve, reject) {
+      var s = document.createElement('script');
+      s.src = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js';
+      s.onload = function() {
+        try {
+          pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.worker.min.js';
+          resolve();
+        } catch (e) { reject(e); }
+      };
+      s.onerror = function() { pdfScriptLoading = null; reject(new Error('PDF.js CDN 加载失败')); };
+      document.head.appendChild(s);
+    });
+    return pdfScriptLoading;
+  }
+  function handlePdfUpload(file) {
+    var reader = new FileReader();
+    reader.onload = async function(ev) {
+      try {
+        var result = await Promise.race([
+          (async function() {
+            await loadPdfJs();
+            var pdf = await pdfjsLib.getDocument({ data: ev.target.result }).promise;
+            var maxPages = Math.min(pdf.numPages, 12);
+            var texts = [];
+            for (var i = 1; i <= maxPages; i++) {
+              try {
+                var page = await pdf.getPage(i);
+                var tc = await page.getTextContent();
+                var s = tc.items.map(function(it) { return it.str; }).join(' ');
+                if (s.trim()) texts.push('【第' + i + '页】' + s.trim());
+              } catch (e) { /* 跳过坏页 */ }
+            }
+            var content = texts.join('\n');
+            if (!content.trim()) throw new Error('该PDF无文本层（可能是扫描件）');
+            return content;
+          })(),
+          new Promise(function(_, reject) { setTimeout(function() { reject(new Error('PDF解析超时')); }, PDF_TIMEOUT); })
+        ]);
+        var content = result;
+        var snippet = content.substring(0, 5000);
+        if (content.length > 5000) snippet += '\n...(文件较长，截取前5000字符)';
+        STATE.uploadedFileContent = snippet;
+        STATE.uploadedFileName = file.name;
+        els.input.value = '📄 以下是文件【' + file.name + '】的内容，请直接分析：\n\n' + snippet + '\n\n[请基于以上文件内容回答用户的问题]';
+        sendMessage();
+      } catch (e) {
+        els.input.value = '⚠️ 【' + file.name + '】PDF 解析失败：' + (e.message || '未知错误') + '。扫描件请粘贴文字或上传TXT，也可用图片分析上传照片。';
+        sendMessage();
+      }
+    };
+    reader.readAsArrayBuffer(file);
+  }
   if (els.fileInput) els.fileInput.onchange = async function(e) {
     var file = e.target.files[0];
     if (!file) return;
-    var reader = new FileReader();
-    reader.onload = function(ev) {
-      var content = ev.target.result;
-      // 截取前5000字符作为context上下文
-      var snippet = content.substring(0, 5000);
-      if (content.length > 5000) snippet += '\n...(文件较长，截取前5000字符)';
-      STATE.uploadedFileContent = snippet;
-      STATE.uploadedFileName = file.name;
-      els.input.value = '📄 以下是文件【' + file.name + '】的内容，请直接分析：\n\n' + snippet + '\n\n[请基于以上文件内容回答用户的问题]';
-      sendMessage();
-    };
-    if (file.type === 'text/plain' || file.name.endsWith('.txt')) {
+    var name = file.name.toLowerCase();
+    if (file.type === 'text/plain' || name.endsWith('.txt')) {
+      var reader = new FileReader();
+      reader.onload = function(ev) {
+        var content = ev.target.result;
+        // 截取前5000字符作为context上下文
+        var snippet = content.substring(0, 5000);
+        if (content.length > 5000) snippet += '\n...(文件较长，截取前5000字符)';
+        STATE.uploadedFileContent = snippet;
+        STATE.uploadedFileName = file.name;
+        els.input.value = '📄 以下是文件【' + file.name + '】的内容，请直接分析：\n\n' + snippet + '\n\n[请基于以上文件内容回答用户的问题]';
+        sendMessage();
+      };
       reader.readAsText(file, 'utf-8');
+    } else if (name.endsWith('.pdf')) {
+      handlePdfUpload(file);
     } else {
-      // PDF/DOC等作提示
-      els.input.value = '⚠️ 【' + file.name + '】不支持直接读取。请将文件内容粘贴到输入框，或上传TXT文件。';
+      // DOC/图片等作提示
+      els.input.value = '⚠️ 【' + file.name + '】不支持直接读取。请将文件内容粘贴到输入框，或上传TXT/PDF文件。';
       sendMessage();
     }
     e.target.value = '';
