@@ -51,6 +51,10 @@ export async function onRequest(context) {
     const { message, module = 'regulations', imageUrl, ocrText, history = [], context: clientContext } = body;
 
     const hasImage = !!imageUrl && (imageUrl.startsWith('data:image') || imageUrl.startsWith('http'));
+    // 图片过大/异常拦截：dataURL base64 超 4MB 直接拒绝（大图曾致 Worker 1101 崩溃）
+    if (hasImage && imageUrl.startsWith('data:') && imageUrl.length > 4200000) {
+      return { reply: '⚠️ 图片文件过大（超过约3MB），无法处理。请压缩图片或上传扫描件时确保清晰度适中后重试。', model: 'error' };
+    }
     const apiYiKey = env.APIYI_API_KEY_ENV;
 
     // ====== 思考引擎：检测前端传来的结构化数据 ======
@@ -300,8 +304,13 @@ export async function onRequest(context) {
       });
     }
 
-    const data = await response.json();
-    const reply = data.choices[0].message.content;
+    const data = await response.json().catch(() => ({}));
+    const reply = (data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content)
+      ? data.choices[0].message.content : null;
+    if (!reply) {
+      console.error('[API] 空回复/异常结构', apiUsed);
+      return { reply: '⚠️ AI 返回异常（' + apiUsed + '），请稍后重试或换种问法。', model: 'error' };
+    }
     const usage = data.usage || {};
 
     // ====== Log ======
