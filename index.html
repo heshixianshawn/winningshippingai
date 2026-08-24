@@ -468,6 +468,17 @@ function compressImage(dataUrl, maxWidth, quality) {
     var reader = new FileReader();
     reader.onload = async function(ev) {
       try {
+        // PDF 扫描件 OCR 兜底：渲染页面为图片 → tesseract chi_sim+eng
+        async function renderPdfPageToImage(pdf, pageNo, scale) {
+          var page = await pdf.getPage(pageNo);
+          var viewport = page.getViewport({ scale: scale || 2 });
+          var canvas = document.createElement('canvas');
+          canvas.width = Math.min(viewport.width, 2200);
+          canvas.height = Math.round(canvas.width * viewport.height / viewport.width);
+          var ctx = canvas.getContext('2d');
+          await page.render({ canvasContext: ctx, viewport: viewport }).promise;
+          return canvas.toDataURL('image/jpeg', 0.85);
+        }
         var result = await Promise.race([
           (async function() {
             await loadPdfJs();
@@ -483,7 +494,23 @@ function compressImage(dataUrl, maxWidth, quality) {
               } catch (e) { /* 跳过坏页 */ }
             }
             var content = texts.join('\n');
-            if (!content.trim()) throw new Error('该PDF无文本层（可能是扫描件）');
+            if (!content.trim()) {
+              // 扫描件 → 渲染前3页 OCR（chi_sim+eng）
+              var ocrPages = [];
+              var ocrMax = Math.min(pdf.numPages, 3);
+              for (var k = 1; k <= ocrMax; k++) {
+                try {
+                  var imgUrl = await renderPdfPageToImage(pdf, k, 2);
+                  var t = await runOcr(imgUrl, 'chi_sim+eng');
+                  if (t && t.length >= 10) ocrPages.push('【第' + k + '页·OCR】' + t);
+                } catch (e) { /* 单页失败跳过 */ }
+              }
+              if (ocrPages.length) {
+                content = '（扫描件OCR识别，个别字词可能有误）\n' + ocrPages.join('\n');
+              } else {
+                throw new Error('该PDF无文本层且OCR未能识别（可能是纯图片或清晰度不足）');
+              }
+            }
             return content;
           })(),
           new Promise(function(_, reject) { setTimeout(function() { reject(new Error('PDF解析超时')); }, PDF_TIMEOUT); })
@@ -496,7 +523,7 @@ function compressImage(dataUrl, maxWidth, quality) {
         els.input.value = '📄 以下是文件【' + file.name + '】的内容，请直接分析：\n\n' + snippet + '\n\n[请基于以上文件内容回答用户的问题]';
         sendMessage();
       } catch (e) {
-        els.input.value = '⚠️ 【' + file.name + '】PDF 解析失败：' + (e.message || '未知错误') + '。扫描件请粘贴文字或上传TXT，也可用图片分析上传照片。';
+        els.input.value = '⚠️ 【' + file.name + '】PDF 解析失败：' + (e.message || '未知错误') + '。可尝试：粘贴文字、上传TXT、或用图片分析上传照片。';
         sendMessage();
       }
     };
@@ -566,12 +593,15 @@ function loadOcrScript() {
   });
   return ocrScriptLoading;
 }
-async function runOcr(dataUrl) {
+async function runOcr(dataUrl, lang) {
   try {
     await loadOcrScript();
+    // 中文识别需下载 chi_sim 语言包（~10MB，首次较慢），放宽超时
+    var ocrLang = lang || 'eng';
+    var timeout = ocrLang.indexOf('chi') >= 0 ? 150000 : OCR_TIMEOUT;
     var result = await Promise.race([
-      Tesseract.recognize(dataUrl, 'eng', { logger: function() {} }),
-      new Promise(function(_, reject) { setTimeout(function() { reject(new Error('OCR timeout')); }, OCR_TIMEOUT); })
+      Tesseract.recognize(dataUrl, ocrLang, { logger: function() {} }),
+      new Promise(function(_, reject) { setTimeout(function() { reject(new Error('OCR timeout')); }, timeout); })
     ]);
     var text = (result && result.data && result.data.text || '').replace(/\s+/g, ' ').trim();
     return text.length >= 15 ? text : null;
