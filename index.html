@@ -445,7 +445,7 @@ function compressImage(dataUrl, maxWidth, quality) {
   bindClick(els.imageUploadBtn, els.imageInput);
   bindClick(els.fileUploadBtn, els.fileInput);
   // PDF 解析（pdf.js 动态加载，复用 OCR 模式）
-  var PDF_TIMEOUT = 60000;
+  var PDF_TIMEOUT = 240000;  // 扫描件OCR需下载 chi_sim 语言包（首次~10MB），放宽到4分钟
   var pdfScriptLoading = null;
   function loadPdfJs() {
     if (typeof pdfjsLib !== 'undefined') return Promise.resolve();
@@ -618,7 +618,12 @@ async function runOcr(dataUrl, lang) {
     if (document.hidden) return;
     loadOcrScript().then(function() {
       var tiny = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==';
+      // 预热 eng（图片分析用）
       Tesseract.recognize(tiny, 'eng', { logger: function() {} }).catch(function() {});
+      // 预热 chi_sim（扫描件PDF OCR 用，下载较大放后面）
+      setTimeout(function() {
+        Tesseract.recognize(tiny, 'chi_sim', { logger: function() {} }).catch(function() {});
+      }, 15000);
     }).catch(function() {});
   }, { timeout: 20000 });
 })();
