@@ -175,7 +175,9 @@ export async function onRequest(context) {
     // ====== Survey Alert Summary for ships module ======
     if (module === 'ships') {
       try {
-        const alerts = getAlertSummary();
+        // 2026-08-25 修复：单船查询只注入该船预警（全局预警注入导致模型把其他船的过期项串到查询船，如FAITH问出JOY/FRIA的日期）
+        const queryShip = (isThinkingMode && awareData && awareData.ship) ? awareData.ship : null;
+        const alerts = getAlertSummary(queryShip);
         if (alerts) {
           systemContent += '\n\n【📊 当前检验与证书预警状态】\n' + alerts;
         }

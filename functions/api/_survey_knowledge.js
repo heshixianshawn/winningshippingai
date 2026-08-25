@@ -125,14 +125,21 @@ export function getAlerts(maxDays = 30) {
 
 /**
  * 获取预警摘要（适合放在系统prompt中）
+ * @param {string|null} shipFilter 指定船名时只返回该船预警（2026-08-25 修复：全局预警注入导致模型把其他船的过期项串到查询船）
  */
-export function getAlertSummary() {
+export function getAlertSummary(shipFilter) {
   const now = new Date();
   const urgent = [];
   const expired = [];
   
   for (const [key, ship] of Object.entries(SURVEY_DATA.ships)) {
     const nm = ship.name || ship.n || key;
+    if (shipFilter) {
+      const f = String(shipFilter).trim().toUpperCase().replace(/\s+/g, ' ');
+      const n2 = nm.toUpperCase().replace(/\s+/g, ' ');
+      const k2 = key.toUpperCase().replace(/\s+/g, ' ');
+      if (n2 !== f && k2 !== f) continue;
+    }
     const pushItem = (name, date) => {
       const d = parseDateStr(date);
       if (!d) return;
@@ -152,6 +159,23 @@ export function getAlertSummary() {
   }
   
   let text = '';
+  if (shipFilter) {
+    // 单船模式：只输出该船自己的预警
+    if (urgent.length > 0) {
+      text += `\n## 🔴 本船即将到期预警（7天内）\n`;
+      for (const item of urgent.slice(0, 15)) {
+        text += `- ${item.name} | ${item.date} | 仅剩${item.days}天\n`;
+      }
+    }
+    if (expired.length > 0) {
+      text += `\n## 💀 本船近期已过期（30天内）\n`;
+      for (const item of expired.slice(0, 10)) {
+        text += `- ${item.name} | ${item.date} | 已过期${-item.days}天\n`;
+      }
+    }
+    return text;
+  }
+  
   if (urgent.length > 0) {
     text += `\n## 🔴 即将到期预警（7天内）\n`;
     for (const item of urgent.slice(0, 15)) {
@@ -163,6 +187,9 @@ export function getAlertSummary() {
     for (const item of expired.slice(0, 10)) {
       text += `- ${item.ship}: ${item.name} | ${item.date} | 已过期${-item.days}天\n`;
     }
+  }
+  if (text) {
+    text += `\n⚠️ 以上为全船队预警汇总，每条已标注船名。仅当预警中船名与用户查询的船一致时方可引用，严禁将其他船的预警项当作查询船的证书状态。`;
   }
   
   return text;
