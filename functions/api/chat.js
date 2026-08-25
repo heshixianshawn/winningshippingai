@@ -79,10 +79,15 @@ export async function onRequest(context) {
     let quickAnswer = null;  // PSC 速查命中内容（强制原样输出）
 
     if (isThinkingMode && awareData) {
-      // 思考引擎模式：前端已分析结构数据，Worker侧再补充后端权威检索（参数库 + PSC 风险）
+      // 思考引擎模式：前端已分析结构数据，Worker侧再补充后端权威检索（参数库 + Survey Status + PSC 风险）
       const intent = analyzeIntent(awareData, message);
       kbContext = buildThinkingContext(awareData, intent);
       try {
+        // 2026-08-25：证书/检验信息以最新 Survey Status 知识库为准（前端 OCR 旧证书库已停用），按船名注入权威明细
+        if (awareData && awareData.ship) {
+          const shipSurvey = querySurveyKnowledge(String(awareData.ship));
+          if (shipSurvey) kbContext += '\n\n' + shipSurvey;
+        }
         const fleetCtx = await searchFleetKnowledge(message, request);
         if (fleetCtx) kbContext += '\n\n' + fleetCtx;
       } catch (e) {

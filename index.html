@@ -357,8 +357,7 @@ var STATE = {
   fleetFilter: 'all',
   fleetParams: null,
   inspectionHistory: null,
-  repairData: null,
-  nkSurveyData: null
+  repairData: null
 };
 
 try {
@@ -645,7 +644,7 @@ els.sendBtn.disabled = false;
 
 // 惰性加载船队参数
 loadFleetParams();
-loadNkSurveyData();
+// ⚠️ 2026-08-25 停用 loadNkSurveyData：旧文件 nk_survey_knowledge.json（7/31版）含过期旧到期日，证书/检验以最新 Survey Status Report 为准（后端知识库）
 
 // ====== 船舶知识库加载 ======
 var SHIP_DATA_URL = 'data/ship_knowledge.json';
@@ -978,16 +977,6 @@ async function loadFleetParams() {
     STATE.fleetParams = await resp.json();
   } catch(e) {
     console.warn('fleet_params.json 加载失败:', e.message);
-  }
-}
-
-async function loadNkSurveyData() {
-  try {
-    const resp = await fetch('data/nk_survey_knowledge.json?_t=' + Date.now());
-    STATE.nkSurveyData = await resp.json();
-    console.log('NK Survey Status 加载完成:', Object.keys(STATE.nkSurveyData).length, '艘船');
-  } catch(e) {
-    console.warn('nk_survey_knowledge.json 加载失败:', e.message);
   }
 }
 
@@ -1418,75 +1407,7 @@ function buildShipsContext(message) {
   }
 
   if (!matchedShip) {
-    // 按证书类型/到期日关键词搜索
-    var certTypePats = ['证书', '到期', '到期日', 'DOCK', 'SURVEY', '舱室', 'ILL', 'IOPP', 'SMC', 'ISSC', 'SSEC', 'SC', 'SE', 'SR', 'IAPP'];
-    var isCertQuery = certTypePats.some(function(cp) { return q.includes(cp); });
-    if (isCertQuery) {
-      var certMatches = [];
-      var isFullListQuery = /各船有哪些证书|列出.*[所全]有.*证书|所有船.*证书|全部船.*证书/.test(q);
-      if (isFullListQuery) {
-        var ctx = '【知识库检索结果 — 全船队证书清单】\n以下为每艘船的证书类型（已去重）及数量。请基于此数据回答用户问题。\n\n';
-        for (var sn00 of Object.keys(byShip).sort()) {
-          var certsFS = byShip[sn00] || [];
-          var uniqueTypes = {};
-          for (var cf of certsFS) {
-            var cn0 = cf.cert || '(未分类)';
-            uniqueTypes[cn0] = (uniqueTypes[cn0] || 0) + 1;
-          }
-          var typeKeys = Object.keys(uniqueTypes).slice(0, 12);
-          var typeStr = typeKeys.map(function(tk) {
-            var extra = uniqueTypes[tk] > 1 ? '(' + uniqueTypes[tk] + '份)' : '';
-            return tk + extra;
-          }).join('; ');
-          if (Object.keys(uniqueTypes).length > 12) {
-            typeStr += '...(+' + (Object.keys(uniqueTypes).length - 12) + '种)';
-          }
-          ctx += sn00 + ': ' + certsFS.length + '份证书记录 — ' + typeStr + '\n';
-        }
-        ctx += '\n⚠️ 每艘船只展示前12种证书类型（含重复），完整列表请具体询问某条船。';
-        return ctx.slice(0, 16000);
-      }
-      for (var sn0 of Object.keys(byShip).sort()) {
-        for (var ct0 of (byShip[sn0] || [])) {
-          var cn0 = (ct0.cert || '').toUpperCase();
-          var ex0 = (ct0.expiry || '').toUpperCase();
-          if (cn0.includes(q) || ex0.includes(q)) {
-            certMatches.push({ ship: sn0, cert: ct0.cert, expiry: ct0.expiry });
-            break;
-          }
-        }
-        if (certMatches.length >= 5) break;
-      }
-      if (certMatches.length > 0) {
-        var ctx0 = '【知识库检索结果 — 按关键词匹配证书】\n共找到 ' + certMatches.length + ' 条匹配记录：\n\n';
-        certMatches.forEach(function(m) {
-          ctx0 += '• ' + m.ship + ' — ' + m.cert;
-          if (m.expiry) ctx0 += '（到期日：' + m.expiry + '）';
-          ctx0 += '\n';
-        });
-        return ctx0;
-      }
-    }
-    // 完整索引
-    var idxParts = [];
-    for (var sn0 of Object.keys(byShip).sort()) {
-      var certList = [];
-      for (var ct0 of (byShip[sn0] || []).slice(0, 8)) {
-        var cn0 = ct0.cert || '(未分类)';
-        var ex0 = ct0.expiry || '';
-        if (ex0 && ex0 !== '未明确提及' && ex0 !== '未明确标注有效期' && ex0 !== '未明确显示' && ex0 !== '未明确说明' && ex0 !== '无' && !ex0.startsWith('未')) {
-          certList.push(cn0 + '(' + ex0 + ')');
-        } else if (cn0 !== '(未分类)') {
-          certList.push(cn0);
-        }
-      }
-      if (certList.length > 0) idxParts.push(sn0 + ': ' + certList.join('; '));
-    }
-    if (idxParts.length > 0) {
-      var ctx0 = '【完整船舶证书索引（共' + idxParts.length + '艘）】\n\n请从下方索引中查找用户问题涉及的船名、证书名或到期日。如果找到，请基于索引内容回答。如果索引中没有相关信息，请如实说未找到。\n\n';
-      ctx0 += idxParts.join('\n---\n').slice(0, 14000);
-      return ctx0;
-    }
+    // ⚠️ 2026-08-25 停用 OCR 证书库（模块试用期旧数据，非最新）：证书类型/到期日查询一律由后端 Survey Status 知识库处理
     return null;
   }
 
@@ -1507,42 +1428,8 @@ function buildShipsContext(message) {
     }
   }
   
-  // 2. 获取证书列表（OCR存档 → 2026-08-25 去重：同一证书只保留到期日最新的版本，避免历史旧版误导模型）
-  const certs = byShip[matchedShip] || [];
-  function parseOcrDate(s) {
-    if (!s) return null;
-    var m = s.match(/(20\d{2})\s*[年\-\\.\/]\s*(\d{1,2})\s*[月\-\\.\/]\s*(\d{1,2})/);
-    if (m) { var t = Date.UTC(+m[1], +m[2]-1, +m[3]); return isNaN(t) ? null : t; }
-    var months = {january:1,february:2,march:3,april:4,may:5,june:6,july:7,august:8,september:9,october:10,november:11,december:12};
-    var m2 = s.match(/(\d{1,2})\s+([A-Za-z]+)\s+(20\d{2})/);
-    if (m2 && months[m2[2].toLowerCase()]) { var t2 = Date.UTC(+m2[3], months[m2[2].toLowerCase()]-1, +m2[1]); return isNaN(t2) ? null : t2; }
-    return null;
-  }
-  var certByName = {}, certOrder = [];
-  for (var ct0 of certs) {
-    var cn0 = (ct0.cert || '').replace(/^\*\*\s*/, '').trim();
-    if (!cn0 || cn0 === '(未分类)') continue;
-    var t0 = parseOcrDate(ct0.expiry || '');
-    if (!certByName[cn0]) { certByName[cn0] = { cert: cn0, expiry: ct0.expiry, file: ct0.file, _t: t0 }; certOrder.push(cn0); }
-    else if (t0 && (!certByName[cn0]._t || t0 > certByName[cn0]._t)) { certByName[cn0] = { cert: cn0, expiry: ct0.expiry, file: ct0.file, _t: t0 }; }
-  }
-  var dedupedCerts = certOrder.map(function(cn0) { return certByName[cn0]; });
-  var validCerts = [];
-  var otherCerts = [];
-  for (var ct0 of dedupedCerts) {
-    var ex0 = ct0.expiry || '';
-    if (ex0 && ex0 !== '未明确提及' && ex0 !== '未明确标注有效期' && ex0 !== '未明确显示' && ex0 !== '未明确说明' && ex0 !== '无' && !ex0.startsWith('未')) {
-      validCerts.push(ct0);
-    } else if (ct0.cert && ct0.cert !== '(未分类)' && ct0.cert !== '') {
-      otherCerts.push(ct0);
-    }
-  }
-  var sortedCerts = validCerts.concat(otherCerts).slice(0, 60);
-  var certList = sortedCerts.map(function(c) {
-    var ex = c.expiry || '';
-    var hasExpiry = ex && ex !== '未明确提及' && ex !== '未明确标注有效期' && ex !== '未明确显示' && ex !== '未明确说明' && ex !== '无' && !ex.startsWith('未');
-    return { cert: c.cert, expiry: hasExpiry ? ex : null, file: c.file };
-  });
+  // 2. ⚠️ 2026-08-25 停用：OCR 证书库（ship_knowledge.json）为模块试用期拷贝的旧数据，非最新，不再用于证书/检验时间判断
+  //    证书与检验信息一律以最新 Survey Status Report 为准（由后端 survey 知识库注入，见 chat.js 思考引擎分支）
   
   // 3. 获取当前动态
   let dynamic = null;
@@ -1560,16 +1447,8 @@ function buildShipsContext(message) {
     }
   }
   
-  // 4. 获取NK Survey Status（船级社证书到期日）
-  let nkSurvey = null;
-  if (STATE.nkSurveyData) {
-    for (const [name, data] of Object.entries(STATE.nkSurveyData)) {
-      if (name.toUpperCase() === matchedShip.toUpperCase()) {
-        nkSurvey = data.certificates || null;
-        break;
-      }
-    }
-  }
+  // 4. ⚠️ 2026-08-25 停用：旧文件 data/nk_survey_knowledge.json（7/31 版）含过期旧到期日（如 FAITH BWM/IHM 还停在 2024-10-07）
+  //    证书/检验到期一律以最新 Survey Status Report 为准（后端 _survey_data.js，report_date 2026-08-24）
   
   // 5. 打包结构化数据
   var structuredData = {
@@ -1595,11 +1474,11 @@ function buildShipsContext(message) {
       scrubber: params.scrubber_make || null,
       bwt: params.bwt_make || null
     } : null,
-    certificates: certList,
-    cert_count: certs.length,
-    cert_note: '⚠️ certificates 字段来自 OCR 扫描件存档（已按证书名去重保留最新版本），到期日仅供参考；证书/检验到期一律以 nkSurvey（Survey Status）为准，两者冲突时以 nkSurvey 为准',
+    certificates: [],
+    cert_count: 0,
+    cert_note: '⚠️ 2026-08-25 起停用 OCR 证书旧库（模块试用期拷贝，非最新）。证书与检验信息一律以最新 Survey Status Report 为准，由后端知识库提供；本条船如无 survey 数据，请回答“知识库中未记录”。',
     dynamic: dynamic,
-    nkSurvey: nkSurvey,
+    nkSurvey: null,
     inspections: getShipInspections(matchedShip),
     matched_cert_type: matchedCertType,
     repair_summary: getRepairSummary(matchedShip)
@@ -1836,16 +1715,15 @@ async function buildFrontendContext(message, module) {
   if (module === 'ships' && STATE.shipKnowledge) {
     const byShip = STATE.shipKnowledge.by_ship;
     if (byShip) {
-      // 统计类问题（有几条船、总证书数）
+      // 统计类问题（有几条船）
       var statsPats = ['几条船', '几艘船', '总共多少', '总数', '几有', '多少条', '多少艘', '船舶数量', '船舶总数'];
       for (var p2 of statsPats) {
         if (q.includes(p2)) {
           let sCount = Object.keys(byShip).length;
-          let cCount = STATE.shipKnowledge.total_certs || 0;
           let list = Object.keys(byShip).sort();
           let ctx = '【知识库检索结果 — 船队概况】\n\n';
           ctx += '船舶总数：' + sCount + ' 条船\n';
-          ctx += '已上传证书总数：' + cCount + ' 份\n\n';
+          ctx += '（证书与检验信息以最新 Survey Status Report 为准，2026-08-25 起 OCR 旧证书库已停用）\n\n';
           let w = list.filter(s => s.startsWith('WINNING'));
           let sn = list.filter(s => s.startsWith('SUNNY'));
           ctx += 'WINNING系列（' + w.length + ' 条）：' + w.join('、').slice(0, 300) + '\n\n';
@@ -1949,74 +1827,9 @@ async function buildFrontendContext(message, module) {
       for (var cp of certTypePats) {
         if (q.includes(cp)) { isCertQuery = true; break; }
       }
-      if (isCertQuery) {
-        var certMatches = [];
-        var isFullListQuery = /各船有哪些证书|列出.*[所全]有.*证书|所有船.*证书|全部船.*证书/.test(q);
-        if (isFullListQuery) {
-          // 用户要全量清单 → 输出每条船的证书数量+类型概览（去重）
-          var ctx = '【知识库检索结果 — 全船队证书清单】\n以下为每艘船的证书类型（已去重）及数量。请基于此数据回答用户问题。\n\n';
-          for (var sn of Object.keys(byShip).sort()) {
-            var certsForShip = byShip[sn] || [];
-            var uniqueTypes = {};
-            for (var ct of certsForShip) {
-              var cn = ct.cert || '(未分类)';
-              uniqueTypes[cn] = (uniqueTypes[cn] || 0) + 1;
-            }
-            var typeKeys = Object.keys(uniqueTypes).slice(0, 12);
-            var typeStr = typeKeys.map(function(tk) {
-              var extra = uniqueTypes[tk] > 1 ? '(' + uniqueTypes[tk] + '份)' : '';
-              return tk + extra;
-            }).join('; ');
-            if (Object.keys(uniqueTypes).length > 12) {
-              typeStr += '...(+' + (Object.keys(uniqueTypes).length - 12) + '种)';
-            }
-            ctx += sn + ': ' + certsForShip.length + '份证书记录 — ' + typeStr + '\n';
-          }
-          ctx += '\n⚠️ 每艘船只展示前12种证书类型（含重复），完整列表请具体询问某条船。';
-          return ctx.slice(0, 16000);
-        }
-        for (var sn of Object.keys(byShip).sort()) {
-          for (var ct of (byShip[sn] || [])) {
-            var cn = (ct.cert || '').toUpperCase();
-            var ex = (ct.expiry || '').toUpperCase();
-            if (cn.includes(q) || ex.includes(q)) {
-              certMatches.push({ ship: sn, cert: ct.cert, expiry: ct.expiry });
-              break;
-            }
-          }
-          if (certMatches.length >= 5) break;
-        }
-        if (certMatches.length > 0) {
-          var ctx = '【知识库检索结果 — 按关键词匹配证书】\n共找到 ' + certMatches.length + ' 条匹配记录：\n\n';
-          certMatches.forEach(function(m) {
-            ctx += '• ' + m.ship + ' — ' + m.cert;
-            if (m.expiry) ctx += '（到期日：' + m.expiry + '）';
-            ctx += '\n';
-          });
-          return ctx;
-        }
-      }
-
-      // 没匹配到具体船只 → 返回完整船队索引，让AI自行查找
-      var idxParts = [];
-      for (var sn of Object.keys(byShip).sort()) {
-        var certList = [];
-        for (var ct of (byShip[sn] || []).slice(0, 8)) {
-          var cn = ct.cert || '(未分类)';
-          var ex = ct.expiry || '';
-          if (ex && ex !== '未明确提及' && ex !== '未明确标注有效期' && ex !== '未明确显示' && ex !== '未明确说明' && ex !== '无' && !ex.startsWith('未')) {
-            certList.push(cn + '(' + ex + ')');
-          } else if (cn !== '(未分类)') {
-            certList.push(cn);
-          }
-        }
-        if (certList.length > 0) idxParts.push(sn + ': ' + certList.join('; '));
-      }
-      if (idxParts.length > 0) {
-        var ctx = '【完整船舶证书索引（共' + idxParts.length + '艘）】\n\n请从下方索引中查找用户问题涉及的船名、证书名或到期日。如果找到，请基于索引内容回答。如果索引中没有相关信息，请如实说未找到。\n\n';
-        ctx += idxParts.join('\n---\n').slice(0, 14000);
-        return ctx;
-      }
+      // ⚠️ 2026-08-25 停用 OCR 证书库（模块试用期拷贝的旧数据，非最新）：
+      //    证书类型/到期日/检验信息一律以最新 Survey Status Report 为准，由后端 Survey 知识库处理，前端不再提供 OCR 证书上下文
+      return null;
     }
   }
   
