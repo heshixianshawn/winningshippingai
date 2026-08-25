@@ -1590,12 +1590,7 @@ function buildShipsContext(message) {
   return JSON.stringify(structuredData);
 }
 
-// ====== 直调API易（前端版） ======
-var APIYI_BASE = 'https://api.apiyi.com/v1';
-var APIYI_KEY = 'sk-JoCdGnLHwF8BVGRf448229C246834fCbBd75Cd511f12B55c';
-var APIYI_TEXT_MODEL = 'gpt-4o-2024-11-20';
-var APIYI_VISION_MODEL = 'gpt-4o-2024-11-20';
-
+// ⚠️ 2026-08-25 移除：前端直调API易已删除（① key 硬编码公网泄露风险 ② gpt-4o 回退费用高 ③ CF 后端已有服务端 APIYI 兜底）
 // 各模块的System Prompt
 var SYSTEM_PROMPTS = {
   regulations: `你是WINNING Shipping AI，一名资深的国际海事法规专家，精通IMO公约（SOLAS/MARPOL/MLC/STCW/COLREG/BWM等）。
@@ -1778,70 +1773,35 @@ async function callAPI(message, module, imageData) {
     messages.push({ role: 'user', content: userContent });
   }
   
-  // ═══ 图片处理 ═══
-  var model = APIYI_TEXT_MODEL;
-  if (imageData) {
-    model = APIYI_VISION_MODEL;
-    messages = [
-      { role: 'system', content: systemContent },
-      { role: 'user', content: [{ type: 'image_url', image_url: { url: imageData } }, { type: 'text', text: message }] }
-    ];
-  }
-  
   // 🐛 DEBUG: 打印实际发送的消息结构
-  console.log('[DEBUG] system prompt last 300:', systemContent.substring(systemContent.length - 300));
   console.log('[DEBUG] user content first 200:', (userContent || '').substring(0, 200));
-  console.log('[DEBUG] model:', model);
   
-  // ═══ 船舶/体系/法规模块改调 CF Pages 后端（多源检索：Survey坞检/参数库/PSC/体系知识库/法规检索，2026-08-23） ═══
-  if (module === 'ships' || module === 'systems' || module === 'regulations') {
-    var cfBody = { message: message, module: module, history: lastHistory };
-    if (imageData) cfBody.imageUrl = imageData;  // 🖼️ 2026-08-23 修复：图片必须随请求传给 CF 后端（否则 hasImage=false 走 text 模型）
-    if (imageData && STATE.ocrText) cfBody.ocrText = STATE.ocrText;  // 🔤 OCR 文字层（报告/证书类图片引用原文）
-    if (isShipStructured && structuredData) {
-      cfBody.context = JSON.stringify(structuredData);
-    } else if (context) {
-      cfBody.context = context;
-    }
-    try {
-      var cfResp = await fetch(CONFIG.API_BASE_URL + '/api/chat', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(cfBody)
-      });
-      if (cfResp.ok) {
-        var cfData = await cfResp.json();
-        if (cfData && cfData.reply) {
-          return { reply: cfData.reply, model: cfData.model, usage: cfData.usage };
-        }
-      }
-      console.error('[' + module + '] CF API 失败, 回退APIYI:', cfResp.status);
-    } catch (e) {
-      console.error('[' + module + '] CF API 异常, 回退APIYI:', e.message);
-    }
+  // ═══ 全模块统一调 CF Pages 后端（多源检索：Survey坞检/参数库/PSC/体系知识库/法规检索；tech 模块同走 CF，2026-08-25） ═══
+  // ⚠️ 2026-08-25 移除前端 APIYI 直调：key 泄露风险 + gpt-4o 回退费用高；兜底由 CF 后端服务端处理（DeepSeek→APIYI）
+  var cfBody = { message: message, module: module, history: lastHistory };
+  if (imageData) cfBody.imageUrl = imageData;  // 🖼️ 2026-08-23 修复：图片必须随请求传给 CF 后端（否则 hasImage=false 走 text 模型）
+  if (imageData && STATE.ocrText) cfBody.ocrText = STATE.ocrText;  // 🔤 OCR 文字层（报告/证书类图片引用原文）
+  if (isShipStructured && structuredData) {
+    cfBody.context = JSON.stringify(structuredData);
+  } else if (context) {
+    cfBody.context = context;
   }
-  
-  // ═══ 调API易（回退） ═══
   try {
-    const response = await fetch(APIYI_BASE + '/chat/completions', {
+    var cfResp = await fetch(CONFIG.API_BASE_URL + '/api/chat', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + APIYI_KEY },
-      body: JSON.stringify({ model, messages, temperature: 0.01, max_tokens: 4096, stream: false })
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(cfBody)
     });
-    
-    if (!response.ok) {
-      const err = await response.json().catch(() => ({}));
-      // APIYI 配额/余额错误友好化（2026-08-24：APIYI 配额不足时不再透传原始错误）
-      if (/配额|余额|insufficient|quota/i.test(err.error?.message || '')) {
-        throw new Error('AI 服务暂时不可用（图片分析通道配额不足），请稍后重试或直接描述内容');
+    if (cfResp.ok) {
+      var cfData = await cfResp.json();
+      if (cfData && cfData.reply) {
+        return { reply: cfData.reply, model: cfData.model, usage: cfData.usage };
       }
-      throw new Error(err.error?.message || `HTTP ${response.status}`);
     }
-    
-    const data = await response.json();
-    console.log('[DEBUG] API reply (first 200 chars):', data.choices[0].message.content.substring(0, 200));
-    return { reply: data.choices[0].message.content, model: data.model, usage: data.usage };
+    console.error('[' + module + '] CF API 失败:', cfResp.status);
+    throw new Error('AI 服务暂时不可用（' + cfResp.status + '），请稍后重试或直接描述内容');
   } catch (e) {
+    console.error('[' + module + '] CF API 异常:', e.message);
     if (/配额|余额|insufficient|quota|Failed to fetch/i.test(e.message || '')) {
       throw new Error('AI 服务暂时不可用，请稍后重试（' + (e.message || '').slice(0, 60) + '）');
     }
