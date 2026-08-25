@@ -1507,11 +1507,29 @@ function buildShipsContext(message) {
     }
   }
   
-  // 2. 获取证书列表
+  // 2. 获取证书列表（OCR存档 → 2026-08-25 去重：同一证书只保留到期日最新的版本，避免历史旧版误导模型）
   const certs = byShip[matchedShip] || [];
+  function parseOcrDate(s) {
+    if (!s) return null;
+    var m = s.match(/(20\d{2})\s*[年\-\\.\/]\s*(\d{1,2})\s*[月\-\\.\/]\s*(\d{1,2})/);
+    if (m) { var t = Date.UTC(+m[1], +m[2]-1, +m[3]); return isNaN(t) ? null : t; }
+    var months = {january:1,february:2,march:3,april:4,may:5,june:6,july:7,august:8,september:9,october:10,november:11,december:12};
+    var m2 = s.match(/(\d{1,2})\s+([A-Za-z]+)\s+(20\d{2})/);
+    if (m2 && months[m2[2].toLowerCase()]) { var t2 = Date.UTC(+m2[3], months[m2[2].toLowerCase()]-1, +m2[1]); return isNaN(t2) ? null : t2; }
+    return null;
+  }
+  var certByName = {}, certOrder = [];
+  for (var ct0 of certs) {
+    var cn0 = (ct0.cert || '').replace(/^\*\*\s*/, '').trim();
+    if (!cn0 || cn0 === '(未分类)') continue;
+    var t0 = parseOcrDate(ct0.expiry || '');
+    if (!certByName[cn0]) { certByName[cn0] = { cert: cn0, expiry: ct0.expiry, file: ct0.file, _t: t0 }; certOrder.push(cn0); }
+    else if (t0 && (!certByName[cn0]._t || t0 > certByName[cn0]._t)) { certByName[cn0] = { cert: cn0, expiry: ct0.expiry, file: ct0.file, _t: t0 }; }
+  }
+  var dedupedCerts = certOrder.map(function(cn0) { return certByName[cn0]; });
   var validCerts = [];
   var otherCerts = [];
-  for (var ct0 of certs) {
+  for (var ct0 of dedupedCerts) {
     var ex0 = ct0.expiry || '';
     if (ex0 && ex0 !== '未明确提及' && ex0 !== '未明确标注有效期' && ex0 !== '未明确显示' && ex0 !== '未明确说明' && ex0 !== '无' && !ex0.startsWith('未')) {
       validCerts.push(ct0);
@@ -1579,6 +1597,7 @@ function buildShipsContext(message) {
     } : null,
     certificates: certList,
     cert_count: certs.length,
+    cert_note: '⚠️ certificates 字段来自 OCR 扫描件存档（已按证书名去重保留最新版本），到期日仅供参考；证书/检验到期一律以 nkSurvey（Survey Status）为准，两者冲突时以 nkSurvey 为准',
     dynamic: dynamic,
     nkSurvey: nkSurvey,
     inspections: getShipInspections(matchedShip),
