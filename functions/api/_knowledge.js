@@ -739,7 +739,8 @@ const DEFECT_SKIP = new Set(['the','and','for','with','from','that','this','have
 /** 提取 PSC 报告文本中的缺陷行：编号(4-5位) + 描述 */
 export function extractDefectLines(message) {
   const defects = [];
-  const re = /(\d{4,5})\s*[:：\-]?\s*([A-Z][A-Z0-9 ,\-()/'.]{25,300})/g;
+  // 非贪婪 + 前瞻下一个缺陷编号截断，避免一条描述吞掉后续缺陷
+  const re = /(\d{4,5})\s*[:：\-]?\s*([A-Z][A-Z0-9 ,\-()/'.]{25,300}?)(?=\s+\d{4,5}\s|\s*$)/g;
   let m;
   while ((m = re.exec(message)) !== null) {
     const code = m[1];
