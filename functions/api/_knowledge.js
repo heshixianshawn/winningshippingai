@@ -550,9 +550,11 @@ async function ensureRegsAll(request) {
   if (regsAllIndex && regsAllShards) return true;
   try {
     const baseUrl = getPagesUrl(request);
+    // 2026-08-29：加 8s 超时保护——线上冷启动回源可达30s+，防止拖垮整个响应
+    const withTimeout = (p, ms) => Promise.race([p, new Promise((_, rej) => setTimeout(() => rej(new Error('fetch timeout')), ms))]);
     const [r1, r2] = await Promise.all([
-      fetch(`${baseUrl}/data/regs_all_index.json`),
-      fetch(`${baseUrl}/data/regs_all_shards.json`)
+      withTimeout(fetch(`${baseUrl}/data/regs_all_index.json`), 8000),
+      withTimeout(fetch(`${baseUrl}/data/regs_all_shards.json`), 8000)
     ]);
     if (r1.ok && r2.ok) {
       regsAllIndex = await r1.json();
@@ -765,13 +767,15 @@ export async function matchDefectRegulations(request, message) {
     const descShort = d.desc.slice(0, 110);
     const lines = [`• 缺陷 ${d.code}（${descShort}）:`];
     let found = false;
-    // 1. PSC 速查库（人工精编，置信度高）：取首个命中条目标题
+    // 1. PSC 速查库（人工精编，置信度高）：提取“速查：”条目行（跳过模板头）
     try {
       const qr = await searchQuickRef(request, d.desc);
       if (qr) {
-        const firstLine = qr.split('\n').map(s => s.trim()).filter(Boolean)[0] || '';
-        lines.push(`  - ${firstLine.slice(0, 150)}（来源：PSC速查库·人工精编）`);
-        found = true;
+        const quickLine = qr.split('\n').map(s => s.trim()).find(s => s.startsWith('【速查：')) || '';
+        if (quickLine) {
+          lines.push(`  - ${quickLine.replace(/^【速查：|】$/g, '').slice(0, 150)}（来源：PSC速查库·人工精编）`);
+          found = true;
+        }
       }
     } catch (e) { /* 忽略 */ }
     // 2. 公约原文分片（MARPOL/MLC/ISM/LSA/SOLAS）：取命中标题，最多2条
