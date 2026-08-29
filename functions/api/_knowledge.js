@@ -311,10 +311,10 @@ const CN_TO_EN = {
 };
 
 // 2026-08-29：检索停用词（防泛词误命中无关条款，如 INSTRUCTION→客船稳性）
-const SEARCH_STOPWORDS = new Set(['THE','AND','FOR','FOUND','FAILED','NOT','WITH','FROM','THAT','THIS','HAVE','HAS','WAS','WERE','ARE','ITS','HIS','HER','ALL','ANY','BUT','CAN','HAD','OUT','PER','VIA','ETC','SHALL','MUST','SHIP','VESSEL','DURING','AFTER','BEFORE','OVER','UNDER','INTO','ONTO','ONE','TWO','NEW','OLD','TYPE','CODE','ITEM','AREA','PART','SET','OPERATIONAL','INSTRUCTION','PLACARD','HEAVILY','CORRODED','ILLEGIBLE','FREE','FALL','REPORT','INSPECTION','NUMBER','DESCRIPTION','DETAILS','ACTION','TAKEN','YES','NO','SEE','ATTACHED','FORM','PAGE','SIGNATURE','NAME','MASTER','COMPANY','DATE','PLACE']);
+const SEARCH_STOPWORDS = new Set(['THE','AND','FOR','FOUND','FAILED','NOT','WITH','FROM','THAT','THIS','HAVE','HAS','WAS','WERE','ARE','ITS','HIS','HER','ALL','ANY','BUT','CAN','HAD','OUT','PER','VIA','ETC','SHALL','MUST','SHIP','VESSEL','DURING','AFTER','BEFORE','OVER','UNDER','INTO','ONTO','ONE','TWO','NEW','OLD','TYPE','CODE','ITEM','AREA','PART','SET','OPERATIONAL','INSTRUCTION','PLACARD','HEAVILY','CORRODED','ILLEGIBLE','FREE','FALL','REPORT','INSPECTION','NUMBER','DESCRIPTION','DETAILS','ACTION','TAKEN','YES','NO','SEE','ATTACHED','FORM','PAGE','SIGNATURE','NAME','MASTER','COMPANY','DATE','PLACE','BEEN','THEY','THEM','YOUR','THAN','THEN','WHEN','WHAT','WHERE','WHICH','MORE','MOST','SOME','SUCH','EACH','BOTH','ONLY','ALSO','HOURS','WORK','REST','WEEK','MONTH','YEAR','DAYS','DOES','DOING','MADE','MAKE','USED','USES','GIVE','TAKE','WILL','WOULD','COULD','SHOULD','HAVE','WERE','BEEN','FROM','OVER','UNDER','INTO','ONTO','WITH','THAN','THEN','OTHER','THREE','FOUR','FIVE','FIRST','SECOND','NEXT','LAST','SAME','SUCH','PART','WHEN','WHAT','NOTE','SIDE','ENDS']);
 
 // 2026-08-29：超泛词（出现在多数条款，频率高但无区分度）——评分×0.5
-const COMMON_WORDS = new Set(['WATER','SYSTEM','PIPE','VALVE','AIR','CONTROL','FOUND','PUMP','ROOM','SPACE','REQUIRED','USED','SHALL','MAY','PART','AREA','NUMBER','OPERATION','INSPECTION','MAINTENANCE','TEST','EQUIPMENT','ARRANGEMENT','PROVISION','PROVIDED','INSTALLED','CONDITION','DURING','MEANS','FITTED','SERVICE','FIRE','SAFETY','MACHINERY','HOLD','DECK','ENGINE','STATION','POSITION','LEVEL','TIME','DAYS','MONTHS','YEARS','PNEUMATIC','BUTTERFLY','WIRE','CABLE','SWITCH','PANEL','COMMUNICATE','LEAKING','BROKEN','DAMAGE','MISSING','CORRODED','ILLEGIBLE','OUT','ORDER','TWO','ONE','SENSOR','DETECTOR','ALARM','RELEASE','REMOTE','MANUALLY','ISOLATED','SUPPLY','PRESSURE','FLOW','LINE','MAIN','AUXILIARY','EMERGENCY','NORMAL','LOCAL','REMOTE']);
+const COMMON_WORDS = new Set(['WATER','SYSTEM','PIPE','VALVE','AIR','CONTROL','FOUND','ROOM','SPACE','REQUIRED','USED','SHALL','MAY','PART','AREA','NUMBER','OPERATION','INSPECTION','MAINTENANCE','TEST','EQUIPMENT','ARRANGEMENT','PROVISION','PROVIDED','INSTALLED','CONDITION','DURING','MEANS','FITTED','SERVICE','SAFETY','MACHINERY','HOLD','DECK','ENGINE','STATION','POSITION','LEVEL','TIME','DAYS','MONTHS','YEARS','PNEUMATIC','BUTTERFLY','WIRE','CABLE','SWITCH','PANEL','COMMUNICATE','LEAKING','BROKEN','DAMAGE','MISSING','CORRODED','ILLEGIBLE','OUT','ORDER','TWO','ONE','SENSOR','DETECTOR','ALARM','RELEASE','REMOTE','MANUALLY','ISOLATED','SUPPLY','PRESSURE','FLOW','LINE','MAIN','AUXILIARY','NORMAL','LOCAL','REMOTE']);
 
 
 
@@ -828,10 +828,15 @@ async function ensureAllSolas(request) {
 }
 
 /** 分片全文词频检索：返回 [{title, text, score}]，对症条款（词频高）排前 */
-async function searchFullTextShards(request, query, limit = 3) {
+export async function searchFullTextShards(request, query, limit = 3) {
   const words = String(query || '').toUpperCase().split(/[^A-Z0-9]+/)
-    .filter(w => w.length >= 5 && !SEARCH_STOPWORDS.has(w));
+    .filter(w => w.length >= 4 && !SEARCH_STOPWORDS.has(w));
   if (words.length === 0) return [];
+  // 2026-08-29：相邻双词短语（如 EMERGENCY FIRE PUMP → EMERGENCY FIRE/FIRE PUMP），短语命中权重高（对症设备）
+  const bigrams = [];
+  for (let bi = 0; bi < words.length - 1; bi++) {
+    if (words[bi].length >= 5 && words[bi + 1].length >= 5) bigrams.push(words[bi] + ' ' + words[bi + 1]);
+  }
   const scored = [];
   // 1. SOLAS 完整章节
   const chapters = await ensureAllSolas(request);
@@ -845,6 +850,10 @@ async function searchFullTextShards(request, query, limit = 3) {
         if (COMMON_WORDS.has(w)) continue;  // 2026-08-29：泛词/构造词零计分，只统计设备专有词
         score += n * (w.length >= 8 ? 3 : 2);
         specHits++;
+      }
+      for (const bg of bigrams) {  // 短语命中：对症设备强信号
+        const n = text.split(bg).length - 1;
+        if (n > 0) score += n * 12;
       }
       if (score >= 3 && specHits >= 1) {
         const title = `SOLAS Ch.${sec.chapter || ch} ${sec.reg ? 'Reg.' + sec.reg : ''}${sec.title ? ' - ' + sec.title : ''}`.trim();
@@ -863,6 +872,10 @@ async function searchFullTextShards(request, query, limit = 3) {
         if (COMMON_WORDS.has(w)) continue;  // 2026-08-29：泛词/构造词零计分，只统计设备专有词
         score += n * (w.length >= 8 ? 3 : 2);
         specHits++;
+      }
+      for (const bg of bigrams) {  // 短语命中：对症设备强信号
+        const n = text.split(bg).length - 1;
+        if (n > 0) score += n * 12;
       }
       if (score >= 3 && specHits >= 1) {
         scored.push({ title: s.title || sid, text: s.text || '', score, src: s.convention || '' });

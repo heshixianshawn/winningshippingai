@@ -8,7 +8,7 @@ import {
   SHIP_SYSTEM_PROMPT
 } from './_system_prompts.js';
 import { querySurveyKnowledge, getAlertSummary } from './_survey_knowledge.js';
-import { autoSearchKnowledge, buildPscPrepChecklist, searchImoConventions, searchImoUpdates, searchOfficialSources, searchQuickRef, searchRegsAllKnowledge, searchRegulationsKnowledge, matchDefectRegulations } from './_knowledge.js';
+import { autoSearchKnowledge, buildPscPrepChecklist, searchImoConventions, searchImoUpdates, searchOfficialSources, searchQuickRef, searchRegsAllKnowledge, searchRegulationsKnowledge, searchFullTextShards, matchDefectRegulations } from './_knowledge.js';
 import { searchFleetKnowledge } from './_fleet_data.js';
 import { logToKV } from './_logger.js';
 import { analyzeIntent, buildThinkingContext } from './_thinking_engine.js';
@@ -348,24 +348,27 @@ export async function onRequest(context) {
           const defectLaw = await matchDefectRegulations(request, message);
           if (defectLaw) finalReply = reply + '\n\n---\n\n' + defectLaw;
         } else {
-          // 普通法规提问：检索 SOLAS 完整章节 + 公约分片，硬附加原文（防模型凭记忆编造条款）
+          // 普通法规提问：全文词频检索（专有词加权，对症条款优先），硬附加原文（防模型凭记忆编造条款号）
           const isQuickHit = /PSC 高频速查/.test(reply);
           if (!isQuickHit) {
             const sections = [];
             try {
-              const solas = await searchRegulationsKnowledge(request, message);
-              if (solas) {
-                const parts = solas.split('\n\n---\n\n').filter(s => s.trim() && !s.startsWith('【SOLAS 2024'));
-                for (const p of parts.slice(0, 3)) sections.push(p.slice(0, 1500));
+              const hits = await searchFullTextShards(request, message, 3);
+              for (const h of hits) {
+                const words = message.toUpperCase().split(/[^A-Z0-9]+/).filter(w => w.length >= 5);
+                const body = (h.text || '').slice(0, 1300);
+                sections.push(`【${h.title}】\n${body}`);
               }
-            } catch (e) { /* 忽略 */ }
-            try {
-              const conv = await searchRegsAllKnowledge(request, message);
-              if (conv) {
-                const parts = conv.split('\n\n---\n\n').filter(s => s.trim() && !s.startsWith('【MARPOL/MLC'));
-                for (const p of parts.slice(0, 2)) sections.push(p.slice(0, 1200));
-              }
-            } catch (e) { /* 忽略 */ }
+            } catch (e) { console.error('[Law] fulltext failed:', e.message); }
+            if (sections.length === 0) {
+              try {
+                const solas = await searchRegulationsKnowledge(request, message);
+                if (solas) {
+                  const parts = solas.split('\n\n---\n\n').filter(s => s.trim() && !s.startsWith('【SOLAS 2024'));
+                  for (const p of parts.slice(0, 3)) sections.push(p.slice(0, 1500));
+                }
+              } catch (e) { /* 忽略 */ }
+            }
             if (sections.length > 0) {
               finalReply = reply + '\n\n---\n\n【📖 相关法规原文（知识库检索·对症条款优先，请与官方原文核对）】\n\n' + sections.join('\n\n---\n\n');
             }
