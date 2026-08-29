@@ -98,7 +98,9 @@ export async function onRequest(context) {
       kbContext = clientContext;
       ragUsed = true;
       // 法规模块：即使有 TYPE 标签也追加法规原文检索（SOLAS 知识库）+ IMO 官方公约信息
-      if (module === 'regulations') {
+      // 2026-08-29：上传文件（PSC报告等）解析场景跳过检索——检索词就是报告内容，会把模型引向法规条文而非解析文档
+      const isFileUploadParse = /以下是(文件|扫描件PDF)/.test(message);
+      if (module === 'regulations' && !isFileUploadParse) {
         // ⭐ 速查库最优先（权威答案，防 AI 编造）：命中时直接模板化返回（可靠优先，不依赖模型遵循）
         try {
           const quickInfo = await searchQuickRef(request, message);
