@@ -731,3 +731,55 @@ export async function searchImoUpdates(request, query) {
   }).join('\n\n---\n\n');
   return '【IMO 最新法规动态（会议结果）】\n\n' + out;
 }
+
+// ═══════════════ PSC 缺陷→法规条款匹配（2026-08-29 新增） ═══════════════
+// 从上传的 PSC 报告中提取缺陷（编号+描述），逐条检索法规原文，注入上下文供模型引用（防编造条款号）
+const DEFECT_SKIP = new Set(['the','and','for','with','from','that','this','have','has','was','were','not','are','its','his','her','she','all','any','but','can','had','out','per','via','etc','shall','must','ship','vessel','found','failed','failure','due','during','after','before','over','under','into','onto','one','two','new','old','type','code','item','area','part','set','date','number','description','details','action','taken','yes','no','see','attached','form','page','signature','inspection','report','authority','name','master','company']);
+
+/** 提取 PSC 报告文本中的缺陷行：编号(4-5位) + 描述 */
+export function extractDefectLines(message) {
+  const defects = [];
+  const re = /(\d{4,5})\s*[:：\-]?\s*([A-Z][A-Z0-9 ,\-()/'.]{25,300})/g;
+  let m;
+  while ((m = re.exec(message)) !== null) {
+    const code = m[1];
+    const desc = m[2].replace(/\s+/g, ' ').trim();
+    if (desc.length < 25) continue;
+    if (!defects.some(d => d.code === code && d.desc === desc)) defects.push({ code, desc });
+    if (defects.length >= 8) break;
+  }
+  return defects;
+}
+
+/**
+ * 对 PSC 缺陷逐条检索法规原文（速查库 → 公约原文分片 → SOLAS知识库），聚合返回
+ */
+export async function matchDefectRegulations(request, message) {
+  const defects = extractDefectLines(message);
+  if (defects.length === 0) return '';
+  const results = [];
+  for (const d of defects) {
+    const descShort = d.desc.slice(0, 120);
+    const lines = [`- 缺陷 ${d.code}（${descShort}）:`];
+    let found = false;
+    try {
+      const qr = await searchQuickRef(request, d.desc);
+      if (qr) { lines.push('  ' + qr.replace(/\n+/g, '\n  ').slice(0, 400)); found = true; }
+    } catch (e) { /* 单条失败不影响 */ }
+    if (!found) {
+      try {
+        const regs = await searchRegsAllKnowledge(request, d.desc);
+        if (regs) { lines.push('  ' + regs.replace(/\n+/g, '\n  ').slice(0, 600)); found = true; }
+      } catch (e) {}
+    }
+    if (!found) {
+      try {
+        const kb = await autoSearchKnowledge('regulations', d.desc, request);
+        if (kb) { lines.push('  ' + kb.replace(/\n+/g, '\n  ').slice(0, 600)); found = true; }
+      } catch (e) {}
+    }
+    if (found) results.push(lines.join('\n'));
+  }
+  if (results.length === 0) return '';
+  return '【📜 缺陷对应法规条款（知识库检索原文，可直接引用；未列出的条款禁止编造，回答“知识库未收录”）】\n\n' + results.join('\n\n');
+}

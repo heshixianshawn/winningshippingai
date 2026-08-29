@@ -8,7 +8,7 @@ import {
   SHIP_SYSTEM_PROMPT
 } from './_system_prompts.js';
 import { querySurveyKnowledge, getAlertSummary } from './_survey_knowledge.js';
-import { autoSearchKnowledge, buildPscPrepChecklist, searchImoConventions, searchImoUpdates, searchOfficialSources, searchQuickRef, searchRegsAllKnowledge } from './_knowledge.js';
+import { autoSearchKnowledge, buildPscPrepChecklist, searchImoConventions, searchImoUpdates, searchOfficialSources, searchQuickRef, searchRegsAllKnowledge, matchDefectRegulations } from './_knowledge.js';
 import { searchFleetKnowledge } from './_fleet_data.js';
 import { logToKV } from './_logger.js';
 import { analyzeIntent, buildThinkingContext } from './_thinking_engine.js';
@@ -159,7 +159,15 @@ export async function onRequest(context) {
       kbContext = parts.join('\n\n');
       ragUsed = !!kbContext;
     } else {
-      kbContext = await autoSearchKnowledge(module, message, request);
+      if (module === 'regulations' && isFileUploadParse) {
+        // 2026-08-29：PSC报告上传解析 → 对每条缺陷定向检索法规原文（速查库/公约原文/SOLAS），防AI编造条款号
+        try {
+          const defectLaw = await matchDefectRegulations(request, message);
+          if (defectLaw) kbContext = defectLaw;
+        } catch (e) { console.error('[DefectLaw] search failed:', e.message); }
+      } else {
+        kbContext = await autoSearchKnowledge(module, message, request);
+      }
       ragUsed = !!kbContext;
     }
 
