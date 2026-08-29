@@ -1,0 +1,167 @@
+{
+  "version": "1.0",
+  "updated": "2026-08-29",
+  "note": "高频PSC缺陷代码→公约条款静态映射（人工精编，请与官方原文核对）。优先于分片检索，小文件秒级加载。",
+  "items": [
+    {
+      "code": "14616",
+      "desc_en": "EXHAUST GAS SCRUBBER DATA RECORDER / EGCS",
+      "desc_zh": "废气洗涤系统(EGCS)数据记录仪/记录器",
+      "regs": [
+        "MARPOL Annex VI Reg.4（等效装置与认可）及2021 EGCS导则 MEPC.340(77)（数据记录要求）"
+      ]
+    },
+    {
+      "code": "04113",
+      "desc_en": "WATER INGRESS ALARM SENSOR (BOSUN STORE/FOREPEAK)",
+      "desc_zh": "水浸报警系统传感器（储物间/艏尖舱等）",
+      "regs": [
+        "SOLAS Ch.II-1 Reg.23-3（2014修正案：散货船首尖舱、艏楼储物间等进水报警，2018-01-01后建造适用）"
+      ]
+    },
+    {
+      "code": "04103",
+      "desc_en": "WATER INGRESS / BILGE ALARM",
+      "desc_zh": "进水/舱底报警",
+      "regs": [
+        "SOLAS Ch.II-1 Reg.23-3（水浸报警）、Reg.35（舱底水报警）"
+      ]
+    },
+    {
+      "code": "04105",
+      "desc_en": "HOLD WATER LEVEL DETECTOR",
+      "desc_zh": "货舱水位探测器",
+      "regs": [
+        "SOLAS Ch.XII Reg.12（散货船货舱水位探测报警，适用2016-07-01后安装）"
+      ]
+    },
+    {
+      "code": "02105",
+      "desc_en": "STEERING GEAR OPERATING INSTRUCTIONS / BLOCK DIAGRAM",
+      "desc_zh": "舵机间操作说明框图",
+      "regs": [
+        "SOLAS Ch.II-1 Reg.29.10（舵机间张贴带框图的操作说明）"
+      ]
+    },
+    {
+      "code": "07105",
+      "desc_en": "LIFEBOAT RELEASE GEAR",
+      "desc_zh": "救生艇释放装置（脱钩）",
+      "regs": [
+        "SOLAS Ch.III Reg.20.11（释放装置测试）、LSA Code Ch.4.4/4.7（自由降落释放机构）"
+      ]
+    },
+    {
+      "code": "07106",
+      "desc_en": "LIFEBOAT LAUNCHING ARRANGEMENT",
+      "desc_zh": "救生艇降落装置",
+      "regs": [
+        "SOLAS Ch.III Reg.20（降落装置保养与测试）、LSA Code Ch.4.4"
+      ]
+    },
+    {
+      "code": "07112",
+      "desc_en": "EEBD / TRAINING EEBD",
+      "desc_zh": "应急逃生呼吸装置(EEBD)",
+      "regs": [
+        "SOLAS Ch.II-2 Reg.10.10（EEBD配备）、FSS Code Ch.3.2"
+      ]
+    },
+    {
+      "code": "07114",
+      "desc_en": "LIFEBOAT OPERATIONAL INSTRUCTION PLACARD",
+      "desc_zh": "救生艇操作说明标牌",
+      "regs": [
+        "SOLAS Ch.III Reg.20.10（救生艇操作说明）、LSA Code Ch.4.4.1（艇内操作说明/标识）"
+      ]
+    },
+    {
+      "code": "07116",
+      "desc_en": "LIFERAFT / LIFERAFT SERVICING",
+      "desc_zh": "救生筏/救生筏检修",
+      "regs": [
+        "SOLAS Ch.III Reg.20.8（救生筏检修周期）、LSA Code Ch.4.2"
+      ]
+    },
+    {
+      "code": "11101",
+      "desc_en": "OILY WATER SEPARATOR (OWS) 15PPM",
+      "desc_zh": "油水分离器/15ppm报警",
+      "regs": [
+        "MARPOL Annex I Reg.14.2（15ppm设备）、MEPC.107(49) 型式认可"
+      ]
+    },
+    {
+      "code": "11301",
+      "desc_en": "OIL RECORD BOOK",
+      "desc_zh": "油类记录簿",
+      "regs": [
+        "MARPOL Annex I Reg.17（油类记录簿记录与保存）"
+      ]
+    },
+    {
+      "code": "12101",
+      "desc_en": "GARBAGE RECORD BOOK",
+      "desc_zh": "垃圾记录簿",
+      "regs": [
+        "MARPOL Annex V Reg.10（垃圾记录簿，100总吨以上船舶）"
+      ]
+    },
+    {
+      "code": "14802",
+      "desc_en": "BALLAST WATER RECORD BOOK",
+      "desc_zh": "压载水记录簿",
+      "regs": [
+        "BWM 公约 Reg.B-2（压载水记录簿）及附录II"
+      ]
+    },
+    {
+      "code": "05199",
+      "desc_en": "CHARTS / NAUTICAL PUBLICATIONS",
+      "desc_zh": "海图/航海出版物",
+      "regs": [
+        "SOLAS Ch.V Reg.27（海图与航海出版物）"
+      ]
+    },
+    {
+      "code": "06101",
+      "desc_en": "MAGNETIC COMPASS",
+      "desc_zh": "磁罗经",
+      "regs": [
+        "SOLAS Ch.V Reg.19.2.1.1（磁罗经配备）"
+      ]
+    },
+    {
+      "code": "10109",
+      "desc_en": "FIRE DOORS",
+      "desc_zh": "防火门",
+      "regs": [
+        "SOLAS Ch.II-2 Reg.9.4（防火门自闭装置）"
+      ]
+    },
+    {
+      "code": "10114",
+      "desc_en": "FIRE DOOR SELF-CLOSING",
+      "desc_zh": "防火门自闭装置",
+      "regs": [
+        "SOLAS Ch.II-2 Reg.9.4.3（自闭防火门不得被楔住/固定开启）"
+      ]
+    },
+    {
+      "code": "09103",
+      "desc_en": "MAIN FIRE PUMP",
+      "desc_zh": "主消防泵",
+      "regs": [
+        "SOLAS Ch.II-2 Reg.10.2（消防泵压力/排量）、FSS Code Ch.12"
+      ]
+    },
+    {
+      "code": "08101",
+      "desc_en": "EMERGENCY LIGHTING",
+      "desc_zh": "应急照明",
+      "regs": [
+        "SOLAS Ch.II-1 Reg.42（客船）/Reg.43（货船应急照明）"
+      ]
+    }
+  ]
+}

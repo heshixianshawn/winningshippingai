@@ -736,6 +736,18 @@ export async function searchImoUpdates(request, query) {
 
 // ═══════════════ PSC 缺陷→法规条款匹配（2026-08-29 新增） ═══════════════
 // 从上传的 PSC 报告中提取缺陷（编号+描述），逐条检索法规原文，注入上下文供模型引用（防编造条款号）
+// v3：静态映射表（psc_defect_regs.json）优先 → 速查库 → 公约分片检索
+let pscDefectRegs = null;
+
+async function ensurePscDefectRegs(request) {
+  if (pscDefectRegs) return pscDefectRegs;
+  try {
+    const baseUrl = getPagesUrl(request);
+    const resp = await fetch(`${baseUrl}/data/psc_defect_regs.json`);
+    if (resp.ok) pscDefectRegs = await resp.json();
+  } catch (e) { console.error('psc_defect_regs load fail:', e.message); }
+  return pscDefectRegs;
+}
 const DEFECT_SKIP = new Set(['the','and','for','with','from','that','this','have','has','was','were','not','are','its','his','her','she','all','any','but','can','had','out','per','via','etc','shall','must','ship','vessel','found','failed','failure','due','during','after','before','over','under','into','onto','one','two','new','old','type','code','item','area','part','set','date','number','description','details','action','taken','yes','no','see','attached','form','page','signature','inspection','report','authority','name','master','company']);
 
 /** 提取 PSC 报告文本中的缺陷行：编号(4-5位) + 描述 */
@@ -763,31 +775,43 @@ export async function matchDefectRegulations(request, message) {
   const defects = extractDefectLines(message);
   if (defects.length === 0) return '';
   const results = [];
+  const table = await ensurePscDefectRegs(request);
+  const tableItems = (table && table.items) || [];
   for (const d of defects) {
     const descShort = d.desc.slice(0, 110);
     const lines = [`• 缺陷 ${d.code}（${descShort}）:`];
     let found = false;
-    // 1. PSC 速查库（人工精编，置信度高）：提取“速查：”条目行（跳过模板头）
-    try {
-      const qr = await searchQuickRef(request, d.desc);
-      if (qr) {
-        const quickLine = qr.split('\n').map(s => s.trim()).find(s => s.startsWith('【速查：')) || '';
-        if (quickLine) {
-          lines.push(`  - ${quickLine.replace(/^【速查：|】$/g, '').slice(0, 150)}（来源：PSC速查库·人工精编）`);
+    // 0. 静态映射表（人工精编，秒级）：按缺陷编号精确匹配
+    const hit = tableItems.find(it => it.code === d.code);
+    if (hit) {
+      for (const r of hit.regs) lines.push(`  - ${r}（来源：PSC缺陷条款映射表·人工精编）`);
+      found = true;
+    }
+    if (!found) {
+      // 1. PSC 速查库（人工精编，置信度高）：提取“速查：”条目行（跳过模板头）
+      try {
+        const qr = await searchQuickRef(request, d.desc);
+        if (qr) {
+          const quickLine = qr.split('\n').map(s => s.trim()).find(s => s.startsWith('【速查：')) || '';
+          if (quickLine) {
+            lines.push(`  - ${quickLine.replace(/^【速查：|】$/g, '').slice(0, 150)}（来源：PSC速查库·人工精编）`);
+            found = true;
+          }
+        }
+      } catch (e) { /* 忽略 */ }
+    }
+    if (!found) {
+      // 2. 公约原文分片（MARPOL/MLC/ISM/LSA/SOLAS）：取命中标题，最多2条
+      try {
+        const regs = await searchRegsAllKnowledge(request, d.desc);
+        if (regs) {
+          const titles = regs.split(/\n/).map(s => s.replace(/^【|】$/g, '').trim()).filter(t => t && t.length < 90);
+          const uniq = [...new Set(titles)].slice(0, 2);
+          for (const t of uniq) lines.push(`  - ${t}（来源：公约原文分片检索）`);
           found = true;
         }
-      }
-    } catch (e) { /* 忽略 */ }
-    // 2. 公约原文分片（MARPOL/MLC/ISM/LSA/SOLAS）：取命中标题，最多2条
-    try {
-      const regs = await searchRegsAllKnowledge(request, d.desc);
-      if (regs) {
-        const titles = regs.split(/\n/).map(s => s.replace(/^【|】$/g, '').trim()).filter(t => t && t.length < 90);
-        const uniq = [...new Set(titles)].slice(0, 2);
-        for (const t of uniq) lines.push(`  - ${t}（来源：公约原文分片检索）`);
-        found = true;
-      }
-    } catch (e) { /* 忽略 */ }
+      } catch (e) { /* 忽略 */ }
+    }
     if (!found) lines.push('  - 知识库未收录精确条款（建议人工核对 PSC 缺陷代码对应公约）');
     results.push(lines.join('\n'));
   }
