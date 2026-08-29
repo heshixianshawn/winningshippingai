@@ -467,6 +467,18 @@ function compressImage(dataUrl, maxWidth, quality) {
     var reader = new FileReader();
     reader.onload = async function(ev) {
       try {
+        // 2026-08-29：PSC报告智能截断——保留头部信息 + FORM B 缺陷区（旧版从头截断会丢尾部缺陷清单）
+        function smartTruncate(txt, limit) {
+          var up = String(txt).toUpperCase();
+          var idx = up.lastIndexOf('FORM B');
+          var isPscLike = /PSC|检查|INSPECTION|DEFICIENC|缺陷/.test(file.name) || idx >= 0;
+          if (isPscLike && idx > 1500) {
+            var head = String(txt).substring(0, 1500);
+            var tail = String(txt).substring(idx).substring(0, limit - 1500);
+            return head + '\n...[中间内容省略]...\n' + tail;
+          }
+          return String(txt).substring(0, limit);
+        }
         // PDF 扫描件 OCR 兜底：渲染页面为图片 → tesseract chi_sim+eng
         async function renderPdfPageToImage(pdf, pageNo, scale) {
           var page = await pdf.getPage(pageNo);
@@ -510,8 +522,8 @@ function compressImage(dataUrl, maxWidth, quality) {
               var ocrContent = ocrPages.join('\n');
               if (ocrContent.trim()) {
                 // OCR 成功：走文字分析（打印体表格 OCR 远优于 vision 实验模型）
-                var ocrSnippet = ocrContent.substring(0, 10000);
-                if (ocrContent.length > 10000) ocrSnippet += '\n...(文件较长，截取前10000字符)';
+                var ocrSnippet = smartTruncate(ocrContent, 10000);
+                if (ocrContent.length > 10000) ocrSnippet += '\n...(文件较长，智能截取保留缺陷区)';
                 STATE.uploadedFileContent = ocrSnippet;
                 STATE.uploadedFileName = file.name;
                 var isPsc = /PSC|检查|inspection|port state/i.test(file.name);
@@ -537,8 +549,8 @@ function compressImage(dataUrl, maxWidth, quality) {
         var content = result;
         // 2026-08-29 修复：扫描件/OCR 分支已在内部 sendMessage()，此处禁止二次注入与重复发送
         if (content === 'handled-as-ocr' || content === 'handled-as-image') return;
-        var snippet = content.substring(0, 10000);
-        if (content.length > 10000) snippet += '\n...(文件较长，截取前10000字符)';
+        var snippet = smartTruncate(content, 10000);
+        if (content.length > 10000) snippet += '\n...(文件较长，智能截取保留缺陷区)';
         STATE.uploadedFileContent = snippet;
         STATE.uploadedFileName = file.name;
         els.input.value = '📄 以下是文件【' + file.name + '】的内容，请直接分析：\n\n' + snippet + '\n\n[请基于以上文件内容回答用户的问题]';
@@ -1321,7 +1333,8 @@ async function sendMessage() {
   const text = els.input.value.trim();
   if (!text && !STATE.imageData) return;
   if (STATE.isProcessing) return;
-  if (text.length > 10000) {
+  // 2026-08-29：上传文件解析场景豁免 10000 字符限制（OCR全文+结构化指令合理较长）
+  if (text.length > 10000 && !text.startsWith('📄 以下是')) {
     addMessage({ role: 'assistant', text: '⚠️ 消息过长，请将问题控制在10000字符以内' });
     return;
   }
