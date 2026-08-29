@@ -750,19 +750,38 @@ async function ensurePscDefectRegs(request) {
 }
 const DEFECT_SKIP = new Set(['the','and','for','with','from','that','this','have','has','was','were','not','are','its','his','her','she','all','any','but','can','had','out','per','via','etc','shall','must','ship','vessel','found','failed','failure','due','during','after','before','over','under','into','onto','one','two','new','old','type','code','item','area','part','set','date','number','description','details','action','taken','yes','no','see','attached','form','page','signature','inspection','report','authority','name','master','company']);
 
-/** 提取 PSC 报告文本中的缺陷行：编号(4-5位) + 描述。v2：逐行匹配（真实OCR表格含行号/乱码，旧前瞻正则失效） */
+/** 提取 PSC 报告文本中的缺陷行。v3：
+ *  通道A：编号(4-5位)+大写描述（干净文本）
+ *  通道B：FORM B 区域内纯描述行（OCR编号乱码时，按大写短语拼接描述）
+ */
 export function extractDefectLines(message) {
   const defects = [];
   const lines = String(message || '').split('\n');
-  const re = /(\d{4,5})\s+([A-Z][A-Z0-9 ,\-()/'.:]{25,300})/;
+  const reA = /(\d{4,5})\s+([A-Z][A-Z0-9 ,\-()/'.:]{25,300})/;
   for (const line of lines) {
-    const m = re.exec(line);
-    if (!m) continue;
-    const code = m[1];
-    const desc = m[2].replace(/\s+/g, ' ').trim();
-    if (desc.length < 25) continue;
-    if (!defects.some(d => d.code === code)) defects.push({ code, desc: desc.slice(0, 200) });
+    const m = reA.exec(line);
+    if (m) {
+      const desc = m[2].replace(/\s+/g, ' ').trim();
+      if (desc.length >= 25 && !defects.some(d => d.code === m[1])) {
+        defects.push({ code: m[1], desc: desc.slice(0, 200) });
+        if (defects.length >= 8) break;
+        continue;
+      }
+    }
+    // 通道B：行内含≥2个大写短语且总长≥40 → 视为缺陷描述（编号可能被OCR打乱）
     if (defects.length >= 8) break;
+    const phrases = (line.match(/[A-Z][A-Z0-9 ,\-()/'.:]{15,}/g) || []);
+    if (phrases.length >= 2) {
+      const joined = phrases.join(' ').replace(/\s+/g, ' ').trim();
+      if (joined.length >= 40 && joined.length <= 300) {
+        // 避免把 Form A 表格行（如证书列表）当缺陷：要求含常见缺陷动词/名词
+        if (/FOUND|BROKEN|NOT|FAIL|LEAK|OUT OF|DEFECT|CORROD|DAMAGE|MISSING|INOP|DID NOT|CANNOT|UNABLE/i.test(joined)) {
+          if (!defects.some(d => d.desc === joined.slice(0, 200))) {
+            defects.push({ code: '???', desc: joined.slice(0, 200) });
+          }
+        }
+      }
+    }
   }
   return defects;
 }
@@ -780,10 +799,14 @@ export async function matchDefectRegulations(request, message) {
   const tableItems = (table && table.items) || [];
   for (const d of defects) {
     const descShort = d.desc.slice(0, 110);
-    const lines = [`• 缺陷 ${d.code}（${descShort}）:`];
+    const lines = [`• 缺陷 ${d.code === '???' ? '(编号未识别)' : d.code}（${descShort}）:`];
     let found = false;
-    // 0. 静态映射表（人工精编，秒级）：按缺陷编号精确匹配
-    const hit = tableItems.find(it => it.code === d.code);
+    // 0. 静态映射表：优先按缺陷编号精确匹配；编号缺失时按描述关键词匹配
+    let hit = tableItems.find(it => it.code === d.code);
+    if (!hit && d.code === '???') {
+      const dUp = d.desc.toUpperCase();
+      hit = tableItems.find(it => (it.desc_en || '').toUpperCase().split(/[\/\s]+/).some(w => w.length > 4 && dUp.includes(w)));
+    }
     if (hit) {
       for (const r of hit.regs) lines.push(`  - ${r}（来源：PSC缺陷条款映射表·人工精编）`);
       found = true;
