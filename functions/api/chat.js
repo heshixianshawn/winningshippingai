@@ -178,8 +178,18 @@ export async function onRequest(context) {
         } catch (e) { /* 忽略 */ }
         ragUsed = !!kbContext;
       } else {
-        kbContext = await autoSearchKnowledge(module, message, request);
-        ragUsed = !!kbContext;
+        // 2026-08-29：普通法规提问先查高频速查库（命中→注入检查要点，防模型编造条款号）
+        try {
+          const hf = await searchHighfreqRef(request, message);
+          if (hf) {
+            kbContext = hf;
+            ragUsed = true;
+          }
+        } catch (e) { /* 忽略 */ }
+        if (!ragUsed) {
+          kbContext = await autoSearchKnowledge(module, message, request);
+          ragUsed = !!kbContext;
+        }
       }
     }
 
