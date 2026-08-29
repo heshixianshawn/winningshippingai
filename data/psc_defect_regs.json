@@ -1,7 +1,7 @@
 {
-  "version": "1.0",
+  "version": "1.2",
   "updated": "2026-08-29",
-  "note": "高频PSC缺陷代码→公约条款静态映射（人工精编，请与官方原文核对）。优先于分片检索，小文件秒级加载。",
+  "note": "高频PSC缺陷代码→公约条款静态映射（人工精编，请与官方原文核对）。优先于分片检索，小文件秒级加载。 v1.1：实测修正10109（航行灯非防火门），新增11113/11123/14811/03105/98108；删除07116（实测冲突）",
   "items": [
     {
       "code": "14616",
@@ -76,14 +76,6 @@
       ]
     },
     {
-      "code": "07116",
-      "desc_en": "LIFERAFT / LIFERAFT SERVICING",
-      "desc_zh": "救生筏/救生筏检修",
-      "regs": [
-        "SOLAS Ch.III Reg.20.8（救生筏检修周期）、LSA Code Ch.4.2"
-      ]
-    },
-    {
       "code": "11101",
       "desc_en": "OILY WATER SEPARATOR (OWS) 15PPM",
       "desc_zh": "油水分离器/15ppm报警",
@@ -133,10 +125,10 @@
     },
     {
       "code": "10109",
-      "desc_en": "FIRE DOORS",
-      "desc_zh": "防火门",
+      "desc_en": "NAVIGATION LIGHTS (ANCHOR/STERN/MAST)",
+      "desc_zh": "航行灯（锚灯/尾灯/桅灯）",
       "regs": [
-        "SOLAS Ch.II-2 Reg.9.4（防火门自闭装置）"
+        "COLREG 1972 Annex I（航行灯的位置、色光与能见距离）、SOLAS Ch.V Reg.19.2.1.2（航行设备）"
       ]
     },
     {
@@ -144,7 +136,7 @@
       "desc_en": "FIRE DOOR SELF-CLOSING",
       "desc_zh": "防火门自闭装置",
       "regs": [
-        "SOLAS Ch.II-2 Reg.9.4.3（自闭防火门不得被楔住/固定开启）"
+        "SOLAS Ch.II-2 Reg.9.4.3（自闭防火门不得被楔住/固定开启）、COLREG 相关缺陷以报告为准"
       ]
     },
     {
@@ -161,6 +153,46 @@
       "desc_zh": "应急照明",
       "regs": [
         "SOLAS Ch.II-1 Reg.42（客船）/Reg.43（货船应急照明）"
+      ]
+    },
+    {
+      "code": "11113",
+      "desc_en": "RESCUE BOAT LAUNCHING RELEASE WIRE",
+      "desc_zh": "救助艇降落/释放遥控装置（钢丝断裂）",
+      "regs": [
+        "SOLAS Ch.III Reg.20（降落装置与释放装置保养测试）、LSA Code Ch.4.4（救助艇释放机构）"
+      ]
+    },
+    {
+      "code": "11123",
+      "desc_en": "TWO-WAY VHF WRISTBAND / WEAK LINK",
+      "desc_zh": "双向VHF无线电话腕带/weak link",
+      "regs": [
+        "SOLAS Ch.IV Reg.7.1.1（双向VHF无线电话配备，每套含备用电池）"
+      ]
+    },
+    {
+      "code": "14811",
+      "desc_en": "BALLAST WATER MANAGEMENT SYSTEM LEAK",
+      "desc_zh": "压载水管理系统泄漏",
+      "regs": [
+        "BWM 公约 Reg.B-1（压载水管理计划）/Reg.B-3（压载水管理措施），设备应保持良好工作状态"
+      ]
+    },
+    {
+      "code": "03105",
+      "desc_en": "CARGO HOLD COAMING DRAIN VALVE",
+      "desc_zh": "货舱舱口围排水阀失效",
+      "regs": [
+        "国际载重线公约 LL 1966 Reg.16（舱口围与舱口盖）、Reg.15（排水舷口/泄水孔）"
+      ]
+    },
+    {
+      "code": "98108",
+      "desc_en": "OIL MIST ALARM SENSOR ISOLATED",
+      "desc_zh": "油雾浓度报警传感器被隔离",
+      "regs": [
+        "SOLAS Ch.II-1 Reg.47（柴油机曲轴箱油雾浓度探测报警）"
       ]
     }
   ]
