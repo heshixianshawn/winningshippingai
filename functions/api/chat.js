@@ -8,7 +8,7 @@ import {
   SHIP_SYSTEM_PROMPT
 } from './_system_prompts.js';
 import { querySurveyKnowledge, getAlertSummary } from './_survey_knowledge.js';
-import { autoSearchKnowledge, buildPscPrepChecklist, searchImoConventions, searchImoUpdates, searchOfficialSources, searchQuickRef, searchRegsAllKnowledge, matchDefectRegulations } from './_knowledge.js';
+import { autoSearchKnowledge, buildPscPrepChecklist, searchImoConventions, searchImoUpdates, searchOfficialSources, searchQuickRef, searchRegsAllKnowledge, searchRegulationsKnowledge, matchDefectRegulations } from './_knowledge.js';
 import { searchFleetKnowledge } from './_fleet_data.js';
 import { logToKV } from './_logger.js';
 import { analyzeIntent, buildThinkingContext } from './_thinking_engine.js';
@@ -339,13 +339,39 @@ export async function onRequest(context) {
     }
     const usage = data.usage || {};
 
-    // ====== 2026-08-29：PSC报告解析 → 后端硬附加缺陷对应法规条款（来源可溯，防模型编造条款号） ======
+    // ====== 2026-08-29：法规提问硬附加相关条款原文（借鉴DNV AI引用模式 + 发挥我们全文知识库优势） ======
+    // PSC报告解析：附加缺陷条款；普通法规提问：附加命中条款原文（对症优先）
     let finalReply = reply;
-    if (module === 'regulations' && isFileUploadParse) {
+    if (module === 'regulations') {
       try {
-        const defectLaw = await matchDefectRegulations(request, message);
-        if (defectLaw) finalReply = reply + '\n\n---\n\n' + defectLaw;
-      } catch (e) { console.error('[DefectLaw] append failed:', e.message); }
+        if (isFileUploadParse) {
+          const defectLaw = await matchDefectRegulations(request, message);
+          if (defectLaw) finalReply = reply + '\n\n---\n\n' + defectLaw;
+        } else {
+          // 普通法规提问：检索 SOLAS 完整章节 + 公约分片，硬附加原文（防模型凭记忆编造条款）
+          const isQuickHit = /PSC 高频速查/.test(reply);
+          if (!isQuickHit) {
+            const sections = [];
+            try {
+              const solas = await searchRegulationsKnowledge(request, message);
+              if (solas) {
+                const parts = solas.split('\n\n---\n\n').filter(s => s.trim() && !s.startsWith('【SOLAS 2024'));
+                for (const p of parts.slice(0, 3)) sections.push(p.slice(0, 1500));
+              }
+            } catch (e) { /* 忽略 */ }
+            try {
+              const conv = await searchRegsAllKnowledge(request, message);
+              if (conv) {
+                const parts = conv.split('\n\n---\n\n').filter(s => s.trim() && !s.startsWith('【MARPOL/MLC'));
+                for (const p of parts.slice(0, 2)) sections.push(p.slice(0, 1200));
+              }
+            } catch (e) { /* 忽略 */ }
+            if (sections.length > 0) {
+              finalReply = reply + '\n\n---\n\n【📖 相关法规原文（知识库检索·对症条款优先，请与官方原文核对）】\n\n' + sections.join('\n\n---\n\n');
+            }
+          }
+        }
+      } catch (e) { console.error('[Law] append failed:', e.message); }
     }
 
     // ====== Log ======
