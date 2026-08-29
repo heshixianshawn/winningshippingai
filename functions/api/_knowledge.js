@@ -753,34 +753,39 @@ export function extractDefectLines(message) {
 }
 
 /**
- * 对 PSC 缺陷逐条检索法规原文（速查库 → 公约原文分片 → SOLAS知识库），聚合返回
+ * 对 PSC 缺陷逐条检索法规原文（速查库 → 公约原文分片），返回**后端硬附加**的条款段。
+ * 2026-08-29 v2：不注入给模型（模型会编造/错配条款号），改为模型回复后由后端直接拼接，
+ * 来源可溯、未命中明确标注，杜绝“VDR 属于洗涤器记录仪”类幻觉。
  */
 export async function matchDefectRegulations(request, message) {
   const defects = extractDefectLines(message);
   if (defects.length === 0) return '';
   const results = [];
   for (const d of defects) {
-    const descShort = d.desc.slice(0, 120);
-    const lines = [`- 缺陷 ${d.code}（${descShort}）:`];
+    const descShort = d.desc.slice(0, 110);
+    const lines = [`• 缺陷 ${d.code}（${descShort}）:`];
     let found = false;
+    // 1. PSC 速查库（人工精编，置信度高）：取首个命中条目标题
     try {
       const qr = await searchQuickRef(request, d.desc);
-      if (qr) { lines.push('  ' + qr.replace(/\n+/g, '\n  ').slice(0, 400)); found = true; }
-    } catch (e) { /* 单条失败不影响 */ }
-    if (!found) {
-      try {
-        const regs = await searchRegsAllKnowledge(request, d.desc);
-        if (regs) { lines.push('  ' + regs.replace(/\n+/g, '\n  ').slice(0, 600)); found = true; }
-      } catch (e) {}
-    }
-    if (!found) {
-      try {
-        const kb = await autoSearchKnowledge('regulations', d.desc, request);
-        if (kb) { lines.push('  ' + kb.replace(/\n+/g, '\n  ').slice(0, 600)); found = true; }
-      } catch (e) {}
-    }
-    if (found) results.push(lines.join('\n'));
+      if (qr) {
+        const firstLine = qr.split('\n').map(s => s.trim()).filter(Boolean)[0] || '';
+        lines.push(`  - ${firstLine.slice(0, 150)}（来源：PSC速查库·人工精编）`);
+        found = true;
+      }
+    } catch (e) { /* 忽略 */ }
+    // 2. 公约原文分片（MARPOL/MLC/ISM/LSA/SOLAS）：取命中标题，最多2条
+    try {
+      const regs = await searchRegsAllKnowledge(request, d.desc);
+      if (regs) {
+        const titles = regs.split(/\n/).map(s => s.replace(/^【|】$/g, '').trim()).filter(t => t && t.length < 90);
+        const uniq = [...new Set(titles)].slice(0, 2);
+        for (const t of uniq) lines.push(`  - ${t}（来源：公约原文分片检索）`);
+        found = true;
+      }
+    } catch (e) { /* 忽略 */ }
+    if (!found) lines.push('  - 知识库未收录精确条款（建议人工核对 PSC 缺陷代码对应公约）');
+    results.push(lines.join('\n'));
   }
-  if (results.length === 0) return '';
-  return '【📜 缺陷对应法规条款（知识库检索原文，可直接引用；未列出的条款禁止编造，回答“知识库未收录”）】\n\n' + results.join('\n\n');
+  return '【📜 缺陷对应法规条款（知识库自动匹配，请与官方原文核对）】\n\n' + results.join('\n\n');
 }

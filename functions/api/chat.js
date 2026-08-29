@@ -159,16 +159,14 @@ export async function onRequest(context) {
       kbContext = parts.join('\n\n');
       ragUsed = !!kbContext;
     } else {
+      // 2026-08-29：PSC报告上传解析 → 模型只负责解析缺陷，条款由后端硬附加（防模型编造条款号）
       if (module === 'regulations' && isFileUploadParse) {
-        // 2026-08-29：PSC报告上传解析 → 对每条缺陷定向检索法规原文（速查库/公约原文/SOLAS），防AI编造条款号
-        try {
-          const defectLaw = await matchDefectRegulations(request, message);
-          if (defectLaw) kbContext = defectLaw;
-        } catch (e) { console.error('[DefectLaw] search failed:', e.message); }
+        kbContext = '';
+        ragUsed = false;
       } else {
         kbContext = await autoSearchKnowledge(module, message, request);
+        ragUsed = !!kbContext;
       }
-      ragUsed = !!kbContext;
     }
 
     // ====== Build messages ======
@@ -341,6 +339,15 @@ export async function onRequest(context) {
     }
     const usage = data.usage || {};
 
+    // ====== 2026-08-29：PSC报告解析 → 后端硬附加缺陷对应法规条款（来源可溯，防模型编造条款号） ======
+    let finalReply = reply;
+    if (module === 'regulations' && isFileUploadParse) {
+      try {
+        const defectLaw = await matchDefectRegulations(request, message);
+        if (defectLaw) finalReply = reply + '\n\n---\n\n' + defectLaw;
+      } catch (e) { console.error('[DefectLaw] append failed:', e.message); }
+    }
+
     // ====== Log ======
     (async () => {
       await logToKV(env, {
@@ -368,7 +375,7 @@ export async function onRequest(context) {
     }
 
     return new Response(JSON.stringify({
-      reply,
+      reply: finalReply,
       model: data.model,
       usage,
       rag: ragUsed,
