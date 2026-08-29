@@ -804,8 +804,15 @@ export async function matchDefectRegulations(request, message) {
     // 0. 静态映射表：优先按缺陷编号精确匹配；编号缺失时按描述关键词匹配
     let hit = tableItems.find(it => it.code === d.code);
     if (!hit && d.code === '???') {
+      // 描述匹配：要求≥2个关键词命中，取命中最多条目（防“WATER”单词误匹配水浸报警）
       const dUp = d.desc.toUpperCase();
-      hit = tableItems.find(it => (it.desc_en || '').toUpperCase().split(/[\/\s]+/).some(w => w.length > 4 && dUp.includes(w)));
+      let best = null, bestCnt = 0;
+      for (const it of tableItems) {
+        const words = (it.desc_en || '').toUpperCase().split(/[\/\s]+/).filter(w => w.length > 4);
+        const cnt = words.filter(w => dUp.includes(w)).length;
+        if (cnt >= 2 && cnt > bestCnt) { best = it; bestCnt = cnt; }
+      }
+      hit = best;
     }
     if (hit) {
       for (const r of hit.regs) lines.push(`  - ${r}（来源：PSC缺陷条款映射表·人工精编）`);
