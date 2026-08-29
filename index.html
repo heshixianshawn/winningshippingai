@@ -2654,16 +2654,24 @@ function buildThinkingContext(structuredData, aspects, message) {
     ctx += '\n';
   }
   
-  // 2. 当前动态（使用【当前动态】标记匹配系统提示词）
+  // 2. 当前动态（使用【当前动态】标记匹配系统提示词；2026-08-29 增加时效标注，防旧数据被当当前状态）
   if (structuredData.dynamic) {
     var d = structuredData.dynamic;
-    ctx += '【当前动态】（以下数据来自AIS实时数据，请直接引用）\n';
+    var staleNote = '';
+    if (d.updateTime) {
+      var ut = new Date(String(d.updateTime).replace(/-/g, '/'));
+      if (!isNaN(ut.getTime())) {
+        var ageH = (Date.now() - ut.getTime()) / 3600000;
+        if (ageH > 72) staleNote = ' ⚠️数据已超72小时，位置可能已变化，请勿当作当前状态';
+        else if (ageH > 24) staleNote = ' ⚠️数据已超24小时，位置可能已变化';
+      }
+    }
+    ctx += '【当前动态】（以下数据来自AIS实时数据，请直接引用；采集时间: ' + (d.updateTime || '未知') + staleNote + '）\n';
     ctx += '- 状态: ' + (d.status || '未知') + '\n';
     ctx += '- 位置: (' + (d.position || '未知') + ')\n';
     ctx += '- 航速: ' + (d.speed_kn || '—') + ' kn\n';
     ctx += '- 目的港: ' + (d.destination || '未知') + '\n';
-    ctx += '- ETA: ' + (d.eta || '—') + '\n';
-    ctx += '- 更新时间: ' + (d.updateTime || '—') + '\n\n';
+    ctx += '- ETA: ' + (d.eta || '—') + '\n\n';
   }
   
   // 3. OCR证书清单

@@ -164,6 +164,17 @@ export async function onRequest(context) {
     // ====== Build messages ======
     let systemContent = SYSTEM_PROMPTS[module] || REGULATIONS_SYSTEM_PROMPT;
 
+    // ====== 2026-08-29：注入服务器当前日期（杜绝模型凭训练数据印象计算剩余/过期天数） ======
+    try {
+      const _now = new Date();
+      const _pad = (n) => String(n).padStart(2, '0');
+      const _today = `${_now.getFullYear()}-${_pad(_now.getMonth() + 1)}-${_pad(_now.getDate())}`;
+      const _week = ['日', '一', '二', '三', '四', '五', '六'][_now.getDay()];
+      systemContent = `【📅 当前日期】今天是 ${_today}（星期${_week}）。\n所有“剩余天数/已过期/即将到期/还有多久”的计算**必须基于这个日期**，禁止凭印象或训练数据估算。\n\n` + systemContent;
+    } catch (e) {
+      console.error('[Date] inject failed:', e.message);
+    }
+
     // ====== Memory System: inject digested long-term memory ======
     let memoryEntries = [];
     if (env && env.DB) {
