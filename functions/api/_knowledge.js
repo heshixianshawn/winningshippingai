@@ -750,17 +750,18 @@ async function ensurePscDefectRegs(request) {
 }
 const DEFECT_SKIP = new Set(['the','and','for','with','from','that','this','have','has','was','were','not','are','its','his','her','she','all','any','but','can','had','out','per','via','etc','shall','must','ship','vessel','found','failed','failure','due','during','after','before','over','under','into','onto','one','two','new','old','type','code','item','area','part','set','date','number','description','details','action','taken','yes','no','see','attached','form','page','signature','inspection','report','authority','name','master','company']);
 
-/** 提取 PSC 报告文本中的缺陷行：编号(4-5位) + 描述 */
+/** 提取 PSC 报告文本中的缺陷行：编号(4-5位) + 描述。v2：逐行匹配（真实OCR表格含行号/乱码，旧前瞻正则失效） */
 export function extractDefectLines(message) {
   const defects = [];
-  // 非贪婪 + 前瞻下一个缺陷编号截断，避免一条描述吞掉后续缺陷
-  const re = /(\d{4,5})\s*[:：\-]?\s*([A-Z][A-Z0-9 ,\-()/'.]{25,300}?)(?=\s+\d{4,5}\s|\s*$)/g;
-  let m;
-  while ((m = re.exec(message)) !== null) {
+  const lines = String(message || '').split('\n');
+  const re = /(\d{4,5})\s+([A-Z][A-Z0-9 ,\-()/'.:]{25,300})/;
+  for (const line of lines) {
+    const m = re.exec(line);
+    if (!m) continue;
     const code = m[1];
     const desc = m[2].replace(/\s+/g, ' ').trim();
     if (desc.length < 25) continue;
-    if (!defects.some(d => d.code === code && d.desc === desc)) defects.push({ code, desc });
+    if (!defects.some(d => d.code === code)) defects.push({ code, desc: desc.slice(0, 200) });
     if (defects.length >= 8) break;
   }
   return defects;
