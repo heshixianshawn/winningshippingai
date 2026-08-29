@@ -510,8 +510,8 @@ function compressImage(dataUrl, maxWidth, quality) {
               var ocrContent = ocrPages.join('\n');
               if (ocrContent.trim()) {
                 // OCR 成功：走文字分析（打印体表格 OCR 远优于 vision 实验模型）
-                var ocrSnippet = ocrContent.substring(0, 20000);
-                if (ocrContent.length > 20000) ocrSnippet += '\n...(文件较长，截取前20000字符)';
+                var ocrSnippet = ocrContent.substring(0, 10000);
+                if (ocrContent.length > 10000) ocrSnippet += '\n...(文件较长，截取前10000字符)';
                 STATE.uploadedFileContent = ocrSnippet;
                 STATE.uploadedFileName = file.name;
                 var isPsc = /PSC|检查|inspection|port state/i.test(file.name);
@@ -535,8 +535,10 @@ function compressImage(dataUrl, maxWidth, quality) {
           new Promise(function(_, reject) { setTimeout(function() { reject(new Error('PDF解析超时')); }, PDF_TIMEOUT); })
         ]);
         var content = result;
-        var snippet = content.substring(0, 20000);
-        if (content.length > 20000) snippet += '\n...(文件较长，截取前20000字符)';
+        // 2026-08-29 修复：扫描件/OCR 分支已在内部 sendMessage()，此处禁止二次注入与重复发送
+        if (content === 'handled-as-ocr' || content === 'handled-as-image') return;
+        var snippet = content.substring(0, 10000);
+        if (content.length > 10000) snippet += '\n...(文件较长，截取前10000字符)';
         STATE.uploadedFileContent = snippet;
         STATE.uploadedFileName = file.name;
         els.input.value = '📄 以下是文件【' + file.name + '】的内容，请直接分析：\n\n' + snippet + '\n\n[请基于以上文件内容回答用户的问题]';
