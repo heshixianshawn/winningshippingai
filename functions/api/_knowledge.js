@@ -794,7 +794,10 @@ export async function matchDefectRegulations(request, message) {
         if (qr) {
           const quickLine = qr.split('\n').map(s => s.trim()).find(s => s.startsWith('【速查：')) || '';
           if (quickLine) {
-            lines.push(`  - ${quickLine.replace(/^【速查：|】$/g, '').slice(0, 150)}（来源：PSC速查库·人工精编）`);
+            const qm = quickLine.match(/【速查：(.+?)】（来源：(.+?)）/) || quickLine.match(/【速查：(.+?)】/);
+            const label = qm ? qm[1] : quickLine.replace(/^【速查：/, '');
+            const src = (qm && qm[2]) ? qm[2] : 'PSC速查库';
+            lines.push(`  - ${label.slice(0, 120)}（来源：${src}）`);
             found = true;
           }
         }
