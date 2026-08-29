@@ -224,12 +224,14 @@ export async function searchSystemsKnowledge(request, query) {
     }
   }
   // 英文单词
-  const enWords = q.toLowerCase().match(/[a-z][a-z\-]{2,}/g) || [];
+  const enWordsRaw = q.toLowerCase().match(/[a-z][a-z\-]{2,}/g) || [];
+  // 2026-08-29：过滤停用词（防泛词误命中），要求≥2个有效词
+  const enWords = enWordsRaw.filter(w => !SEARCH_STOPWORDS.has(w.toUpperCase()));
   for (const w of enWords) {
     if (km[w]) for (const sid of km[w]) hitIds.add(sid);
   }
 
-  if (hitIds.size === 0) return '';
+  if (hitIds.size === 0 || enWords.filter(w => km[w]).length < 2) return '';
 
   // 2. 按命中数排序
   const scored = [...hitIds].map(id => ({ id, score: 0 }));
@@ -287,15 +289,6 @@ async function ensureRegsIndex(request) {
 }
 
 /** 检索 SOLAS 法规知识库：关键词 → Regulation 分片命中 */
-export async function searchRegulationsKnowledge(request, query) {
-  const index = await ensureRegsIndex(request);
-  if (!index) return '';
-  const km = index.keyword_map || {};
-  const q = query.toLowerCase();
-  const qCn = query.replace(/[^\u4e00-\u9fff]/g, '');
-
-  // ═══ 中文→英文关键词映射（2026-08-23 新增：解决中文提问无法命中英文索引导致 AI 编造） ═══
-// 中文→英文关键词映射（模块级，供法规检索共用）
 const CN_TO_EN = {
     '救生艇': ['lifeboat', 'rescue boat'], '救生筏': ['life raft', 'liferaft'], '脱钩': ['release gear', 'release mechanism', 'on-load', 'release hook', 'release'],
     '释放': ['release', 'launch', 'lowering'], '降落': ['lowering', 'launch', 'davit'], '吊架': ['davit'],
@@ -317,9 +310,29 @@ const CN_TO_EN = {
     '载重线': ['load', 'line'], '防污': ['pollution'], '压舱水': ['ballast']
 };
 
+// 2026-08-29：检索停用词（防泛词误命中无关条款，如 INSTRUCTION→客船稳性）
+const SEARCH_STOPWORDS = new Set(['THE','AND','FOR','FOUND','FAILED','NOT','WITH','FROM','THAT','THIS','HAVE','HAS','WAS','WERE','ARE','ITS','HIS','HER','ALL','ANY','BUT','CAN','HAD','OUT','PER','VIA','ETC','SHALL','MUST','SHIP','VESSEL','DURING','AFTER','BEFORE','OVER','UNDER','INTO','ONTO','ONE','TWO','NEW','OLD','TYPE','CODE','ITEM','AREA','PART','SET','OPERATIONAL','INSTRUCTION','PLACARD','HEAVILY','CORRODED','ILLEGIBLE','FREE','FALL','REPORT','INSPECTION','NUMBER','DESCRIPTION','DETAILS','ACTION','TAKEN','YES','NO','SEE','ATTACHED','FORM','PAGE','SIGNATURE','NAME','MASTER','COMPANY','DATE','PLACE']);
+
+// 2026-08-29：超泛词（出现在多数条款，频率高但无区分度）——评分×0.5
+const COMMON_WORDS = new Set(['WATER','SYSTEM','PIPE','VALVE','AIR','CONTROL','FOUND','PUMP','ROOM','SPACE','REQUIRED','USED','SHALL','MAY','PART','AREA','NUMBER','OPERATION','INSPECTION','MAINTENANCE','TEST','EQUIPMENT','ARRANGEMENT','PROVISION','PROVIDED','INSTALLED','CONDITION','DURING','MEANS','FITTED','SERVICE','FIRE','SAFETY','MACHINERY','HOLD','DECK','ENGINE','STATION','POSITION','LEVEL','TIME','DAYS','MONTHS','YEARS','PNEUMATIC','BUTTERFLY','WIRE','CABLE','SWITCH','PANEL','COMMUNICATE','LEAKING','BROKEN','DAMAGE','MISSING','CORRODED','ILLEGIBLE','OUT','ORDER','TWO','ONE','SENSOR','DETECTOR','ALARM','RELEASE','REMOTE','MANUALLY','ISOLATED','SUPPLY','PRESSURE','FLOW','LINE','MAIN','AUXILIARY','EMERGENCY','NORMAL','LOCAL','REMOTE']);
+
+
+
+export async function searchRegulationsKnowledge(request, query) {
+  const index = await ensureRegsIndex(request);
+  if (!index) return '';
+  const km = index.keyword_map || {};
+  const q = query.toLowerCase();
+  const qCn = query.replace(/[^\u4e00-\u9fff]/g, '');
+
+  // ═══ 中文→英文关键词映射（2026-08-23 新增：解决中文提问无法命中英文索引导致 AI 编造） ═══
+// 中文→英文关键词映射（模块级，供法规检索共用）
+
   const hitIds = new Set();
   // 英文关键词命中（法规条文关键词多为英文）
-  const enWords = q.toLowerCase().match(/[a-z][a-z\-]{2,}/g) || [];
+  const enWordsRaw = q.toLowerCase().match(/[a-z][a-z\-]{2,}/g) || [];
+  // 2026-08-29：过滤停用词（防泛词误命中），要求≥2个有效词
+  const enWords = enWordsRaw.filter(w => !SEARCH_STOPWORDS.has(w.toUpperCase()));
   for (const w of enWords) {
     if (km[w]) for (const sid of km[w]) hitIds.add(sid);
   }
@@ -331,7 +344,7 @@ const CN_TO_EN = {
     }
   }
 
-  if (hitIds.size === 0) return '';
+  if (hitIds.size === 0 || enWords.filter(w => km[w]).length < 2) return '';
 
   // 计分：命中词数
   const score = {};
@@ -573,7 +586,9 @@ export async function searchRegsAllKnowledge(request, query) {
   const qCn = query.replace(/[^\u4e00-\u9fff]/g, '');
 
   const hitIds = new Set();
-  const enWords = q.toLowerCase().match(/[a-z][a-z\-]{2,}/g) || [];
+  const enWordsRaw = q.toLowerCase().match(/[a-z][a-z\-]{2,}/g) || [];
+  // 2026-08-29：过滤停用词，要求≥2个有效词命中
+  const enWords = enWordsRaw.filter(w => !SEARCH_STOPWORDS.has(w.toUpperCase()));
   for (const w of enWords) if (km[w]) for (const sid of km[w]) hitIds.add(sid);
   for (const cn in CN_TO_EN) {
     if (!qCn.includes(cn)) continue;
@@ -791,7 +806,93 @@ export function extractDefectLines(message) {
  * 2026-08-29 v2：不注入给模型（模型会编造/错配条款号），改为模型回复后由后端直接拼接，
  * 来源可溯、未命中明确标注，杜绝“VDR 属于洗涤器记录仪”类幻觉。
  */
+// ═══════════════ 缺陷设备→法规全文匹配（2026-08-29 v2：分片全文词频，绕开粗糙keyword_map） ═══════════════
+let solasAllChapters = null;
+
+async function ensureAllSolas(request) {
+  if (solasAllChapters) return solasAllChapters;
+  try {
+    const baseUrl = getPagesUrl(request);
+    const chs = ['I','II','II-1','II-2','III','IV','V','VI','VII','IX'];
+    const loaded = {};
+    const withTimeout = (p, ms) => Promise.race([p, new Promise((_, rej) => setTimeout(() => rej(new Error('timeout')), ms))]);
+    for (const ch of chs) {
+      try {
+        const resp = await withTimeout(fetch(`${baseUrl}/data/regulations_shards/chapter_${ch}.json`), 8000);
+        if (resp.ok) loaded[ch] = await resp.json();
+      } catch (e) { /* 单章失败继续 */ }
+    }
+    solasAllChapters = loaded;
+  } catch (e) { console.error('solas all chapters fail:', e.message); }
+  return solasAllChapters;
+}
+
+/** 分片全文词频检索：返回 [{title, text, score}]，对症条款（词频高）排前 */
+async function searchFullTextShards(request, query, limit = 3) {
+  const words = String(query || '').toUpperCase().split(/[^A-Z0-9]+/)
+    .filter(w => w.length >= 5 && !SEARCH_STOPWORDS.has(w));
+  if (words.length === 0) return [];
+  const scored = [];
+  // 1. SOLAS 完整章节
+  const chapters = await ensureAllSolas(request);
+  for (const [ch, secs] of Object.entries(chapters || {})) {
+    for (const [id, sec] of Object.entries(secs)) {
+      const text = (sec.text || '').toUpperCase();
+      let score = 0, specHits = 0;
+      for (const w of words) {
+        const n = text.split(w).length - 1;
+        if (n <= 0) continue;
+        if (COMMON_WORDS.has(w)) continue;  // 2026-08-29：泛词/构造词零计分，只统计设备专有词
+        score += n * (w.length >= 8 ? 3 : 2);
+        specHits++;
+      }
+      if (score >= 3 && specHits >= 1) {
+        const title = `SOLAS Ch.${sec.chapter || ch} ${sec.reg ? 'Reg.' + sec.reg : ''}${sec.title ? ' - ' + sec.title : ''}`.trim();
+        scored.push({ title, text: sec.text || '', score, src: 'SOLAS' });
+      }
+    }
+  }
+  // 2. 公约分片（MARPOL/MLC/LSA/ISM/BWM/FSS）
+  if (await ensureRegsAll(request) && regsAllShards) {
+    for (const [sid, s] of Object.entries(regsAllShards)) {
+      const text = ((s.title || '') + ' ' + (s.text || '')).toUpperCase();
+      let score = 0, specHits = 0;
+      for (const w of words) {
+        const n = text.split(w).length - 1;
+        if (n <= 0) continue;
+        if (COMMON_WORDS.has(w)) continue;  // 2026-08-29：泛词/构造词零计分，只统计设备专有词
+        score += n * (w.length >= 8 ? 3 : 2);
+        specHits++;
+      }
+      if (score >= 3 && specHits >= 1) {
+        scored.push({ title: s.title || sid, text: s.text || '', score, src: s.convention || '' });
+      }
+    }
+  }
+  scored.sort((a, b) => b.score - a.score);
+  return scored.slice(0, limit);
+}
+
+/** 输出指定主题词上下文段落（对症段落，非条款开头） */
+function excerptAround(text, words, maxLen = 1200) {
+  const up = (text || '').toUpperCase();
+  let best = -1, bestCnt = 0;
+  for (const w of words) {
+    let i = up.indexOf(w);
+    while (i !== -1) {
+      let cnt = 0;
+      for (const w2 of words) if (up.indexOf(w2, Math.max(0, i - 300)) <= i + 300) cnt++;
+      if (cnt > bestCnt) { bestCnt = cnt; best = i; }
+      i = up.indexOf(w, i + 1);
+    }
+  }
+  if (best === -1) return (text || '').slice(0, maxLen);
+  const start = Math.max(0, best - 200);
+  return '…' + text.slice(start, start + maxLen) + '…';
+}
+
 export async function matchDefectRegulations(request, message) {
+  // v5（2026-08-29）：映射表精确命中 + 分片全文词频匹配（对症条款排前，输出原文）
   const defects = extractDefectLines(message);
   if (defects.length === 0) return '';
   const results = [];
@@ -801,10 +902,9 @@ export async function matchDefectRegulations(request, message) {
     const descShort = d.desc.slice(0, 110);
     const lines = [`• 缺陷 ${d.code === '???' ? '(编号未识别)' : d.code}（${descShort}）:`];
     let found = false;
-    // 0. 静态映射表：优先按缺陷编号精确匹配；编号缺失时按描述关键词匹配
+    // 0. 静态映射表：编号精确 / 描述≥2词
     let hit = tableItems.find(it => it.code === d.code);
     if (!hit && d.code === '???') {
-      // 描述匹配：要求≥2个关键词命中，取命中最多条目（防“WATER”单词误匹配水浸报警）
       const dUp = d.desc.toUpperCase();
       let best = null, bestCnt = 0;
       for (const it of tableItems) {
@@ -818,36 +918,31 @@ export async function matchDefectRegulations(request, message) {
       for (const r of hit.regs) lines.push(`  - ${r}（来源：PSC缺陷条款映射表·人工精编）`);
       found = true;
     }
-    if (!found) {
-      // 1. PSC 速查库（人工精编，置信度高）：提取“速查：”条目行（跳过模板头）
-      try {
-        const qr = await searchQuickRef(request, d.desc);
-        if (qr) {
-          const quickLine = qr.split('\n').map(s => s.trim()).find(s => s.startsWith('【速查：')) || '';
-          if (quickLine) {
-            const qm = quickLine.match(/【速查：(.+?)】（来源：(.+?)）/) || quickLine.match(/【速查：(.+?)】/);
-            const label = qm ? qm[1] : quickLine.replace(/^【速查：/, '');
-            const src = (qm && qm[2]) ? qm[2] : 'PSC速查库';
-            lines.push(`  - ${label.slice(0, 120)}（来源：${src}）`);
-            found = true;
-          }
-        }
-      } catch (e) { /* 忽略 */ }
+    // 1. 分片全文词频匹配（SOLAS完整章节 + 公约分片）
+    try {
+      const words = d.desc.toUpperCase().split(/[^A-Z0-9]+/).filter(w => w.length >= 5 && !SEARCH_STOPWORDS.has(w));
+      const hits = await searchFullTextShards(request, d.desc, hit ? 2 : 4);
+      for (const h of hits) {
+        lines.push(`  【${h.title}】（${h.src}）\n  ${excerptAround(h.text, words, 1000)}`);
+        found = true;
+      }
+    } catch (e) { console.error('[FullText] failed:', e.message); }
+    // 2. 特判：船员休息时间 / 公司体系
+    const dUp2 = d.desc.toUpperCase();
+    if (/REST|HOURS OF WORK|休息|WORK HOURS/.test(dUp2)) {
+      lines.push('  ⚠️ 船员休息时间：MLC 2006 Title 2 Reg.2.3 + 标准 A2.3（每24h≥10h、每7天≥77h）；STCW 2010 A-VIII/1（值班休息每24h≥10h、两次休息间隔≤14h）。知识库暂未收录这两份全文（缺口），建议核对官方原文。');
+      found = true;
     }
-    if (!found) {
-      // 2. 公约原文分片（MARPOL/MLC/ISM/LSA/SOLAS）：取命中标题，最多2条
-      try {
-        const regs = await searchRegsAllKnowledge(request, d.desc);
-        if (regs) {
-          const titles = regs.split(/\n/).map(s => s.replace(/^【|】$/g, '').trim()).filter(t => t && t.length < 90);
-          const uniq = [...new Set(titles)].slice(0, 2);
-          for (const t of uniq) lines.push(`  - ${t}（来源：公约原文分片检索）`);
-          found = true;
-        }
-      } catch (e) { /* 忽略 */ }
+    if (/SCRUBBER|EGCS|EXHAUST GAS/.test(dUp2)) {
+      lines.push('  ⚠️ 废气洗涤系统(EGCS)：MARPOL Annex VI Reg.4 + MEPC.340(77) EGCS导则（数据记录/排放监测要求）；知识库 MARPOL Annex VI 分片暂缺 EGCS 条款全文（缺口），已由映射表给出条款指向。');
+      found = true;
     }
-    if (!found) lines.push('  - 知识库未收录精确条款（建议人工核对 PSC 缺陷代码对应公约）');
+    if (/ISM|COMPANY|体系|SMS/.test(dUp2)) {
+      lines.push('  📘 公司体系（ISM Code）：知识库已收录 ISM Part A/B 全文（见上方命中）；重点：ISM 4（资源与岸基支持）、7（船上操作方案）、9（不符合规定报告分析）、10（设备维护）。');
+      found = true;
+    }
+    if (!found) lines.push('  - 知识库未收录该设备相关条款（建议人工核对 PSC 缺陷代码对应公约）');
     results.push(lines.join('\n'));
   }
-  return '【📜 缺陷对应法规条款（知识库自动匹配，请与官方原文核对）】\n\n' + results.join('\n\n');
+  return '【📜 缺陷设备相关法规原文（知识库全文检索·对症条款优先，请与官方原文核对）】\n\n' + results.join('\n\n---\n\n');
 }
