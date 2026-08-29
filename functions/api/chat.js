@@ -8,7 +8,7 @@ import {
   SHIP_SYSTEM_PROMPT
 } from './_system_prompts.js';
 import { querySurveyKnowledge, getAlertSummary } from './_survey_knowledge.js';
-import { autoSearchKnowledge, buildPscPrepChecklist, searchImoConventions, searchImoUpdates, searchOfficialSources, searchQuickRef, searchRegsAllKnowledge, searchRegulationsKnowledge, searchFullTextShards, matchDefectRegulations } from './_knowledge.js';
+import { autoSearchKnowledge, buildPscPrepChecklist, searchImoConventions, searchImoUpdates, searchOfficialSources, searchQuickRef, searchRegsAllKnowledge, searchRegulationsKnowledge, searchFullTextShards, searchHighfreqRef, matchDefectRegulations } from './_knowledge.js';
 import { searchFleetKnowledge } from './_fleet_data.js';
 import { logToKV } from './_logger.js';
 import { analyzeIntent, buildThinkingContext } from './_thinking_engine.js';
@@ -111,6 +111,17 @@ export async function onRequest(context) {
               source: 'PSC速查库'
             };
           }
+          // 2026-08-29：全类别高频速查库（10大类47项，检查要点+条款依据）
+          try {
+            const hf = await searchHighfreqRef(request, message);
+            if (hf) {
+              return {
+                reply: hf + '\n\n⚠️ 以上为 WINNING 船队 PSC 高频检查速查（人工精编·基于 SOLAS/MARPOL/LSA/FSS/MLC/ISM/BWM 原文）。如需针对特定船型的详细条款原文，请继续追问。',
+                model: 'highfreq-quickref',
+                source: 'PSC高频速查库'
+              };
+            }
+          } catch (e) { console.error('[Highfreq] search failed:', e.message); }
         } catch (e) { console.error('[Regs] quickref search failed:', e.message); }
         try {
           const regKb = await autoSearchKnowledge('regulations', message, request);
@@ -161,8 +172,11 @@ export async function onRequest(context) {
     } else {
       // 2026-08-29：PSC报告上传解析 → 模型只负责解析缺陷，条款由后端硬附加（防模型编造条款号）
       if (module === 'regulations' && isFileUploadParse) {
-        kbContext = '';
-        ragUsed = false;
+        try {
+          const hf = await searchHighfreqRef(request, message);
+          if (hf) kbContext = hf;  // 缺陷设备命中高频速查：注入检查要点
+        } catch (e) { /* 忽略 */ }
+        ragUsed = !!kbContext;
       } else {
         kbContext = await autoSearchKnowledge(module, message, request);
         ragUsed = !!kbContext;

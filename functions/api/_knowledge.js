@@ -904,6 +904,48 @@ function excerptAround(text, words, maxLen = 1200) {
   return '…' + text.slice(start, start + maxLen) + '…';
 }
 
+// ═══════════════ PSC 高频检查速查库（2026-08-29：10大类47项，覆盖典型滞留缺陷设备） ═══════════════
+let highfreqRef = null;
+
+async function ensureHighfreqRef(request) {
+  if (highfreqRef) return highfreqRef;
+  try {
+    const baseUrl = getPagesUrl(request);
+    const resp = await fetch(`${baseUrl}/data/psc_highfreq_quickref.json`);
+    if (resp.ok) highfreqRef = await resp.json();
+  } catch (e) { console.error('highfreq_ref load fail:', e.message); }
+  return highfreqRef;
+}
+
+/**
+ * 高频速查检索：命中返回格式化模板（检查要点+条款引用），未命中返回空
+ */
+export async function searchHighfreqRef(request, query) {
+  const data = await ensureHighfreqRef(request);
+  if (!data || !data.items) return '';
+  const q = query.toLowerCase();
+  const qCn = query.replace(/[^\u4e00-\u9fff]/g, '');
+  const hits = data.items.filter(it =>
+    it.kw.some(k => k && (q.includes(k.toLowerCase()) || (qCn && qCn.includes(k))))
+  );
+  if (hits.length === 0) return '';
+  // 取匹配关键词最多的前2条
+  hits.sort((a, b) => {
+    const ca = a.kw.filter(k => q.includes(k.toLowerCase()) || (qCn && qCn.includes(k))).length;
+    const cb = b.kw.filter(k => q.includes(k.toLowerCase()) || (qCn && qCn.includes(k))).length;
+    return cb - ca;
+  });
+  const out = hits.slice(0, 2).map(it => {
+    const lines = [`【🚨 ${it.cat} · ${it.device}】`];
+    lines.push(`**检查要点**：`);
+    it.checks.forEach(c => lines.push(`- ${c}`));
+    lines.push(`**条款依据**：`);
+    it.regs.forEach(r => lines.push(`- ${r}`));
+    return lines.join('\n');
+  }).join('\n\n---\n\n');
+  return `【PSC 高频检查速查（人工精编·基于公约原文，来源可溯）】\n\n${out}`;
+}
+
 export async function matchDefectRegulations(request, message) {
   // v5（2026-08-29）：映射表精确命中 + 分片全文词频匹配（对症条款排前，输出原文）
   const defects = extractDefectLines(message);
