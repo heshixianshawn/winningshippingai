@@ -76,6 +76,8 @@ export async function onRequest(context) {
     // ====== Knowledge Base Search ======
     let kbContext = '';
     let ragUsed = false;
+    // 2026-08-29：上传文件（PSC报告等）解析场景标记（顶层定义，供各分支复用）
+    const isFileUploadParse = /以下是(文件|扫描件PDF)/.test(message);
     let quickAnswer = null;  // PSC 速查命中内容（强制原样输出）
 
     if (isThinkingMode && awareData) {
@@ -97,9 +99,7 @@ export async function onRequest(context) {
     } else if (clientContext && typeof clientContext === 'string' && clientContext.length > 0) {
       kbContext = clientContext;
       ragUsed = true;
-      // 法规模块：即使有 TYPE 标签也追加法规原文检索（SOLAS 知识库）+ IMO 官方公约信息
       // 2026-08-29：上传文件（PSC报告等）解析场景跳过检索——检索词就是报告内容，会把模型引向法规条文而非解析文档
-      const isFileUploadParse = /以下是(文件|扫描件PDF)/.test(message);
       if (module === 'regulations' && !isFileUploadParse) {
         // ⭐ 速查库最优先（权威答案，防 AI 编造）：命中时直接模板化返回（可靠优先，不依赖模型遵循）
         try {
