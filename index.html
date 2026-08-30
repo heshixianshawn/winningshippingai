@@ -1728,16 +1728,24 @@ async function callAPI(message, module, imageData) {
   try {
     // 2026-08-29：5xx 自动重试（CF Pages 部署切换窗口会短暂 500，重试自动恢复）
     var cfResp = null;
-    for (var retry = 0; retry < 3; retry++) {
-      cfResp = await fetch(CONFIG.API_BASE_URL + '/api/chat', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(cfBody)
-      });
+    // 2026-08-30：重试 3→5 次（部署切换窗口/AI繁忙时自动恢复）；fetch 加 65s 超时防止无限等待
+    for (var retry = 0; retry < 5; retry++) {
+      try {
+        cfResp = await fetch(CONFIG.API_BASE_URL + '/api/chat', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(cfBody),
+          signal: AbortSignal.timeout(65000)
+        });
+      } catch (fetchErr) {
+        console.warn('[' + module + '] CF API fetch异常(' + (retry + 1) + '/5):', fetchErr.name, fetchErr.message);
+        if (retry < 4) { await new Promise(function(r) { setTimeout(r, 2000 * (retry + 1)); }); continue; }
+        break;
+      }
       if (cfResp.ok) break;
-      if (cfResp.status >= 500 && retry < 2) {
-        console.warn('[' + module + '] CF API ' + cfResp.status + '，重试 ' + (retry + 1) + '/2（可能部署切换中）');
-        await new Promise(function(r) { setTimeout(r, 3000 * (retry + 1)); });
+      if (cfResp.status >= 500 && retry < 4) {
+        console.warn('[' + module + '] CF API ' + cfResp.status + '，重试 ' + (retry + 1) + '/4（可能部署切换/AI繁忙）');
+        await new Promise(function(r) { setTimeout(r, 2000 * (retry + 1)); });
         continue;
       }
       break;

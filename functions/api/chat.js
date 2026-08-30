@@ -330,28 +330,60 @@ export async function onRequest(context) {
         return { reply: '⚠️ 图片分析服务暂时不可用（视觉模型未配置），请稍后重试，或直接描述缺陷内容。', model: 'error' };
       }
     } else {
+      // 2026-08-30 修复：CF Pages Functions 请求墙钟约30s，DeepSeek 傍晚高峰响应慢→Worker被杀→前端500。
+      // 1) DeepSeek 加 25s 超时；2) 超时/失败自动回退 APIYI gpt-4o-mini；3) 再失败返回友好提示（200），不再暴露500。
       apiUsed = 'DeepSeek';
-      response = await fetch(`${DEEPSEEK_BASE}/chat/completions`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${env.DEEPSEEK_API_KEY_ENV || ''}`
-        },
-        body: JSON.stringify({
-          model: DEEPSEEK_MODEL_TEXT,
-          messages,
-          temperature: 0.3,
-          max_tokens: 4096,
-          stream: false
-        })
-      });
-    }
-
-    if (!response.ok) {
-      const error = await response.text();
-      return new Response(JSON.stringify({ error: 'API失败', detail: error, api: apiUsed }), {
-        status: 502, headers: { 'Content-Type': 'application/json', ...CORS_HEADERS }
-      });
+      try {
+        response = await fetch(`${DEEPSEEK_BASE}/chat/completions`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${env.DEEPSEEK_API_KEY_ENV || ''}`
+          },
+          body: JSON.stringify({
+            model: DEEPSEEK_MODEL_TEXT,
+            messages,
+            temperature: 0.3,
+            max_tokens: 4096,
+            stream: false
+          }),
+          signal: AbortSignal.timeout(25000)
+        });
+      } catch (e) {
+        console.error('[DeepSeek text error/timeout]', e.name, e.message);
+        response = null;
+      }
+      if (!response || !response.ok) {
+        const errInfo = response ? await response.text().catch(() => '') : 'timeout/network';
+        console.error('[DeepSeek text failed]', response ? response.status : 'N/A', String(errInfo).substring(0, 200));
+        if (apiYiKey) {
+          apiUsed = 'API易 GPT-4o-mini';
+          try {
+            response = await fetch(`${APIYI_BASE}/chat/completions`, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${apiYiKey}` },
+              body: JSON.stringify({
+                model: APIYI_MODEL_TEXT,
+                messages,
+                temperature: 0.3,
+                max_tokens: 4096,
+                stream: false
+              }),
+              signal: AbortSignal.timeout(25000)
+            });
+            if (!response.ok) {
+              const errText = await response.text().catch(() => '');
+              console.error('[APIYI text failed]', response.status, errText.substring(0, 200));
+              return { reply: '⚠️ AI 服务暂时繁忙（DeepSeek 与备用模型均未响应），请稍后重试或直接描述内容。', model: 'error' };
+            }
+          } catch (e2) {
+            console.error('[APIYI text error]', e2.message);
+            return { reply: '⚠️ AI 服务暂时繁忙（DeepSeek 与备用模型均未响应），请稍后重试或直接描述内容。', model: 'error' };
+          }
+        } else {
+          return { reply: '⚠️ AI 服务暂时繁忙（DeepSeek 未响应且未配置备用模型），请稍后重试或直接描述内容。', model: 'error' };
+        }
+      }
     }
 
     const data = await response.json().catch(() => ({}));
