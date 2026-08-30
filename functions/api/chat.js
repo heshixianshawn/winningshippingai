@@ -105,8 +105,17 @@ export async function onRequest(context) {
         try {
           const quickInfo = await searchQuickRef(request, message);
           if (quickInfo) {
+            // 2026-08-30：速查命中同样附加对症条款原文（DNV Ask AI 风格：检查要点 + 条款原文 + 来源可溯）
+            let quickExtra = '';
+            try {
+              const hits = await searchFullTextShards(request, message, 2);
+              if (hits.length) {
+                const secs = hits.map(h => `【${h.title}】\n${(h.text || '').slice(0, 1100)}`);
+                quickExtra = '\n\n---\n\n【📖 相关法规原文（对症条款·来源可溯，请与官方原文核对）】\n\n' + secs.join('\n\n---\n\n');
+              }
+            } catch (e) { console.error('[QuickRef] clause attach failed:', e.message); }
             return new Response(JSON.stringify({
-              reply: quickInfo + '\n\n⚠️ 以上为 PSC 高频速查权威内容（人工精编，基于 SOLAS 2024 原文，来源可溯）。如需针对特定船型/船队的补充分析或实操建议，请继续追问。',
+              reply: quickInfo + quickExtra + '\n\n⚠️ 以上为 PSC 高频速查权威内容（人工精编，基于 SOLAS 2024 原文，来源可溯）。如需针对特定船型/船队的补充分析或实操建议，请继续追问。',
               model: 'quickref-knowledge',
               source: 'PSC速查库'
             }), { headers: { 'Content-Type': 'application/json', ...CORS_HEADERS } });
@@ -115,8 +124,17 @@ export async function onRequest(context) {
           try {
             const hf = await searchHighfreqRef(request, message);
             if (hf) {
+              // 2026-08-30：附加对症条款原文（修复原版只给条款号不给原文的问题）
+              let hfExtra = '';
+              try {
+                const hits = await searchFullTextShards(request, message, 2);
+                if (hits.length) {
+                  const secs = hits.map(h => `【${h.title}】\n${(h.text || '').slice(0, 1100)}`);
+                  hfExtra = '\n\n---\n\n【📖 相关法规原文（对症条款·来源可溯，请与官方原文核对）】\n\n' + secs.join('\n\n---\n\n');
+                }
+              } catch (e) { console.error('[Highfreq] clause attach failed:', e.message); }
               return new Response(JSON.stringify({
-                reply: hf + '\n\n⚠️ 以上为 WINNING 船队 PSC 高频检查速查（人工精编·基于 SOLAS/MARPOL/LSA/FSS/MLC/ISM/BWM 原文）。如需针对特定船型的详细条款原文，请继续追问。',
+                reply: hf + hfExtra + '\n\n⚠️ 以上为 WINNING 船队 PSC 高频检查速查（人工精编·基于 SOLAS/MARPOL/LSA/FSS/MLC/ISM/BWM 原文）。如需针对特定船型的详细条款原文，请继续追问。',
                 model: 'highfreq-quickref',
                 source: 'PSC高频速查库'
               }), { headers: { 'Content-Type': 'application/json', ...CORS_HEADERS } });
@@ -407,29 +425,27 @@ export async function onRequest(context) {
           if (defectLaw) finalReply = reply + '\n\n---\n\n' + defectLaw;
         } else {
           // 普通法规提问：全文词频检索（专有词加权，对症条款优先），硬附加原文（防模型凭记忆编造条款号）
-          const isQuickHit = /PSC 高频速查/.test(reply);
-          if (!isQuickHit) {
-            const sections = [];
+                    // 2026-08-30：速查命中（PSC 高频速查）也附加对症条款原文——不再跳过；
+          // 中文问题经 CN_TO_EN 映射检索，正文为对症段落（excerptAround）
+          const sections = [];
+          try {
+            const hits = await searchFullTextShards(request, message, 3);
+            for (const h of hits) {
+              const body = (h.text || '').slice(0, 1300);
+              sections.push(`【${h.title}】\n${body}`);
+            }
+          } catch (e) { console.error('[Law] fulltext failed:', e.message); }
+          if (sections.length === 0) {
             try {
-              const hits = await searchFullTextShards(request, message, 3);
-              for (const h of hits) {
-                const words = message.toUpperCase().split(/[^A-Z0-9]+/).filter(w => w.length >= 5);
-                const body = (h.text || '').slice(0, 1300);
-                sections.push(`【${h.title}】\n${body}`);
+              const solas = await searchRegulationsKnowledge(request, message);
+              if (solas) {
+                const parts = solas.split('\n\n---\n\n').filter(s => s.trim() && !s.startsWith('【SOLAS 2024'));
+                for (const p of parts.slice(0, 3)) sections.push(p.slice(0, 1500));
               }
-            } catch (e) { console.error('[Law] fulltext failed:', e.message); }
-            if (sections.length === 0) {
-              try {
-                const solas = await searchRegulationsKnowledge(request, message);
-                if (solas) {
-                  const parts = solas.split('\n\n---\n\n').filter(s => s.trim() && !s.startsWith('【SOLAS 2024'));
-                  for (const p of parts.slice(0, 3)) sections.push(p.slice(0, 1500));
-                }
-              } catch (e) { /* 忽略 */ }
-            }
-            if (sections.length > 0) {
-              finalReply = reply + '\n\n---\n\n【📖 相关法规原文（知识库检索·对症条款优先，请与官方原文核对）】\n\n' + sections.join('\n\n---\n\n');
-            }
+            } catch (e) { /* 忽略 */ }
+          }
+          if (sections.length > 0) {
+            finalReply = reply + '\n\n---\n\n【📖 相关法规原文（对症条款·来源可溯，请与官方原文核对）】\n\n' + sections.join('\n\n---\n\n');
           }
         }
       } catch (e) { console.error('[Law] append failed:', e.message); }

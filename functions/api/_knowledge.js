@@ -292,7 +292,7 @@ async function ensureRegsIndex(request) {
 const CN_TO_EN = {
     '救生艇': ['lifeboat', 'rescue boat'], '救生筏': ['life raft', 'liferaft'], '脱钩': ['release gear', 'release mechanism', 'on-load', 'release hook', 'release'],
     '释放': ['release', 'launch', 'lowering'], '降落': ['lowering', 'launch', 'davit'], '吊架': ['davit'],
-    '消防': ['fire'], '防火': ['fire'], '灭火': ['fire extinguishing', 'fire extinguisher'], '消防泵': ['fire', 'pump'],
+    '消防': ['fire'], '防火': ['fire'], '灭火': ['fire extinguishing', 'fire extinguisher'], '泡沫': ['foam'], '消防泵': ['fire', 'pump'],
     '压载水': ['ballast'], '压载': ['ballast'], '油水分离': ['oily'], '含油': ['oily'],
     '报警': ['alarm'], '应急': ['emergency'], '逃生': ['escape'], '无线电': ['radio'], '航行灯': ['navigation light'],
     '锚': ['anchor'], '舵': ['steering'], '主机': ['main engine', 'propulsion'], '发电机': ['generator'],
@@ -817,8 +817,20 @@ async function ensureAllSolas(request) {
 
 /** 分片全文词频检索：返回 [{title, text, score}]，对症条款（词频高）排前 */
 export async function searchFullTextShards(request, query, limit = 3) {
-  const words = String(query || '').toUpperCase().split(/[^A-Z0-9]+/)
+  let words = String(query || '').toUpperCase().split(/[^A-Z0-9]+/)
     .filter(w => w.length >= 4 && !SEARCH_STOPWORDS.has(w));
+  // 2026-08-30：中文问题支持——无英文词时用 CN_TO_EN 把中文设备词映射为英文检索词
+  // （例："大型泡沫灭火器" → 泡沫→foam + 灭火→fire extinguishing → 命中 Reg.10 对症段落）
+  if (words.length === 0) {
+    const qCn = String(query || '').replace(/[^\u4e00-\u9fff]/g, '');
+    for (const cn in CN_TO_EN) {
+      if (qCn.includes(cn)) words.push(...CN_TO_EN[cn].map(w => w.toUpperCase()));
+    }
+  }
+  // 2026-08-30：动作/周期词不参与段落定位（survey→"first survey"、annual/monthly→日期段，
+  // 会把对症段落定位拉到无关的条款结尾处；泡沫案例实测被 "first survey" 带偏）
+  const ANCHOR_STOP = new Set(['SURVEY', 'ANNUAL', 'MONTHLY', 'WEEKLY', 'RECORD', 'VALIDITY', 'EXPIRY', 'DRILL', 'TRAINING', 'INSPECTION', 'REQUIREMENT', 'REQUIREMENTS', 'PERIOD', 'INTERVAL']);
+  words = words.filter(w => !ANCHOR_STOP.has(w));
   if (words.length === 0) return [];
   // 2026-08-29：相邻双词短语（如 EMERGENCY FIRE PUMP → EMERGENCY FIRE/FIRE PUMP），短语命中权重高（对症设备）
   const bigrams = [];
@@ -844,8 +856,13 @@ export async function searchFullTextShards(request, query, limit = 3) {
         if (n > 0) score += n * 12;
       }
       if (score >= 3 && specHits >= 1) {
-        const title = `SOLAS Ch.${sec.chapter || ch} ${sec.reg ? 'Reg.' + sec.reg : ''}${sec.title ? ' - ' + sec.title : ''}`.trim();
-        scored.push({ title, text: sec.text || '', score, src: 'SOLAS' });
+        // 2026-08-30：ro-ro 客船专用条款对散货船队降权（救生筏检索常被 III/26 客船条款抢占）
+        const titleTmp = `SOLAS Ch.${sec.chapter || ch} ${sec.reg ? 'Reg.' + sec.reg : ''}${sec.title ? ' - ' + sec.title : ''}`.trim();
+        if (/RO-RO|PASSENGER/i.test(titleTmp)) score = Math.floor(score * 0.4);
+        if (score >= 3) {
+          // 2026-08-30：正文改为对症段落（allExcerpts 每词提取一段合并，防单点定位被泛词带偏）
+          scored.push({ title: titleTmp, text: allExcerpts(sec.text || '', words, 700), score, src: 'SOLAS' });
+        }
       }
     }
   }
@@ -874,15 +891,47 @@ export async function searchFullTextShards(request, query, limit = 3) {
   return scored.slice(0, limit);
 }
 
+/** 提取所有命中词各自的代表段落并合并（对症段落必在，防单点定位偏移） */
+function allExcerpts(text, words, maxLen = 700) {
+  const up = (text || '').toUpperCase();
+  const parts = [];
+  const seen = new Set();
+  for (const w of words) {
+    if (!w) continue;
+    const i = up.indexOf(w);
+    if (i === -1) continue;
+    const start = Math.max(0, i - 120);
+    const key = Math.floor(start / 200);  // 同区域去重（多词命中同一段落只取一次）
+    if (seen.has(key)) continue;
+    seen.add(key);
+    parts.push('…' + text.slice(start, start + maxLen) + '…');
+  }
+  if (parts.length === 0) return (text || '').slice(0, maxLen);
+  return parts.join('\n---\n');
+}
+
 /** 输出指定主题词上下文段落（对症段落，非条款开头） */
 function excerptAround(text, words, maxLen = 1200) {
   const up = (text || '').toUpperCase();
   let best = -1, bestCnt = 0;
+  // 2026-08-30：词频统计——优先从最特异的词（出现次数最少）开始定位，
+  // 避免 FIRE/EMERGENCY 等泛词在全文高频出现导致段落定位到无关位置
+  const freq = {};
   for (const w of words) {
+    if (!w) continue;
+    freq[w] = up.split(w).length - 1;
+  }
+  const ordered = words.slice().sort((a, b) => (freq[a] || 0) - (freq[b] || 0));
+  for (const w of ordered) {
     let i = up.indexOf(w);
     while (i !== -1) {
+      // 2026-08-30：命中加权——低频（特异）词权重高，泛词低：
+      // 泡沫问题中 FOAM(19次)权重3，FIRE EXTINGUISHING(上百次)权重1，避免被泛词密集区带偏
       let cnt = 0;
-      for (const w2 of words) if (up.indexOf(w2, Math.max(0, i - 300)) <= i + 300) cnt++;
+      for (const w2 of words) {
+        if (!w2) continue;
+        if (up.indexOf(w2, Math.max(0, i - 300)) <= i + 300) cnt += (freq[w2] || 0) <= 30 ? 3 : 1;
+      }
       if (cnt > bestCnt) { bestCnt = cnt; best = i; }
       i = up.indexOf(w, i + 1);
     }
