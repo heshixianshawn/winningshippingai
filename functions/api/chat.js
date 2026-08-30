@@ -53,7 +53,7 @@ export async function onRequest(context) {
     const hasImage = !!imageUrl && (imageUrl.startsWith('data:image') || imageUrl.startsWith('http'));
     // 图片过大/异常拦截：dataURL base64 超 4MB 直接拒绝（大图曾致 Worker 1101 崩溃）
     if (hasImage && imageUrl.startsWith('data:') && imageUrl.length > 4200000) {
-      return { reply: '⚠️ 图片文件过大（超过约3MB），无法处理。请压缩图片或上传扫描件时确保清晰度适中后重试。', model: 'error' };
+      return new Response(JSON.stringify({ reply: '⚠️ 图片文件过大（超过约3MB），无法处理。请压缩图片或上传扫描件时确保清晰度适中后重试。', model: 'error' }), { headers: { 'Content-Type': 'application/json', ...CORS_HEADERS } });
     }
     const apiYiKey = env.APIYI_API_KEY_ENV;
 
@@ -105,21 +105,21 @@ export async function onRequest(context) {
         try {
           const quickInfo = await searchQuickRef(request, message);
           if (quickInfo) {
-            return {
+            return new Response(JSON.stringify({
               reply: quickInfo + '\n\n⚠️ 以上为 PSC 高频速查权威内容（人工精编，基于 SOLAS 2024 原文，来源可溯）。如需针对特定船型/船队的补充分析或实操建议，请继续追问。',
               model: 'quickref-knowledge',
               source: 'PSC速查库'
-            };
+            }), { headers: { 'Content-Type': 'application/json', ...CORS_HEADERS } });
           }
           // 2026-08-29：全类别高频速查库（10大类47项，检查要点+条款依据）
           try {
             const hf = await searchHighfreqRef(request, message);
             if (hf) {
-              return {
+              return new Response(JSON.stringify({
                 reply: hf + '\n\n⚠️ 以上为 WINNING 船队 PSC 高频检查速查（人工精编·基于 SOLAS/MARPOL/LSA/FSS/MLC/ISM/BWM 原文）。如需针对特定船型的详细条款原文，请继续追问。',
                 model: 'highfreq-quickref',
                 source: 'PSC高频速查库'
-              };
+              }), { headers: { 'Content-Type': 'application/json', ...CORS_HEADERS } });
             }
           } catch (e) { console.error('[Highfreq] search failed:', e.message); }
         } catch (e) { console.error('[Regs] quickref search failed:', e.message); }
@@ -322,14 +322,14 @@ export async function onRequest(context) {
           if (!response.ok) {
             const errText = await response.text().catch(() => '');
             console.error('[APIYI vision failed]', response.status, errText.substring(0, 200));
-            return { reply: '⚠️ 图片分析服务暂时不可用（视觉模型均失败，配额或网络问题），请稍后重试，或直接描述缺陷内容，我将依据法规知识库回答。', model: 'error' };
+            return new Response(JSON.stringify({ reply: '⚠️ 图片分析服务暂时不可用（视觉模型均失败，配额或网络问题），请稍后重试，或直接描述缺陷内容，我将依据法规知识库回答。', model: 'error' }), { headers: { 'Content-Type': 'application/json', ...CORS_HEADERS } });
           }
         } catch (e) {
           console.error('[APIYI vision error]', e.message);
-          return { reply: '⚠️ 图片分析服务暂时不可用（视觉模型均失败，配额或网络问题），请稍后重试，或直接描述缺陷内容，我将依据法规知识库回答。', model: 'error' };
+          return new Response(JSON.stringify({ reply: '⚠️ 图片分析服务暂时不可用（视觉模型均失败，配额或网络问题），请稍后重试，或直接描述缺陷内容，我将依据法规知识库回答。', model: 'error' }), { headers: { 'Content-Type': 'application/json', ...CORS_HEADERS } });
         }
       } else if (!dsVisionOk && !apiYiKey) {
-        return { reply: '⚠️ 图片分析服务暂时不可用（视觉模型未配置），请稍后重试，或直接描述缺陷内容。', model: 'error' };
+        return new Response(JSON.stringify({ reply: '⚠️ 图片分析服务暂时不可用（视觉模型未配置），请稍后重试，或直接描述缺陷内容。', model: 'error' }), { headers: { 'Content-Type': 'application/json', ...CORS_HEADERS } });
       }
     } else {
       // 2026-08-30 修复：CF Pages Functions 请求墙钟约30s，DeepSeek 傍晚高峰响应慢→Worker被杀→前端500。
@@ -376,14 +376,14 @@ export async function onRequest(context) {
             if (!response.ok) {
               const errText = await response.text().catch(() => '');
               console.error('[APIYI text failed]', response.status, errText.substring(0, 200));
-              return { reply: '⚠️ AI 服务暂时繁忙（DeepSeek 与备用模型均未响应），请稍后重试或直接描述内容。', model: 'error' };
+              return new Response(JSON.stringify({ reply: '⚠️ AI 服务暂时繁忙（DeepSeek 与备用模型均未响应），请稍后重试或直接描述内容。', model: 'error' }), { headers: { 'Content-Type': 'application/json', ...CORS_HEADERS } });
             }
           } catch (e2) {
             console.error('[APIYI text error]', e2.message);
-            return { reply: '⚠️ AI 服务暂时繁忙（DeepSeek 与备用模型均未响应），请稍后重试或直接描述内容。', model: 'error' };
+            return new Response(JSON.stringify({ reply: '⚠️ AI 服务暂时繁忙（DeepSeek 与备用模型均未响应），请稍后重试或直接描述内容。', model: 'error' }), { headers: { 'Content-Type': 'application/json', ...CORS_HEADERS } });
           }
         } else {
-          return { reply: '⚠️ AI 服务暂时繁忙（DeepSeek 未响应且未配置备用模型），请稍后重试或直接描述内容。', model: 'error' };
+          return new Response(JSON.stringify({ reply: '⚠️ AI 服务暂时繁忙（DeepSeek 未响应且未配置备用模型），请稍后重试或直接描述内容。', model: 'error' }), { headers: { 'Content-Type': 'application/json', ...CORS_HEADERS } });
         }
       }
     }
@@ -393,7 +393,7 @@ export async function onRequest(context) {
       ? data.choices[0].message.content : null;
     if (!reply) {
       console.error('[API] 空回复/异常结构', apiUsed);
-      return { reply: '⚠️ AI 返回异常（' + apiUsed + '），请稍后重试或换种问法。', model: 'error' };
+      return new Response(JSON.stringify({ reply: '⚠️ AI 返回异常（' + apiUsed + '），请稍后重试或换种问法。', model: 'error' }), { headers: { 'Content-Type': 'application/json', ...CORS_HEADERS } });
     }
     const usage = data.usage || {};
 
