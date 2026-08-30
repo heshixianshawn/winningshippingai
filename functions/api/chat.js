@@ -291,7 +291,8 @@ export async function onRequest(context) {
               temperature: 0.2,
               max_tokens: 4096,
               stream: false
-            })
+            }),
+            signal: AbortSignal.timeout(18000)
           });
           if (dsResp.ok) {
             apiUsed = 'DeepSeek Vision';
@@ -315,7 +316,8 @@ export async function onRequest(context) {
               temperature: 0.2,
               max_tokens: 4096,
               stream: false
-            })
+            }),
+            signal: AbortSignal.timeout(8000)
           });
           if (!response.ok) {
             const errText = await response.text().catch(() => '');
@@ -347,7 +349,7 @@ export async function onRequest(context) {
             max_tokens: 4096,
             stream: false
           }),
-          signal: AbortSignal.timeout(25000)
+          signal: AbortSignal.timeout(18000)
         });
       } catch (e) {
         console.error('[DeepSeek text error/timeout]', e.name, e.message);
@@ -369,7 +371,7 @@ export async function onRequest(context) {
                 max_tokens: 4096,
                 stream: false
               }),
-              signal: AbortSignal.timeout(25000)
+              signal: AbortSignal.timeout(8000)
             });
             if (!response.ok) {
               const errText = await response.text().catch(() => '');
@@ -471,6 +473,8 @@ export async function onRequest(context) {
     });
 
   } catch (err) {
+    // 2026-08-30：500 必须留痕，便于定位（CF 日志面板可见）
+    console.error('[chat.js 内部错误→500]', err && err.message ? err.message : String(err));
     return new Response(JSON.stringify({ error: '内部错误', detail: err.message }), {
       status: 500, headers: { 'Content-Type': 'application/json', ...CORS_HEADERS }
     });
