@@ -560,22 +560,10 @@ let regsAllIndex = null;
 let regsAllShards = null;
 
 async function ensureRegsAll(request) {
-  if (regsAllIndex && regsAllShards) return true;
-  try {
-    const baseUrl = getPagesUrl(request);
-    // 2026-08-29：加 8s 超时保护——线上冷启动回源可达30s+，防止拖垮整个响应
-    const withTimeout = (p, ms) => Promise.race([p, new Promise((_, rej) => setTimeout(() => rej(new Error('fetch timeout')), ms))]);
-    const [r1, r2] = await Promise.all([
-      withTimeout(fetch(`${baseUrl}/data/regs_all_index.json`), 8000),
-      withTimeout(fetch(`${baseUrl}/data/regs_all_shards.json`), 8000)
-    ]);
-    if (r1.ok && r2.ok) {
-      regsAllIndex = await r1.json();
-      regsAllShards = await r2.json();
-      return true;
-    }
-  } catch (e) { console.error('regs_all load fail:', e.message); }
-  return false;
+  // 2026-08-30 修复：禁止在此处主动加载 regs_all（2.8MB index + 1.2MB shards）。
+  // JSON.parse(2.8MB) 的 CPU 峰值在 CF Pages 免费版直接触发 1101 崩溃（用户必现 500）。
+  // 仅当模块级缓存已存在（同一 Worker 实例内之前加载过）才可用；否则静默降级返回空。
+  return !!(regsAllIndex && regsAllShards);
 }
 
 /** 多公约法规检索（MARPOL/MLC/ISM/LSA/FSS/BWM/SOLAS补充），英文词 + 中文映射 */
