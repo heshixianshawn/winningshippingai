@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-09-01 11:03",
-  "total_ships": 42,
+  "last_updated": "2026-09-01 13:02",
+  "total_ships": 61,
   "ships": {
     "SUNNY_BEYLA": {
       "name": "SUNNY BEYLA",
@@ -8,7 +8,7 @@
       "class_society": "NK",
       "flag": "Panama",
       "gt": 90092,
-      "dwt": "",
+      "dwt": 180201.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -152,7 +152,7 @@
       "class_society": "NK",
       "flag": "Liberia",
       "gt": 87413,
-      "dwt": "",
+      "dwt": 172565.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -295,7 +295,7 @@
       "class_society": "NK",
       "flag": "Panama",
       "gt": 87473,
-      "dwt": "",
+      "dwt": 172498.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -430,7 +430,7 @@
       "class_society": "NK",
       "flag": "Hong Kong, China",
       "gt": 90092,
-      "dwt": "",
+      "dwt": 180181.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -576,9 +576,9 @@
       "name": "SUNNY COYAH",
       "imo": "9387114",
       "class_society": "NK",
-      "flag": "Hong Kong, China",
+      "flag": "Hong Kong",
       "gt": 90125,
-      "dwt": "",
+      "dwt": 180201.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -721,7 +721,7 @@
       "class_society": "NK",
       "flag": "Panama",
       "gt": 106367,
-      "dwt": "",
+      "dwt": 207991.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -859,9 +859,9 @@
       "name": "SUNNY KALOUM",
       "imo": "9336969",
       "class_society": "NK",
-      "flag": "Hong Kong, China",
+      "flag": "Hong Kong",
       "gt": 106367,
-      "dwt": "",
+      "dwt": 208014.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -1007,9 +1007,9 @@
       "name": "SUNNY KAMSAR",
       "imo": "9336957",
       "class_society": "NK",
-      "flag": "Hong Kong, China",
+      "flag": "Hong Kong",
       "gt": 101953,
-      "dwt": "",
+      "dwt": 203200.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -1110,28 +1110,28 @@
           "expiry": "2030-06-24"
         },
         {
-          "name": "SMC",
-          "expiry": "2026-12-14"
-        },
-        {
-          "name": "MLC",
-          "expiry": "2026-12-14"
-        },
-        {
-          "name": "ISSC (ISPS)",
-          "expiry": "2026-12-14"
-        },
-        {
-          "name": "DOC",
-          "expiry": "2027-04-22"
-        },
-        {
           "name": "BWM",
-          "expiry": "2030-06-24"
+          "expiry": "24 Jun 2030"
         },
         {
           "name": "IHM",
-          "expiry": "2030-06-24"
+          "expiry": "24 Jun 2030"
+        },
+        {
+          "name": "DOC",
+          "expiry": "25 Oct 2026"
+        },
+        {
+          "name": "SMC",
+          "expiry": "14 Dec 2026"
+        },
+        {
+          "name": "MLC",
+          "expiry": "14 Dec 2026"
+        },
+        {
+          "name": "ISSC (ISPS)",
+          "expiry": "14 Dec 2026"
         }
       ],
       "alerts": {
@@ -1148,7 +1148,7 @@
       "class_society": "NK",
       "flag": "Liberia",
       "gt": 106367,
-      "dwt": "",
+      "dwt": 207945.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -1289,9 +1289,9 @@
       "name": "SUNNY KINDIA",
       "imo": "9374064",
       "class_society": "NK",
-      "flag": "Hong Kong, China",
+      "flag": "Hong Kong",
       "gt": 90396,
-      "dwt": "",
+      "dwt": 180182.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -1437,9 +1437,9 @@
       "name": "SUNNY LABE",
       "imo": "9271597",
       "class_society": "NK",
-      "flag": "Panama",
+      "flag": "Hong Kong",
       "gt": 102101,
-      "dwt": "",
+      "dwt": 203248.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -1579,7 +1579,7 @@
       "class_society": "NK",
       "flag": "Liberia",
       "gt": 88674,
-      "dwt": "",
+      "dwt": 176391.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -1720,9 +1720,9 @@
       "name": "SUNNY MAMOU",
       "imo": "9346342",
       "class_society": "NK",
-      "flag": "Hong Kong, China",
+      "flag": "Hong Kong",
       "gt": 104725,
-      "dwt": "",
+      "dwt": 206296.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -1870,7 +1870,7 @@
       "class_society": "NK",
       "flag": "Liberia",
       "gt": 101953,
-      "dwt": "",
+      "dwt": 203264.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -2009,7 +2009,7 @@
       "class_society": "NK",
       "flag": "Liberia",
       "gt": 90111,
-      "dwt": "",
+      "dwt": 180129.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -2154,9 +2154,9 @@
       "name": "SUNNY SAILOR",
       "imo": "9439125",
       "class_society": "NK",
-      "flag": "Hong Kong, China",
+      "flag": "Hong Kong",
       "gt": 90091,
-      "dwt": "",
+      "dwt": 180176.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -2310,9 +2310,9 @@
       "name": "SUNNY SIGUIRI",
       "imo": "9406453",
       "class_society": "NK",
-      "flag": "Hong Kong, China",
+      "flag": "Hong Kong",
       "gt": 104721,
-      "dwt": "",
+      "dwt": 206312.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -2464,7 +2464,7 @@
       "class_society": "NK",
       "flag": "Singapore",
       "gt": 104761,
-      "dwt": "",
+      "dwt": 206306.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -2612,7 +2612,7 @@
       "class_society": "NK",
       "flag": "Singapore",
       "gt": 106884,
-      "dwt": "",
+      "dwt": 206125.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -2759,7 +2759,7 @@
       "class_society": "NK",
       "flag": "Liberia",
       "gt": 94779,
-      "dwt": "",
+      "dwt": 184887.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -2863,7 +2863,7 @@
       "class_society": "NK",
       "flag": "Singapore",
       "gt": 90091,
-      "dwt": "",
+      "dwt": 180265.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -3011,7 +3011,7 @@
       "class_society": "NK",
       "flag": "Singapore",
       "gt": 90091,
-      "dwt": "",
+      "dwt": 180277.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -3159,7 +3159,7 @@
       "class_society": "NK",
       "flag": "Singapore",
       "gt": 87590,
-      "dwt": "",
+      "dwt": 170578.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -3302,7 +3302,7 @@
       "class_society": "NK",
       "flag": "Singapore",
       "gt": 113929,
-      "dwt": "",
+      "dwt": 229186.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -3450,7 +3450,7 @@
       "class_society": "NK",
       "flag": "Singapore",
       "gt": 90091,
-      "dwt": "",
+      "dwt": 180310.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -3598,7 +3598,7 @@
       "class_society": "NK",
       "flag": "Singapore",
       "gt": 107791,
-      "dwt": "",
+      "dwt": 209513.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -3754,7 +3754,7 @@
       "class_society": "NK",
       "flag": "Singapore",
       "gt": 107791,
-      "dwt": "",
+      "dwt": 209545.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -3910,7 +3910,7 @@
       "class_society": "NK",
       "flag": "Singapore",
       "gt": 92758,
-      "dwt": "",
+      "dwt": 181501.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -4053,7 +4053,7 @@
       "class_society": "NK",
       "flag": "Singapore",
       "gt": 90091,
-      "dwt": "",
+      "dwt": 180310.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -4201,7 +4201,7 @@
       "class_society": "NK",
       "flag": "Singapore",
       "gt": 92752,
-      "dwt": "",
+      "dwt": 181371.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -4349,7 +4349,7 @@
       "class_society": "NK",
       "flag": "Singapore",
       "gt": 92752,
-      "dwt": "",
+      "dwt": 181387.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -4497,7 +4497,7 @@
       "class_society": "NK",
       "flag": "Liberia",
       "gt": 102207,
-      "dwt": "",
+      "dwt": 203315.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -4638,9 +4638,9 @@
       "name": "WINNING PRIDE",
       "imo": "9450234",
       "class_society": "NK",
-      "flag": "Hong Kong, China",
+      "flag": "Hong Kong",
       "gt": 89603,
-      "dwt": "",
+      "dwt": 176890.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -4790,9 +4790,9 @@
       "name": "WINNING QUEEN",
       "imo": "9311282",
       "class_society": "NK",
-      "flag": "Hong Kong, China",
+      "flag": "Hong Kong",
       "gt": 89726,
-      "dwt": "",
+      "dwt": 176967.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -4945,19 +4945,117 @@
     "WINNING_RESILIENCE": {
       "name": "WINNING RESILIENCE",
       "imo": "9410430",
-      "class_society": "NK",
-      "flag": "PANAMA",
-      "gt": 114026,
-      "dwt": "",
-      "surveys": [],
-      "certificates": [],
+      "class_society": "CCS",
+      "flag": "Panama",
+      "gt": "114026",
+      "dwt": 229069.0,
+      "surveys": [
+        {
+          "type": "annual_survey",
+          "desc": "Class Annual Survey",
+          "due_date": "2026-08-31"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Class Intermediate Survey"
+        },
+        {
+          "type": "class special survey",
+          "desc": "Class Special Survey for",
+          "due_date": "2027-08-31"
+        },
+        {
+          "type": "machinery_cs",
+          "desc": "Continuous Survey for",
+          "due_date": "2026-08-31"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "BTS",
+          "due_date": "2027-08-31"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey ( Oil-fired Aux."
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (Steam Pipe)"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Screwshaft Survey"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "International Tonnage Certificate"
+        },
+        {
+          "name": "International Tonnage Certificate(PAN)",
+          "expiry": "2026-10-24"
+        },
+        {
+          "name": "International Load Line Certificate(FB6238)",
+          "expiry": "2027-08-31"
+        },
+        {
+          "name": "Cargo Ship Safety Construction Certificate(FB6238)",
+          "expiry": "2027-08-31"
+        },
+        {
+          "name": "Cargo Ship Safety Equipment Certificate(FB6238)",
+          "expiry": "2027-08-31"
+        },
+        {
+          "name": "SE Exemption Certificate(No.1)",
+          "expiry": "2026-09-24"
+        },
+        {
+          "name": "Cargo Ship Safety Radio Certificate",
+          "expiry": "2027-08-31"
+        },
+        {
+          "name": "International Oil Pollution Prevention Certificate(FB6238)",
+          "expiry": "2027-08-31"
+        },
+        {
+          "name": "International Sewage Pollution Prevention Certificate",
+          "expiry": "2027-08-31"
+        },
+        {
+          "name": "Statement of Garbage Pollution Prevention from Ships"
+        },
+        {
+          "name": "International Air Pollution Prevention Certificate",
+          "expiry": "2027-08-31"
+        },
+        {
+          "name": "Certificate of Compliance for the Carriage of Solid Bulk Cargoes",
+          "expiry": "2027-08-31"
+        },
+        {
+          "name": "International Anti-Fouling System Certificate"
+        },
+        {
+          "name": "International Ballast Water Management Certificate",
+          "expiry": "2026-09-24"
+        },
+        {
+          "name": "International Energy Efficiency Certificate(FB6238)"
+        },
+        {
+          "name": "International Certificate on Inventory of Hazardous Materials",
+          "expiry": "2026-09-24"
+        }
+      ],
       "alerts": {
         "expired": 0,
         "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
+        "warning_30d": 3,
+        "info_90d": 1
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "WINNING_RISING": {
       "name": "WINNING RISING",
@@ -4965,7 +5063,7 @@
       "class_society": "NK",
       "flag": "Liberia",
       "gt": 90421,
-      "dwt": "",
+      "dwt": 180140.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -5108,7 +5206,7 @@
       "class_society": "NK",
       "flag": "Liberia",
       "gt": 101953,
-      "dwt": "",
+      "dwt": 203508.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -5247,7 +5345,7 @@
       "class_society": "NK",
       "flag": "Singapore",
       "gt": 102319,
-      "dwt": "",
+      "dwt": 203091.89,
       "surveys": [
         {
           "type": "special_survey",
@@ -5403,7 +5501,7 @@
       "class_society": "NK",
       "flag": "Singapore",
       "gt": 102092,
-      "dwt": "",
+      "dwt": 203233.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -5551,7 +5649,7 @@
       "class_society": "NK",
       "flag": "Singapore",
       "gt": 107791,
-      "dwt": "",
+      "dwt": 208951.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -5699,7 +5797,7 @@
       "class_society": "NK",
       "flag": "Singapore",
       "gt": 107786,
-      "dwt": "",
+      "dwt": 208970.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -5847,7 +5945,7 @@
       "class_society": "NK",
       "flag": "Singapore",
       "gt": 101933,
-      "dwt": "",
+      "dwt": 203195.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -5988,6 +6086,3295 @@
         "info_90d": 0
       },
       "extraction_confidence": "high"
+    },
+    "WINNING_PEACE": {
+      "name": "WINNING PEACE",
+      "imo": "9500625",
+      "class_society": "ABS",
+      "flag": "Hong Kong",
+      "gt": "",
+      "dwt": "180725",
+      "surveys": [
+        {
+          "type": "tail_shaft",
+          "desc": "TCM (Tailshaft Condition Monitoring) class notation assigned, Tailshaft Survey interval is 15 years "
+        },
+        {
+          "type": "annual_survey",
+          "desc": "Annual Hull Survey 3",
+          "due_date": "2027-12-28"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey - Composite Boiler",
+          "due_date": "2027-10-24"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Hull Survey 4",
+          "due_date": "2027-12-28"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Periodical Survey - Automation",
+          "due_date": "2029-09-28"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Drydocking Survey",
+          "due_date": "2027-09-27"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "ISM DOC"
+        },
+        {
+          "name": "ISM SMC"
+        },
+        {
+          "name": "ISPS"
+        },
+        {
+          "name": "MLC"
+        },
+        {
+          "name": "IOPP"
+        },
+        {
+          "name": "IAPP"
+        },
+        {
+          "name": "ISPP"
+        },
+        {
+          "name": "Load Line"
+        },
+        {
+          "name": "Safety Construction"
+        },
+        {
+          "name": "Safety Equipment"
+        },
+        {
+          "name": "Safety Radio"
+        },
+        {
+          "name": "BWM"
+        },
+        {
+          "name": "IHM"
+        },
+        {
+          "name": "Cargo Gear"
+        },
+        {
+          "name": "AFS"
+        },
+        {
+          "name": "EIAPP"
+        },
+        {
+          "name": "DOC"
+        },
+        {
+          "name": "SMC"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "medium"
+    },
+    "WINNING_PROGRESS": {
+      "name": "WINNING PROGRESS",
+      "imo": "9576296",
+      "class_society": "ABS",
+      "flag": "Republic of Singapore",
+      "gt": "",
+      "dwt": "179166",
+      "surveys": [
+        {
+          "type": "annual_survey",
+          "desc": "Annual Hull Survey 1",
+          "due_date": "2027-04-24"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey - Composite Boiler",
+          "due_date": "2029-01-30"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Hull Survey 4",
+          "due_date": "2029-04-24"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Periodical Survey - Automation",
+          "due_date": "2031-01-24"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Tailshaft Propeller Connection - Survey",
+          "due_date": "2041-01-30"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Drydocking Survey",
+          "due_date": "2029-01-30"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "ISM DOC"
+        },
+        {
+          "name": "ISM SMC"
+        },
+        {
+          "name": "ISPS"
+        },
+        {
+          "name": "MLC"
+        },
+        {
+          "name": "IOPP"
+        },
+        {
+          "name": "IAPP"
+        },
+        {
+          "name": "ISPP"
+        },
+        {
+          "name": "Load Line"
+        },
+        {
+          "name": "Safety Construction"
+        },
+        {
+          "name": "Safety Equipment"
+        },
+        {
+          "name": "Safety Radio"
+        },
+        {
+          "name": "BWM"
+        },
+        {
+          "name": "IHM"
+        },
+        {
+          "name": "Cargo Gear"
+        },
+        {
+          "name": "AFS"
+        },
+        {
+          "name": "EIAPP"
+        },
+        {
+          "name": "DOC"
+        },
+        {
+          "name": "SMC"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "medium"
+    },
+    "WINNING_KINDNESS": {
+      "name": "WINNING KINDNESS",
+      "imo": "9335240",
+      "class_society": "KR",
+      "flag": "SINGAPORE",
+      "gt": "",
+      "dwt": 176924.0,
+      "surveys": [
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Next Special Survey No."
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey",
+          "due_date": "2028-12-28"
+        },
+        {
+          "type": "annual_survey",
+          "desc": "Annual Survey",
+          "due_date": "2026-12-28"
+        },
+        {
+          "type": "boiler",
+          "desc": "No.1 Aux. Boiler Survey",
+          "due_date": "2028-10-05"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey",
+          "due_date": "2028-10-05",
+          "last_done": "2025-10-05"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "ISPS"
+        },
+        {
+          "name": "MLC"
+        },
+        {
+          "name": "IOPP",
+          "expiry": "2030-09-28"
+        },
+        {
+          "name": "IAPP",
+          "expiry": "2030-09-28"
+        },
+        {
+          "name": "ISPP",
+          "expiry": "2030-09-28"
+        },
+        {
+          "name": "Load Line",
+          "expiry": "2030-09-28"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2030-09-28"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2030-09-28"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2030-09-28"
+        },
+        {
+          "name": "BWM",
+          "expiry": "2030-09-28"
+        },
+        {
+          "name": "IHM"
+        },
+        {
+          "name": "Cargo Gear",
+          "expiry": "2030-09-28"
+        },
+        {
+          "name": "AFS"
+        },
+        {
+          "name": "DOC"
+        },
+        {
+          "name": "SMC",
+          "expiry": "2030.09.14"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "medium"
+    },
+    "WINNING_RICH": {
+      "name": "WINNING RICH",
+      "imo": "9498054",
+      "class_society": "KR",
+      "flag": "SINGAPORE",
+      "gt": "",
+      "dwt": 179221.0,
+      "surveys": [
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Next Special Survey No."
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey",
+          "due_date": "2028-02-16"
+        },
+        {
+          "type": "annual_survey",
+          "desc": "Annual Survey",
+          "due_date": "2027-02-16"
+        },
+        {
+          "type": "boiler",
+          "desc": "No.1 Aux. Boiler Survey",
+          "due_date": "2027-09-11"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey",
+          "due_date": "2027-09-11",
+          "last_done": "2024-09-11"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "ISPS"
+        },
+        {
+          "name": "MLC"
+        },
+        {
+          "name": "IOPP",
+          "expiry": "2029-11-16"
+        },
+        {
+          "name": "IAPP",
+          "expiry": "2029-11-16"
+        },
+        {
+          "name": "ISPP",
+          "expiry": "2029-11-16"
+        },
+        {
+          "name": "Load Line",
+          "expiry": "2029-11-16"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2029-11-16"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2029-11-16"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2029-11-16"
+        },
+        {
+          "name": "BWM",
+          "expiry": "2029-11-16"
+        },
+        {
+          "name": "IHM"
+        },
+        {
+          "name": "Cargo Gear",
+          "expiry": "2029-11-16"
+        },
+        {
+          "name": "AFS"
+        },
+        {
+          "name": "DOC"
+        },
+        {
+          "name": "SMC",
+          "expiry": "2027.05.03"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "medium"
+    },
+    "WINNING_SPIRIT": {
+      "name": "WINNING SPIRIT",
+      "imo": "9597824",
+      "class_society": "KR",
+      "flag": "SINGAPORE",
+      "gt": "",
+      "dwt": 179213.0,
+      "surveys": [
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Next Special Survey No."
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey",
+          "due_date": "2029-11-11"
+        },
+        {
+          "type": "annual_survey",
+          "desc": "Annual Survey",
+          "due_date": "2027-11-11"
+        },
+        {
+          "type": "boiler",
+          "desc": "No.1 Aux. Boiler Survey",
+          "due_date": "2029-08-03"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey",
+          "due_date": "2029-08-03",
+          "last_done": "2026-08-03"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "ISPS"
+        },
+        {
+          "name": "MLC"
+        },
+        {
+          "name": "IOPP",
+          "expiry": "2031-08-02"
+        },
+        {
+          "name": "IAPP",
+          "expiry": "2031-08-11"
+        },
+        {
+          "name": "ISPP",
+          "expiry": "2031-08-11"
+        },
+        {
+          "name": "Load Line",
+          "expiry": "2031-08-11"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2031-08-11"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2031-08-11"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2031-08-11"
+        },
+        {
+          "name": "BWM",
+          "expiry": "2031-08-11"
+        },
+        {
+          "name": "IHM",
+          "expiry": "2031-08-11"
+        },
+        {
+          "name": "Cargo Gear",
+          "expiry": "2031-08-11"
+        },
+        {
+          "name": "AFS"
+        },
+        {
+          "name": "DOC"
+        },
+        {
+          "name": "SMC",
+          "expiry": "2027.05.14"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "medium"
+    },
+    "SUNNY_FARANAH": {
+      "name": "SUNNY FARANAH",
+      "imo": "9337107",
+      "class_society": "CCS",
+      "flag": "Hong Kong",
+      "gt": "101933",
+      "dwt": 203185.0,
+      "surveys": [
+        {
+          "type": "annual_survey",
+          "desc": "Class Annual Survey"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Class Intermediate Survey"
+        },
+        {
+          "type": "class special survey",
+          "desc": "Class Special Survey for",
+          "due_date": "2027-03-01"
+        },
+        {
+          "type": "machinery_cs",
+          "desc": "Continuous Survey for",
+          "due_date": "2027-03-01"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "BTS",
+          "due_date": "2027-03-01"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey ( Oil-fired Aux.and"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (Steam Pipe)"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Screwshaft Survey"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "International Tonnage Certificate"
+        },
+        {
+          "name": "Suez Canal Special Tonnage Certificate"
+        },
+        {
+          "name": "International Load Line Certificate(FB6255)",
+          "expiry": "2027-03-01"
+        },
+        {
+          "name": "Cargo Ship Safety Construction Certificate(FB6255)",
+          "expiry": "2027-03-01"
+        },
+        {
+          "name": "Cargo Ship Safety Equipment Certificate(FB6255)",
+          "expiry": "2027-03-01"
+        },
+        {
+          "name": "SE Exemption Certificate(No.1)",
+          "expiry": "2027-03-01"
+        },
+        {
+          "name": "Cargo Ship Safety Radio Certificate",
+          "expiry": "2027-03-01"
+        },
+        {
+          "name": "International Oil Pollution Prevention Certificate(FB6255)",
+          "expiry": "2027-03-01"
+        },
+        {
+          "name": "International Sewage Pollution Prevention Certificate",
+          "expiry": "2027-03-01"
+        },
+        {
+          "name": "Statement of Garbage Pollution Prevention from Ships"
+        },
+        {
+          "name": "International Air Pollution Prevention Certificate",
+          "expiry": "2027-03-01"
+        },
+        {
+          "name": "Certificate of Compliance for the Carriage of Solid Bulk Cargoes",
+          "expiry": "2027-03-01"
+        },
+        {
+          "name": "International Anti-Fouling System Certificate"
+        },
+        {
+          "name": "Certificate of Inspection of Crew Accommodation Equipment"
+        },
+        {
+          "name": "Statement of Compliance on Inventory of Hazardous Materials",
+          "expiry": "2027-03-01"
+        },
+        {
+          "name": "Statement of Compliance on Inventory of Hazardous Materials(European Union)",
+          "expiry": "2027-03-01"
+        },
+        {
+          "name": "International Ballast Water Management Certificate",
+          "expiry": "2027-03-01"
+        },
+        {
+          "name": "International Energy Efficiency Certificate(FB6255)"
+        },
+        {
+          "name": "Document of Compliance (Special Requirement for Ships Carrying Dangerous Goods)",
+          "expiry": "2027-03-01"
+        },
+        {
+          "name": "Certificate of Test and Thorough Examination of Loose Gear"
+        },
+        {
+          "name": "Certificate of Test and Thorough Examination of Lifting Appliances"
+        },
+        {
+          "name": "Statement of Strength of Helicopter Landing Area"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "medium"
+    },
+    "SUNNY_FRIA": {
+      "name": "SUNNY FRIA",
+      "imo": "9330305",
+      "class_society": "CCS",
+      "flag": "Hong Kong",
+      "gt": "89877",
+      "dwt": 177003.0,
+      "surveys": [
+        {
+          "type": "annual_survey",
+          "desc": "Class Annual Survey",
+          "due_date": "2027-06-03"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Class Intermediate Survey"
+        },
+        {
+          "type": "class special survey",
+          "desc": "Class Special Survey for",
+          "due_date": "2029-06-03"
+        },
+        {
+          "type": "machinery_cs",
+          "desc": "Continuous Survey for",
+          "due_date": "2029-06-03"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "BTS",
+          "due_date": "2029-06-03"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey ( Oil-fired Aux.and"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (Steam Pipe)"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Screwshaft Survey"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "International Tonnage Certificate"
+        },
+        {
+          "name": "Suez Canal Special Tonnage Certificate"
+        },
+        {
+          "name": "International Load Line Certificate(FB6504)",
+          "expiry": "2029-06-03"
+        },
+        {
+          "name": "Cargo Ship Safety Construction Certificate(FB6504)",
+          "expiry": "2029-06-03"
+        },
+        {
+          "name": "Cargo Ship Safety Equipment Certificate(FB6504)",
+          "expiry": "2029-06-03"
+        },
+        {
+          "name": "SE Exemption Certificate(No.1)",
+          "expiry": "2029-06-03"
+        },
+        {
+          "name": "Cargo Ship Safety Radio Certificate",
+          "expiry": "2029-06-03"
+        },
+        {
+          "name": "International Oil Pollution Prevention Certificate(FB6504)",
+          "expiry": "2029-06-03"
+        },
+        {
+          "name": "International Sewage Pollution Prevention Certificate",
+          "expiry": "2029-06-03"
+        },
+        {
+          "name": "Statement of Garbage Pollution Prevention from Ships"
+        },
+        {
+          "name": "International Air Pollution Prevention Certificate",
+          "expiry": "2029-06-03"
+        },
+        {
+          "name": "Certificate of Compliance for the Carriage of Solid Bulk Cargoes",
+          "expiry": "2029-06-03"
+        },
+        {
+          "name": "International Anti-Fouling System Certificate"
+        },
+        {
+          "name": "Certificate of Inspection of Crew Accommodation Equipment"
+        },
+        {
+          "name": "Statement of Compliance on Inventory of Hazardous Materials",
+          "expiry": "2029-06-03"
+        },
+        {
+          "name": "Statement of Compliance on Inventory of Hazardous Materials(European Union)",
+          "expiry": "2029-06-03"
+        },
+        {
+          "name": "International Ballast Water Management Certificate",
+          "expiry": "2029-06-03"
+        },
+        {
+          "name": "International Energy Efficiency Certificate(FB6504)"
+        },
+        {
+          "name": "Document of Compliance (Special Requirement for Ships Carrying Dangerous Goods)",
+          "expiry": "2029-06-03"
+        },
+        {
+          "name": "Certificate of Test and Thorough Examination of Loose Gear"
+        },
+        {
+          "name": "Certificate of Test and Thorough Examination of Lifting Appliances"
+        },
+        {
+          "name": "Statement of Strength of Helicopter Landing Area"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "medium"
+    },
+    "SUNNY_KOGON": {
+      "name": "SUNNY KOGON",
+      "imo": "9312303",
+      "class_society": "CCS",
+      "flag": "Liberia",
+      "gt": "106312",
+      "dwt": 207960.0,
+      "surveys": [
+        {
+          "type": "annual_survey",
+          "desc": "Class Annual Survey",
+          "due_date": "2026-12-06"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Class Intermediate Survey"
+        },
+        {
+          "type": "class special survey",
+          "desc": "Class Special Survey for",
+          "due_date": "2027-12-06"
+        },
+        {
+          "type": "machinery_cs",
+          "desc": "Continuous Survey for",
+          "due_date": "2026-10-31"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "BTS",
+          "due_date": "2027-12-06"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey ( Oil-fired Aux.and"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (Steam Pipe)"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Screwshaft Survey"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "International Tonnage Certificate"
+        },
+        {
+          "name": "International Load Line Certificate(FB2835)",
+          "expiry": "2027-12-06"
+        },
+        {
+          "name": "Cargo Ship Safety Construction Certificate(FB2835)",
+          "expiry": "2027-12-06"
+        },
+        {
+          "name": "Cargo Ship Safety Equipment Certificate(FB2835)",
+          "expiry": "2027-12-06"
+        },
+        {
+          "name": "SE Exemption Certificate(No.1)",
+          "expiry": "2027-12-06"
+        },
+        {
+          "name": "Cargo Ship Safety Radio Certificate",
+          "expiry": "2027-12-06"
+        },
+        {
+          "name": "International Oil Pollution Prevention Certificate(FB2835)",
+          "expiry": "2027-12-06"
+        },
+        {
+          "name": "International Sewage Pollution Prevention Certificate",
+          "expiry": "2027-12-06"
+        },
+        {
+          "name": "Statement of Garbage Pollution Prevention from Ships"
+        },
+        {
+          "name": "International Air Pollution Prevention Certificate",
+          "expiry": "2027-12-06"
+        },
+        {
+          "name": "Certificate of Compliance for the Carriage of Solid Bulk Cargoes",
+          "expiry": "2027-12-06"
+        },
+        {
+          "name": "International Anti-Fouling System Certificate"
+        },
+        {
+          "name": "Statement of Inspection of Accommodation and Recreational Facilities"
+        },
+        {
+          "name": "International Ballast Water Management Certificate",
+          "expiry": "2027-12-06"
+        },
+        {
+          "name": "International Energy Efficiency Certificate(FB2835)"
+        },
+        {
+          "name": "Document of Compliance (Special Requirement for Ships Carrying Dangerous Goods)",
+          "expiry": "2027-12-06"
+        },
+        {
+          "name": "Certificate of Test and Thorough Examination of Lifting Appliances",
+          "expiry": "2031-01-10"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 1
+      },
+      "extraction_confidence": "medium"
+    },
+    "SUNNY_STAR": {
+      "name": "SUNNY STAR",
+      "imo": "9461300",
+      "class_society": "CCS",
+      "flag": "Singapore",
+      "gt": "94175",
+      "dwt": 179843.0,
+      "surveys": [
+        {
+          "type": "annual_survey",
+          "desc": "Class Annual Survey",
+          "due_date": "2027-06-09"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Class Intermediate Survey",
+          "due_date": "2028-06-09"
+        },
+        {
+          "type": "class special survey",
+          "desc": "Class Special Survey for",
+          "due_date": "2031-06-09"
+        },
+        {
+          "type": "machinery_cs",
+          "desc": "Continuous Survey for",
+          "due_date": "2031-06-09"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "BTS",
+          "due_date": "2029-06-11"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (No.1 Oil-fired"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (No.2 Exhaust gas"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (Steam Pipe)"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Screwshaft Survey"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "International Tonnage Certificate"
+        },
+        {
+          "name": "International Load Line Certificate(FB6585)",
+          "expiry": "2031-06-09"
+        },
+        {
+          "name": "Cargo Ship Safety Construction Certificate(FB6585)",
+          "expiry": "2031-06-09"
+        },
+        {
+          "name": "Cargo Ship Safety Equipment Certificate(FB6585)",
+          "expiry": "2031-06-09"
+        },
+        {
+          "name": "SE Exemption Certificate(No.1)",
+          "expiry": "2031-06-09"
+        },
+        {
+          "name": "Cargo Ship Safety Radio Certificate",
+          "expiry": "2031-06-09"
+        },
+        {
+          "name": "International Oil Pollution Prevention Certificate(FB6585)",
+          "expiry": "2031-05-08"
+        },
+        {
+          "name": "International Sewage Pollution Prevention Certificate",
+          "expiry": "2031-06-09"
+        },
+        {
+          "name": "Statement of Garbage Pollution Prevention from Ships"
+        },
+        {
+          "name": "International Air Pollution Prevention Certificate",
+          "expiry": "2031-06-09"
+        },
+        {
+          "name": "Certificate of Compliance for the Carriage of Solid Bulk Cargoes",
+          "expiry": "2031-06-09"
+        },
+        {
+          "name": "International Anti-Fouling System Certificate"
+        },
+        {
+          "name": "Certificate of Inspection of Crew Accommodation"
+        },
+        {
+          "name": "Statement of Compliance on Inventory of Hazardous Materials",
+          "expiry": "2031-06-09"
+        },
+        {
+          "name": "Statement of Compliance on Inventory of Hazardous Materials(European Union)",
+          "expiry": "2031-06-09"
+        },
+        {
+          "name": "International Ballast Water Management Certificate",
+          "expiry": "2031-06-09"
+        },
+        {
+          "name": "International Energy Efficiency Certificate(FB6585)"
+        },
+        {
+          "name": "Document of Compliance (Special Requirement for Ships Carrying Dangerous Goods)",
+          "expiry": "2031-06-09"
+        },
+        {
+          "name": "Certificate of Test and Thorough Examination of Loose Gear"
+        },
+        {
+          "name": "Statement of Acceptance Type- Approved Equipment for Singapore Registered Ships",
+          "expiry": "2031-06-09"
+        },
+        {
+          "name": "Certificate of Test and Thorough Examination of Lifting Appliances",
+          "expiry": "2031-06-15"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "medium"
+    },
+    "WINNING_JOY": {
+      "name": "WINNING JOY",
+      "imo": "9492220",
+      "class_society": "CCS",
+      "flag": "Singapore",
+      "gt": "106884",
+      "dwt": 206117.0,
+      "surveys": [
+        {
+          "type": "annual_survey",
+          "desc": "Class Annual Survey",
+          "due_date": "2026-08-01"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Class Intermediate Survey",
+          "due_date": "2026-08-01"
+        },
+        {
+          "type": "class special survey",
+          "desc": "Class Special Survey for",
+          "due_date": "2029-08-01"
+        },
+        {
+          "type": "machinery_cs",
+          "desc": "Continuous Survey for",
+          "due_date": "2029-08-01"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "BTS",
+          "due_date": "2027-08-08"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey ( Oil-fired Aux.and"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (Steam Pipe)"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Screwshaft Survey"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "International Tonnage Certificate"
+        },
+        {
+          "name": "+ International Load Line Certificate(FB10449)",
+          "expiry": "2029-08-01"
+        },
+        {
+          "name": "International Load Line Certificate(FB6471)",
+          "expiry": "2029-08-01"
+        },
+        {
+          "name": "+ International Load Line Certificate(FB6973)",
+          "expiry": "2029-08-01"
+        },
+        {
+          "name": "Cargo Ship Safety Construction Certificate(FB6471)",
+          "expiry": "2029-08-01"
+        },
+        {
+          "name": "Cargo Ship Safety Equipment Certificate(FB6471)",
+          "expiry": "2029-08-01"
+        },
+        {
+          "name": "SE Exemption Certificate(No.1)",
+          "expiry": "2029-08-01"
+        },
+        {
+          "name": "Cargo Ship Safety Radio Certificate",
+          "expiry": "2029-08-01"
+        },
+        {
+          "name": "International Oil Pollution Prevention Certificate(FB6471)",
+          "expiry": "2029-08-01"
+        },
+        {
+          "name": "International Sewage Pollution Prevention Certificate",
+          "expiry": "2029-08-01"
+        },
+        {
+          "name": "Statement of Garbage Pollution Prevention from Ships"
+        },
+        {
+          "name": "International Air Pollution Prevention Certificate",
+          "expiry": "2029-08-01"
+        },
+        {
+          "name": "Certificate of Compliance for the Carriage of Solid Bulk Cargoes",
+          "expiry": "2029-08-01"
+        },
+        {
+          "name": "International Anti-Fouling System Certificate"
+        },
+        {
+          "name": "Certificate of Inspection of Crew Accommodation"
+        },
+        {
+          "name": "Statement of Compliance on Inventory of Hazardous Materials",
+          "expiry": "2030-10-09"
+        },
+        {
+          "name": "International Ballast Water Management Certificate",
+          "expiry": "2029-08-01"
+        },
+        {
+          "name": "International Energy Efficiency Certificate(FB6471)"
+        },
+        {
+          "name": "Document of Compliance (Special Requirement for Ships Carrying Dangerous Goods)",
+          "expiry": "2029-08-01"
+        },
+        {
+          "name": "Statement of Acceptance Type- Approved Equipment for Singapore Registered Ships",
+          "expiry": "2029-08-01"
+        },
+        {
+          "name": "Certificate of Test and Thorough Examination of Lifting Appliances"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "medium"
+    },
+    "WINNING_TIMES": {
+      "name": "WINNING TIMES",
+      "imo": "9727352",
+      "class_society": "CCS",
+      "flag": "Singapore",
+      "gt": "107514",
+      "dwt": 207219.0,
+      "surveys": [
+        {
+          "type": "annual_survey",
+          "desc": "Class Annual Survey",
+          "due_date": "2027-04-16"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Class Intermediate Survey",
+          "due_date": "2027-04-16"
+        },
+        {
+          "type": "class special survey",
+          "desc": "Class Special Survey for",
+          "due_date": "2030-04-16"
+        },
+        {
+          "type": "machinery_cs",
+          "desc": "Continuous Survey for",
+          "due_date": "2030-04-16"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "BTS",
+          "due_date": "2028-04-10"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey ( Oil-fired Aux.and"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (Steam Pipe)"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Screwshaft Survey"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "International Tonnage Certificate"
+        },
+        {
+          "name": "International Load Line Certificate(FB6482)",
+          "expiry": "2030-04-16"
+        },
+        {
+          "name": "Cargo Ship Safety Construction Certificate(FB6482)",
+          "expiry": "2030-04-16"
+        },
+        {
+          "name": "Cargo Ship Safety Equipment Certificate(FB6482)",
+          "expiry": "2030-04-16"
+        },
+        {
+          "name": "SE Exemption Certificate(No.1)",
+          "expiry": "2030-04-16"
+        },
+        {
+          "name": "Cargo Ship Safety Radio Certificate",
+          "expiry": "2030-04-16"
+        },
+        {
+          "name": "International Oil Pollution Prevention Certificate(FB6482)",
+          "expiry": "2030-04-16"
+        },
+        {
+          "name": "International Sewage Pollution Prevention Certificate",
+          "expiry": "2030-04-16"
+        },
+        {
+          "name": "Statement of Garbage Pollution Prevention from Ships"
+        },
+        {
+          "name": "International Air Pollution Prevention Certificate",
+          "expiry": "2030-04-16"
+        },
+        {
+          "name": "Document of Authorization for Carriage of Grain in Bulk"
+        },
+        {
+          "name": "Certificate of Compliance for the Carriage of Solid Bulk Cargoes",
+          "expiry": "2030-04-16"
+        },
+        {
+          "name": "International Anti-Fouling System Certificate"
+        },
+        {
+          "name": "Certificate of Inspection of Crew Accommodation"
+        },
+        {
+          "name": "Statement of Compliance on Inventory of Hazardous Materials",
+          "expiry": "2030-04-16"
+        },
+        {
+          "name": "International Ballast Water Management Certificate",
+          "expiry": "2030-04-16"
+        },
+        {
+          "name": "International Energy Efficiency Certificate(FB6482)"
+        },
+        {
+          "name": "Statement of Acceptance Type- Approved Equipment for Singapore Registered Ships",
+          "expiry": "2030-04-16"
+        },
+        {
+          "name": "Statement of Strength of Helicopter Landing Area"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "medium"
+    },
+    "WINNING_WAVE": {
+      "name": "WINNING WAVE",
+      "imo": "9748100",
+      "class_society": "CCS",
+      "flag": "Singapore",
+      "gt": "107222",
+      "dwt": 207469.0,
+      "surveys": [
+        {
+          "type": "annual_survey",
+          "desc": "Class Annual Survey",
+          "due_date": "2027-02-17"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Class Intermediate Survey",
+          "due_date": "2028-02-17"
+        },
+        {
+          "type": "class special survey",
+          "desc": "Class Special Survey for",
+          "due_date": "2031-02-17"
+        },
+        {
+          "type": "machinery_cs",
+          "desc": "Continuous Survey for",
+          "due_date": "2027-02-17"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "BTS",
+          "due_date": "2029-02-15"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey ( Oil-fired Aux.and"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (Steam Pipe)"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Screwshaft Survey"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "International Tonnage Certificate"
+        },
+        {
+          "name": "International Load Line Certificate(FB6482)",
+          "expiry": "2031-02-17"
+        },
+        {
+          "name": "+ International Load Line Certificate(FB7010)",
+          "expiry": "2031-02-17"
+        },
+        {
+          "name": "Cargo Ship Safety Construction Certificate(FB6482)",
+          "expiry": "2031-02-17"
+        },
+        {
+          "name": "Cargo Ship Safety Equipment Certificate(FB6482)",
+          "expiry": "2031-02-17"
+        },
+        {
+          "name": "SE Exemption Certificate(No.1)",
+          "expiry": "2031-02-17"
+        },
+        {
+          "name": "Cargo Ship Safety Radio Certificate",
+          "expiry": "2031-02-17"
+        },
+        {
+          "name": "International Oil Pollution Prevention Certificate(FB6482)",
+          "expiry": "2031-02-17"
+        },
+        {
+          "name": "International Sewage Pollution Prevention Certificate",
+          "expiry": "2031-02-17"
+        },
+        {
+          "name": "International Air Pollution Prevention Certificate",
+          "expiry": "2031-02-17"
+        },
+        {
+          "name": "Certificate of Compliance for the Carriage of Solid Bulk Cargoes",
+          "expiry": "2031-02-17"
+        },
+        {
+          "name": "International Anti-Fouling System Certificate"
+        },
+        {
+          "name": "Certificate of Inspection of Crew Accommodation"
+        },
+        {
+          "name": "Statement of Compliance on Inventory of Hazardous Materials(European Union)",
+          "expiry": "2031-02-17"
+        },
+        {
+          "name": "International Ballast Water Management Certificate",
+          "expiry": "2031-02-17"
+        },
+        {
+          "name": "International Energy Efficiency Certificate(FB6482)"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "medium"
+    },
+    "WINNING_WEALTH": {
+      "name": "WINNING WEALTH",
+      "imo": "9362994",
+      "class_society": "CCS",
+      "flag": "Singapore",
+      "gt": "114019",
+      "dwt": 229117.0,
+      "surveys": [
+        {
+          "type": "annual_survey",
+          "desc": "Class Annual Survey"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Class Intermediate Survey"
+        },
+        {
+          "type": "class special survey",
+          "desc": "Class Special Survey for",
+          "due_date": "2026-10-12"
+        },
+        {
+          "type": "machinery_cs",
+          "desc": "Continuous Survey for",
+          "due_date": "2026-10-12"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "BTS",
+          "due_date": "2026-10-12"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (No.1 Oil-fired"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (No.2 Exhaust gas"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (Steam Pipe)"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Screwshaft Survey"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "International Tonnage Certificate"
+        },
+        {
+          "name": "Suez Canal Special Tonnage Certificate"
+        },
+        {
+          "name": "International Load Line Certificate(FB6238)",
+          "expiry": "2026-10-12"
+        },
+        {
+          "name": "Cargo Ship Safety Construction Certificate(FB6238)",
+          "expiry": "2026-10-12"
+        },
+        {
+          "name": "Cargo Ship Safety Equipment Certificate(FB6238)",
+          "expiry": "2026-10-12"
+        },
+        {
+          "name": "SE Exemption Certificate(No.1)",
+          "expiry": "2026-10-12"
+        },
+        {
+          "name": "Cargo Ship Safety Radio Certificate",
+          "expiry": "2026-10-12"
+        },
+        {
+          "name": "International Oil Pollution Prevention Certificate(FB6238)",
+          "expiry": "2026-10-12"
+        },
+        {
+          "name": "International Sewage Pollution Prevention Certificate",
+          "expiry": "2026-10-12"
+        },
+        {
+          "name": "Statement of Garbage Pollution Prevention from Ships"
+        },
+        {
+          "name": "International Air Pollution Prevention Certificate",
+          "expiry": "2026-10-12"
+        },
+        {
+          "name": "Certificate of Compliance for the Carriage of Solid Bulk Cargoes",
+          "expiry": "2026-10-12"
+        },
+        {
+          "name": "International Anti-Fouling System Certificate"
+        },
+        {
+          "name": "Certificate of Inspection of Crew Accommodation"
+        },
+        {
+          "name": "Statement of Compliance on Inventory of Hazardous Materials",
+          "expiry": "2026-10-12"
+        },
+        {
+          "name": "Statement of Compliance on Inventory of Hazardous Materials(European Union)",
+          "expiry": "2026-10-12"
+        },
+        {
+          "name": "International Ballast Water Management Certificate",
+          "expiry": "2026-10-12"
+        },
+        {
+          "name": "International Energy Efficiency Certificate(FB6238)"
+        },
+        {
+          "name": "Document of Compliance (Special Requirement for Ships Carrying Dangerous Goods)",
+          "expiry": "2026-10-12"
+        },
+        {
+          "name": "Statement of Acceptance Type- Approved Equipment for Singapore Registered Ships",
+          "expiry": "2026-10-12"
+        },
+        {
+          "name": "Certificate of Test and Thorough Examination of Lifting Appliances"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 17
+      },
+      "extraction_confidence": "medium"
+    },
+    "WINNING_WISDOM": {
+      "name": "WINNING WISDOM",
+      "imo": "9738583",
+      "class_society": "CCS",
+      "flag": "Singapore",
+      "gt": "108208",
+      "dwt": 206298.0,
+      "surveys": [
+        {
+          "type": "annual_survey",
+          "desc": "Class Annual Survey",
+          "due_date": "2027-07-01"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Class Intermediate Survey",
+          "due_date": "2027-07-01"
+        },
+        {
+          "type": "class special survey",
+          "desc": "Class Special Survey for",
+          "due_date": "2030-07-01"
+        },
+        {
+          "type": "machinery_cs",
+          "desc": "Continuous Survey for",
+          "due_date": "2030-07-01"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "BTS",
+          "due_date": "2027-10-04"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey ( Oil-fired Aux.and"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (Steam Pipe)"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Screwshaft Survey"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "International Tonnage Certificate"
+        },
+        {
+          "name": "Suez Canal Special Tonnage Certificate"
+        },
+        {
+          "name": "PC/UMS Documentation of Total Volume"
+        },
+        {
+          "name": "International Load Line Certificate(FB6648)",
+          "expiry": "2030-07-01"
+        },
+        {
+          "name": "+ International Load Line Certificate(FB7092)",
+          "expiry": "2030-07-01"
+        },
+        {
+          "name": "Cargo Ship Safety Construction Certificate(FB6648)",
+          "expiry": "2030-07-01"
+        },
+        {
+          "name": "Cargo Ship Safety Equipment Certificate(FB6648)",
+          "expiry": "2030-07-01"
+        },
+        {
+          "name": "SE Exemption Certificate(No.1)",
+          "expiry": "2030-07-01"
+        },
+        {
+          "name": "Cargo Ship Safety Radio Certificate",
+          "expiry": "2030-07-01"
+        },
+        {
+          "name": "International Oil Pollution Prevention Certificate(FB6648)",
+          "expiry": "2030-07-01"
+        },
+        {
+          "name": "International Sewage Pollution Prevention Certificate",
+          "expiry": "2030-07-01"
+        },
+        {
+          "name": "Statement of Garbage Pollution Prevention from Ships"
+        },
+        {
+          "name": "International Air Pollution Prevention Certificate",
+          "expiry": "2030-07-01"
+        },
+        {
+          "name": "Certificate of Compliance for the Carriage of Solid Bulk Cargoes",
+          "expiry": "2030-07-01"
+        },
+        {
+          "name": "International Anti-Fouling System Certificate"
+        },
+        {
+          "name": "Certificate of Crew Accommodation equipment (MLC 2006)"
+        },
+        {
+          "name": "Statement of Compliance on Inventory of Hazardous Materials",
+          "expiry": "2030-07-01"
+        },
+        {
+          "name": "Statement of Compliance on Inventory of Hazardous Materials(European Union)",
+          "expiry": "2030-07-01"
+        },
+        {
+          "name": "International Ballast Water Management Certificate",
+          "expiry": "2030-07-01"
+        },
+        {
+          "name": "International Energy Efficiency Certificate(FB6648)"
+        },
+        {
+          "name": "Document of Compliance (Special Requirement for Ships Carrying Dangerous Goods)",
+          "expiry": "2030-07-01"
+        },
+        {
+          "name": "Certificate of Test and Thorough Examination of Loose Gear"
+        },
+        {
+          "name": "Statement of Acceptance Type- Approved Equipment for Singapore Registered Ships",
+          "expiry": "2030-07-01"
+        },
+        {
+          "name": "Statement of Compliance with Relevant US 33 CFR"
+        },
+        {
+          "name": "Certificate of Test and Thorough Examination of Lifting Appliances"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "medium"
+    },
+    "WINNING_AMBITION": {
+      "name": "WINNING AMBITION",
+      "imo": "1037397",
+      "class_society": "DNV",
+      "flag": "Singapore",
+      "gt": "174863",
+      "dwt": 324950.0,
+      "surveys": [
+        {
+          "type": "boiler",
+          "desc": "锅炉"
+        },
+        {
+          "type": "annual_survey",
+          "desc": "Class Annual Survey",
+          "due_date": "2027-03-16"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Class Intermediate Survey",
+          "due_date": "2028-03-16"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Class Special Survey for",
+          "due_date": "2031-03-16"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "尾轴检验",
+          "due_date": "2036-06-15"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "BTS (船底外部检验)",
+          "due_date": "2031-06-15",
+          "last_done": "2026-06-16"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "ISPS"
+        },
+        {
+          "name": "ISPP",
+          "expiry": "2031-06-15"
+        },
+        {
+          "name": "Load Line"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2031-06-15"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2031-06-15"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2031-06-15"
+        },
+        {
+          "name": "BWM"
+        },
+        {
+          "name": "IHM",
+          "expiry": "2031-06-15"
+        },
+        {
+          "name": "Cargo Gear",
+          "expiry": "2031-06-15"
+        },
+        {
+          "name": "AFS"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "medium"
+    },
+    "SUNNY_SKY": {
+      "name": "SUNNY SKY",
+      "imo": "9461295",
+      "class_society": "BV",
+      "flag": "Singapore",
+      "gt": "94145",
+      "dwt": "180000",
+      "surveys": [
+        {
+          "type": "annual_survey",
+          "desc": "Annual survey of structure",
+          "due_date": "2027-12-05"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "Centre Tailshaft-Complete Survey",
+          "due_date": "2031-07-13"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Garbage Renewal Survey",
+          "due_date": "2031-09-05"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Bottom Survey in Dry Dock or afloat",
+          "due_date": "2029-06-15",
+          "last_done": "2026-06-15"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "ISM SMC"
+        },
+        {
+          "name": "ISPS"
+        },
+        {
+          "name": "MLC"
+        },
+        {
+          "name": "IOPP"
+        },
+        {
+          "name": "IAPP"
+        },
+        {
+          "name": "ISPP"
+        },
+        {
+          "name": "Load Line"
+        },
+        {
+          "name": "Safety Construction"
+        },
+        {
+          "name": "Safety Equipment"
+        },
+        {
+          "name": "Safety Radio"
+        },
+        {
+          "name": "BWM"
+        },
+        {
+          "name": "IHM"
+        },
+        {
+          "name": "Cargo Gear"
+        },
+        {
+          "name": "AFS"
+        },
+        {
+          "name": "SMC"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "medium"
+    },
+    "SUNNY_KANKAN": {
+      "name": "SUNNY KANKAN",
+      "imo": "9287273",
+      "class_society": "RINA",
+      "flag": "Liberia",
+      "gt": "",
+      "dwt": 203266.0,
+      "surveys": [
+        {
+          "type": "",
+          "desc": "Hull Hull Renewal",
+          "due_date": "2029-06-07",
+          "last_done": "2024-07-17",
+          "window_start": "2028-03-08",
+          "window_end": "2029-06-07"
+        },
+        {
+          "type": "",
+          "desc": "Hull Intermediate",
+          "last_done": "2026-12-07",
+          "window_start": "2026-03-08",
+          "window_end": "2027-09-07"
+        },
+        {
+          "type": "",
+          "desc": "Hull Annual",
+          "due_date": "2027-06-07",
+          "last_done": "2026-04-15",
+          "window_start": "2027-03-08",
+          "window_end": "2027-09-07"
+        },
+        {
+          "type": "",
+          "desc": "Bottom - Dry Condition at Renewal",
+          "last_done": "2024-07-17"
+        },
+        {
+          "type": "",
+          "desc": "Bottom - Dry Condition",
+          "due_date": "2027-07-17",
+          "last_done": "2022-10-25"
+        },
+        {
+          "type": "",
+          "desc": "- 17Jul2027 Machinery (under continuous survey) Mach. Renewal",
+          "due_date": "2029-06-07",
+          "last_done": "2024-07-17",
+          "window_start": "2028-03-08",
+          "window_end": "2029-06-07"
+        },
+        {
+          "type": "",
+          "desc": "Mach. Annual",
+          "due_date": "2027-06-07",
+          "last_done": "2026-04-15",
+          "window_start": "2027-03-08",
+          "window_end": "2027-09-07"
+        },
+        {
+          "type": "",
+          "desc": "644a Boiler  - Aux. boiler (fuel) (oil fired - exhaust gas)",
+          "due_date": "2027-07-17",
+          "last_done": "2024-07-17"
+        },
+        {
+          "type": "",
+          "desc": "- 17Jul2027 631a.03 Tailshaft (cl.oil-keyless) Met.1 (withdr.+prop. removal) (Aft)",
+          "last_done": "2002-09-02"
+        },
+        {
+          "type": "",
+          "desc": "631a.03 Tailshaft (cl.oil-keyless) Met.2 (prop. removal) (Aft)",
+          "due_date": "2029-07-31",
+          "last_done": "2014-08-01",
+          "window_start": "2029-05-01",
+          "window_end": "2029-07-31"
+        },
+        {
+          "type": "",
+          "desc": "631a.03 Tailshaft (cl.oil-keyless) Met.3 (Aft)",
+          "due_date": "2029-07-17",
+          "last_done": "2024-07-17",
+          "window_start": "2029-04-18",
+          "window_end": "2029-07-17"
+        },
+        {
+          "type": "",
+          "desc": "ILL H Renewal",
+          "due_date": "2029-06-07",
+          "last_done": "2024-07-17",
+          "window_start": "2029-03-08",
+          "window_end": "2029-06-07"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2027-06-07",
+          "last_done": "2026-04-15",
+          "window_start": "2027-03-08",
+          "window_end": "2027-09-07"
+        },
+        {
+          "type": "",
+          "desc": "IMSBC Code Renewal",
+          "due_date": "2029-06-07",
+          "last_done": "2024-06-26",
+          "window_start": "2029-03-08",
+          "window_end": "2029-06-07"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2027-06-07",
+          "last_done": "2026-04-15",
+          "window_start": "2027-03-08",
+          "window_end": "2027-09-07"
+        },
+        {
+          "type": "",
+          "desc": "DG (SOLAS) (cargo) First Issue (Initial)",
+          "last_done": "2026-04-15"
+        },
+        {
+          "type": "",
+          "desc": "Renewal",
+          "last_done": "2029-06-07",
+          "window_start": "2029-03-08",
+          "window_end": "2029-06-07"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "last_done": "2027-06-07",
+          "window_start": "2027-03-08",
+          "window_end": "2027-09-07"
+        },
+        {
+          "type": "",
+          "desc": "SC H Renewal",
+          "due_date": "2029-06-07",
+          "last_done": "2024-07-17",
+          "window_start": "2029-03-08",
+          "window_end": "2029-06-07"
+        },
+        {
+          "type": "",
+          "desc": "Intermediate (1)",
+          "last_done": "2027-06-07",
+          "window_start": "2027-03-08",
+          "window_end": "2027-09-07"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2028-06-07",
+          "last_done": "2026-04-15",
+          "window_start": "2028-03-08",
+          "window_end": "2028-09-07"
+        },
+        {
+          "type": "",
+          "desc": "SE H Renewal",
+          "due_date": "2029-06-07",
+          "last_done": "2024-07-17",
+          "window_start": "2029-03-08",
+          "window_end": "2029-06-07"
+        },
+        {
+          "type": "",
+          "desc": "Periodical (1)",
+          "last_done": "2027-06-07",
+          "window_start": "2027-03-08",
+          "window_end": "2027-09-07"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2028-06-07",
+          "last_done": "2026-04-15",
+          "window_start": "2028-03-08",
+          "window_end": "2028-09-07"
+        },
+        {
+          "type": "",
+          "desc": "SR H Renewal",
+          "due_date": "2029-06-07",
+          "last_done": "2024-06-26",
+          "window_start": "2029-03-08",
+          "window_end": "2029-06-07"
+        },
+        {
+          "type": "",
+          "desc": "Periodical",
+          "due_date": "2027-06-07",
+          "last_done": "2026-04-15",
+          "window_start": "2027-03-08",
+          "window_end": "2027-09-07"
+        },
+        {
+          "type": "",
+          "desc": "SMC Renewal",
+          "last_done": "2028-11-06",
+          "window_start": "2028-08-07",
+          "window_end": "2028-11-06"
+        },
+        {
+          "type": "",
+          "desc": "Intermediate",
+          "last_done": "2026-04-15"
+        },
+        {
+          "type": "",
+          "desc": "MLC Renewal",
+          "last_done": "2028-11-06",
+          "window_start": "2028-08-07",
+          "window_end": "2028-11-06"
+        },
+        {
+          "type": "",
+          "desc": "Intermediate",
+          "last_done": "2026-04-15"
+        },
+        {
+          "type": "",
+          "desc": "ISSC Renewal",
+          "last_done": "2028-11-06",
+          "window_start": "2028-08-07",
+          "window_end": "2028-11-06"
+        },
+        {
+          "type": "",
+          "desc": "For any enquiries please contact: Greater China Marine Telephone : E-mail : china.marine@rina.org Direct fax line : +86 ",
+          "last_done": "2026-04-15"
+        },
+        {
+          "type": "",
+          "desc": "IAPP Renewal",
+          "due_date": "2029-06-07",
+          "last_done": "2024-07-17",
+          "window_start": "2029-03-08",
+          "window_end": "2029-06-07"
+        },
+        {
+          "type": "",
+          "desc": "Intermediate (1)",
+          "last_done": "2027-06-07",
+          "window_start": "2027-03-08",
+          "window_end": "2027-09-07"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2028-06-07",
+          "last_done": "2026-04-15",
+          "window_start": "2028-03-08",
+          "window_end": "2028-09-07"
+        },
+        {
+          "type": "",
+          "desc": "IOPP Renewal",
+          "due_date": "2029-06-07",
+          "last_done": "2024-07-17",
+          "window_start": "2029-03-08",
+          "window_end": "2029-06-07"
+        },
+        {
+          "type": "",
+          "desc": "Intermediate (1)",
+          "last_done": "2027-06-07",
+          "window_start": "2027-03-08",
+          "window_end": "2027-09-07"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2028-06-07",
+          "last_done": "2026-04-15",
+          "window_start": "2028-03-08",
+          "window_end": "2028-09-07"
+        },
+        {
+          "type": "",
+          "desc": "ISPP Renewal",
+          "due_date": "2029-06-07",
+          "last_done": "2024-07-17",
+          "window_start": "2029-03-08",
+          "window_end": "2029-06-07"
+        },
+        {
+          "type": "",
+          "desc": "RECYCL_HKC First Issue (Renewal)",
+          "last_done": "2023-07-25"
+        },
+        {
+          "type": "",
+          "desc": "Renewal",
+          "last_done": "2028-07-24",
+          "window_start": "2028-04-25",
+          "window_end": "2028-07-24"
+        },
+        {
+          "type": "",
+          "desc": "IBWM Renewal",
+          "due_date": "2029-06-07",
+          "last_done": "2024-07-17",
+          "window_start": "2029-03-08",
+          "window_end": "2029-06-07"
+        },
+        {
+          "type": "",
+          "desc": "Intermediate (1)",
+          "last_done": "2027-06-07",
+          "window_start": "2027-03-08",
+          "window_end": "2027-09-07"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2028-06-07",
+          "last_done": "2026-04-15",
+          "window_start": "2028-03-08",
+          "window_end": "2028-09-07"
+        },
+        {
+          "type": "",
+          "desc": "IEEC First Issue (Initial)",
+          "last_done": "2023-07-25"
+        },
+        {
+          "type": "",
+          "desc": "L.A. 452.05a CRANE ILO Test (port,Hose Davit)",
+          "due_date": "2029-07-17",
+          "last_done": "2024-07-17"
+        },
+        {
+          "type": "",
+          "desc": "- 17Jul2029 452.05b CRANE ILO Test (central,Engine room crane)",
+          "last_done": "2029-07-17"
+        },
+        {
+          "type": "",
+          "desc": "- 17Jul2029 563.01a CRANE ILO Test (port,Provision Crane (Port))",
+          "due_date": "2029-07-17",
+          "last_done": "2024-07-17"
+        },
+        {
+          "type": "",
+          "desc": "- 17Jul2029 563.01b CRANE ILO Test (stbd,Provision Crane (Starboard))",
+          "due_date": "2029-07-17",
+          "last_done": "2024-07-17"
+        },
+        {
+          "type": "",
+          "desc": "- 17Jul2029 452.05a CRANE ILO Annual (port,Hose Davit)",
+          "due_date": "2027-04-15",
+          "last_done": "2026-04-15"
+        },
+        {
+          "type": "",
+          "desc": "- 15Apr2027 452.05b CRANE ILO Annual (central,Engine room crane)",
+          "due_date": "2027-04-15",
+          "last_done": "2026-04-15"
+        },
+        {
+          "type": "",
+          "desc": "- 15Apr2027 563.01a CRANE ILO Annual (port,Provision Crane (Port))",
+          "due_date": "2027-04-15",
+          "last_done": "2026-04-15"
+        },
+        {
+          "type": "",
+          "desc": "- 15Apr2027 563.01b CRANE ILO Annual (stbd,Provision Crane (Starboard))",
+          "due_date": "2027-04-15",
+          "last_done": "2026-04-15"
+        },
+        {
+          "type": "",
+          "desc": "- 15Apr2027 563.10a DERRICK ILO Quinquennial (Hose Davit,stbd)",
+          "due_date": "2029-07-17",
+          "last_done": "2024-07-17"
+        },
+        {
+          "type": "",
+          "desc": "- 17Jul2029 563.10a DERRICK ILO  Annual (Hose Davit,stbd)",
+          "due_date": "2027-04-15",
+          "last_done": "2026-04-15"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "Class",
+          "expiry": "2029-06-07"
+        },
+        {
+          "name": "International Load Line (HSSC)",
+          "expiry": "2029-06-07"
+        },
+        {
+          "name": "IMSBC Code (1)",
+          "expiry": "2029-06-07"
+        },
+        {
+          "name": "Document for Carriage of Dangerous Goods (SOLAS) (1) (cargo vessel)",
+          "expiry": "2029-06-07"
+        },
+        {
+          "name": "Cargo Ship Safety Construction (HSSC)",
+          "expiry": "2029-06-07"
+        },
+        {
+          "name": "Cargo Ship Safety Equipment (HSSC)",
+          "expiry": "2029-06-07"
+        },
+        {
+          "name": "SAFEQU Exemption (HSSC) (2)",
+          "expiry": "2029-06-07"
+        },
+        {
+          "name": "Cargo Ship Safety Radio (HSSC)",
+          "expiry": "2029-06-07"
+        },
+        {
+          "name": "ISM Safety Management",
+          "expiry": "2028-11-06"
+        },
+        {
+          "name": "Maritime Labour Convention",
+          "expiry": "2028-11-06"
+        },
+        {
+          "name": "International Ship Security Certificate",
+          "expiry": "2028-11-06"
+        },
+        {
+          "name": "International Air Pollution Prevention",
+          "expiry": "2029-06-07"
+        },
+        {
+          "name": "International Oil Pollution Prevention",
+          "expiry": "2029-06-07"
+        },
+        {
+          "name": "International Sewage Pollution Prevention",
+          "expiry": "2029-06-07"
+        },
+        {
+          "name": "International Certificate on Inventory of Hazardous (2) Materials (HKG Convention 2009)",
+          "expiry": "2028-07-24"
+        },
+        {
+          "name": "International Energy Efficiency Certificate"
+        },
+        {
+          "name": "International Ballast Water Management",
+          "expiry": "2029-06-07"
+        },
+        {
+          "name": "International Anti-Fouling System"
+        },
+        {
+          "name": "Lifting Appliances (3) (4)"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "medium"
+    },
+    "SUNNY_RIVER": {
+      "name": "SUNNY RIVER",
+      "imo": "9337169",
+      "class_society": "RINA",
+      "flag": "Hong Kong",
+      "gt": "",
+      "dwt": 207923.0,
+      "surveys": [
+        {
+          "type": "",
+          "desc": "Hull Hull Renewal",
+          "due_date": "2028-08-25",
+          "last_done": "2023-08-10",
+          "window_start": "2027-05-26",
+          "window_end": "2028-08-25"
+        },
+        {
+          "type": "",
+          "desc": "Hull Intermediate",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "Hull Annual",
+          "due_date": "2027-08-25",
+          "last_done": "2026-06-04",
+          "window_start": "2027-05-26",
+          "window_end": "2027-11-25"
+        },
+        {
+          "type": "",
+          "desc": "Bottom - Dry Condition at Renewal",
+          "due_date": "2028-08-25",
+          "last_done": "2023-08-10"
+        },
+        {
+          "type": "",
+          "desc": "- 25Aug2028 Bottom - Dry Condition",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "Bottom - in Water",
+          "last_done": "2021-08-13"
+        },
+        {
+          "type": "",
+          "desc": "Machinery (under continuous survey) Mach. Renewal",
+          "due_date": "2028-08-25",
+          "last_done": "2023-08-10",
+          "window_start": "2027-05-26",
+          "window_end": "2028-08-25"
+        },
+        {
+          "type": "",
+          "desc": "Mach. Annual",
+          "due_date": "2027-08-25",
+          "last_done": "2026-06-04",
+          "window_start": "2027-05-26",
+          "window_end": "2027-11-25"
+        },
+        {
+          "type": "",
+          "desc": "644a Boiler  - Aux. boiler (fuel) (oil fired - exhaust gas)",
+          "due_date": "2028-08-25",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "- 25Aug2028 631a.03 Tailshaft (cl.oil-keyless) Met.1 (withdr.+prop. removal) (Aft,central)",
+          "last_done": "2008-08-26"
+        },
+        {
+          "type": "",
+          "desc": "631a.03 Tailshaft (cl.oil-keyless) Met.2 (prop. removal) (Aft,central)",
+          "due_date": "2028-07-15",
+          "last_done": "2013-07-15",
+          "window_start": "2028-04-16",
+          "window_end": "2028-07-15"
+        },
+        {
+          "type": "",
+          "desc": "631a.03 Tailshaft (cl.oil-keyless) Met.3 (Aft,central)",
+          "last_done": "2023-08-10"
+        },
+        {
+          "type": "",
+          "desc": "ILL H Renewal",
+          "last_done": "2028-08-25",
+          "window_start": "2028-05-26",
+          "window_end": "2028-08-25"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2027-08-25",
+          "last_done": "2025-09-17",
+          "window_start": "2027-05-26",
+          "window_end": "2027-11-25"
+        },
+        {
+          "type": "",
+          "desc": "Change of flag (Annual) (1)",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "IMSBC Code Renewal",
+          "last_done": "2028-08-25",
+          "window_start": "2028-05-26",
+          "window_end": "2028-08-25"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2027-08-25",
+          "last_done": "2025-09-17",
+          "window_start": "2027-05-26",
+          "window_end": "2027-11-25"
+        },
+        {
+          "type": "",
+          "desc": "Change of flag (Annual) (1)",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "DG (SOLAS) (cargo) Renewal",
+          "last_done": "2028-08-25",
+          "window_start": "2028-05-26",
+          "window_end": "2028-08-25"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "last_done": "2027-08-25",
+          "window_start": "2027-05-26",
+          "window_end": "2027-11-25"
+        },
+        {
+          "type": "",
+          "desc": "Change of flag (Annual) (1)",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "SC H Renewal",
+          "last_done": "2028-08-25",
+          "window_start": "2028-05-26",
+          "window_end": "2028-08-25"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2027-08-25",
+          "last_done": "2025-09-17",
+          "window_start": "2027-05-26",
+          "window_end": "2027-11-25"
+        },
+        {
+          "type": "",
+          "desc": "Change of flag (Intermediate) (1)",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "SE H Renewal",
+          "last_done": "2028-08-25",
+          "window_start": "2028-05-26",
+          "window_end": "2028-08-25"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2027-08-25",
+          "last_done": "2025-09-17",
+          "window_start": "2027-05-26",
+          "window_end": "2027-11-25"
+        },
+        {
+          "type": "",
+          "desc": "Change of flag (Periodical) (1)",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "SR H Renewal",
+          "last_done": "2028-08-25",
+          "window_start": "2028-05-26",
+          "window_end": "2028-08-25"
+        },
+        {
+          "type": "",
+          "desc": "Periodical",
+          "due_date": "2027-08-25",
+          "last_done": "2025-09-17",
+          "window_start": "2027-05-26",
+          "window_end": "2027-11-25"
+        },
+        {
+          "type": "",
+          "desc": "Change of flag (Periodical) (1)",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "For any enquiries please contact: Greater China Marine Telephone : E-mail : china.marine@rina.org Direct fax line : +86 ",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "First Issue",
+          "last_done": "2026-12-04"
+        },
+        {
+          "type": "",
+          "desc": "- 04Dec2026 • MLC Interim Audit",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "First Issue",
+          "last_done": "2026-12-04"
+        },
+        {
+          "type": "",
+          "desc": "- 04Dec2026 • ISSC Pre-Verification",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "First Issue",
+          "last_done": "2026-12-04"
+        },
+        {
+          "type": "",
+          "desc": "- 04Dec2026 • GARBAGE Renewal",
+          "last_done": "2028-08-25",
+          "window_start": "2028-05-26",
+          "window_end": "2028-08-25"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2027-08-25",
+          "last_done": "2025-09-17",
+          "window_start": "2027-05-26",
+          "window_end": "2027-11-25"
+        },
+        {
+          "type": "",
+          "desc": "Change of flag (Annual) (1)",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "IAPP Renewal",
+          "last_done": "2028-08-25",
+          "window_start": "2028-05-26",
+          "window_end": "2028-08-25"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2027-08-25",
+          "last_done": "2025-09-17",
+          "window_start": "2027-05-26",
+          "window_end": "2027-11-25"
+        },
+        {
+          "type": "",
+          "desc": "Change of flag (Intermediate) (1)",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "IOPP Renewal",
+          "last_done": "2028-08-25",
+          "window_start": "2028-05-26",
+          "window_end": "2028-08-25"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2027-08-25",
+          "last_done": "2025-09-17",
+          "window_start": "2027-05-26",
+          "window_end": "2027-11-25"
+        },
+        {
+          "type": "",
+          "desc": "Change of flag (Intermediate) (1)",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "ISPP Renewal",
+          "last_done": "2028-08-25",
+          "window_start": "2028-05-26",
+          "window_end": "2028-08-25"
+        },
+        {
+          "type": "",
+          "desc": "Change of flag (Renewal) (1)",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "RECYCL_1257 _EU_ST Renewal",
+          "last_done": "2028-08-25",
+          "window_start": "2028-05-26",
+          "window_end": "2028-08-25"
+        },
+        {
+          "type": "",
+          "desc": "Change of flag (Renewal) (1)",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "RECYCL_HKC Renewal",
+          "last_done": "2028-08-25",
+          "window_start": "2028-05-26",
+          "window_end": "2028-08-25"
+        },
+        {
+          "type": "",
+          "desc": "Change of flag (Renewal) (1)",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "IAFSC First Issue (Occasional)",
+          "last_done": "2025-01-25"
+        },
+        {
+          "type": "",
+          "desc": "IBWM Renewal",
+          "last_done": "2028-08-25",
+          "window_start": "2028-05-26",
+          "window_end": "2028-08-25"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "last_done": "2027-08-25",
+          "window_start": "2027-05-26",
+          "window_end": "2027-11-25"
+        },
+        {
+          "type": "",
+          "desc": "Change of flag (Intermediate) (1)",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "IEEC First Issue (Initial)",
+          "last_done": "2025-01-25"
+        },
+        {
+          "type": "",
+          "desc": "ILO 92/133 First Issue (Initial)",
+          "last_done": "2018-05-28"
+        },
+        {
+          "type": "",
+          "desc": "Change of flag (Initial) (1)",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "L.A. 334a CRANE ILO Test (FO Hose Handling Davit,port)",
+          "due_date": "2028-08-10",
+          "last_done": "2023-08-10"
+        },
+        {
+          "type": "",
+          "desc": "- 10Aug2028 334b CRANE ILO Test (FO Hose and SUEZ Handling Davit,stbd)",
+          "due_date": "2028-08-10",
+          "last_done": "2023-08-10"
+        },
+        {
+          "type": "",
+          "desc": "- 10Aug2028 452.01a CRANE ILO Test (central)",
+          "due_date": "2028-08-10",
+          "last_done": "2023-08-10"
+        },
+        {
+          "type": "",
+          "desc": "- 10Aug2028 563.01a CRANE ILO Test (PROVISION CRANE,port)",
+          "due_date": "2028-08-10",
+          "last_done": "2023-08-10"
+        },
+        {
+          "type": "",
+          "desc": "- 10Aug2028 563.01b CRANE ILO Test (PROVISION CRANE,stbd)",
+          "due_date": "2028-08-10",
+          "last_done": "2023-08-10"
+        },
+        {
+          "type": "",
+          "desc": "- 10Aug2028 334a CRANE LA Annual (FO Hose Handling Davit,port)",
+          "due_date": "2027-06-04",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "- 04Jun2027 334b CRANE LA Annual (FO Hose and SUEZ Handling Davit,stbd)",
+          "due_date": "2027-06-04",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "- 04Jun2027 For any enquiries please contact: Greater China Marine Telephone : E-mail : china.marine@rina.org Direct fax",
+          "due_date": "2027-06-04",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "- 04Jun2027 563.01a CRANE LA Annual (PROVISION CRANE,port)",
+          "due_date": "2027-06-04",
+          "last_done": "2026-06-04"
+        },
+        {
+          "type": "",
+          "desc": "- 04Jun2027 563.01b CRANE LA Annual (PROVISION CRANE,stbd)",
+          "due_date": "2027-06-04",
+          "last_done": "2026-06-04"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "Class",
+          "expiry": "2028-08-25"
+        },
+        {
+          "name": "International Load Line (HSSC)",
+          "expiry": "2028-08-25"
+        },
+        {
+          "name": "IMSBC Code (1)",
+          "expiry": "2028-08-25"
+        },
+        {
+          "name": "Document for Carriage of Dangerous Goods (SOLAS) (2) (cargo vessel)",
+          "expiry": "2028-08-25"
+        },
+        {
+          "name": "Cargo Ship Safety Construction (HSSC)",
+          "expiry": "2028-08-25"
+        },
+        {
+          "name": "Cargo Ship Safety Equipment (HSSC)",
+          "expiry": "2028-08-25"
+        },
+        {
+          "name": "SAFEQU Exemption (HSSC)",
+          "expiry": "2028-08-25"
+        },
+        {
+          "name": "Cargo Ship Safety Radio (HSSC)",
+          "expiry": "2028-08-25"
+        },
+        {
+          "name": "Maritime Labour Convention",
+          "expiry": "2026-12-04"
+        },
+        {
+          "name": "ISM Safety Management",
+          "expiry": "2026-12-04"
+        },
+        {
+          "name": "International Ship Security Certificate",
+          "expiry": "2026-12-04"
+        },
+        {
+          "name": "Garbage Pollution Prevention (1)",
+          "expiry": "2028-08-25"
+        },
+        {
+          "name": "International Air Pollution Prevention",
+          "expiry": "2028-08-25"
+        },
+        {
+          "name": "International Oil Pollution Prevention",
+          "expiry": "2028-08-25"
+        },
+        {
+          "name": "International Sewage Pollution Prevention",
+          "expiry": "2028-08-25"
+        },
+        {
+          "name": "Statement of compliance on Inventory of Hazardous (1) Materials (EU 1257/2013) T",
+          "expiry": "2028-08-25"
+        },
+        {
+          "name": "International Certificate on Inventory of Hazardous (1) Materials (HKG Convention 2009)",
+          "expiry": "2028-08-25"
+        },
+        {
+          "name": "International Energy Efficiency Certificate"
+        },
+        {
+          "name": "International Ballast Water Management",
+          "expiry": "2028-08-25"
+        },
+        {
+          "name": "International Anti-Fouling System"
+        },
+        {
+          "name": "ILO 92/133 Crew Accommodation"
+        },
+        {
+          "name": "Lifting Appliances"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "medium"
+    },
+    "SUNNY_ROUTE": {
+      "name": "SUNNY ROUTE",
+      "imo": "9296420",
+      "class_society": "RINA",
+      "flag": "Liberia",
+      "gt": "",
+      "dwt": 203180.0,
+      "surveys": [
+        {
+          "type": "",
+          "desc": "Hull Hull Renewal",
+          "due_date": "2030-05-11",
+          "last_done": "2025-03-26",
+          "window_start": "2029-02-12",
+          "window_end": "2030-05-11"
+        },
+        {
+          "type": "",
+          "desc": "Hull Intermediate",
+          "last_done": "2027-11-11",
+          "window_start": "2027-02-12",
+          "window_end": "2028-08-11"
+        },
+        {
+          "type": "",
+          "desc": "Hull Annual",
+          "due_date": "2027-05-11",
+          "last_done": "2026-02-25",
+          "window_start": "2027-02-12",
+          "window_end": "2027-08-11"
+        },
+        {
+          "type": "",
+          "desc": "Bottom - Dry Condition at Renewal",
+          "last_done": "2025-03-26"
+        },
+        {
+          "type": "",
+          "desc": "Bottom - Dry Condition",
+          "due_date": "2028-03-26",
+          "last_done": "2022-06-25"
+        },
+        {
+          "type": "",
+          "desc": "- 26Mar2028 Bottom - in Water",
+          "last_done": "2017-10-26"
+        },
+        {
+          "type": "",
+          "desc": "Machinery (under continuous survey) Mach. Renewal",
+          "due_date": "2030-05-11",
+          "last_done": "2025-03-26",
+          "window_start": "2029-02-12",
+          "window_end": "2030-05-11"
+        },
+        {
+          "type": "",
+          "desc": "Mach. Annual",
+          "due_date": "2027-05-11",
+          "last_done": "2026-02-25",
+          "window_start": "2027-02-12",
+          "window_end": "2027-08-11"
+        },
+        {
+          "type": "",
+          "desc": "644a Boiler  - Aux. boiler (fuel) (oil fired - exhaust gas)",
+          "due_date": "2028-03-26",
+          "last_done": "2025-03-26"
+        },
+        {
+          "type": "",
+          "desc": "- 26Mar2028 631a.03 Tailshaft (cl.oil-keyless) Met.1 (withdr.+prop. removal) (Aft)",
+          "last_done": "2025-03-26"
+        },
+        {
+          "type": "",
+          "desc": "631a.03 Tailshaft (cl.oil-keyless) Met.2 (prop. removal) (Aft)",
+          "last_done": "2040-03-26",
+          "window_start": "2039-12-27",
+          "window_end": "2040-03-26"
+        },
+        {
+          "type": "",
+          "desc": "631a.03 Tailshaft (cl.oil-keyless) Met.3 (Aft)",
+          "due_date": "2030-03-26",
+          "last_done": "2022-06-25",
+          "window_start": "2029-12-27",
+          "window_end": "2030-03-26"
+        },
+        {
+          "type": "",
+          "desc": "ILL H Renewal",
+          "due_date": "2030-05-11",
+          "last_done": "2025-03-26",
+          "window_start": "2030-02-12",
+          "window_end": "2030-05-11"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2027-05-11",
+          "last_done": "2026-02-25",
+          "window_start": "2027-02-12",
+          "window_end": "2027-08-11"
+        },
+        {
+          "type": "",
+          "desc": "IMSBC Code Renewal",
+          "due_date": "2030-05-11",
+          "last_done": "2025-03-26",
+          "window_start": "2030-02-12",
+          "window_end": "2030-05-11"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2027-05-11",
+          "last_done": "2026-02-25",
+          "window_start": "2027-02-12",
+          "window_end": "2027-08-11"
+        },
+        {
+          "type": "",
+          "desc": "SC H Renewal",
+          "due_date": "2030-05-11",
+          "last_done": "2025-03-26",
+          "window_start": "2030-02-12",
+          "window_end": "2030-05-11"
+        },
+        {
+          "type": "",
+          "desc": "Intermediate (1)",
+          "last_done": "2027-05-11",
+          "window_start": "2027-02-12",
+          "window_end": "2027-08-11"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2027-05-11",
+          "last_done": "2026-02-25",
+          "window_start": "2027-02-12",
+          "window_end": "2027-08-11"
+        },
+        {
+          "type": "",
+          "desc": "SE H Renewal",
+          "due_date": "2030-05-11",
+          "last_done": "2025-03-26",
+          "window_start": "2030-02-12",
+          "window_end": "2030-05-11"
+        },
+        {
+          "type": "",
+          "desc": "Periodical (1)",
+          "last_done": "2027-05-11",
+          "window_start": "2027-02-12",
+          "window_end": "2027-08-11"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2027-05-11",
+          "last_done": "2026-02-25",
+          "window_start": "2027-02-12",
+          "window_end": "2027-08-11"
+        },
+        {
+          "type": "",
+          "desc": "SR H Renewal",
+          "due_date": "2030-05-11",
+          "last_done": "2025-03-26",
+          "window_start": "2030-02-12",
+          "window_end": "2030-05-11"
+        },
+        {
+          "type": "",
+          "desc": "Periodical",
+          "due_date": "2027-05-11",
+          "last_done": "2026-02-25",
+          "window_start": "2027-02-12",
+          "window_end": "2027-08-11"
+        },
+        {
+          "type": "",
+          "desc": "SMC Renewal",
+          "last_done": "2026-10-31",
+          "window_start": "2026-08-01",
+          "window_end": "2026-10-31"
+        },
+        {
+          "type": "",
+          "desc": "• Intermediate",
+          "last_done": "2024-07-26"
+        },
+        {
+          "type": "",
+          "desc": "MLC Renewal",
+          "last_done": "2026-10-31",
+          "window_start": "2026-08-01",
+          "window_end": "2026-10-31"
+        },
+        {
+          "type": "",
+          "desc": "• Intermediate",
+          "last_done": "2024-07-26"
+        },
+        {
+          "type": "",
+          "desc": "ISSC Renewal",
+          "last_done": "2026-10-31",
+          "window_start": "2026-08-01",
+          "window_end": "2026-10-31"
+        },
+        {
+          "type": "",
+          "desc": "• Intermediate",
+          "last_done": "2024-07-26"
+        },
+        {
+          "type": "",
+          "desc": "For any enquiries please contact: Greater China Marine Telephone : E-mail : china.marine@rina.org Direct fax line : +86 ",
+          "due_date": "2030-05-11",
+          "last_done": "2025-03-26",
+          "window_start": "2030-02-12",
+          "window_end": "2030-05-11"
+        },
+        {
+          "type": "",
+          "desc": "Intermediate (1)",
+          "last_done": "2027-05-11",
+          "window_start": "2027-02-12",
+          "window_end": "2027-08-11"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2027-05-11",
+          "last_done": "2026-02-25",
+          "window_start": "2027-02-12",
+          "window_end": "2027-08-11"
+        },
+        {
+          "type": "",
+          "desc": "IOPP Renewal",
+          "due_date": "2030-05-11",
+          "last_done": "2025-03-26",
+          "window_start": "2030-02-12",
+          "window_end": "2030-05-11"
+        },
+        {
+          "type": "",
+          "desc": "Intermediate (1)",
+          "last_done": "2027-05-11",
+          "window_start": "2027-02-12",
+          "window_end": "2027-08-11"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2027-05-11",
+          "last_done": "2026-02-25",
+          "window_start": "2027-02-12",
+          "window_end": "2027-08-11"
+        },
+        {
+          "type": "",
+          "desc": "ISPP Renewal",
+          "due_date": "2030-05-11",
+          "last_done": "2025-03-26",
+          "window_start": "2030-02-12",
+          "window_end": "2030-05-11"
+        },
+        {
+          "type": "",
+          "desc": "IAFSC First Issue (Occasional)",
+          "last_done": "2021-07-30"
+        },
+        {
+          "type": "",
+          "desc": "IBWM Renewal",
+          "due_date": "2030-05-11",
+          "last_done": "2025-03-26",
+          "window_start": "2030-02-12",
+          "window_end": "2030-05-11"
+        },
+        {
+          "type": "",
+          "desc": "Intermediate (1)",
+          "last_done": "2027-05-11",
+          "window_start": "2027-02-12",
+          "window_end": "2027-08-11"
+        },
+        {
+          "type": "",
+          "desc": "Annual",
+          "due_date": "2027-05-11",
+          "last_done": "2026-02-25",
+          "window_start": "2027-02-12",
+          "window_end": "2027-08-11"
+        },
+        {
+          "type": "",
+          "desc": "IEEC First Issue (Initial)",
+          "last_done": "2021-07-30"
+        },
+        {
+          "type": "",
+          "desc": "L.A. 452.05a CRANE ILO Test (central,Main Engine Overhead Travelling Crane)",
+          "due_date": "2030-03-26",
+          "last_done": "2025-03-26"
+        },
+        {
+          "type": "",
+          "desc": "- 26Mar2030 563.01a CRANE ILO Test (port,Provision Crane (Port))",
+          "due_date": "2030-03-26",
+          "last_done": "2025-03-26"
+        },
+        {
+          "type": "",
+          "desc": "- 26Mar2030 563.01b CRANE ILO Test (stbd,Provision Crane (Starboard))",
+          "due_date": "2030-03-26",
+          "last_done": "2025-03-26"
+        },
+        {
+          "type": "",
+          "desc": "- 26Mar2030 452.05a CRANE ILO Annual (central,Main Engine Overhead Travelling Crane)",
+          "due_date": "2027-02-25",
+          "last_done": "2026-02-25"
+        },
+        {
+          "type": "",
+          "desc": "- 25Feb2027 563.01a CRANE ILO Annual (port,Provision Crane (Port))",
+          "due_date": "2027-02-25",
+          "last_done": "2026-02-25"
+        },
+        {
+          "type": "",
+          "desc": "- 25Feb2027 563.01b CRANE ILO Annual (stbd,Provision Crane (Starboard))",
+          "due_date": "2027-02-25",
+          "last_done": "2026-02-25"
+        },
+        {
+          "type": "",
+          "desc": "- 25Feb2027 563.10a DERRICK ILO Quinquennial (Provision Davit,stbd)",
+          "due_date": "2030-03-26",
+          "last_done": "2025-03-26"
+        },
+        {
+          "type": "",
+          "desc": "- 26Mar2030 563.10a DERRICK ILO  Annual (Provision Davit,stbd)",
+          "due_date": "2027-02-25",
+          "last_done": "2026-02-25"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "Class",
+          "expiry": "2030-05-11"
+        },
+        {
+          "name": "International Load Line (HSSC)",
+          "expiry": "2030-05-11"
+        },
+        {
+          "name": "IMSBC Code (1)",
+          "expiry": "2030-05-11"
+        },
+        {
+          "name": "Cargo Ship Safety Construction (HSSC)",
+          "expiry": "2030-05-11"
+        },
+        {
+          "name": "Cargo Ship Safety Equipment (HSSC)",
+          "expiry": "2030-05-11"
+        },
+        {
+          "name": "SAFEQU Exemption (HSSC) (2)",
+          "expiry": "2030-05-11"
+        },
+        {
+          "name": "Cargo Ship Safety Radio (HSSC)",
+          "expiry": "2030-05-11"
+        },
+        {
+          "name": "Maritime Labour Convention",
+          "expiry": "2026-10-31"
+        },
+        {
+          "name": "ISM Safety Management",
+          "expiry": "2026-10-31"
+        },
+        {
+          "name": "International Ship Security Certificate",
+          "expiry": "2026-10-31"
+        },
+        {
+          "name": "International Air Pollution Prevention",
+          "expiry": "2030-05-11"
+        },
+        {
+          "name": "International Oil Pollution Prevention",
+          "expiry": "2030-05-11"
+        },
+        {
+          "name": "International Sewage Pollution Prevention",
+          "expiry": "2030-05-11"
+        },
+        {
+          "name": "International Anti-Fouling System"
+        },
+        {
+          "name": "International Energy Efficiency Certificate"
+        },
+        {
+          "name": "International Ballast Water Management",
+          "expiry": "2030-05-11"
+        },
+        {
+          "name": "Lifting Appliances (3)"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 3
+      },
+      "extraction_confidence": "medium"
     }
   }
 }
