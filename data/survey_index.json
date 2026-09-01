@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-01 17:02",
+  "last_updated": "2026-09-01 17:15",
   "total_ships": 62,
   "ships": {
     "SUNNY_BEYLA": {
@@ -6244,13 +6244,11 @@
         },
         {
           "type": "annual_survey",
-          "desc": "Class Annual Survey",
-          "due_date": "2026-06-01"
+          "desc": "Class Annual Survey"
         },
         {
           "type": "intermediate_survey",
-          "desc": "Class Intermediate Survey",
-          "due_date": "2025-08-05"
+          "desc": "Class Intermediate Survey"
         },
         {
           "type": "special_survey",
@@ -6315,12 +6313,11 @@
           "name": "AFS"
         },
         {
-          "name": "DOC",
-          "expiry": "2026-08-09"
+          "name": "DOC"
         }
       ],
       "alerts": {
-        "expired": 1,
+        "expired": 0,
         "urgent_7d": 0,
         "warning_30d": 0,
         "info_90d": 0
@@ -8051,18 +8048,16 @@
         },
         {
           "type": "annual_survey",
-          "desc": "Class Annual Survey",
-          "due_date": "2025-12-18"
+          "desc": "Class Annual Survey"
         },
         {
           "type": "intermediate_survey",
-          "desc": "Class Intermediate Survey",
-          "due_date": "2025-05-01"
+          "desc": "Class Intermediate Survey"
         },
         {
           "type": "special_survey",
           "desc": "Class Special Survey for",
-          "due_date": "2022-08-09"
+          "due_date": "2027-03-01"
         },
         {
           "type": "tail_shaft",
@@ -8078,12 +8073,10 @@
       ],
       "certificates": [
         {
-          "name": "ISM DOC",
-          "expiry": "2027-03-01"
+          "name": "ISM DOC"
         },
         {
-          "name": "ISPS",
-          "expiry": "2026-08-15"
+          "name": "ISPS"
         },
         {
           "name": "IOPP",
@@ -8123,12 +8116,11 @@
           "name": "AFS"
         },
         {
-          "name": "DOC",
-          "expiry": "2026-08-15"
+          "name": "DOC"
         }
       ],
       "alerts": {
-        "expired": 2,
+        "expired": 0,
         "urgent_7d": 0,
         "warning_30d": 0,
         "info_90d": 0
@@ -8154,13 +8146,12 @@
         },
         {
           "type": "intermediate_survey",
-          "desc": "Class Intermediate Survey",
-          "due_date": "2026-07-10"
+          "desc": "Class Intermediate Survey"
         },
         {
           "type": "special_survey",
           "desc": "Class Special Survey for",
-          "due_date": "2024-09-10"
+          "due_date": "2029-06-03"
         },
         {
           "type": "tail_shaft",
@@ -8176,8 +8167,7 @@
       ],
       "certificates": [
         {
-          "name": "ISM DOC",
-          "expiry": "2029-06-03"
+          "name": "ISM DOC"
         },
         {
           "name": "ISPS"
@@ -8225,12 +8215,11 @@
           "name": "AFS"
         },
         {
-          "name": "DOC",
-          "expiry": "2026-08-09"
+          "name": "DOC"
         }
       ],
       "alerts": {
-        "expired": 1,
+        "expired": 0,
         "urgent_7d": 0,
         "warning_30d": 0,
         "info_90d": 0
@@ -8252,12 +8241,11 @@
         {
           "type": "annual_survey",
           "desc": "Class Annual Survey",
-          "due_date": "2026-09-07"
+          "due_date": "2026-12-06"
         },
         {
           "type": "intermediate_survey",
-          "desc": "Class Intermediate Survey",
-          "due_date": "2026-01-11"
+          "desc": "Class Intermediate Survey"
         },
         {
           "type": "special_survey",
@@ -8278,8 +8266,7 @@
       ],
       "certificates": [
         {
-          "name": "ISM DOC",
-          "expiry": "2027-12-06"
+          "name": "ISM DOC"
         },
         {
           "name": "ISPS"
@@ -8322,13 +8309,12 @@
           "expiry": "2027-12-06"
         },
         {
-          "name": "DOC",
-          "expiry": "2026-08-15"
+          "name": "DOC"
         }
       ],
       "alerts": {
-        "expired": 1,
-        "urgent_7d": 1,
+        "expired": 0,
+        "urgent_7d": 0,
         "warning_30d": 0,
         "info_90d": 0
       },
@@ -8359,7 +8345,7 @@
         {
           "type": "special_survey",
           "desc": "Class Special Survey for",
-          "due_date": "2026-06-17"
+          "due_date": "2031-06-09"
         },
         {
           "type": "tail_shaft",
@@ -8375,8 +8361,7 @@
       ],
       "certificates": [
         {
-          "name": "ISM DOC",
-          "expiry": "2031-06-09"
+          "name": "ISM DOC"
         },
         {
           "name": "ISPS"
@@ -8423,12 +8408,11 @@
           "name": "AFS"
         },
         {
-          "name": "DOC",
-          "expiry": "2026-08-09"
+          "name": "DOC"
         }
       ],
       "alerts": {
-        "expired": 1,
+        "expired": 0,
         "urgent_7d": 0,
         "warning_30d": 0,
         "info_90d": 0
@@ -8449,18 +8433,16 @@
         },
         {
           "type": "annual_survey",
-          "desc": "Class Annual Survey",
-          "due_date": "2026-08-01"
+          "desc": "Class Annual Survey"
         },
         {
           "type": "intermediate_survey",
-          "desc": "Class Intermediate Survey",
-          "due_date": "2026-05-02"
+          "desc": "Class Intermediate Survey"
         },
         {
           "type": "special_survey",
           "desc": "Class Special Survey for",
-          "due_date": "2024-08-09"
+          "due_date": "2029-08-01"
         },
         {
           "type": "tail_shaft",
@@ -8476,8 +8458,7 @@
       ],
       "certificates": [
         {
-          "name": "ISM DOC",
-          "expiry": "2029-08-01"
+          "name": "ISM DOC"
         },
         {
           "name": "ISPS"
@@ -8525,12 +8506,11 @@
           "expiry": "2029-08-01"
         },
         {
-          "name": "DOC",
-          "expiry": "2026-08-09"
+          "name": "DOC"
         }
       ],
       "alerts": {
-        "expired": 1,
+        "expired": 0,
         "urgent_7d": 0,
         "warning_30d": 0,
         "info_90d": 0
@@ -8622,12 +8602,11 @@
           "name": "AFS"
         },
         {
-          "name": "DOC",
-          "expiry": "2026-08-15"
+          "name": "DOC"
         }
       ],
       "alerts": {
-        "expired": 1,
+        "expired": 0,
         "urgent_7d": 0,
         "warning_30d": 0,
         "info_90d": 0
@@ -8719,12 +8698,11 @@
           "name": "AFS"
         },
         {
-          "name": "DOC",
-          "expiry": "2026-08-15"
+          "name": "DOC"
         }
       ],
       "alerts": {
-        "expired": 1,
+        "expired": 0,
         "urgent_7d": 0,
         "warning_30d": 0,
         "info_90d": 1
@@ -8745,13 +8723,11 @@
         },
         {
           "type": "annual_survey",
-          "desc": "Class Annual Survey",
-          "due_date": "2025-09-09"
+          "desc": "Class Annual Survey"
         },
         {
           "type": "intermediate_survey",
-          "desc": "Class Intermediate Survey",
-          "due_date": "2024-12-24"
+          "desc": "Class Intermediate Survey"
         },
         {
           "type": "special_survey",
@@ -8772,8 +8748,7 @@
       ],
       "certificates": [
         {
-          "name": "ISM DOC",
-          "expiry": "2026-10-12"
+          "name": "ISM DOC"
         },
         {
           "name": "ISPS"
@@ -8821,15 +8796,14 @@
           "expiry": "2026-10-12"
         },
         {
-          "name": "DOC",
-          "expiry": "2026-08-09"
+          "name": "DOC"
         }
       ],
       "alerts": {
-        "expired": 1,
+        "expired": 0,
         "urgent_7d": 0,
         "warning_30d": 0,
-        "info_90d": 12
+        "info_90d": 11
       },
       "extraction_confidence": "high"
     },
@@ -8858,7 +8832,7 @@
         {
           "type": "special_survey",
           "desc": "Class Special Survey for",
-          "due_date": "2025-06-15"
+          "due_date": "2030-07-01"
         },
         {
           "type": "tail_shaft",
@@ -8874,15 +8848,13 @@
       ],
       "certificates": [
         {
-          "name": "ISM DOC",
-          "expiry": "2030-07-01"
+          "name": "ISM DOC"
         },
         {
           "name": "ISPS"
         },
         {
-          "name": "MLC",
-          "expiry": "2024-10-05"
+          "name": "MLC"
         },
         {
           "name": "IOPP",
@@ -8928,12 +8900,11 @@
           "expiry": "2030-07-01"
         },
         {
-          "name": "DOC",
-          "expiry": "2026-08-09"
+          "name": "DOC"
         }
       ],
       "alerts": {
-        "expired": 2,
+        "expired": 0,
         "urgent_7d": 0,
         "warning_30d": 0,
         "info_90d": 0
@@ -8984,23 +8955,22 @@
           "name": "ISPS"
         },
         {
-          "name": "ISPP",
-          "expiry": "2026-08-09"
+          "name": "ISPP"
         },
         {
           "name": "Load Line"
         },
         {
           "name": "Safety Construction",
-          "expiry": "2026-06-16"
+          "expiry": "2031-06-16"
         },
         {
           "name": "Safety Equipment",
-          "expiry": "2026-06-16"
+          "expiry": "2031-06-16"
         },
         {
           "name": "Safety Radio",
-          "expiry": "2026-06-16"
+          "expiry": "2031-06-16"
         },
         {
           "name": "BWM"
@@ -9010,15 +8980,14 @@
           "expiry": "2031-06-15"
         },
         {
-          "name": "Cargo Gear",
-          "expiry": "2026-06-16"
+          "name": "Cargo Gear"
         },
         {
           "name": "AFS"
         }
       ],
       "alerts": {
-        "expired": 5,
+        "expired": 0,
         "urgent_7d": 0,
         "warning_30d": 0,
         "info_90d": 0
@@ -9517,11 +9486,11 @@
         },
         {
           "name": "Cargo Ship Safety Construction (HSSC)",
-          "expiry": "2029-06-07"
+          "expiry": "07Jun2029"
         },
         {
           "name": "Cargo Ship Safety Equipment  (HSSC)",
-          "expiry": "2029-06-07"
+          "expiry": "07Jun2029"
         },
         {
           "name": "SAFEQU Exemption  (HSSC) (2)",
@@ -9529,7 +9498,7 @@
         },
         {
           "name": "Cargo Ship Safety Radio  (HSSC)",
-          "expiry": "2029-06-07"
+          "expiry": "07Jun2029"
         },
         {
           "name": "ISM Safety Management",
@@ -9560,16 +9529,14 @@
           "expiry": "2028-07-24"
         },
         {
-          "name": "International Energy Efficiency Certificate International Ballast Water Management",
-          "expiry": "2024-07-17"
+          "name": "International Energy Efficiency Certificate International Ballast Water Management"
         },
         {
-          "name": "International Anti-Fouling System",
-          "expiry": "2023-07-25"
+          "name": "International Anti-Fouling System"
         }
       ],
       "alerts": {
-        "expired": 2,
+        "expired": 0,
         "urgent_7d": 0,
         "warning_30d": 0,
         "info_90d": 0
@@ -10025,11 +9992,11 @@
         },
         {
           "name": "Cargo Ship Safety Construction (HSSC)",
-          "expiry": "2028-08-25"
+          "expiry": "25Aug2028"
         },
         {
           "name": "Cargo Ship Safety Equipment  (HSSC)",
-          "expiry": "2028-08-25"
+          "expiry": "25Aug2028"
         },
         {
           "name": "SAFEQU Exemption  (HSSC)",
@@ -10037,7 +10004,7 @@
         },
         {
           "name": "Cargo Ship Safety Radio  (HSSC)",
-          "expiry": "2028-08-25"
+          "expiry": "25Aug2028"
         },
         {
           "name": "Maritime Labour Convention",
@@ -10076,20 +10043,17 @@
           "expiry": "2028-08-25"
         },
         {
-          "name": "International Energy Efficiency Certificate International Ballast Water Management",
-          "expiry": "2026-06-11"
+          "name": "International Energy Efficiency Certificate International Ballast Water Management"
         },
         {
-          "name": "International Anti-Fouling System",
-          "expiry": "2026-06-04"
+          "name": "International Anti-Fouling System"
         },
         {
-          "name": "ILO 92/133 Crew Accommodation Lifting Appliances",
-          "expiry": "2008-08-26"
+          "name": "ILO 92/133 Crew Accommodation Lifting Appliances"
         }
       ],
       "alerts": {
-        "expired": 3,
+        "expired": 0,
         "urgent_7d": 0,
         "warning_30d": 0,
         "info_90d": 0
@@ -10466,11 +10430,11 @@
         },
         {
           "name": "Cargo Ship Safety Construction (HSSC)",
-          "expiry": "2030-05-11"
+          "expiry": "11May2030"
         },
         {
           "name": "Cargo Ship Safety Equipment  (HSSC)",
-          "expiry": "2030-05-11"
+          "expiry": "11May2030"
         },
         {
           "name": "SAFEQU Exemption  (HSSC) (2)",
@@ -10478,7 +10442,7 @@
         },
         {
           "name": "Cargo Ship Safety Radio  (HSSC)",
-          "expiry": "2030-05-11"
+          "expiry": "11May2030"
         },
         {
           "name": "Maritime Labour Convention",
@@ -10505,16 +10469,15 @@
           "expiry": "2030-05-11"
         },
         {
-          "name": "International Anti-Fouling System International Energy Efficiency Certificate",
-          "expiry": "2023-05-11"
+          "name": "International Anti-Fouling System International Energy Efficiency Certificate"
         },
         {
           "name": "International Ballast Water Management",
-          "expiry": "2030-05-11"
+          "expiry": "11May2030"
         }
       ],
       "alerts": {
-        "expired": 1,
+        "expired": 0,
         "urgent_7d": 0,
         "warning_30d": 0,
         "info_90d": 3
