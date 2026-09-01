@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-01 17:15",
+  "generated": "2026-09-01 23:27",
   "expired": [],
   "urgent_7d": [],
   "warning_30d": [],
@@ -99,6 +99,13 @@
       "ship": "SUNNY ROUTE",
       "class": "RINA",
       "description": "International Ship Security Certificate",
+      "date": "2026-10-31",
+      "days": 60
+    },
+    {
+      "ship": "SUNNY ROUTE",
+      "class": "RINA",
+      "description": "International Sewage Pollution Prevention",
       "date": "2026-10-31",
       "days": 60
     },
