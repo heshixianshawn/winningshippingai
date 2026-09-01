@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-01 23:34",
+  "last_updated": "2026-09-01 23:56",
   "total_ships": 62,
   "ships": {
     "SUNNY_BEYLA": {
@@ -8,7 +8,7 @@
       "class_society": "NK",
       "flag": "Panama",
       "gt": 90092,
-      "dwt": "",
+      "dwt": 180201.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -192,7 +192,7 @@
       "class_society": "NK",
       "flag": "Liberia",
       "gt": 87413,
-      "dwt": "",
+      "dwt": 172565.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -373,7 +373,7 @@
       "class_society": "NK",
       "flag": "Panama",
       "gt": 87473,
-      "dwt": "",
+      "dwt": 172498.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -545,7 +545,7 @@
       "class_society": "NK",
       "flag": "Hong Kong, China",
       "gt": 90092,
-      "dwt": "",
+      "dwt": 180181.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -731,7 +731,7 @@
       "class_society": "NK",
       "flag": "Hong Kong, China",
       "gt": 90125,
-      "dwt": "",
+      "dwt": 180201.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -912,7 +912,7 @@
       "class_society": "NK",
       "flag": "Panama",
       "gt": 106367,
-      "dwt": "",
+      "dwt": 207991.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -1089,7 +1089,7 @@
       "class_society": "NK",
       "flag": "Hong Kong, China",
       "gt": 106367,
-      "dwt": "",
+      "dwt": 208014.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -1274,7 +1274,7 @@
       "class_society": "NK",
       "flag": "Hong Kong, China",
       "gt": 101953,
-      "dwt": "",
+      "dwt": 203200.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -1450,7 +1450,7 @@
       "class_society": "NK",
       "flag": "Liberia",
       "gt": 106367,
-      "dwt": "",
+      "dwt": 207945.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -1630,7 +1630,7 @@
       "class_society": "NK",
       "flag": "Hong Kong, China",
       "gt": 90396,
-      "dwt": "",
+      "dwt": 180182.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -1815,7 +1815,7 @@
       "class_society": "NK",
       "flag": "Panama",
       "gt": 102101,
-      "dwt": "",
+      "dwt": 203248.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -1996,7 +1996,7 @@
       "class_society": "NK",
       "flag": "Liberia",
       "gt": 88674,
-      "dwt": "",
+      "dwt": 176391.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -2181,7 +2181,7 @@
       "class_society": "NK",
       "flag": "Hong Kong, China",
       "gt": 104725,
-      "dwt": "",
+      "dwt": 206296.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -2366,7 +2366,7 @@
       "class_society": "NK",
       "flag": "Liberia",
       "gt": 101953,
-      "dwt": "",
+      "dwt": 203264.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -2541,7 +2541,7 @@
       "class_society": "NK",
       "flag": "Liberia",
       "gt": 90111,
-      "dwt": "",
+      "dwt": 180129.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -2725,7 +2725,7 @@
       "class_society": "NK",
       "flag": "Hong Kong, China",
       "gt": 90091,
-      "dwt": "",
+      "dwt": 180176.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -2917,7 +2917,7 @@
       "class_society": "NK",
       "flag": "Hong Kong, China",
       "gt": 104721,
-      "dwt": "",
+      "dwt": 206312.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -3107,7 +3107,7 @@
       "class_society": "NK",
       "flag": "Singapore",
       "gt": 104761,
-      "dwt": "",
+      "dwt": 206306.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -3293,7 +3293,7 @@
       "class_society": "NK",
       "flag": "Singapore",
       "gt": 106884,
-      "dwt": "",
+      "dwt": 206125.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -3476,7 +3476,7 @@
       "class_society": "NK",
       "flag": "Liberia",
       "gt": 94779,
-      "dwt": "",
+      "dwt": 184887.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -3621,7 +3621,7 @@
       "class_society": "NK",
       "flag": "Singapore",
       "gt": 90091,
-      "dwt": "",
+      "dwt": 180265.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -3806,7 +3806,7 @@
       "class_society": "NK",
       "flag": "Singapore",
       "gt": 90091,
-      "dwt": "",
+      "dwt": 180277.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -3990,7 +3990,7 @@
       "class_society": "NK",
       "flag": "Singapore",
       "gt": 87590,
-      "dwt": "",
+      "dwt": 170578.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -4174,7 +4174,7 @@
       "class_society": "NK",
       "flag": "Singapore",
       "gt": 113929,
-      "dwt": "",
+      "dwt": 229186.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -4359,7 +4359,7 @@
       "class_society": "NK",
       "flag": "Singapore",
       "gt": 90091,
-      "dwt": "",
+      "dwt": 180310.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -4548,7 +4548,7 @@
       "class_society": "NK",
       "flag": "Singapore",
       "gt": 107791,
-      "dwt": "",
+      "dwt": 209513.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -4740,7 +4740,7 @@
       "class_society": "NK",
       "flag": "Singapore",
       "gt": 107791,
-      "dwt": "",
+      "dwt": 209545.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -4932,7 +4932,7 @@
       "class_society": "NK",
       "flag": "Singapore",
       "gt": 92758,
-      "dwt": "",
+      "dwt": 181501.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -5112,7 +5112,7 @@
       "class_society": "NK",
       "flag": "Singapore",
       "gt": 90091,
-      "dwt": "",
+      "dwt": 180310.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -5301,7 +5301,7 @@
       "class_society": "NK",
       "flag": "Singapore",
       "gt": 92752,
-      "dwt": "",
+      "dwt": 181371.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -5487,7 +5487,7 @@
       "class_society": "NK",
       "flag": "Singapore",
       "gt": 92752,
-      "dwt": "",
+      "dwt": 181387.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -5672,7 +5672,7 @@
       "class_society": "NK",
       "flag": "Liberia",
       "gt": 102207,
-      "dwt": "",
+      "dwt": 203315.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -5855,7 +5855,7 @@
       "class_society": "NK",
       "flag": "Hong Kong, China",
       "gt": 89603,
-      "dwt": "",
+      "dwt": 176890.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -6044,7 +6044,7 @@
       "class_society": "NK",
       "flag": "Hong Kong, China",
       "gt": 89726,
-      "dwt": "",
+      "dwt": 176967.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -6236,7 +6236,7 @@
       "class_society": "CCS",
       "flag": "Panama",
       "gt": "114026",
-      "dwt": "",
+      "dwt": 229069.0,
       "surveys": [
         {
           "type": "boiler",
@@ -6330,7 +6330,7 @@
       "class_society": "NK",
       "flag": "Liberia",
       "gt": 90421,
-      "dwt": "",
+      "dwt": 180140.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -6510,7 +6510,7 @@
       "class_society": "NK",
       "flag": "Liberia",
       "gt": 101953,
-      "dwt": "",
+      "dwt": 203508.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -6689,7 +6689,7 @@
       "class_society": "NK",
       "flag": "Singapore",
       "gt": 102319,
-      "dwt": "",
+      "dwt": 203091.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -6881,7 +6881,7 @@
       "class_society": "NK",
       "flag": "Singapore",
       "gt": 102092,
-      "dwt": "",
+      "dwt": 203233.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -7065,7 +7065,7 @@
       "class_society": "NK",
       "flag": "Singapore",
       "gt": 107791,
-      "dwt": "",
+      "dwt": 208951.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -7250,7 +7250,7 @@
       "class_society": "NK",
       "flag": "Singapore",
       "gt": 107786,
-      "dwt": "",
+      "dwt": 208970.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -7435,7 +7435,7 @@
       "class_society": "NK",
       "flag": "Singapore",
       "gt": 101933,
-      "dwt": "",
+      "dwt": 203195.0,
       "surveys": [
         {
           "type": "special_survey",
@@ -7845,7 +7845,7 @@
       "class_society": "KR",
       "flag": "",
       "gt": "",
-      "dwt": "",
+      "dwt": 176924.0,
       "surveys": [],
       "certificates": [
         {
@@ -7880,7 +7880,7 @@
       "class_society": "KR",
       "flag": "",
       "gt": "",
-      "dwt": "",
+      "dwt": 179221.0,
       "surveys": [],
       "certificates": [
         {
@@ -7915,7 +7915,7 @@
       "class_society": "KR",
       "flag": "",
       "gt": "",
-      "dwt": "",
+      "dwt": 179213.0,
       "surveys": [],
       "certificates": [
         {
@@ -7951,7 +7951,7 @@
       "class_society": "KR",
       "flag": "SINGAPORE",
       "gt": "",
-      "dwt": "",
+      "dwt": 179213.0,
       "surveys": [
         {
           "type": "tail_shaft",
@@ -8055,7 +8055,7 @@
       "class_society": "CCS",
       "flag": "",
       "gt": "101933",
-      "dwt": "",
+      "dwt": 203185.0,
       "surveys": [
         {
           "type": "boiler",
@@ -8148,7 +8148,7 @@
       "class_society": "CCS",
       "flag": "",
       "gt": "89877",
-      "dwt": "",
+      "dwt": 177003.0,
       "surveys": [
         {
           "type": "boiler",
@@ -8247,7 +8247,7 @@
       "class_society": "CCS",
       "flag": "Liberia",
       "gt": "106312",
-      "dwt": "",
+      "dwt": 207960.0,
       "surveys": [
         {
           "type": "boiler",
@@ -8341,7 +8341,7 @@
       "class_society": "CCS",
       "flag": "Singapore",
       "gt": "94175",
-      "dwt": "",
+      "dwt": 179843.0,
       "surveys": [
         {
           "type": "boiler",
@@ -8538,7 +8538,7 @@
       "class_society": "CCS",
       "flag": "Singapore",
       "gt": "107514",
-      "dwt": "",
+      "dwt": 207219.0,
       "surveys": [
         {
           "type": "boiler",
@@ -8634,7 +8634,7 @@
       "class_society": "CCS",
       "flag": "Singapore",
       "gt": "107222",
-      "dwt": "",
+      "dwt": 207469.0,
       "surveys": [
         {
           "type": "boiler",
@@ -8730,7 +8730,7 @@
       "class_society": "CCS",
       "flag": "Singapore",
       "gt": "114019",
-      "dwt": "",
+      "dwt": 229117.0,
       "surveys": [
         {
           "type": "boiler",
@@ -8932,7 +8932,7 @@
       "class_society": "DNV",
       "flag": "Singapore",
       "gt": "174863",
-      "dwt": "",
+      "dwt": 324949.7,
       "surveys": [
         {
           "type": "boiler",

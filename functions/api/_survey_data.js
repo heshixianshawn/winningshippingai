@@ -1,5 +1,5 @@
 // Auto-generated. NK Survey Status v2 extraction + full fleet merge.
-// Updated: 2026-09-01 23:34 | Ships: 62
+// Updated: 2026-09-01 23:56 | Ships: 62
 
 const ships = {
   "SUNNY_BEYLA": {
@@ -750,6 +750,6 @@ const ships = {
 
 export const SURVEY_DATA = {
   ships,
-  lastUpdated: "2026-09-01 23:34",
+  lastUpdated: "2026-09-01 23:56",
   totalShips: 62,
 };
