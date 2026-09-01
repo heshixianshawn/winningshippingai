@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generated": "2026-09-01",
+  "generated": "2026-06-19",
   "count": 64,
   "source": "船舶信息统计2026.xlsx + CCS船舶录(2026-08-23)",
   "ships": {
@@ -1508,7 +1508,7 @@
       "imo": "9364320",
       "call_sign": "3EFD6",
       "owner": "SUNNY BEYLA SHIPPING S.A.",
-      "flag": "Hong Kong",
+      "flag": "Panama",
       "class_notation": "NK",
       "manager": "QINGDAO ZHONGJI INTERNATIONAL SHIPS MANAGEMENT CO., LTD",
       "hull_no": "2182",

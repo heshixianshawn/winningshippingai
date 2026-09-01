@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-09-01 13:02",
-  "total_ships": 61,
+  "last_updated": "2026-09-01 15:00",
+  "total_ships": 62,
   "ships": {
     "SUNNY_BEYLA": {
       "name": "SUNNY BEYLA",
       "imo": "9364320",
       "class_society": "NK",
-      "flag": "Panama",
-      "gt": 90092,
-      "dwt": 180201.0,
+      "flag": "Hong Kong, China",
+      "gt": "90092",
+      "dwt": "180201",
       "surveys": [
         {
           "type": "special_survey",
@@ -78,6 +78,42 @@
           "type": "statutory",
           "desc": "BWM Renewal (压载水换证)",
           "due_date": "2031-01-21"
+        },
+        {
+          "type": "class",
+          "desc": "Special Survey",
+          "due_date": "21 Jan 2031",
+          "last_done": "22 Jan 2026"
+        },
+        {
+          "type": "class",
+          "desc": "Intermediate Survey (*1)"
+        },
+        {
+          "type": "class",
+          "desc": "Annual Survey"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Boiler Survey",
+          "due_date": "21 Jan 2029",
+          "last_done": "22 Jan 2026"
+        },
+        {
+          "type": "class",
+          "desc": "Docking Survey (*1)",
+          "due_date": "21 Jan 2029",
+          "last_done": "22 Jan 2026"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "21 Jan 2031",
+          "last_done": "22 Jan 2026"
+        },
+        {
+          "type": "class",
+          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -99,15 +135,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "2031-01-21"
+          "expiry": "21 Jan 2031"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "2031-01-21"
+          "expiry": "21 Jan 2031"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "2031-01-21"
+          "expiry": "21 Jan 2031"
         },
         {
           "name": "IMSBC code",
@@ -136,6 +172,10 @@
         {
           "name": "MLC",
           "expiry": "03 Sep 2029"
+        },
+        {
+          "name": "Dangerous Goods",
+          "expiry": "21 Jan 2031"
         }
       ],
       "alerts": {
@@ -151,8 +191,8 @@
       "imo": "9253090",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": 87413,
-      "dwt": 172565.0,
+      "gt": "87413",
+      "dwt": "172565",
       "surveys": [
         {
           "type": "special_survey",
@@ -217,6 +257,44 @@
           "type": "statutory",
           "desc": "BWM Renewal (压载水换证)",
           "due_date": "2026-11-27"
+        },
+        {
+          "type": "class",
+          "desc": "Special Survey",
+          "due_date": "27 Nov 2026",
+          "last_done": "19 Nov 2021"
+        },
+        {
+          "type": "class",
+          "desc": "Intermediate Survey (*1)",
+          "last_done": "30 Nov 2024"
+        },
+        {
+          "type": "class",
+          "desc": "Annual Survey",
+          "last_done": "15 Nov 2025"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Boiler Survey",
+          "due_date": "27 Nov 2026",
+          "last_done": "30 Nov 2024"
+        },
+        {
+          "type": "class",
+          "desc": "Docking Survey (*1)",
+          "due_date": "27 Nov 2026",
+          "last_done": "30 Nov 2024"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "18 Nov 2026",
+          "last_done": "19 Nov 2021"
+        },
+        {
+          "type": "class",
+          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -238,15 +316,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "2026-11-27"
+          "expiry": "19 Nov 2021"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "2026-11-27"
+          "expiry": "19 Nov 2021"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "2026-11-27"
+          "expiry": "19 Nov 2021"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -262,7 +340,7 @@
         },
         {
           "name": "BWM",
-          "expiry": "27 Nov 2026"
+          "expiry": "19 Nov 2021"
         },
         {
           "name": "DOC",
@@ -285,7 +363,7 @@
         "expired": 0,
         "urgent_7d": 0,
         "warning_30d": 0,
-        "info_90d": 22
+        "info_90d": 19
       },
       "extraction_confidence": "high"
     },
@@ -294,8 +372,8 @@
       "imo": "9198240",
       "class_society": "NK",
       "flag": "Panama",
-      "gt": 87473,
-      "dwt": 172498.0,
+      "gt": "87473",
+      "dwt": "172498",
       "surveys": [
         {
           "type": "special_survey",
@@ -360,6 +438,43 @@
           "type": "statutory",
           "desc": "BWM Renewal (压载水换证)",
           "due_date": "2030-06-29"
+        },
+        {
+          "type": "class",
+          "desc": "Special Survey",
+          "due_date": "29 Jun 2030",
+          "last_done": "30 Jun 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Intermediate Survey (*1)"
+        },
+        {
+          "type": "class",
+          "desc": "Annual Survey",
+          "last_done": "03 Jun 2026"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Boiler Survey",
+          "due_date": "29 Jun 2028",
+          "last_done": "30 Jun 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Docking Survey (*1)",
+          "due_date": "29 Jun 2028",
+          "last_done": "30 Jun 2025"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "29 Jun 2030",
+          "last_done": "05 Oct 2020"
+        },
+        {
+          "type": "class",
+          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -381,15 +496,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "2030-06-29"
+          "expiry": "29 Jun 2030"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "2030-06-29"
+          "expiry": "29 Jun 2030"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "2030-06-29"
+          "expiry": "29 Jun 2030"
         },
         {
           "name": "IMSBC code",
@@ -429,8 +544,8 @@
       "imo": "9406489",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": 90092,
-      "dwt": 180181.0,
+      "gt": "90092",
+      "dwt": "180181",
       "surveys": [
         {
           "type": "special_survey",
@@ -500,6 +615,44 @@
           "type": "statutory",
           "desc": "BWM Renewal (压载水换证)",
           "due_date": "2027-11-21"
+        },
+        {
+          "type": "class",
+          "desc": "Special Survey",
+          "due_date": "21 Nov 2027",
+          "last_done": "26 Nov 2022"
+        },
+        {
+          "type": "class",
+          "desc": "Intermediate Survey (*1)",
+          "last_done": "20 Oct 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Annual Survey",
+          "last_done": "17 Dec 2024"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Boiler Survey",
+          "due_date": "21 Nov 2027",
+          "last_done": "20 Oct 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Docking Survey (*1)",
+          "due_date": "21 Nov 2027",
+          "last_done": "20 Oct 2025"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "19 Oct 2030",
+          "last_done": "20 Oct 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -521,15 +674,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "2027-11-21"
+          "expiry": "21 Nov 2027"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "2027-11-21"
+          "expiry": "21 Nov 2027"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "2027-11-21"
+          "expiry": "21 Nov 2027"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -537,7 +690,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "2027-11-21"
+          "expiry": "21 Nov 2027"
         },
         {
           "name": "IMSBC code",
@@ -576,9 +729,9 @@
       "name": "SUNNY COYAH",
       "imo": "9387114",
       "class_society": "NK",
-      "flag": "Hong Kong",
-      "gt": 90125,
-      "dwt": 180201.0,
+      "flag": "Hong Kong, China",
+      "gt": "90125",
+      "dwt": "180201",
       "surveys": [
         {
           "type": "special_survey",
@@ -643,6 +796,44 @@
           "type": "statutory",
           "desc": "BWM Renewal (压载水换证)",
           "due_date": "2027-04-25"
+        },
+        {
+          "type": "class",
+          "desc": "Special Survey",
+          "due_date": "25 Apr 2027",
+          "last_done": "05 May 2022"
+        },
+        {
+          "type": "class",
+          "desc": "Intermediate Survey (*1)",
+          "last_done": "06 Jul 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Annual Survey",
+          "last_done": "19 Feb 2026"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Boiler Survey",
+          "due_date": "25 Apr 2027",
+          "last_done": "06 Jul 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Docking Survey (*1)",
+          "due_date": "25 Apr 2027",
+          "last_done": "06 Jul 2025"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "04 May 2027",
+          "last_done": "26 Apr 2007"
+        },
+        {
+          "type": "class",
+          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -664,15 +855,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "2027-04-25"
+          "expiry": "25 Apr 2027"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "2027-04-25"
+          "expiry": "25 Apr 2027"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "2027-04-25"
+          "expiry": "25 Apr 2027"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -680,7 +871,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "2027-04-25"
+          "expiry": "25 Apr 2027"
         },
         {
           "name": "IMSBC code",
@@ -720,8 +911,8 @@
       "imo": "9398149",
       "class_society": "NK",
       "flag": "Panama",
-      "gt": 106367,
-      "dwt": 207991.0,
+      "gt": "106367",
+      "dwt": "207991",
       "surveys": [
         {
           "type": "special_survey",
@@ -791,6 +982,43 @@
           "type": "statutory",
           "desc": "BWM Renewal (压载水换证)",
           "due_date": "2029-10-22"
+        },
+        {
+          "type": "class",
+          "desc": "Special Survey",
+          "due_date": "22 Oct 2029",
+          "last_done": "10 Sep 2024"
+        },
+        {
+          "type": "class",
+          "desc": "Intermediate Survey (*1)"
+        },
+        {
+          "type": "class",
+          "desc": "Annual Survey",
+          "last_done": "08 Aug 2025"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Boiler Survey",
+          "due_date": "09 Sep 2027",
+          "last_done": "10 Sep 2024"
+        },
+        {
+          "type": "class",
+          "desc": "Docking Survey (*1)",
+          "due_date": "09 Sep 2027",
+          "last_done": "10 Sep 2024"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "23 Oct 2029",
+          "last_done": "10 Sep 2024"
+        },
+        {
+          "type": "class",
+          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -812,15 +1040,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "2029-10-22"
+          "expiry": "22 Oct 2029"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "2029-10-22"
+          "expiry": "22 Oct 2029"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "2029-10-22"
+          "expiry": "22 Oct 2029"
         },
         {
           "name": "IMSBC code",
@@ -859,9 +1087,9 @@
       "name": "SUNNY KALOUM",
       "imo": "9336969",
       "class_society": "NK",
-      "flag": "Hong Kong",
-      "gt": 106367,
-      "dwt": 208014.0,
+      "flag": "Hong Kong, China",
+      "gt": "106367",
+      "dwt": "208014",
       "surveys": [
         {
           "type": "special_survey",
@@ -931,6 +1159,43 @@
           "type": "statutory",
           "desc": "BWM Renewal (压载水换证)",
           "due_date": "2030-10-07"
+        },
+        {
+          "type": "class",
+          "desc": "Special Survey",
+          "due_date": "07 Oct 2030",
+          "last_done": "16 Jul 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Intermediate Survey (*1)"
+        },
+        {
+          "type": "class",
+          "desc": "Annual Survey",
+          "last_done": "08 Jul 2026"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Boiler Survey",
+          "due_date": "15 Jul 2028",
+          "last_done": "16 Jul 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Docking Survey (*1)",
+          "due_date": "15 Jul 2028",
+          "last_done": "16 Jul 2025"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "21 Sep 2027",
+          "last_done": "06 Nov 2007"
+        },
+        {
+          "type": "class",
+          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -956,15 +1221,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "2030-10-07"
+          "expiry": "07 Oct 2030"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "2030-10-07"
+          "expiry": "07 Oct 2030"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "2030-10-07"
+          "expiry": "07 Oct 2030"
         },
         {
           "name": "IMSBC code",
@@ -1007,9 +1272,9 @@
       "name": "SUNNY KAMSAR",
       "imo": "9336957",
       "class_society": "NK",
-      "flag": "Hong Kong",
-      "gt": 101953,
-      "dwt": 203200.0,
+      "flag": "Hong Kong, China",
+      "gt": "101953",
+      "dwt": "203200",
       "surveys": [
         {
           "type": "special_survey",
@@ -1074,6 +1339,43 @@
           "type": "statutory",
           "desc": "BWM Renewal (压载水换证)",
           "due_date": "2030-06-24"
+        },
+        {
+          "type": "class",
+          "desc": "Special Survey",
+          "due_date": "24 Jun 2030",
+          "last_done": "16 Jul 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Intermediate Survey (*1)"
+        },
+        {
+          "type": "class",
+          "desc": "Annual Survey",
+          "last_done": "15 Jun 2026"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Boiler Survey",
+          "due_date": "15 Jul 2028",
+          "last_done": "16 Jul 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Docking Survey (*1)",
+          "due_date": "15 Jul 2028",
+          "last_done": "16 Jul 2025"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "15 Jul 2030",
+          "last_done": "25 May 2007"
+        },
+        {
+          "type": "class",
+          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -1095,15 +1397,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "2030-06-24"
+          "expiry": "24 Jun 2030"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "2030-06-24"
+          "expiry": "24 Jun 2030"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "2030-06-24"
+          "expiry": "24 Jun 2030"
         },
         {
           "name": "IMSBC code",
@@ -1147,8 +1449,8 @@
       "imo": "9398113",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": 106367,
-      "dwt": 207945.0,
+      "gt": "106367",
+      "dwt": "207945",
       "surveys": [
         {
           "type": "special_survey",
@@ -1213,6 +1515,43 @@
           "type": "statutory",
           "desc": "BWM Renewal (压载水换证)",
           "due_date": "2030-05-24"
+        },
+        {
+          "type": "class",
+          "desc": "Special Survey",
+          "due_date": "24 May 2030",
+          "last_done": "22 Aug 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Intermediate Survey (*1)"
+        },
+        {
+          "type": "class",
+          "desc": "Annual Survey",
+          "last_done": "25 Jul 2026"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Boiler Survey",
+          "due_date": "21 Aug 2028",
+          "last_done": "22 Aug 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Docking Survey (*1)",
+          "due_date": "21 Aug 2028",
+          "last_done": "22 Aug 2025"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "21 Aug 2030",
+          "last_done": "22 May 2020"
+        },
+        {
+          "type": "class",
+          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -1238,15 +1577,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "2030-05-24"
+          "expiry": "24 May 2030"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "2030-05-24"
+          "expiry": "24 May 2030"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "2030-05-24"
+          "expiry": "24 May 2030"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -1289,9 +1628,9 @@
       "name": "SUNNY KINDIA",
       "imo": "9374064",
       "class_society": "NK",
-      "flag": "Hong Kong",
-      "gt": 90396,
-      "dwt": 180182.0,
+      "flag": "Hong Kong, China",
+      "gt": "90396",
+      "dwt": "180182",
       "surveys": [
         {
           "type": "special_survey",
@@ -1361,6 +1700,43 @@
           "type": "statutory",
           "desc": "BWM Renewal (压载水换证)",
           "due_date": "2029-07-01"
+        },
+        {
+          "type": "class",
+          "desc": "Special Survey",
+          "due_date": "01 Jul 2029",
+          "last_done": "20 Apr 2024"
+        },
+        {
+          "type": "class",
+          "desc": "Intermediate Survey (*1)"
+        },
+        {
+          "type": "class",
+          "desc": "Annual Survey",
+          "last_done": "06 Jun 2026"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Boiler Survey",
+          "due_date": "19 Apr 2027",
+          "last_done": "20 Apr 2024"
+        },
+        {
+          "type": "class",
+          "desc": "Docking Survey (*1)",
+          "due_date": "19 Apr 2027",
+          "last_done": "20 Apr 2024"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "21 May 2029",
+          "last_done": "23 May 2014"
+        },
+        {
+          "type": "class",
+          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -1382,15 +1758,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "2029-07-01"
+          "expiry": "01 Jul 2029"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "2029-07-01"
+          "expiry": "01 Jul 2029"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "2029-07-01"
+          "expiry": "01 Jul 2029"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -1398,7 +1774,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "2029-07-01"
+          "expiry": "01 Jul 2029"
         },
         {
           "name": "IMSBC code",
@@ -1437,9 +1813,9 @@
       "name": "SUNNY LABE",
       "imo": "9271597",
       "class_society": "NK",
-      "flag": "Hong Kong",
-      "gt": 102101,
-      "dwt": 203248.0,
+      "flag": "Hong Kong, China",
+      "gt": "102101",
+      "dwt": "203248",
       "surveys": [
         {
           "type": "special_survey",
@@ -1509,6 +1885,43 @@
           "type": "statutory",
           "desc": "BWM Renewal (压载水换证)",
           "due_date": "2029-08-18"
+        },
+        {
+          "type": "class",
+          "desc": "Special Survey",
+          "due_date": "18 Aug 2029",
+          "last_done": "08 Sep 2024"
+        },
+        {
+          "type": "class",
+          "desc": "Intermediate Survey (*1)"
+        },
+        {
+          "type": "class",
+          "desc": "Annual Survey",
+          "last_done": "28 Aug 2026"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Boiler Survey",
+          "due_date": "07 Sep 2027",
+          "last_done": "08 Sep 2024"
+        },
+        {
+          "type": "class",
+          "desc": "Docking Survey (*1)",
+          "due_date": "07 Sep 2027",
+          "last_done": "08 Sep 2024"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "26 Aug 2027",
+          "last_done": "27 Aug 2012"
+        },
+        {
+          "type": "class",
+          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -1530,15 +1943,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "2029-08-18"
+          "expiry": "18 Aug 2029"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "2029-08-18"
+          "expiry": "18 Aug 2029"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "2029-08-18"
+          "expiry": "18 Aug 2029"
         },
         {
           "name": "IMSBC code",
@@ -1563,6 +1976,10 @@
         {
           "name": "MLC",
           "expiry": "11 Sep 2028"
+        },
+        {
+          "name": "Dangerous Goods",
+          "expiry": "18 Aug 2029"
         }
       ],
       "alerts": {
@@ -1578,8 +1995,8 @@
       "imo": "9254666",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": 88674,
-      "dwt": 176391.0,
+      "gt": "88674",
+      "dwt": "176391",
       "surveys": [
         {
           "type": "special_survey",
@@ -1644,6 +2061,44 @@
           "type": "statutory",
           "desc": "BWM Renewal (压载水换证)",
           "due_date": "2027-06-25"
+        },
+        {
+          "type": "class",
+          "desc": "Special Survey",
+          "due_date": "25 Jun 2027",
+          "last_done": "14 Jul 2022"
+        },
+        {
+          "type": "class",
+          "desc": "Intermediate Survey (*1)",
+          "last_done": "06 Jun 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Annual Survey",
+          "last_done": "05 May 2026"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Boiler Survey",
+          "due_date": "25 Jun 2027",
+          "last_done": "06 Jun 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Docking Survey (*1)",
+          "due_date": "25 Jun 2027",
+          "last_done": "06 Jun 2025"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "26 Jul 2027",
+          "last_done": "27 Jul 2017"
+        },
+        {
+          "type": "class",
+          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -1665,15 +2120,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "2027-06-25"
+          "expiry": "25 Jun 2027"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "2027-06-25"
+          "expiry": "25 Jun 2027"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "2027-06-25"
+          "expiry": "25 Jun 2027"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -1706,6 +2161,10 @@
         {
           "name": "ISSC (ISPS)",
           "expiry": "20 Sep 2028"
+        },
+        {
+          "name": "Dangerous Goods",
+          "expiry": "25 Jun 2027"
         }
       ],
       "alerts": {
@@ -1720,9 +2179,9 @@
       "name": "SUNNY MAMOU",
       "imo": "9346342",
       "class_society": "NK",
-      "flag": "Hong Kong",
-      "gt": 104725,
-      "dwt": 206296.0,
+      "flag": "Hong Kong, China",
+      "gt": "104725",
+      "dwt": "206296",
       "surveys": [
         {
           "type": "special_survey",
@@ -1792,6 +2251,43 @@
           "type": "statutory",
           "desc": "BWM Renewal (压载水换证)",
           "due_date": "2030-10-06"
+        },
+        {
+          "type": "class",
+          "desc": "Special Survey",
+          "due_date": "06 Oct 2030",
+          "last_done": "29 Sep 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Intermediate Survey (*1)"
+        },
+        {
+          "type": "class",
+          "desc": "Annual Survey",
+          "last_done": "30 Jul 2026"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Boiler Survey",
+          "due_date": "28 Sep 2028",
+          "last_done": "29 Sep 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Docking Survey (*1)",
+          "due_date": "28 Sep 2028",
+          "last_done": "29 Sep 2025"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "28 Sep 2030",
+          "last_done": "29 Sep 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -1817,15 +2313,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "2030-10-06"
+          "expiry": "06 Oct 2030"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "2030-10-06"
+          "expiry": "06 Oct 2030"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "2030-10-06"
+          "expiry": "06 Oct 2030"
         },
         {
           "name": "IMSBC code",
@@ -1869,8 +2365,8 @@
       "imo": "9331426",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": 101953,
-      "dwt": 203264.0,
+      "gt": "101953",
+      "dwt": "203264",
       "surveys": [
         {
           "type": "special_survey",
@@ -1935,6 +2431,42 @@
           "type": "statutory",
           "desc": "BWM Renewal (压载水换证)",
           "due_date": "2030-11-14"
+        },
+        {
+          "type": "class",
+          "desc": "Special Survey",
+          "due_date": "14 Nov 2030",
+          "last_done": "08 Sep 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Intermediate Survey (*1)"
+        },
+        {
+          "type": "class",
+          "desc": "Annual Survey"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Boiler Survey",
+          "due_date": "07 Sep 2028",
+          "last_done": "08 Sep 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Docking Survey (*1)",
+          "due_date": "07 Sep 2028",
+          "last_done": "08 Sep 2025"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "12 Aug 2030",
+          "last_done": "13 Aug 2015"
+        },
+        {
+          "type": "class",
+          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -1956,15 +2488,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "2030-11-14"
+          "expiry": "14 Nov 2030"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "2030-11-14"
+          "expiry": "14 Nov 2030"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "2030-11-14"
+          "expiry": "14 Nov 2030"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -2008,8 +2540,8 @@
       "imo": "9393187",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": 90111,
-      "dwt": 180129.0,
+      "gt": "90111",
+      "dwt": "180129",
       "surveys": [
         {
           "type": "special_survey",
@@ -2074,6 +2606,43 @@
           "type": "statutory",
           "desc": "BWM Renewal (压载水换证)",
           "due_date": "2029-04-09"
+        },
+        {
+          "type": "class",
+          "desc": "Special Survey",
+          "due_date": "09 Apr 2029",
+          "last_done": "22 Apr 2024"
+        },
+        {
+          "type": "class",
+          "desc": "Intermediate Survey (*1)"
+        },
+        {
+          "type": "class",
+          "desc": "Annual Survey",
+          "last_done": "14 Jan 2026"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Boiler Survey",
+          "due_date": "21 Apr 2027",
+          "last_done": "22 Apr 2024"
+        },
+        {
+          "type": "class",
+          "desc": "Docking Survey (*1)",
+          "due_date": "21 Apr 2027",
+          "last_done": "22 Apr 2024"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "21 Apr 2029",
+          "last_done": "22 Apr 2024"
+        },
+        {
+          "type": "class",
+          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -2099,15 +2668,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "2029-04-09"
+          "expiry": "09 Apr 2029"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "2029-04-09"
+          "expiry": "09 Apr 2029"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "2029-04-09"
+          "expiry": "09 Apr 2029"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -2154,9 +2723,9 @@
       "name": "SUNNY SAILOR",
       "imo": "9439125",
       "class_society": "NK",
-      "flag": "Hong Kong",
-      "gt": 90091,
-      "dwt": 180176.0,
+      "flag": "Hong Kong, China",
+      "gt": "90091",
+      "dwt": "180176",
       "surveys": [
         {
           "type": "special_survey",
@@ -2226,6 +2795,42 @@
           "type": "statutory",
           "desc": "BWM Renewal (压载水换证)",
           "due_date": "2031-09-07"
+        },
+        {
+          "type": "class",
+          "desc": "Special Survey",
+          "due_date": "07 Sep 2031",
+          "last_done": "30 Jul 2026"
+        },
+        {
+          "type": "class",
+          "desc": "Intermediate Survey (*1)"
+        },
+        {
+          "type": "class",
+          "desc": "Annual Survey"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Boiler Survey",
+          "due_date": "29 Jul 2029",
+          "last_done": "30 Jul 2026"
+        },
+        {
+          "type": "class",
+          "desc": "Docking Survey (*1)",
+          "due_date": "29 Jul 2029",
+          "last_done": "30 Jul 2026"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "29 Jul 2031",
+          "last_done": "12 Jun 2021"
+        },
+        {
+          "type": "class",
+          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -2251,15 +2856,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "2031-09-07"
+          "expiry": "07 Sep 2031"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "2031-09-07"
+          "expiry": "07 Sep 2031"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "2031-09-07"
+          "expiry": "07 Sep 2031"
         },
         {
           "name": "IMSBC code",
@@ -2310,9 +2915,9 @@
       "name": "SUNNY SIGUIRI",
       "imo": "9406453",
       "class_society": "NK",
-      "flag": "Hong Kong",
-      "gt": 104721,
-      "dwt": 206312.0,
+      "flag": "Hong Kong, China",
+      "gt": "104721",
+      "dwt": "206312",
       "surveys": [
         {
           "type": "special_survey",
@@ -2382,6 +2987,44 @@
           "type": "statutory",
           "desc": "BWM Renewal (压载水换证)",
           "due_date": "2027-04-24"
+        },
+        {
+          "type": "class",
+          "desc": "Special Survey",
+          "due_date": "24 Apr 2027",
+          "last_done": "23 Jul 2022"
+        },
+        {
+          "type": "class",
+          "desc": "Intermediate Survey (*1)",
+          "last_done": "15 Aug 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Annual Survey",
+          "last_done": "07 Apr 2026"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Boiler Survey",
+          "due_date": "24 Apr 2027",
+          "last_done": "15 Aug 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Docking Survey (*1)",
+          "due_date": "24 Apr 2027",
+          "last_done": "15 Aug 2025"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "24 Jul 2027",
+          "last_done": "23 Jul 2022"
+        },
+        {
+          "type": "class",
+          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -2407,15 +3050,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "2027-04-24"
+          "expiry": "24 Apr 2027"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "2027-04-24"
+          "expiry": "24 Apr 2027"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "2027-04-24"
+          "expiry": "24 Apr 2027"
         },
         {
           "name": "IMSBC code",
@@ -2463,8 +3106,8 @@
       "imo": "9406506",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 104761,
-      "dwt": 206306.0,
+      "gt": "104761",
+      "dwt": "206306",
       "surveys": [
         {
           "type": "special_survey",
@@ -2534,6 +3177,44 @@
           "type": "statutory",
           "desc": "BWM Renewal (压载水换证)",
           "due_date": "2027-12-18"
+        },
+        {
+          "type": "class",
+          "desc": "Special Survey",
+          "due_date": "18 Dec 2027",
+          "last_done": "03 Mar 2023"
+        },
+        {
+          "type": "class",
+          "desc": "Intermediate Survey (*1)",
+          "last_done": "23 Dec 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Annual Survey",
+          "last_done": "21 Dec 2024"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Boiler Survey",
+          "due_date": "18 Dec 2027",
+          "last_done": "23 Dec 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Docking Survey (*1)",
+          "due_date": "18 Dec 2027",
+          "last_done": "23 Dec 2025"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "22 Dec 2030",
+          "last_done": "23 Dec 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -2555,15 +3236,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "2027-12-18"
+          "expiry": "18 Dec 2027"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "2027-12-18"
+          "expiry": "18 Dec 2027"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "2027-12-18"
+          "expiry": "18 Dec 2027"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -2571,7 +3252,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "2027-12-18"
+          "expiry": "18 Dec 2027"
         },
         {
           "name": "IMSBC code",
@@ -2611,8 +3292,8 @@
       "imo": "9492218",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 106884,
-      "dwt": 206125.0,
+      "gt": "106884",
+      "dwt": "206125",
       "surveys": [
         {
           "type": "special_survey",
@@ -2681,6 +3362,42 @@
           "type": "statutory",
           "desc": "BWM Renewal (压载水换证)",
           "due_date": "2029-08-21"
+        },
+        {
+          "type": "class",
+          "desc": "Special Survey",
+          "due_date": "21 Aug 2029",
+          "last_done": "27 Sep 2024"
+        },
+        {
+          "type": "class",
+          "desc": "Intermediate Survey (*1)"
+        },
+        {
+          "type": "class",
+          "desc": "Annual Survey",
+          "last_done": "25 May 2025"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Boiler Survey",
+          "due_date": "26 Sep 2027",
+          "last_done": "27 Sep 2024"
+        },
+        {
+          "type": "class",
+          "desc": "Docking Survey (*1)",
+          "due_date": "26 Sep 2027",
+          "last_done": "27 Sep 2024"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Prop. Shaft Svy",
+          "last_done": "03 Jan 2027"
+        },
+        {
+          "type": "class",
+          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -2702,15 +3419,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "2029-08-21"
+          "expiry": "21 Aug 2029"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "2029-08-21"
+          "expiry": "21 Aug 2029"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "2029-08-21"
+          "expiry": "21 Aug 2029"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -2718,7 +3435,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "2029-08-21"
+          "expiry": "21 Aug 2029"
         },
         {
           "name": "IMSBC code",
@@ -2758,8 +3475,8 @@
       "imo": "9250610",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": 94779,
-      "dwt": 184887.0,
+      "gt": "94779",
+      "dwt": "184887",
       "surveys": [
         {
           "type": "special_survey",
@@ -2789,6 +3506,43 @@
           "type": "statutory",
           "desc": "Load Line Renewal (载重线换证)",
           "due_date": "2030-10-17"
+        },
+        {
+          "type": "class",
+          "desc": "Special Survey",
+          "due_date": "17 Oct 2030",
+          "last_done": "25 Sep 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Intermediate Survey (*1)"
+        },
+        {
+          "type": "class",
+          "desc": "Annual Survey",
+          "last_done": "16 Aug 2026"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Boiler Survey",
+          "due_date": "24 Sep 2028",
+          "last_done": "25 Sep 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Docking Survey (*1)",
+          "due_date": "24 Sep 2028",
+          "last_done": "25 Sep 2025"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "24 Sep 2030",
+          "last_done": "25 Sep 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -2810,15 +3564,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "2030-10-17"
+          "expiry": "17 Oct 2030"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "2030-10-17"
+          "expiry": "17 Oct 2030"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "2030-10-17"
+          "expiry": "17 Oct 2030"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -2847,6 +3601,10 @@
         {
           "name": "ISSC (ISPS)",
           "expiry": "10 Jun 2029"
+        },
+        {
+          "name": "Dangerous Goods",
+          "expiry": "17 Oct 2030"
         }
       ],
       "alerts": {
@@ -2862,8 +3620,8 @@
       "imo": "9325001",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 90091,
-      "dwt": 180265.0,
+      "gt": "90091",
+      "dwt": "180265",
       "surveys": [
         {
           "type": "special_survey",
@@ -2933,6 +3691,43 @@
           "type": "statutory",
           "desc": "BWM Renewal (压载水换证)",
           "due_date": "2030-01-31"
+        },
+        {
+          "type": "class",
+          "desc": "Special Survey",
+          "due_date": "31 Jan 2030",
+          "last_done": "28 Dec 2024"
+        },
+        {
+          "type": "class",
+          "desc": "Intermediate Survey (*1)"
+        },
+        {
+          "type": "class",
+          "desc": "Annual Survey",
+          "last_done": "05 Nov 2025"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Boiler Survey",
+          "due_date": "27 Dec 2027",
+          "last_done": "28 Dec 2024"
+        },
+        {
+          "type": "class",
+          "desc": "Docking Survey (*1)",
+          "due_date": "27 Dec 2027",
+          "last_done": "28 Dec 2024"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "30 Jan 2030",
+          "last_done": "14 Dec 2019"
+        },
+        {
+          "type": "class",
+          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -2954,15 +3749,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "2030-01-31"
+          "expiry": "31 Jan 2030"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "2030-01-31"
+          "expiry": "31 Jan 2030"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "2030-01-31"
+          "expiry": "31 Jan 2030"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -2970,7 +3765,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "2030-01-31"
+          "expiry": "31 Jan 2030"
         },
         {
           "name": "IMSBC code",
@@ -3010,8 +3805,8 @@
       "imo": "9374088",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 90091,
-      "dwt": 180277.0,
+      "gt": "90091",
+      "dwt": "180277",
       "surveys": [
         {
           "type": "special_survey",
@@ -3081,6 +3876,42 @@
           "type": "statutory",
           "desc": "BWM Renewal (压载水换证)",
           "due_date": "2031-05-17"
+        },
+        {
+          "type": "class",
+          "desc": "Special Survey",
+          "due_date": "17 May 2031",
+          "last_done": "12 May 2026"
+        },
+        {
+          "type": "class",
+          "desc": "Intermediate Survey (*1)"
+        },
+        {
+          "type": "class",
+          "desc": "Annual Survey"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Boiler Survey",
+          "due_date": "23 Oct 2028",
+          "last_done": "24 Oct 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Docking Survey (*1)",
+          "due_date": "23 Oct 2028",
+          "last_done": "24 Oct 2025"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "02 Aug 2028",
+          "last_done": "27 Jun 2023"
+        },
+        {
+          "type": "class",
+          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -3102,15 +3933,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "2031-05-17"
+          "expiry": "17 May 2031"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "2031-05-17"
+          "expiry": "17 May 2031"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "2031-05-17"
+          "expiry": "17 May 2031"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -3118,7 +3949,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "2031-05-17"
+          "expiry": "17 May 2031"
         },
         {
           "name": "IMSBC code",
@@ -3158,8 +3989,8 @@
       "imo": "9232058",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 87590,
-      "dwt": 170578.0,
+      "gt": "87590",
+      "dwt": "170578",
       "surveys": [
         {
           "type": "special_survey",
@@ -3224,6 +4055,43 @@
           "type": "statutory",
           "desc": "BWM Renewal (压载水换证)",
           "due_date": "2030-07-15"
+        },
+        {
+          "type": "class",
+          "desc": "Special Survey",
+          "due_date": "15 Jul 2030",
+          "last_done": "16 Jul 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Intermediate Survey (*1)"
+        },
+        {
+          "type": "class",
+          "desc": "Annual Survey",
+          "last_done": "17 Aug 2026"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Boiler Survey",
+          "due_date": "15 Jul 2028",
+          "last_done": "16 Jul 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Docking Survey (*1)",
+          "due_date": "15 Jul 2028",
+          "last_done": "16 Jul 2025"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "15 Jul 2030",
+          "last_done": "16 Jul 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -3245,15 +4113,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "2030-07-15"
+          "expiry": "15 Jul 2030"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "2030-07-15"
+          "expiry": "15 Jul 2030"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "2030-07-15"
+          "expiry": "15 Jul 2030"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -3261,7 +4129,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "2030-07-15"
+          "expiry": "15 Jul 2030"
         },
         {
           "name": "IMSBC code",
@@ -3286,6 +4154,10 @@
         {
           "name": "ISSC (ISPS)",
           "expiry": "20 Jun 2028"
+        },
+        {
+          "name": "Dangerous Goods",
+          "expiry": "15 Jul 2030"
         }
       ],
       "alerts": {
@@ -3301,8 +4173,8 @@
       "imo": "9279393",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 113929,
-      "dwt": 229186.0,
+      "gt": "113929",
+      "dwt": "229186",
       "surveys": [
         {
           "type": "special_survey",
@@ -3372,6 +4244,43 @@
           "type": "statutory",
           "desc": "BWM Renewal (压载水换证)",
           "due_date": "2029-05-25"
+        },
+        {
+          "type": "class",
+          "desc": "Special Survey",
+          "due_date": "25 May 2029",
+          "last_done": "08 Apr 2024"
+        },
+        {
+          "type": "class",
+          "desc": "Intermediate Survey (*1)"
+        },
+        {
+          "type": "class",
+          "desc": "Annual Survey",
+          "last_done": "28 Feb 2026"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Boiler Survey",
+          "due_date": "07 Apr 2027",
+          "last_done": "08 Apr 2024"
+        },
+        {
+          "type": "class",
+          "desc": "Docking Survey (*1)",
+          "due_date": "07 Apr 2027",
+          "last_done": "08 Apr 2024"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "24 May 2029",
+          "last_done": "08 Apr 2024"
+        },
+        {
+          "type": "class",
+          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -3393,15 +4302,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "2029-05-25"
+          "expiry": "25 May 2029"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "2029-05-25"
+          "expiry": "25 May 2029"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "2029-05-25"
+          "expiry": "25 May 2029"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -3409,7 +4318,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "2029-05-25"
+          "expiry": "25 May 2029"
         },
         {
           "name": "IMSBC code",
@@ -3449,8 +4358,8 @@
       "imo": "9314076",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 90091,
-      "dwt": 180310.0,
+      "gt": "90091",
+      "dwt": "180310",
       "surveys": [
         {
           "type": "special_survey",
@@ -3520,6 +4429,43 @@
           "type": "statutory",
           "desc": "BWM Renewal (压载水换证)",
           "due_date": "2029-10-19"
+        },
+        {
+          "type": "class",
+          "desc": "Special Survey",
+          "due_date": "19 Oct 2029",
+          "last_done": "07 Oct 2024"
+        },
+        {
+          "type": "class",
+          "desc": "Intermediate Survey (*1)"
+        },
+        {
+          "type": "class",
+          "desc": "Annual Survey",
+          "last_done": "26 Aug 2026"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Boiler Survey",
+          "due_date": "06 Oct 2027",
+          "last_done": "07 Oct 2024"
+        },
+        {
+          "type": "class",
+          "desc": "Docking Survey (*1)",
+          "due_date": "06 Oct 2027",
+          "last_done": "07 Oct 2024"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "21 Oct 2029",
+          "last_done": "23 Oct 2014"
+        },
+        {
+          "type": "class",
+          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -3541,15 +4487,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "2029-10-19"
+          "expiry": "19 Oct 2029"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "2029-10-19"
+          "expiry": "19 Oct 2029"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "2029-10-19"
+          "expiry": "19 Oct 2029"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -3557,7 +4503,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "2029-10-19"
+          "expiry": "19 Oct 2029"
         },
         {
           "name": "IMSBC code",
@@ -3582,6 +4528,10 @@
         {
           "name": "ISSC (ISPS)",
           "expiry": "07 May 2028"
+        },
+        {
+          "name": "Dangerous Goods",
+          "expiry": "19 Oct 2029"
         }
       ],
       "alerts": {
@@ -3597,8 +4547,8 @@
       "imo": "9722948",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 107791,
-      "dwt": 209513.0,
+      "gt": "107791",
+      "dwt": "209513",
       "surveys": [
         {
           "type": "special_survey",
@@ -3668,6 +4618,42 @@
           "type": "statutory",
           "desc": "BWM Renewal (压载水换证)",
           "due_date": "2031-04-25"
+        },
+        {
+          "type": "class",
+          "desc": "Special Survey",
+          "due_date": "25 Apr 2031",
+          "last_done": "02 Mar 2026"
+        },
+        {
+          "type": "class",
+          "desc": "Intermediate Survey (*1)"
+        },
+        {
+          "type": "class",
+          "desc": "Annual Survey"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Boiler Survey",
+          "due_date": "01 Mar 2029",
+          "last_done": "02 Mar 2026"
+        },
+        {
+          "type": "class",
+          "desc": "Docking Survey (*1)",
+          "due_date": "01 Mar 2029",
+          "last_done": "02 Mar 2026"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "25 Apr 2031",
+          "last_done": "16 May 2021"
+        },
+        {
+          "type": "class",
+          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -3689,15 +4675,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "2031-04-25"
+          "expiry": "25 Apr 2031"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "2031-04-25"
+          "expiry": "25 Apr 2031"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "2031-04-25"
+          "expiry": "25 Apr 2031"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -3705,7 +4691,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "2031-03-01"
+          "expiry": "01 Mar 2031"
         },
         {
           "name": "IMSBC code",
@@ -3753,8 +4739,8 @@
       "imo": "9722950",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 107791,
-      "dwt": 209545.0,
+      "gt": "107791",
+      "dwt": "209545",
       "surveys": [
         {
           "type": "special_survey",
@@ -3824,6 +4810,42 @@
           "type": "statutory",
           "desc": "BWM Renewal (压载水换证)",
           "due_date": "2031-08-09"
+        },
+        {
+          "type": "class",
+          "desc": "Special Survey",
+          "due_date": "09 Aug 2031",
+          "last_done": "07 Jun 2026"
+        },
+        {
+          "type": "class",
+          "desc": "Intermediate Survey (*1)"
+        },
+        {
+          "type": "class",
+          "desc": "Annual Survey"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Boiler Survey",
+          "due_date": "06 Jun 2029",
+          "last_done": "07 Jun 2026"
+        },
+        {
+          "type": "class",
+          "desc": "Docking Survey (*1)",
+          "due_date": "06 Jun 2029",
+          "last_done": "07 Jun 2026"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "08 Aug 2031",
+          "last_done": "15 Jun 2021"
+        },
+        {
+          "type": "class",
+          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -3845,15 +4867,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "2031-08-09"
+          "expiry": "09 Aug 2031"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "2031-08-09"
+          "expiry": "09 Aug 2031"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "2031-08-09"
+          "expiry": "09 Aug 2031"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -3861,7 +4883,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "2031-06-06"
+          "expiry": "06 Jun 2031"
         },
         {
           "name": "IMSBC code",
@@ -3909,8 +4931,8 @@
       "imo": "9633068",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 92758,
-      "dwt": 181501.0,
+      "gt": "92758",
+      "dwt": "181501",
       "surveys": [
         {
           "type": "special_survey",
@@ -3975,6 +4997,43 @@
           "type": "statutory",
           "desc": "BWM Renewal (压载水换证)",
           "due_date": "2030-07-25"
+        },
+        {
+          "type": "class",
+          "desc": "Special Survey",
+          "due_date": "25 Jul 2030",
+          "last_done": "24 Jul 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Intermediate Survey (*1)"
+        },
+        {
+          "type": "class",
+          "desc": "Annual Survey",
+          "last_done": "19 Jun 2026"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Boiler Survey",
+          "due_date": "23 Jul 2028",
+          "last_done": "24 Jul 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Docking Survey (*1)",
+          "due_date": "23 Jul 2028",
+          "last_done": "24 Jul 2025"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "23 Jul 2030",
+          "last_done": "24 Jul 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -3996,15 +5055,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "2030-07-25"
+          "expiry": "25 Jul 2030"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "2030-07-25"
+          "expiry": "25 Jul 2030"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "2030-07-25"
+          "expiry": "25 Jul 2030"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -4052,8 +5111,8 @@
       "imo": "9314052",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 90091,
-      "dwt": 180310.0,
+      "gt": "90091",
+      "dwt": "180310",
       "surveys": [
         {
           "type": "special_survey",
@@ -4123,6 +5182,43 @@
           "type": "statutory",
           "desc": "BWM Renewal (压载水换证)",
           "due_date": "2029-08-08"
+        },
+        {
+          "type": "class",
+          "desc": "Special Survey",
+          "due_date": "08 Aug 2029",
+          "last_done": "16 Aug 2024"
+        },
+        {
+          "type": "class",
+          "desc": "Intermediate Survey (*1)"
+        },
+        {
+          "type": "class",
+          "desc": "Annual Survey",
+          "last_done": "28 Aug 2026"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Boiler Survey",
+          "due_date": "15 Aug 2027",
+          "last_done": "16 Aug 2024"
+        },
+        {
+          "type": "class",
+          "desc": "Docking Survey (*1)",
+          "due_date": "15 Aug 2027",
+          "last_done": "16 Aug 2024"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "23 Nov 2031",
+          "last_done": "25 Nov 2021"
+        },
+        {
+          "type": "class",
+          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -4144,15 +5240,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "2029-08-08"
+          "expiry": "08 Aug 2029"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "2029-08-08"
+          "expiry": "08 Aug 2029"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "2029-08-08"
+          "expiry": "08 Aug 2029"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -4160,7 +5256,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "2029-08-08"
+          "expiry": "08 Aug 2029"
         },
         {
           "name": "IMSBC code",
@@ -4185,6 +5281,10 @@
         {
           "name": "ISSC (ISPS)",
           "expiry": "19 Jan 2031"
+        },
+        {
+          "name": "Dangerous Goods",
+          "expiry": "08 Aug 2029"
         }
       ],
       "alerts": {
@@ -4200,8 +5300,8 @@
       "imo": "9659854",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 92752,
-      "dwt": 181371.0,
+      "gt": "92752",
+      "dwt": "181371",
       "surveys": [
         {
           "type": "special_survey",
@@ -4271,6 +5371,44 @@
           "type": "statutory",
           "desc": "BWM Renewal (压载水换证)",
           "due_date": "2028-07-21"
+        },
+        {
+          "type": "class",
+          "desc": "Special Survey",
+          "due_date": "21 Jul 2028",
+          "last_done": "04 Jul 2023"
+        },
+        {
+          "type": "class",
+          "desc": "Intermediate Survey (*1)",
+          "last_done": "09 Jun 2026"
+        },
+        {
+          "type": "class",
+          "desc": "Annual Survey",
+          "last_done": "15 Jul 2025"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Boiler Survey",
+          "due_date": "21 Jul 2028",
+          "last_done": "09 Jun 2026"
+        },
+        {
+          "type": "class",
+          "desc": "Docking Survey (*1)",
+          "due_date": "21 Jul 2028",
+          "last_done": "09 Jun 2026"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "03 Jul 2028",
+          "last_done": "04 Jul 2023"
+        },
+        {
+          "type": "class",
+          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -4292,15 +5430,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "2028-07-21"
+          "expiry": "21 Jul 2028"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "2028-07-21"
+          "expiry": "21 Jul 2028"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "2028-07-21"
+          "expiry": "21 Jul 2028"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -4308,7 +5446,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "2028-07-21"
+          "expiry": "21 Jul 2028"
         },
         {
           "name": "IMSBC code",
@@ -4348,8 +5486,8 @@
       "imo": "9659866",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 92752,
-      "dwt": 181387.0,
+      "gt": "92752",
+      "dwt": "181387",
       "surveys": [
         {
           "type": "special_survey",
@@ -4419,6 +5557,43 @@
           "type": "statutory",
           "desc": "BWM Renewal (压载水换证)",
           "due_date": "2029-02-27"
+        },
+        {
+          "type": "class",
+          "desc": "Special Survey",
+          "due_date": "27 Feb 2029",
+          "last_done": "04 Dec 2023"
+        },
+        {
+          "type": "class",
+          "desc": "Intermediate Survey (*1)"
+        },
+        {
+          "type": "class",
+          "desc": "Annual Survey",
+          "last_done": "06 Jan 2026"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Boiler Survey",
+          "due_date": "03 Dec 2026",
+          "last_done": "04 Dec 2023"
+        },
+        {
+          "type": "class",
+          "desc": "Docking Survey (*1)",
+          "due_date": "03 Dec 2026",
+          "last_done": "04 Dec 2023"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "26 Feb 2029",
+          "last_done": "28 Feb 2014"
+        },
+        {
+          "type": "class",
+          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -4440,15 +5615,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "2029-02-27"
+          "expiry": "27 Feb 2029"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "2029-02-27"
+          "expiry": "27 Feb 2029"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "2029-02-27"
+          "expiry": "27 Feb 2029"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -4456,7 +5631,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "2029-02-27"
+          "expiry": "27 Feb 2029"
         },
         {
           "name": "IMSBC code",
@@ -4496,8 +5671,8 @@
       "imo": "9271602",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": 102207,
-      "dwt": 203315.0,
+      "gt": "102207",
+      "dwt": "203315",
       "surveys": [
         {
           "type": "special_survey",
@@ -4562,6 +5737,42 @@
           "type": "statutory",
           "desc": "BWM Renewal (压载水换证)",
           "due_date": "2031-01-04"
+        },
+        {
+          "type": "class",
+          "desc": "Special Survey",
+          "due_date": "04 Jan 2031",
+          "last_done": "05 Jan 2026"
+        },
+        {
+          "type": "class",
+          "desc": "Intermediate Survey (*1)"
+        },
+        {
+          "type": "class",
+          "desc": "Annual Survey"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Boiler Survey",
+          "due_date": "04 Jan 2029",
+          "last_done": "05 Jan 2026"
+        },
+        {
+          "type": "class",
+          "desc": "Docking Survey (*1)",
+          "due_date": "04 Jan 2029",
+          "last_done": "05 Jan 2026"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "05 Apr 2029",
+          "last_done": "04 Apr 2019"
+        },
+        {
+          "type": "class",
+          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -4583,15 +5794,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "2031-01-04"
+          "expiry": "04 Jan 2031"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "2031-01-04"
+          "expiry": "04 Jan 2031"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "2031-01-04"
+          "expiry": "04 Jan 2031"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -4624,6 +5835,10 @@
         {
           "name": "ISSC (ISPS)",
           "expiry": "10 Apr 2027"
+        },
+        {
+          "name": "Dangerous Goods",
+          "expiry": "04 Jan 2031"
         }
       ],
       "alerts": {
@@ -4638,9 +5853,9 @@
       "name": "WINNING PRIDE",
       "imo": "9450234",
       "class_society": "NK",
-      "flag": "Hong Kong",
-      "gt": 89603,
-      "dwt": 176890.0,
+      "flag": "Hong Kong, China",
+      "gt": "89603",
+      "dwt": "176890",
       "surveys": [
         {
           "type": "special_survey",
@@ -4710,6 +5925,43 @@
           "type": "statutory",
           "desc": "BWM Renewal (压载水换证)",
           "due_date": "2029-02-16"
+        },
+        {
+          "type": "class",
+          "desc": "Special Survey",
+          "due_date": "16 Feb 2029",
+          "last_done": "07 Feb 2024"
+        },
+        {
+          "type": "class",
+          "desc": "Intermediate Survey (*1)"
+        },
+        {
+          "type": "class",
+          "desc": "Annual Survey",
+          "last_done": "04 Dec 2025"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Boiler Survey",
+          "due_date": "06 Feb 2027",
+          "last_done": "07 Feb 2024"
+        },
+        {
+          "type": "class",
+          "desc": "Docking Survey (*1)",
+          "due_date": "06 Feb 2027",
+          "last_done": "07 Feb 2024"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "12 Feb 2029",
+          "last_done": "31 Dec 2018"
+        },
+        {
+          "type": "class",
+          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -4735,15 +5987,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "2029-02-16"
+          "expiry": "16 Feb 2029"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "2029-02-16"
+          "expiry": "16 Feb 2029"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "2029-02-16"
+          "expiry": "16 Feb 2029"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -4751,7 +6003,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "2029-02-16"
+          "expiry": "16 Feb 2029"
         },
         {
           "name": "IMSBC code",
@@ -4790,9 +6042,9 @@
       "name": "WINNING QUEEN",
       "imo": "9311282",
       "class_society": "NK",
-      "flag": "Hong Kong",
-      "gt": 89726,
-      "dwt": 176967.0,
+      "flag": "Hong Kong, China",
+      "gt": "89726",
+      "dwt": "176967",
       "surveys": [
         {
           "type": "special_survey",
@@ -4862,6 +6114,42 @@
           "type": "statutory",
           "desc": "BWM Renewal (压载水换证)",
           "due_date": "2031-06-01"
+        },
+        {
+          "type": "class",
+          "desc": "Special Survey",
+          "due_date": "01 Jun 2031",
+          "last_done": "17 Jun 2026"
+        },
+        {
+          "type": "class",
+          "desc": "Intermediate Survey (*1)"
+        },
+        {
+          "type": "class",
+          "desc": "Annual Survey"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Boiler Survey",
+          "due_date": "16 Jun 2029",
+          "last_done": "17 Jun 2026"
+        },
+        {
+          "type": "class",
+          "desc": "Docking Survey (*1)",
+          "due_date": "16 Jun 2029",
+          "last_done": "17 Jun 2026"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "05 Jul 2031",
+          "last_done": "07 Jul 2021"
+        },
+        {
+          "type": "class",
+          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -4883,15 +6171,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "2031-06-01"
+          "expiry": "01 Jun 2031"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "2031-06-01"
+          "expiry": "01 Jun 2031"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "2031-06-01"
+          "expiry": "01 Jun 2031"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -4899,7 +6187,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "2031-06-01"
+          "expiry": "01 Jun 2031"
         },
         {
           "name": "IMSBC code",
@@ -4948,122 +6236,104 @@
       "class_society": "CCS",
       "flag": "Panama",
       "gt": "114026",
-      "dwt": 229069.0,
+      "dwt": "229069",
       "surveys": [
+        {
+          "type": "boiler",
+          "desc": "锅炉"
+        },
         {
           "type": "annual_survey",
           "desc": "Class Annual Survey",
-          "due_date": "2026-08-31"
+          "due_date": "2026-06-01"
         },
         {
           "type": "intermediate_survey",
-          "desc": "Class Intermediate Survey"
+          "desc": "Class Intermediate Survey",
+          "due_date": "2025-08-05"
         },
         {
-          "type": "class special survey",
+          "type": "special_survey",
           "desc": "Class Special Survey for",
           "due_date": "2027-08-31"
         },
         {
-          "type": "machinery_cs",
-          "desc": "Continuous Survey for",
-          "due_date": "2026-08-31"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "BTS",
+          "type": "tail_shaft",
+          "desc": "尾轴检验",
           "due_date": "2027-08-31"
         },
         {
-          "type": "boiler",
-          "desc": "Boiler Survey ( Oil-fired Aux."
-        },
-        {
-          "type": "boiler",
-          "desc": "Boiler Survey (Steam Pipe)"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Screwshaft Survey"
+          "type": "dry_docking",
+          "desc": "BTS (船底外部检验)",
+          "due_date": "2027-08-31",
+          "last_done": "2025-08-05"
         }
       ],
       "certificates": [
         {
-          "name": "International Tonnage Certificate"
+          "name": "ISPS"
         },
         {
-          "name": "International Tonnage Certificate(PAN)",
-          "expiry": "2026-10-24"
-        },
-        {
-          "name": "International Load Line Certificate(FB6238)",
+          "name": "IOPP",
           "expiry": "2027-08-31"
         },
         {
-          "name": "Cargo Ship Safety Construction Certificate(FB6238)",
+          "name": "IAPP",
           "expiry": "2027-08-31"
         },
         {
-          "name": "Cargo Ship Safety Equipment Certificate(FB6238)",
+          "name": "ISPP",
           "expiry": "2027-08-31"
         },
         {
-          "name": "SE Exemption Certificate(No.1)",
-          "expiry": "2026-09-24"
+          "name": "Load Line"
         },
         {
-          "name": "Cargo Ship Safety Radio Certificate",
+          "name": "Safety Construction",
           "expiry": "2027-08-31"
         },
         {
-          "name": "International Oil Pollution Prevention Certificate(FB6238)",
+          "name": "Safety Equipment",
           "expiry": "2027-08-31"
         },
         {
-          "name": "International Sewage Pollution Prevention Certificate",
+          "name": "Safety Radio",
           "expiry": "2027-08-31"
         },
         {
-          "name": "Statement of Garbage Pollution Prevention from Ships"
+          "name": "BWM"
         },
         {
-          "name": "International Air Pollution Prevention Certificate",
+          "name": "IHM",
           "expiry": "2027-08-31"
         },
         {
-          "name": "Certificate of Compliance for the Carriage of Solid Bulk Cargoes",
+          "name": "Cargo Gear",
           "expiry": "2027-08-31"
         },
         {
-          "name": "International Anti-Fouling System Certificate"
+          "name": "AFS"
         },
         {
-          "name": "International Ballast Water Management Certificate",
-          "expiry": "2026-09-24"
-        },
-        {
-          "name": "International Energy Efficiency Certificate(FB6238)"
-        },
-        {
-          "name": "International Certificate on Inventory of Hazardous Materials",
-          "expiry": "2026-09-24"
+          "name": "DOC",
+          "expiry": "2026-08-09"
         }
       ],
       "alerts": {
-        "expired": 0,
+        "expired": 1,
         "urgent_7d": 0,
-        "warning_30d": 3,
-        "info_90d": 1
+        "warning_30d": 0,
+        "info_90d": 0
       },
-      "extraction_confidence": "medium"
+      "extraction_confidence": "high"
     },
     "WINNING_RISING": {
       "name": "WINNING RISING",
       "imo": "9393199",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": 90421,
-      "dwt": 180140.0,
+      "gt": "90421",
+      "dwt": "180140",
       "surveys": [
         {
           "type": "special_survey",
@@ -5128,6 +6398,43 @@
           "type": "statutory",
           "desc": "BWM Renewal (压载水换证)",
           "due_date": "2029-06-29"
+        },
+        {
+          "type": "class",
+          "desc": "Special Survey",
+          "due_date": "29 Jun 2029",
+          "last_done": "03 May 2024"
+        },
+        {
+          "type": "class",
+          "desc": "Intermediate Survey (*1)"
+        },
+        {
+          "type": "class",
+          "desc": "Annual Survey",
+          "last_done": "08 Jul 2026"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Boiler Survey",
+          "due_date": "02 May 2027",
+          "last_done": "03 May 2024"
+        },
+        {
+          "type": "class",
+          "desc": "Docking Survey (*1)",
+          "due_date": "02 May 2027",
+          "last_done": "03 May 2024"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "03 May 2029",
+          "last_done": "03 May 2024"
+        },
+        {
+          "type": "class",
+          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -5153,15 +6460,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "2029-06-29"
+          "expiry": "29 Jun 2029"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "2029-06-29"
+          "expiry": "29 Jun 2029"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "2029-06-29"
+          "expiry": "29 Jun 2029"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -5205,8 +6512,8 @@
       "imo": "9254678",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": 101953,
-      "dwt": 203508.0,
+      "gt": "101953",
+      "dwt": "203508",
       "surveys": [
         {
           "type": "special_survey",
@@ -5271,6 +6578,42 @@
           "type": "statutory",
           "desc": "BWM Renewal (压载水换证)",
           "due_date": "2030-12-22"
+        },
+        {
+          "type": "class",
+          "desc": "Special Survey",
+          "due_date": "22 Dec 2030",
+          "last_done": "23 Dec 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Intermediate Survey (*1)"
+        },
+        {
+          "type": "class",
+          "desc": "Annual Survey"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Boiler Survey",
+          "due_date": "22 Dec 2028",
+          "last_done": "23 Dec 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Docking Survey (*1)",
+          "due_date": "22 Dec 2028",
+          "last_done": "23 Dec 2025"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "04 Jul 2029",
+          "last_done": "25 Jun 2018"
+        },
+        {
+          "type": "class",
+          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -5292,15 +6635,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "2030-12-22"
+          "expiry": "22 Dec 2030"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "2030-12-22"
+          "expiry": "22 Dec 2030"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "2030-12-22"
+          "expiry": "22 Dec 2030"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -5329,6 +6672,10 @@
         {
           "name": "ISSC (ISPS)",
           "expiry": "14 Apr 2027"
+        },
+        {
+          "name": "Dangerous Goods",
+          "expiry": "22 Dec 2030"
         }
       ],
       "alerts": {
@@ -5344,8 +6691,8 @@
       "imo": "9336945",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 102319,
-      "dwt": 203091.89,
+      "gt": "102319",
+      "dwt": "203091",
       "surveys": [
         {
           "type": "special_survey",
@@ -5415,6 +6762,42 @@
           "type": "statutory",
           "desc": "BWM Renewal (压载水换证)",
           "due_date": "2031-02-09"
+        },
+        {
+          "type": "class",
+          "desc": "Special Survey",
+          "due_date": "09 Feb 2031",
+          "last_done": "13 Jan 2026"
+        },
+        {
+          "type": "class",
+          "desc": "Intermediate Survey (*1)"
+        },
+        {
+          "type": "class",
+          "desc": "Annual Survey"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Boiler Survey",
+          "due_date": "12 Jan 2029",
+          "last_done": "13 Jan 2026"
+        },
+        {
+          "type": "class",
+          "desc": "Docking Survey (*1)",
+          "due_date": "12 Jan 2029",
+          "last_done": "13 Jan 2026"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "28 Jan 2031",
+          "last_done": "13 Jan 2026"
+        },
+        {
+          "type": "class",
+          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -5440,15 +6823,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "2031-02-09"
+          "expiry": "09 Feb 2031"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "2031-02-09"
+          "expiry": "09 Feb 2031"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "2031-02-09"
+          "expiry": "09 Feb 2031"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -5456,7 +6839,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "2031-01-12"
+          "expiry": "12 Jan 2031"
         },
         {
           "name": "IMSBC code",
@@ -5500,8 +6883,8 @@
       "imo": "9346172",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 102092,
-      "dwt": 203233.0,
+      "gt": "102092",
+      "dwt": "203233",
       "surveys": [
         {
           "type": "special_survey",
@@ -5571,6 +6954,42 @@
           "type": "statutory",
           "desc": "BWM Renewal (压载水换证)",
           "due_date": "2030-10-04"
+        },
+        {
+          "type": "class",
+          "desc": "Special Survey",
+          "due_date": "04 Oct 2030",
+          "last_done": "05 Oct 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Intermediate Survey (*1)"
+        },
+        {
+          "type": "class",
+          "desc": "Annual Survey"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Boiler Survey",
+          "due_date": "04 Oct 2028",
+          "last_done": "05 Oct 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Docking Survey (*1)",
+          "due_date": "04 Oct 2028",
+          "last_done": "05 Oct 2025"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "04 Oct 2030",
+          "last_done": "05 Oct 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -5592,15 +7011,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "2030-10-04"
+          "expiry": "04 Oct 2030"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "2030-10-04"
+          "expiry": "04 Oct 2030"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "2030-10-04"
+          "expiry": "04 Oct 2030"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -5608,7 +7027,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "2030-10-04"
+          "expiry": "04 Oct 2030"
         },
         {
           "name": "IMSBC code",
@@ -5648,8 +7067,8 @@
       "imo": "9859765",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 107791,
-      "dwt": 208951.0,
+      "gt": "107791",
+      "dwt": "208951",
       "surveys": [
         {
           "type": "special_survey",
@@ -5719,6 +7138,43 @@
           "type": "statutory",
           "desc": "BWM Renewal (压载水换证)",
           "due_date": "2029-11-24"
+        },
+        {
+          "type": "class",
+          "desc": "Special Survey",
+          "due_date": "24 Nov 2029",
+          "last_done": "23 Nov 2024"
+        },
+        {
+          "type": "class",
+          "desc": "Intermediate Survey"
+        },
+        {
+          "type": "class",
+          "desc": "Annual Survey",
+          "last_done": "02 Nov 2025"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Boiler Survey",
+          "due_date": "22 Nov 2027",
+          "last_done": "23 Nov 2024"
+        },
+        {
+          "type": "class",
+          "desc": "Docking Survey",
+          "due_date": "22 Nov 2027",
+          "last_done": "23 Nov 2024"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "23 Nov 2029",
+          "last_done": "25 Nov 2019"
+        },
+        {
+          "type": "class",
+          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -5740,15 +7196,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "2029-11-24"
+          "expiry": "24 Nov 2029"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "2029-11-24"
+          "expiry": "24 Nov 2029"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "2029-11-24"
+          "expiry": "24 Nov 2029"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -5756,7 +7212,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "2029-11-24"
+          "expiry": "24 Nov 2029"
         },
         {
           "name": "IMSBC code",
@@ -5796,8 +7252,8 @@
       "imo": "9859777",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 107786,
-      "dwt": 208970.0,
+      "gt": "107786",
+      "dwt": "208970",
       "surveys": [
         {
           "type": "special_survey",
@@ -5867,6 +7323,43 @@
           "type": "statutory",
           "desc": "BWM Renewal (压载水换证)",
           "due_date": "2030-01-02"
+        },
+        {
+          "type": "class",
+          "desc": "Special Survey",
+          "due_date": "02 Jan 2030",
+          "last_done": "14 Nov 2024"
+        },
+        {
+          "type": "class",
+          "desc": "Intermediate Survey"
+        },
+        {
+          "type": "class",
+          "desc": "Annual Survey",
+          "last_done": "25 Oct 2025"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Boiler Survey",
+          "due_date": "13 Nov 2027",
+          "last_done": "14 Nov 2024"
+        },
+        {
+          "type": "class",
+          "desc": "Docking Survey",
+          "due_date": "13 Nov 2027",
+          "last_done": "14 Nov 2024"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "01 Jan 2030",
+          "last_done": "03 Jan 2020"
+        },
+        {
+          "type": "class",
+          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -5888,15 +7381,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "2030-01-02"
+          "expiry": "02 Jan 2030"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "2030-01-02"
+          "expiry": "02 Jan 2030"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "2030-01-02"
+          "expiry": "02 Jan 2030"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -5904,7 +7397,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "2030-01-02"
+          "expiry": "02 Jan 2030"
         },
         {
           "name": "IMSBC code",
@@ -5944,8 +7437,8 @@
       "imo": "9278636",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 101933,
-      "dwt": 203195.0,
+      "gt": "101933",
+      "dwt": "203195",
       "surveys": [
         {
           "type": "special_survey",
@@ -6015,6 +7508,44 @@
           "type": "statutory",
           "desc": "BWM Renewal (压载水换证)",
           "due_date": "2028-05-20"
+        },
+        {
+          "type": "class",
+          "desc": "Special Survey",
+          "due_date": "20 May 2028",
+          "last_done": "19 Mar 2023"
+        },
+        {
+          "type": "class",
+          "desc": "Intermediate Survey (*1)",
+          "last_done": "01 May 2026"
+        },
+        {
+          "type": "class",
+          "desc": "Annual Survey",
+          "last_done": "24 Aug 2025"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Boiler Survey",
+          "due_date": "20 May 2028",
+          "last_done": "19 Sep 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Docking Survey (*1)",
+          "due_date": "20 May 2028",
+          "last_done": "19 Sep 2025"
+        },
+        {
+          "type": "class",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "18 Sep 2030",
+          "last_done": "19 Sep 2025"
+        },
+        {
+          "type": "class",
+          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -6036,15 +7567,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "2028-05-20"
+          "expiry": "20 May 2028"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "2028-05-20"
+          "expiry": "20 May 2028"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "2028-05-20"
+          "expiry": "20 May 2028"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -6052,7 +7583,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "2028-05-20"
+          "expiry": "20 May 2028"
         },
         {
           "name": "IMSBC code",
@@ -6077,6 +7608,10 @@
         {
           "name": "ISSC (ISPS)",
           "expiry": "20 Jan 2031"
+        },
+        {
+          "name": "Dangerous Goods",
+          "expiry": "20 May 2028"
         }
       ],
       "alerts": {
@@ -6092,7 +7627,7 @@
       "imo": "9500625",
       "class_society": "ABS",
       "flag": "Hong Kong",
-      "gt": "",
+      "gt": "94862",
       "dwt": "180725",
       "surveys": [
         {
@@ -6187,14 +7722,14 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "medium"
+      "extraction_confidence": "high"
     },
     "WINNING_PROGRESS": {
       "name": "WINNING PROGRESS",
       "imo": "9576296",
       "class_society": "ABS",
       "flag": "Republic of Singapore",
-      "gt": "",
+      "gt": "93217",
       "dwt": "179166",
       "surveys": [
         {
@@ -6290,80 +7825,19 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "medium"
+      "extraction_confidence": "high"
     },
     "WINNING_KINDNESS": {
       "name": "WINNING KINDNESS",
       "imo": "9335240",
       "class_society": "KR",
-      "flag": "SINGAPORE",
+      "flag": "",
       "gt": "",
-      "dwt": 176924.0,
-      "surveys": [
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft"
-        },
-        {
-          "type": "special_survey",
-          "desc": "Next Special Survey No."
-        },
-        {
-          "type": "intermediate_survey",
-          "desc": "Intermediate Survey",
-          "due_date": "2028-12-28"
-        },
-        {
-          "type": "annual_survey",
-          "desc": "Annual Survey",
-          "due_date": "2026-12-28"
-        },
-        {
-          "type": "boiler",
-          "desc": "No.1 Aux. Boiler Survey",
-          "due_date": "2028-10-05"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey",
-          "due_date": "2028-10-05",
-          "last_done": "2025-10-05"
-        }
-      ],
+      "dwt": "176924",
+      "surveys": [],
       "certificates": [
         {
-          "name": "ISPS"
-        },
-        {
           "name": "MLC"
-        },
-        {
-          "name": "IOPP",
-          "expiry": "2030-09-28"
-        },
-        {
-          "name": "IAPP",
-          "expiry": "2030-09-28"
-        },
-        {
-          "name": "ISPP",
-          "expiry": "2030-09-28"
-        },
-        {
-          "name": "Load Line",
-          "expiry": "2030-09-28"
-        },
-        {
-          "name": "Safety Construction",
-          "expiry": "2030-09-28"
-        },
-        {
-          "name": "Safety Equipment",
-          "expiry": "2030-09-28"
-        },
-        {
-          "name": "Safety Radio",
-          "expiry": "2030-09-28"
         },
         {
           "name": "BWM",
@@ -6371,13 +7845,6 @@
         },
         {
           "name": "IHM"
-        },
-        {
-          "name": "Cargo Gear",
-          "expiry": "2030-09-28"
-        },
-        {
-          "name": "AFS"
         },
         {
           "name": "DOC"
@@ -6393,80 +7860,19 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "medium"
+      "extraction_confidence": "high"
     },
     "WINNING_RICH": {
       "name": "WINNING RICH",
       "imo": "9498054",
       "class_society": "KR",
-      "flag": "SINGAPORE",
+      "flag": "",
       "gt": "",
-      "dwt": 179221.0,
-      "surveys": [
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft"
-        },
-        {
-          "type": "special_survey",
-          "desc": "Next Special Survey No."
-        },
-        {
-          "type": "intermediate_survey",
-          "desc": "Intermediate Survey",
-          "due_date": "2028-02-16"
-        },
-        {
-          "type": "annual_survey",
-          "desc": "Annual Survey",
-          "due_date": "2027-02-16"
-        },
-        {
-          "type": "boiler",
-          "desc": "No.1 Aux. Boiler Survey",
-          "due_date": "2027-09-11"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey",
-          "due_date": "2027-09-11",
-          "last_done": "2024-09-11"
-        }
-      ],
+      "dwt": "179221",
+      "surveys": [],
       "certificates": [
         {
-          "name": "ISPS"
-        },
-        {
           "name": "MLC"
-        },
-        {
-          "name": "IOPP",
-          "expiry": "2029-11-16"
-        },
-        {
-          "name": "IAPP",
-          "expiry": "2029-11-16"
-        },
-        {
-          "name": "ISPP",
-          "expiry": "2029-11-16"
-        },
-        {
-          "name": "Load Line",
-          "expiry": "2029-11-16"
-        },
-        {
-          "name": "Safety Construction",
-          "expiry": "2029-11-16"
-        },
-        {
-          "name": "Safety Equipment",
-          "expiry": "2029-11-16"
-        },
-        {
-          "name": "Safety Radio",
-          "expiry": "2029-11-16"
         },
         {
           "name": "BWM",
@@ -6474,13 +7880,6 @@
         },
         {
           "name": "IHM"
-        },
-        {
-          "name": "Cargo Gear",
-          "expiry": "2029-11-16"
-        },
-        {
-          "name": "AFS"
         },
         {
           "name": "DOC"
@@ -6496,15 +7895,51 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "medium"
+      "extraction_confidence": "high"
     },
     "WINNING_SPIRIT": {
       "name": "WINNING SPIRIT",
       "imo": "9597824",
       "class_society": "KR",
       "flag": "SINGAPORE",
+      "gt": "93198",
+      "dwt": "179213",
+      "surveys": [],
+      "certificates": [
+        {
+          "name": "MLC"
+        },
+        {
+          "name": "BWM",
+          "expiry": "2031-08-11"
+        },
+        {
+          "name": "IHM",
+          "expiry": "2031-08-11"
+        },
+        {
+          "name": "DOC"
+        },
+        {
+          "name": "SMC",
+          "expiry": "2027.05.14"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "high"
+    },
+    "WINNING_SPIRIT_20260809_旧版": {
+      "name": "WINNING SPIRIT 20260809 旧版",
+      "imo": "9597824",
+      "class_society": "KR",
+      "flag": "SINGAPORE",
       "gt": "",
-      "dwt": 179213.0,
+      "dwt": "",
       "surveys": [
         {
           "type": "tail_shaft",
@@ -6606,143 +8041,112 @@
       "name": "SUNNY FARANAH",
       "imo": "9337107",
       "class_society": "CCS",
-      "flag": "Hong Kong",
+      "flag": "Hong Kong, China",
       "gt": "101933",
-      "dwt": 203185.0,
+      "dwt": "203185",
       "surveys": [
         {
+          "type": "boiler",
+          "desc": "锅炉"
+        },
+        {
           "type": "annual_survey",
-          "desc": "Class Annual Survey"
+          "desc": "Class Annual Survey",
+          "due_date": "2025-12-18"
         },
         {
           "type": "intermediate_survey",
-          "desc": "Class Intermediate Survey"
+          "desc": "Class Intermediate Survey",
+          "due_date": "2025-05-01"
         },
         {
-          "type": "class special survey",
+          "type": "special_survey",
           "desc": "Class Special Survey for",
-          "due_date": "2027-03-01"
-        },
-        {
-          "type": "machinery_cs",
-          "desc": "Continuous Survey for",
-          "due_date": "2027-03-01"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "BTS",
-          "due_date": "2027-03-01"
-        },
-        {
-          "type": "boiler",
-          "desc": "Boiler Survey ( Oil-fired Aux.and"
-        },
-        {
-          "type": "boiler",
-          "desc": "Boiler Survey (Steam Pipe)"
+          "due_date": "2022-08-09"
         },
         {
           "type": "tail_shaft",
-          "desc": "Screwshaft Survey"
+          "desc": "尾轴检验",
+          "due_date": "2027-08-08"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "BTS (船底外部检验)",
+          "due_date": "2027-03-01",
+          "last_done": "2025-04-18"
         }
       ],
       "certificates": [
         {
-          "name": "International Tonnage Certificate"
-        },
-        {
-          "name": "Suez Canal Special Tonnage Certificate"
-        },
-        {
-          "name": "International Load Line Certificate(FB6255)",
+          "name": "ISM DOC",
           "expiry": "2027-03-01"
         },
         {
-          "name": "Cargo Ship Safety Construction Certificate(FB6255)",
+          "name": "ISPS",
+          "expiry": "2026-08-15"
+        },
+        {
+          "name": "IOPP",
           "expiry": "2027-03-01"
         },
         {
-          "name": "Cargo Ship Safety Equipment Certificate(FB6255)",
+          "name": "IAPP",
           "expiry": "2027-03-01"
         },
         {
-          "name": "SE Exemption Certificate(No.1)",
+          "name": "ISPP",
           "expiry": "2027-03-01"
         },
         {
-          "name": "Cargo Ship Safety Radio Certificate",
+          "name": "Load Line"
+        },
+        {
+          "name": "Safety Construction",
           "expiry": "2027-03-01"
         },
         {
-          "name": "International Oil Pollution Prevention Certificate(FB6255)",
+          "name": "Safety Equipment",
           "expiry": "2027-03-01"
         },
         {
-          "name": "International Sewage Pollution Prevention Certificate",
+          "name": "Safety Radio",
           "expiry": "2027-03-01"
         },
         {
-          "name": "Statement of Garbage Pollution Prevention from Ships"
+          "name": "BWM"
         },
         {
-          "name": "International Air Pollution Prevention Certificate",
+          "name": "Cargo Gear",
           "expiry": "2027-03-01"
         },
         {
-          "name": "Certificate of Compliance for the Carriage of Solid Bulk Cargoes",
-          "expiry": "2027-03-01"
+          "name": "AFS"
         },
         {
-          "name": "International Anti-Fouling System Certificate"
-        },
-        {
-          "name": "Certificate of Inspection of Crew Accommodation Equipment"
-        },
-        {
-          "name": "Statement of Compliance on Inventory of Hazardous Materials",
-          "expiry": "2027-03-01"
-        },
-        {
-          "name": "Statement of Compliance on Inventory of Hazardous Materials(European Union)",
-          "expiry": "2027-03-01"
-        },
-        {
-          "name": "International Ballast Water Management Certificate",
-          "expiry": "2027-03-01"
-        },
-        {
-          "name": "International Energy Efficiency Certificate(FB6255)"
-        },
-        {
-          "name": "Document of Compliance (Special Requirement for Ships Carrying Dangerous Goods)",
-          "expiry": "2027-03-01"
-        },
-        {
-          "name": "Certificate of Test and Thorough Examination of Loose Gear"
-        },
-        {
-          "name": "Certificate of Test and Thorough Examination of Lifting Appliances"
-        },
-        {
-          "name": "Statement of Strength of Helicopter Landing Area"
+          "name": "DOC",
+          "expiry": "2026-08-15"
         }
       ],
       "alerts": {
-        "expired": 0,
+        "expired": 2,
         "urgent_7d": 0,
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "medium"
+      "extraction_confidence": "high"
     },
     "SUNNY_FRIA": {
       "name": "SUNNY FRIA",
       "imo": "9330305",
       "class_society": "CCS",
-      "flag": "Hong Kong",
+      "flag": "Hong Kong, China",
       "gt": "89877",
-      "dwt": 177003.0,
+      "dwt": "177003",
       "surveys": [
+        {
+          "type": "boiler",
+          "desc": "锅炉"
+        },
         {
           "type": "annual_survey",
           "desc": "Class Annual Survey",
@@ -6750,124 +8154,88 @@
         },
         {
           "type": "intermediate_survey",
-          "desc": "Class Intermediate Survey"
+          "desc": "Class Intermediate Survey",
+          "due_date": "2026-07-10"
         },
         {
-          "type": "class special survey",
+          "type": "special_survey",
           "desc": "Class Special Survey for",
-          "due_date": "2029-06-03"
-        },
-        {
-          "type": "machinery_cs",
-          "desc": "Continuous Survey for",
-          "due_date": "2029-06-03"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "BTS",
-          "due_date": "2029-06-03"
-        },
-        {
-          "type": "boiler",
-          "desc": "Boiler Survey ( Oil-fired Aux.and"
-        },
-        {
-          "type": "boiler",
-          "desc": "Boiler Survey (Steam Pipe)"
+          "due_date": "2024-09-10"
         },
         {
           "type": "tail_shaft",
-          "desc": "Screwshaft Survey"
+          "desc": "尾轴检验",
+          "due_date": "2029-09-09"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "BTS (船底外部检验)",
+          "due_date": "2029-06-03",
+          "last_done": "2026-06-29"
         }
       ],
       "certificates": [
         {
-          "name": "International Tonnage Certificate"
-        },
-        {
-          "name": "Suez Canal Special Tonnage Certificate"
-        },
-        {
-          "name": "International Load Line Certificate(FB6504)",
+          "name": "ISM DOC",
           "expiry": "2029-06-03"
         },
         {
-          "name": "Cargo Ship Safety Construction Certificate(FB6504)",
+          "name": "ISPS"
+        },
+        {
+          "name": "IOPP",
           "expiry": "2029-06-03"
         },
         {
-          "name": "Cargo Ship Safety Equipment Certificate(FB6504)",
+          "name": "IAPP",
           "expiry": "2029-06-03"
         },
         {
-          "name": "SE Exemption Certificate(No.1)",
+          "name": "ISPP",
           "expiry": "2029-06-03"
         },
         {
-          "name": "Cargo Ship Safety Radio Certificate",
+          "name": "Load Line"
+        },
+        {
+          "name": "Safety Construction",
           "expiry": "2029-06-03"
         },
         {
-          "name": "International Oil Pollution Prevention Certificate(FB6504)",
+          "name": "Safety Equipment",
           "expiry": "2029-06-03"
         },
         {
-          "name": "International Sewage Pollution Prevention Certificate",
+          "name": "Safety Radio",
           "expiry": "2029-06-03"
         },
         {
-          "name": "Statement of Garbage Pollution Prevention from Ships"
-        },
-        {
-          "name": "International Air Pollution Prevention Certificate",
+          "name": "BWM",
           "expiry": "2029-06-03"
         },
         {
-          "name": "Certificate of Compliance for the Carriage of Solid Bulk Cargoes",
+          "name": "IHM",
           "expiry": "2029-06-03"
         },
         {
-          "name": "International Anti-Fouling System Certificate"
-        },
-        {
-          "name": "Certificate of Inspection of Crew Accommodation Equipment"
-        },
-        {
-          "name": "Statement of Compliance on Inventory of Hazardous Materials",
+          "name": "Cargo Gear",
           "expiry": "2029-06-03"
         },
         {
-          "name": "Statement of Compliance on Inventory of Hazardous Materials(European Union)",
-          "expiry": "2029-06-03"
+          "name": "AFS"
         },
         {
-          "name": "International Ballast Water Management Certificate",
-          "expiry": "2029-06-03"
-        },
-        {
-          "name": "International Energy Efficiency Certificate(FB6504)"
-        },
-        {
-          "name": "Document of Compliance (Special Requirement for Ships Carrying Dangerous Goods)",
-          "expiry": "2029-06-03"
-        },
-        {
-          "name": "Certificate of Test and Thorough Examination of Loose Gear"
-        },
-        {
-          "name": "Certificate of Test and Thorough Examination of Lifting Appliances"
-        },
-        {
-          "name": "Statement of Strength of Helicopter Landing Area"
+          "name": "DOC",
+          "expiry": "2026-08-09"
         }
       ],
       "alerts": {
-        "expired": 0,
+        "expired": 1,
         "urgent_7d": 0,
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "medium"
+      "extraction_confidence": "high"
     },
     "SUNNY_KOGON": {
       "name": "SUNNY KOGON",
@@ -6875,117 +8243,96 @@
       "class_society": "CCS",
       "flag": "Liberia",
       "gt": "106312",
-      "dwt": 207960.0,
+      "dwt": "207960",
       "surveys": [
+        {
+          "type": "boiler",
+          "desc": "锅炉"
+        },
         {
           "type": "annual_survey",
           "desc": "Class Annual Survey",
-          "due_date": "2026-12-06"
+          "due_date": "2026-09-07"
         },
         {
           "type": "intermediate_survey",
-          "desc": "Class Intermediate Survey"
+          "desc": "Class Intermediate Survey",
+          "due_date": "2026-01-11"
         },
         {
-          "type": "class special survey",
+          "type": "special_survey",
           "desc": "Class Special Survey for",
           "due_date": "2027-12-06"
         },
         {
-          "type": "machinery_cs",
-          "desc": "Continuous Survey for",
-          "due_date": "2026-10-31"
+          "type": "tail_shaft",
+          "desc": "尾轴检验",
+          "due_date": "2027-11-07"
         },
         {
           "type": "dry_docking",
-          "desc": "BTS",
-          "due_date": "2027-12-06"
-        },
-        {
-          "type": "boiler",
-          "desc": "Boiler Survey ( Oil-fired Aux.and"
-        },
-        {
-          "type": "boiler",
-          "desc": "Boiler Survey (Steam Pipe)"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Screwshaft Survey"
+          "desc": "BTS (船底外部检验)",
+          "due_date": "2027-12-06",
+          "last_done": "2026-01-02"
         }
       ],
       "certificates": [
         {
-          "name": "International Tonnage Certificate"
-        },
-        {
-          "name": "International Load Line Certificate(FB2835)",
+          "name": "ISM DOC",
           "expiry": "2027-12-06"
         },
         {
-          "name": "Cargo Ship Safety Construction Certificate(FB2835)",
+          "name": "ISPS"
+        },
+        {
+          "name": "IOPP",
           "expiry": "2027-12-06"
         },
         {
-          "name": "Cargo Ship Safety Equipment Certificate(FB2835)",
+          "name": "IAPP",
           "expiry": "2027-12-06"
         },
         {
-          "name": "SE Exemption Certificate(No.1)",
+          "name": "ISPP",
           "expiry": "2027-12-06"
         },
         {
-          "name": "Cargo Ship Safety Radio Certificate",
+          "name": "Load Line"
+        },
+        {
+          "name": "Safety Construction",
           "expiry": "2027-12-06"
         },
         {
-          "name": "International Oil Pollution Prevention Certificate(FB2835)",
+          "name": "Safety Equipment",
           "expiry": "2027-12-06"
         },
         {
-          "name": "International Sewage Pollution Prevention Certificate",
+          "name": "Safety Radio",
           "expiry": "2027-12-06"
         },
         {
-          "name": "Statement of Garbage Pollution Prevention from Ships"
+          "name": "BWM"
         },
         {
-          "name": "International Air Pollution Prevention Certificate",
+          "name": "Cargo Gear"
+        },
+        {
+          "name": "AFS",
           "expiry": "2027-12-06"
         },
         {
-          "name": "Certificate of Compliance for the Carriage of Solid Bulk Cargoes",
-          "expiry": "2027-12-06"
-        },
-        {
-          "name": "International Anti-Fouling System Certificate"
-        },
-        {
-          "name": "Statement of Inspection of Accommodation and Recreational Facilities"
-        },
-        {
-          "name": "International Ballast Water Management Certificate",
-          "expiry": "2027-12-06"
-        },
-        {
-          "name": "International Energy Efficiency Certificate(FB2835)"
-        },
-        {
-          "name": "Document of Compliance (Special Requirement for Ships Carrying Dangerous Goods)",
-          "expiry": "2027-12-06"
-        },
-        {
-          "name": "Certificate of Test and Thorough Examination of Lifting Appliances",
-          "expiry": "2031-01-10"
+          "name": "DOC",
+          "expiry": "2026-08-15"
         }
       ],
       "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
+        "expired": 1,
+        "urgent_7d": 1,
         "warning_30d": 0,
-        "info_90d": 1
+        "info_90d": 0
       },
-      "extraction_confidence": "medium"
+      "extraction_confidence": "high"
     },
     "SUNNY_STAR": {
       "name": "SUNNY STAR",
@@ -6993,137 +8340,100 @@
       "class_society": "CCS",
       "flag": "Singapore",
       "gt": "94175",
-      "dwt": 179843.0,
+      "dwt": "179843",
       "surveys": [
+        {
+          "type": "boiler",
+          "desc": "锅炉"
+        },
         {
           "type": "annual_survey",
           "desc": "Class Annual Survey",
-          "due_date": "2027-06-09"
+          "due_date": "2027-03-10"
         },
         {
           "type": "intermediate_survey",
           "desc": "Class Intermediate Survey",
-          "due_date": "2028-06-09"
+          "due_date": "2028-03-10"
         },
         {
-          "type": "class special survey",
+          "type": "special_survey",
           "desc": "Class Special Survey for",
-          "due_date": "2031-06-09"
-        },
-        {
-          "type": "machinery_cs",
-          "desc": "Continuous Survey for",
-          "due_date": "2031-06-09"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "BTS",
-          "due_date": "2029-06-11"
-        },
-        {
-          "type": "boiler",
-          "desc": "Boiler Survey (No.1 Oil-fired"
-        },
-        {
-          "type": "boiler",
-          "desc": "Boiler Survey (No.2 Exhaust gas"
-        },
-        {
-          "type": "boiler",
-          "desc": "Boiler Survey (Steam Pipe)"
+          "due_date": "2026-06-17"
         },
         {
           "type": "tail_shaft",
-          "desc": "Screwshaft Survey"
+          "desc": "尾轴检验",
+          "due_date": "2031-06-16"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "BTS (船底外部检验)",
+          "due_date": "2029-06-11",
+          "last_done": "2026-06-12"
         }
       ],
       "certificates": [
         {
-          "name": "International Tonnage Certificate"
-        },
-        {
-          "name": "International Load Line Certificate(FB6585)",
+          "name": "ISM DOC",
           "expiry": "2031-06-09"
         },
         {
-          "name": "Cargo Ship Safety Construction Certificate(FB6585)",
+          "name": "ISPS"
+        },
+        {
+          "name": "IOPP",
           "expiry": "2031-06-09"
         },
         {
-          "name": "Cargo Ship Safety Equipment Certificate(FB6585)",
+          "name": "IAPP",
           "expiry": "2031-06-09"
         },
         {
-          "name": "SE Exemption Certificate(No.1)",
+          "name": "ISPP",
           "expiry": "2031-06-09"
         },
         {
-          "name": "Cargo Ship Safety Radio Certificate",
+          "name": "Load Line"
+        },
+        {
+          "name": "Safety Construction",
           "expiry": "2031-06-09"
         },
         {
-          "name": "International Oil Pollution Prevention Certificate(FB6585)",
-          "expiry": "2031-05-08"
-        },
-        {
-          "name": "International Sewage Pollution Prevention Certificate",
+          "name": "Safety Equipment",
           "expiry": "2031-06-09"
         },
         {
-          "name": "Statement of Garbage Pollution Prevention from Ships"
-        },
-        {
-          "name": "International Air Pollution Prevention Certificate",
+          "name": "Safety Radio",
           "expiry": "2031-06-09"
         },
         {
-          "name": "Certificate of Compliance for the Carriage of Solid Bulk Cargoes",
+          "name": "BWM"
+        },
+        {
+          "name": "IHM",
           "expiry": "2031-06-09"
         },
         {
-          "name": "International Anti-Fouling System Certificate"
-        },
-        {
-          "name": "Certificate of Inspection of Crew Accommodation"
-        },
-        {
-          "name": "Statement of Compliance on Inventory of Hazardous Materials",
+          "name": "Cargo Gear",
           "expiry": "2031-06-09"
         },
         {
-          "name": "Statement of Compliance on Inventory of Hazardous Materials(European Union)",
-          "expiry": "2031-06-09"
+          "name": "AFS"
         },
         {
-          "name": "International Ballast Water Management Certificate",
-          "expiry": "2031-06-09"
-        },
-        {
-          "name": "International Energy Efficiency Certificate(FB6585)"
-        },
-        {
-          "name": "Document of Compliance (Special Requirement for Ships Carrying Dangerous Goods)",
-          "expiry": "2031-06-09"
-        },
-        {
-          "name": "Certificate of Test and Thorough Examination of Loose Gear"
-        },
-        {
-          "name": "Statement of Acceptance Type- Approved Equipment for Singapore Registered Ships",
-          "expiry": "2031-06-09"
-        },
-        {
-          "name": "Certificate of Test and Thorough Examination of Lifting Appliances",
-          "expiry": "2031-06-15"
+          "name": "DOC",
+          "expiry": "2026-08-09"
         }
       ],
       "alerts": {
-        "expired": 0,
+        "expired": 1,
         "urgent_7d": 0,
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "medium"
+      "extraction_confidence": "high"
     },
     "WINNING_JOY": {
       "name": "WINNING JOY",
@@ -7131,8 +8441,12 @@
       "class_society": "CCS",
       "flag": "Singapore",
       "gt": "106884",
-      "dwt": 206117.0,
+      "dwt": "205940",
       "surveys": [
+        {
+          "type": "boiler",
+          "desc": "锅炉"
+        },
         {
           "type": "annual_survey",
           "desc": "Class Annual Survey",
@@ -7141,123 +8455,87 @@
         {
           "type": "intermediate_survey",
           "desc": "Class Intermediate Survey",
-          "due_date": "2026-08-01"
+          "due_date": "2026-05-02"
         },
         {
-          "type": "class special survey",
+          "type": "special_survey",
           "desc": "Class Special Survey for",
-          "due_date": "2029-08-01"
-        },
-        {
-          "type": "machinery_cs",
-          "desc": "Continuous Survey for",
-          "due_date": "2029-08-01"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "BTS",
-          "due_date": "2027-08-08"
-        },
-        {
-          "type": "boiler",
-          "desc": "Boiler Survey ( Oil-fired Aux.and"
-        },
-        {
-          "type": "boiler",
-          "desc": "Boiler Survey (Steam Pipe)"
+          "due_date": "2024-08-09"
         },
         {
           "type": "tail_shaft",
-          "desc": "Screwshaft Survey"
+          "desc": "尾轴检验",
+          "due_date": "2029-08-08"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "BTS (船底外部检验)",
+          "due_date": "2027-08-08",
+          "last_done": "2024-08-09"
         }
       ],
       "certificates": [
         {
-          "name": "International Tonnage Certificate"
-        },
-        {
-          "name": "+ International Load Line Certificate(FB10449)",
+          "name": "ISM DOC",
           "expiry": "2029-08-01"
         },
         {
-          "name": "International Load Line Certificate(FB6471)",
+          "name": "ISPS"
+        },
+        {
+          "name": "IOPP",
           "expiry": "2029-08-01"
         },
         {
-          "name": "+ International Load Line Certificate(FB6973)",
+          "name": "IAPP",
           "expiry": "2029-08-01"
         },
         {
-          "name": "Cargo Ship Safety Construction Certificate(FB6471)",
+          "name": "ISPP",
           "expiry": "2029-08-01"
         },
         {
-          "name": "Cargo Ship Safety Equipment Certificate(FB6471)",
+          "name": "Load Line"
+        },
+        {
+          "name": "Safety Construction",
           "expiry": "2029-08-01"
         },
         {
-          "name": "SE Exemption Certificate(No.1)",
+          "name": "Safety Equipment",
           "expiry": "2029-08-01"
         },
         {
-          "name": "Cargo Ship Safety Radio Certificate",
+          "name": "Safety Radio",
           "expiry": "2029-08-01"
         },
         {
-          "name": "International Oil Pollution Prevention Certificate(FB6471)",
-          "expiry": "2029-08-01"
+          "name": "BWM"
         },
         {
-          "name": "International Sewage Pollution Prevention Certificate",
-          "expiry": "2029-08-01"
-        },
-        {
-          "name": "Statement of Garbage Pollution Prevention from Ships"
-        },
-        {
-          "name": "International Air Pollution Prevention Certificate",
-          "expiry": "2029-08-01"
-        },
-        {
-          "name": "Certificate of Compliance for the Carriage of Solid Bulk Cargoes",
-          "expiry": "2029-08-01"
-        },
-        {
-          "name": "International Anti-Fouling System Certificate"
-        },
-        {
-          "name": "Certificate of Inspection of Crew Accommodation"
-        },
-        {
-          "name": "Statement of Compliance on Inventory of Hazardous Materials",
+          "name": "IHM",
           "expiry": "2030-10-09"
         },
         {
-          "name": "International Ballast Water Management Certificate",
+          "name": "Cargo Gear",
           "expiry": "2029-08-01"
         },
         {
-          "name": "International Energy Efficiency Certificate(FB6471)"
-        },
-        {
-          "name": "Document of Compliance (Special Requirement for Ships Carrying Dangerous Goods)",
+          "name": "AFS",
           "expiry": "2029-08-01"
         },
         {
-          "name": "Statement of Acceptance Type- Approved Equipment for Singapore Registered Ships",
-          "expiry": "2029-08-01"
-        },
-        {
-          "name": "Certificate of Test and Thorough Examination of Lifting Appliances"
+          "name": "DOC",
+          "expiry": "2026-08-09"
         }
       ],
       "alerts": {
-        "expired": 0,
+        "expired": 1,
         "urgent_7d": 0,
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "medium"
+      "extraction_confidence": "high"
     },
     "WINNING_TIMES": {
       "name": "WINNING TIMES",
@@ -7265,124 +8543,96 @@
       "class_society": "CCS",
       "flag": "Singapore",
       "gt": "107514",
-      "dwt": 207219.0,
+      "dwt": "207219",
       "surveys": [
+        {
+          "type": "boiler",
+          "desc": "锅炉"
+        },
         {
           "type": "annual_survey",
           "desc": "Class Annual Survey",
-          "due_date": "2027-04-16"
+          "due_date": "2027-01-17"
         },
         {
           "type": "intermediate_survey",
           "desc": "Class Intermediate Survey",
-          "due_date": "2027-04-16"
+          "due_date": "2027-01-17"
         },
         {
-          "type": "class special survey",
+          "type": "special_survey",
           "desc": "Class Special Survey for",
           "due_date": "2030-04-16"
         },
         {
-          "type": "machinery_cs",
-          "desc": "Continuous Survey for",
+          "type": "tail_shaft",
+          "desc": "尾轴检验",
           "due_date": "2030-04-16"
         },
         {
           "type": "dry_docking",
-          "desc": "BTS",
-          "due_date": "2028-04-10"
-        },
-        {
-          "type": "boiler",
-          "desc": "Boiler Survey ( Oil-fired Aux.and"
-        },
-        {
-          "type": "boiler",
-          "desc": "Boiler Survey (Steam Pipe)"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Screwshaft Survey"
+          "desc": "BTS (船底外部检验)",
+          "due_date": "2028-04-10",
+          "last_done": "2025-04-11"
         }
       ],
       "certificates": [
         {
-          "name": "International Tonnage Certificate"
+          "name": "ISPS"
         },
         {
-          "name": "International Load Line Certificate(FB6482)",
+          "name": "IOPP",
           "expiry": "2030-04-16"
         },
         {
-          "name": "Cargo Ship Safety Construction Certificate(FB6482)",
+          "name": "IAPP",
           "expiry": "2030-04-16"
         },
         {
-          "name": "Cargo Ship Safety Equipment Certificate(FB6482)",
+          "name": "ISPP",
           "expiry": "2030-04-16"
         },
         {
-          "name": "SE Exemption Certificate(No.1)",
+          "name": "Load Line"
+        },
+        {
+          "name": "Safety Construction",
           "expiry": "2030-04-16"
         },
         {
-          "name": "Cargo Ship Safety Radio Certificate",
+          "name": "Safety Equipment",
           "expiry": "2030-04-16"
         },
         {
-          "name": "International Oil Pollution Prevention Certificate(FB6482)",
+          "name": "Safety Radio",
           "expiry": "2030-04-16"
         },
         {
-          "name": "International Sewage Pollution Prevention Certificate",
+          "name": "BWM"
+        },
+        {
+          "name": "IHM",
           "expiry": "2030-04-16"
         },
         {
-          "name": "Statement of Garbage Pollution Prevention from Ships"
-        },
-        {
-          "name": "International Air Pollution Prevention Certificate",
+          "name": "Cargo Gear",
           "expiry": "2030-04-16"
         },
         {
-          "name": "Document of Authorization for Carriage of Grain in Bulk"
+          "name": "AFS"
         },
         {
-          "name": "Certificate of Compliance for the Carriage of Solid Bulk Cargoes",
-          "expiry": "2030-04-16"
-        },
-        {
-          "name": "International Anti-Fouling System Certificate"
-        },
-        {
-          "name": "Certificate of Inspection of Crew Accommodation"
-        },
-        {
-          "name": "Statement of Compliance on Inventory of Hazardous Materials",
-          "expiry": "2030-04-16"
-        },
-        {
-          "name": "International Ballast Water Management Certificate",
-          "expiry": "2030-04-16"
-        },
-        {
-          "name": "International Energy Efficiency Certificate(FB6482)"
-        },
-        {
-          "name": "Statement of Acceptance Type- Approved Equipment for Singapore Registered Ships",
-          "expiry": "2030-04-16"
-        },
-        {
-          "name": "Statement of Strength of Helicopter Landing Area"
+          "name": "DOC",
+          "expiry": "2026-08-15"
         }
       ],
       "alerts": {
-        "expired": 0,
+        "expired": 1,
         "urgent_7d": 0,
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "medium"
+      "extraction_confidence": "high"
     },
     "WINNING_WAVE": {
       "name": "WINNING WAVE",
@@ -7390,115 +8640,96 @@
       "class_society": "CCS",
       "flag": "Singapore",
       "gt": "107222",
-      "dwt": 207469.0,
+      "dwt": "207469",
       "surveys": [
+        {
+          "type": "boiler",
+          "desc": "锅炉"
+        },
         {
           "type": "annual_survey",
           "desc": "Class Annual Survey",
-          "due_date": "2027-02-17"
+          "due_date": "2026-11-18"
         },
         {
           "type": "intermediate_survey",
           "desc": "Class Intermediate Survey",
-          "due_date": "2028-02-17"
+          "due_date": "2027-11-18"
         },
         {
-          "type": "class special survey",
+          "type": "special_survey",
           "desc": "Class Special Survey for",
           "due_date": "2031-02-17"
         },
         {
-          "type": "machinery_cs",
-          "desc": "Continuous Survey for",
-          "due_date": "2027-02-17"
+          "type": "tail_shaft",
+          "desc": "尾轴检验",
+          "due_date": "2031-02-15"
         },
         {
           "type": "dry_docking",
-          "desc": "BTS",
-          "due_date": "2029-02-15"
-        },
-        {
-          "type": "boiler",
-          "desc": "Boiler Survey ( Oil-fired Aux.and"
-        },
-        {
-          "type": "boiler",
-          "desc": "Boiler Survey (Steam Pipe)"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Screwshaft Survey"
+          "desc": "BTS (船底外部检验)",
+          "due_date": "2029-02-15",
+          "last_done": "2026-02-16"
         }
       ],
       "certificates": [
         {
-          "name": "International Tonnage Certificate"
+          "name": "ISPS"
         },
         {
-          "name": "International Load Line Certificate(FB6482)",
+          "name": "IOPP",
           "expiry": "2031-02-17"
         },
         {
-          "name": "+ International Load Line Certificate(FB7010)",
+          "name": "IAPP",
           "expiry": "2031-02-17"
         },
         {
-          "name": "Cargo Ship Safety Construction Certificate(FB6482)",
+          "name": "ISPP",
           "expiry": "2031-02-17"
         },
         {
-          "name": "Cargo Ship Safety Equipment Certificate(FB6482)",
+          "name": "Load Line"
+        },
+        {
+          "name": "Safety Construction",
           "expiry": "2031-02-17"
         },
         {
-          "name": "SE Exemption Certificate(No.1)",
+          "name": "Safety Equipment",
           "expiry": "2031-02-17"
         },
         {
-          "name": "Cargo Ship Safety Radio Certificate",
+          "name": "Safety Radio",
           "expiry": "2031-02-17"
         },
         {
-          "name": "International Oil Pollution Prevention Certificate(FB6482)",
+          "name": "BWM"
+        },
+        {
+          "name": "IHM",
           "expiry": "2031-02-17"
         },
         {
-          "name": "International Sewage Pollution Prevention Certificate",
+          "name": "Cargo Gear",
           "expiry": "2031-02-17"
         },
         {
-          "name": "International Air Pollution Prevention Certificate",
-          "expiry": "2031-02-17"
+          "name": "AFS"
         },
         {
-          "name": "Certificate of Compliance for the Carriage of Solid Bulk Cargoes",
-          "expiry": "2031-02-17"
-        },
-        {
-          "name": "International Anti-Fouling System Certificate"
-        },
-        {
-          "name": "Certificate of Inspection of Crew Accommodation"
-        },
-        {
-          "name": "Statement of Compliance on Inventory of Hazardous Materials(European Union)",
-          "expiry": "2031-02-17"
-        },
-        {
-          "name": "International Ballast Water Management Certificate",
-          "expiry": "2031-02-17"
-        },
-        {
-          "name": "International Energy Efficiency Certificate(FB6482)"
+          "name": "DOC",
+          "expiry": "2026-08-15"
         }
       ],
       "alerts": {
-        "expired": 0,
+        "expired": 1,
         "urgent_7d": 0,
         "warning_30d": 0,
-        "info_90d": 0
+        "info_90d": 1
       },
-      "extraction_confidence": "medium"
+      "extraction_confidence": "high"
     },
     "WINNING_WEALTH": {
       "name": "WINNING WEALTH",
@@ -7506,134 +8737,101 @@
       "class_society": "CCS",
       "flag": "Singapore",
       "gt": "114019",
-      "dwt": 229117.0,
+      "dwt": "229117",
       "surveys": [
         {
+          "type": "boiler",
+          "desc": "锅炉"
+        },
+        {
           "type": "annual_survey",
-          "desc": "Class Annual Survey"
+          "desc": "Class Annual Survey",
+          "due_date": "2025-09-09"
         },
         {
           "type": "intermediate_survey",
-          "desc": "Class Intermediate Survey"
+          "desc": "Class Intermediate Survey",
+          "due_date": "2024-12-24"
         },
         {
-          "type": "class special survey",
+          "type": "special_survey",
           "desc": "Class Special Survey for",
           "due_date": "2026-10-12"
         },
         {
-          "type": "machinery_cs",
-          "desc": "Continuous Survey for",
-          "due_date": "2026-10-12"
+          "type": "tail_shaft",
+          "desc": "尾轴检验",
+          "due_date": "2029-12-23"
         },
         {
           "type": "dry_docking",
-          "desc": "BTS",
-          "due_date": "2026-10-12"
-        },
-        {
-          "type": "boiler",
-          "desc": "Boiler Survey (No.1 Oil-fired"
-        },
-        {
-          "type": "boiler",
-          "desc": "Boiler Survey (No.2 Exhaust gas"
-        },
-        {
-          "type": "boiler",
-          "desc": "Boiler Survey (Steam Pipe)"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Screwshaft Survey"
+          "desc": "BTS (船底外部检验)",
+          "due_date": "2026-10-12",
+          "last_done": "2024-12-18"
         }
       ],
       "certificates": [
         {
-          "name": "International Tonnage Certificate"
-        },
-        {
-          "name": "Suez Canal Special Tonnage Certificate"
-        },
-        {
-          "name": "International Load Line Certificate(FB6238)",
+          "name": "ISM DOC",
           "expiry": "2026-10-12"
         },
         {
-          "name": "Cargo Ship Safety Construction Certificate(FB6238)",
+          "name": "ISPS"
+        },
+        {
+          "name": "IOPP",
           "expiry": "2026-10-12"
         },
         {
-          "name": "Cargo Ship Safety Equipment Certificate(FB6238)",
+          "name": "IAPP",
           "expiry": "2026-10-12"
         },
         {
-          "name": "SE Exemption Certificate(No.1)",
+          "name": "ISPP",
           "expiry": "2026-10-12"
         },
         {
-          "name": "Cargo Ship Safety Radio Certificate",
+          "name": "Load Line"
+        },
+        {
+          "name": "Safety Construction",
           "expiry": "2026-10-12"
         },
         {
-          "name": "International Oil Pollution Prevention Certificate(FB6238)",
+          "name": "Safety Equipment",
           "expiry": "2026-10-12"
         },
         {
-          "name": "International Sewage Pollution Prevention Certificate",
+          "name": "Safety Radio",
           "expiry": "2026-10-12"
         },
         {
-          "name": "Statement of Garbage Pollution Prevention from Ships"
+          "name": "BWM"
         },
         {
-          "name": "International Air Pollution Prevention Certificate",
+          "name": "IHM",
           "expiry": "2026-10-12"
         },
         {
-          "name": "Certificate of Compliance for the Carriage of Solid Bulk Cargoes",
+          "name": "Cargo Gear",
           "expiry": "2026-10-12"
         },
         {
-          "name": "International Anti-Fouling System Certificate"
-        },
-        {
-          "name": "Certificate of Inspection of Crew Accommodation"
-        },
-        {
-          "name": "Statement of Compliance on Inventory of Hazardous Materials",
+          "name": "AFS",
           "expiry": "2026-10-12"
         },
         {
-          "name": "Statement of Compliance on Inventory of Hazardous Materials(European Union)",
-          "expiry": "2026-10-12"
-        },
-        {
-          "name": "International Ballast Water Management Certificate",
-          "expiry": "2026-10-12"
-        },
-        {
-          "name": "International Energy Efficiency Certificate(FB6238)"
-        },
-        {
-          "name": "Document of Compliance (Special Requirement for Ships Carrying Dangerous Goods)",
-          "expiry": "2026-10-12"
-        },
-        {
-          "name": "Statement of Acceptance Type- Approved Equipment for Singapore Registered Ships",
-          "expiry": "2026-10-12"
-        },
-        {
-          "name": "Certificate of Test and Thorough Examination of Lifting Appliances"
+          "name": "DOC",
+          "expiry": "2026-08-09"
         }
       ],
       "alerts": {
-        "expired": 0,
+        "expired": 1,
         "urgent_7d": 0,
         "warning_30d": 0,
-        "info_90d": 17
+        "info_90d": 12
       },
-      "extraction_confidence": "medium"
+      "extraction_confidence": "high"
     },
     "WINNING_WISDOM": {
       "name": "WINNING WISDOM",
@@ -7641,8 +8839,12 @@
       "class_society": "CCS",
       "flag": "Singapore",
       "gt": "108208",
-      "dwt": 206298.0,
+      "dwt": "206298",
       "surveys": [
+        {
+          "type": "boiler",
+          "desc": "锅炉"
+        },
         {
           "type": "annual_survey",
           "desc": "Class Annual Survey",
@@ -7651,143 +8853,100 @@
         {
           "type": "intermediate_survey",
           "desc": "Class Intermediate Survey",
-          "due_date": "2027-07-01"
+          "due_date": "2027-04-02"
         },
         {
-          "type": "class special survey",
+          "type": "special_survey",
           "desc": "Class Special Survey for",
-          "due_date": "2030-07-01"
+          "due_date": "2025-06-15"
         },
         {
-          "type": "machinery_cs",
-          "desc": "Continuous Survey for",
+          "type": "tail_shaft",
+          "desc": "尾轴检验",
           "due_date": "2030-07-01"
         },
         {
           "type": "dry_docking",
-          "desc": "BTS",
-          "due_date": "2027-10-04"
-        },
-        {
-          "type": "boiler",
-          "desc": "Boiler Survey ( Oil-fired Aux.and"
-        },
-        {
-          "type": "boiler",
-          "desc": "Boiler Survey (Steam Pipe)"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Screwshaft Survey"
+          "desc": "BTS (船底外部检验)",
+          "due_date": "2027-10-04",
+          "last_done": "2024-10-05"
         }
       ],
       "certificates": [
         {
-          "name": "International Tonnage Certificate"
-        },
-        {
-          "name": "Suez Canal Special Tonnage Certificate"
-        },
-        {
-          "name": "PC/UMS Documentation of Total Volume"
-        },
-        {
-          "name": "International Load Line Certificate(FB6648)",
+          "name": "ISM DOC",
           "expiry": "2030-07-01"
         },
         {
-          "name": "+ International Load Line Certificate(FB7092)",
+          "name": "ISPS"
+        },
+        {
+          "name": "MLC",
+          "expiry": "2024-10-05"
+        },
+        {
+          "name": "IOPP",
           "expiry": "2030-07-01"
         },
         {
-          "name": "Cargo Ship Safety Construction Certificate(FB6648)",
+          "name": "IAPP",
           "expiry": "2030-07-01"
         },
         {
-          "name": "Cargo Ship Safety Equipment Certificate(FB6648)",
+          "name": "ISPP",
           "expiry": "2030-07-01"
         },
         {
-          "name": "SE Exemption Certificate(No.1)",
+          "name": "Load Line"
+        },
+        {
+          "name": "Safety Construction",
           "expiry": "2030-07-01"
         },
         {
-          "name": "Cargo Ship Safety Radio Certificate",
+          "name": "Safety Equipment",
           "expiry": "2030-07-01"
         },
         {
-          "name": "International Oil Pollution Prevention Certificate(FB6648)",
+          "name": "Safety Radio",
           "expiry": "2030-07-01"
         },
         {
-          "name": "International Sewage Pollution Prevention Certificate",
+          "name": "BWM",
           "expiry": "2030-07-01"
         },
         {
-          "name": "Statement of Garbage Pollution Prevention from Ships"
-        },
-        {
-          "name": "International Air Pollution Prevention Certificate",
+          "name": "IHM",
           "expiry": "2030-07-01"
         },
         {
-          "name": "Certificate of Compliance for the Carriage of Solid Bulk Cargoes",
+          "name": "Cargo Gear",
           "expiry": "2030-07-01"
         },
         {
-          "name": "International Anti-Fouling System Certificate"
-        },
-        {
-          "name": "Certificate of Crew Accommodation equipment (MLC 2006)"
-        },
-        {
-          "name": "Statement of Compliance on Inventory of Hazardous Materials",
+          "name": "AFS",
           "expiry": "2030-07-01"
         },
         {
-          "name": "Statement of Compliance on Inventory of Hazardous Materials(European Union)",
-          "expiry": "2030-07-01"
-        },
-        {
-          "name": "International Ballast Water Management Certificate",
-          "expiry": "2030-07-01"
-        },
-        {
-          "name": "International Energy Efficiency Certificate(FB6648)"
-        },
-        {
-          "name": "Document of Compliance (Special Requirement for Ships Carrying Dangerous Goods)",
-          "expiry": "2030-07-01"
-        },
-        {
-          "name": "Certificate of Test and Thorough Examination of Loose Gear"
-        },
-        {
-          "name": "Statement of Acceptance Type- Approved Equipment for Singapore Registered Ships",
-          "expiry": "2030-07-01"
-        },
-        {
-          "name": "Statement of Compliance with Relevant US 33 CFR"
-        },
-        {
-          "name": "Certificate of Test and Thorough Examination of Lifting Appliances"
+          "name": "DOC",
+          "expiry": "2026-08-09"
         }
       ],
       "alerts": {
-        "expired": 0,
+        "expired": 2,
         "urgent_7d": 0,
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "medium"
+      "extraction_confidence": "high"
     },
     "WINNING_AMBITION": {
       "name": "WINNING AMBITION",
-      "imo": "1037397",
+      "imo": "1037393",
       "class_society": "DNV",
       "flag": "Singapore",
       "gt": "174863",
-      "dwt": 324950.0,
+      "dwt": "324950",
       "surveys": [
         {
           "type": "boiler",
@@ -7826,22 +8985,22 @@
         },
         {
           "name": "ISPP",
-          "expiry": "2031-06-15"
+          "expiry": "2026-08-09"
         },
         {
           "name": "Load Line"
         },
         {
           "name": "Safety Construction",
-          "expiry": "2031-06-15"
+          "expiry": "2026-06-16"
         },
         {
           "name": "Safety Equipment",
-          "expiry": "2031-06-15"
+          "expiry": "2026-06-16"
         },
         {
           "name": "Safety Radio",
-          "expiry": "2031-06-15"
+          "expiry": "2026-06-16"
         },
         {
           "name": "BWM"
@@ -7852,19 +9011,19 @@
         },
         {
           "name": "Cargo Gear",
-          "expiry": "2031-06-15"
+          "expiry": "2026-06-16"
         },
         {
           "name": "AFS"
         }
       ],
       "alerts": {
-        "expired": 0,
+        "expired": 5,
         "urgent_7d": 0,
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "medium"
+      "extraction_confidence": "high"
     },
     "SUNNY_SKY": {
       "name": "SUNNY SKY",
@@ -7949,7 +9108,7 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "medium"
+      "extraction_confidence": "high"
     },
     "SUNNY_KANKAN": {
       "name": "SUNNY KANKAN",
@@ -7957,7 +9116,7 @@
       "class_society": "RINA",
       "flag": "Liberia",
       "gt": "",
-      "dwt": 203266.0,
+      "dwt": "203266",
       "surveys": [
         {
           "type": "",
@@ -8341,81 +9500,76 @@
       ],
       "certificates": [
         {
-          "name": "Class",
+          "name": "",
           "expiry": "2029-06-07"
         },
         {
-          "name": "International Load Line (HSSC)",
+          "name": "",
           "expiry": "2029-06-07"
         },
         {
-          "name": "IMSBC Code (1)",
+          "name": "",
           "expiry": "2029-06-07"
         },
         {
-          "name": "Document for Carriage of Dangerous Goods (SOLAS) (1) (cargo vessel)",
+          "name": "",
           "expiry": "2029-06-07"
         },
         {
-          "name": "Cargo Ship Safety Construction (HSSC)",
+          "name": "",
           "expiry": "2029-06-07"
         },
         {
-          "name": "Cargo Ship Safety Equipment (HSSC)",
+          "name": "",
           "expiry": "2029-06-07"
         },
         {
-          "name": "SAFEQU Exemption (HSSC) (2)",
+          "name": "",
           "expiry": "2029-06-07"
         },
         {
-          "name": "Cargo Ship Safety Radio (HSSC)",
+          "name": "",
           "expiry": "2029-06-07"
         },
         {
-          "name": "ISM Safety Management",
+          "name": "",
           "expiry": "2028-11-06"
         },
         {
-          "name": "Maritime Labour Convention",
+          "name": "",
           "expiry": "2028-11-06"
         },
         {
-          "name": "International Ship Security Certificate",
+          "name": "",
           "expiry": "2028-11-06"
         },
         {
-          "name": "International Air Pollution Prevention",
+          "name": "",
           "expiry": "2029-06-07"
         },
         {
-          "name": "International Oil Pollution Prevention",
+          "name": "",
           "expiry": "2029-06-07"
         },
         {
-          "name": "International Sewage Pollution Prevention",
+          "name": "",
           "expiry": "2029-06-07"
         },
         {
-          "name": "International Certificate on Inventory of Hazardous (2) Materials (HKG Convention 2009)",
+          "name": "",
           "expiry": "2028-07-24"
         },
         {
-          "name": "International Energy Efficiency Certificate"
+          "name": "",
+          "expiry": "2024-07-17"
         },
         {
-          "name": "International Ballast Water Management",
-          "expiry": "2029-06-07"
-        },
-        {
-          "name": "International Anti-Fouling System"
-        },
-        {
-          "name": "Lifting Appliances (3) (4)"
+          "name": "",
+          "expiry": "2023-07-25"
         }
       ],
       "alerts": {
-        "expired": 0,
+        "expired": 2,
         "urgent_7d": 0,
         "warning_30d": 0,
         "info_90d": 0
@@ -8428,7 +9582,7 @@
       "class_society": "RINA",
       "flag": "Hong Kong",
       "gt": "",
-      "dwt": 207923.0,
+      "dwt": "207923",
       "surveys": [
         {
           "type": "",
@@ -8854,92 +10008,88 @@
       ],
       "certificates": [
         {
-          "name": "Class",
+          "name": "",
           "expiry": "2028-08-25"
         },
         {
-          "name": "International Load Line (HSSC)",
+          "name": "",
           "expiry": "2028-08-25"
         },
         {
-          "name": "IMSBC Code (1)",
+          "name": "",
           "expiry": "2028-08-25"
         },
         {
-          "name": "Document for Carriage of Dangerous Goods (SOLAS) (2) (cargo vessel)",
+          "name": "",
           "expiry": "2028-08-25"
         },
         {
-          "name": "Cargo Ship Safety Construction (HSSC)",
+          "name": "",
           "expiry": "2028-08-25"
         },
         {
-          "name": "Cargo Ship Safety Equipment (HSSC)",
+          "name": "",
           "expiry": "2028-08-25"
         },
         {
-          "name": "SAFEQU Exemption (HSSC)",
+          "name": "",
           "expiry": "2028-08-25"
         },
         {
-          "name": "Cargo Ship Safety Radio (HSSC)",
+          "name": "",
           "expiry": "2028-08-25"
         },
         {
-          "name": "Maritime Labour Convention",
+          "name": "",
           "expiry": "2026-12-04"
         },
         {
-          "name": "ISM Safety Management",
+          "name": "",
           "expiry": "2026-12-04"
         },
         {
-          "name": "International Ship Security Certificate",
+          "name": "",
           "expiry": "2026-12-04"
         },
         {
-          "name": "Garbage Pollution Prevention (1)",
+          "name": "",
           "expiry": "2028-08-25"
         },
         {
-          "name": "International Air Pollution Prevention",
+          "name": "",
           "expiry": "2028-08-25"
         },
         {
-          "name": "International Oil Pollution Prevention",
+          "name": "",
           "expiry": "2028-08-25"
         },
         {
-          "name": "International Sewage Pollution Prevention",
+          "name": "",
           "expiry": "2028-08-25"
         },
         {
-          "name": "Statement of compliance on Inventory of Hazardous (1) Materials (EU 1257/2013) T",
+          "name": "",
           "expiry": "2028-08-25"
         },
         {
-          "name": "International Certificate on Inventory of Hazardous (1) Materials (HKG Convention 2009)",
+          "name": "",
           "expiry": "2028-08-25"
         },
         {
-          "name": "International Energy Efficiency Certificate"
+          "name": "",
+          "expiry": "2026-06-11"
         },
         {
-          "name": "International Ballast Water Management",
-          "expiry": "2028-08-25"
+          "name": "",
+          "expiry": "2026-06-04"
         },
         {
-          "name": "International Anti-Fouling System"
-        },
-        {
-          "name": "ILO 92/133 Crew Accommodation"
-        },
-        {
-          "name": "Lifting Appliances"
+          "name": "",
+          "expiry": "2008-08-26"
         }
       ],
       "alerts": {
-        "expired": 0,
+        "expired": 3,
         "urgent_7d": 0,
         "warning_30d": 0,
         "info_90d": 0
@@ -8952,7 +10102,7 @@
       "class_society": "RINA",
       "flag": "Liberia",
       "gt": "",
-      "dwt": 203180.0,
+      "dwt": "203180",
       "surveys": [
         {
           "type": "",
@@ -9303,73 +10453,68 @@
       ],
       "certificates": [
         {
-          "name": "Class",
+          "name": "",
           "expiry": "2030-05-11"
         },
         {
-          "name": "International Load Line (HSSC)",
+          "name": "",
           "expiry": "2030-05-11"
         },
         {
-          "name": "IMSBC Code (1)",
+          "name": "",
           "expiry": "2030-05-11"
         },
         {
-          "name": "Cargo Ship Safety Construction (HSSC)",
+          "name": "",
           "expiry": "2030-05-11"
         },
         {
-          "name": "Cargo Ship Safety Equipment (HSSC)",
+          "name": "",
           "expiry": "2030-05-11"
         },
         {
-          "name": "SAFEQU Exemption (HSSC) (2)",
+          "name": "",
           "expiry": "2030-05-11"
         },
         {
-          "name": "Cargo Ship Safety Radio (HSSC)",
+          "name": "",
           "expiry": "2030-05-11"
         },
         {
-          "name": "Maritime Labour Convention",
+          "name": "",
           "expiry": "2026-10-31"
         },
         {
-          "name": "ISM Safety Management",
+          "name": "",
           "expiry": "2026-10-31"
         },
         {
-          "name": "International Ship Security Certificate",
+          "name": "",
           "expiry": "2026-10-31"
         },
         {
-          "name": "International Air Pollution Prevention",
+          "name": "",
           "expiry": "2030-05-11"
         },
         {
-          "name": "International Oil Pollution Prevention",
+          "name": "",
           "expiry": "2030-05-11"
         },
         {
-          "name": "International Sewage Pollution Prevention",
+          "name": "",
           "expiry": "2030-05-11"
         },
         {
-          "name": "International Anti-Fouling System"
+          "name": "",
+          "expiry": "2023-05-11"
         },
         {
-          "name": "International Energy Efficiency Certificate"
-        },
-        {
-          "name": "International Ballast Water Management",
+          "name": "",
           "expiry": "2030-05-11"
-        },
-        {
-          "name": "Lifting Appliances (3)"
         }
       ],
       "alerts": {
-        "expired": 0,
+        "expired": 1,
         "urgent_7d": 0,
         "warning_30d": 0,
         "info_90d": 3
