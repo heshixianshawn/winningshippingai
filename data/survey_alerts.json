@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-01 15:00",
+  "generated": "2026-09-01 17:02",
   "expired": [
     {
       "ship": "SUNNY FARANAH",
@@ -137,14 +137,14 @@
     {
       "ship": "SUNNY RIVER",
       "class": "RINA",
-      "description": "",
+      "description": "International Energy Efficiency Certificate International Ballast Water Management",
       "date": "2026-06-11",
       "days": -82
     },
     {
       "ship": "SUNNY RIVER",
       "class": "RINA",
-      "description": "",
+      "description": "International Anti-Fouling System",
       "date": "2026-06-04",
       "days": -89
     },
@@ -235,21 +235,21 @@
     {
       "ship": "SUNNY KANKAN",
       "class": "RINA",
-      "description": "",
+      "description": "International Energy Efficiency Certificate International Ballast Water Management",
       "date": "2024-07-17",
       "days": -776
     },
     {
       "ship": "SUNNY KANKAN",
       "class": "RINA",
-      "description": "",
+      "description": "International Anti-Fouling System",
       "date": "2023-07-25",
       "days": -1134
     },
     {
       "ship": "SUNNY ROUTE",
       "class": "RINA",
-      "description": "",
+      "description": "International Anti-Fouling System International Energy Efficiency Certificate",
       "date": "2023-05-11",
       "days": -1209
     },
@@ -263,7 +263,7 @@
     {
       "ship": "SUNNY RIVER",
       "class": "RINA",
-      "description": "",
+      "description": "ILO 92/133 Crew Accommodation Lifting Appliances",
       "date": "2008-08-26",
       "days": -6580
     }
@@ -366,21 +366,21 @@
     {
       "ship": "SUNNY ROUTE",
       "class": "RINA",
-      "description": "",
+      "description": "Maritime Labour Convention",
       "date": "2026-10-31",
       "days": 60
     },
     {
       "ship": "SUNNY ROUTE",
       "class": "RINA",
-      "description": "",
+      "description": "ISM Safety Management",
       "date": "2026-10-31",
       "days": 60
     },
     {
       "ship": "SUNNY ROUTE",
       "class": "RINA",
-      "description": "",
+      "description": "International Ship Security Certificate",
       "date": "2026-10-31",
       "days": 60
     },
