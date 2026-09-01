@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-01 23:56",
+  "last_updated": "2026-09-02 00:26",
   "total_ships": 62,
   "ships": {
     "SUNNY_BEYLA": {
@@ -7841,15 +7841,76 @@
     },
     "WINNING_KINDNESS": {
       "name": "WINNING KINDNESS",
-      "imo": "",
+      "imo": "9335240",
       "class_society": "KR",
-      "flag": "",
+      "flag": "SINGAPORE",
       "gt": "",
       "dwt": 176924.0,
-      "surveys": [],
+      "surveys": [
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Next Special Survey No."
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey",
+          "due_date": "2028-12-28"
+        },
+        {
+          "type": "annual_survey",
+          "desc": "Annual Survey",
+          "due_date": "2026-12-28"
+        },
+        {
+          "type": "boiler",
+          "desc": "No.1 Aux. Boiler Survey",
+          "due_date": "2028-10-05"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey",
+          "due_date": "2028-10-05",
+          "last_done": "2025-10-05"
+        }
+      ],
       "certificates": [
         {
+          "name": "ISPS"
+        },
+        {
           "name": "MLC"
+        },
+        {
+          "name": "IOPP",
+          "expiry": "2030-09-28"
+        },
+        {
+          "name": "IAPP",
+          "expiry": "2030-09-28"
+        },
+        {
+          "name": "ISPP",
+          "expiry": "2030-09-28"
+        },
+        {
+          "name": "Load Line",
+          "expiry": "2030-09-28"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2030-09-28"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2030-09-28"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2030-09-28"
         },
         {
           "name": "BWM",
@@ -7857,6 +7918,13 @@
         },
         {
           "name": "IHM"
+        },
+        {
+          "name": "Cargo Gear",
+          "expiry": "2030-09-28"
+        },
+        {
+          "name": "AFS"
         },
         {
           "name": "DOC"
@@ -7876,15 +7944,76 @@
     },
     "WINNING_RICH": {
       "name": "WINNING RICH",
-      "imo": "",
+      "imo": "9498054",
       "class_society": "KR",
-      "flag": "",
+      "flag": "SINGAPORE",
       "gt": "",
       "dwt": 179221.0,
-      "surveys": [],
+      "surveys": [
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Next Special Survey No."
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey",
+          "due_date": "2028-02-16"
+        },
+        {
+          "type": "annual_survey",
+          "desc": "Annual Survey",
+          "due_date": "2027-02-16"
+        },
+        {
+          "type": "boiler",
+          "desc": "No.1 Aux. Boiler Survey",
+          "due_date": "2027-09-11"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey",
+          "due_date": "2027-09-11",
+          "last_done": "2024-09-11"
+        }
+      ],
       "certificates": [
         {
+          "name": "ISPS"
+        },
+        {
           "name": "MLC"
+        },
+        {
+          "name": "IOPP",
+          "expiry": "2029-11-16"
+        },
+        {
+          "name": "IAPP",
+          "expiry": "2029-11-16"
+        },
+        {
+          "name": "ISPP",
+          "expiry": "2029-11-16"
+        },
+        {
+          "name": "Load Line",
+          "expiry": "2029-11-16"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2029-11-16"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2029-11-16"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2029-11-16"
         },
         {
           "name": "BWM",
@@ -7892,6 +8021,13 @@
         },
         {
           "name": "IHM"
+        },
+        {
+          "name": "Cargo Gear",
+          "expiry": "2029-11-16"
+        },
+        {
+          "name": "AFS"
         },
         {
           "name": "DOC"
@@ -7911,15 +8047,76 @@
     },
     "WINNING_SPIRIT": {
       "name": "WINNING SPIRIT",
-      "imo": "",
+      "imo": "9597824",
       "class_society": "KR",
-      "flag": "",
+      "flag": "SINGAPORE",
       "gt": "",
       "dwt": 179213.0,
-      "surveys": [],
+      "surveys": [
+        {
+          "type": "tail_shaft",
+          "desc": "Propeller Shaft"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Next Special Survey No."
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey",
+          "due_date": "2029-11-11"
+        },
+        {
+          "type": "annual_survey",
+          "desc": "Annual Survey",
+          "due_date": "2027-11-11"
+        },
+        {
+          "type": "boiler",
+          "desc": "No.1 Aux. Boiler Survey",
+          "due_date": "2029-08-03"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "Docking Survey",
+          "due_date": "2029-08-03",
+          "last_done": "2026-08-03"
+        }
+      ],
       "certificates": [
         {
+          "name": "ISPS"
+        },
+        {
           "name": "MLC"
+        },
+        {
+          "name": "IOPP",
+          "expiry": "2031-08-02"
+        },
+        {
+          "name": "IAPP",
+          "expiry": "2031-08-11"
+        },
+        {
+          "name": "ISPP",
+          "expiry": "2031-08-11"
+        },
+        {
+          "name": "Load Line",
+          "expiry": "2031-08-11"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2031-08-11"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2031-08-11"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2031-08-11"
         },
         {
           "name": "BWM",
@@ -7928,6 +8125,13 @@
         {
           "name": "IHM",
           "expiry": "2031-08-11"
+        },
+        {
+          "name": "Cargo Gear",
+          "expiry": "2031-08-11"
+        },
+        {
+          "name": "AFS"
         },
         {
           "name": "DOC"

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-01 23:56",
+  "generated": "2026-09-02 00:26",
   "expired": [],
   "urgent_7d": [],
   "warning_30d": [],
@@ -9,252 +9,252 @@
       "class": "CCS",
       "description": "Class Special Survey for",
       "date": "2026-10-12",
-      "days": 41
+      "days": 40
     },
     {
       "ship": "WINNING WEALTH",
       "class": "CCS",
       "description": "BTS (船底外部检验)",
       "date": "2026-10-12",
-      "days": 41
+      "days": 40
     },
     {
       "ship": "WINNING WEALTH",
       "class": "CCS",
       "description": "IOPP",
       "date": "2026-10-12",
-      "days": 41
+      "days": 40
     },
     {
       "ship": "WINNING WEALTH",
       "class": "CCS",
       "description": "IAPP",
       "date": "2026-10-12",
-      "days": 41
+      "days": 40
     },
     {
       "ship": "WINNING WEALTH",
       "class": "CCS",
       "description": "ISPP",
       "date": "2026-10-12",
-      "days": 41
+      "days": 40
     },
     {
       "ship": "WINNING WEALTH",
       "class": "CCS",
       "description": "Safety Construction",
       "date": "2026-10-12",
-      "days": 41
+      "days": 40
     },
     {
       "ship": "WINNING WEALTH",
       "class": "CCS",
       "description": "Safety Equipment",
       "date": "2026-10-12",
-      "days": 41
+      "days": 40
     },
     {
       "ship": "WINNING WEALTH",
       "class": "CCS",
       "description": "Safety Radio",
       "date": "2026-10-12",
-      "days": 41
+      "days": 40
     },
     {
       "ship": "WINNING WEALTH",
       "class": "CCS",
       "description": "IHM",
       "date": "2026-10-12",
-      "days": 41
+      "days": 40
     },
     {
       "ship": "WINNING WEALTH",
       "class": "CCS",
       "description": "Cargo Gear",
       "date": "2026-10-12",
-      "days": 41
+      "days": 40
     },
     {
       "ship": "WINNING WEALTH",
       "class": "CCS",
       "description": "AFS",
       "date": "2026-10-12",
-      "days": 41
+      "days": 40
     },
     {
       "ship": "SUNNY ROUTE",
       "class": "RINA",
       "description": "Maritime Labour Convention",
       "date": "2026-10-31",
-      "days": 60
+      "days": 59
     },
     {
       "ship": "SUNNY ROUTE",
       "class": "RINA",
       "description": "ISM Safety Management",
       "date": "2026-10-31",
-      "days": 60
+      "days": 59
     },
     {
       "ship": "SUNNY ROUTE",
       "class": "RINA",
       "description": "International Ship Security Certificate",
       "date": "2026-10-31",
-      "days": 60
+      "days": 59
     },
     {
       "ship": "SUNNY ROUTE",
       "class": "RINA",
       "description": "International Sewage Pollution Prevention",
       "date": "2026-10-31",
-      "days": 60
+      "days": 59
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "Propeller Shaft Survey (尾轴检验)",
       "date": "2026-11-18",
-      "days": 78
+      "days": 77
     },
     {
       "ship": "WINNING WAVE",
       "class": "CCS",
       "description": "Class Annual Survey",
       "date": "2026-11-18",
-      "days": 78
+      "days": 77
     },
     {
       "ship": "WINNING LOYALTY",
       "class": "NK",
       "description": "Propeller Shaft Survey (尾轴检验)",
       "date": "2026-11-24",
-      "days": 84
+      "days": 83
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "Special Survey (特检)",
       "date": "2026-11-27",
-      "days": 87
+      "days": 86
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "Boiler Survey (锅炉检验)",
       "date": "2026-11-27",
-      "days": 87
+      "days": 86
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "Docking Survey (坞检)",
       "date": "2026-11-27",
-      "days": 87
+      "days": 86
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "Load Line Renewal (载重线换证)",
       "date": "2026-11-27",
-      "days": 87
+      "days": 86
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "Safety Construction Renewal (构造安全换证)",
       "date": "2026-11-27",
-      "days": 87
+      "days": 86
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "Safety Equipment Renewal (设备安全换证)",
       "date": "2026-11-27",
-      "days": 87
+      "days": 86
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "Safety Radio Renewal (无线电安全换证)",
       "date": "2026-11-27",
-      "days": 87
+      "days": 86
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "OPP Renewal (防油污换证)",
       "date": "2026-11-27",
-      "days": 87
+      "days": 86
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "SPP Renewal (生活污水换证)",
       "date": "2026-11-27",
-      "days": 87
+      "days": 86
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "APP Renewal (防空气污染换证)",
       "date": "2026-11-27",
-      "days": 87
+      "days": 86
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "BWM Renewal (压载水换证)",
       "date": "2026-11-27",
-      "days": 87
+      "days": 86
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "Load Line",
       "date": "2026-11-27",
-      "days": 87
+      "days": 86
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "Safety Construction",
       "date": "2026-11-27",
-      "days": 87
+      "days": 86
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "Safety Equipment",
       "date": "2026-11-27",
-      "days": 87
+      "days": 86
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "Safety Radio",
       "date": "2026-11-27",
-      "days": 87
+      "days": 86
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "EE Anti Fouling System BWM",
       "date": "2026-11-27",
-      "days": 87
+      "days": 86
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "IHM",
       "date": "2026-11-27",
-      "days": 87
+      "days": 86
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "IMSBC code",
       "date": "2026-11-27",
-      "days": 87
+      "days": 86
     }
   ]
 }
