@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-01 23:27",
+  "last_updated": "2026-09-01 23:34",
   "total_ships": 62,
   "ships": {
     "SUNNY_BEYLA": {
@@ -7662,19 +7662,22 @@
           "name": "ISM DOC"
         },
         {
-          "name": "ISM SMC"
+          "name": "ISM SMC",
+          "expiry": "2027-01-20"
         },
         {
           "name": "ISPS"
         },
         {
-          "name": "MLC"
+          "name": "MLC",
+          "expiry": "2027-01-20"
         },
         {
           "name": "IOPP"
         },
         {
-          "name": "IAPP"
+          "name": "IAPP",
+          "expiry": "2029-09-28"
         },
         {
           "name": "ISPP"
@@ -7683,13 +7686,15 @@
           "name": "Load Line"
         },
         {
-          "name": "Safety Construction"
+          "name": "Safety Construction",
+          "expiry": "2029-09-28"
         },
         {
           "name": "Safety Equipment"
         },
         {
-          "name": "Safety Radio"
+          "name": "Safety Radio",
+          "expiry": "2029-09-28"
         },
         {
           "name": "BWM"
@@ -7704,13 +7709,15 @@
           "name": "AFS"
         },
         {
-          "name": "EIAPP"
+          "name": "EIAPP",
+          "expiry": "2029-09-28"
         },
         {
           "name": "DOC"
         },
         {
-          "name": "SMC"
+          "name": "SMC",
+          "expiry": "2027-01-20"
         }
       ],
       "alerts": {
@@ -7765,19 +7772,23 @@
           "name": "ISM DOC"
         },
         {
-          "name": "ISM SMC"
+          "name": "ISM SMC",
+          "expiry": "2031-06-24"
         },
         {
-          "name": "ISPS"
+          "name": "ISPS",
+          "expiry": "2031-06-24"
         },
         {
-          "name": "MLC"
+          "name": "MLC",
+          "expiry": "2031-06-24"
         },
         {
           "name": "IOPP"
         },
         {
-          "name": "IAPP"
+          "name": "IAPP",
+          "expiry": "2031-01-24"
         },
         {
           "name": "ISPP"
@@ -7786,13 +7797,15 @@
           "name": "Load Line"
         },
         {
-          "name": "Safety Construction"
+          "name": "Safety Construction",
+          "expiry": "2031-01-24"
         },
         {
           "name": "Safety Equipment"
         },
         {
-          "name": "Safety Radio"
+          "name": "Safety Radio",
+          "expiry": "2031-01-24"
         },
         {
           "name": "BWM"
@@ -7807,13 +7820,15 @@
           "name": "AFS"
         },
         {
-          "name": "EIAPP"
+          "name": "EIAPP",
+          "expiry": "2031-01-24"
         },
         {
           "name": "DOC"
         },
         {
-          "name": "SMC"
+          "name": "SMC",
+          "expiry": "2031-06-24"
         }
       ],
       "alerts": {
