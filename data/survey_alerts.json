@@ -1,280 +1,169 @@
 {
-  "generated": "2026-08-24",
-  "urgent_7d": [
-    {
-      "ship": "WINNING RESILIENCE",
-      "type": "survey",
-      "name": "Class Annual Survey",
-      "date": "2026-08-31",
-      "days": 7,
-      "status": "WINDOW"
-    },
-    {
-      "ship": "WINNING RESILIENCE",
-      "type": "survey",
-      "name": "Continuous Survey for",
-      "date": "2026-08-31",
-      "days": 7,
-      "status": "NOT_DUE"
-    }
-  ],
+  "generated": "2026-09-01 11:03",
+  "expired": [],
+  "urgent_7d": [],
   "warning_30d": [],
-  "expired_recent": [
-    {
-      "ship": "WINNING WEALTH",
-      "type": "survey",
-      "name": "Class Intermediate Survey",
-      "date": "2026-07-13",
-      "days": -42,
-      "status": "NOT_DUE"
-    }
-  ],
   "info_90d": [
     {
       "ship": "SUNNY BOFFA",
-      "type": "survey",
-      "name": "Propeller Shaft Survey (尾轴检验)",
+      "class": "NK",
+      "description": "Propeller Shaft Survey (尾轴检验)",
       "date": "2026-11-18",
-      "days": 86,
-      "status": "Not Due"
+      "days": 78
     },
     {
-      "ship": "WINNING RESILIENCE",
-      "type": "certificate",
-      "name": "International Tonnage Certificate(PAN)",
-      "date": "2026-10-24",
-      "days": 61,
-      "status": "VALID"
+      "ship": "WINNING LOYALTY",
+      "class": "NK",
+      "description": "Propeller Shaft Survey (尾轴检验)",
+      "date": "2026-11-24",
+      "days": 84
     },
     {
-      "ship": "WINNING RESILIENCE",
-      "type": "certificate",
-      "name": "SE Exemption Certificate(No.1)",
-      "date": "2026-09-24",
-      "days": 31,
-      "status": "VALID"
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "Special Survey (特检)",
+      "date": "2026-11-27",
+      "days": 87
     },
     {
-      "ship": "WINNING RESILIENCE",
-      "type": "certificate",
-      "name": "International Ballast Water Management Certificate",
-      "date": "2026-09-24",
-      "days": 31,
-      "status": "VALID"
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "Boiler Survey (锅炉检验)",
+      "date": "2026-11-27",
+      "days": 87
     },
     {
-      "ship": "WINNING RESILIENCE",
-      "type": "certificate",
-      "name": "International Certificate on Inventory of Hazardous Materials",
-      "date": "2026-09-24",
-      "days": 31,
-      "status": "VALID"
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "Docking Survey (坞检)",
+      "date": "2026-11-27",
+      "days": 87
     },
     {
-      "ship": "SUNNY KOGON",
-      "type": "survey",
-      "name": "Continuous Survey for",
-      "date": "2026-10-31",
-      "days": 68,
-      "status": "NOT_DUE"
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "Load Line Renewal (载重线换证)",
+      "date": "2026-11-27",
+      "days": 87
     },
     {
-      "ship": "WINNING JOY",
-      "type": "survey",
-      "name": "Class Annual Survey",
-      "date": "2026-10-31",
-      "days": 68,
-      "status": "WINDOW"
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "Safety Construction Renewal (构造安全换证)",
+      "date": "2026-11-27",
+      "days": 87
     },
     {
-      "ship": "WINNING WEALTH",
-      "type": "certificate",
-      "name": "International Load Line Certificate(FB6238)",
-      "date": "2026-10-12",
-      "days": 49,
-      "status": "VALID"
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "Safety Equipment Renewal (设备安全换证)",
+      "date": "2026-11-27",
+      "days": 87
     },
     {
-      "ship": "WINNING WEALTH",
-      "type": "certificate",
-      "name": "Cargo Ship Safety Construction Certificate(FB6238)",
-      "date": "2026-10-12",
-      "days": 49,
-      "status": "VALID"
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "Safety Radio Renewal (无线电安全换证)",
+      "date": "2026-11-27",
+      "days": 87
     },
     {
-      "ship": "WINNING WEALTH",
-      "type": "certificate",
-      "name": "Cargo Ship Safety Equipment Certificate(FB6238)",
-      "date": "2026-10-12",
-      "days": 49,
-      "status": "VALID"
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "OPP Renewal (防油污换证)",
+      "date": "2026-11-27",
+      "days": 87
     },
     {
-      "ship": "WINNING WEALTH",
-      "type": "certificate",
-      "name": "SE Exemption Certificate(No.1)",
-      "date": "2026-10-12",
-      "days": 49,
-      "status": "VALID"
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "SPP Renewal (生活污水换证)",
+      "date": "2026-11-27",
+      "days": 87
     },
     {
-      "ship": "WINNING WEALTH",
-      "type": "certificate",
-      "name": "Cargo Ship Safety Radio Certificate",
-      "date": "2026-10-12",
-      "days": 49,
-      "status": "VALID"
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "APP Renewal (防空气污染换证)",
+      "date": "2026-11-27",
+      "days": 87
     },
     {
-      "ship": "WINNING WEALTH",
-      "type": "certificate",
-      "name": "International Oil Pollution Prevention Certificate(FB6238)",
-      "date": "2026-10-12",
-      "days": 49,
-      "status": "VALID"
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "BWM Renewal (压载水换证)",
+      "date": "2026-11-27",
+      "days": 87
     },
     {
-      "ship": "WINNING WEALTH",
-      "type": "certificate",
-      "name": "International Sewage Pollution Prevention Certificate",
-      "date": "2026-10-12",
-      "days": 49,
-      "status": "VALID"
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "Load Line",
+      "date": "2026-11-27",
+      "days": 87
     },
     {
-      "ship": "WINNING WEALTH",
-      "type": "certificate",
-      "name": "International Air Pollution Prevention Certificate",
-      "date": "2026-10-12",
-      "days": 49,
-      "status": "VALID"
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "Safety Construction",
+      "date": "2026-11-27",
+      "days": 87
     },
     {
-      "ship": "WINNING WEALTH",
-      "type": "certificate",
-      "name": "Certificate of Compliance for the Carriage of Solid Bulk Cargoes",
-      "date": "2026-10-12",
-      "days": 49,
-      "status": "VALID"
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "Safety Equipment",
+      "date": "2026-11-27",
+      "days": 87
     },
     {
-      "ship": "WINNING WEALTH",
-      "type": "certificate",
-      "name": "Statement of Compliance on Inventory of Hazardous Materials",
-      "date": "2026-10-12",
-      "days": 49,
-      "status": "VALID"
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "Safety Radio",
+      "date": "2026-11-27",
+      "days": 87
     },
     {
-      "ship": "WINNING WEALTH",
-      "type": "certificate",
-      "name": "Statement of Compliance on Inventory of Hazardous Materials(European Union)",
-      "date": "2026-10-12",
-      "days": 49,
-      "status": "VALID"
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "OPP (MARPOL Annex I)",
+      "date": "2026-11-27",
+      "days": 87
     },
     {
-      "ship": "WINNING WEALTH",
-      "type": "certificate",
-      "name": "International Ballast Water Management Certificate",
-      "date": "2026-10-12",
-      "days": 49,
-      "status": "VALID"
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "SPP (MARPOL Annex IV)",
+      "date": "2026-11-27",
+      "days": 87
     },
     {
-      "ship": "WINNING WEALTH",
-      "type": "certificate",
-      "name": "Document of Compliance (Special Requirement for Ships Carrying Dangerous Goods)",
-      "date": "2026-10-12",
-      "days": 49,
-      "status": "VALID"
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "APP (MARPOL Annex VI)",
+      "date": "2026-11-27",
+      "days": 87
     },
     {
-      "ship": "WINNING WEALTH",
-      "type": "certificate",
-      "name": "Statement of Acceptance Type- Approved Equipment for Singapore Registered Ships",
-      "date": "2026-10-12",
-      "days": 49,
-      "status": "VALID"
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "EE Anti Fouling System BWM",
+      "date": "2026-11-27",
+      "days": 87
     },
     {
-      "ship": "WINNING WEALTH",
-      "type": "survey",
-      "name": "Class Special Survey for",
-      "date": "2026-10-12",
-      "days": 49,
-      "status": "NOT_DUE"
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "IHM",
+      "date": "2026-11-27",
+      "days": 87
     },
     {
-      "ship": "WINNING WEALTH",
-      "type": "survey",
-      "name": "Continuous Survey for",
-      "date": "2026-10-12",
-      "days": 49,
-      "status": "NOT_DUE"
-    },
-    {
-      "ship": "WINNING WEALTH",
-      "type": "survey",
-      "name": "BTS",
-      "date": "2026-10-12",
-      "days": 49,
-      "status": "NOT_DUE"
-    },
-    {
-      "ship": "WINNING WEALTH",
-      "type": "survey",
-      "name": "Boiler Survey (No.1 Oil-fired",
-      "date": "2026-10-12",
-      "days": 49,
-      "status": "NOT_DUE"
-    },
-    {
-      "ship": "WINNING WEALTH",
-      "type": "survey",
-      "name": "Boiler Survey (No.2 Exhaust gas",
-      "date": "2026-10-12",
-      "days": 49,
-      "status": "NOT_DUE"
-    },
-    {
-      "ship": "WINNING WEALTH",
-      "type": "survey",
-      "name": "Screwshaft Survey",
-      "date": "2026-10-20",
-      "days": 57,
-      "status": "NOT_DUE"
-    },
-    {
-      "ship": "SUNNY ROUTE",
-      "type": "certificate",
-      "name": "Maritime Labour Convention",
-      "date": "2026-10-31",
-      "days": 68,
-      "status": "VALID"
-    },
-    {
-      "ship": "SUNNY ROUTE",
-      "type": "certificate",
-      "name": "ISM Safety Management",
-      "date": "2026-10-31",
-      "days": 68,
-      "status": "VALID"
-    },
-    {
-      "ship": "SUNNY ROUTE",
-      "type": "certificate",
-      "name": "International Ship Security Certificate",
-      "date": "2026-10-31",
-      "days": 68,
-      "status": "VALID"
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "IMSBC code",
+      "date": "2026-11-27",
+      "days": 87
     }
-  ],
-  "summary": {
-    "urgent_count": 2,
-    "warning_count": 0,
-    "expired_count": 1,
-    "total_active": 2
-  }
+  ]
 }
