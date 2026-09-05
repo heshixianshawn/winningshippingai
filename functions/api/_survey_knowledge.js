@@ -234,25 +234,32 @@ export function querySurveyKnowledge(question) {
   }
   
   // Check for docking survey queries (坞检专项，支持年份筛选)
+  // 2026-09-05 修复：按船去重 + 去掉 slice(40) 截断（重复坞检行翻倍曾致尾部船被切断 → 平台漏船）
   if (/坞检|坞修|Docking/i.test(q)) {
     const yearMatch = q.match(/20\d{2}/);
     const year = yearMatch ? yearMatch[0] : null;
     const dockShips = [];
+    const seenShip = new Set();
     for (const [key, ship] of Object.entries(SURVEY_DATA.ships)) {
+      if (seenShip.has(ship.name)) continue;
       for (const s of (ship.surveys || [])) {
         const desc = String(s.description || '');
         if (s.type === 'dry_docking' || /坞检|Docking|BTS/i.test(desc)) {
           const due = String(s.due_date || '');
           if (year && due.includes(year)) {
             dockShips.push(`  - ${ship.name}: ${desc} 到期 ${due}${s.last_done ? '（上次 ' + s.last_done + '）' : ''}`);
+            seenShip.add(ship.name);
+            break;
           } else if (!year) {
             dockShips.push(`  - ${ship.name}: ${desc} 到期 ${due}${s.last_done ? '（上次 ' + s.last_done + '）' : ''}`);
+            seenShip.add(ship.name);
+            break;
           }
         }
       }
     }
     if (dockShips.length > 0) {
-      return `\n【坞检（Docking Survey）状态】${year ? ' — ' + year + ' 年到期' : ''}\n` + dockShips.slice(0, 40).join('\n');
+      return `\n【坞检（Docking Survey）状态】${year ? ' — ' + year + ' 年到期' : ''}\n` + dockShips.join('\n');
     }
   }
 

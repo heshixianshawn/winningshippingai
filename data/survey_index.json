@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-05 13:52",
+  "last_updated": "2026-09-05 14:30",
   "total_ships": 63,
   "ships": {
     "SUNNY_BEYLA": {
@@ -40,46 +40,6 @@
           "due_date": "2031-01-21"
         },
         {
-          "type": "statutory",
-          "desc": "Safety Construction Renewal (构造安全换证)",
-          "due_date": "2031-01-21"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Equipment Renewal (设备安全换证)",
-          "due_date": "2031-01-21"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Radio Renewal (无线电安全换证)",
-          "due_date": "2031-01-21"
-        },
-        {
-          "type": "statutory",
-          "desc": "OPP Renewal (防油污换证)",
-          "due_date": "2031-01-21"
-        },
-        {
-          "type": "statutory",
-          "desc": "SPP Renewal (生活污水换证)",
-          "due_date": "2031-01-21"
-        },
-        {
-          "type": "statutory",
-          "desc": "APP Renewal (防空气污染换证)",
-          "due_date": "2031-01-21"
-        },
-        {
-          "type": "statutory",
-          "desc": "IHM Renewal (有害物质清单换证)",
-          "due_date": "2031-01-21"
-        },
-        {
-          "type": "statutory",
-          "desc": "BWM Renewal (压载水换证)",
-          "due_date": "2031-01-21"
-        },
-        {
           "type": "class",
           "desc": "Special Survey",
           "due_date": "21 Jan 2031",
@@ -91,29 +51,9 @@
         },
         {
           "type": "class",
-          "desc": "Annual Survey"
-        },
-        {
-          "type": "class",
           "desc": "No.1 Boiler Survey",
           "due_date": "21 Jan 2029",
           "last_done": "22 Jan 2026"
-        },
-        {
-          "type": "class",
-          "desc": "Docking Survey (*1)",
-          "due_date": "21 Jan 2029",
-          "last_done": "22 Jan 2026"
-        },
-        {
-          "type": "class",
-          "desc": "No.1 Prop. Shaft Svy",
-          "due_date": "21 Jan 2031",
-          "last_done": "22 Jan 2026"
-        },
-        {
-          "type": "class",
-          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -224,41 +164,6 @@
           "due_date": "2026-11-27"
         },
         {
-          "type": "statutory",
-          "desc": "Safety Construction Renewal (构造安全换证)",
-          "due_date": "2026-11-27"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Equipment Renewal (设备安全换证)",
-          "due_date": "2026-11-27"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Radio Renewal (无线电安全换证)",
-          "due_date": "2026-11-27"
-        },
-        {
-          "type": "statutory",
-          "desc": "OPP Renewal (防油污换证)",
-          "due_date": "2026-11-27"
-        },
-        {
-          "type": "statutory",
-          "desc": "SPP Renewal (生活污水换证)",
-          "due_date": "2026-11-27"
-        },
-        {
-          "type": "statutory",
-          "desc": "APP Renewal (防空气污染换证)",
-          "due_date": "2026-11-27"
-        },
-        {
-          "type": "statutory",
-          "desc": "BWM Renewal (压载水换证)",
-          "due_date": "2026-11-27"
-        },
-        {
           "type": "class",
           "desc": "Special Survey",
           "due_date": "27 Nov 2026",
@@ -271,30 +176,9 @@
         },
         {
           "type": "class",
-          "desc": "Annual Survey",
-          "last_done": "15 Nov 2025"
-        },
-        {
-          "type": "class",
-          "desc": "No.1 Boiler Survey",
-          "due_date": "27 Nov 2026",
-          "last_done": "30 Nov 2024"
-        },
-        {
-          "type": "class",
-          "desc": "Docking Survey (*1)",
-          "due_date": "27 Nov 2026",
-          "last_done": "30 Nov 2024"
-        },
-        {
-          "type": "class",
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "18 Nov 2026",
           "last_done": "19 Nov 2021"
-        },
-        {
-          "type": "class",
-          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -363,7 +247,7 @@
         "expired": 0,
         "urgent_7d": 0,
         "warning_30d": 0,
-        "info_90d": 19
+        "info_90d": 12
       },
       "extraction_confidence": "high"
     },
@@ -405,41 +289,6 @@
           "due_date": "2030-06-29"
         },
         {
-          "type": "statutory",
-          "desc": "Safety Construction Renewal (构造安全换证)",
-          "due_date": "2030-06-29"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Equipment Renewal (设备安全换证)",
-          "due_date": "2030-06-29"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Radio Renewal (无线电安全换证)",
-          "due_date": "2030-06-29"
-        },
-        {
-          "type": "statutory",
-          "desc": "OPP Renewal (防油污换证)",
-          "due_date": "2030-06-29"
-        },
-        {
-          "type": "statutory",
-          "desc": "SPP Renewal (生活污水换证)",
-          "due_date": "2030-06-29"
-        },
-        {
-          "type": "statutory",
-          "desc": "APP Renewal (防空气污染换证)",
-          "due_date": "2030-06-29"
-        },
-        {
-          "type": "statutory",
-          "desc": "BWM Renewal (压载水换证)",
-          "due_date": "2030-06-29"
-        },
-        {
           "type": "class",
           "desc": "Special Survey",
           "due_date": "29 Jun 2030",
@@ -451,30 +300,9 @@
         },
         {
           "type": "class",
-          "desc": "Annual Survey",
-          "last_done": "03 Jun 2026"
-        },
-        {
-          "type": "class",
           "desc": "No.1 Boiler Survey",
           "due_date": "29 Jun 2028",
           "last_done": "30 Jun 2025"
-        },
-        {
-          "type": "class",
-          "desc": "Docking Survey (*1)",
-          "due_date": "29 Jun 2028",
-          "last_done": "30 Jun 2025"
-        },
-        {
-          "type": "class",
-          "desc": "No.1 Prop. Shaft Svy",
-          "due_date": "29 Jun 2030",
-          "last_done": "05 Oct 2020"
-        },
-        {
-          "type": "class",
-          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -577,46 +405,6 @@
           "due_date": "2027-11-21"
         },
         {
-          "type": "statutory",
-          "desc": "Safety Construction Renewal (构造安全换证)",
-          "due_date": "2027-11-21"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Equipment Renewal (设备安全换证)",
-          "due_date": "2027-11-21"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Radio Renewal (无线电安全换证)",
-          "due_date": "2027-11-21"
-        },
-        {
-          "type": "statutory",
-          "desc": "OPP Renewal (防油污换证)",
-          "due_date": "2027-11-21"
-        },
-        {
-          "type": "statutory",
-          "desc": "SPP Renewal (生活污水换证)",
-          "due_date": "2027-11-21"
-        },
-        {
-          "type": "statutory",
-          "desc": "APP Renewal (防空气污染换证)",
-          "due_date": "2027-11-21"
-        },
-        {
-          "type": "statutory",
-          "desc": "IHM Renewal (有害物质清单换证)",
-          "due_date": "2027-11-21"
-        },
-        {
-          "type": "statutory",
-          "desc": "BWM Renewal (压载水换证)",
-          "due_date": "2027-11-21"
-        },
-        {
           "type": "class",
           "desc": "Special Survey",
           "due_date": "21 Nov 2027",
@@ -629,30 +417,9 @@
         },
         {
           "type": "class",
-          "desc": "Annual Survey",
-          "last_done": "17 Dec 2024"
-        },
-        {
-          "type": "class",
-          "desc": "No.1 Boiler Survey",
-          "due_date": "21 Nov 2027",
-          "last_done": "20 Oct 2025"
-        },
-        {
-          "type": "class",
-          "desc": "Docking Survey (*1)",
-          "due_date": "21 Nov 2027",
-          "last_done": "20 Oct 2025"
-        },
-        {
-          "type": "class",
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "19 Oct 2030",
           "last_done": "20 Oct 2025"
-        },
-        {
-          "type": "class",
-          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -763,41 +530,6 @@
           "due_date": "2027-04-25"
         },
         {
-          "type": "statutory",
-          "desc": "Safety Construction Renewal (构造安全换证)",
-          "due_date": "2027-04-25"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Equipment Renewal (设备安全换证)",
-          "due_date": "2027-04-25"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Radio Renewal (无线电安全换证)",
-          "due_date": "2027-04-25"
-        },
-        {
-          "type": "statutory",
-          "desc": "OPP Renewal (防油污换证)",
-          "due_date": "2027-04-25"
-        },
-        {
-          "type": "statutory",
-          "desc": "SPP Renewal (生活污水换证)",
-          "due_date": "2027-04-25"
-        },
-        {
-          "type": "statutory",
-          "desc": "APP Renewal (防空气污染换证)",
-          "due_date": "2027-04-25"
-        },
-        {
-          "type": "statutory",
-          "desc": "BWM Renewal (压载水换证)",
-          "due_date": "2027-04-25"
-        },
-        {
           "type": "class",
           "desc": "Special Survey",
           "due_date": "25 Apr 2027",
@@ -810,30 +542,9 @@
         },
         {
           "type": "class",
-          "desc": "Annual Survey",
-          "last_done": "19 Feb 2026"
-        },
-        {
-          "type": "class",
-          "desc": "No.1 Boiler Survey",
-          "due_date": "25 Apr 2027",
-          "last_done": "06 Jul 2025"
-        },
-        {
-          "type": "class",
-          "desc": "Docking Survey (*1)",
-          "due_date": "25 Apr 2027",
-          "last_done": "06 Jul 2025"
-        },
-        {
-          "type": "class",
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "04 May 2027",
           "last_done": "26 Apr 2007"
-        },
-        {
-          "type": "class",
-          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -944,46 +655,6 @@
           "due_date": "2029-10-22"
         },
         {
-          "type": "statutory",
-          "desc": "Safety Construction Renewal (构造安全换证)",
-          "due_date": "2029-10-22"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Equipment Renewal (设备安全换证)",
-          "due_date": "2029-10-22"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Radio Renewal (无线电安全换证)",
-          "due_date": "2029-10-22"
-        },
-        {
-          "type": "statutory",
-          "desc": "OPP Renewal (防油污换证)",
-          "due_date": "2029-10-22"
-        },
-        {
-          "type": "statutory",
-          "desc": "SPP Renewal (生活污水换证)",
-          "due_date": "2029-10-22"
-        },
-        {
-          "type": "statutory",
-          "desc": "APP Renewal (防空气污染换证)",
-          "due_date": "2029-10-22"
-        },
-        {
-          "type": "statutory",
-          "desc": "IHM Renewal (有害物质清单换证)",
-          "due_date": "2029-10-22"
-        },
-        {
-          "type": "statutory",
-          "desc": "BWM Renewal (压载水换证)",
-          "due_date": "2029-10-22"
-        },
-        {
           "type": "class",
           "desc": "Special Survey",
           "due_date": "22 Oct 2029",
@@ -995,18 +666,7 @@
         },
         {
           "type": "class",
-          "desc": "Annual Survey",
-          "last_done": "08 Aug 2025"
-        },
-        {
-          "type": "class",
           "desc": "No.1 Boiler Survey",
-          "due_date": "09 Sep 2027",
-          "last_done": "10 Sep 2024"
-        },
-        {
-          "type": "class",
-          "desc": "Docking Survey (*1)",
           "due_date": "09 Sep 2027",
           "last_done": "10 Sep 2024"
         },
@@ -1015,10 +675,6 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "23 Oct 2029",
           "last_done": "10 Sep 2024"
-        },
-        {
-          "type": "class",
-          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -1121,46 +777,6 @@
           "due_date": "2030-10-07"
         },
         {
-          "type": "statutory",
-          "desc": "Safety Construction Renewal (构造安全换证)",
-          "due_date": "2030-10-07"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Equipment Renewal (设备安全换证)",
-          "due_date": "2030-10-07"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Radio Renewal (无线电安全换证)",
-          "due_date": "2030-10-07"
-        },
-        {
-          "type": "statutory",
-          "desc": "OPP Renewal (防油污换证)",
-          "due_date": "2030-10-07"
-        },
-        {
-          "type": "statutory",
-          "desc": "SPP Renewal (生活污水换证)",
-          "due_date": "2030-10-07"
-        },
-        {
-          "type": "statutory",
-          "desc": "APP Renewal (防空气污染换证)",
-          "due_date": "2030-10-07"
-        },
-        {
-          "type": "statutory",
-          "desc": "IHM Renewal (有害物质清单换证)",
-          "due_date": "2030-10-07"
-        },
-        {
-          "type": "statutory",
-          "desc": "BWM Renewal (压载水换证)",
-          "due_date": "2030-10-07"
-        },
-        {
           "type": "class",
           "desc": "Special Survey",
           "due_date": "07 Oct 2030",
@@ -1172,18 +788,7 @@
         },
         {
           "type": "class",
-          "desc": "Annual Survey",
-          "last_done": "08 Jul 2026"
-        },
-        {
-          "type": "class",
           "desc": "No.1 Boiler Survey",
-          "due_date": "15 Jul 2028",
-          "last_done": "16 Jul 2025"
-        },
-        {
-          "type": "class",
-          "desc": "Docking Survey (*1)",
           "due_date": "15 Jul 2028",
           "last_done": "16 Jul 2025"
         },
@@ -1192,10 +797,6 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "21 Sep 2027",
           "last_done": "06 Nov 2007"
-        },
-        {
-          "type": "class",
-          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -1306,41 +907,6 @@
           "due_date": "2030-06-24"
         },
         {
-          "type": "statutory",
-          "desc": "Safety Construction Renewal (构造安全换证)",
-          "due_date": "2030-06-24"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Equipment Renewal (设备安全换证)",
-          "due_date": "2030-06-24"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Radio Renewal (无线电安全换证)",
-          "due_date": "2030-06-24"
-        },
-        {
-          "type": "statutory",
-          "desc": "OPP Renewal (防油污换证)",
-          "due_date": "2030-06-24"
-        },
-        {
-          "type": "statutory",
-          "desc": "SPP Renewal (生活污水换证)",
-          "due_date": "2030-06-24"
-        },
-        {
-          "type": "statutory",
-          "desc": "APP Renewal (防空气污染换证)",
-          "due_date": "2030-06-24"
-        },
-        {
-          "type": "statutory",
-          "desc": "BWM Renewal (压载水换证)",
-          "due_date": "2030-06-24"
-        },
-        {
           "type": "class",
           "desc": "Special Survey",
           "due_date": "24 Jun 2030",
@@ -1352,18 +918,7 @@
         },
         {
           "type": "class",
-          "desc": "Annual Survey",
-          "last_done": "15 Jun 2026"
-        },
-        {
-          "type": "class",
           "desc": "No.1 Boiler Survey",
-          "due_date": "15 Jul 2028",
-          "last_done": "16 Jul 2025"
-        },
-        {
-          "type": "class",
-          "desc": "Docking Survey (*1)",
           "due_date": "15 Jul 2028",
           "last_done": "16 Jul 2025"
         },
@@ -1372,10 +927,6 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "15 Jul 2030",
           "last_done": "25 May 2007"
-        },
-        {
-          "type": "class",
-          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -1482,41 +1033,6 @@
           "due_date": "2030-05-24"
         },
         {
-          "type": "statutory",
-          "desc": "Safety Construction Renewal (构造安全换证)",
-          "due_date": "2030-05-24"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Equipment Renewal (设备安全换证)",
-          "due_date": "2030-05-24"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Radio Renewal (无线电安全换证)",
-          "due_date": "2030-05-24"
-        },
-        {
-          "type": "statutory",
-          "desc": "OPP Renewal (防油污换证)",
-          "due_date": "2030-05-24"
-        },
-        {
-          "type": "statutory",
-          "desc": "SPP Renewal (生活污水换证)",
-          "due_date": "2030-05-24"
-        },
-        {
-          "type": "statutory",
-          "desc": "APP Renewal (防空气污染换证)",
-          "due_date": "2030-05-24"
-        },
-        {
-          "type": "statutory",
-          "desc": "BWM Renewal (压载水换证)",
-          "due_date": "2030-05-24"
-        },
-        {
           "type": "class",
           "desc": "Special Survey",
           "due_date": "24 May 2030",
@@ -1528,18 +1044,7 @@
         },
         {
           "type": "class",
-          "desc": "Annual Survey",
-          "last_done": "25 Jul 2026"
-        },
-        {
-          "type": "class",
           "desc": "No.1 Boiler Survey",
-          "due_date": "21 Aug 2028",
-          "last_done": "22 Aug 2025"
-        },
-        {
-          "type": "class",
-          "desc": "Docking Survey (*1)",
           "due_date": "21 Aug 2028",
           "last_done": "22 Aug 2025"
         },
@@ -1548,10 +1053,6 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "21 Aug 2030",
           "last_done": "22 May 2020"
-        },
-        {
-          "type": "class",
-          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -1662,46 +1163,6 @@
           "due_date": "2029-07-01"
         },
         {
-          "type": "statutory",
-          "desc": "Safety Construction Renewal (构造安全换证)",
-          "due_date": "2029-07-01"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Equipment Renewal (设备安全换证)",
-          "due_date": "2029-07-01"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Radio Renewal (无线电安全换证)",
-          "due_date": "2029-07-01"
-        },
-        {
-          "type": "statutory",
-          "desc": "OPP Renewal (防油污换证)",
-          "due_date": "2029-07-01"
-        },
-        {
-          "type": "statutory",
-          "desc": "SPP Renewal (生活污水换证)",
-          "due_date": "2029-07-01"
-        },
-        {
-          "type": "statutory",
-          "desc": "APP Renewal (防空气污染换证)",
-          "due_date": "2029-07-01"
-        },
-        {
-          "type": "statutory",
-          "desc": "IHM Renewal (有害物质清单换证)",
-          "due_date": "2029-07-01"
-        },
-        {
-          "type": "statutory",
-          "desc": "BWM Renewal (压载水换证)",
-          "due_date": "2029-07-01"
-        },
-        {
           "type": "class",
           "desc": "Special Survey",
           "due_date": "01 Jul 2029",
@@ -1713,18 +1174,7 @@
         },
         {
           "type": "class",
-          "desc": "Annual Survey",
-          "last_done": "06 Jun 2026"
-        },
-        {
-          "type": "class",
           "desc": "No.1 Boiler Survey",
-          "due_date": "19 Apr 2027",
-          "last_done": "20 Apr 2024"
-        },
-        {
-          "type": "class",
-          "desc": "Docking Survey (*1)",
           "due_date": "19 Apr 2027",
           "last_done": "20 Apr 2024"
         },
@@ -1733,10 +1183,6 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "21 May 2029",
           "last_done": "23 May 2014"
-        },
-        {
-          "type": "class",
-          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -1847,46 +1293,6 @@
           "due_date": "2029-08-18"
         },
         {
-          "type": "statutory",
-          "desc": "Safety Construction Renewal (构造安全换证)",
-          "due_date": "2029-08-18"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Equipment Renewal (设备安全换证)",
-          "due_date": "2029-08-18"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Radio Renewal (无线电安全换证)",
-          "due_date": "2029-08-18"
-        },
-        {
-          "type": "statutory",
-          "desc": "OPP Renewal (防油污换证)",
-          "due_date": "2029-08-18"
-        },
-        {
-          "type": "statutory",
-          "desc": "SPP Renewal (生活污水换证)",
-          "due_date": "2029-08-18"
-        },
-        {
-          "type": "statutory",
-          "desc": "APP Renewal (防空气污染换证)",
-          "due_date": "2029-08-18"
-        },
-        {
-          "type": "statutory",
-          "desc": "IHM Renewal (有害物质清单换证)",
-          "due_date": "2029-08-18"
-        },
-        {
-          "type": "statutory",
-          "desc": "BWM Renewal (压载水换证)",
-          "due_date": "2029-08-18"
-        },
-        {
           "type": "class",
           "desc": "Special Survey",
           "due_date": "18 Aug 2029",
@@ -1898,18 +1304,7 @@
         },
         {
           "type": "class",
-          "desc": "Annual Survey",
-          "last_done": "28 Aug 2026"
-        },
-        {
-          "type": "class",
           "desc": "No.1 Boiler Survey",
-          "due_date": "07 Sep 2027",
-          "last_done": "08 Sep 2024"
-        },
-        {
-          "type": "class",
-          "desc": "Docking Survey (*1)",
           "due_date": "07 Sep 2027",
           "last_done": "08 Sep 2024"
         },
@@ -1918,10 +1313,6 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "26 Aug 2027",
           "last_done": "27 Aug 2012"
-        },
-        {
-          "type": "class",
-          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -2028,41 +1419,6 @@
           "due_date": "2027-06-25"
         },
         {
-          "type": "statutory",
-          "desc": "Safety Construction Renewal (构造安全换证)",
-          "due_date": "2027-06-25"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Equipment Renewal (设备安全换证)",
-          "due_date": "2027-06-25"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Radio Renewal (无线电安全换证)",
-          "due_date": "2027-06-25"
-        },
-        {
-          "type": "statutory",
-          "desc": "OPP Renewal (防油污换证)",
-          "due_date": "2027-06-25"
-        },
-        {
-          "type": "statutory",
-          "desc": "SPP Renewal (生活污水换证)",
-          "due_date": "2027-06-25"
-        },
-        {
-          "type": "statutory",
-          "desc": "APP Renewal (防空气污染换证)",
-          "due_date": "2027-06-25"
-        },
-        {
-          "type": "statutory",
-          "desc": "BWM Renewal (压载水换证)",
-          "due_date": "2027-06-25"
-        },
-        {
           "type": "class",
           "desc": "Special Survey",
           "due_date": "25 Jun 2027",
@@ -2075,30 +1431,9 @@
         },
         {
           "type": "class",
-          "desc": "Annual Survey",
-          "last_done": "05 May 2026"
-        },
-        {
-          "type": "class",
-          "desc": "No.1 Boiler Survey",
-          "due_date": "25 Jun 2027",
-          "last_done": "06 Jun 2025"
-        },
-        {
-          "type": "class",
-          "desc": "Docking Survey (*1)",
-          "due_date": "25 Jun 2027",
-          "last_done": "06 Jun 2025"
-        },
-        {
-          "type": "class",
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "26 Jul 2027",
           "last_done": "27 Jul 2017"
-        },
-        {
-          "type": "class",
-          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -2213,46 +1548,6 @@
           "due_date": "2030-10-06"
         },
         {
-          "type": "statutory",
-          "desc": "Safety Construction Renewal (构造安全换证)",
-          "due_date": "2030-10-06"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Equipment Renewal (设备安全换证)",
-          "due_date": "2030-10-06"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Radio Renewal (无线电安全换证)",
-          "due_date": "2030-10-06"
-        },
-        {
-          "type": "statutory",
-          "desc": "OPP Renewal (防油污换证)",
-          "due_date": "2030-10-06"
-        },
-        {
-          "type": "statutory",
-          "desc": "SPP Renewal (生活污水换证)",
-          "due_date": "2030-10-06"
-        },
-        {
-          "type": "statutory",
-          "desc": "APP Renewal (防空气污染换证)",
-          "due_date": "2030-10-06"
-        },
-        {
-          "type": "statutory",
-          "desc": "IHM Renewal (有害物质清单换证)",
-          "due_date": "2030-10-06"
-        },
-        {
-          "type": "statutory",
-          "desc": "BWM Renewal (压载水换证)",
-          "due_date": "2030-10-06"
-        },
-        {
           "type": "class",
           "desc": "Special Survey",
           "due_date": "06 Oct 2030",
@@ -2264,18 +1559,7 @@
         },
         {
           "type": "class",
-          "desc": "Annual Survey",
-          "last_done": "30 Jul 2026"
-        },
-        {
-          "type": "class",
           "desc": "No.1 Boiler Survey",
-          "due_date": "28 Sep 2028",
-          "last_done": "29 Sep 2025"
-        },
-        {
-          "type": "class",
-          "desc": "Docking Survey (*1)",
           "due_date": "28 Sep 2028",
           "last_done": "29 Sep 2025"
         },
@@ -2284,10 +1568,6 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "28 Sep 2030",
           "last_done": "29 Sep 2025"
-        },
-        {
-          "type": "class",
-          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -2398,41 +1678,6 @@
           "due_date": "2030-11-14"
         },
         {
-          "type": "statutory",
-          "desc": "Safety Construction Renewal (构造安全换证)",
-          "due_date": "2030-11-14"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Equipment Renewal (设备安全换证)",
-          "due_date": "2030-11-14"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Radio Renewal (无线电安全换证)",
-          "due_date": "2030-11-14"
-        },
-        {
-          "type": "statutory",
-          "desc": "OPP Renewal (防油污换证)",
-          "due_date": "2030-11-14"
-        },
-        {
-          "type": "statutory",
-          "desc": "SPP Renewal (生活污水换证)",
-          "due_date": "2030-11-14"
-        },
-        {
-          "type": "statutory",
-          "desc": "APP Renewal (防空气污染换证)",
-          "due_date": "2030-11-14"
-        },
-        {
-          "type": "statutory",
-          "desc": "BWM Renewal (压载水换证)",
-          "due_date": "2030-11-14"
-        },
-        {
           "type": "class",
           "desc": "Special Survey",
           "due_date": "14 Nov 2030",
@@ -2444,17 +1689,7 @@
         },
         {
           "type": "class",
-          "desc": "Annual Survey"
-        },
-        {
-          "type": "class",
           "desc": "No.1 Boiler Survey",
-          "due_date": "07 Sep 2028",
-          "last_done": "08 Sep 2025"
-        },
-        {
-          "type": "class",
-          "desc": "Docking Survey (*1)",
           "due_date": "07 Sep 2028",
           "last_done": "08 Sep 2025"
         },
@@ -2463,10 +1698,6 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "12 Aug 2030",
           "last_done": "13 Aug 2015"
-        },
-        {
-          "type": "class",
-          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -2573,41 +1804,6 @@
           "due_date": "2029-04-09"
         },
         {
-          "type": "statutory",
-          "desc": "Safety Construction Renewal (构造安全换证)",
-          "due_date": "2029-04-09"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Equipment Renewal (设备安全换证)",
-          "due_date": "2029-04-09"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Radio Renewal (无线电安全换证)",
-          "due_date": "2029-04-09"
-        },
-        {
-          "type": "statutory",
-          "desc": "OPP Renewal (防油污换证)",
-          "due_date": "2029-04-09"
-        },
-        {
-          "type": "statutory",
-          "desc": "SPP Renewal (生活污水换证)",
-          "due_date": "2029-04-09"
-        },
-        {
-          "type": "statutory",
-          "desc": "APP Renewal (防空气污染换证)",
-          "due_date": "2029-04-09"
-        },
-        {
-          "type": "statutory",
-          "desc": "BWM Renewal (压载水换证)",
-          "due_date": "2029-04-09"
-        },
-        {
           "type": "class",
           "desc": "Special Survey",
           "due_date": "09 Apr 2029",
@@ -2619,18 +1815,7 @@
         },
         {
           "type": "class",
-          "desc": "Annual Survey",
-          "last_done": "14 Jan 2026"
-        },
-        {
-          "type": "class",
           "desc": "No.1 Boiler Survey",
-          "due_date": "21 Apr 2027",
-          "last_done": "22 Apr 2024"
-        },
-        {
-          "type": "class",
-          "desc": "Docking Survey (*1)",
           "due_date": "21 Apr 2027",
           "last_done": "22 Apr 2024"
         },
@@ -2639,10 +1824,6 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "21 Apr 2029",
           "last_done": "22 Apr 2024"
-        },
-        {
-          "type": "class",
-          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -2758,43 +1939,8 @@
         },
         {
           "type": "statutory",
-          "desc": "Safety Construction Renewal (构造安全换证)",
-          "due_date": "2031-09-07"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Equipment Renewal (设备安全换证)",
-          "due_date": "2031-09-07"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Radio Renewal (无线电安全换证)",
-          "due_date": "2031-09-07"
-        },
-        {
-          "type": "statutory",
-          "desc": "OPP Renewal (防油污换证)",
-          "due_date": "2031-09-07"
-        },
-        {
-          "type": "statutory",
-          "desc": "SPP Renewal (生活污水换证)",
-          "due_date": "2031-09-07"
-        },
-        {
-          "type": "statutory",
-          "desc": "APP Renewal (防空气污染换证)",
-          "due_date": "2031-09-07"
-        },
-        {
-          "type": "statutory",
           "desc": "IHM Renewal (有害物质清单换证)",
           "due_date": "2031-07-29"
-        },
-        {
-          "type": "statutory",
-          "desc": "BWM Renewal (压载水换证)",
-          "due_date": "2031-09-07"
         },
         {
           "type": "class",
@@ -2808,17 +1954,7 @@
         },
         {
           "type": "class",
-          "desc": "Annual Survey"
-        },
-        {
-          "type": "class",
           "desc": "No.1 Boiler Survey",
-          "due_date": "29 Jul 2029",
-          "last_done": "30 Jul 2026"
-        },
-        {
-          "type": "class",
-          "desc": "Docking Survey (*1)",
           "due_date": "29 Jul 2029",
           "last_done": "30 Jul 2026"
         },
@@ -2827,10 +1963,6 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "29 Jul 2031",
           "last_done": "12 Jun 2021"
-        },
-        {
-          "type": "class",
-          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -2949,46 +2081,6 @@
           "due_date": "2027-04-24"
         },
         {
-          "type": "statutory",
-          "desc": "Safety Construction Renewal (构造安全换证)",
-          "due_date": "2027-04-24"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Equipment Renewal (设备安全换证)",
-          "due_date": "2027-04-24"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Radio Renewal (无线电安全换证)",
-          "due_date": "2027-04-24"
-        },
-        {
-          "type": "statutory",
-          "desc": "OPP Renewal (防油污换证)",
-          "due_date": "2027-04-24"
-        },
-        {
-          "type": "statutory",
-          "desc": "SPP Renewal (生活污水换证)",
-          "due_date": "2027-04-24"
-        },
-        {
-          "type": "statutory",
-          "desc": "APP Renewal (防空气污染换证)",
-          "due_date": "2027-04-24"
-        },
-        {
-          "type": "statutory",
-          "desc": "IHM Renewal (有害物质清单换证)",
-          "due_date": "2027-04-24"
-        },
-        {
-          "type": "statutory",
-          "desc": "BWM Renewal (压载水换证)",
-          "due_date": "2027-04-24"
-        },
-        {
           "type": "class",
           "desc": "Special Survey",
           "due_date": "24 Apr 2027",
@@ -3001,30 +2093,9 @@
         },
         {
           "type": "class",
-          "desc": "Annual Survey",
-          "last_done": "07 Apr 2026"
-        },
-        {
-          "type": "class",
-          "desc": "No.1 Boiler Survey",
-          "due_date": "24 Apr 2027",
-          "last_done": "15 Aug 2025"
-        },
-        {
-          "type": "class",
-          "desc": "Docking Survey (*1)",
-          "due_date": "24 Apr 2027",
-          "last_done": "15 Aug 2025"
-        },
-        {
-          "type": "class",
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "24 Jul 2027",
           "last_done": "23 Jul 2022"
-        },
-        {
-          "type": "class",
-          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -3139,46 +2210,6 @@
           "due_date": "2027-12-18"
         },
         {
-          "type": "statutory",
-          "desc": "Safety Construction Renewal (构造安全换证)",
-          "due_date": "2027-12-18"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Equipment Renewal (设备安全换证)",
-          "due_date": "2027-12-18"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Radio Renewal (无线电安全换证)",
-          "due_date": "2027-12-18"
-        },
-        {
-          "type": "statutory",
-          "desc": "OPP Renewal (防油污换证)",
-          "due_date": "2027-12-18"
-        },
-        {
-          "type": "statutory",
-          "desc": "SPP Renewal (生活污水换证)",
-          "due_date": "2027-12-18"
-        },
-        {
-          "type": "statutory",
-          "desc": "APP Renewal (防空气污染换证)",
-          "due_date": "2027-12-18"
-        },
-        {
-          "type": "statutory",
-          "desc": "IHM Renewal (有害物质清单换证)",
-          "due_date": "2027-12-18"
-        },
-        {
-          "type": "statutory",
-          "desc": "BWM Renewal (压载水换证)",
-          "due_date": "2027-12-18"
-        },
-        {
           "type": "class",
           "desc": "Special Survey",
           "due_date": "18 Dec 2027",
@@ -3191,30 +2222,9 @@
         },
         {
           "type": "class",
-          "desc": "Annual Survey",
-          "last_done": "21 Dec 2024"
-        },
-        {
-          "type": "class",
-          "desc": "No.1 Boiler Survey",
-          "due_date": "18 Dec 2027",
-          "last_done": "23 Dec 2025"
-        },
-        {
-          "type": "class",
-          "desc": "Docking Survey (*1)",
-          "due_date": "18 Dec 2027",
-          "last_done": "23 Dec 2025"
-        },
-        {
-          "type": "class",
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "22 Dec 2030",
           "last_done": "23 Dec 2025"
-        },
-        {
-          "type": "class",
-          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -3324,46 +2334,6 @@
           "due_date": "2029-08-21"
         },
         {
-          "type": "statutory",
-          "desc": "Safety Construction Renewal (构造安全换证)",
-          "due_date": "2029-08-21"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Equipment Renewal (设备安全换证)",
-          "due_date": "2029-08-21"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Radio Renewal (无线电安全换证)",
-          "due_date": "2029-08-21"
-        },
-        {
-          "type": "statutory",
-          "desc": "OPP Renewal (防油污换证)",
-          "due_date": "2029-08-21"
-        },
-        {
-          "type": "statutory",
-          "desc": "SPP Renewal (生活污水换证)",
-          "due_date": "2029-08-21"
-        },
-        {
-          "type": "statutory",
-          "desc": "APP Renewal (防空气污染换证)",
-          "due_date": "2029-08-21"
-        },
-        {
-          "type": "statutory",
-          "desc": "IHM Renewal (有害物质清单换证)",
-          "due_date": "2029-08-21"
-        },
-        {
-          "type": "statutory",
-          "desc": "BWM Renewal (压载水换证)",
-          "due_date": "2029-08-21"
-        },
-        {
           "type": "class",
           "desc": "Special Survey",
           "due_date": "21 Aug 2029",
@@ -3375,29 +2345,9 @@
         },
         {
           "type": "class",
-          "desc": "Annual Survey",
-          "last_done": "25 May 2025"
-        },
-        {
-          "type": "class",
           "desc": "No.1 Boiler Survey",
           "due_date": "26 Sep 2027",
           "last_done": "27 Sep 2024"
-        },
-        {
-          "type": "class",
-          "desc": "Docking Survey (*1)",
-          "due_date": "26 Sep 2027",
-          "last_done": "27 Sep 2024"
-        },
-        {
-          "type": "class",
-          "desc": "No.1 Prop. Shaft Svy",
-          "last_done": "03 Jan 2027"
-        },
-        {
-          "type": "class",
-          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -3519,18 +2469,7 @@
         },
         {
           "type": "class",
-          "desc": "Annual Survey",
-          "last_done": "16 Aug 2026"
-        },
-        {
-          "type": "class",
           "desc": "No.1 Boiler Survey",
-          "due_date": "24 Sep 2028",
-          "last_done": "25 Sep 2025"
-        },
-        {
-          "type": "class",
-          "desc": "Docking Survey (*1)",
           "due_date": "24 Sep 2028",
           "last_done": "25 Sep 2025"
         },
@@ -3539,10 +2478,6 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "24 Sep 2030",
           "last_done": "25 Sep 2025"
-        },
-        {
-          "type": "class",
-          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -3653,46 +2588,6 @@
           "due_date": "2030-01-31"
         },
         {
-          "type": "statutory",
-          "desc": "Safety Construction Renewal (构造安全换证)",
-          "due_date": "2030-01-31"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Equipment Renewal (设备安全换证)",
-          "due_date": "2030-01-31"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Radio Renewal (无线电安全换证)",
-          "due_date": "2030-01-31"
-        },
-        {
-          "type": "statutory",
-          "desc": "OPP Renewal (防油污换证)",
-          "due_date": "2030-01-31"
-        },
-        {
-          "type": "statutory",
-          "desc": "SPP Renewal (生活污水换证)",
-          "due_date": "2030-01-31"
-        },
-        {
-          "type": "statutory",
-          "desc": "APP Renewal (防空气污染换证)",
-          "due_date": "2030-01-31"
-        },
-        {
-          "type": "statutory",
-          "desc": "IHM Renewal (有害物质清单换证)",
-          "due_date": "2030-01-31"
-        },
-        {
-          "type": "statutory",
-          "desc": "BWM Renewal (压载水换证)",
-          "due_date": "2030-01-31"
-        },
-        {
           "type": "class",
           "desc": "Special Survey",
           "due_date": "31 Jan 2030",
@@ -3704,18 +2599,7 @@
         },
         {
           "type": "class",
-          "desc": "Annual Survey",
-          "last_done": "05 Nov 2025"
-        },
-        {
-          "type": "class",
           "desc": "No.1 Boiler Survey",
-          "due_date": "27 Dec 2027",
-          "last_done": "28 Dec 2024"
-        },
-        {
-          "type": "class",
-          "desc": "Docking Survey (*1)",
           "due_date": "27 Dec 2027",
           "last_done": "28 Dec 2024"
         },
@@ -3724,10 +2608,6 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "30 Jan 2030",
           "last_done": "14 Dec 2019"
-        },
-        {
-          "type": "class",
-          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -3838,46 +2718,6 @@
           "due_date": "2031-05-17"
         },
         {
-          "type": "statutory",
-          "desc": "Safety Construction Renewal (构造安全换证)",
-          "due_date": "2031-05-17"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Equipment Renewal (设备安全换证)",
-          "due_date": "2031-05-17"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Radio Renewal (无线电安全换证)",
-          "due_date": "2031-05-17"
-        },
-        {
-          "type": "statutory",
-          "desc": "OPP Renewal (防油污换证)",
-          "due_date": "2031-05-17"
-        },
-        {
-          "type": "statutory",
-          "desc": "SPP Renewal (生活污水换证)",
-          "due_date": "2031-05-17"
-        },
-        {
-          "type": "statutory",
-          "desc": "APP Renewal (防空气污染换证)",
-          "due_date": "2031-05-17"
-        },
-        {
-          "type": "statutory",
-          "desc": "IHM Renewal (有害物质清单换证)",
-          "due_date": "2031-05-17"
-        },
-        {
-          "type": "statutory",
-          "desc": "BWM Renewal (压载水换证)",
-          "due_date": "2031-05-17"
-        },
-        {
           "type": "class",
           "desc": "Special Survey",
           "due_date": "17 May 2031",
@@ -3889,17 +2729,7 @@
         },
         {
           "type": "class",
-          "desc": "Annual Survey"
-        },
-        {
-          "type": "class",
           "desc": "No.1 Boiler Survey",
-          "due_date": "23 Oct 2028",
-          "last_done": "24 Oct 2025"
-        },
-        {
-          "type": "class",
-          "desc": "Docking Survey (*1)",
           "due_date": "23 Oct 2028",
           "last_done": "24 Oct 2025"
         },
@@ -3908,10 +2738,6 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "02 Aug 2028",
           "last_done": "27 Jun 2023"
-        },
-        {
-          "type": "class",
-          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -4022,41 +2848,6 @@
           "due_date": "2030-07-15"
         },
         {
-          "type": "statutory",
-          "desc": "Safety Construction Renewal (构造安全换证)",
-          "due_date": "2030-07-15"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Equipment Renewal (设备安全换证)",
-          "due_date": "2030-07-15"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Radio Renewal (无线电安全换证)",
-          "due_date": "2030-07-15"
-        },
-        {
-          "type": "statutory",
-          "desc": "OPP Renewal (防油污换证)",
-          "due_date": "2030-07-15"
-        },
-        {
-          "type": "statutory",
-          "desc": "SPP Renewal (生活污水换证)",
-          "due_date": "2030-07-15"
-        },
-        {
-          "type": "statutory",
-          "desc": "APP Renewal (防空气污染换证)",
-          "due_date": "2030-07-15"
-        },
-        {
-          "type": "statutory",
-          "desc": "BWM Renewal (压载水换证)",
-          "due_date": "2030-07-15"
-        },
-        {
           "type": "class",
           "desc": "Special Survey",
           "due_date": "15 Jul 2030",
@@ -4068,30 +2859,9 @@
         },
         {
           "type": "class",
-          "desc": "Annual Survey",
-          "last_done": "17 Aug 2026"
-        },
-        {
-          "type": "class",
           "desc": "No.1 Boiler Survey",
           "due_date": "15 Jul 2028",
           "last_done": "16 Jul 2025"
-        },
-        {
-          "type": "class",
-          "desc": "Docking Survey (*1)",
-          "due_date": "15 Jul 2028",
-          "last_done": "16 Jul 2025"
-        },
-        {
-          "type": "class",
-          "desc": "No.1 Prop. Shaft Svy",
-          "due_date": "15 Jul 2030",
-          "last_done": "16 Jul 2025"
-        },
-        {
-          "type": "class",
-          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -4206,46 +2976,6 @@
           "due_date": "2029-05-25"
         },
         {
-          "type": "statutory",
-          "desc": "Safety Construction Renewal (构造安全换证)",
-          "due_date": "2029-05-25"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Equipment Renewal (设备安全换证)",
-          "due_date": "2029-05-25"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Radio Renewal (无线电安全换证)",
-          "due_date": "2029-05-25"
-        },
-        {
-          "type": "statutory",
-          "desc": "OPP Renewal (防油污换证)",
-          "due_date": "2029-05-25"
-        },
-        {
-          "type": "statutory",
-          "desc": "SPP Renewal (生活污水换证)",
-          "due_date": "2029-05-25"
-        },
-        {
-          "type": "statutory",
-          "desc": "APP Renewal (防空气污染换证)",
-          "due_date": "2029-05-25"
-        },
-        {
-          "type": "statutory",
-          "desc": "IHM Renewal (有害物质清单换证)",
-          "due_date": "2029-05-25"
-        },
-        {
-          "type": "statutory",
-          "desc": "BWM Renewal (压载水换证)",
-          "due_date": "2029-05-25"
-        },
-        {
           "type": "class",
           "desc": "Special Survey",
           "due_date": "25 May 2029",
@@ -4257,18 +2987,7 @@
         },
         {
           "type": "class",
-          "desc": "Annual Survey",
-          "last_done": "28 Feb 2026"
-        },
-        {
-          "type": "class",
           "desc": "No.1 Boiler Survey",
-          "due_date": "07 Apr 2027",
-          "last_done": "08 Apr 2024"
-        },
-        {
-          "type": "class",
-          "desc": "Docking Survey (*1)",
           "due_date": "07 Apr 2027",
           "last_done": "08 Apr 2024"
         },
@@ -4277,10 +2996,6 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "24 May 2029",
           "last_done": "08 Apr 2024"
-        },
-        {
-          "type": "class",
-          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -4391,46 +3106,6 @@
           "due_date": "2029-10-19"
         },
         {
-          "type": "statutory",
-          "desc": "Safety Construction Renewal (构造安全换证)",
-          "due_date": "2029-10-19"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Equipment Renewal (设备安全换证)",
-          "due_date": "2029-10-19"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Radio Renewal (无线电安全换证)",
-          "due_date": "2029-10-19"
-        },
-        {
-          "type": "statutory",
-          "desc": "OPP Renewal (防油污换证)",
-          "due_date": "2029-10-19"
-        },
-        {
-          "type": "statutory",
-          "desc": "SPP Renewal (生活污水换证)",
-          "due_date": "2029-10-19"
-        },
-        {
-          "type": "statutory",
-          "desc": "APP Renewal (防空气污染换证)",
-          "due_date": "2029-10-19"
-        },
-        {
-          "type": "statutory",
-          "desc": "IHM Renewal (有害物质清单换证)",
-          "due_date": "2029-10-19"
-        },
-        {
-          "type": "statutory",
-          "desc": "BWM Renewal (压载水换证)",
-          "due_date": "2029-10-19"
-        },
-        {
           "type": "class",
           "desc": "Special Survey",
           "due_date": "19 Oct 2029",
@@ -4442,18 +3117,7 @@
         },
         {
           "type": "class",
-          "desc": "Annual Survey",
-          "last_done": "26 Aug 2026"
-        },
-        {
-          "type": "class",
           "desc": "No.1 Boiler Survey",
-          "due_date": "06 Oct 2027",
-          "last_done": "07 Oct 2024"
-        },
-        {
-          "type": "class",
-          "desc": "Docking Survey (*1)",
           "due_date": "06 Oct 2027",
           "last_done": "07 Oct 2024"
         },
@@ -4462,10 +3126,6 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "21 Oct 2029",
           "last_done": "23 Oct 2014"
-        },
-        {
-          "type": "class",
-          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -4581,43 +3241,8 @@
         },
         {
           "type": "statutory",
-          "desc": "Safety Construction Renewal (构造安全换证)",
-          "due_date": "2031-04-25"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Equipment Renewal (设备安全换证)",
-          "due_date": "2031-04-25"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Radio Renewal (无线电安全换证)",
-          "due_date": "2031-04-25"
-        },
-        {
-          "type": "statutory",
-          "desc": "OPP Renewal (防油污换证)",
-          "due_date": "2031-04-25"
-        },
-        {
-          "type": "statutory",
-          "desc": "SPP Renewal (生活污水换证)",
-          "due_date": "2031-04-25"
-        },
-        {
-          "type": "statutory",
-          "desc": "APP Renewal (防空气污染换证)",
-          "due_date": "2031-04-25"
-        },
-        {
-          "type": "statutory",
           "desc": "IHM Renewal (有害物质清单换证)",
           "due_date": "2031-03-01"
-        },
-        {
-          "type": "statutory",
-          "desc": "BWM Renewal (压载水换证)",
-          "due_date": "2031-04-25"
         },
         {
           "type": "class",
@@ -4631,29 +3256,9 @@
         },
         {
           "type": "class",
-          "desc": "Annual Survey"
-        },
-        {
-          "type": "class",
           "desc": "No.1 Boiler Survey",
           "due_date": "01 Mar 2029",
           "last_done": "02 Mar 2026"
-        },
-        {
-          "type": "class",
-          "desc": "Docking Survey (*1)",
-          "due_date": "01 Mar 2029",
-          "last_done": "02 Mar 2026"
-        },
-        {
-          "type": "class",
-          "desc": "No.1 Prop. Shaft Svy",
-          "due_date": "25 Apr 2031",
-          "last_done": "16 May 2021"
-        },
-        {
-          "type": "class",
-          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -4773,43 +3378,8 @@
         },
         {
           "type": "statutory",
-          "desc": "Safety Construction Renewal (构造安全换证)",
-          "due_date": "2031-08-09"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Equipment Renewal (设备安全换证)",
-          "due_date": "2031-08-09"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Radio Renewal (无线电安全换证)",
-          "due_date": "2031-08-09"
-        },
-        {
-          "type": "statutory",
-          "desc": "OPP Renewal (防油污换证)",
-          "due_date": "2031-08-09"
-        },
-        {
-          "type": "statutory",
-          "desc": "SPP Renewal (生活污水换证)",
-          "due_date": "2031-08-09"
-        },
-        {
-          "type": "statutory",
-          "desc": "APP Renewal (防空气污染换证)",
-          "due_date": "2031-08-09"
-        },
-        {
-          "type": "statutory",
           "desc": "IHM Renewal (有害物质清单换证)",
           "due_date": "2031-06-06"
-        },
-        {
-          "type": "statutory",
-          "desc": "BWM Renewal (压载水换证)",
-          "due_date": "2031-08-09"
         },
         {
           "type": "class",
@@ -4823,17 +3393,7 @@
         },
         {
           "type": "class",
-          "desc": "Annual Survey"
-        },
-        {
-          "type": "class",
           "desc": "No.1 Boiler Survey",
-          "due_date": "06 Jun 2029",
-          "last_done": "07 Jun 2026"
-        },
-        {
-          "type": "class",
-          "desc": "Docking Survey (*1)",
           "due_date": "06 Jun 2029",
           "last_done": "07 Jun 2026"
         },
@@ -4842,10 +3402,6 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "08 Aug 2031",
           "last_done": "15 Jun 2021"
-        },
-        {
-          "type": "class",
-          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -4964,41 +3520,6 @@
           "due_date": "2030-07-25"
         },
         {
-          "type": "statutory",
-          "desc": "Safety Construction Renewal (构造安全换证)",
-          "due_date": "2030-07-25"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Equipment Renewal (设备安全换证)",
-          "due_date": "2030-07-25"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Radio Renewal (无线电安全换证)",
-          "due_date": "2030-07-25"
-        },
-        {
-          "type": "statutory",
-          "desc": "OPP Renewal (防油污换证)",
-          "due_date": "2030-07-25"
-        },
-        {
-          "type": "statutory",
-          "desc": "SPP Renewal (生活污水换证)",
-          "due_date": "2030-07-25"
-        },
-        {
-          "type": "statutory",
-          "desc": "APP Renewal (防空气污染换证)",
-          "due_date": "2030-07-25"
-        },
-        {
-          "type": "statutory",
-          "desc": "BWM Renewal (压载水换证)",
-          "due_date": "2030-07-25"
-        },
-        {
           "type": "class",
           "desc": "Special Survey",
           "due_date": "25 Jul 2030",
@@ -5010,18 +3531,7 @@
         },
         {
           "type": "class",
-          "desc": "Annual Survey",
-          "last_done": "19 Jun 2026"
-        },
-        {
-          "type": "class",
           "desc": "No.1 Boiler Survey",
-          "due_date": "23 Jul 2028",
-          "last_done": "24 Jul 2025"
-        },
-        {
-          "type": "class",
-          "desc": "Docking Survey (*1)",
           "due_date": "23 Jul 2028",
           "last_done": "24 Jul 2025"
         },
@@ -5030,10 +3540,6 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "23 Jul 2030",
           "last_done": "24 Jul 2025"
-        },
-        {
-          "type": "class",
-          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -5144,46 +3650,6 @@
           "due_date": "2029-08-08"
         },
         {
-          "type": "statutory",
-          "desc": "Safety Construction Renewal (构造安全换证)",
-          "due_date": "2029-08-08"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Equipment Renewal (设备安全换证)",
-          "due_date": "2029-08-08"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Radio Renewal (无线电安全换证)",
-          "due_date": "2029-08-08"
-        },
-        {
-          "type": "statutory",
-          "desc": "OPP Renewal (防油污换证)",
-          "due_date": "2029-08-08"
-        },
-        {
-          "type": "statutory",
-          "desc": "SPP Renewal (生活污水换证)",
-          "due_date": "2029-08-08"
-        },
-        {
-          "type": "statutory",
-          "desc": "APP Renewal (防空气污染换证)",
-          "due_date": "2029-08-08"
-        },
-        {
-          "type": "statutory",
-          "desc": "IHM Renewal (有害物质清单换证)",
-          "due_date": "2029-08-08"
-        },
-        {
-          "type": "statutory",
-          "desc": "BWM Renewal (压载水换证)",
-          "due_date": "2029-08-08"
-        },
-        {
           "type": "class",
           "desc": "Special Survey",
           "due_date": "08 Aug 2029",
@@ -5195,18 +3661,7 @@
         },
         {
           "type": "class",
-          "desc": "Annual Survey",
-          "last_done": "28 Aug 2026"
-        },
-        {
-          "type": "class",
           "desc": "No.1 Boiler Survey",
-          "due_date": "15 Aug 2027",
-          "last_done": "16 Aug 2024"
-        },
-        {
-          "type": "class",
-          "desc": "Docking Survey (*1)",
           "due_date": "15 Aug 2027",
           "last_done": "16 Aug 2024"
         },
@@ -5215,10 +3670,6 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "23 Nov 2031",
           "last_done": "25 Nov 2021"
-        },
-        {
-          "type": "class",
-          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -5333,46 +3784,6 @@
           "due_date": "2028-07-21"
         },
         {
-          "type": "statutory",
-          "desc": "Safety Construction Renewal (构造安全换证)",
-          "due_date": "2028-07-21"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Equipment Renewal (设备安全换证)",
-          "due_date": "2028-07-21"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Radio Renewal (无线电安全换证)",
-          "due_date": "2028-07-21"
-        },
-        {
-          "type": "statutory",
-          "desc": "OPP Renewal (防油污换证)",
-          "due_date": "2028-07-21"
-        },
-        {
-          "type": "statutory",
-          "desc": "SPP Renewal (生活污水换证)",
-          "due_date": "2028-07-21"
-        },
-        {
-          "type": "statutory",
-          "desc": "APP Renewal (防空气污染换证)",
-          "due_date": "2028-07-21"
-        },
-        {
-          "type": "statutory",
-          "desc": "IHM Renewal (有害物质清单换证)",
-          "due_date": "2028-07-21"
-        },
-        {
-          "type": "statutory",
-          "desc": "BWM Renewal (压载水换证)",
-          "due_date": "2028-07-21"
-        },
-        {
           "type": "class",
           "desc": "Special Survey",
           "due_date": "21 Jul 2028",
@@ -5385,30 +3796,9 @@
         },
         {
           "type": "class",
-          "desc": "Annual Survey",
-          "last_done": "15 Jul 2025"
-        },
-        {
-          "type": "class",
-          "desc": "No.1 Boiler Survey",
-          "due_date": "21 Jul 2028",
-          "last_done": "09 Jun 2026"
-        },
-        {
-          "type": "class",
-          "desc": "Docking Survey (*1)",
-          "due_date": "21 Jul 2028",
-          "last_done": "09 Jun 2026"
-        },
-        {
-          "type": "class",
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "03 Jul 2028",
           "last_done": "04 Jul 2023"
-        },
-        {
-          "type": "class",
-          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -5519,46 +3909,6 @@
           "due_date": "2029-02-27"
         },
         {
-          "type": "statutory",
-          "desc": "Safety Construction Renewal (构造安全换证)",
-          "due_date": "2029-02-27"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Equipment Renewal (设备安全换证)",
-          "due_date": "2029-02-27"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Radio Renewal (无线电安全换证)",
-          "due_date": "2029-02-27"
-        },
-        {
-          "type": "statutory",
-          "desc": "OPP Renewal (防油污换证)",
-          "due_date": "2029-02-27"
-        },
-        {
-          "type": "statutory",
-          "desc": "SPP Renewal (生活污水换证)",
-          "due_date": "2029-02-27"
-        },
-        {
-          "type": "statutory",
-          "desc": "APP Renewal (防空气污染换证)",
-          "due_date": "2029-02-27"
-        },
-        {
-          "type": "statutory",
-          "desc": "IHM Renewal (有害物质清单换证)",
-          "due_date": "2029-02-27"
-        },
-        {
-          "type": "statutory",
-          "desc": "BWM Renewal (压载水换证)",
-          "due_date": "2029-02-27"
-        },
-        {
           "type": "class",
           "desc": "Special Survey",
           "due_date": "27 Feb 2029",
@@ -5570,18 +3920,7 @@
         },
         {
           "type": "class",
-          "desc": "Annual Survey",
-          "last_done": "06 Jan 2026"
-        },
-        {
-          "type": "class",
           "desc": "No.1 Boiler Survey",
-          "due_date": "03 Dec 2026",
-          "last_done": "04 Dec 2023"
-        },
-        {
-          "type": "class",
-          "desc": "Docking Survey (*1)",
           "due_date": "03 Dec 2026",
           "last_done": "04 Dec 2023"
         },
@@ -5590,10 +3929,6 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "26 Feb 2029",
           "last_done": "28 Feb 2014"
-        },
-        {
-          "type": "class",
-          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -5704,41 +4039,6 @@
           "due_date": "2031-01-04"
         },
         {
-          "type": "statutory",
-          "desc": "Safety Construction Renewal (构造安全换证)",
-          "due_date": "2031-01-04"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Equipment Renewal (设备安全换证)",
-          "due_date": "2031-01-04"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Radio Renewal (无线电安全换证)",
-          "due_date": "2031-01-04"
-        },
-        {
-          "type": "statutory",
-          "desc": "OPP Renewal (防油污换证)",
-          "due_date": "2031-01-04"
-        },
-        {
-          "type": "statutory",
-          "desc": "SPP Renewal (生活污水换证)",
-          "due_date": "2031-01-04"
-        },
-        {
-          "type": "statutory",
-          "desc": "APP Renewal (防空气污染换证)",
-          "due_date": "2031-01-04"
-        },
-        {
-          "type": "statutory",
-          "desc": "BWM Renewal (压载水换证)",
-          "due_date": "2031-01-04"
-        },
-        {
           "type": "class",
           "desc": "Special Survey",
           "due_date": "04 Jan 2031",
@@ -5750,17 +4050,7 @@
         },
         {
           "type": "class",
-          "desc": "Annual Survey"
-        },
-        {
-          "type": "class",
           "desc": "No.1 Boiler Survey",
-          "due_date": "04 Jan 2029",
-          "last_done": "05 Jan 2026"
-        },
-        {
-          "type": "class",
-          "desc": "Docking Survey (*1)",
           "due_date": "04 Jan 2029",
           "last_done": "05 Jan 2026"
         },
@@ -5769,10 +4059,6 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "05 Apr 2029",
           "last_done": "04 Apr 2019"
-        },
-        {
-          "type": "class",
-          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -5887,46 +4173,6 @@
           "due_date": "2029-02-16"
         },
         {
-          "type": "statutory",
-          "desc": "Safety Construction Renewal (构造安全换证)",
-          "due_date": "2029-02-16"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Equipment Renewal (设备安全换证)",
-          "due_date": "2029-02-16"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Radio Renewal (无线电安全换证)",
-          "due_date": "2029-02-16"
-        },
-        {
-          "type": "statutory",
-          "desc": "OPP Renewal (防油污换证)",
-          "due_date": "2029-02-16"
-        },
-        {
-          "type": "statutory",
-          "desc": "SPP Renewal (生活污水换证)",
-          "due_date": "2029-02-16"
-        },
-        {
-          "type": "statutory",
-          "desc": "APP Renewal (防空气污染换证)",
-          "due_date": "2029-02-16"
-        },
-        {
-          "type": "statutory",
-          "desc": "IHM Renewal (有害物质清单换证)",
-          "due_date": "2029-02-16"
-        },
-        {
-          "type": "statutory",
-          "desc": "BWM Renewal (压载水换证)",
-          "due_date": "2029-02-16"
-        },
-        {
           "type": "class",
           "desc": "Special Survey",
           "due_date": "16 Feb 2029",
@@ -5938,18 +4184,7 @@
         },
         {
           "type": "class",
-          "desc": "Annual Survey",
-          "last_done": "04 Dec 2025"
-        },
-        {
-          "type": "class",
           "desc": "No.1 Boiler Survey",
-          "due_date": "06 Feb 2027",
-          "last_done": "07 Feb 2024"
-        },
-        {
-          "type": "class",
-          "desc": "Docking Survey (*1)",
           "due_date": "06 Feb 2027",
           "last_done": "07 Feb 2024"
         },
@@ -5958,10 +4193,6 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "12 Feb 2029",
           "last_done": "31 Dec 2018"
-        },
-        {
-          "type": "class",
-          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -6076,46 +4307,6 @@
           "due_date": "2031-06-01"
         },
         {
-          "type": "statutory",
-          "desc": "Safety Construction Renewal (构造安全换证)",
-          "due_date": "2031-06-01"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Equipment Renewal (设备安全换证)",
-          "due_date": "2031-06-01"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Radio Renewal (无线电安全换证)",
-          "due_date": "2031-06-01"
-        },
-        {
-          "type": "statutory",
-          "desc": "OPP Renewal (防油污换证)",
-          "due_date": "2031-06-01"
-        },
-        {
-          "type": "statutory",
-          "desc": "SPP Renewal (生活污水换证)",
-          "due_date": "2031-06-01"
-        },
-        {
-          "type": "statutory",
-          "desc": "APP Renewal (防空气污染换证)",
-          "due_date": "2031-06-01"
-        },
-        {
-          "type": "statutory",
-          "desc": "IHM Renewal (有害物质清单换证)",
-          "due_date": "2031-06-01"
-        },
-        {
-          "type": "statutory",
-          "desc": "BWM Renewal (压载水换证)",
-          "due_date": "2031-06-01"
-        },
-        {
           "type": "class",
           "desc": "Special Survey",
           "due_date": "01 Jun 2031",
@@ -6127,17 +4318,7 @@
         },
         {
           "type": "class",
-          "desc": "Annual Survey"
-        },
-        {
-          "type": "class",
           "desc": "No.1 Boiler Survey",
-          "due_date": "16 Jun 2029",
-          "last_done": "17 Jun 2026"
-        },
-        {
-          "type": "class",
-          "desc": "Docking Survey (*1)",
           "due_date": "16 Jun 2029",
           "last_done": "17 Jun 2026"
         },
@@ -6146,10 +4327,6 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "05 Jul 2031",
           "last_done": "07 Jul 2021"
-        },
-        {
-          "type": "class",
-          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -6367,41 +4544,6 @@
           "due_date": "2029-06-29"
         },
         {
-          "type": "statutory",
-          "desc": "Safety Construction Renewal (构造安全换证)",
-          "due_date": "2029-06-29"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Equipment Renewal (设备安全换证)",
-          "due_date": "2029-06-29"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Radio Renewal (无线电安全换证)",
-          "due_date": "2029-06-29"
-        },
-        {
-          "type": "statutory",
-          "desc": "OPP Renewal (防油污换证)",
-          "due_date": "2029-06-29"
-        },
-        {
-          "type": "statutory",
-          "desc": "SPP Renewal (生活污水换证)",
-          "due_date": "2029-06-29"
-        },
-        {
-          "type": "statutory",
-          "desc": "APP Renewal (防空气污染换证)",
-          "due_date": "2029-06-29"
-        },
-        {
-          "type": "statutory",
-          "desc": "BWM Renewal (压载水换证)",
-          "due_date": "2029-06-29"
-        },
-        {
           "type": "class",
           "desc": "Special Survey",
           "due_date": "29 Jun 2029",
@@ -6413,18 +4555,7 @@
         },
         {
           "type": "class",
-          "desc": "Annual Survey",
-          "last_done": "08 Jul 2026"
-        },
-        {
-          "type": "class",
           "desc": "No.1 Boiler Survey",
-          "due_date": "02 May 2027",
-          "last_done": "03 May 2024"
-        },
-        {
-          "type": "class",
-          "desc": "Docking Survey (*1)",
           "due_date": "02 May 2027",
           "last_done": "03 May 2024"
         },
@@ -6433,10 +4564,6 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "03 May 2029",
           "last_done": "03 May 2024"
-        },
-        {
-          "type": "class",
-          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -6547,41 +4674,6 @@
           "due_date": "2030-12-22"
         },
         {
-          "type": "statutory",
-          "desc": "Safety Construction Renewal (构造安全换证)",
-          "due_date": "2030-12-22"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Equipment Renewal (设备安全换证)",
-          "due_date": "2030-12-22"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Radio Renewal (无线电安全换证)",
-          "due_date": "2030-12-22"
-        },
-        {
-          "type": "statutory",
-          "desc": "OPP Renewal (防油污换证)",
-          "due_date": "2030-12-22"
-        },
-        {
-          "type": "statutory",
-          "desc": "SPP Renewal (生活污水换证)",
-          "due_date": "2030-12-22"
-        },
-        {
-          "type": "statutory",
-          "desc": "APP Renewal (防空气污染换证)",
-          "due_date": "2030-12-22"
-        },
-        {
-          "type": "statutory",
-          "desc": "BWM Renewal (压载水换证)",
-          "due_date": "2030-12-22"
-        },
-        {
           "type": "class",
           "desc": "Special Survey",
           "due_date": "22 Dec 2030",
@@ -6593,17 +4685,7 @@
         },
         {
           "type": "class",
-          "desc": "Annual Survey"
-        },
-        {
-          "type": "class",
           "desc": "No.1 Boiler Survey",
-          "due_date": "22 Dec 2028",
-          "last_done": "23 Dec 2025"
-        },
-        {
-          "type": "class",
-          "desc": "Docking Survey (*1)",
           "due_date": "22 Dec 2028",
           "last_done": "23 Dec 2025"
         },
@@ -6612,10 +4694,6 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "04 Jul 2029",
           "last_done": "25 Jun 2018"
-        },
-        {
-          "type": "class",
-          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -6727,43 +4805,8 @@
         },
         {
           "type": "statutory",
-          "desc": "Safety Construction Renewal (构造安全换证)",
-          "due_date": "2031-02-09"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Equipment Renewal (设备安全换证)",
-          "due_date": "2031-02-09"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Radio Renewal (无线电安全换证)",
-          "due_date": "2031-02-09"
-        },
-        {
-          "type": "statutory",
-          "desc": "OPP Renewal (防油污换证)",
-          "due_date": "2031-02-09"
-        },
-        {
-          "type": "statutory",
-          "desc": "SPP Renewal (生活污水换证)",
-          "due_date": "2031-02-09"
-        },
-        {
-          "type": "statutory",
-          "desc": "APP Renewal (防空气污染换证)",
-          "due_date": "2031-02-09"
-        },
-        {
-          "type": "statutory",
           "desc": "IHM Renewal (有害物质清单换证)",
           "due_date": "2031-01-12"
-        },
-        {
-          "type": "statutory",
-          "desc": "BWM Renewal (压载水换证)",
-          "due_date": "2031-02-09"
         },
         {
           "type": "class",
@@ -6777,17 +4820,7 @@
         },
         {
           "type": "class",
-          "desc": "Annual Survey"
-        },
-        {
-          "type": "class",
           "desc": "No.1 Boiler Survey",
-          "due_date": "12 Jan 2029",
-          "last_done": "13 Jan 2026"
-        },
-        {
-          "type": "class",
-          "desc": "Docking Survey (*1)",
           "due_date": "12 Jan 2029",
           "last_done": "13 Jan 2026"
         },
@@ -6796,10 +4829,6 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "28 Jan 2031",
           "last_done": "13 Jan 2026"
-        },
-        {
-          "type": "class",
-          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -6918,46 +4947,6 @@
           "due_date": "2030-10-04"
         },
         {
-          "type": "statutory",
-          "desc": "Safety Construction Renewal (构造安全换证)",
-          "due_date": "2030-10-04"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Equipment Renewal (设备安全换证)",
-          "due_date": "2030-10-04"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Radio Renewal (无线电安全换证)",
-          "due_date": "2030-10-04"
-        },
-        {
-          "type": "statutory",
-          "desc": "OPP Renewal (防油污换证)",
-          "due_date": "2030-10-04"
-        },
-        {
-          "type": "statutory",
-          "desc": "SPP Renewal (生活污水换证)",
-          "due_date": "2030-10-04"
-        },
-        {
-          "type": "statutory",
-          "desc": "APP Renewal (防空气污染换证)",
-          "due_date": "2030-10-04"
-        },
-        {
-          "type": "statutory",
-          "desc": "IHM Renewal (有害物质清单换证)",
-          "due_date": "2030-10-04"
-        },
-        {
-          "type": "statutory",
-          "desc": "BWM Renewal (压载水换证)",
-          "due_date": "2030-10-04"
-        },
-        {
           "type": "class",
           "desc": "Special Survey",
           "due_date": "04 Oct 2030",
@@ -6969,29 +4958,9 @@
         },
         {
           "type": "class",
-          "desc": "Annual Survey"
-        },
-        {
-          "type": "class",
           "desc": "No.1 Boiler Survey",
           "due_date": "04 Oct 2028",
           "last_done": "05 Oct 2025"
-        },
-        {
-          "type": "class",
-          "desc": "Docking Survey (*1)",
-          "due_date": "04 Oct 2028",
-          "last_done": "05 Oct 2025"
-        },
-        {
-          "type": "class",
-          "desc": "No.1 Prop. Shaft Svy",
-          "due_date": "04 Oct 2030",
-          "last_done": "05 Oct 2025"
-        },
-        {
-          "type": "class",
-          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -7102,46 +5071,6 @@
           "due_date": "2029-11-24"
         },
         {
-          "type": "statutory",
-          "desc": "Safety Construction Renewal (构造安全换证)",
-          "due_date": "2029-11-24"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Equipment Renewal (设备安全换证)",
-          "due_date": "2029-11-24"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Radio Renewal (无线电安全换证)",
-          "due_date": "2029-11-24"
-        },
-        {
-          "type": "statutory",
-          "desc": "OPP Renewal (防油污换证)",
-          "due_date": "2029-11-24"
-        },
-        {
-          "type": "statutory",
-          "desc": "SPP Renewal (生活污水换证)",
-          "due_date": "2029-11-24"
-        },
-        {
-          "type": "statutory",
-          "desc": "APP Renewal (防空气污染换证)",
-          "due_date": "2029-11-24"
-        },
-        {
-          "type": "statutory",
-          "desc": "IHM Renewal (有害物质清单换证)",
-          "due_date": "2029-11-24"
-        },
-        {
-          "type": "statutory",
-          "desc": "BWM Renewal (压载水换证)",
-          "due_date": "2029-11-24"
-        },
-        {
           "type": "class",
           "desc": "Special Survey",
           "due_date": "24 Nov 2029",
@@ -7153,18 +5082,7 @@
         },
         {
           "type": "class",
-          "desc": "Annual Survey",
-          "last_done": "02 Nov 2025"
-        },
-        {
-          "type": "class",
           "desc": "No.1 Boiler Survey",
-          "due_date": "22 Nov 2027",
-          "last_done": "23 Nov 2024"
-        },
-        {
-          "type": "class",
-          "desc": "Docking Survey",
           "due_date": "22 Nov 2027",
           "last_done": "23 Nov 2024"
         },
@@ -7173,10 +5091,6 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "23 Nov 2029",
           "last_done": "25 Nov 2019"
-        },
-        {
-          "type": "class",
-          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -7287,46 +5201,6 @@
           "due_date": "2030-01-02"
         },
         {
-          "type": "statutory",
-          "desc": "Safety Construction Renewal (构造安全换证)",
-          "due_date": "2030-01-02"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Equipment Renewal (设备安全换证)",
-          "due_date": "2030-01-02"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Radio Renewal (无线电安全换证)",
-          "due_date": "2030-01-02"
-        },
-        {
-          "type": "statutory",
-          "desc": "OPP Renewal (防油污换证)",
-          "due_date": "2030-01-02"
-        },
-        {
-          "type": "statutory",
-          "desc": "SPP Renewal (生活污水换证)",
-          "due_date": "2030-01-02"
-        },
-        {
-          "type": "statutory",
-          "desc": "APP Renewal (防空气污染换证)",
-          "due_date": "2030-01-02"
-        },
-        {
-          "type": "statutory",
-          "desc": "IHM Renewal (有害物质清单换证)",
-          "due_date": "2030-01-02"
-        },
-        {
-          "type": "statutory",
-          "desc": "BWM Renewal (压载水换证)",
-          "due_date": "2030-01-02"
-        },
-        {
           "type": "class",
           "desc": "Special Survey",
           "due_date": "02 Jan 2030",
@@ -7338,18 +5212,7 @@
         },
         {
           "type": "class",
-          "desc": "Annual Survey",
-          "last_done": "25 Oct 2025"
-        },
-        {
-          "type": "class",
           "desc": "No.1 Boiler Survey",
-          "due_date": "13 Nov 2027",
-          "last_done": "14 Nov 2024"
-        },
-        {
-          "type": "class",
-          "desc": "Docking Survey",
           "due_date": "13 Nov 2027",
           "last_done": "14 Nov 2024"
         },
@@ -7358,10 +5221,6 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "01 Jan 2030",
           "last_done": "03 Jan 2020"
-        },
-        {
-          "type": "class",
-          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -7472,46 +5331,6 @@
           "due_date": "2028-05-20"
         },
         {
-          "type": "statutory",
-          "desc": "Safety Construction Renewal (构造安全换证)",
-          "due_date": "2028-05-20"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Equipment Renewal (设备安全换证)",
-          "due_date": "2028-05-20"
-        },
-        {
-          "type": "statutory",
-          "desc": "Safety Radio Renewal (无线电安全换证)",
-          "due_date": "2028-05-20"
-        },
-        {
-          "type": "statutory",
-          "desc": "OPP Renewal (防油污换证)",
-          "due_date": "2028-05-20"
-        },
-        {
-          "type": "statutory",
-          "desc": "SPP Renewal (生活污水换证)",
-          "due_date": "2028-05-20"
-        },
-        {
-          "type": "statutory",
-          "desc": "APP Renewal (防空气污染换证)",
-          "due_date": "2028-05-20"
-        },
-        {
-          "type": "statutory",
-          "desc": "IHM Renewal (有害物质清单换证)",
-          "due_date": "2028-05-20"
-        },
-        {
-          "type": "statutory",
-          "desc": "BWM Renewal (压载水换证)",
-          "due_date": "2028-05-20"
-        },
-        {
           "type": "class",
           "desc": "Special Survey",
           "due_date": "20 May 2028",
@@ -7524,30 +5343,9 @@
         },
         {
           "type": "class",
-          "desc": "Annual Survey",
-          "last_done": "24 Aug 2025"
-        },
-        {
-          "type": "class",
-          "desc": "No.1 Boiler Survey",
-          "due_date": "20 May 2028",
-          "last_done": "19 Sep 2025"
-        },
-        {
-          "type": "class",
-          "desc": "Docking Survey (*1)",
-          "due_date": "20 May 2028",
-          "last_done": "19 Sep 2025"
-        },
-        {
-          "type": "class",
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "18 Sep 2030",
           "last_done": "19 Sep 2025"
-        },
-        {
-          "type": "class",
-          "desc": "Planned Machinery Survey"
         }
       ],
       "certificates": [
@@ -9486,41 +7284,9 @@
         },
         {
           "type": "",
-          "desc": "Bottom - Dry Condition at Renewal",
-          "last_done": "2024-07-17"
-        },
-        {
-          "type": "",
           "desc": "Bottom - Dry Condition",
           "due_date": "2027-07-17",
           "last_done": "2022-10-25"
-        },
-        {
-          "type": "",
-          "desc": "- 17Jul2027 Machinery (under continuous survey) Mach. Renewal",
-          "due_date": "2029-06-07",
-          "last_done": "2024-07-17",
-          "window_start": "2028-03-08",
-          "window_end": "2029-06-07"
-        },
-        {
-          "type": "",
-          "desc": "Mach. Annual",
-          "due_date": "2027-06-07",
-          "last_done": "2026-04-15",
-          "window_start": "2027-03-08",
-          "window_end": "2027-09-07"
-        },
-        {
-          "type": "",
-          "desc": "644a Boiler  - Aux. boiler (fuel) (oil fired - exhaust gas)",
-          "due_date": "2027-07-17",
-          "last_done": "2024-07-17"
-        },
-        {
-          "type": "",
-          "desc": "- 17Jul2027 631a.03 Tailshaft (cl.oil-keyless) Met.1 (withdr.+prop. removal) (Aft)",
-          "last_done": "2002-09-02"
         },
         {
           "type": "",
@@ -9540,304 +7306,15 @@
         },
         {
           "type": "",
-          "desc": "ILL H Renewal",
-          "due_date": "2029-06-07",
-          "last_done": "2024-07-17",
-          "window_start": "2029-03-08",
-          "window_end": "2029-06-07"
-        },
-        {
-          "type": "",
           "desc": "Annual",
           "due_date": "2028-06-07",
           "last_done": "2026-04-15",
           "window_start": "2028-03-08",
           "window_end": "2028-09-07"
-        },
-        {
-          "type": "",
-          "desc": "IMSBC Code Renewal",
-          "due_date": "2029-06-07",
-          "last_done": "2024-06-26",
-          "window_start": "2029-03-08",
-          "window_end": "2029-06-07"
-        },
-        {
-          "type": "",
-          "desc": "Annual",
-          "due_date": "2028-06-07",
-          "last_done": "2026-04-15",
-          "window_start": "2028-03-08",
-          "window_end": "2028-09-07"
-        },
-        {
-          "type": "",
-          "desc": "DG (SOLAS) (cargo) First Issue (Initial)",
-          "last_done": "2026-04-15"
-        },
-        {
-          "type": "",
-          "desc": "Renewal",
-          "last_done": "2028-07-24",
-          "window_start": "2028-04-25",
-          "window_end": "2028-07-24"
-        },
-        {
-          "type": "",
-          "desc": "Annual",
-          "due_date": "2028-06-07",
-          "last_done": "2026-04-15",
-          "window_start": "2028-03-08",
-          "window_end": "2028-09-07"
-        },
-        {
-          "type": "",
-          "desc": "SC H Renewal",
-          "due_date": "2029-06-07",
-          "last_done": "2024-07-17",
-          "window_start": "2029-03-08",
-          "window_end": "2029-06-07"
-        },
-        {
-          "type": "",
-          "desc": "Intermediate (1)",
-          "last_done": "2027-06-07",
-          "window_start": "2027-03-08",
-          "window_end": "2027-09-07"
-        },
-        {
-          "type": "",
-          "desc": "Annual",
-          "due_date": "2028-06-07",
-          "last_done": "2026-04-15",
-          "window_start": "2028-03-08",
-          "window_end": "2028-09-07"
-        },
-        {
-          "type": "",
-          "desc": "SE H Renewal",
-          "due_date": "2029-06-07",
-          "last_done": "2024-07-17",
-          "window_start": "2029-03-08",
-          "window_end": "2029-06-07"
-        },
-        {
-          "type": "",
-          "desc": "Periodical (1)",
-          "last_done": "2027-06-07",
-          "window_start": "2027-03-08",
-          "window_end": "2027-09-07"
-        },
-        {
-          "type": "",
-          "desc": "Annual",
-          "due_date": "2028-06-07",
-          "last_done": "2026-04-15",
-          "window_start": "2028-03-08",
-          "window_end": "2028-09-07"
-        },
-        {
-          "type": "",
-          "desc": "SR H Renewal",
-          "due_date": "2029-06-07",
-          "last_done": "2024-06-26",
-          "window_start": "2029-03-08",
-          "window_end": "2029-06-07"
-        },
-        {
-          "type": "",
-          "desc": "Periodical",
-          "due_date": "2027-06-07",
-          "last_done": "2026-04-15",
-          "window_start": "2027-03-08",
-          "window_end": "2027-09-07"
-        },
-        {
-          "type": "",
-          "desc": "SMC Renewal",
-          "last_done": "2028-11-06",
-          "window_start": "2028-08-07",
-          "window_end": "2028-11-06"
-        },
-        {
-          "type": "",
-          "desc": "Intermediate",
-          "last_done": "2026-04-15"
-        },
-        {
-          "type": "",
-          "desc": "MLC Renewal",
-          "last_done": "2028-11-06",
-          "window_start": "2028-08-07",
-          "window_end": "2028-11-06"
-        },
-        {
-          "type": "",
-          "desc": "Intermediate",
-          "last_done": "2026-04-15"
-        },
-        {
-          "type": "",
-          "desc": "ISSC Renewal",
-          "last_done": "2028-11-06",
-          "window_start": "2028-08-07",
-          "window_end": "2028-11-06"
-        },
-        {
-          "type": "",
-          "desc": "For any enquiries please contact: Greater China Marine Telephone : E-mail : china.marine@rina.org Direct fax line : +86 ",
-          "last_done": "2026-04-15"
-        },
-        {
-          "type": "",
-          "desc": "IAPP Renewal",
-          "due_date": "2029-06-07",
-          "last_done": "2024-07-17",
-          "window_start": "2029-03-08",
-          "window_end": "2029-06-07"
-        },
-        {
-          "type": "",
-          "desc": "Intermediate (1)",
-          "last_done": "2027-06-07",
-          "window_start": "2027-03-08",
-          "window_end": "2027-09-07"
-        },
-        {
-          "type": "",
-          "desc": "Annual",
-          "due_date": "2028-06-07",
-          "last_done": "2026-04-15",
-          "window_start": "2028-03-08",
-          "window_end": "2028-09-07"
-        },
-        {
-          "type": "",
-          "desc": "IOPP Renewal",
-          "due_date": "2029-06-07",
-          "last_done": "2024-07-17",
-          "window_start": "2029-03-08",
-          "window_end": "2029-06-07"
-        },
-        {
-          "type": "",
-          "desc": "Intermediate (1)",
-          "last_done": "2027-06-07",
-          "window_start": "2027-03-08",
-          "window_end": "2027-09-07"
-        },
-        {
-          "type": "",
-          "desc": "Annual",
-          "due_date": "2028-06-07",
-          "last_done": "2026-04-15",
-          "window_start": "2028-03-08",
-          "window_end": "2028-09-07"
-        },
-        {
-          "type": "",
-          "desc": "ISPP Renewal",
-          "due_date": "2029-06-07",
-          "last_done": "2024-07-17",
-          "window_start": "2029-03-08",
-          "window_end": "2029-06-07"
-        },
-        {
-          "type": "",
-          "desc": "RECYCL_HKC First Issue (Renewal)",
-          "last_done": "2023-07-25"
-        },
-        {
-          "type": "",
-          "desc": "Renewal",
-          "last_done": "2028-07-24",
-          "window_start": "2028-04-25",
-          "window_end": "2028-07-24"
-        },
-        {
-          "type": "",
-          "desc": "IBWM Renewal",
-          "due_date": "2029-06-07",
-          "last_done": "2024-07-17",
-          "window_start": "2029-03-08",
-          "window_end": "2029-06-07"
-        },
-        {
-          "type": "",
-          "desc": "Intermediate (1)",
-          "last_done": "2027-06-07",
-          "window_start": "2027-03-08",
-          "window_end": "2027-09-07"
-        },
-        {
-          "type": "",
-          "desc": "Annual",
-          "due_date": "2028-06-07",
-          "last_done": "2026-04-15",
-          "window_start": "2028-03-08",
-          "window_end": "2028-09-07"
-        },
-        {
-          "type": "",
-          "desc": "IEEC First Issue (Initial)",
-          "last_done": "2023-07-25"
-        },
-        {
-          "type": "",
-          "desc": "L.A. 452.05a CRANE ILO Test (port,Hose Davit)",
-          "due_date": "2029-07-17",
-          "last_done": "2024-07-17"
-        },
-        {
-          "type": "",
-          "desc": "- 17Jul2029 452.05b CRANE ILO Test (central,Engine room crane)",
-          "last_done": "2029-07-17"
-        },
-        {
-          "type": "",
-          "desc": "- 17Jul2029 563.01a CRANE ILO Test (port,Provision Crane (Port))",
-          "due_date": "2029-07-17",
-          "last_done": "2024-07-17"
-        },
-        {
-          "type": "",
-          "desc": "- 17Jul2029 563.01b CRANE ILO Test (stbd,Provision Crane (Starboard))",
-          "due_date": "2029-07-17",
-          "last_done": "2024-07-17"
         },
         {
           "type": "",
           "desc": "- 17Jul2029 452.05a CRANE ILO Annual (port,Hose Davit)",
-          "due_date": "2027-04-15",
-          "last_done": "2026-04-15"
-        },
-        {
-          "type": "",
-          "desc": "- 15Apr2027 452.05b CRANE ILO Annual (central,Engine room crane)",
-          "due_date": "2027-04-15",
-          "last_done": "2026-04-15"
-        },
-        {
-          "type": "",
-          "desc": "- 15Apr2027 563.01a CRANE ILO Annual (port,Provision Crane (Port))",
-          "due_date": "2027-04-15",
-          "last_done": "2026-04-15"
-        },
-        {
-          "type": "",
-          "desc": "- 15Apr2027 563.01b CRANE ILO Annual (stbd,Provision Crane (Starboard))",
-          "due_date": "2027-04-15",
-          "last_done": "2026-04-15"
-        },
-        {
-          "type": "",
-          "desc": "- 15Apr2027 563.10a DERRICK ILO Quinquennial (Hose Davit,stbd)",
-          "due_date": "2029-07-17",
-          "last_done": "2024-07-17"
-        },
-        {
-          "type": "",
-          "desc": "- 17Jul2029 563.10a DERRICK ILO  Annual (Hose Davit,stbd)",
           "due_date": "2027-04-15",
           "last_done": "2026-04-15"
         },
@@ -9956,336 +7433,11 @@
         },
         {
           "type": "",
-          "desc": "Bottom - Dry Condition at Renewal",
-          "due_date": "2028-08-25",
-          "last_done": "2023-08-10"
-        },
-        {
-          "type": "",
-          "desc": "- 25Aug2028 Bottom - Dry Condition",
-          "last_done": "2026-06-04"
-        },
-        {
-          "type": "",
-          "desc": "Bottom - in Water",
-          "last_done": "2021-08-13"
-        },
-        {
-          "type": "",
-          "desc": "Machinery (under continuous survey) Mach. Renewal",
-          "due_date": "2028-08-25",
-          "last_done": "2023-08-10",
-          "window_start": "2027-05-26",
-          "window_end": "2028-08-25"
-        },
-        {
-          "type": "",
-          "desc": "Mach. Annual",
-          "due_date": "2027-08-25",
-          "last_done": "2026-06-04",
-          "window_start": "2027-05-26",
-          "window_end": "2027-11-25"
-        },
-        {
-          "type": "",
-          "desc": "644a Boiler  - Aux. boiler (fuel) (oil fired - exhaust gas)",
-          "due_date": "2028-08-25",
-          "last_done": "2026-06-04"
-        },
-        {
-          "type": "",
-          "desc": "- 25Aug2028 631a.03 Tailshaft (cl.oil-keyless) Met.1 (withdr.+prop. removal) (Aft,central)",
-          "last_done": "2008-08-26"
-        },
-        {
-          "type": "",
           "desc": "631a.03 Tailshaft (cl.oil-keyless) Met.2 (prop. removal) (Aft,central)",
           "due_date": "2028-07-15",
           "last_done": "2013-07-15",
           "window_start": "2028-04-16",
           "window_end": "2028-07-15"
-        },
-        {
-          "type": "",
-          "desc": "631a.03 Tailshaft (cl.oil-keyless) Met.3 (Aft,central)",
-          "last_done": "2023-08-10"
-        },
-        {
-          "type": "",
-          "desc": "ILL H Renewal",
-          "last_done": "2028-08-25",
-          "window_start": "2028-05-26",
-          "window_end": "2028-08-25"
-        },
-        {
-          "type": "",
-          "desc": "Annual",
-          "last_done": "2027-08-25",
-          "window_start": "2027-05-26",
-          "window_end": "2027-11-25"
-        },
-        {
-          "type": "",
-          "desc": "Change of flag (Annual) (1)",
-          "last_done": "2026-06-04"
-        },
-        {
-          "type": "",
-          "desc": "IMSBC Code Renewal",
-          "last_done": "2028-08-25",
-          "window_start": "2028-05-26",
-          "window_end": "2028-08-25"
-        },
-        {
-          "type": "",
-          "desc": "Annual",
-          "last_done": "2027-08-25",
-          "window_start": "2027-05-26",
-          "window_end": "2027-11-25"
-        },
-        {
-          "type": "",
-          "desc": "Change of flag (Annual) (1)",
-          "last_done": "2026-06-04"
-        },
-        {
-          "type": "",
-          "desc": "DG (SOLAS) (cargo) Renewal",
-          "last_done": "2028-08-25",
-          "window_start": "2028-05-26",
-          "window_end": "2028-08-25"
-        },
-        {
-          "type": "",
-          "desc": "Annual",
-          "last_done": "2027-08-25",
-          "window_start": "2027-05-26",
-          "window_end": "2027-11-25"
-        },
-        {
-          "type": "",
-          "desc": "Change of flag (Annual) (1)",
-          "last_done": "2026-06-04"
-        },
-        {
-          "type": "",
-          "desc": "SC H Renewal",
-          "last_done": "2028-08-25",
-          "window_start": "2028-05-26",
-          "window_end": "2028-08-25"
-        },
-        {
-          "type": "",
-          "desc": "Annual",
-          "last_done": "2027-08-25",
-          "window_start": "2027-05-26",
-          "window_end": "2027-11-25"
-        },
-        {
-          "type": "",
-          "desc": "Change of flag (Intermediate) (1)",
-          "last_done": "2026-06-04"
-        },
-        {
-          "type": "",
-          "desc": "SE H Renewal",
-          "last_done": "2028-08-25",
-          "window_start": "2028-05-26",
-          "window_end": "2028-08-25"
-        },
-        {
-          "type": "",
-          "desc": "Annual",
-          "last_done": "2027-08-25",
-          "window_start": "2027-05-26",
-          "window_end": "2027-11-25"
-        },
-        {
-          "type": "",
-          "desc": "Change of flag (Periodical) (1)",
-          "last_done": "2026-06-04"
-        },
-        {
-          "type": "",
-          "desc": "SR H Renewal",
-          "last_done": "2028-08-25",
-          "window_start": "2028-05-26",
-          "window_end": "2028-08-25"
-        },
-        {
-          "type": "",
-          "desc": "Periodical",
-          "due_date": "2027-08-25",
-          "last_done": "2025-09-17",
-          "window_start": "2027-05-26",
-          "window_end": "2027-11-25"
-        },
-        {
-          "type": "",
-          "desc": "Change of flag (Periodical) (1)",
-          "last_done": "2026-06-04"
-        },
-        {
-          "type": "",
-          "desc": "For any enquiries please contact: Greater China Marine Telephone : E-mail : china.marine@rina.org Direct fax line : +86 ",
-          "last_done": "2026-06-04"
-        },
-        {
-          "type": "",
-          "desc": "First Issue",
-          "last_done": "2026-12-04"
-        },
-        {
-          "type": "",
-          "desc": "- 04Dec2026 • MLC Interim Audit",
-          "last_done": "2026-06-04"
-        },
-        {
-          "type": "",
-          "desc": "First Issue",
-          "last_done": "2026-12-04"
-        },
-        {
-          "type": "",
-          "desc": "- 04Dec2026 • ISSC Pre-Verification",
-          "last_done": "2026-06-04"
-        },
-        {
-          "type": "",
-          "desc": "First Issue",
-          "last_done": "2026-12-04"
-        },
-        {
-          "type": "",
-          "desc": "- 04Dec2026 • GARBAGE Renewal",
-          "last_done": "2028-08-25",
-          "window_start": "2028-05-26",
-          "window_end": "2028-08-25"
-        },
-        {
-          "type": "",
-          "desc": "Annual",
-          "last_done": "2027-08-25",
-          "window_start": "2027-05-26",
-          "window_end": "2027-11-25"
-        },
-        {
-          "type": "",
-          "desc": "Change of flag (Annual) (1)",
-          "last_done": "2026-06-04"
-        },
-        {
-          "type": "",
-          "desc": "IAPP Renewal",
-          "last_done": "2028-08-25",
-          "window_start": "2028-05-26",
-          "window_end": "2028-08-25"
-        },
-        {
-          "type": "",
-          "desc": "Annual",
-          "last_done": "2027-08-25",
-          "window_start": "2027-05-26",
-          "window_end": "2027-11-25"
-        },
-        {
-          "type": "",
-          "desc": "Change of flag (Intermediate) (1)",
-          "last_done": "2026-06-04"
-        },
-        {
-          "type": "",
-          "desc": "IOPP Renewal",
-          "last_done": "2028-08-25",
-          "window_start": "2028-05-26",
-          "window_end": "2028-08-25"
-        },
-        {
-          "type": "",
-          "desc": "Annual",
-          "last_done": "2027-08-25",
-          "window_start": "2027-05-26",
-          "window_end": "2027-11-25"
-        },
-        {
-          "type": "",
-          "desc": "Change of flag (Intermediate) (1)",
-          "last_done": "2026-06-04"
-        },
-        {
-          "type": "",
-          "desc": "ISPP Renewal",
-          "last_done": "2028-08-25",
-          "window_start": "2028-05-26",
-          "window_end": "2028-08-25"
-        },
-        {
-          "type": "",
-          "desc": "Change of flag (Renewal) (1)",
-          "last_done": "2026-06-04"
-        },
-        {
-          "type": "",
-          "desc": "RECYCL_1257 _EU_ST Renewal",
-          "last_done": "2028-08-25",
-          "window_start": "2028-05-26",
-          "window_end": "2028-08-25"
-        },
-        {
-          "type": "",
-          "desc": "Change of flag (Renewal) (1)",
-          "last_done": "2026-06-04"
-        },
-        {
-          "type": "",
-          "desc": "RECYCL_HKC Renewal",
-          "last_done": "2028-08-25",
-          "window_start": "2028-05-26",
-          "window_end": "2028-08-25"
-        },
-        {
-          "type": "",
-          "desc": "Change of flag (Renewal) (1)",
-          "last_done": "2026-06-04"
-        },
-        {
-          "type": "",
-          "desc": "IAFSC First Issue (Occasional)",
-          "last_done": "2025-01-25"
-        },
-        {
-          "type": "",
-          "desc": "IBWM Renewal",
-          "last_done": "2028-08-25",
-          "window_start": "2028-05-26",
-          "window_end": "2028-08-25"
-        },
-        {
-          "type": "",
-          "desc": "Annual",
-          "last_done": "2027-08-25",
-          "window_start": "2027-05-26",
-          "window_end": "2027-11-25"
-        },
-        {
-          "type": "",
-          "desc": "Change of flag (Intermediate) (1)",
-          "last_done": "2026-06-04"
-        },
-        {
-          "type": "",
-          "desc": "IEEC First Issue (Initial)",
-          "last_done": "2025-01-25"
-        },
-        {
-          "type": "",
-          "desc": "ILO 92/133 First Issue (Initial)",
-          "last_done": "2018-05-28"
-        },
-        {
-          "type": "",
-          "desc": "Change of flag (Initial) (1)",
-          "last_done": "2026-06-04"
         },
         {
           "type": "",
@@ -10295,55 +7447,7 @@
         },
         {
           "type": "",
-          "desc": "- 10Aug2028 334b CRANE ILO Test (FO Hose and SUEZ Handling Davit,stbd)",
-          "due_date": "2028-08-10",
-          "last_done": "2023-08-10"
-        },
-        {
-          "type": "",
-          "desc": "- 10Aug2028 452.01a CRANE ILO Test (central)",
-          "due_date": "2028-08-10",
-          "last_done": "2023-08-10"
-        },
-        {
-          "type": "",
-          "desc": "- 10Aug2028 563.01a CRANE ILO Test (PROVISION CRANE,port)",
-          "due_date": "2028-08-10",
-          "last_done": "2023-08-10"
-        },
-        {
-          "type": "",
-          "desc": "- 10Aug2028 563.01b CRANE ILO Test (PROVISION CRANE,stbd)",
-          "due_date": "2028-08-10",
-          "last_done": "2023-08-10"
-        },
-        {
-          "type": "",
           "desc": "- 10Aug2028 334a CRANE LA Annual (FO Hose Handling Davit,port)",
-          "due_date": "2027-06-04",
-          "last_done": "2026-06-04"
-        },
-        {
-          "type": "",
-          "desc": "- 04Jun2027 334b CRANE LA Annual (FO Hose and SUEZ Handling Davit,stbd)",
-          "due_date": "2027-06-04",
-          "last_done": "2026-06-04"
-        },
-        {
-          "type": "",
-          "desc": "- 04Jun2027 For any enquiries please contact: Greater China Marine Telephone : E-mail : china.marine@rina.org Direct fax",
-          "due_date": "2027-06-04",
-          "last_done": "2026-06-04"
-        },
-        {
-          "type": "",
-          "desc": "- 04Jun2027 563.01a CRANE LA Annual (PROVISION CRANE,port)",
-          "due_date": "2027-06-04",
-          "last_done": "2026-06-04"
-        },
-        {
-          "type": "",
-          "desc": "- 04Jun2027 563.01b CRANE LA Annual (PROVISION CRANE,stbd)",
           "due_date": "2027-06-04",
           "last_done": "2026-06-04"
         },
@@ -10475,53 +7579,9 @@
         },
         {
           "type": "",
-          "desc": "Bottom - Dry Condition at Renewal",
-          "last_done": "2025-03-26"
-        },
-        {
-          "type": "",
           "desc": "Bottom - Dry Condition",
           "due_date": "2028-03-26",
           "last_done": "2022-06-25"
-        },
-        {
-          "type": "",
-          "desc": "- 26Mar2028 Bottom - in Water",
-          "last_done": "2017-10-26"
-        },
-        {
-          "type": "",
-          "desc": "Machinery (under continuous survey) Mach. Renewal",
-          "due_date": "2030-05-11",
-          "last_done": "2025-03-26",
-          "window_start": "2029-02-12",
-          "window_end": "2030-05-11"
-        },
-        {
-          "type": "",
-          "desc": "Mach. Annual",
-          "due_date": "2027-05-11",
-          "last_done": "2026-02-25",
-          "window_start": "2027-02-12",
-          "window_end": "2027-08-11"
-        },
-        {
-          "type": "",
-          "desc": "644a Boiler  - Aux. boiler (fuel) (oil fired - exhaust gas)",
-          "due_date": "2028-03-26",
-          "last_done": "2025-03-26"
-        },
-        {
-          "type": "",
-          "desc": "- 26Mar2028 631a.03 Tailshaft (cl.oil-keyless) Met.1 (withdr.+prop. removal) (Aft)",
-          "last_done": "2025-03-26"
-        },
-        {
-          "type": "",
-          "desc": "631a.03 Tailshaft (cl.oil-keyless) Met.2 (prop. removal) (Aft)",
-          "last_done": "2040-03-26",
-          "window_start": "2039-12-27",
-          "window_end": "2040-03-26"
         },
         {
           "type": "",
@@ -10533,286 +7593,9 @@
         },
         {
           "type": "",
-          "desc": "ILL H Renewal",
-          "due_date": "2030-05-11",
-          "last_done": "2025-03-26",
-          "window_start": "2030-02-12",
-          "window_end": "2030-05-11"
-        },
-        {
-          "type": "",
-          "desc": "Annual",
-          "due_date": "2027-05-11",
-          "last_done": "2026-02-25",
-          "window_start": "2027-02-12",
-          "window_end": "2027-08-11"
-        },
-        {
-          "type": "",
-          "desc": "IMSBC Code Renewal",
-          "due_date": "2030-05-11",
-          "last_done": "2025-03-26",
-          "window_start": "2030-02-12",
-          "window_end": "2030-05-11"
-        },
-        {
-          "type": "",
-          "desc": "Annual",
-          "due_date": "2027-05-11",
-          "last_done": "2026-02-25",
-          "window_start": "2027-02-12",
-          "window_end": "2027-08-11"
-        },
-        {
-          "type": "",
-          "desc": "SC H Renewal",
-          "due_date": "2030-05-11",
-          "last_done": "2025-03-26",
-          "window_start": "2030-02-12",
-          "window_end": "2030-05-11"
-        },
-        {
-          "type": "",
-          "desc": "Intermediate (1)",
-          "last_done": "2027-05-11",
-          "window_start": "2027-02-12",
-          "window_end": "2027-08-11"
-        },
-        {
-          "type": "",
-          "desc": "Annual",
-          "due_date": "2027-05-11",
-          "last_done": "2026-02-25",
-          "window_start": "2027-02-12",
-          "window_end": "2027-08-11"
-        },
-        {
-          "type": "",
-          "desc": "SE H Renewal",
-          "due_date": "2030-05-11",
-          "last_done": "2025-03-26",
-          "window_start": "2030-02-12",
-          "window_end": "2030-05-11"
-        },
-        {
-          "type": "",
-          "desc": "Periodical (1)",
-          "last_done": "2027-05-11",
-          "window_start": "2027-02-12",
-          "window_end": "2027-08-11"
-        },
-        {
-          "type": "",
-          "desc": "Annual",
-          "due_date": "2027-05-11",
-          "last_done": "2026-02-25",
-          "window_start": "2027-02-12",
-          "window_end": "2027-08-11"
-        },
-        {
-          "type": "",
-          "desc": "SR H Renewal",
-          "due_date": "2030-05-11",
-          "last_done": "2025-03-26",
-          "window_start": "2030-02-12",
-          "window_end": "2030-05-11"
-        },
-        {
-          "type": "",
-          "desc": "Periodical",
-          "due_date": "2027-05-11",
-          "last_done": "2026-02-25",
-          "window_start": "2027-02-12",
-          "window_end": "2027-08-11"
-        },
-        {
-          "type": "",
-          "desc": "SMC Renewal",
-          "last_done": "2026-10-31",
-          "window_start": "2026-08-01",
-          "window_end": "2026-10-31"
-        },
-        {
-          "type": "",
-          "desc": "• Intermediate",
-          "last_done": "2024-07-26"
-        },
-        {
-          "type": "",
-          "desc": "MLC Renewal",
-          "last_done": "2026-10-31",
-          "window_start": "2026-08-01",
-          "window_end": "2026-10-31"
-        },
-        {
-          "type": "",
-          "desc": "• Intermediate",
-          "last_done": "2024-07-26"
-        },
-        {
-          "type": "",
-          "desc": "ISSC Renewal",
-          "last_done": "2026-10-31",
-          "window_start": "2026-08-01",
-          "window_end": "2026-10-31"
-        },
-        {
-          "type": "",
-          "desc": "• Intermediate",
-          "last_done": "2024-07-26"
-        },
-        {
-          "type": "",
-          "desc": "For any enquiries please contact: Greater China Marine Telephone : E-mail : china.marine@rina.org Direct fax line : +86 ",
-          "due_date": "2030-05-11",
-          "last_done": "2025-03-26",
-          "window_start": "2030-02-12",
-          "window_end": "2030-05-11"
-        },
-        {
-          "type": "",
-          "desc": "Intermediate (1)",
-          "last_done": "2027-05-11",
-          "window_start": "2027-02-12",
-          "window_end": "2027-08-11"
-        },
-        {
-          "type": "",
-          "desc": "Annual",
-          "due_date": "2027-05-11",
-          "last_done": "2026-02-25",
-          "window_start": "2027-02-12",
-          "window_end": "2027-08-11"
-        },
-        {
-          "type": "",
-          "desc": "IOPP Renewal",
-          "due_date": "2030-05-11",
-          "last_done": "2025-03-26",
-          "window_start": "2030-02-12",
-          "window_end": "2030-05-11"
-        },
-        {
-          "type": "",
-          "desc": "Intermediate (1)",
-          "last_done": "2027-05-11",
-          "window_start": "2027-02-12",
-          "window_end": "2027-08-11"
-        },
-        {
-          "type": "",
-          "desc": "Annual",
-          "due_date": "2027-05-11",
-          "last_done": "2026-02-25",
-          "window_start": "2027-02-12",
-          "window_end": "2027-08-11"
-        },
-        {
-          "type": "",
-          "desc": "ISPP Renewal",
-          "due_date": "2030-05-11",
-          "last_done": "2025-03-26",
-          "window_start": "2030-02-12",
-          "window_end": "2030-05-11"
-        },
-        {
-          "type": "",
-          "desc": "IAFSC First Issue (Occasional)",
-          "last_done": "2021-07-30"
-        },
-        {
-          "type": "",
-          "desc": "IBWM Renewal",
-          "due_date": "2030-05-11",
-          "last_done": "2025-03-26",
-          "window_start": "2030-02-12",
-          "window_end": "2030-05-11"
-        },
-        {
-          "type": "",
-          "desc": "Intermediate (1)",
-          "last_done": "2027-05-11",
-          "window_start": "2027-02-12",
-          "window_end": "2027-08-11"
-        },
-        {
-          "type": "",
-          "desc": "Annual",
-          "due_date": "2027-05-11",
-          "last_done": "2026-02-25",
-          "window_start": "2027-02-12",
-          "window_end": "2027-08-11"
-        },
-        {
-          "type": "",
-          "desc": "IEEC First Issue (Initial)",
-          "last_done": "2021-07-30"
-        },
-        {
-          "type": "",
-          "desc": "L.A. 452.05a CRANE ILO Test (central,Main Engine Overhead Travelling Crane)",
-          "due_date": "2030-03-26",
-          "last_done": "2025-03-26"
-        },
-        {
-          "type": "",
-          "desc": "- 26Mar2030 563.01a CRANE ILO Test (port,Provision Crane (Port))",
-          "due_date": "2030-03-26",
-          "last_done": "2025-03-26"
-        },
-        {
-          "type": "",
-          "desc": "- 26Mar2030 563.01b CRANE ILO Test (stbd,Provision Crane (Starboard))",
-          "due_date": "2030-03-26",
-          "last_done": "2025-03-26"
-        },
-        {
-          "type": "",
           "desc": "- 26Mar2030 452.05a CRANE ILO Annual (central,Main Engine Overhead Travelling Crane)",
           "due_date": "2027-02-25",
           "last_done": "2026-02-25"
-        },
-        {
-          "type": "",
-          "desc": "- 25Feb2027 • 563.01a CRANE ILO Annual (port,Provision Crane (Port))",
-          "due_date": "2027-02-25",
-          "last_done": "2026-02-25"
-        },
-        {
-          "type": "",
-          "desc": "- 25Feb2027 • 563.01b CRANE ILO Annual (stbd,Provision Crane (Starboard))",
-          "due_date": "2027-02-25",
-          "last_done": "2026-02-25"
-        },
-        {
-          "type": "",
-          "desc": "- 25Feb2027 • 563.10a DERRICK ILO Quinquennial (Provision Davit,stbd)",
-          "due_date": "2030-03-26",
-          "last_done": "2025-03-26"
-        },
-        {
-          "type": "",
-          "desc": "- 26Mar2030 563.10a DERRICK ILO  Annual (Provision Davit,stbd)",
-          "due_date": "2027-02-25",
-          "last_done": "2026-02-25"
-        },
-        {
-          "type": "",
-          "desc": "- 25Feb2027 563.01a CRANE ILO Annual (port,Provision Crane (Port))",
-          "due_date": "2027-02-25",
-          "last_done": "2026-02-25"
-        },
-        {
-          "type": "",
-          "desc": "- 25Feb2027 563.01b CRANE ILO Annual (stbd,Provision Crane (Starboard))",
-          "due_date": "2027-02-25",
-          "last_done": "2026-02-25"
-        },
-        {
-          "type": "",
-          "desc": "- 25Feb2027 563.10a DERRICK ILO Quinquennial (Provision Davit,stbd)",
-          "due_date": "2030-03-26",
-          "last_done": "2025-03-26"
         },
         {
           "type": "dry_docking",
