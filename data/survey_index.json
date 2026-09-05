@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-09-02 00:26",
-  "total_ships": 62,
+  "last_updated": "2026-09-05 13:13",
+  "total_ships": 63,
   "ships": {
     "SUNNY_BEYLA": {
       "name": "SUNNY BEYLA",
@@ -5662,7 +5662,7 @@
         "expired": 0,
         "urgent_7d": 0,
         "warning_30d": 0,
-        "info_90d": 0
+        "info_90d": 2
       },
       "extraction_confidence": "high"
     },
@@ -6239,10 +6239,6 @@
       "dwt": 229069.0,
       "surveys": [
         {
-          "type": "boiler",
-          "desc": "锅炉"
-        },
-        {
           "type": "annual_survey",
           "desc": "Class Annual Survey"
         },
@@ -6256,6 +6252,11 @@
           "due_date": "2027-08-31"
         },
         {
+          "type": "boiler",
+          "desc": "Boiler Survey ( Oil-fired Aux.",
+          "due_date": "2025-08-05"
+        },
+        {
           "type": "tail_shaft",
           "desc": "尾轴检验",
           "due_date": "2027-08-31"
@@ -6265,6 +6266,10 @@
           "desc": "BTS (船底外部检验)",
           "due_date": "2027-08-31",
           "last_done": "2025-08-05"
+        },
+        {
+          "type": "boiler",
+          "desc": "锅炉"
         }
       ],
       "certificates": [
@@ -8262,10 +8267,6 @@
       "dwt": 203185.0,
       "surveys": [
         {
-          "type": "boiler",
-          "desc": "锅炉"
-        },
-        {
           "type": "annual_survey",
           "desc": "Class Annual Survey"
         },
@@ -8279,6 +8280,11 @@
           "due_date": "2027-03-01"
         },
         {
+          "type": "boiler",
+          "desc": "Boiler Survey ( Oil-fired Aux.and",
+          "due_date": "2025-05-01"
+        },
+        {
           "type": "tail_shaft",
           "desc": "尾轴检验",
           "due_date": "2027-08-08"
@@ -8288,6 +8294,10 @@
           "desc": "BTS (船底外部检验)",
           "due_date": "2027-03-01",
           "last_done": "2025-04-18"
+        },
+        {
+          "type": "boiler",
+          "desc": "锅炉"
         }
       ],
       "certificates": [
@@ -8355,10 +8365,6 @@
       "dwt": 177003.0,
       "surveys": [
         {
-          "type": "boiler",
-          "desc": "锅炉"
-        },
-        {
           "type": "annual_survey",
           "desc": "Class Annual Survey",
           "due_date": "2027-06-03"
@@ -8373,6 +8379,11 @@
           "due_date": "2029-06-03"
         },
         {
+          "type": "boiler",
+          "desc": "Boiler Survey ( Oil-fired Aux.and",
+          "due_date": "2026-07-10"
+        },
+        {
           "type": "tail_shaft",
           "desc": "尾轴检验",
           "due_date": "2029-09-09"
@@ -8382,6 +8393,10 @@
           "desc": "BTS (船底外部检验)",
           "due_date": "2029-06-03",
           "last_done": "2026-06-29"
+        },
+        {
+          "type": "boiler",
+          "desc": "锅炉"
         }
       ],
       "certificates": [
@@ -8454,10 +8469,6 @@
       "dwt": 207960.0,
       "surveys": [
         {
-          "type": "boiler",
-          "desc": "锅炉"
-        },
-        {
           "type": "annual_survey",
           "desc": "Class Annual Survey",
           "due_date": "2026-12-06"
@@ -8472,6 +8483,11 @@
           "due_date": "2027-12-06"
         },
         {
+          "type": "boiler",
+          "desc": "Boiler Survey ( Oil-fired Aux.and",
+          "due_date": "2025-09-13"
+        },
+        {
           "type": "tail_shaft",
           "desc": "尾轴检验",
           "due_date": "2027-11-07"
@@ -8481,6 +8497,10 @@
           "desc": "BTS (船底外部检验)",
           "due_date": "2027-12-06",
           "last_done": "2026-01-02"
+        },
+        {
+          "type": "boiler",
+          "desc": "锅炉"
         }
       ],
       "certificates": [
@@ -8548,10 +8568,6 @@
       "dwt": 179843.0,
       "surveys": [
         {
-          "type": "boiler",
-          "desc": "锅炉"
-        },
-        {
           "type": "annual_survey",
           "desc": "Class Annual Survey",
           "due_date": "2027-03-10"
@@ -8567,6 +8583,11 @@
           "due_date": "2031-06-09"
         },
         {
+          "type": "boiler",
+          "desc": "Boiler Survey (No.1 Oil-fired",
+          "due_date": "2026-06-17"
+        },
+        {
           "type": "tail_shaft",
           "desc": "尾轴检验",
           "due_date": "2031-06-16"
@@ -8576,6 +8597,10 @@
           "desc": "BTS (船底外部检验)",
           "due_date": "2029-06-11",
           "last_done": "2026-06-12"
+        },
+        {
+          "type": "boiler",
+          "desc": "锅炉"
         }
       ],
       "certificates": [
@@ -8638,6 +8663,105 @@
       },
       "extraction_confidence": "medium"
     },
+    "WINNING_BRAVE": {
+      "name": "WINNING BRAVE",
+      "imo": "1037402",
+      "class_society": "CCS",
+      "flag": "Singapore",
+      "gt": "174863",
+      "dwt": "324965",
+      "surveys": [
+        {
+          "type": "annual_survey",
+          "desc": "Class Annual Survey",
+          "due_date": "2027-08-11"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Class Intermediate Survey",
+          "due_date": "2028-08-11"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Class Special Survey (Hull & Machinery)",
+          "due_date": "2031-08-11"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (Oil-fired Aux. & Exh. Gas Composite)",
+          "due_date": "2029-08-11"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "尾轴检验",
+          "due_date": "2036-08-11"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "ISM DOC",
+          "expiry": "2031-08-11"
+        },
+        {
+          "name": "ISPS"
+        },
+        {
+          "name": "MLC",
+          "expiry": "2031-08-11"
+        },
+        {
+          "name": "IOPP",
+          "expiry": "2031-08-11"
+        },
+        {
+          "name": "IAPP",
+          "expiry": "2031-08-11"
+        },
+        {
+          "name": "ISPP",
+          "expiry": "2031-08-11"
+        },
+        {
+          "name": "Load Line"
+        },
+        {
+          "name": "Safety Construction",
+          "expiry": "2031-08-11"
+        },
+        {
+          "name": "Safety Equipment",
+          "expiry": "2031-08-11"
+        },
+        {
+          "name": "Safety Radio",
+          "expiry": "2031-08-11"
+        },
+        {
+          "name": "BWM"
+        },
+        {
+          "name": "IHM",
+          "expiry": "2031-08-11"
+        },
+        {
+          "name": "Cargo Gear",
+          "expiry": "2031-08-11"
+        },
+        {
+          "name": "AFS"
+        },
+        {
+          "name": "DOC"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "medium"
+    },
     "WINNING_JOY": {
       "name": "WINNING JOY",
       "imo": "9492220",
@@ -8646,10 +8770,6 @@
       "gt": "106884",
       "dwt": "205940",
       "surveys": [
-        {
-          "type": "boiler",
-          "desc": "锅炉"
-        },
         {
           "type": "annual_survey",
           "desc": "Class Annual Survey"
@@ -8664,6 +8784,11 @@
           "due_date": "2029-08-01"
         },
         {
+          "type": "boiler",
+          "desc": "Boiler Survey ( Oil-fired Aux.and",
+          "due_date": "2024-08-09"
+        },
+        {
           "type": "tail_shaft",
           "desc": "尾轴检验",
           "due_date": "2029-08-08"
@@ -8673,6 +8798,10 @@
           "desc": "BTS (船底外部检验)",
           "due_date": "2027-08-08",
           "last_done": "2024-08-09"
+        },
+        {
+          "type": "boiler",
+          "desc": "锅炉"
         }
       ],
       "certificates": [
@@ -8745,10 +8874,6 @@
       "dwt": 207219.0,
       "surveys": [
         {
-          "type": "boiler",
-          "desc": "锅炉"
-        },
-        {
           "type": "annual_survey",
           "desc": "Class Annual Survey",
           "due_date": "2027-01-17"
@@ -8764,6 +8889,11 @@
           "due_date": "2030-04-16"
         },
         {
+          "type": "boiler",
+          "desc": "Boiler Survey ( Oil-fired Aux.and",
+          "due_date": "2025-04-11"
+        },
+        {
           "type": "tail_shaft",
           "desc": "尾轴检验",
           "due_date": "2030-04-16"
@@ -8773,6 +8903,10 @@
           "desc": "BTS (船底外部检验)",
           "due_date": "2028-04-10",
           "last_done": "2025-04-11"
+        },
+        {
+          "type": "boiler",
+          "desc": "锅炉"
         }
       ],
       "certificates": [
@@ -8841,10 +8975,6 @@
       "dwt": 207469.0,
       "surveys": [
         {
-          "type": "boiler",
-          "desc": "锅炉"
-        },
-        {
           "type": "annual_survey",
           "desc": "Class Annual Survey",
           "due_date": "2026-11-18"
@@ -8860,6 +8990,11 @@
           "due_date": "2031-02-17"
         },
         {
+          "type": "boiler",
+          "desc": "Boiler Survey ( Oil-fired Aux.and",
+          "due_date": "2026-02-16"
+        },
+        {
           "type": "tail_shaft",
           "desc": "尾轴检验",
           "due_date": "2031-02-15"
@@ -8869,6 +9004,10 @@
           "desc": "BTS (船底外部检验)",
           "due_date": "2029-02-15",
           "last_done": "2026-02-16"
+        },
+        {
+          "type": "boiler",
+          "desc": "锅炉"
         }
       ],
       "certificates": [
@@ -8937,10 +9076,6 @@
       "dwt": 229117.0,
       "surveys": [
         {
-          "type": "boiler",
-          "desc": "锅炉"
-        },
-        {
           "type": "annual_survey",
           "desc": "Class Annual Survey"
         },
@@ -8954,6 +9089,11 @@
           "due_date": "2026-10-12"
         },
         {
+          "type": "boiler",
+          "desc": "Boiler Survey (No.1 Oil-fired",
+          "due_date": "2024-12-24"
+        },
+        {
           "type": "tail_shaft",
           "desc": "尾轴检验",
           "due_date": "2029-12-23"
@@ -8963,6 +9103,10 @@
           "desc": "BTS (船底外部检验)",
           "due_date": "2026-10-12",
           "last_done": "2024-12-18"
+        },
+        {
+          "type": "boiler",
+          "desc": "锅炉"
         }
       ],
       "certificates": [
@@ -9035,10 +9179,6 @@
       "dwt": "206298",
       "surveys": [
         {
-          "type": "boiler",
-          "desc": "锅炉"
-        },
-        {
           "type": "annual_survey",
           "desc": "Class Annual Survey",
           "due_date": "2027-07-01"
@@ -9054,6 +9194,11 @@
           "due_date": "2030-07-01"
         },
         {
+          "type": "boiler",
+          "desc": "Boiler Survey ( Oil-fired Aux.and",
+          "due_date": "2024-10-05"
+        },
+        {
           "type": "tail_shaft",
           "desc": "尾轴检验",
           "due_date": "2030-07-01"
@@ -9063,6 +9208,10 @@
           "desc": "BTS (船底外部检验)",
           "due_date": "2027-10-04",
           "last_done": "2024-10-05"
+        },
+        {
+          "type": "boiler",
+          "desc": "锅炉"
         }
       ],
       "certificates": [
@@ -10271,7 +10420,7 @@
         "expired": 0,
         "urgent_7d": 0,
         "warning_30d": 0,
-        "info_90d": 0
+        "info_90d": 4
       },
       "extraction_confidence": "medium"
     },
