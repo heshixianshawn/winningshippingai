@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-05 13:13",
+  "last_updated": "2026-09-05 13:30",
   "total_ships": 63,
   "ships": {
     "SUNNY_BEYLA": {
@@ -8695,6 +8695,12 @@
           "type": "tail_shaft",
           "desc": "尾轴检验",
           "due_date": "2036-08-11"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "坞检 (BTS 船底外部检验)",
+          "due_date": "2029-08-11",
+          "last_done": "2026-08-12"
         }
       ],
       "certificates": [
@@ -9314,7 +9320,7 @@
         {
           "type": "dry_docking",
           "desc": "BTS (船底外部检验)",
-          "due_date": "2031-06-15",
+          "due_date": "2029-06-16",
           "last_done": "2026-06-16"
         }
       ],
