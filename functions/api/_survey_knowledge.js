@@ -2,6 +2,7 @@
 // 从统一知识库中查询船舶检验状态、证书到期、预警信息
 
 import { SURVEY_DATA } from './_survey_data.js';
+import { isInDept } from './_dept.js';
 
 /**
  * 根据船名模糊匹配（兼容新旧字段：name 或 n）
@@ -92,12 +93,13 @@ ${certsText || '  暂无数据'}
 /**
  * 获取指定天数内到期/过期预警（从 ships 实时计算，兼容新结构无预计算字段）
  */
-export function getAlerts(maxDays = 30) {
+export function getAlerts(maxDays = 30, dept = null, deptMap = null) {
   const alerts = [];
   const now = new Date();
   
   for (const [key, ship] of Object.entries(SURVEY_DATA.ships)) {
     const nm = ship.name || ship.n || key;
+    if (dept && deptMap && !isInDept(nm, dept, deptMap)) continue;
     const pushItem = (name, date) => {
       const d = parseDateStr(date);
       if (!d) return;
@@ -127,13 +129,14 @@ export function getAlerts(maxDays = 30) {
  * 获取预警摘要（适合放在系统prompt中）
  * @param {string|null} shipFilter 指定船名时只返回该船预警（2026-08-25 修复：全局预警注入导致模型把其他船的过期项串到查询船）
  */
-export function getAlertSummary(shipFilter) {
+export function getAlertSummary(shipFilter, dept = null, deptMap = null) {
   const now = new Date();
   const urgent = [];
   const expired = [];
   
   for (const [key, ship] of Object.entries(SURVEY_DATA.ships)) {
     const nm = ship.name || ship.n || key;
+    if (dept && deptMap && !isInDept(nm, dept, deptMap)) continue;
     if (shipFilter) {
       const f = String(shipFilter).trim().toUpperCase().replace(/\s+/g, ' ');
       const n2 = nm.toUpperCase().replace(/\s+/g, ' ');
@@ -198,10 +201,11 @@ export function getAlertSummary(shipFilter) {
 /**
  * 统计摘要
  */
-export function getStats() {
+export function getStats(dept = null, deptMap = null) {
   const byClass = {};
   let total = 0;
   for (const [key, ship] of Object.entries(SURVEY_DATA.ships)) {
+    if (dept && deptMap && !isInDept(ship.name || ship.n || key, dept, deptMap)) continue;
     total++;
     const cs = ship.classSociety || ship.cs || 'Unknown';
     byClass[cs] = (byClass[cs] || 0) + 1;
@@ -212,7 +216,7 @@ export function getStats() {
 /**
  * 综合搜索：根据用户问题匹配相关知识
  */
-export function querySurveyKnowledge(question) {
+export function querySurveyKnowledge(question, dept = null, deptMap = null) {
   const q = question.toLowerCase();
   let context = '';
   
@@ -226,6 +230,12 @@ export function querySurveyKnowledge(question) {
     const match = q.match(pattern);
     if (match) {
       const fullName = match[0];
+      if (dept && deptMap) {
+        // 明确部门范围时，仅当该船属于该部门才返回（避免跨部门误答）
+        const sn = SURVEY_DATA.ships[Object.keys(SURVEY_DATA.ships).find(k => (SURVEY_DATA.ships[k].name||'').toUpperCase() === fullName.toUpperCase())];
+        const nm2 = sn ? (sn.name||'') : fullName;
+        if (!isInDept(nm2, dept, deptMap)) return null;
+      }
       const details = getShipDetails(fullName);
       if (details) {
         return '\n【Survey Status 知识库匹配】\n' + details;
@@ -242,6 +252,7 @@ export function querySurveyKnowledge(question) {
     const seenShip = new Set();
     for (const [key, ship] of Object.entries(SURVEY_DATA.ships)) {
       if (seenShip.has(ship.name)) continue;
+      if (dept && deptMap && !isInDept(ship.name || ship.n || key, dept, deptMap)) continue;
       for (const s of (ship.surveys || [])) {
         const desc = String(s.description || '');
         if (s.type === 'dry_docking' || /坞检|Docking|BTS/i.test(desc)) {
@@ -265,7 +276,7 @@ export function querySurveyKnowledge(question) {
 
   // Check for alert-related queries
   if (/到期|过期|即将|预警|提醒|告警|alert|expire|due/i.test(q)) {
-    const alerts = getAlerts(90);
+    const alerts = getAlerts(90, dept, deptMap);
     if (alerts.length > 0) {
       context = '\n【证书/检验到期预警】\n' + alerts.slice(0, 15).join('\n');
       return context;
@@ -276,6 +287,7 @@ export function querySurveyKnowledge(question) {
   if (/NK|ABS|CCS|KR|DNV|BV|船级社/i.test(q)) {
     const byCs = {};
     for (const [key, ship] of Object.entries(SURVEY_DATA.ships)) {
+      if (dept && deptMap && !isInDept(ship.name || ship.n || key, dept, deptMap)) continue;
       const cs = ship.classSociety || ship.cs || 'Unknown';
       byCs[cs] = (byCs[cs] || 0) + 1;
     }

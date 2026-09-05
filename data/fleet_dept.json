@@ -1,0 +1,8 @@
+{
+  "_说明": "机务部归属映射（2026-09-05 建立，v1：仅二部已由 Shawn 确认；一部/三部/四部清单待提供后追加）。key=船名短词(大写)，value=部门。",
+  "二部": [
+    "BOFFA", "COYAH", "KANKAN", "KEROUANE", "LABE", "MOREBAYA", "RIVER", "SAILOR",
+    "SIGUIRI", "AMBITION", "FAITH", "INTEGRITY", "KINDNESS", "MISSION", "NATURE",
+    "PEACE", "RICH", "SPIRIT", "WISDOM"
+  ]
+}

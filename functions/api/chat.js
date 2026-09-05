@@ -8,6 +8,7 @@ import {
   SHIP_SYSTEM_PROMPT
 } from './_system_prompts.js';
 import { querySurveyKnowledge, getAlertSummary } from './_survey_knowledge.js';
+import { parseDept, loadDeptData } from './_dept.js';
 import { autoSearchKnowledge, buildPscPrepChecklist, searchImoConventions, searchImoUpdates, searchOfficialSources, searchQuickRef, searchRegsAllKnowledge, searchRegulationsKnowledge, searchFullTextShards, searchHighfreqRef, matchDefectRegulations } from './_knowledge.js';
 import { searchFleetKnowledge } from './_fleet_data.js';
 import { logToKV } from './_logger.js';
@@ -164,7 +165,18 @@ export async function onRequest(context) {
       }
     } else if (module === 'ships') {
       // 多源检索（合并）：Survey 检验证书 + 参数库(GT/DWT/主机) + TMOU PSC 风险档案
+      // 2026-09-05：部门范围识别（二部/一部/…），ship 查询按部门过滤
+      const dept = parseDept(message);
+      const deptMap = dept ? await loadDeptData(request) : null;
+      let deptNote = '';
+      if (dept) {
+        const cnt = (deptMap && deptMap[dept]) ? deptMap[dept].length : 0;
+        deptNote = cnt > 0
+          ? `【部门范围：${dept}，已配置 ${cnt} 艘】只回答属于${dept}的船舶；知识库中未列入${dept}名单的船不属于${dept}，禁止当作${dept}的船回答。`
+          : `【提示】${dept} 船队归属尚未配置（当前仅"二部"已配置 19 艘），以下为全船队内容，注意甄别并提醒用户可补充配置。`;
+      }
       const parts = [];
+      if (deptNote) parts.push(deptNote);
       // 🚢 PSC 检查前准备清单（2026-08-23）：识别"PSC准备/检查注意"意图
       const pscPrepPats = /(PSC\s*(检查|准备|注意|要点|风险|注意什么)|检查前准备|检查准备|进港.*检查|检查.*注意|准备.*PSC)/i;
       if (pscPrepPats.test(message)) {
@@ -173,7 +185,7 @@ export async function onRequest(context) {
           if (prep) parts.push('【🚢 PSC 检查前准备清单】\n' + prep);
         } catch (e) { console.error('[PscPrep] failed:', e.message); }
       }
-      const surveyResult = querySurveyKnowledge(message);
+            const surveyResult = querySurveyKnowledge(message, dept, deptMap);
       if (surveyResult) parts.push(surveyResult);
       try {
         const fleetCtx = await searchFleetKnowledge(message, request);
@@ -243,7 +255,7 @@ export async function onRequest(context) {
       try {
         // 2026-08-25 修复：单船查询只注入该船预警（全局预警注入导致模型把其他船的过期项串到查询船，如FAITH问出JOY/FRIA的日期）
         const queryShip = (isThinkingMode && awareData && awareData.ship) ? awareData.ship : null;
-        const alerts = getAlertSummary(queryShip);
+                const alerts = getAlertSummary(queryShip, dept, deptMap);
         if (alerts) {
           systemContent += '\n\n【📊 当前检验与证书预警状态】\n' + alerts;
         }
