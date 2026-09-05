@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-05 13:30",
+  "last_updated": "2026-09-05 13:52",
   "total_ships": 63,
   "ships": {
     "SUNNY_BEYLA": {
@@ -9840,6 +9840,12 @@
           "desc": "- 17Jul2029 563.10a DERRICK ILO  Annual (Hose Davit,stbd)",
           "due_date": "2027-04-15",
           "last_done": "2026-04-15"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "坞检 (Bottom Dry Condition)",
+          "due_date": "2027-07-17",
+          "last_done": "2024-07-17"
         }
       ],
       "certificates": [
@@ -10340,6 +10346,12 @@
           "desc": "- 04Jun2027 563.01b CRANE LA Annual (PROVISION CRANE,stbd)",
           "due_date": "2027-06-04",
           "last_done": "2026-06-04"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "坞检 (Bottom Dry Condition)",
+          "due_date": "2028-08-25",
+          "last_done": "2026-06-04"
         }
       ],
       "certificates": [
@@ -10800,6 +10812,12 @@
           "type": "",
           "desc": "- 25Feb2027 563.10a DERRICK ILO Quinquennial (Provision Davit,stbd)",
           "due_date": "2030-03-26",
+          "last_done": "2025-03-26"
+        },
+        {
+          "type": "dry_docking",
+          "desc": "坞检 (Bottom Dry Condition)",
+          "due_date": "2028-03-26",
           "last_done": "2025-03-26"
         }
       ],
