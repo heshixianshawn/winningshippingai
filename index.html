@@ -1286,6 +1286,7 @@ window.updateWelcome = function(module) {
       '<div class="entry-card" onclick="openOverlay(\'techManual\', \'设备说明书\')"><span class="e-icon">📖</span><span class="e-title">设备说明书</span><span class="e-desc">主机 · 辅机 · 锅炉 · 泵组 · 电气</span></div>',
       '<div class="entry-card" onclick="openOverlay(\'techDrawing\', \'船舶图纸\')"><span class="e-icon">📐</span><span class="e-title">船舶图纸</span><span class="e-desc">总布置图 · 结构图 · 系统图</span></div>',
       '<div class="entry-card" onclick="openOverlay(\'techReport\', \'检验修理报告\')"><span class="e-icon">📝</span><span class="e-title">检验修理报告</span><span class="e-desc">船级社检验 · 修船记录 · 故障</span></div>',
+      '<div class="entry-card" onclick="openOverlay(\'smisCost\', \'费用溯源查询\')"><span class="e-icon">💰</span><span class="e-title">费用溯源</span><span class="e-desc">修船费用 · 备件 · 物资 明细检索 · CSV导出</span></div>',
       '<div class="entry-card" onclick="openOverlay(\'techVendor\', \'厂家技术文件\')"><span class="e-icon">🏭</span><span class="e-title">厂家技术文件</span><span class="e-desc">厂家手册 · 技术通函 · 改装包</span></div>'
     ].join('');
   } else if (module === 'ships') {
@@ -2118,6 +2119,8 @@ window.openOverlay = function(contentId, title) {
     searchKnowledgeBaseOverlay(contentId);
   } else if (contentId === 'techReport') {
     loadRepairReportOverlay();
+  } else if (contentId === 'smisCost') {
+    window.loadSmisCostOverlay && window.loadSmisCostOverlay();
   } else if (contentId === 'techManual' || contentId === 'techDrawing' || contentId === 'techVendor') {
     searchKnowledgeBaseOverlay(contentId, 'tech');
   } else if (contentId === 'pdf') {
@@ -2815,5 +2818,7 @@ function buildThinkingContext(structuredData, aspects, message) {
   return ctx;
 }
 </script>
+
+<script src="js/smis_cost_module.js"></script>
 </body>
 </html>
