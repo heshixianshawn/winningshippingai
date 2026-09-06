@@ -47,8 +47,8 @@
     return (neg ? '-' : '') + s;
   }
   function fullText(r) {
-    // 聚合所有字段做关键词命中（可搜设备/物料名、科目、船名、厂商、单号、类别、日期）
-    return [r.date, r.type, r.ship, r.cat, r.item, r.vendor, r.bill, r.currency]
+    // 聚合所有字段做关键词命中（含 说明/工作内容 与 备注——修船费大量信息只在说明里）
+    return [r.date, r.type, r.ship, r.cat, r.item, r.vendor, r.bill, r.currency, r.desc, r.memo]
       .filter(Boolean).join(' ').toLowerCase();
   }
   function monthOf(d) {
@@ -281,6 +281,7 @@
     h += '<th>单号</th>';
     h += sortHeader('amount', '金额');
     h += '<th>币种</th>';
+    h += '<th>说明 / 备注</th>';
     h += '</tr></thead><tbody>';
 
     rows.forEach(function (r) {
@@ -292,7 +293,8 @@
         '<td>' + esc(r.vendor) + '</td>' +
         '<td class="constp-bill">' + esc(r.bill) + '</td>' +
         '<td class="constp-r">' + fmtMoney(r.amount) + '</td>' +
-        '<td>' + esc(r.currency) + '</td></tr>';
+        '<td>' + esc(r.currency) + '</td>' +
+        '<td class="constp-desc">' + esc(shortDesc(r)) + '</td></tr>';
     });
     h += '</tbody></table></div>';
     res.innerHTML = h;
@@ -312,6 +314,13 @@
     if (btn) btn.addEventListener('click', function () { exportCSV(rows, money); });
   }
 
+  function shortDesc(r) {
+    var t = String(r.desc || '').trim();
+    if (!t) t = String(r.memo || '').trim();
+    if (t.length > 90) t = t.slice(0, 90) + '…';
+    return t;
+  }
+
   function chipCls(type) {
     if (type === '修船费用') return 'repair';
     if (type === '备件') return 'part';
@@ -321,12 +330,12 @@
 
   /* ---------------- CSV 导出（UTF-8 BOM） ---------------- */
   function exportCSV(rows, money) {
-    var heads = ['日期', '类型', '船名', '科目/设备类别', '设备/物料名', '厂商', '单号', '金额(本币约值)', '币种'];
+    var heads = ['日期', '类型', '船名', '科目/设备类别', '设备/物料名', '厂商', '单号', '金额(本币约值)', '币种', '说明/备注'];
     var lines = [heads];
     rows.forEach(function (r) {
-      lines.push([r.date, r.type, r.ship, r.cat, r.item, r.vendor, r.bill, r.amount, r.currency]);
+      lines.push([r.date, r.type, r.ship, r.cat, r.item, r.vendor, r.bill, r.amount, r.currency, (r.desc || r.memo || '')]);
     });
-    lines.push(['', '', '', '', '', '', '合计', money, '']);
+    lines.push(['', '', '', '', '', '', '合计', money, '', '']);
     var csv = lines.map(function (row) {
       return row.map(function (c) {
         var s = (c === null || c === undefined) ? '' : String(c);
