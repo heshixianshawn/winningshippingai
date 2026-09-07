@@ -361,73 +361,88 @@
   function pad(n) { return n < 10 ? '0' + n : '' + n; }
 
   /* ============================================================
-   * 区块 2：月度统计（19 船 × 1~12 月，分三条线）
+   * 区块 2：月度统计（19 船 × 1~12 月 · 细项：修船5+物料3+备件）
    * ==========================================================*/
+  var COST_LINES = ['船员奖金', '检验费用', '航修费用', '设备更新', '坞修费用',
+                    '常规油漆', '坞修油漆', '物料', '备件'];
+  var COST_AGGS = {
+    '修船合计': ['船员奖金', '检验费用', '航修费用', '设备更新', '坞修费用'],
+    '物资合计': ['常规油漆', '坞修油漆', '物料'],
+    '备件合计': ['备件'],
+    '总计': null
+  };
+  function costVal(shipRec, mode, m) {
+    // mode 形如 line:船员奖金 或 agg:修船合计
+    var total = 0;
+    if (mode.indexOf('line:') === 0) {
+      var ln = mode.slice(5);
+      var mm = (shipRec && shipRec[ln]) || {};
+      return num(mm[m]);
+    }
+    var key = mode.slice(4);
+    var list = COST_AGGS[key];
+    var lines = list === null ? COST_LINES : list;
+    lines.forEach(function (ln) {
+      var mm = (shipRec && shipRec[ln]) || {};
+      total += num(mm[m]);
+    });
+    return total;
+  }
+  function monthlyModeLabel(mode) {
+    if (mode.indexOf('line:') === 0) return mode.slice(5);
+    return mode.slice(4);
+  }
   function renderMonthly(rootEl) {
     var box = rootEl.querySelector('#constp-monthly');
     if (!box) return;
-
     var ships = monthlyCache && monthlyCache.ships ? monthlyCache.ships : {};
     var shipList = Object.keys(ships).sort();
     if (!shipList.length) {
       box.innerHTML = divPlaceholder('暂无月度统计', '未加载到 data/smis_cost_monthly.json。');
       return;
     }
-    // 该船出现过的最早/最晚月份（取所有船 key 的月份范围，若有数据跨年份，则显示实际出现月份）
-    // 简化：列固定 1..12，行取各船 1..12 月该线数值。
-
-    var line = '修船'; // 默认显示修船线
-    var h = '<div class="constp-note">航线分组：修船费用 / 备件 / 物资（单位：本币，月度在账约值）。</div>';
-    h += '<div class="constp-tabs constp-lines">' +
-      '<button type="button" class="constp-tab constp-active" data-line="修船">🛠 修船</button>' +
-      '<button type="button" class="constp-tab" data-line="备件">🧩 备件</button>' +
-      '<button type="button" class="constp-tab" data-line="物资">📦 物资</button>' +
-      '</div>';
+    var opts = [];
+    Object.keys(COST_AGGS).forEach(function (a) { opts.push(['agg:' + a, '∑ ' + a]); });
+    COST_LINES.forEach(function (ln) { opts.push(['line:' + ln, ln]); });
+    var optsHtml = opts.map(function (o) {
+      return '<option value="' + o[0] + '"' + (o[0] === 'agg:修船合计' ? ' selected' : '') + '>' + o[1] + '</option>';
+    }).join('');
+    var h = '<div class="constp-note">月度细项统计：修船 5 科目 / 物料 3 类 / 备件（单位：本币，在账约值）</div>';
+    h += '<div class="constp-filters"><span class="constp-lab">统计口径：</span>' +
+      '<select id="constp-mline" class="constp-sel">' + optsHtml + '</select>' +
+      '<span class="constp-sub">行=船 · 列=1~12月 · 末列合计</span></div>';
     h += '<div id="constp-monthly-tbl" class="constp-tablewrap"></div>';
-    h += '<div class="constp-foot-note">* 值为空表示该月无对应在账记录；key 形如「修船3」代表该船 3 月修船金额。</div>';
     box.innerHTML = h;
-    box.querySelector('.constp-lines').addEventListener('click', function (ev) {
-      var t = ev.target.closest('.constp-tab');
-      if (!t) return;
-      box.querySelectorAll('.constp-lines .constp-tab').forEach(function (b) { b.classList.toggle('constp-active', b === t); });
-      renderMonthlyTable(box, shipList, t.getAttribute('data-line'));
-    });
-    renderMonthlyTable(box, shipList, line);
+    var sel = box.querySelector('#constp-mline');
+    sel.addEventListener('change', function () { renderMonthlyTable(box, shipList, sel.value); });
+    renderMonthlyTable(box, shipList, sel.value);
   }
-
-  function renderMonthlyTable(box, shipList, line) {
+  function renderMonthlyTable(box, shipList, mode) {
     var wrap = box.querySelector('#constp-monthly-tbl');
-    var monthly = monthlyCache && monthlyCache.ships ? monthlyCache.ships : {};
+    var ships = monthlyCache && monthlyCache.ships ? monthlyCache.ships : {};
     var months = [];
     for (var m = 1; m <= 12; m++) months.push(m);
-
-    // 列合计
     var colSum = {};
     shipList.forEach(function (ship) {
-      var rec = monthly[ship] || {};
-      months.forEach(function (m) {
-        var v = num(rec[line + m]);
-        colSum[m] = (colSum[m] || 0) + v;
-      });
+      var rec = ships[ship] || {};
+      months.forEach(function (m) { colSum[m] = (colSum[m] || 0) + costVal(rec, mode, m); });
     });
     var grand = months.reduce(function (a, m) { return a + (colSum[m] || 0); }, 0);
-
     var h = '<table class="constp-table constp-mt">';
     h += '<thead><tr><th>船名</th>';
     months.forEach(function (m) { h += '<th>' + m + '月</th>'; });
     h += '<th>合计</th></tr></thead><tbody>';
-
     shipList.forEach(function (ship) {
-      var rec = monthly[ship] || {};
-      var sTotal = months.reduce(function (a, m) { return a + num(rec[line + m]); }, 0);
+      var rec = ships[ship] || {};
+      var sTotal = months.reduce(function (a, m) { return a + costVal(rec, mode, m); }, 0);
       h += '<tr><td class="constp-shipnm">' + esc(ship) + '</td>';
       months.forEach(function (m) {
-        var v = rec[line + m];
-        h += '<td class="constp-r">' + (v === undefined ? '—' : fmtMoney(v)) + '</td>';
+        var v = costVal(rec, mode, m);
+        h += '<td class="constp-r">' + (v ? fmtMoney(v) : '—') + '</td>';
       });
       h += '<td class="constp-r constp-strong">' + fmtMoney(sTotal) + '</td></tr>';
     });
-    h += '</tbody><tfoot><tr><td class="constp-shipnm"><b>合计(' + line + ')</b></td>';
+    h += '</tbody><tfoot><tr><td class="constp-shipnm"><b>合计(' + monthlyModeLabel(mode) + ')</b></td>';
     months.forEach(function (m) {
       h += '<td class="constp-r constp-strong">' + fmtMoney(colSum[m] || 0) + '</td>';
     });
