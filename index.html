@@ -1312,6 +1312,114 @@ function renderQuickActions(module) {
   ).join('');
 }
 
+
+/* ====== [费用溯源直答] 2026-09-07：费用/采购类问题先走本地数据确定性回答 ====== */
+var COST_QA_CACHE = null;   // smis_cost_trace.json
+var COST_QA_MONTH = null;   // smis_cost_monthly.json
+var COST_SHIP_LIST = ['SUNNY BOFFA','SUNNY COYAH','SUNNY KANKAN','SUNNY KEROUANE','SUNNY LABE','SUNNY MOREBAYA','SUNNY RIVER','SUNNY SAILOR','SUNNY SIGUIRI','WINNING AMBITION','WINNING FAITH','WINNING INTEGRITY','WINNING KINDNESS','WINNING MISSION','WINNING NATURE','WINNING PEACE','WINNING RICH','WINNING SPIRIT','WINNING WISDOM'];
+var COST_LINE_ALIAS = [
+  ['船员奖金', ['船员奖金', '安全奖', '机务船员奖金']],
+  ['检验费用', ['检验费用', '检验费', '机务检验', '船级社费']],
+  ['航修费用', ['航修费用', '航修费']],
+  ['设备更新', ['设备更新']],
+  ['坞修费用', ['坞修费用', '坞修费', '厂修']],
+  ['常规油漆', ['常规油漆']],
+  ['坞修油漆', ['坞修油漆']],
+  ['物料', ['物料']],
+  ['备件', ['备件']]
+];
+async function costQALoad() {
+  var t = COST_QA_CACHE || (COST_QA_CACHE = await (await fetch('data/smis_cost_trace.json?_t=' + Date.now())).json());
+  var m = COST_QA_MONTH || (COST_QA_MONTH = await (await fetch('data/smis_cost_monthly.json?_t=' + Date.now())).json());
+  return { trace: t.rows || [], monthly: m };
+}
+function costQAShip(text) {
+  var u = text.toUpperCase();
+  for (var i = 0; i < COST_SHIP_LIST.length; i++) {
+    var nm = COST_SHIP_LIST[i].replace('_', ' ');
+    if (u.indexOf(nm) >= 0 || u.indexOf(nm.replace(' ', '_')) >= 0) return COST_SHIP_LIST[i];
+  }
+  return null;
+}
+function costQALine(text) {
+  for (var i = 0; i < COST_LINE_ALIAS.length; i++) {
+    for (var j = 0; j < COST_LINE_ALIAS[i][1].length; j++) {
+      if (text.indexOf(COST_LINE_ALIAS[i][1][j]) >= 0) return COST_LINE_ALIAS[i][0];
+    }
+  }
+  return null;
+}
+async function tryCostAnswer(text) {
+  if (!text || text.length < 3) return null;
+  var isCostAsk = /(多少钱|费用|金额|合计|总价|总额|总花费|哪些船|哪几艘|哪几条|哪些船舶|买过|采购过|换过|换新|修过|修理过|维修过|供过|供应商|哪家|谁家|定单|订单|船队统计|全船队)/.test(text);
+  if (!isCostAsk) return null;
+  var data;
+  try { data = await costQALoad(); } catch (e) { return null; }
+  // 场景1：汇总型（某线/某船费用合计）
+  var line = costQALine(text);
+  var ship = costQAShip(text);
+  var askSum = /(合计|多少钱|总额|总价|总花费|一共|多少)/.test(text);
+  if (line && askSum) {
+    var ships = data.monthly.ships || {};
+    var out = [], fleet = 0;
+    var names = ship ? [ship] : COST_SHIP_LIST;
+    names.forEach(function (nm) {
+      var rec = ships[nm] || {};
+      var lineRec = rec[line] || {};
+      var sum = 0;
+      for (var k in lineRec) sum += parseFloat(lineRec[k] || 0);
+      if (sum > 0) { out.push(nm + '：' + fmtMoneyCN(sum)); fleet += sum; }
+    });
+    if (!out.length) return '未找到 2026 年「' + line + '」的在账记录。';
+    var head = (ship ? ship + ' ' : '二部船队 ') + '2026 年' + line + (ship ? '' : '（有发生船舶）') + '合计：\n';
+    if (!ship && out.length > 8) {
+      out.sort(function (a, b) { return parseFloat(b.split('：')[1].replace(/,/g, '')) - parseFloat(a.split('：')[1].replace(/,/g, '')); });
+      head = '二部船队 2026 年' + line + ' 共 ' + out.length + ' 船发生，船队合计 ' + fmtMoneyCN(fleet) + '\nTOP：\n';
+      out = out.slice(0, 8);
+    }
+    return head + out.join('\n') + '\n（口径：本币约值，月度明细见 技术→💰费用溯源→月度统计）';
+  }
+  // 场景2：明细型（某设备/部件/物料/厂商 查过哪些船）
+  var stop = ['多少钱', '费用', '金额', '合计', '总价', '总额', '哪些船', '哪几艘', '哪几条', '船舶', '船队', '有没有', '看看', '大概', '一共', '多少', '费用溯源', '查询', '统计', '分别', '分别统计', '分别查询', '那', '的', '了', '吗', '呢', '请', '帮我', '一下', '怎么', '什么'];
+  var toks = (text.match(/[A-Za-z0-9][A-Za-z0-9\-]{2,}/g) || []).concat(text.match(/[\u4e00-\u9fff]{2,8}/g) || []);
+  var words = [];
+  toks.forEach(function (t) {
+    if (stop.indexOf(t) >= 0) return;
+    if (COST_SHIP_LIST.indexOf(t.toUpperCase().replace(/_/g, ' ')) >= 0) return;
+    if (words.indexOf(t) < 0) words.push(t);
+  });
+  if (!words.length) return null;
+  var rows = data.trace;
+  var hit = [];
+  rows.forEach(function (r) {
+    var hay = String(r.date + ' ' + r.type + ' ' + r.ship + ' ' + r.cat + ' ' + r.item + ' ' + r.vendor + ' ' + r.desc).toLowerCase();
+    var score = 0;
+    words.forEach(function (w) {
+      if (hay.indexOf(String(w).toLowerCase()) >= 0) score++;
+    });
+    if (score > 0) {
+      if (ship && r.ship !== ship) return;
+      hit.push({ r: r, s: score });
+    }
+  });
+  if (!hit.length) return null;
+  hit.sort(function (a, b) { return b.s - a.s; });
+  var total = 0, cnt = 0;
+  hit.slice(0, 60).forEach(function (h) { var v = parseFloat(h.r.amount); if (!isNaN(v)) total += v; cnt++; });
+  var lines = ['共匹配 ' + hit.length + ' 条（' + words.slice(0, 3).join(' / ') + '）：'];
+  hit.slice(0, 10).forEach(function (h) {
+    var r = h.r;
+    var desc = String(r.desc || '').replace(/\s+/g, ' ').slice(0, 46);
+    lines.push('· ' + r.ship + '｜' + r.date + '｜' + r.type + (r.cat ? '｜' + r.cat : '') + (r.vendor ? '｜' + r.vendor : '') + '｜' + (r.amount === null || r.amount === undefined ? '' : fmtMoneyCN(parseFloat(r.amount)) + (r.currency || '')) + (desc ? '｜' + desc : ''));
+  });
+  if (hit.length > 10) lines.push('… 等 ' + hit.length + ' 条，明细可在 技术→💰费用溯源 筛选/导出CSV');
+  return lines.join('\n');
+}
+function fmtMoneyCN(v) {
+  if (isNaN(v)) return '';
+  return Math.round(v).toLocaleString('en-US');
+}
+
 window.quickAsk = function(query) {
   // 如果是船舶动态查询
   if (query === '查看船舶动态') {
@@ -1362,6 +1470,17 @@ async function sendMessage() {
   scrollToBottom();
   
   try {
+    // 2026-09-07：费用/采购类问题先走本地数据确定性回答（无需联网模型）
+    const costAns = await tryCostAnswer(text);
+    if (costAns) {
+      els.loading.classList.add('hidden');
+      addMessage({ role: 'assistant', text: costAns });
+      saveHistory(text, costAns);
+      STATE.isProcessing = false;
+      els.sendBtn.disabled = false;
+      scrollToBottom();
+      return;
+    }
     const response = await callAPI(text, STATE.currentModule, STATE.imageData);
     els.loading.classList.add('hidden');
     addMessage({ role: 'assistant', text: response.reply });
