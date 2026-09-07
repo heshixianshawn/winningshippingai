@@ -1,6 +1,6 @@
 {
  "updated": "2026-09-07 行级增强",
- "count": 1571,
+ "count": 1586,
  "rows": [
   {
    "type": "修船费用",
@@ -1021,6 +1021,21 @@
    "currency": "USD",
    "desc": "SUNNY KANKAN轮大气冷凝器订制一组新品/20251230防城港供船，运行正常/南通赛冷/4500USD",
    "memo": "INVOICE+签收单"
+  },
+  {
+   "type": "修船费用",
+   "ship": "SUNNY KEROUANE",
+   "date": "2026-09-07",
+   "cat": "设备更新",
+   "item": "",
+   "vendor": "舶吉海洋科技（香港）有限公司",
+   "bill": "X260001496",
+   "workno": "",
+   "invno": "BJ26X044",
+   "amount": 37600.0,
+   "currency": "USD",
+   "desc": "Sunny Kerouane---V03 2026/07/23 烟台港 驾驶台MF/HF、VDR电池和罗经球等设备换新，由舶吉海洋科技完成，费用共计USD37600.",
+   "memo": "1.INVOICE；2.通导设备明细；3.服务报告；4.2026年度采购合同；5.购销合同；6.复位按钮发票。"
   },
   {
    "type": "修船费用",
@@ -2675,6 +2690,36 @@
   {
    "type": "修船费用",
    "ship": "SUNNY SAILOR",
+   "date": "2026-09-07",
+   "cat": "设备更新",
+   "item": "",
+   "vendor": "舶吉海洋科技（香港）有限公司",
+   "bill": "X260001495",
+   "workno": "SNSIR126019",
+   "invno": "BJ26X094",
+   "amount": 55420.0,
+   "currency": "USD",
+   "desc": "SUNNY SAILOR/20260727/大船长兴船厂/电台更新、计程仪换新、测深仪探头更换、电罗经换球保养、两台电子海图UPS到期更换/舶吉海洋/USD 55420.00",
+   "memo": "INVOICE+结算单+服务报告+接收单+采购协议+单项发票"
+  },
+  {
+   "type": "修船费用",
+   "ship": "SUNNY SAILOR",
+   "date": "2026-09-07",
+   "cat": "坞修费",
+   "item": "",
+   "vendor": "大连新里程船代",
+   "bill": "X260001494",
+   "workno": "SNSIR126007",
+   "invno": "26-DL058",
+   "amount": 18775.14,
+   "currency": "USD",
+   "desc": "SUNNY SAILOR/20260715-20260731/大船长兴船厂第四次特检坞修代理（协助船舶办理进出船厂手续和安排引水/拖轮）/大连新里程/USD 18775.14",
+   "memo": "形式发票（1张）+ 单项发票（11张）+报价单（1张）"
+  },
+  {
+   "type": "修船费用",
+   "ship": "SUNNY SAILOR",
    "date": "2026-08-10",
    "cat": "机务检验费",
    "item": "",
@@ -3830,6 +3875,21 @@
   {
    "type": "修船费用",
    "ship": "WINNING FAITH",
+   "date": "2026-09-07",
+   "cat": "机务检验费",
+   "item": "",
+   "vendor": "青岛中远海运交通科技有限公司",
+   "bill": "X260001523",
+   "workno": "WNFHR126010",
+   "invno": "G26379",
+   "amount": 3675.0,
+   "currency": "USD",
+   "desc": "W.Faith轮，2026年8月份烟台港无线电及VDR年度检验、电罗经保养等工程费用。",
+   "memo": "1-发票；2-签单；3-确认邮件。"
+  },
+  {
+   "type": "修船费用",
+   "ship": "WINNING FAITH",
    "date": "2026-09-03",
    "cat": "机务检验费",
    "item": "",
@@ -4366,6 +4426,21 @@
    "currency": "USD",
    "desc": "WINNING INTEGRITY--NK船级社2025.11.19-2026.11.18年度BLOCK FEE;共计20400美金；",
    "memo": "1、发票，2、协议签署费用页"
+  },
+  {
+   "type": "修船费用",
+   "ship": "WINNING KINDNESS",
+   "date": "2026-09-07",
+   "cat": "机务检验费",
+   "item": "",
+   "vendor": "NK日本船级社",
+   "bill": "X260001499",
+   "workno": "",
+   "invno": "HOBWE256276-01",
+   "amount": 420.0,
+   "currency": "USD",
+   "desc": "NK/Approval of SEEMP Part Il and Part IIl /20251223/USD 420.00",
+   "memo": "INVOICE+COC-SEEMP Part Il and Part IIl"
   },
   {
    "type": "修船费用",
@@ -5930,6 +6005,36 @@
   {
    "type": "修船费用",
    "ship": "WINNING SPIRIT",
+   "date": "2026-09-07",
+   "cat": "机务检验费",
+   "item": "",
+   "vendor": "NK日本船级社",
+   "bill": "X260001501",
+   "workno": "",
+   "invno": "HOBWE256279-01",
+   "amount": 210.0,
+   "currency": "USD",
+   "desc": "2025年底，SEEMP PART II 重新提交审核，将辅机、锅炉油耗分开填报。",
+   "memo": "发票-1；SEEMP PART II 退审首页-1；COC证书-1"
+  },
+  {
+   "type": "修船费用",
+   "ship": "WINNING SPIRIT",
+   "date": "2026-09-07",
+   "cat": "设备更新",
+   "item": "",
+   "vendor": "舶吉海洋科技（香港）有限公司",
+   "bill": "X260001498",
+   "workno": "WNSPR126020",
+   "invno": "BJ26X096",
+   "amount": 6600.0,
+   "currency": "USD",
+   "desc": "W.SPIRIT舟山修船期间，雷达加装UPS，更换测深仪探头、C站打印机、VHF屏幕、ECDIS键盘控制板，费用共计6600美金整。",
+   "memo": "发票-1；设备明细表-1；服务报告-3；确认邮件-1；年度采购协议-4"
+  },
+  {
+   "type": "修船费用",
+   "ship": "WINNING SPIRIT",
    "date": "2026-09-02",
    "cat": "坞修费",
    "item": "",
@@ -6391,6 +6496,36 @@
    "currency": "USD",
    "desc": "WINNING SPIRIT 在新加坡供应VPS取样用5升塑料包1箱，30个。",
    "memo": "发票-1；订单确认-1；签收证明-1"
+  },
+  {
+   "type": "修船费用",
+   "ship": "WINNING WISDOM",
+   "date": "2026-09-07",
+   "cat": "航修费",
+   "item": "",
+   "vendor": "SEVEN SEAS ELECTRONIC CO., LTD",
+   "bill": "X260001524",
+   "workno": "WNWIR126009",
+   "invno": "YT-260831",
+   "amount": 2800.0,
+   "currency": "USD",
+   "desc": "FURUNO FMD-3300全新电子海图键盘RCU-024：2400USD/PC；海康威视摄像头2套，400美金；共计2800美金",
+   "memo": "发票+工程确认邮件"
+  },
+  {
+   "type": "修船费用",
+   "ship": "WINNING WISDOM",
+   "date": "2026-09-07",
+   "cat": "机务检验费",
+   "item": "",
+   "vendor": "中国船级社实业有限公司青岛分公司",
+   "bill": "X260001504",
+   "workno": "",
+   "invno": "QDISM250110",
+   "amount": 400.0,
+   "currency": "USD",
+   "desc": "WINNING WISDOM--2024年山海关修船总吨变化后，2025年做MLC ,ISSC,SMC三证审核费用总计：400USD；",
+   "memo": "发票"
   },
   {
    "type": "修船费用",
@@ -12170,6 +12305,21 @@
   {
    "type": "备件",
    "ship": "WINNING INTEGRITY",
+   "date": "2026-09-07",
+   "cat": "电气/备件修复",
+   "item": "O-RING[A-3]；PACKING[D-10]；OIL SEAL[D-3]；X-RING[D-4]；O-RING[D-8]",
+   "vendor": "香港远通",
+   "bill": "WINTP026063",
+   "workno": "",
+   "invno": "WINTP026063",
+   "amount": 122.43,
+   "currency": "JPY",
+   "desc": "O-RING 数量2Pcs ×单价2330 =>¥4660.00；PACKING 数量2Pcs ×单价750 =>¥1500.00；OIL SEAL 数量2Pcs ×单价3770 =>¥7540.00；X-RING 数量2Pcs ×单价2590 =>¥5180.00；O-RING 数量4Pcs ×单价170 =>¥680.00",
+   "memo": "N 签收:N"
+  },
+  {
+   "type": "备件",
+   "ship": "WINNING INTEGRITY",
    "date": "2026-06-15",
    "cat": "电气/备件修复",
    "item": "STERN TUBE LO PUMP COMPLETE[NHG-1 PUMP COMPLETE]",
@@ -14180,6 +14330,21 @@
   {
    "type": "备件",
    "ship": "WINNING PEACE",
+   "date": "2026-09-07",
+   "cat": "电气/备件修复",
+   "item": "DUAL PRESSURE CONTROL[--]；OIL PRESSURE CONTROL[--]；SET PISTON-CONNECTING ROD[08022]；SET OIL PUMP[08043]；SET FRONT BEARING[08153]；SET REAR BEARING[08155]",
+   "vendor": "香港远通",
+   "bill": "WNPEP026052",
+   "workno": "",
+   "invno": "WNPEP026052",
+   "amount": 1161.4,
+   "currency": "USD",
+   "desc": "DUAL PRESSURE CONTROL 数量1Pc ×单价63.4 =>¥63.40；OIL PRESSURE CONTROL 数量1Pc ×单价184 =>¥184.00；SET PISTON-CONNECTING ROD 数量3Set ×单价139 =>¥417.00；SET OIL PUMP 数量1Set ×单价167 =>¥167.00；SET FRONT BEARING 数量1Set ×单价195 =>¥195.00；SET REAR BEARING 数量1Set ×单价135 =>¥135.00",
+   "memo": "N 签收:N"
+  },
+  {
+   "type": "备件",
+   "ship": "WINNING PEACE",
    "date": "2026-07-14",
    "cat": "电气/备件修复",
    "item": "LEVEL TRANSMITTER WITH ISOLATINC VALVE[1]",
@@ -15740,6 +15905,21 @@
   {
    "type": "备件",
    "ship": "WINNING SPIRIT",
+   "date": "2026-09-07",
+   "cat": "电气/备件修复",
+   "item": "STARTING BOX[S142/47]",
+   "vendor": "青岛济航商贸有限公司",
+   "bill": "WNSPP026076",
+   "workno": "",
+   "invno": "WNSPP026076",
+   "amount": 500.0,
+   "currency": "USD",
+   "desc": "STARTING BOX 数量1Pc ×单价500 =>¥500.00",
+   "memo": "N 签收:N"
+  },
+  {
+   "type": "备件",
+   "ship": "WINNING SPIRIT",
    "date": "2026-09-04",
    "cat": "电气/备件修复",
    "item": "ALARM MONITARING & INTERFACE BOX[2]",
@@ -15750,36 +15930,6 @@
    "amount": 4460.0,
    "currency": "USD",
    "desc": "ALARM MONITARING & INTERFACE BOX 数量2Pc ×单价2230 =>¥4460.00",
-   "memo": "N 签收:N"
-  },
-  {
-   "type": "备件",
-   "ship": "WINNING SPIRIT",
-   "date": "2026-09-04",
-   "cat": "电气/备件修复",
-   "item": "impeller[1]",
-   "vendor": "VT GLOBAL",
-   "bill": "WNSPP026078",
-   "workno": "",
-   "invno": "WNSPP026078",
-   "amount": 450.0,
-   "currency": "USD",
-   "desc": "impeller 数量1Pc ×单价450 =>¥450.00",
-   "memo": "N 签收:N"
-  },
-  {
-   "type": "备件",
-   "ship": "WINNING SPIRIT",
-   "date": "2026-09-04",
-   "cat": "电气/备件修复",
-   "item": "coil for circuit breaker[1]",
-   "vendor": "青岛济航商贸有限公司",
-   "bill": "WNSPP026081",
-   "workno": "",
-   "invno": "WNSPP026081",
-   "amount": 245.0,
-   "currency": "USD",
-   "desc": "coil for circuit breaker 数量1Pc ×单价245 =>¥245.00",
    "memo": "N 签收:N"
   },
   {
@@ -15840,6 +15990,36 @@
    "amount": 689.8,
    "currency": "USD",
    "desc": "AIR CYLINDER 数量1Set ×单价342 =>¥342.00；PACKNG 数量8Pcs ×单价9.2 =>¥73.60；o-ring 数量2Pcs ×单价13.7 =>¥27.40；o-ring 数量4Pcs ×单价18.3 =>¥73.20；o-ring 数量2Pcs ×单价10.1 =>¥20.20；o-ring 数量2Pcs ×单价76.7 =>¥153.40",
+   "memo": "N 签收:N"
+  },
+  {
+   "type": "备件",
+   "ship": "WINNING SPIRIT",
+   "date": "2026-09-04",
+   "cat": "电气/备件修复",
+   "item": "impeller[1]",
+   "vendor": "VT GLOBAL",
+   "bill": "WNSPP026078",
+   "workno": "",
+   "invno": "WNSPP026078",
+   "amount": 450.0,
+   "currency": "USD",
+   "desc": "impeller 数量1Pc ×单价450 =>¥450.00",
+   "memo": "N 签收:N"
+  },
+  {
+   "type": "备件",
+   "ship": "WINNING SPIRIT",
+   "date": "2026-09-04",
+   "cat": "电气/备件修复",
+   "item": "coil for circuit breaker[1]",
+   "vendor": "青岛济航商贸有限公司",
+   "bill": "WNSPP026081",
+   "workno": "",
+   "invno": "WNSPP026081",
+   "amount": 245.0,
+   "currency": "USD",
+   "desc": "coil for circuit breaker 数量1Pc ×单价245 =>¥245.00",
    "memo": "N 签收:N"
   },
   {
@@ -18987,10 +19167,10 @@
    "bill": "SNMAD226001",
    "workno": "",
    "invno": "SNMAD226001",
-   "amount": 66.25,
+   "amount": 76.41,
    "currency": "CNY",
    "desc": "白色安全帽 White safety helmet 数量10.0个 ×单价45 =>¥450.00；运费 数量1.0Pcs ×单价69 =>¥69.00",
-   "memo": "N 已付:0.00"
+   "memo": "Y 已付:0.00"
   },
   {
    "type": "物资",
@@ -19920,7 +20100,7 @@
    "amount": 8723.8,
    "currency": "USD",
    "desc": "碱性药片 555664 数量2.0包 ×单价110 =>¥220.00；冷却水处理剂 数量125.0L ×单价3.65 =>¥456.25；环保型清洁剂 数量100.0L ×单价6 =>¥600.00；氯化物药片（盐度药片）778785 数量1.0包 ×单价110 =>¥110.00；生活污水处理装置次氯酸钙药片 CAL. HYPOCHLORITE GRANULATE766402 4 X 5KG 数量1.0箱 ×单价508.6 =>¥508.55；硝酸盐 1 号药片 555623 数量2.0包 ×单价110 =>¥220.00；硝酸盐 2 号药片555631 数量2.0包 ×单价110 =>¥220.00；综合型炉水处理剂 数量125.0L ×单价5.5 =>¥687.50；除垢剂 数量125.0L ×单价4.96 =>¥620.00；漏油消散剂 数量150.0LTR ×单价6.95 =>¥1042.50；造水机处理剂 数量100.0L ×单价5 =>¥500.00；燃油稳定性调节剂 数量200.0L ×单价13.44 =>¥2688.00；分油机碟片清洁剂 数量100.0L ×单价5.43 =>¥543.00；运费 数量1.0TIME ×单价308 =>¥308.00",
-   "memo": "N 已付:0.00"
+   "memo": "Y 已付:0.00"
   },
   {
    "type": "物资",
@@ -19992,10 +20172,10 @@
    "bill": "SSIGUS126003",
    "workno": "",
    "invno": "SSIGUS126003",
-   "amount": 2200.0,
+   "amount": 2260.0,
    "currency": "USD",
    "desc": "插电式货舱灯 数量10.0套 ×单价220 =>¥2200.00；运费 数量1.0TIME ×单价60 =>¥60.00",
-   "memo": "N 已付:0.00"
+   "memo": "Y 已付:0.00"
   },
   {
    "type": "物资",
@@ -20037,10 +20217,10 @@
    "bill": "SSIGUD226001",
    "workno": "",
    "invno": "SSIGUD226001",
-   "amount": 1613.92,
+   "amount": 1715.22,
    "currency": "CNY",
    "desc": "白色安全帽 White safety helmet 数量22.0个 ×单价45 =>¥990.00；被套-单人(被罩） Duvet cover - single person (duvet cover) 数量50.0条 ×单价56.5 =>¥2825.00；被套-双人(被罩） Duvet cover - double (duvet cover) 数量15.0条 ×单价76 =>¥1140.00；床单-单人 Bed Sheet - Single 数量50.0条 ×单价33.5 =>¥1675.00；床单-双人 Bed Sheet - Double 数量15.0条 ×单价46 =>¥690.00；毛巾 towel 数量60.0条 ×单价6.5 =>¥390.00；浴巾 bath towel 数量60.0条 ×单价28.5 =>¥1710.00；枕巾 pillow towel 数量50.0条 ×单价11.5 =>¥575.00；枕套 pillowcase 数量50.0条 ×单价9.5 =>¥475.00；工作服 working clothes 数量4.0件 ×单价123 =>¥492.00；运费 数量1.0Pcs ×单价688 =>¥688.00",
-   "memo": "N 已付:0.00"
+   "memo": "Y 已付:0.00"
   },
   {
    "type": "物资",
@@ -20225,6 +20405,51 @@
   {
    "type": "物资",
    "ship": "WINNING AMBITION",
+   "date": "2026-09-07",
+   "cat": "卧具劳保",
+   "item": "",
+   "vendor": "青岛良川工贸有限公司(Qingdao Yosekawa Trading Company)",
+   "bill": "WNAMD226001",
+   "workno": "",
+   "invno": "WNAMD226001",
+   "amount": 667.09,
+   "currency": "CNY",
+   "desc": "",
+   "memo": "N 已付:0.00"
+  },
+  {
+   "type": "物资",
+   "ship": "WINNING AMBITION",
+   "date": "2026-09-07",
+   "cat": "油漆/ Paintwork",
+   "item": "",
+   "vendor": "中远佐敦(Jotun COSCO Marine Coatings (HK)Limited)",
+   "bill": "WNAMM226001",
+   "workno": "",
+   "invno": "WNAMM226001",
+   "amount": 2886.4,
+   "currency": "USD",
+   "desc": "",
+   "memo": "N 已付:0.00"
+  },
+  {
+   "type": "物资",
+   "ship": "WINNING AMBITION",
+   "date": "2026-09-07",
+   "cat": "轴承",
+   "item": "",
+   "vendor": "青岛恒盛昌达商贸有限责任公司(EVERGRAND HOLDINGS LIMITED)",
+   "bill": "WNAMZ126001",
+   "workno": "",
+   "invno": "WNAMZ126001",
+   "amount": 859.22,
+   "currency": "USD",
+   "desc": "",
+   "memo": "N 已付:0.00"
+  },
+  {
+   "type": "物资",
+   "ship": "WINNING AMBITION",
    "date": "2026-08-26",
    "cat": "滑油/ Lube oil",
    "item": "CYLINDER OILS[GulfSea Cylcare XP 50100]；CYLINDER OILS[GulfSea Cylcare XP 5040]；SYSTEM OILS[GulfSea SuperBear 3006]；TRUNK PISTON ENGINE OILS[GulfSea Power 4030]；ENGINE OILS[GulfSea Power MX 15W-40]；ENGINE OILS[GulfSea Outboard 3]；H",
@@ -20256,21 +20481,6 @@
    "type": "物资",
    "ship": "WINNING AMBITION",
    "date": "2026-05-20",
-   "cat": "药品/ Medicine",
-   "item": "盐酸吗啡注射液[10mg*1ml/支]；盐酸哌替啶注射液 Pethidine Dolantin、Meperidine[1ml：50mg/支]；磷酸可待因片 Codeine Phosphate Tablets[15mg/片]；氨酚曲马多片(及通安) ParacetamolTramadol Hydrochloride Tablets[10s/盒]；普瑞巴林胶囊（乐瑞卡） Pregabalin[8粒/盒]；新康泰克（复方盐酸伪麻黄碱缓释胶囊）蓝色装 Compou",
-   "vendor": "欧申科船务(青岛)有限公司（O&K Marine Engineering (qingdao) Co.,Ltd）",
-   "bill": "WNAMK926001",
-   "workno": "",
-   "invno": "WNAMK926001",
-   "amount": 3705.69,
-   "currency": "USD",
-   "desc": "盐酸吗啡注射液 数量10.0支 ×单价0.18 =>¥1.80；盐酸哌替啶注射液 Pethidine Dolantin、Meperidine 数量20.0支 ×单价0.15 =>¥3.00；磷酸可待因片 Codeine Phosphate Tablets 数量50.0片 ×单价0.03 =>¥1.50；氨酚曲马多片(及通安) ParacetamolTramadol Hydrochloride Tablets 数量5.0盒 ×单价0.05 =>¥0.25；普瑞巴林胶囊（乐瑞卡） Pregabalin 数量5.0盒 ×单价13 =>¥65.00；新康泰克（复方盐酸伪麻黄碱缓释胶囊）蓝色装 Compound Pseudoephedrine HCI Sustained Release 数量10.0盒 ×单价2.12 =>¥21.20；新康泰克（复方盐酸伪麻黄碱缓释胶囊）红色装 Compound Pseudoephedrine HCI Sustained Release 数量10.0盒 ×单价0.27 =>¥2.70；复方氨酚烷胺胶囊 Compound ParacetamolAmantadine Hydrochloride Capsules 数量10.0盒 ×单价0.35 =>¥3.50；对乙酰氨基酚片（扑热息痛） Paracetamol Tablets 数量8.0盒 ×单价0.27 =>¥2.16；磷酸奥司他韦胶囊 Oseltamivir Phosphate 数量5.0盒 ×单价1.42 =>¥7.10；去痛片 Comp Aminopyrine PhenacetinTablets 数量3.0瓶 ×单价1.77 =>¥5.31；扶他林片 Diclofenac DiethylamineEmulgel 数量10.0盒 ×单价3.72 =>¥37.20；芬必得 Paracetamol &CaffeineTablets 数量10.0盒 ×单价3.17 =>¥31.70；维C银翘片 VitminCYinqiaoTablets 数量30.0袋 ×单价0.35 =>¥10.50；西瓜霜喷剂 Guilin Watermelon Frost 数量10.0盒 ×单价2.12 =>¥21.20；藿香正气水 HuoxiangZhengqi Solution 数量5.0盒 ×单价0.53 =>¥2.6",
-   "memo": "N 已付:0.00"
-  },
-  {
-   "type": "物资",
-   "ship": "WINNING AMBITION",
-   "date": "2026-05-20",
    "cat": "物料/ Material",
    "item": "哑铃[无]；跳绳[无]；乒乓球拍[六星红双喜直拍]；乒乓球[三星红双喜]；飞镖（带飞镖盘）[无]；中国象棋[中国象棋]；防晒头套[-]；太阳镜（金属镜架）[无]；理发工具（理发剪套件）[理发剪刀成套工具]；电视机[110V/220V 尺寸备注]；白枕芯[无]；纯羊毛毯[阔：1800mm 长：2300mm 颜色：白色]；厨师围裙[、]；衣架[、]；塑料搬运篮[阔：620mm 长：440mm 高：340mm]；试杯布[410X700MM]；擦灰布[宽;450 ",
    "vendor": "欧申科船务(青岛)有限公司（O&K Marine Engineering (qingdao) Co.,Ltd）",
@@ -20295,6 +20505,81 @@
    "amount": 37857.07,
    "currency": "USD",
    "desc": "透明塑料布 数量1.0卷 ×单价102.2 =>¥102.15；金刚砂细磨刀石 数量2.0把 ×单价0.51 =>¥1.02；塑料量杯 数量5.0个 ×单价0.76 =>¥3.80；不锈钢丝洗刷团 数量20.0包 ×单价0.66 =>¥13.20；海棉清洁块 数量20.0块 ×单价0.17 =>¥3.40；重负荷擦垢垫 数量20.0个 ×单价0.39 =>¥7.80；塑料桶 数量15.0个 ×单价1.67 =>¥25.05；塑料畚箕 数量20.0个 ×单价0.62 =>¥12.40；闭式白铁畚箕 数量5.0个 ×单价4.58 =>¥22.90；不锈钢脚踏翻盖垃圾桶 数量5.0个 ×单价6.69 =>¥33.45；不锈钢脚踏翻盖垃圾桶 20 升 数量5.0个 ×单价8.28 =>¥41.40；塑料垃圾袋 数量30.0包 ×单价0.12 =>¥3.60；塑料垃圾袋 数量40.0包 ×单价0.21 =>¥8.40；塑料垃圾袋 数量50.0包 ×单价0.65 =>¥32.50；保鲜膜 数量10.0卷 ×单价0.92 =>¥9.20；弹簧式拖把手柄 数量30.0把 ×单价1.23 =>¥36.90；弹簧式拖把头 数量60.0把 ×单价0.97 =>¥58.20；绞拖把桶 数量10.0根 ×单价6.34 =>¥63.40；橡胶扫水帚 数量10.0把 ×单价1.37 =>¥13.70；吸尘器 数量1.0套 ×单价49.31 =>¥49.31；绵工作手套 数量500.0付 ×单价0.12 =>¥60.00；橡胶工作手套 数量50.0付 ×单价0.21 =>¥10.50；皮工作手套 数量50.0付 ×单价0.7 =>¥35.00；小牛皮工作手套 数量50.0付 ×单价1.06 =>¥53.00；天然橡胶手套 长 数量30.0副 ×单价0.7 =>¥21.00；防油耐酸塑料手套 数量30.0付 ×单价1.76 =>¥52.80；橡胶长筒靴 数量5.0双 ×单价5.11 =>¥25.55；橡胶长筒靴 数量5.0双 ×单价5.11 =>¥25.55；连帽塑料雨衣及裤 数量5.0套 ×单价9.69 =>¥48.45；连帽塑料雨衣及裤 数量5.0套 ×单价9.69 =>¥48.45；连帽塑料雨衣及裤 数量5.0套 ×单价9.69 =>¥48.45；三股尼龙缆绳 数量1.0捆 ×单价22.9 =",
+   "memo": "N 已付:0.00"
+  },
+  {
+   "type": "物资",
+   "ship": "WINNING AMBITION",
+   "date": "2026-05-20",
+   "cat": "药品/ Medicine",
+   "item": "盐酸吗啡注射液[10mg*1ml/支]；盐酸哌替啶注射液 Pethidine Dolantin、Meperidine[1ml：50mg/支]；磷酸可待因片 Codeine Phosphate Tablets[15mg/片]；氨酚曲马多片(及通安) ParacetamolTramadol Hydrochloride Tablets[10s/盒]；普瑞巴林胶囊（乐瑞卡） Pregabalin[8粒/盒]；新康泰克（复方盐酸伪麻黄碱缓释胶囊）蓝色装 Compou",
+   "vendor": "欧申科船务(青岛)有限公司（O&K Marine Engineering (qingdao) Co.,Ltd）",
+   "bill": "WNAMK926001",
+   "workno": "",
+   "invno": "WNAMK926001",
+   "amount": 3705.69,
+   "currency": "USD",
+   "desc": "盐酸吗啡注射液 数量10.0支 ×单价0.18 =>¥1.80；盐酸哌替啶注射液 Pethidine Dolantin、Meperidine 数量20.0支 ×单价0.15 =>¥3.00；磷酸可待因片 Codeine Phosphate Tablets 数量50.0片 ×单价0.03 =>¥1.50；氨酚曲马多片(及通安) ParacetamolTramadol Hydrochloride Tablets 数量5.0盒 ×单价0.05 =>¥0.25；普瑞巴林胶囊（乐瑞卡） Pregabalin 数量5.0盒 ×单价13 =>¥65.00；新康泰克（复方盐酸伪麻黄碱缓释胶囊）蓝色装 Compound Pseudoephedrine HCI Sustained Release 数量10.0盒 ×单价2.12 =>¥21.20；新康泰克（复方盐酸伪麻黄碱缓释胶囊）红色装 Compound Pseudoephedrine HCI Sustained Release 数量10.0盒 ×单价0.27 =>¥2.70；复方氨酚烷胺胶囊 Compound ParacetamolAmantadine Hydrochloride Capsules 数量10.0盒 ×单价0.35 =>¥3.50；对乙酰氨基酚片（扑热息痛） Paracetamol Tablets 数量8.0盒 ×单价0.27 =>¥2.16；磷酸奥司他韦胶囊 Oseltamivir Phosphate 数量5.0盒 ×单价1.42 =>¥7.10；去痛片 Comp Aminopyrine PhenacetinTablets 数量3.0瓶 ×单价1.77 =>¥5.31；扶他林片 Diclofenac DiethylamineEmulgel 数量10.0盒 ×单价3.72 =>¥37.20；芬必得 Paracetamol &CaffeineTablets 数量10.0盒 ×单价3.17 =>¥31.70；维C银翘片 VitminCYinqiaoTablets 数量30.0袋 ×单价0.35 =>¥10.50；西瓜霜喷剂 Guilin Watermelon Frost 数量10.0盒 ×单价2.12 =>¥21.20；藿香正气水 HuoxiangZhengqi Solution 数量5.0盒 ×单价0.53 =>¥2.6",
+   "memo": "N 已付:0.00"
+  },
+  {
+   "type": "物资",
+   "ship": "WINNING AMBITION",
+   "date": "2026-05-15",
+   "cat": "物料/ Material",
+   "item": "青铜法兰直角截止阀F7302 B 5K15[F7302 B 5K15]；青铜直通截止阀F7301 A 5K20[F7301 A 5K20]；青铜直通截止阀F7301 A 5K25[F7301 A 5K25]；青铜直通截止阀F7301 A 5K32[F7301 A 5K32]；青铜直通截止阀F7301 A 5K40[F7301 A 5K40]；青铜直通截止阀F7301 A 5K50[F7301 A 5K50]；青铜法兰直角截止阀F7302 B 5K20[F7",
+   "vendor": "长兴海洋工程设备有限公司（原广州吉海）",
+   "bill": "WNAMS926003",
+   "workno": "",
+   "invno": "WNAMS926003",
+   "amount": 4980.98,
+   "currency": "USD",
+   "desc": "青铜法兰直角截止阀F7302 B 5K15 数量2.0个 ×单价29.57 =>¥59.14；青铜直通截止阀F7301 A 5K20 数量2.0个 ×单价41.71 =>¥83.42；青铜直通截止阀F7301 A 5K25 数量2.0个 ×单价49.71 =>¥99.42；青铜直通截止阀F7301 A 5K32 数量2.0个 ×单价79 =>¥158.00；青铜直通截止阀F7301 A 5K40 数量2.0个 ×单价96.43 =>¥192.86；青铜直通截止阀F7301 A 5K50 数量2.0个 ×单价150 =>¥300.00；青铜法兰直角截止阀F7302 B 5K20 数量2.0个 ×单价41.71 =>¥83.42；青铜法兰直角截止阀F7302 B 5K25 数量2.0个 ×单价49.71 =>¥99.42；青铜法兰直角截止阀F7302 B 5K32 数量2.0个 ×单价79 =>¥158.00；青铜法兰直角截止阀F7302 B 5K40 数量2.0个 ×单价96.43 =>¥192.86；青铜直通截止止回阀F7351 A 5K 15 数量2.0个 ×单价29.57 =>¥59.14；青铜直通截止止回阀F7351 A 5K 20 数量2.0个 ×单价41.71 =>¥83.42；青铜直通截止止回阀F7351 A 5K 25 数量2.0个 ×单价49.71 =>¥99.42；青铜直通截止止回阀F7351 A 5K 32 数量2.0个 ×单价79 =>¥158.00；青铜直通截止止回阀F7351 A 5K 40 数量2.0个 ×单价96.43 =>¥192.86；青铜直角截止止回阀F7352 B 5K 15 数量2.0个 ×单价29.57 =>¥59.14；青铜直角截止止回阀F7352 B 5K 20 数量2.0个 ×单价41.71 =>¥83.42；青铜直角截止止回阀F7352 B 5K 25 数量2.0个 ×单价49.71 =>¥99.42；青铜直角截止止回阀F7352 B 5K 32 数量2.0个 ×单价79 =>¥158.00；青铜直角截止止回阀F7352 B 5K 40 数量2.0个 ×单价96.43 =>¥192.86；青铜直通截止止回阀F7409 A 16K 15 数量2.0个 ×单价42.36 =>¥84.72；青铜直通截止止回阀F7409 A",
+   "memo": "N 已付:0.00"
+  },
+  {
+   "type": "物资",
+   "ship": "WINNING AMBITION",
+   "date": "2026-05-15",
+   "cat": "卧具劳保",
+   "item": "枕套 pillowcase[公司定制]；浴巾 bath towel[公司定制，730x1330mm,315g,纯棉花色]；床单-双人 Bed Sheet - Double[公司定制，2030x2300mm，纯棉白色斜纹厚实]；床单-单人 Bed Sheet - Single[公司定制，1500x2300mm，纯棉白色斜纹厚实]；被套-双人(被罩） Duvet cover - double (duvet cover)[公司定制，纯棉白色]；被套-单人(被罩）",
+   "vendor": "青岛良川工贸有限公司(Qingdao Yosekawa Trading Company)",
+   "bill": "WNAMD926001",
+   "workno": "",
+   "invno": "WNAMD926001",
+   "amount": 1586.18,
+   "currency": "CNY",
+   "desc": "枕套 pillowcase 数量60.0条 ×单价9.5 =>¥570.00；浴巾 bath towel 数量60.0条 ×单价28.5 =>¥1710.00；床单-双人 Bed Sheet - Double 数量6.0条 ×单价46 =>¥276.00；床单-单人 Bed Sheet - Single 数量60.0条 ×单价33.5 =>¥2010.00；被套-双人(被罩） Duvet cover - double (duvet cover) 数量6.0条 ×单价76 =>¥456.00；被套-单人(被罩） Duvet cover - single person (duvet cover) 数量60.0条 ×单价56.5 =>¥3390.00；毛巾 towel 数量60.0条 ×单价6.5 =>¥390.00；枕巾 pillow towel 数量60.0条 ×单价11.5 =>¥690.00；白色安全帽 White safety helmet 数量30.0个 ×单价45 =>¥1350.00",
+   "memo": "N 已付:0.00"
+  },
+  {
+   "type": "物资",
+   "ship": "WINNING AMBITION",
+   "date": "2026-05-15",
+   "cat": "化学品/ Chemicals",
+   "item": "乙炔[ACETYLENE A-40 FILLING]；氧气[OXYGEN O-40 FILLING]；氧气钢瓶押金[OXYGEN CYLINDER 40L]；乙炔回火阀[FLASHBACK ARRESTOR S55 AC]；氧气回火阀[FLASHBACK ARRESTOR S55 OX]；氧气减压表[REGULATOR 510 OX PRESSURE 0-10 BAR]；乙炔减压表[REGULATOR 510 AC PRESSURE 0-1.5 BAR]；",
+   "vendor": "青岛优立航船务工程有限公司（原青岛大铁）",
+   "bill": "WNAMC926001",
+   "workno": "",
+   "invno": "WNAMC926001",
+   "amount": 7380.0,
+   "currency": "USD",
+   "desc": "乙炔 数量5.0pc ×单价0 =>¥0.00；氧气 数量10.0pc ×单价0 =>¥0.00；氧气钢瓶押金 数量5.0pc ×单价390 =>¥1950.00；乙炔回火阀 数量2.0pc ×单价0 =>¥0.00；氧气回火阀 数量2.0pc ×单价0 =>¥0.00；氧气减压表 数量2.0pc ×单价0 =>¥0.00；乙炔减压表 数量2.0pc ×单价0 =>¥0.00；氮气（国内只有150bar） 数量1.0pc ×单价0 =>¥0.00；氮气瓶押金 数量1.0pc ×单价390 =>¥390.00；R-22冷剂 数量1.0瓶 ×单价0 =>¥0.00；R407C制冷剂 数量5.0pc ×单价0 =>¥0.00；冷剂钢瓶押金 数量6.0pc ×单价190 =>¥1140.00；冷却水处理剂 数量800.0L ×单价0 =>¥0.00；冷却水化验盒 数量1.0SET ×单价0 =>¥0.00；长效冷冻液 数量50.0L ×单价0 =>¥0.00；锅炉水综合处理剂 数量300.0L ×单价0 =>¥0.00；锅炉除氧剂 数量200.0L ×单价0 =>¥0.00；锅炉水化验盒 数量1.0Set ×单价0 =>¥0.00；锅炉水DEHA化验盒 数量1.0Set ×单价0 =>¥0.00；造水机处理剂 数量150.0L ×单价0 =>¥0.00；空冷器清洁剂 数量75.0L ×单价0 =>¥0.00；除碳剂 数量50.0L ×单价0 =>¥0.00；漏油消散剂 数量200.0L ×单价0 =>¥0.00；碱性通用水基除油清洗剂 数量50.0L ×单价0 =>¥0.00；油溶性除油清洗剂 数量50.0L ×单价0 =>¥0.00；环保型清洁剂 数量100.0L ×单价0 =>¥0.00；安全酸 数量50.0KG ×单价0 =>¥0.00；金属光亮剂 数量50.0L ×单价0 =>¥0.00；分油机碟片清洁剂 数量100.0L ×单价0 =>¥0.00；多用途清洁剂 数量150.0L ×单价0 =>¥0.00；电解式压载水系统清洗剂 数量50.0L ×单价0 =>¥0.00；生活污水装置生物处理剂（（不可与苛性强碱清洁剂混用） 数量24.0kg ×单价0 =>¥0.00；马桶生物清洁剂 数量48.0L ×单价0 =>¥0.00；粪便柜消毒片 数量20.0kg ×单价0 ",
+   "memo": "N 已付:0.00"
+  },
+  {
+   "type": "物资",
+   "ship": "WINNING AMBITION",
+   "date": "2026-05-15",
+   "cat": "化学品/ Chemicals",
+   "item": "琥珀燃油处理剂BT25[25LTR/桶]；琥珀燃油处理剂OCTAMAR WINTERFLOW (for lifeboats and EM/CY G/E)[25L/桶]；琥珀燃油处理剂OCTAMAR HF-10 PLUS (for VLSFO 0.5%)[25L/桶]；琥珀燃油处理剂OCTAMAR WINTERFLOW (for lifeboats and EM/CY G/E)[25L/桶 新造船配备]",
+   "vendor": "Amber Maritime Service Co.,Limited( 琥珀海运服务有限公司 )",
+   "bill": "WNAMC926002",
+   "workno": "",
+   "invno": "WNAMC926002",
+   "amount": 6961.25,
+   "currency": "USD",
+   "desc": "琥珀燃油处理剂BT25 数量5.0桶 ×单价481.2 =>¥2406.25；琥珀燃油处理剂OCTAMAR WINTERFLOW (for lifeboats and EM/CY G/E) 数量1.0桶 ×单价327.5 =>¥327.50；琥珀燃油处理剂OCTAMAR HF-10 PLUS (for VLSFO 0.5%) 数量8.0桶 ×单价481.2 =>¥3850.00；琥珀燃油处理剂OCTAMAR WINTERFLOW (for lifeboats and EM/CY G/E) 数量1.0桶 ×单价377.5 =>¥377.50",
    "memo": "N 已付:0.00"
   },
   {
@@ -20340,66 +20625,6 @@
    "amount": 1560.0,
    "currency": "USD",
    "desc": "呼吸器压缩机 数量1.0Set ×单价1470 =>¥1470.00；呼吸器压缩机油 数量2.0桶 ×单价45 =>¥90.00",
-   "memo": "N 已付:0.00"
-  },
-  {
-   "type": "物资",
-   "ship": "WINNING AMBITION",
-   "date": "2026-05-15",
-   "cat": "物料/ Material",
-   "item": "青铜法兰直角截止阀F7302 B 5K15[F7302 B 5K15]；青铜直通截止阀F7301 A 5K20[F7301 A 5K20]；青铜直通截止阀F7301 A 5K25[F7301 A 5K25]；青铜直通截止阀F7301 A 5K32[F7301 A 5K32]；青铜直通截止阀F7301 A 5K40[F7301 A 5K40]；青铜直通截止阀F7301 A 5K50[F7301 A 5K50]；青铜法兰直角截止阀F7302 B 5K20[F7",
-   "vendor": "长兴海洋工程设备有限公司（原广州吉海）",
-   "bill": "WNAMS926003",
-   "workno": "",
-   "invno": "WNAMS926003",
-   "amount": 4980.98,
-   "currency": "USD",
-   "desc": "青铜法兰直角截止阀F7302 B 5K15 数量2.0个 ×单价29.57 =>¥59.14；青铜直通截止阀F7301 A 5K20 数量2.0个 ×单价41.71 =>¥83.42；青铜直通截止阀F7301 A 5K25 数量2.0个 ×单价49.71 =>¥99.42；青铜直通截止阀F7301 A 5K32 数量2.0个 ×单价79 =>¥158.00；青铜直通截止阀F7301 A 5K40 数量2.0个 ×单价96.43 =>¥192.86；青铜直通截止阀F7301 A 5K50 数量2.0个 ×单价150 =>¥300.00；青铜法兰直角截止阀F7302 B 5K20 数量2.0个 ×单价41.71 =>¥83.42；青铜法兰直角截止阀F7302 B 5K25 数量2.0个 ×单价49.71 =>¥99.42；青铜法兰直角截止阀F7302 B 5K32 数量2.0个 ×单价79 =>¥158.00；青铜法兰直角截止阀F7302 B 5K40 数量2.0个 ×单价96.43 =>¥192.86；青铜直通截止止回阀F7351 A 5K 15 数量2.0个 ×单价29.57 =>¥59.14；青铜直通截止止回阀F7351 A 5K 20 数量2.0个 ×单价41.71 =>¥83.42；青铜直通截止止回阀F7351 A 5K 25 数量2.0个 ×单价49.71 =>¥99.42；青铜直通截止止回阀F7351 A 5K 32 数量2.0个 ×单价79 =>¥158.00；青铜直通截止止回阀F7351 A 5K 40 数量2.0个 ×单价96.43 =>¥192.86；青铜直角截止止回阀F7352 B 5K 15 数量2.0个 ×单价29.57 =>¥59.14；青铜直角截止止回阀F7352 B 5K 20 数量2.0个 ×单价41.71 =>¥83.42；青铜直角截止止回阀F7352 B 5K 25 数量2.0个 ×单价49.71 =>¥99.42；青铜直角截止止回阀F7352 B 5K 32 数量2.0个 ×单价79 =>¥158.00；青铜直角截止止回阀F7352 B 5K 40 数量2.0个 ×单价96.43 =>¥192.86；青铜直通截止止回阀F7409 A 16K 15 数量2.0个 ×单价42.36 =>¥84.72；青铜直通截止止回阀F7409 A",
-   "memo": "N 已付:0.00"
-  },
-  {
-   "type": "物资",
-   "ship": "WINNING AMBITION",
-   "date": "2026-05-15",
-   "cat": "化学品/ Chemicals",
-   "item": "乙炔[ACETYLENE A-40 FILLING]；氧气[OXYGEN O-40 FILLING]；氧气钢瓶押金[OXYGEN CYLINDER 40L]；乙炔回火阀[FLASHBACK ARRESTOR S55 AC]；氧气回火阀[FLASHBACK ARRESTOR S55 OX]；氧气减压表[REGULATOR 510 OX PRESSURE 0-10 BAR]；乙炔减压表[REGULATOR 510 AC PRESSURE 0-1.5 BAR]；",
-   "vendor": "青岛优立航船务工程有限公司（原青岛大铁）",
-   "bill": "WNAMC926001",
-   "workno": "",
-   "invno": "WNAMC926001",
-   "amount": 7380.0,
-   "currency": "USD",
-   "desc": "乙炔 数量5.0pc ×单价0 =>¥0.00；氧气 数量10.0pc ×单价0 =>¥0.00；氧气钢瓶押金 数量5.0pc ×单价390 =>¥1950.00；乙炔回火阀 数量2.0pc ×单价0 =>¥0.00；氧气回火阀 数量2.0pc ×单价0 =>¥0.00；氧气减压表 数量2.0pc ×单价0 =>¥0.00；乙炔减压表 数量2.0pc ×单价0 =>¥0.00；氮气（国内只有150bar） 数量1.0pc ×单价0 =>¥0.00；氮气瓶押金 数量1.0pc ×单价390 =>¥390.00；R-22冷剂 数量1.0瓶 ×单价0 =>¥0.00；R407C制冷剂 数量5.0pc ×单价0 =>¥0.00；冷剂钢瓶押金 数量6.0pc ×单价190 =>¥1140.00；冷却水处理剂 数量800.0L ×单价0 =>¥0.00；冷却水化验盒 数量1.0SET ×单价0 =>¥0.00；长效冷冻液 数量50.0L ×单价0 =>¥0.00；锅炉水综合处理剂 数量300.0L ×单价0 =>¥0.00；锅炉除氧剂 数量200.0L ×单价0 =>¥0.00；锅炉水化验盒 数量1.0Set ×单价0 =>¥0.00；锅炉水DEHA化验盒 数量1.0Set ×单价0 =>¥0.00；造水机处理剂 数量150.0L ×单价0 =>¥0.00；空冷器清洁剂 数量75.0L ×单价0 =>¥0.00；除碳剂 数量50.0L ×单价0 =>¥0.00；漏油消散剂 数量200.0L ×单价0 =>¥0.00；碱性通用水基除油清洗剂 数量50.0L ×单价0 =>¥0.00；油溶性除油清洗剂 数量50.0L ×单价0 =>¥0.00；环保型清洁剂 数量100.0L ×单价0 =>¥0.00；安全酸 数量50.0KG ×单价0 =>¥0.00；金属光亮剂 数量50.0L ×单价0 =>¥0.00；分油机碟片清洁剂 数量100.0L ×单价0 =>¥0.00；多用途清洁剂 数量150.0L ×单价0 =>¥0.00；电解式压载水系统清洗剂 数量50.0L ×单价0 =>¥0.00；生活污水装置生物处理剂（（不可与苛性强碱清洁剂混用） 数量24.0kg ×单价0 =>¥0.00；马桶生物清洁剂 数量48.0L ×单价0 =>¥0.00；粪便柜消毒片 数量20.0kg ×单价0 ",
-   "memo": "N 已付:0.00"
-  },
-  {
-   "type": "物资",
-   "ship": "WINNING AMBITION",
-   "date": "2026-05-15",
-   "cat": "化学品/ Chemicals",
-   "item": "琥珀燃油处理剂BT25[25LTR/桶]；琥珀燃油处理剂OCTAMAR WINTERFLOW (for lifeboats and EM/CY G/E)[25L/桶]；琥珀燃油处理剂OCTAMAR HF-10 PLUS (for VLSFO 0.5%)[25L/桶]；琥珀燃油处理剂OCTAMAR WINTERFLOW (for lifeboats and EM/CY G/E)[25L/桶 新造船配备]",
-   "vendor": "Amber Maritime Service Co.,Limited( 琥珀海运服务有限公司 )",
-   "bill": "WNAMC926002",
-   "workno": "",
-   "invno": "WNAMC926002",
-   "amount": 6961.25,
-   "currency": "USD",
-   "desc": "琥珀燃油处理剂BT25 数量5.0桶 ×单价481.2 =>¥2406.25；琥珀燃油处理剂OCTAMAR WINTERFLOW (for lifeboats and EM/CY G/E) 数量1.0桶 ×单价327.5 =>¥327.50；琥珀燃油处理剂OCTAMAR HF-10 PLUS (for VLSFO 0.5%) 数量8.0桶 ×单价481.2 =>¥3850.00；琥珀燃油处理剂OCTAMAR WINTERFLOW (for lifeboats and EM/CY G/E) 数量1.0桶 ×单价377.5 =>¥377.50",
-   "memo": "N 已付:0.00"
-  },
-  {
-   "type": "物资",
-   "ship": "WINNING AMBITION",
-   "date": "2026-05-15",
-   "cat": "卧具劳保",
-   "item": "枕套 pillowcase[公司定制]；浴巾 bath towel[公司定制，730x1330mm,315g,纯棉花色]；床单-双人 Bed Sheet - Double[公司定制，2030x2300mm，纯棉白色斜纹厚实]；床单-单人 Bed Sheet - Single[公司定制，1500x2300mm，纯棉白色斜纹厚实]；被套-双人(被罩） Duvet cover - double (duvet cover)[公司定制，纯棉白色]；被套-单人(被罩）",
-   "vendor": "青岛良川工贸有限公司(Qingdao Yosekawa Trading Company)",
-   "bill": "WNAMD926001",
-   "workno": "",
-   "invno": "WNAMD926001",
-   "amount": 1586.18,
-   "currency": "CNY",
-   "desc": "枕套 pillowcase 数量60.0条 ×单价9.5 =>¥570.00；浴巾 bath towel 数量60.0条 ×单价28.5 =>¥1710.00；床单-双人 Bed Sheet - Double 数量6.0条 ×单价46 =>¥276.00；床单-单人 Bed Sheet - Single 数量60.0条 ×单价33.5 =>¥2010.00；被套-双人(被罩） Duvet cover - double (duvet cover) 数量6.0条 ×单价76 =>¥456.00；被套-单人(被罩） Duvet cover - single person (duvet cover) 数量60.0条 ×单价56.5 =>¥3390.00；毛巾 towel 数量60.0条 ×单价6.5 =>¥390.00；枕巾 pillow towel 数量60.0条 ×单价11.5 =>¥690.00；白色安全帽 White safety helmet 数量30.0个 ×单价45 =>¥1350.00",
    "memo": "N 已付:0.00"
   },
   {
@@ -20472,10 +20697,10 @@
    "bill": "WNFHS126003-2",
    "workno": "",
    "invno": "WNFHS126003",
-   "amount": 2359.22,
+   "amount": 6670.57,
    "currency": "USD",
    "desc": "国产小瓶冷剂 数量20.0Pc ×单价6.15 =>¥123.00；移动式液压千斤顶 数量2.0台 ×单价10.25 =>¥20.50；氧气乙炔管专用双耳卡箍 数量40.0个 ×单价0.17 =>¥6.80；风动真空吸尘器 数量2.0台 ×单价37.27 =>¥74.54；套筒加长杆 L 型 数量2.0pc ×单价2.98 =>¥5.96；防油耐酸塑料手套 数量10.0付 ×单价0.84 =>¥8.40；气针枪 数量1.0Set ×单价33.55 =>¥33.55；铝箔胶带（玻纤铝箔布） 数量2.0卷 ×单价59.82 =>¥119.64；LED强力照明灯 数量2.0SET ×单价34.48 =>¥68.96；十二角单头棘轮套筒板手 数量1.0只 ×单价16.03 =>¥16.03；管子螺纹密封膏 数量2.0听 ×单价74.55 =>¥149.10；DIN碳钢法兰 数量10.0PC ×单价1.9 =>¥19.00；环氧树脂胶 数量4.0管 ×单价2.01 =>¥8.04；等离子割枪 数量1.0Pc ×单价104.4 =>¥104.36；甘油充注压力表 数量2.0Pc ×单价10.25 =>¥20.50；五点式安全带 数量2.0PC ×单价9.69 =>¥19.38；洗衣粉 数量100.0包 ×单价0.64 =>¥64.00；钢丝绳吊索 数量4.0根 ×单价5.59 =>¥22.36；防滑工作手套 数量200.0付 ×单价0.18 =>¥36.00；树脂粘合剂和固化剂 数量4.0盒 ×单价2.01 =>¥8.04；塑料桶 数量5.0个 ×单价2.8 =>¥14.00；吊带 数量2.0只 ×单价1.12 =>¥2.24；移动式液压千斤顶 数量2.0台 ×单价7.08 =>¥14.16；油壶 数量2.0只 ×单价2.61 =>¥5.22；油漏斗 数量2.0只 ×单价2.42 =>¥4.84；甘油充注压力表 数量5.0Pc ×单价6.52 =>¥32.60；甘油充注压力表 数量5.0Pc ×单价6.52 =>¥32.60；V型带 数量2.0根 ×单价5.59 =>¥11.18；不燃性壁材 数量5.0张 ×单价33.55 =>¥167.75；小型扣式开关 数量10.0个 ×单价1.96 =>¥19.60；二芯橡胶电缆 数量200.0MTR ×单价1.09 =>¥218.00；",
-   "memo": "N 已付:0.00"
+   "memo": "Y 已付:0.00"
   },
   {
    "type": "物资",
@@ -20490,7 +20715,7 @@
    "amount": 438.37,
    "currency": "USD",
    "desc": "阿昔洛韦 AciclovirTablets 数量20.0盒 ×单价0.47 =>¥9.40；消炎利胆片 AntiphlogisticCholagogicTablets 数量5.0瓶 ×单价0.89 =>¥4.45；开瑞坦（氯雷他定片） Loratadine Tablets 数量5.0盒 ×单价4.63 =>¥23.15；安络血片 TABELLAE CARBAZOCHROMI 数量2.0瓶 ×单价2.95 =>¥5.90；酚磺乙胺片（止血敏） Etamsylate 数量2.0瓶 ×单价2.95 =>¥5.90；乳酸林格氏液 Lactated Ringer`s solution 数量10.0瓶 ×单价0.79 =>¥7.90；右旋糖酐40氯化钠注射液 Dextran 40 Sodium Chloride Injection 数量10.0瓶 ×单价3.94 =>¥39.40；一次性注射器20ml Disposable syringe 20ml 数量50.0支 ×单价0.13 =>¥6.50；手术缝合针线 SurgicalSutures, stitches, 数量2.0套 ×单价2.66 =>¥5.32；无菌纱布块 Sterile gauze block 数量200.0片 ×单价0.04 =>¥8.00；医用凡士林纱布 Medical petrolatum gauze 数量10.0包 ×单价1.97 =>¥19.70；布洛芬片 数量10.0盒 ×单价0.49 =>¥4.90；一次性口罩 Surgical mask 数量500.0个 ×单价0.01 =>¥5.00；盐酸哌替啶注射液 Pethidine Dolantin、Meperidine 数量20.0支 ×单价0.24 =>¥4.80；磷酸可待因片 Codeine Phosphate Tablets 数量50.0片 ×单价0.03 =>¥1.50；板蓝根颗粒 BanLanGenKeLi 数量10.0包 ×单价1.38 =>¥13.80；头孢氨苄 CephalexinCapsules 数量10.0盒 ×单价1.08 =>¥10.80；头孢克肟 Cefixime 数量20.0盒 ×单价0.71 =>¥14.20；伊曲康唑 Itraconazole Capsules 数量5.0盒 ×单价1.77 =>¥8.85；咳必清(喷托维林",
-   "memo": "N 已付:0.00"
+   "memo": "Y 已付:0.00"
   },
   {
    "type": "物资",
@@ -20505,7 +20730,7 @@
    "amount": 1474.4,
    "currency": "USD",
    "desc": "高压清洗机用旋转喷头 喷芯 数量7.0PCS ×单价132 =>¥924.00；高压水枪泵柱塞水封 数量1.0套 ×单价260 =>¥260.00；高压水枪管连接头 数量2.0个 ×单价88.2 =>¥176.40；高压水枪滤芯 数量3.0Pc ×单价38 =>¥114.00",
-   "memo": "N 已付:0.00"
+   "memo": "Y 已付:0.00"
   },
   {
    "type": "物资",
@@ -20517,10 +20742,10 @@
    "bill": "WNFHS226005-2",
    "workno": "",
    "invno": "WNFHS226005",
-   "amount": 3311.93,
+   "amount": 6031.8,
    "currency": "USD",
    "desc": "舷梯镀锌钢丝绳(hoisting) 6×24 数量2.0C/L ×单价91.32 =>¥182.64；舷梯镀锌钢丝绳(stowing) 6x24 数量2.0C/L ×单价38.2 =>¥76.40；舷梯镀锌钢丝绳(stowing) 6x24 数量3.0C/L ×单价20.5 =>¥61.50；引水梯钢丝 数量1.0根 ×单价48.45 =>¥48.45；引水梯架钢丝 数量1.0根 ×单价20.5 =>¥20.50；沙子 数量10.0袋 ×单价1.86 =>¥18.60；五点式安全带 数量2.0PC ×单价9.69 =>¥19.38；霍尼韦尔封闭性护目镜 数量10.0pc ×单价2.05 =>¥20.50；除锈机齿轮轴 数量10.0根 ×单价2.98 =>¥29.80；货舱汗水葫芦 数量20.0个 ×单价4.66 =>¥93.20；电动全自动洗衣机 数量1.0台 ×单价145.4 =>¥145.36；洗衣粉 数量500.0包 ×单价0.64 =>¥320.00；针形牛油嘴 数量200.0只 ×单价0.84 =>¥168.00；甲板塞 数量10.0个 ×单价4.29 =>¥42.90；甲板塞 数量5.0个 ×单价4.1 =>¥20.50；五合板 数量2.0张 ×单价53.11 =>¥106.22；弹簧垫圈 数量100.0只 ×单价0.05 =>¥5.00；竹蒸笼 笼屉带盖 数量1.0Pc ×单价68.95 =>¥68.95；手动液压叉车（地牛） 数量1.0SET ×单价249.7 =>¥249.73；大竹扫把 数量10.0Pc ×单价3.35 =>¥33.50；长柄麦梗扫帚 数量10.0把 ×单价1.77 =>¥17.70；管螺纹丝锥和板牙全套(包括一个丝攻和一个圆板牙) 数量1.0套 ×单价104.4 =>¥104.36；不锈钢六角螺母 数量200.0个 ×单价0.15 =>¥30.00；cutter pin 数量20.0Pc ×单价0.17 =>¥3.40；厨房用和面机 数量1.0Set ×单价335.4 =>¥335.45；牛油枪管 数量3.0Pc ×单价0.65 =>¥1.95；救生艇饮用水 数量300.0瓶 ×单价0.56 =>¥168.00；转椅 数量1.0张 ×单价25.35 =>¥25.35；降落伞火焰信号 数量12.0只 ×单价20.87 =>¥250",
-   "memo": "N 已付:0.00"
+   "memo": "Y 已付:0.00"
   },
   {
    "type": "物资",
@@ -21912,10 +22137,10 @@
    "bill": "WNNAD226002",
    "workno": "",
    "invno": "WNNAD226002",
-   "amount": 946.67,
+   "amount": 958.45,
    "currency": "CNY",
    "desc": "白色安全帽 White safety helmet 数量25.0个 ×单价45 =>¥1125.00；被套-单人(被罩） Duvet cover - single person (duvet cover) 数量20.0条 ×单价56.5 =>¥1130.00；被套-双人(被罩） Duvet cover - double (duvet cover) 数量10.0条 ×单价76 =>¥760.00；床单-单人 Bed Sheet - Single 数量20.0条 ×单价33.5 =>¥670.00；床单-双人 Bed Sheet - Double 数量10.0条 ×单价46 =>¥460.00；毛巾 towel 数量35.0条 ×单价6.5 =>¥227.50；浴巾 bath towel 数量40.0条 ×单价28.5 =>¥1140.00；枕巾 pillow towel 数量35.0条 ×单价11.5 =>¥402.50；枕套 pillowcase 数量35.0条 ×单价9.5 =>¥332.50；安全帽的Y型下颚带 数量24.0Pc ×单价7.6 =>¥182.40；运费 数量1.0Pcs ×单价80 =>¥80.00",
-   "memo": "N 已付:0.00"
+   "memo": "Y 已付:0.00"
   },
   {
    "type": "物资",
