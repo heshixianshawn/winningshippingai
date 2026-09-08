@@ -1,5 +1,5 @@
 // Auto-generated. NK Survey Status v2 extraction + full fleet merge.
-// Updated: 2026-09-08 22:59 | Ships: 65
+// Updated: 2026-09-08 23:00 | Ships: 65
 
 const ships = {
   "DNV_CLASSSTATUS_WINNING_AMBITION_20260901": {
@@ -786,6 +786,6 @@ const ships = {
 
 export const SURVEY_DATA = {
   ships,
-  lastUpdated: "2026-09-08 22:59",
+  lastUpdated: "2026-09-08 23:00",
   totalShips: 65,
 };
