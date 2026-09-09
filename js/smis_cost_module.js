@@ -208,6 +208,7 @@
       var type = box.querySelector('#constp-f-type').value;
       var ship = box.querySelector('#constp-f-ship').value;
       var monthSel = box.querySelector('#constp-f-month').value;
+      window._constpTokens = raw ? raw.toLowerCase().split(/\s+/) : [];
 
       var needed = raw ? raw.split(/\s+/).filter(Boolean).map(function (w) { return w.toLowerCase(); }) : [];
       var rows = traceCache.rows.filter(function (r) {
@@ -284,7 +285,22 @@
     h += '<th>说明 / 备注</th>';
     h += '</tr></thead><tbody>';
 
+    var toks = window._constpTokens || [];
+    function matchedLines(desc) {
+      if (!toks.length) return null;
+      var seg = String(desc || '').split('；');
+      var out = seg.filter(function (x) {
+        var l = x.toLowerCase();
+        return toks.some(function (t) { return t && l.indexOf(t) >= 0; });
+      });
+      return out.length ? out : null;
+    }
+    var totalMatched = 0;
     rows.forEach(function (r) {
+      var mm = matchedLines(r.desc);
+      if (mm) totalMatched += mm.length;
+      var descShow = mm ? mm.join('；') : shortDesc(r);
+      if (mm && mm.length) descShow = '📌 匹配明细(' + mm.length + '行)：' + descShow;
       h += '<tr><td>' + esc(r.date) + '</td>' +
         '<td><span class="constp-chip constp-ct-' + chipCls(r.type) + '">' + esc(r.type) + '</span></td>' +
         '<td>' + esc(r.ship) + '</td>' +
@@ -294,8 +310,12 @@
         '<td class="constp-bill">' + esc(r.bill) + '</td>' +
         '<td class="constp-r">' + fmtMoney(r.amount) + '</td>' +
         '<td>' + esc(r.currency) + '</td>' +
-        '<td class="constp-desc">' + esc(shortDesc(r)) + '</td></tr>';
+        '<td class="constp-desc">' + esc(descShow) + '</td></tr>';
     });
+    if (toks.length) {
+      var note = res.querySelector('.ship-stat.total');
+      if (note) note.textContent = '共 ' + rows.length + ' 单（命中明细行 ' + totalMatched + ' 行）';
+    }
     h += '</tbody></table></div>';
     res.innerHTML = h;
 
