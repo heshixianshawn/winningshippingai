@@ -301,11 +301,20 @@
       if (mm) totalMatched += mm.length;
       var descShow = mm ? mm.join('；') : shortDesc(r);
       if (mm && mm.length) descShow = '📌 匹配明细(' + mm.length + '行)：' + descShow;
+      // 命中时：品名列只显示命中品名（去 数量/单价 后缀），避免整单900行淹没
+      var itemShow = r.item;
+      if (mm && mm.length) {
+        var names = mm.map(function (seg) {
+          var i = seg.indexOf(' 数量');
+          return i > 0 ? seg.slice(0, i) : seg;
+        });
+        itemShow = names.join('；').slice(0, 160) + (names.length > 1 ? '…' : '');
+      }
       h += '<tr><td>' + esc(r.date) + '</td>' +
         '<td><span class="constp-chip constp-ct-' + chipCls(r.type) + '">' + esc(r.type) + '</span></td>' +
         '<td>' + esc(r.ship) + '</td>' +
         '<td>' + esc(r.cat) + '</td>' +
-        '<td class="constp-item">' + esc(r.item) + '</td>' +
+        '<td class="constp-item">' + esc(itemShow) + '</td>' +
         '<td>' + esc(r.vendor) + '</td>' +
         '<td class="constp-bill">' + esc(r.bill) + '</td>' +
         '<td class="constp-r">' + fmtMoney(r.amount) + '</td>' +
