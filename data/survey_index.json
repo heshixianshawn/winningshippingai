@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-08 23:00",
+  "last_updated": "2026-09-09 08:30",
   "total_ships": 65,
   "ships": {
     "SUNNY_BEYLA": {
@@ -6469,11 +6469,6 @@
       "gt": "174863",
       "dwt": "324965",
       "surveys": [
-        {
-          "type": "boiler",
-          "desc": "锅炉",
-          "due_date": "2026-09-05"
-        },
         {
           "type": "annual_survey",
           "desc": "Class Annual Survey",

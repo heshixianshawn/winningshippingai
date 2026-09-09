@@ -1,5 +1,5 @@
 // Auto-generated. NK Survey Status v2 extraction + full fleet merge.
-// Updated: 2026-09-08 23:00 | Ships: 65
+// Updated: 2026-09-09 08:30 | Ships: 65
 
 const ships = {
   "DNV_CLASSSTATUS_WINNING_AMBITION_20260901": {
@@ -358,7 +358,7 @@ const ships = {
     gt: "174863",
     dwt: null,
     buildDate: "2026-08-12",
-    surveys: [{"type": "boiler", "description": "锅炉", "due_date": "2026-09-05", "status": "Not Due"}, {"type": "annual_survey", "description": "Class Annual Survey", "due_date": "2027-08-11", "status": "Not Due"}, {"type": "intermediate_survey", "description": "Class Intermediate Survey", "due_date": "2028-08-11", "status": "Not Due"}, {"type": "special_survey", "description": "Class Special Survey for", "due_date": "2031-05-12", "status": "Not Due"}, {"type": "tail_shaft", "description": "尾轴检验", "due_date": "2036-08-11", "status": "Not Due"}, {"type": "special_survey", "description": "Class Special Survey (Hull & Machinery)", "due_date": "2031-08-11", "status": "Not Due"}, {"type": "boiler", "description": "Boiler Survey (Oil-fired Aux. & Exh. Gas Composite)", "due_date": "2029-08-11", "status": "Not Due"}, {"type": "dry_docking", "description": "坞检 (BTS 船底外部检验)", "last_done": "2026-08-12", "due_date": "2029-08-11", "status": "Not Due", "note": "按 CCS Survey Status 2026-09-05: 上次=交付坞检2026-08-12(Statement of Drydock Inspection), 下次2029-08-11(36个月周期)"}],
+    surveys: [{"type": "annual_survey", "description": "Class Annual Survey", "due_date": "2027-08-11", "status": "Not Due"}, {"type": "intermediate_survey", "description": "Class Intermediate Survey", "due_date": "2028-08-11", "status": "Not Due"}, {"type": "special_survey", "description": "Class Special Survey for", "due_date": "2031-05-12", "status": "Not Due"}, {"type": "tail_shaft", "description": "尾轴检验", "due_date": "2036-08-11", "status": "Not Due"}, {"type": "special_survey", "description": "Class Special Survey (Hull & Machinery)", "due_date": "2031-08-11", "status": "Not Due"}, {"type": "boiler", "description": "Boiler Survey (Oil-fired Aux. & Exh. Gas Composite)", "due_date": "2029-08-11", "status": "Not Due"}, {"type": "dry_docking", "description": "坞检 (BTS 船底外部检验)", "last_done": "2026-08-12", "due_date": "2029-08-11", "status": "Not Due", "note": "按 CCS Survey Status 2026-09-05: 上次=交付坞检2026-08-12(Statement of Drydock Inspection), 下次2029-08-11(36个月周期)"}],
     certificates: [{"name": "ISM DOC", "type": "STATUTORY", "expiry_date": "2031-08-11", "status": "VALID"}, {"name": "ISPS", "type": "STATUTORY", "expiry_date": "", "status": "VALID"}, {"name": "MLC", "type": "STATUTORY", "expiry_date": "2031-08-11", "status": "VALID"}, {"name": "IOPP", "type": "STATUTORY", "expiry_date": "2031-08-11", "status": "VALID"}, {"name": "IAPP", "type": "STATUTORY", "expiry_date": "2031-08-11", "status": "VALID"}, {"name": "ISPP", "type": "STATUTORY", "expiry_date": "2031-08-11", "status": "VALID"}, {"name": "Load Line", "type": "STATUTORY", "expiry_date": "", "status": "VALID"}, {"name": "Safety Construction", "type": "STATUTORY", "expiry_date": "2031-08-11", "status": "VALID"}, {"name": "Safety Equipment", "type": "STATUTORY", "expiry_date": "2031-08-11", "status": "VALID"}, {"name": "Safety Radio", "type": "STATUTORY", "expiry_date": "2031-08-11", "status": "VALID"}, {"name": "BWM", "type": "STATUTORY", "expiry_date": "", "status": "VALID"}, {"name": "IHM", "type": "STATUTORY", "expiry_date": "2031-08-11", "status": "VALID"}, {"name": "Cargo Gear", "type": "STATUTORY", "expiry_date": "2031-08-11", "status": "VALID"}, {"name": "AFS", "type": "STATUTORY", "expiry_date": "", "status": "VALID"}, {"name": "DOC", "type": "STATUTORY", "expiry_date": "", "status": "VALID", "note": "签发日2026-09-05，到期待核"}],
     source: {"class_society": "CCS", "report_date": "2026-09-08", "extraction_method": "pdf_text+particulars", "confidence": "high", "particulars_source": "CCS_Survey_Status_PDF"},
   },
@@ -786,6 +786,6 @@ const ships = {
 
 export const SURVEY_DATA = {
   ships,
-  lastUpdated: "2026-09-08 23:00",
+  lastUpdated: "2026-09-09 08:30",
   totalShips: 65,
 };
