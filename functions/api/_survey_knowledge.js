@@ -161,35 +161,35 @@ export function getAlertSummary(shipFilter, dept = null, deptMap = null) {
     }
   }
   
+  // SHAME #29 防护：列表截断必须显式标注"另有多少项"，严禁静默丢弃
+  const listLines = (items, cap, fmt) => {
+    let out = '';
+    for (const item of items.slice(0, cap)) out += fmt(item);
+    if (items.length > cap) out += `- …以及另外 ${items.length - cap} 项（未逐条列出，请按船名/证书名查询确认）\n`;
+    return out;
+  };
+
   let text = '';
   if (shipFilter) {
     // 单船模式：只输出该船自己的预警
     if (urgent.length > 0) {
       text += `\n## 🔴 本船即将到期预警（7天内）\n`;
-      for (const item of urgent.slice(0, 15)) {
-        text += `- ${item.name} | ${item.date} | 仅剩${item.days}天\n`;
-      }
+      text += listLines(urgent, 15, (item) => `- ${item.name} | ${item.date} | 仅剩${item.days}天\n`);
     }
     if (expired.length > 0) {
       text += `\n## 💀 本船近期已过期（30天内）\n`;
-      for (const item of expired.slice(0, 10)) {
-        text += `- ${item.name} | ${item.date} | 已过期${-item.days}天\n`;
-      }
+      text += listLines(expired, 10, (item) => `- ${item.name} | ${item.date} | 已过期${-item.days}天\n`);
     }
     return text;
   }
   
   if (urgent.length > 0) {
     text += `\n## 🔴 即将到期预警（7天内）\n`;
-    for (const item of urgent.slice(0, 15)) {
-      text += `- ${item.ship}: ${item.name} | ${item.date} | 仅剩${item.days}天\n`;
-    }
+    text += listLines(urgent, 15, (item) => `- ${item.ship}: ${item.name} | ${item.date} | 仅剩${item.days}天\n`);
   }
   if (expired.length > 0) {
     text += `\n## 💀 近期已过期（30天内）\n`;
-    for (const item of expired.slice(0, 10)) {
-      text += `- ${item.ship}: ${item.name} | ${item.date} | 已过期${-item.days}天\n`;
-    }
+    text += listLines(expired, 10, (item) => `- ${item.ship}: ${item.name} | ${item.date} | 已过期${-item.days}天\n`);
   }
   if (text) {
     text += `\n⚠️ 以上为全船队预警汇总，每条已标注船名。仅当预警中船名与用户查询的船一致时方可引用，严禁将其他船的预警项当作查询船的证书状态。`;

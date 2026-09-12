@@ -1,13 +1,102 @@
 {
-  "generated": "2026-09-11",
+  "generated": "2026-09-12",
   "urgent_7d": [],
-  "warning_30d": [],
+  "warning_30d": [
+    {
+      "ship": "WINNING WEALTH",
+      "type": "certificate",
+      "name": "IOPP",
+      "date": "2026-10-12",
+      "days": 30,
+      "status": "VALID"
+    },
+    {
+      "ship": "WINNING WEALTH",
+      "type": "certificate",
+      "name": "IAPP",
+      "date": "2026-10-12",
+      "days": 30,
+      "status": "VALID"
+    },
+    {
+      "ship": "WINNING WEALTH",
+      "type": "certificate",
+      "name": "ISPP",
+      "date": "2026-10-12",
+      "days": 30,
+      "status": "VALID"
+    },
+    {
+      "ship": "WINNING WEALTH",
+      "type": "certificate",
+      "name": "Safety Construction",
+      "date": "2026-10-12",
+      "days": 30,
+      "status": "VALID"
+    },
+    {
+      "ship": "WINNING WEALTH",
+      "type": "certificate",
+      "name": "Safety Equipment",
+      "date": "2026-10-12",
+      "days": 30,
+      "status": "VALID"
+    },
+    {
+      "ship": "WINNING WEALTH",
+      "type": "certificate",
+      "name": "Safety Radio",
+      "date": "2026-10-12",
+      "days": 30,
+      "status": "VALID"
+    },
+    {
+      "ship": "WINNING WEALTH",
+      "type": "certificate",
+      "name": "IHM",
+      "date": "2026-10-12",
+      "days": 30,
+      "status": "VALID"
+    },
+    {
+      "ship": "WINNING WEALTH",
+      "type": "certificate",
+      "name": "Cargo Gear",
+      "date": "2026-10-12",
+      "days": 30,
+      "status": "VALID"
+    },
+    {
+      "ship": "WINNING WEALTH",
+      "type": "certificate",
+      "name": "AFS",
+      "date": "2026-10-12",
+      "days": 30,
+      "status": "VALID"
+    },
+    {
+      "ship": "WINNING WEALTH",
+      "type": "survey",
+      "name": "Class Special Survey for",
+      "date": "2026-10-12",
+      "days": 30,
+      "status": "Not Due"
+    },
+    {
+      "ship": "WINNING WEALTH",
+      "type": "survey",
+      "name": "BTS (船底外部检验)",
+      "date": "2026-10-12",
+      "days": 30,
+      "status": "Not Due"
+    }
+  ],
   "expired_recent": [],
   "info_90d": [],
   "summary": {
     "urgent_count": 0,
-    "warning_count": 0,
+    "warning_count": 11,
     "expired_count": 0,
-    "total_active": 0
+    "total_active": 11
   }
 }
