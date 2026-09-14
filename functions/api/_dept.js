@@ -3,7 +3,8 @@
 // 数据源: data/fleet_dept.json（key=部门，value=船名短词列表；仅"二部"已配置，其余待 Shawn 提供清单）
 
 let deptData = null;
-let deptLoadAttempted = false;
+let deptLoadedAt = 0;
+const DEPT_TTL_MS = 5 * 60 * 1000; // 5 分钟：数据文件每日/随提交更新，避免实例级永久缓存导致读到旧值
 
 function getPagesUrl(request) {
   const url = new URL(request.url);
@@ -11,14 +12,16 @@ function getPagesUrl(request) {
 }
 
 async function ensureDeptData(request) {
-  if (deptData) return deptData;
-  if (deptLoadAttempted) return null;
-  deptLoadAttempted = true;
+  const fresh = deptData && (Date.now() - deptLoadedAt) < DEPT_TTL_MS;
+  if (fresh) return deptData;
   try {
     const baseUrl = getPagesUrl(request);
-    const resp = await fetch(`${baseUrl}/data/fleet_dept.json`);
+    // 2026-09-15：加 cache-buster + 短 cacheTtl，避免边缘/实例缓存读到旧版部门映射
+    const bust = Math.floor(Date.now() / (5 * 60 * 1000));
+    const resp = await fetch(`${baseUrl}/data/fleet_dept.json?v=${bust}`, { cf: { cacheTtl: 60 } });
     if (resp.ok) {
       deptData = await resp.json();
+      deptLoadedAt = Date.now();
       return deptData;
     }
   } catch (e) {
