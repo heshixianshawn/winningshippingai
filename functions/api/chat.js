@@ -10,6 +10,7 @@ import {
 import { querySurveyKnowledge, getAlertSummary } from './_survey_knowledge.js';
 import { parseDept, loadDeptData } from './_dept.js';
 import { buildFleetStatAnswer } from './_fleet_stats.js';
+import { extractShipName, hasFleetScope } from './_fleet_stats.js';
 import { autoSearchKnowledge, buildPscPrepChecklist, searchImoConventions, searchImoUpdates, searchOfficialSources, searchQuickRef, searchRegsAllKnowledge, searchRegulationsKnowledge, searchFullTextShards, searchHighfreqRef, matchDefectRegulations } from './_knowledge.js';
 import { searchFleetKnowledge } from './_fleet_data.js';
 import { logToKV } from './_logger.js';
@@ -278,13 +279,24 @@ export async function onRequest(context) {
     }
 
     // ====== Survey Alert Summary for ships module ======
+    // 2026-09-15：三种情形裁定（防串船）——
+    //   ① 消息含明确船名        → 只注入该船预警（无预警则不注入）
+    //   ② 无船名但明确全队/部门语境（全船队/哪些船/二部）→ 注入全队或该部门汇总
+    //   ③ 完全无法判定对象      → 不注入（宁缺勿串）
     if (module === 'ships') {
       try {
         // 2026-08-25 修复：单船查询只注入该船预警（全局预警注入导致模型把其他船的过期项串到查询船，如FAITH问出JOY/FRIA的日期）
-        const queryShip = (isThinkingMode && awareData && awareData.ship) ? awareData.ship : null;
-                const alerts = getAlertSummary(queryShip, dept, deptMap);
-        if (alerts) {
-          systemContent += '\n\n【📊 当前检验与证书预警状态】\n' + alerts;
+        const queryShip = (isThinkingMode && awareData && awareData.ship) ? awareData.ship : extractShipName(message);
+        const fleetScope = hasFleetScope(message) || !!dept;
+        if (queryShip || fleetScope) {
+          // 2026-09-15：改为只读站点权威文件 data/survey_alerts.json（单一口径源）；
+          // 返回 '' = 无预警；返回 null = 预警数据不可用（不注入、不硬造、不抛错）。
+          const alerts = await getAlertSummary(queryShip, dept, deptMap, request);
+          if (alerts) {
+            systemContent += '\n\n【📊 当前检验与证书预警状态】\n' + alerts;
+          } else if (alerts === null) {
+            console.error('[Survey] 预警数据不可用（data/survey_alerts.json 未加载），本次不注入预警摘要');
+          }
         }
       } catch (e) {
         console.error('[Survey] alert summary failed:', e.message);

@@ -22,6 +22,18 @@ const COUNT_WORD = /(多少|几艘|几条|几个|几项|数量|总数|统计|一
 const SHIP_UNIT = /[条艘]/;
 // 消息中出现具体船名 → 单船查询，绝不走统计直答（保护法规/单船路径）
 const SHIP_NAME = /(WINNING|SUNNY)\s+[A-Z]{2,}/;
+// 2026-09-15：预警注入复用同一套船名/范围信号（避免另写一套导致两处判定不一致）
+export const SHIP_NAME_RE = SHIP_NAME;
+/** 从消息中提取本船名（无则 null）。供 chat.js 预警注入判定查询对象复用。 */
+export function extractShipName(message) {
+  const m = String(message || '').match(SHIP_NAME);
+  return m ? m[0].trim().toUpperCase().replace(/\s+/g, ' ') : null;
+}
+/** 明确的全队/部门语境（无船名时才用于放行全队或部门汇总） */
+export function hasFleetScope(message) {
+  const q = String(message || '');
+  return /(全船队|整个船队|所有船|哪些船|全部船|船队中|船队里|各船|每艘船|哪些部门|各个部门|所有部门)/.test(q);
+}
 // 非 ships 模块时，必须带明确船队语境才不会误拦（避免截胡法规类问题）
 const FLEET_CONTEXT = /(船队|全船队|WINNING|集团|公司|我们)/i;
 // 部门集合类提问（各/所有部门）

@@ -1,8 +1,10 @@
 // WINNING Shipping AI - Survey Status Knowledge Module
 // 从统一知识库中查询船舶检验状态、证书到期、预警信息
+// 2026-09-15：预警摘要改为只读站点权威文件 data/survey_alerts.json（单一口径源，不再自算四档）。
 
 import { SURVEY_DATA } from './_survey_data.js';
 import { isInDept } from './_dept.js';
+import { loadAlerts, buildAlertSummary } from './_alert_buckets.js';
 
 /**
  * 根据船名模糊匹配（兼容新旧字段：name 或 n）
@@ -127,75 +129,19 @@ export function getAlerts(maxDays = 30, dept = null, deptMap = null) {
 
 /**
  * 获取预警摘要（适合放在系统prompt中）
+ * 2026-09-15：改为**只读站点权威文件** data/survey_alerts.json（单一口径源，不再自算四档）。
+ * 每档截断并显式标注总条数（SHAME #29：严禁静默丢弃）。
  * @param {string|null} shipFilter 指定船名时只返回该船预警（2026-08-25 修复：全局预警注入导致模型把其他船的过期项串到查询船）
+ * @param {string|null} dept 部门筛选
+ * @param {object|null} deptMap 部门映射
+ * @param {Request|null} request 用于加载站点数据；未传则无法加载（返回 null，调用方须降级）
+ * @returns {Promise<string|null>} '' 表示无预警；null 表示预警数据不可用（调用方须优雅降级）
  */
-export function getAlertSummary(shipFilter, dept = null, deptMap = null) {
-  const now = new Date();
-  const urgent = [];
-  const expired = [];
-  
-  for (const [key, ship] of Object.entries(SURVEY_DATA.ships)) {
-    const nm = ship.name || ship.n || key;
-    if (dept && deptMap && !isInDept(nm, dept, deptMap)) continue;
-    if (shipFilter) {
-      const f = String(shipFilter).trim().toUpperCase().replace(/\s+/g, ' ');
-      const n2 = nm.toUpperCase().replace(/\s+/g, ' ');
-      const k2 = key.toUpperCase().replace(/\s+/g, ' ');
-      if (n2 !== f && k2 !== f) continue;
-    }
-    const pushItem = (name, date) => {
-      const d = parseDateStr(date);
-      if (!d) return;
-      const days = Math.round((d - now) / (24*60*60*1000));
-      if (days >= 0 && days <= 7) {
-        urgent.push({ ship: nm, name, date, days });
-      } else if (days < 0 && -days <= 30) {
-        expired.push({ ship: nm, name, date, days });
-      }
-    };
-    for (const s of (ship.surveys || [])) {
-      if (s.due_date) pushItem(s.description || 'Survey', s.due_date);
-    }
-    for (const c of (ship.certificates || [])) {
-      if (c.expiry_date) pushItem(c.name || 'Cert', c.expiry_date);
-    }
-  }
-  
-  // SHAME #29 防护：列表截断必须显式标注"另有多少项"，严禁静默丢弃
-  const listLines = (items, cap, fmt) => {
-    let out = '';
-    for (const item of items.slice(0, cap)) out += fmt(item);
-    if (items.length > cap) out += `- …以及另外 ${items.length - cap} 项（未逐条列出，请按船名/证书名查询确认）\n`;
-    return out;
-  };
-
-  let text = '';
-  if (shipFilter) {
-    // 单船模式：只输出该船自己的预警
-    if (urgent.length > 0) {
-      text += `\n## 🔴 本船即将到期预警（7天内）\n`;
-      text += listLines(urgent, 15, (item) => `- ${item.name} | ${item.date} | 仅剩${item.days}天\n`);
-    }
-    if (expired.length > 0) {
-      text += `\n## 💀 本船近期已过期（30天内）\n`;
-      text += listLines(expired, 10, (item) => `- ${item.name} | ${item.date} | 已过期${-item.days}天\n`);
-    }
-    return text;
-  }
-  
-  if (urgent.length > 0) {
-    text += `\n## 🔴 即将到期预警（7天内）\n`;
-    text += listLines(urgent, 15, (item) => `- ${item.ship}: ${item.name} | ${item.date} | 仅剩${item.days}天\n`);
-  }
-  if (expired.length > 0) {
-    text += `\n## 💀 近期已过期（30天内）\n`;
-    text += listLines(expired, 10, (item) => `- ${item.ship}: ${item.name} | ${item.date} | 已过期${-item.days}天\n`);
-  }
-  if (text) {
-    text += `\n⚠️ 以上为全船队预警汇总，每条已标注船名。仅当预警中船名与用户查询的船一致时方可引用，严禁将其他船的预警项当作查询船的证书状态。`;
-  }
-  
-  return text;
+export async function getAlertSummary(shipFilter, dept = null, deptMap = null, request = null) {
+  if (!request) return null;
+  const data = await loadAlerts(request);
+  if (!data) return null;
+  return buildAlertSummary(data, { shipFilter, dept, deptMap, isInDeptFn: isInDept });
 }
 
 /**
