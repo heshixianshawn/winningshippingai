@@ -81,6 +81,16 @@ export async function onRequest(context) {
     // 2026-08-29：上传文件（PSC报告等）解析场景标记（顶层定义，供各分支复用）
     const isFileUploadParse = /以下是(文件|扫描件PDF)/.test(message);
     let quickAnswer = null;  // PSC 速查命中内容（强制原样输出）
+    // 2026-09-15：部门范围识别提到外层（原声明在 ships 分支块级作用域内，导致下方 Survey 预警注入引用 dept/deptMap 时 ReferenceError 被 try/catch 吞掉，预警摘要从未注入）
+    const dept = parseDept(message);
+    let deptMap = null;
+    if (dept) {
+      try {
+        deptMap = await loadDeptData(request);
+      } catch (e) {
+        console.error('[Dept] load failed:', e.message);
+      }
+    }
 
     // ====== 2026-09-15：船队统计类问题 → 后端真算直答（照 PSC 速查直返模式，杜绝计数幻觉） ======
     // 命中统计意图（船队总数/部门船数/船级社船数/预警数量）→ 后端从数据文件实时统计并模板化返回，
@@ -185,8 +195,6 @@ export async function onRequest(context) {
     } else if (module === 'ships') {
       // 多源检索（合并）：Survey 检验证书 + 参数库(GT/DWT/主机) + TMOU PSC 风险档案
       // 2026-09-05：部门范围识别（二部/一部/…），ship 查询按部门过滤
-      const dept = parseDept(message);
-      const deptMap = dept ? await loadDeptData(request) : null;
       let deptNote = '';
       if (dept) {
         const cnt = (deptMap && deptMap[dept]) ? deptMap[dept].length : 0;
