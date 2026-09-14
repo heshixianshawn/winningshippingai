@@ -9,6 +9,7 @@ import {
 } from './_system_prompts.js';
 import { querySurveyKnowledge, getAlertSummary } from './_survey_knowledge.js';
 import { parseDept, loadDeptData } from './_dept.js';
+import { buildFleetStatAnswer } from './_fleet_stats.js';
 import { autoSearchKnowledge, buildPscPrepChecklist, searchImoConventions, searchImoUpdates, searchOfficialSources, searchQuickRef, searchRegsAllKnowledge, searchRegulationsKnowledge, searchFullTextShards, searchHighfreqRef, matchDefectRegulations } from './_knowledge.js';
 import { searchFleetKnowledge } from './_fleet_data.js';
 import { logToKV } from './_logger.js';
@@ -80,6 +81,24 @@ export async function onRequest(context) {
     // 2026-08-29：上传文件（PSC报告等）解析场景标记（顶层定义，供各分支复用）
     const isFileUploadParse = /以下是(文件|扫描件PDF)/.test(message);
     let quickAnswer = null;  // PSC 速查命中内容（强制原样输出）
+
+    // ====== 2026-09-15：船队统计类问题 → 后端真算直答（照 PSC 速查直返模式，杜绝计数幻觉） ======
+    // 命中统计意图（船队总数/部门船数/船级社船数/预警数量）→ 后端从数据文件实时统计并模板化返回，
+    // 不经模型、模型无法改动数字；未命中的普通法规/体系/单船查询路径完全不变。
+    if (!hasImage && !isThinkingMode) {
+      try {
+        const statAnswer = await buildFleetStatAnswer(request, message, module);
+        if (statAnswer) {
+          return new Response(JSON.stringify({
+            reply: statAnswer.reply,
+            model: 'fleet-stats',
+            source: statAnswer.source
+          }), { headers: { 'Content-Type': 'application/json', ...CORS_HEADERS } });
+        }
+      } catch (e) {
+        console.error('[FleetStats] direct answer failed:', e.message);
+      }
+    }
 
     if (isThinkingMode && awareData) {
       // 思考引擎模式：前端已分析结构数据，Worker侧再补充后端权威检索（参数库 + Survey Status + PSC 风险）
