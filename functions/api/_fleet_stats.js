@@ -89,6 +89,47 @@ function fleetTotal() {
   return Object.keys(SURVEY_DATA.ships).length;
 }
 
+/**
+ * 船名是否在平台船名表（Survey Status）内。
+ * 2026-09-15：物流小船（@winninglogistic.com，如 WINNING KOGON）不在船名表内，
+ * 但尾词与在册船（SUNNY KOGON）相同——不得据此推部门。
+ * 单 token（如 "KOGON"）允许按尾词唯一命中在册船；多 token 必须全名精确命中。
+ * @returns {{ok:boolean, ship:string|null}} ok=是否在册，ship=命中的在册船名
+ */
+function resolveFleetShip(name) {
+  const n = String(name || '').trim().toUpperCase().replace(/\s+/g, ' ');
+  if (!n) return { ok: false, ship: null, knownButAbsent: false };
+  const ships = allShips();
+  const exact = ships.find(s => String(s.name).trim().toUpperCase().replace(/\s+/g, ' ') === n);
+  if (exact) return { ok: true, ship: String(exact.name).trim(), knownButAbsent: false };
+  const tokens = n.split(' ');
+  if (tokens.length > 1) {
+    // 全名不在册。若该船名「除船东前缀外完全相同」的在册船存在，则为船东前缀不一致的别家船
+    // （如物流船 WINNING KOGON vs 在册船 SUNNY KOGON）——必须硬拒，不得按尾词兜。
+    const bare = tokens.slice(1).join(' ');
+    const sibling = ships.find(s => {
+      const t = String(s.name).trim().toUpperCase().replace(/\s+/g, ' ').split(' ');
+      return t.length > 1 && t.slice(1).join(' ') === bare;
+    });
+    return { ok: false, ship: sibling ? String(sibling.name).trim() : null, knownButAbsent: !!sibling };
+  }
+  const tailHits = ships.filter(s => String(s.name).trim().split(/\s+/).pop().toUpperCase() === n);
+  if (tailHits.length === 1) return { ok: true, ship: String(tailHits[0].name).trim(), knownButAbsent: false };
+  return { ok: false, ship: null, knownButAbsent: false };
+}
+
+/** 部门映射中「未匹配到任何在册船」的尾词条目（不应计入统计） */
+function unmatchedDeptTails(deptMap) {
+  const tails = new Set(allShips().map(s => String(s.name).trim().split(/\s+/).pop().toUpperCase()));
+  const out = {};
+  for (const d of Object.keys(deptMap)) {
+    if (d.startsWith('_') || !Array.isArray(deptMap[d])) continue;
+    const miss = deptMap[d].map(t => String(t).toUpperCase()).filter(t => !tails.has(t));
+    if (miss.length) out[d] = miss;
+  }
+  return out;
+}
+
 /** 按船名前缀分组（WINNING / SUNNY / …），从数据实时统计 */
 function groupCounts(ships) {
   const g = {};
@@ -189,18 +230,27 @@ function line(body, source, updated) {
 async function buildShipDept(shipName, request) {
   const deptMap = await loadDeptData(request);
   if (!deptMap || !shipName) return null;
+  // 守卫（2026-09-15）：不在船名表内的船一律不按尾词推部门（物流小船 WINNING KOGON ≠ 在册船 SUNNY KOGON）
+  const resolved = resolveFleetShip(shipName);
+  if (!resolved.ok) {
+    const body = `**${shipName}** 不在 WINNING 管理船队名单内（可能为物流/外部船只），无法给出机务部归属`
+      + (resolved.knownButAbsent
+          ? `。\n\n注意：在册船 **${resolved.ship}** 的船名尾词相同，但属不同船舶，不可混为一部`
+          : '')
+      + `。\n\n如需查询，请提供在册船名或 IMO 编号`;
+    return line(body, 'WINNING 知识库 Survey Status 船名表（未按尾词推断）', updatedAt());
+  }
   const tail = shipName.trim().split(/\s+/).pop().toUpperCase();
   const hits = Object.keys(deptMap).filter(
     k => !k.startsWith('_') && Array.isArray(deptMap[k]) &&
          deptMap[k].some(t => String(t).toUpperCase() === tail)
   );
   if (hits.length === 0) return null;   // 映射里没有 → 交回原路径（不编造）
-  const inSurvey = allShips().some(s => String(s.name).toUpperCase() === shipName);
   const parts = hits.map(d => {
     const n = allShips().filter(s => isInDept(s.name, d, deptMap)).length;
     return `${d}（该部 ${n} 艘）`;
   });
-  const caveat = inSurvey ? '' : '；⚠️ 该船目前不在 Survey Status 船名表内，仅据部门映射回答';
+  const caveat = '';
   const body = `${shipName} 属于 **${parts.join('、')}**（依据：机务部船队映射 fleet_dept.json 中 ${hits[0]} 清单含船名尾词 ${tail}${caveat}）`;
   return line(body, 'WINNING 知识库 部门船队映射 fleet_dept.json', updatedAt());
 }
@@ -216,8 +266,10 @@ async function buildDept(dept, request) {
   if (!deptMap || !Array.isArray(deptMap[dept])) return null;   // 映射未配置 → 交回原路径
   const inDept = allShips().filter(s => isInDept(s.name, dept, deptMap));
   const listLen = deptMap[dept].length;
-  const diff = listLen !== inDept.length
-    ? `（部门映射清单 ${listLen} 条，其中 ${inDept.length} 条可在 Survey Status 知识库匹配）`
+  // 本次统计只计在册船：映射清单里未匹配到船名表的条目（含物流小船）一律不计入，并如实标注
+  const miss = (unmatchedDeptTails(deptMap)[dept] || []);
+  const diff = (listLen !== inDept.length || miss.length)
+    ? `（部门映射清单 ${listLen} 条，其中 ${miss.length} 条未匹配到船名表、未计入）`
     : '';
   const body = `${dept}共 **${inDept.length}** 艘（其中 ${groupText(inDept)}）${diff}`;
   return line(body, 'WINNING 知识库 部门船队映射 fleet_dept.json × Survey Status', updatedAt());
@@ -237,7 +289,10 @@ async function buildDeptAll(request) {
   }
   const total = fleetTotal();
   const rest = total - assigned;
-  const body = `各部门船数：${parts.join(' / ')}（合计 ${assigned} 艘，未列入部门映射 ${rest} 艘；全船队共 ${total} 艘）`;
+  const miss = unmatchedDeptTails(deptMap);
+  const missTxt = Object.keys(miss).map(d => `${d} ${miss[d].join('/')}`).join('、');
+  const missNote = missTxt ? `；映射中 ${Object.values(miss).reduce((a, b) => a + b.length, 0)} 条未匹配到船名表（${missTxt}），已不计入` : '';
+  const body = `各部门船数：${parts.join(' / ')}（合计 ${assigned} 艘，未列入部门映射 ${rest} 艘；全船队共 ${total} 艘）${missNote}`;
   return line(body, 'WINNING 知识库 部门船队映射 fleet_dept.json × Survey Status', updatedAt());
 }
 
