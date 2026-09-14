@@ -1,31 +1,7 @@
 // Auto-generated. NK Survey Status v2 extraction + full fleet merge.
-// Updated: 2026-09-14 20:08 | Ships: 67
+// Updated: 2026-09-14 21:51 | Ships: 64
 
 const ships = {
-  "DNV_CLASSSTATUS_WINNING_AMBITION_20260901": {
-    name: "",
-    imo: "",
-    classSociety: "DNV",
-    flag: "Singapore",
-    gt: "",
-    dwt: null,
-    buildDate: "",
-    surveys: [],
-    certificates: [],
-    source: {"class_society": "DNV", "report_date": "2026-08-15", "extraction_method": "pdf_text+particulars", "confidence": "high", "particulars_source": "Survey_Status_PDF"},
-  },
-  "DNV_CLASSSTATUS_WINNING_AMBITION_20260905": {
-    name: "",
-    imo: "",
-    classSociety: "DNV",
-    flag: "Singapore",
-    gt: "",
-    dwt: null,
-    buildDate: "",
-    surveys: [],
-    certificates: [],
-    source: {"class_society": "DNV", "report_date": "2026-08-15", "extraction_method": "pdf_text+particulars", "confidence": "high", "particulars_source": "Survey_Status_PDF"},
-  },
   "SUNNY_BEYLA": {
     name: "SUNNY BEYLA",
     imo: "9364320",
@@ -674,18 +650,6 @@ const ships = {
     certificates: [{"name": "ISPS", "type": "STATUTORY", "expiry_date": "", "status": "VALID"}, {"name": "MLC", "type": "STATUTORY", "expiry_date": "", "status": "VALID"}, {"name": "IOPP", "type": "STATUTORY", "expiry_date": "2031-08-02", "status": "VALID"}, {"name": "IAPP", "type": "STATUTORY", "expiry_date": "2031-08-11", "status": "VALID"}, {"name": "ISPP", "type": "STATUTORY", "expiry_date": "2031-08-11", "status": "VALID"}, {"name": "Load Line", "type": "STATUTORY", "expiry_date": "2031-08-11", "status": "VALID"}, {"name": "Safety Construction", "type": "STATUTORY", "expiry_date": "2031-08-11", "status": "VALID"}, {"name": "Safety Equipment", "type": "STATUTORY", "expiry_date": "2031-08-11", "status": "VALID"}, {"name": "Safety Radio", "type": "STATUTORY", "expiry_date": "2031-08-11", "status": "VALID"}, {"name": "BWM", "type": "STATUTORY", "expiry_date": "2031-08-11", "status": "VALID"}, {"name": "IHM", "type": "STATUTORY", "expiry_date": "2031-08-11", "status": "VALID"}, {"name": "Cargo Gear", "type": "STATUTORY", "expiry_date": "2031-08-11", "status": "VALID"}, {"name": "AFS", "type": "STATUTORY", "expiry_date": "", "status": "VALID"}, {"name": "DOC", "type": "STATUTORY", "expiry_date": "", "status": "VALID"}, {"name": "SMC", "type": "STATUTORY", "expiry_date": "2027.05.14", "status": "VALID"}],
     source: {"class_society": "KR", "report_date": "2026-09-08", "extraction_method": "pdf_text+particulars", "confidence": "high", "particulars_source": "KR_Survey_Status_PDF"},
   },
-  "WINNING_SPIRIT_20260809_\u65e7\u7248": {
-    name: "WINNING SPIRIT 20260809 \u65e7\u7248",
-    imo: "9597824",
-    classSociety: "KR",
-    flag: "SINGAPORE",
-    gt: "",
-    dwt: null,
-    buildDate: "2011-03-28",
-    surveys: [{"type": "tail_shaft", "description": "Propeller Shaft", "due_date": "", "status": "Not Due"}, {"type": "special_survey", "description": "Next Special Survey No.", "due_date": "", "status": "Not Due"}, {"type": "intermediate_survey", "description": "Intermediate Survey", "due_date": "2029-11-11", "status": "Not Due"}, {"type": "annual_survey", "description": "Annual Survey", "due_date": "2027-11-11", "status": "Not Due"}, {"type": "boiler", "description": "No.1 Aux. Boiler Survey", "due_date": "2029-08-03", "status": "Not Due"}, {"type": "dry_docking", "description": "Docking Survey", "due_date": "2029-08-03", "last_done": "2026-08-03", "window_start": "", "window_end": "", "status": "Not Due"}],
-    certificates: [{"name": "ISPS", "type": "STATUTORY", "expiry_date": "", "status": "VALID"}, {"name": "MLC", "type": "STATUTORY", "expiry_date": "", "status": "VALID"}, {"name": "IOPP", "type": "STATUTORY", "expiry_date": "2031-08-02", "status": "VALID"}, {"name": "IAPP", "type": "STATUTORY", "expiry_date": "2031-08-11", "status": "VALID"}, {"name": "ISPP", "type": "STATUTORY", "expiry_date": "2031-08-11", "status": "VALID"}, {"name": "Load Line", "type": "STATUTORY", "expiry_date": "2031-08-11", "status": "VALID"}, {"name": "Safety Construction", "type": "STATUTORY", "expiry_date": "2031-08-11", "status": "VALID"}, {"name": "Safety Equipment", "type": "STATUTORY", "expiry_date": "2031-08-11", "status": "VALID"}, {"name": "Safety Radio", "type": "STATUTORY", "expiry_date": "2031-08-11", "status": "VALID"}, {"name": "BWM", "type": "STATUTORY", "expiry_date": "2031-08-11", "status": "VALID"}, {"name": "IHM", "type": "STATUTORY", "expiry_date": "2031-08-11", "status": "VALID"}, {"name": "Cargo Gear", "type": "STATUTORY", "expiry_date": "2031-08-11", "status": "VALID"}, {"name": "AFS", "type": "STATUTORY", "expiry_date": "", "status": "VALID"}, {"name": "DOC", "type": "STATUTORY", "expiry_date": "", "status": "VALID"}, {"name": "SMC", "type": "STATUTORY", "expiry_date": "2027.05.14", "status": "VALID"}],
-    source: {"class_society": "KR", "report_date": "2026-09-08", "extraction_method": "pdf_text", "confidence": "medium"},
-  },
   "WINNING_TEAM": {
     name: "WINNING TEAM",
     imo: "9336945",
@@ -810,6 +774,6 @@ const ships = {
 
 export const SURVEY_DATA = {
   ships,
-  lastUpdated: "2026-09-14 20:08",
-  totalShips: 67,
+  lastUpdated: "2026-09-14 21:51",
+  totalShips: 64,
 };

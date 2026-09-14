@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-09-14 20:08",
-  "total_ships": 67,
+  "last_updated": "2026-09-14 21:51",
+  "total_ships": 64,
   "ships": {
     "SUNNY_BEYLA": {
       "name": "SUNNY BEYLA",
@@ -5952,110 +5952,6 @@
       },
       "extraction_confidence": "high"
     },
-    "WINNING_SPIRIT_20260809_旧版": {
-      "name": "WINNING SPIRIT 20260809 旧版",
-      "imo": "9597824",
-      "class_society": "KR",
-      "flag": "SINGAPORE",
-      "gt": "",
-      "dwt": 179213.0,
-      "surveys": [
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft"
-        },
-        {
-          "type": "special_survey",
-          "desc": "Next Special Survey No."
-        },
-        {
-          "type": "intermediate_survey",
-          "desc": "Intermediate Survey",
-          "due_date": "2029-11-11"
-        },
-        {
-          "type": "annual_survey",
-          "desc": "Annual Survey",
-          "due_date": "2027-11-11"
-        },
-        {
-          "type": "boiler",
-          "desc": "No.1 Aux. Boiler Survey",
-          "due_date": "2029-08-03"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey",
-          "due_date": "2029-08-03",
-          "last_done": "2026-08-03"
-        }
-      ],
-      "certificates": [
-        {
-          "name": "ISPS"
-        },
-        {
-          "name": "MLC"
-        },
-        {
-          "name": "IOPP",
-          "expiry": "2031-08-02"
-        },
-        {
-          "name": "IAPP",
-          "expiry": "2031-08-11"
-        },
-        {
-          "name": "ISPP",
-          "expiry": "2031-08-11"
-        },
-        {
-          "name": "Load Line",
-          "expiry": "2031-08-11"
-        },
-        {
-          "name": "Safety Construction",
-          "expiry": "2031-08-11"
-        },
-        {
-          "name": "Safety Equipment",
-          "expiry": "2031-08-11"
-        },
-        {
-          "name": "Safety Radio",
-          "expiry": "2031-08-11"
-        },
-        {
-          "name": "BWM",
-          "expiry": "2031-08-11"
-        },
-        {
-          "name": "IHM",
-          "expiry": "2031-08-11"
-        },
-        {
-          "name": "Cargo Gear",
-          "expiry": "2031-08-11"
-        },
-        {
-          "name": "AFS"
-        },
-        {
-          "name": "DOC"
-        },
-        {
-          "name": "SMC",
-          "expiry": "2027.05.14"
-        }
-      ],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "medium"
-    },
     "SUNNY_FARANAH": {
       "name": "SUNNY FARANAH",
       "imo": "9337107",
@@ -7678,40 +7574,6 @@
         "info_90d": 4
       },
       "extraction_confidence": "medium"
-    },
-    "DNV_CLASSSTATUS_WINNING_AMBITION_20260901": {
-      "name": "",
-      "imo": "",
-      "class_society": "DNV",
-      "flag": "Singapore",
-      "gt": "",
-      "dwt": "",
-      "surveys": [],
-      "certificates": [],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
-    },
-    "DNV_CLASSSTATUS_WINNING_AMBITION_20260905": {
-      "name": "",
-      "imo": "",
-      "class_society": "DNV",
-      "flag": "Singapore",
-      "gt": "",
-      "dwt": "",
-      "surveys": [],
-      "certificates": [],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
     },
     "WINNING_ZEPHYR": {
       "name": "WINNING ZEPHYR",
