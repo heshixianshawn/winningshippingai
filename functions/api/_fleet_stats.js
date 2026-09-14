@@ -228,9 +228,11 @@ async function buildAlerts(dept, request) {
   const expired = filter(data.expired);
   const urgent = filter(data.urgent_7d);
   const warning = filter(data.warning_30d);
+  const info = filter(data.info_90d);
   const scope = dept ? `${dept}` : `全船队 ${fleetTotal()} 艘`;
   const n = uniqShips([...expired, ...urgent, ...warning]).size;
-  const body = `${scope}中，当前有 **${n}** 艘存在证书/检验到期预警：已过期 **${expired.length}** 项（涉及 ${uniqShips(expired).size} 艘）、7 天内到期 **${urgent.length}** 项、30 天内到期 **${warning.length}** 项（涉及 ${uniqShips(warning).size} 艘）`;
+  // 预警口径与站点预警数据保持一致（90 天窗口）：expired=已过期，urgent_7d=7 天内，warning_30d=8–30 天，info_90d=31–90 天
+  const body = `${scope}中，当前有 **${n}** 艘存在证书/检验到期预警：已过期 **${expired.length}** 项（涉及 ${uniqShips(expired).size} 艘）、7 天内到期 **${urgent.length}** 项、8–30 天内到期 **${warning.length}** 项（涉及 ${uniqShips(warning).size} 艘）；另有 31–90 天内到期 **${info.length}** 项（涉及 ${uniqShips(info).size} 艘）作提醒（预警口径：90 天窗口）`;
   return line(body, 'WINNING 知识库 证书/检验预警 survey_alerts.json', data.generated || '');
 }
 
