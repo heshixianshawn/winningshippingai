@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-09-09 08:30",
-  "total_ships": 65,
+  "last_updated": "2026-09-14 20:08",
+  "total_ships": 67,
   "ships": {
     "SUNNY_BEYLA": {
       "name": "SUNNY BEYLA",
@@ -6974,8 +6974,8 @@
       "alerts": {
         "expired": 0,
         "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 11
+        "warning_30d": 11,
+        "info_90d": 0
       },
       "extraction_confidence": "high"
     },
@@ -7705,6 +7705,189 @@
       "dwt": "",
       "surveys": [],
       "certificates": [],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "high"
+    },
+    "WINNING_ZEPHYR": {
+      "name": "WINNING ZEPHYR",
+      "imo": "9406520",
+      "class_society": "RINA",
+      "flag": "Singapore",
+      "gt": "90086",
+      "dwt": "180181",
+      "surveys": [
+        {
+          "type": "",
+          "desc": "Mach. Renewal",
+          "due_date": "2027-07-03",
+          "window_start": "2026-04-04",
+          "window_end": "2027-07-03"
+        },
+        {
+          "type": "",
+          "desc": "MLC Renewal",
+          "due_date": "2027-12-31",
+          "window_start": "2027-10-01",
+          "window_end": "2027-12-31"
+        },
+        {
+          "type": "",
+          "desc": "631a.03 Tailshaft Met.3",
+          "due_date": "2029-10-01"
+        },
+        {
+          "type": "",
+          "desc": "631a.03 Tailshaft Met.2 (withdrawal)",
+          "due_date": "2039-10-01"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "",
+          "expiry": "2027-07-03"
+        },
+        {
+          "name": "",
+          "expiry": "2027-07-03"
+        },
+        {
+          "name": "",
+          "expiry": "2027-07-03"
+        },
+        {
+          "name": "",
+          "expiry": "2027-07-03"
+        },
+        {
+          "name": "",
+          "expiry": "2027-07-03"
+        },
+        {
+          "name": "",
+          "expiry": "2027-07-03"
+        },
+        {
+          "name": "",
+          "expiry": "2027-07-03"
+        }
+      ],
+      "alerts": {
+        "expired": 0,
+        "urgent_7d": 0,
+        "warning_30d": 0,
+        "info_90d": 0
+      },
+      "extraction_confidence": "medium"
+    },
+    "WINNING_CREATION": {
+      "name": "WINNING CREATION",
+      "imo": "1084651",
+      "class_society": "DNV",
+      "flag": "Singapore",
+      "gt": "172517",
+      "dwt": "",
+      "surveys": [
+        {
+          "type": "",
+          "desc": "Main class annual (MC.A)",
+          "last_done": "2026-09-11",
+          "window_start": "2027-06-11",
+          "window_end": "2027-12-11"
+        },
+        {
+          "type": "",
+          "desc": "Bottom complete survey (BOT.C)",
+          "due_date": "2029-09-11",
+          "last_done": "2026-09-11"
+        }
+      ],
+      "certificates": [
+        {
+          "name": "",
+          "expiry": "2027-12-11"
+        },
+        {
+          "name": "",
+          "expiry": "2027-02-11"
+        },
+        {
+          "name": "",
+          "expiry": "2027-02-11"
+        },
+        {
+          "name": "",
+          "expiry": "2027-02-11"
+        },
+        {
+          "name": "",
+          "expiry": "2027-02-11"
+        },
+        {
+          "name": "",
+          "expiry": "2027-03-11"
+        },
+        {
+          "name": "",
+          "expiry": "2027-03-11"
+        },
+        {
+          "name": "",
+          "expiry": "2027-03-11"
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": "",
+          "expiry": "2027-02-11"
+        },
+        {
+          "name": "",
+          "expiry": "2027-02-11"
+        },
+        {
+          "name": "",
+          "expiry": "2027-02-11"
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": "",
+          "expiry": "2027-02-11"
+        },
+        {
+          "name": "",
+          "expiry": "2027-02-11"
+        },
+        {
+          "name": "",
+          "expiry": "2027-02-11"
+        },
+        {
+          "name": "",
+          "expiry": "2031-09-11"
+        },
+        {
+          "name": "",
+          "expiry": "2027-02-11"
+        },
+        {
+          "name": ""
+        },
+        {
+          "name": "",
+          "expiry": "2027-02-11"
+        }
+      ],
       "alerts": {
         "expired": 0,
         "urgent_7d": 0,
