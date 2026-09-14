@@ -36,6 +36,9 @@ export function hasFleetScope(message) {
 }
 // 非 ships 模块时，必须带明确船队语境才不会误拦（避免截胡法规类问题）
 const FLEET_CONTEXT = /(船队|全船队|WINNING|集团|公司|我们)/i;
+// 2026-09-15：单船→机务部归属提问（"WINNING CREATION 属于哪个机务部"）。
+// 仅在 ships 模块 + 出现具体船名 + 带归属词时命中，答不出（映射里没有）就交回原路径。
+const DEPT_ASK = /(机务部|部门|归属|属于|分管|归哪个部|哪个部)/;
 // 部门集合类提问（各/所有部门）
 const DEPT_ALL = /(各|所有|全部)?(个)?部门|各(机务)?部/;
 // 船级社识别词表（仅用于识别提问对象，数量一律从数据统计）
@@ -142,6 +145,11 @@ function uniqShips(items) {
 export function detectFleetStat(message, module = 'ships') {
   const q = String(message || '');
   if (!q.trim()) return null;
+  // 0) 单船→机务部归属（必须在"单船查询不拦截"之前判）
+  //    排除船级社问法（"WINNING X 属于哪个船级社"）→ 那是另一类问题，交回模型路径
+  if (module === 'ships' && SHIP_NAME.test(q) && DEPT_ASK.test(q) && !/船级社|入级/i.test(q)) {
+    return { kind: 'ship_dept', ship: extractShipName(q) };
+  }
   if (SHIP_NAME.test(q)) return null;               // 单船查询不拦截
 
   const hasCount = COUNT_WORD.test(q);
@@ -176,6 +184,25 @@ export function detectFleetStat(message, module = 'ships') {
 
 function line(body, source, updated) {
   return `${body}。（来源：${source}${updated ? '，更新于 ' + updated : ''}）\n\n${DISCLAIMER}`;
+}
+
+async function buildShipDept(shipName, request) {
+  const deptMap = await loadDeptData(request);
+  if (!deptMap || !shipName) return null;
+  const tail = shipName.trim().split(/\s+/).pop().toUpperCase();
+  const hits = Object.keys(deptMap).filter(
+    k => !k.startsWith('_') && Array.isArray(deptMap[k]) &&
+         deptMap[k].some(t => String(t).toUpperCase() === tail)
+  );
+  if (hits.length === 0) return null;   // 映射里没有 → 交回原路径（不编造）
+  const inSurvey = allShips().some(s => String(s.name).toUpperCase() === shipName);
+  const parts = hits.map(d => {
+    const n = allShips().filter(s => isInDept(s.name, d, deptMap)).length;
+    return `${d}（该部 ${n} 艘）`;
+  });
+  const caveat = inSurvey ? '' : '；⚠️ 该船目前不在 Survey Status 船名表内，仅据部门映射回答';
+  const body = `${shipName} 属于 **${parts.join('、')}**（依据：机务部船队映射 fleet_dept.json 中 ${hits[0]} 清单含船名尾词 ${tail}${caveat}）`;
+  return line(body, 'WINNING 知识库 部门船队映射 fleet_dept.json', updatedAt());
 }
 
 async function buildTotal() {
@@ -259,6 +286,7 @@ export async function buildFleetStatAnswer(request, message, module = 'ships') {
   const meta = `${module}${updated ? ' · 数据 ' + updated : ''}`;
   let reply = null;
   if (hit.kind === 'total') reply = await buildTotal();
+  else if (hit.kind === 'ship_dept') reply = await buildShipDept(hit.ship, request);
   else if (hit.kind === 'dept') reply = await buildDept(hit.dept, request);
   else if (hit.kind === 'dept_all') reply = await buildDeptAll(request);
   else if (hit.kind === 'class') reply = await buildClass(hit.classes);
