@@ -1,5 +1,5 @@
 {
-  "_说明": "机务部归属映射（2026-09-15 自动更新）：按'四部门信箱收件 + 邮件 To/Cc 字段'双判据推导（近 7 天样本，已知船命中率 62/63）；规则与验证细节见 scripts/dept_cc_rule_verify.py。 本次新增：CREATION→三部。 历史说明：机务部归属映射 2026-09-05 v2：由四部门邮箱(fleet1-4)收发规律推导(argmax)，二部19艘与权威FLEET2清单19/19一致；BRAVE(一部)/KOGON(四部30 vs 三部22)为边界值请Shawn复核。后续可随时人工调整。",
+  "_说明": "机务部归属映射（2026-09-15 自动更新）：按'四部门信箱收件 + 邮件 To/Cc 字段'双判据推导（近 7 天样本，已知船命中率 62/63）；规则与验证细节见 scripts/dept_cc_rule_verify.py。 本次新增：CREATION→三部。 历史说明：机务部归属映射 2026-09-05 v2：由四部门邮箱(fleet1-4)收发规律推导(argmax)，二部19艘与权威FLEET2清单19/19一致；BRAVE(一部)/KOGON(四部30 vs 三部22)为边界值请Shawn复核。后续可随时人工调整。 ｜ 2026-09-15 修正：SUNNY KOGON→三部（sunnykogon@ + Cc fleet3，31封）；四部原「KOGON」为裸歧义名（实为 WINNING KOGON，物流船，不在64艘管理船队内）已移除",
   "一部": [
     "ANGEL",
     "BEYLA",
@@ -60,12 +60,12 @@
     "TEAM",
     "TIMES",
     "UNIVERSE",
-    "CREATION"
+    "CREATION",
+    "SUNNY KOGON"
   ],
   "四部": [
     "BOKE",
     "JOY",
-    "KOGON",
     "QUEEN",
     "STAR",
     "VISION",
