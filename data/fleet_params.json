@@ -1,7 +1,7 @@
 {
  "version": "1.0",
- "generated": "2026-09-05",
- "count": 63,
+ "generated": "2026-09-15T09:00:55.992948",
+ "count": 64,
  "source": "船舶信息统计2026.xlsx (63艘口径, 2026-09-05) + CCS 船舶录",
  "ships": {
   "9325001": {
@@ -2155,6 +2155,40 @@
    "ccs_no": "23G0811",
    "next_special_survey": "2031-08-11",
    "source": "CCS船舶录 internationalShipDetail?ccsno=23G0811 (2026-08-23)"
+  },
+  "1084651": {
+   "id": 64,
+   "name_en": "WINNING CREATION",
+   "name_cn": "韦立创造",
+   "name_full": "WINNING CREATION 韦立创造",
+   "imo": "1084651",
+   "call_sign": "9VMD3",
+   "owner": "WINNING CREATION SHIPPING PTE. LTD.",
+   "flag": "Singapore",
+   "class_notation": "DNV",
+   "manager": "QINGDAO XINGTONG INTERNATIONAL SHIPS MANAGEMENT CO., LTD",
+   "hull_no": "",
+   "built": "2026-01-08",
+   "builder": "",
+   "takeover_date": "",
+   "gt": "172517",
+   "nt": "",
+   "dwt": "",
+   "light_ton": "",
+   "me_make": "",
+   "me_model": "",
+   "ae_make": "",
+   "ae_model": "",
+   "boiler_make": "",
+   "boiler_model": "",
+   "bwt_make": "",
+   "bwt_model": "",
+   "scrubber_make": "",
+   "scrubber_model": "",
+   "shaft_gen": "",
+   "sisters": "",
+   "ex_name": "",
+   "ex_owner": ""
   }
  }
 }
