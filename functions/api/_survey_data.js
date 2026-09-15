@@ -1,5 +1,5 @@
 // Auto-generated. NK Survey Status v2 extraction + full fleet merge.
-// Updated: 2026-09-14 21:51 | Ships: 64
+// Updated: 2026-09-15 09:00 | Ships: 64
 
 const ships = {
   "SUNNY_BEYLA": {
@@ -304,7 +304,7 @@ const ships = {
   },
   "WINNING_AMBITION": {
     name: "WINNING AMBITION",
-    imo: "1037393",
+    imo: "1037397",
     classSociety: "DNV",
     flag: "Singapore",
     gt: "174863",
@@ -312,7 +312,7 @@ const ships = {
     buildDate: "2026-06-16",
     surveys: [{"type": "boiler", "description": "锅炉", "due_date": "", "status": "Not Due"}, {"type": "annual_survey", "description": "Class Annual Survey", "due_date": "2027-03-16", "status": "Not Due"}, {"type": "intermediate_survey", "description": "Class Intermediate Survey", "due_date": "2028-03-16", "status": "Not Due"}, {"type": "special_survey", "description": "Class Special Survey for", "due_date": "2031-03-16", "status": "Not Due"}, {"type": "tail_shaft", "description": "尾轴检验", "due_date": "2036-06-15", "status": "Not Due"}, {"type": "dry_docking", "description": "BTS (船底外部检验)", "due_date": "2029-06-16", "last_done": "2026-06-16", "status": "Not Due", "note": "按 DNV Class Status 2026-09-05: 上次2026-06-16交付坞检(青岛北海), 下次2029-06-16"}],
     certificates: [{"name": "ISPS", "type": "STATUTORY", "expiry_date": "", "status": "VALID"}, {"name": "ISPP", "type": "STATUTORY", "expiry_date": "", "status": "VALID", "note": "旧数据残留，需以最新报告核实"}, {"name": "Load Line", "type": "STATUTORY", "expiry_date": "", "status": "VALID"}, {"name": "Safety Construction", "type": "STATUTORY", "expiry_date": "2031-06-16", "status": "VALID", "note": "旧数据残留，需以最新报告核实"}, {"name": "Safety Equipment", "type": "STATUTORY", "expiry_date": "2031-06-16", "status": "VALID", "note": "旧数据残留，需以最新报告核实"}, {"name": "Safety Radio", "type": "STATUTORY", "expiry_date": "2031-06-16", "status": "VALID", "note": "旧数据残留，需以最新报告核实"}, {"name": "BWM", "type": "STATUTORY", "expiry_date": "", "status": "VALID"}, {"name": "IHM", "type": "STATUTORY", "expiry_date": "2031-06-15", "status": "VALID"}, {"name": "Cargo Gear", "type": "STATUTORY", "expiry_date": "", "status": "VALID", "note": "旧数据残留，需以最新报告核实"}, {"name": "AFS", "type": "STATUTORY", "expiry_date": "", "status": "VALID"}],
-    source: {"class_society": "DNV", "report_date": "2026-09-08", "extraction_method": "pdf_text+particulars", "confidence": "high", "particulars_source": "DNV_Survey_Status_PDF"},
+    source: {"class_society": "DNV", "report_date": "2026-09-08", "extraction_method": "pdf_text+particulars", "confidence": "high", "particulars_source": "DNV_Survey_Status_PDF", "note": "2026-09-15 修正 IMO: 1037393→1037397（依据 DNV Class Status Report 2026-09-05 原文）"},
   },
   "WINNING_ANGEL": {
     name: "WINNING ANGEL",
@@ -774,6 +774,6 @@ const ships = {
 
 export const SURVEY_DATA = {
   ships,
-  lastUpdated: "2026-09-14 21:51",
+  lastUpdated: "2026-09-15 09:00",
   totalShips: 64,
 };
