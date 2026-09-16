@@ -1,7 +1,7 @@
 {
  "generated": "2026-09-16",
  "source": "单船档案 PSC-FSC检查记录 sheet（TokyoMOU/APCIS 等来源）",
- "count": 694,
+ "count": 692,
  "ship_count": 60,
  "ships": {
   "SUNNY BEYLA": {
@@ -2392,7 +2392,7 @@
   },
   "SUNNY KEROUANE": {
    "imo": "",
-   "count": 18,
+   "count": 17,
    "records": [
     {
      "date": "2026-07-27",
@@ -2409,21 +2409,6 @@
      "note": "来源:PSC Inspection Report at Yantai 20260727.pdf|FP:8e42b164",
      "defects_official": 3,
      "defects_source": "TokyoMOU官方"
-    },
-    {
-     "date": "2026-07-13",
-     "port": "qingdao",
-     "port_raw": "青岛",
-     "type": "PSC",
-     "authority": "",
-     "officer": "",
-     "defects": null,
-     "detained": false,
-     "codes": "",
-     "codes_uncertain": false,
-     "rectified": "",
-     "note": "来源:不符合规定情况报告表.pdf|FP:512bcf19",
-     "defects_source": "档案(无TMOU对照)"
     },
     {
      "date": "2025-05-01",
@@ -3690,7 +3675,8 @@
      "codes_uncertain": false,
      "rectified": "",
      "note": "来源:PSC REPORT 2025.12.30-Sunny Morebaya.pdf|FP:8e8bdbe6",
-     "defects_source": "档案(无TMOU对照)"
+     "defects_official": 2,
+     "defects_source": "TokyoMOU官方"
     },
     {
      "date": "2022-08-04",
@@ -3705,7 +3691,8 @@
      "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship",
-     "defects_source": "档案(无TMOU对照)"
+     "defects_official": 2,
+     "defects_source": "TokyoMOU官方"
     },
     {
      "date": "2018-05-30",
@@ -3720,7 +3707,8 @@
      "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship",
-     "defects_source": "档案(无TMOU对照)"
+     "defects_official": 3,
+     "defects_source": "TokyoMOU官方"
     },
     {
      "date": "2017-06-20",
@@ -3735,7 +3723,8 @@
      "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship",
-     "defects_source": "档案(无TMOU对照)"
+     "defects_official": 0,
+     "defects_source": "TokyoMOU官方"
     },
     {
      "date": "2016-09-07",
@@ -3750,7 +3739,8 @@
      "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship",
-     "defects_source": "档案(无TMOU对照)"
+     "defects_official": 0,
+     "defects_source": "TokyoMOU官方"
     },
     {
      "date": "2015-11-12",
@@ -3765,7 +3755,8 @@
      "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship",
-     "defects_source": "档案(无TMOU对照)"
+     "defects_official": 0,
+     "defects_source": "TokyoMOU官方"
     },
     {
      "date": "2015-05-12",
@@ -3780,7 +3771,8 @@
      "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship",
-     "defects_source": "档案(无TMOU对照)"
+     "defects_official": 0,
+     "defects_source": "TokyoMOU官方"
     },
     {
      "date": "2014-12-09",
@@ -3795,7 +3787,8 @@
      "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship",
-     "defects_source": "档案(无TMOU对照)"
+     "defects_official": 0,
+     "defects_source": "TokyoMOU官方"
     },
     {
      "date": "2014-06-03",
@@ -3810,7 +3803,8 @@
      "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship",
-     "defects_source": "档案(无TMOU对照)"
+     "defects_official": 0,
+     "defects_source": "TokyoMOU官方"
     }
    ]
   },
@@ -4062,7 +4056,7 @@
   },
   "SUNNY RIVER": {
    "imo": "",
-   "count": 17,
+   "count": 16,
    "records": [
     {
      "date": "2026-01-13",
@@ -4073,27 +4067,12 @@
      "officer": "",
      "defects": 2,
      "detained": false,
-     "codes": "",
+     "codes": "10127 POSITION FIXING INTERVAL IN ECDIS NOT PERFORMED ACCORDING TO VOYAGE\n10109 THE STERN LIGHT(LOWER) FOUND OUT OF WORK",
      "codes_uncertain": false,
      "rectified": "",
-     "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship",
+     "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship|含PDF提取的缺陷代码",
      "defects_official": 2,
      "defects_source": "TokyoMOU官方"
-    },
-    {
-     "date": "2025-02-05",
-     "port": "yantai",
-     "port_raw": "烟台",
-     "type": "PSC",
-     "authority": "Address",
-     "officer": "",
-     "defects": 2,
-     "detained": false,
-     "codes": "10127 POSITION FIXING l.NTERVAL fN ECDIS NOT PERFORMED ACCORDING TO\n10109 THE STERN LIGHT(LOWER) F01JND om OF WORK",
-     "codes_uncertain": true,
-     "rectified": "",
-     "note": "来源:SUNNY RIVER  PSC INSPECTION REPORT.pdf|FP:8fc332d7",
-     "defects_source": "档案(无TMOU对照)"
     },
     {
      "date": "2024-06-11",
@@ -6254,7 +6233,8 @@
      "codes_uncertain": false,
      "rectified": "",
      "note": "来源:烟台PSC检查报告-2026.08.18.pdf|FP:772b1cc9",
-     "defects_source": "档案(无TMOU对照)"
+     "defects_official": 3,
+     "defects_source": "TokyoMOU官方"
     },
     {
      "date": "2025-07-15",
@@ -6269,7 +6249,8 @@
      "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship",
-     "defects_source": "档案(无TMOU对照)"
+     "defects_official": 1,
+     "defects_source": "TokyoMOU官方"
     },
     {
      "date": "2023-07-25",
@@ -6284,7 +6265,8 @@
      "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship",
-     "defects_source": "档案(无TMOU对照)"
+     "defects_official": 2,
+     "defects_source": "TokyoMOU官方"
     },
     {
      "date": "2021-03-25",
@@ -6299,7 +6281,8 @@
      "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship",
-     "defects_source": "档案(无TMOU对照)"
+     "defects_official": 1,
+     "defects_source": "TokyoMOU官方"
     },
     {
      "date": "2019-09-16",
@@ -6314,7 +6297,8 @@
      "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship",
-     "defects_source": "档案(无TMOU对照)"
+     "defects_official": 2,
+     "defects_source": "TokyoMOU官方"
     },
     {
      "date": "2018-10-12",
@@ -6329,7 +6313,8 @@
      "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship",
-     "defects_source": "档案(无TMOU对照)"
+     "defects_official": 2,
+     "defects_source": "TokyoMOU官方"
     },
     {
      "date": "2016-12-29",
@@ -6344,7 +6329,8 @@
      "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship",
-     "defects_source": "档案(无TMOU对照)"
+     "defects_official": 0,
+     "defects_source": "TokyoMOU官方"
     },
     {
      "date": "2015-03-13",
@@ -6359,7 +6345,8 @@
      "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship",
-     "defects_source": "档案(无TMOU对照)"
+     "defects_official": 0,
+     "defects_source": "TokyoMOU官方"
     },
     {
      "date": "2014-05-16",
@@ -6374,7 +6361,8 @@
      "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship",
-     "defects_source": "档案(无TMOU对照)"
+     "defects_official": 0,
+     "defects_source": "TokyoMOU官方"
     }
    ]
   },
@@ -11139,7 +11127,9 @@
      "codes_uncertain": false,
      "rectified": "",
      "note": "来源:PSC REPORT_2026-08-25.pdf (Form B OCR 2026-08-31回填)",
-     "defects_source": "档案(无TMOU对照)"
+     "defects_official": 3,
+     "defects_official_date": "2026-08-24",
+     "defects_source": "TokyoMOU官方(官方登记 2026-08-24)"
     },
     {
      "date": "2025-09-19",
@@ -11632,7 +11622,7 @@
     "port": "Yantai",
     "defects": 2,
     "detained": false,
-    "codes": ""
+    "codes": "10127 POSITION FIXING INTERVAL IN ECDIS NOT PERFORMED ACCORDING TO VOYAGE\n10109 THE STERN LIGHT(LOWER) FOUND OUT OF WORK"
    },
    {
     "ship": "SUNNY FARANAH",
@@ -11713,14 +11703,6 @@
     "defects": 2,
     "detained": false,
     "codes": ""
-   },
-   {
-    "ship": "SUNNY RIVER",
-    "date": "2025-02-05",
-    "port": "yantai",
-    "defects": 2,
-    "detained": false,
-    "codes": "10127 POSITION FIXING l.NTERVAL fN ECDIS NOT PERFORMED ACCORDING TO\n10109 THE STERN LIGHT(LOWER) F01JND om OF WORK"
    },
    {
     "ship": "WINNING EXCELLENCE",
@@ -13234,14 +13216,6 @@
    }
   ],
   "qingdao": [
-   {
-    "ship": "SUNNY KEROUANE",
-    "date": "2026-07-13",
-    "port": "qingdao",
-    "defects": null,
-    "detained": false,
-    "codes": ""
-   },
    {
     "ship": "WINNING BRIGHT",
     "date": "2025-05-23",
@@ -17144,10 +17118,10 @@
  },
  "stats": {
   "by_port": {
-   "yantai": 162,
+   "yantai": 161,
    "port hedland, wa": 69,
    "tianjin": 27,
-   "qingdao": 26,
+   "qingdao": 25,
    "caofeidian": 21,
    "gladstone, qld": 17,
    "rizhao": 17,
@@ -17215,15 +17189,15 @@
    "dalian": 1,
    "董家口": 1
   },
-  "this_year": 43,
+  "this_year": 42,
   "detained_total": 17,
   "with_codes": 25,
-  "codes_uncertain": 4,
+  "codes_uncertain": 3,
   "pdf_enriched": 0,
   "pdf_files_matched": 2,
-  "tmou_reconciled": 673,
+  "tmou_reconciled": 692,
   "tmou_mismatches": [],
-  "tmou_unmatched": 21
+  "tmou_unmatched": 0
  },
  "missing": []
 }
