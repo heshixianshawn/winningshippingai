@@ -18,6 +18,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -31,6 +32,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -44,6 +46,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -57,6 +60,7 @@
      "defects": 10,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -70,6 +74,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -83,6 +88,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -96,6 +102,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -109,6 +116,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -122,6 +130,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     }
@@ -141,6 +150,7 @@
      "defects": 4,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -154,6 +164,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -167,6 +178,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -180,6 +192,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -193,6 +206,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -206,6 +220,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -219,6 +234,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -232,6 +248,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -245,6 +262,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -258,6 +276,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -271,6 +290,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -284,6 +304,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     }
@@ -303,6 +324,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -316,6 +338,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -329,6 +352,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -342,6 +366,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -355,6 +380,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -368,6 +394,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -381,6 +408,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -394,6 +422,7 @@
      "defects": 5,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -407,6 +436,7 @@
      "defects": 9,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -420,6 +450,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     }
@@ -439,6 +470,7 @@
      "defects": 2,
      "detained": false,
      "codes": "05110 DURING INSPECTION. [te $ Hs 3% Q2\n10109 STERN LIGHT HORIZONTAL SECTOR VISIBILITY NOT AS REQUIRED BY",
+     "codes_uncertain": true,
      "rectified": "",
      "note": "来源:PSC REPORT 20260129.pdf|FP:71d32ce3"
     },
@@ -452,6 +484,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -465,6 +498,7 @@
      "defects": 5,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -478,6 +512,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -491,6 +526,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -504,6 +540,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -517,6 +554,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -530,6 +568,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -543,6 +582,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -556,6 +596,7 @@
      "defects": 7,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -569,6 +610,7 @@
      "defects": 5,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -582,6 +624,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -595,6 +638,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     }
@@ -614,6 +658,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -627,6 +672,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -640,6 +686,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -653,6 +700,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -666,6 +714,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -679,6 +728,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -692,6 +742,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -705,6 +756,7 @@
      "defects": 5,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -718,6 +770,7 @@
      "defects": 7,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     }
@@ -737,6 +790,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -750,6 +804,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -763,6 +818,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -776,6 +832,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -789,6 +846,7 @@
      "defects": 5,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -802,6 +860,7 @@
      "defects": 6,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -815,6 +874,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -828,6 +888,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -841,6 +902,7 @@
      "defects": 4,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -854,6 +916,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -867,6 +930,7 @@
      "defects": 4,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -880,6 +944,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -893,6 +958,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -906,6 +972,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -919,6 +986,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -932,6 +1000,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -945,6 +1014,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -958,6 +1028,7 @@
      "defects": 5,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -971,6 +1042,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -984,6 +1056,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -997,6 +1070,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -1010,6 +1084,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     }
@@ -1029,6 +1104,7 @@
      "defects": 1,
      "detained": false,
      "codes": "11110 BLOCK NOT LOWERED TO SET ON THE DAVIT A gah |",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:SUNNY FARANAH  PSC 烟台港检查.pdf|FP:08f6a5f6"
     },
@@ -1042,6 +1118,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -1055,6 +1132,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -1068,6 +1146,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -1081,6 +1160,7 @@
      "defects": 4,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -1094,6 +1174,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -1107,6 +1188,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -1120,6 +1202,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -1133,6 +1216,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -1146,6 +1230,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -1159,6 +1244,7 @@
      "defects": 6,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -1172,6 +1258,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -1185,6 +1272,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     }
@@ -1204,6 +1292,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:SUNNY FRIA PSC 检查.pdf|FP:7978d1ff | 无FORM B=零缺陷(Form A 18 deficiencies: no)"
     },
@@ -1217,6 +1306,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -1230,6 +1320,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -1243,6 +1334,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -1256,6 +1348,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -1269,6 +1362,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -1282,6 +1376,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -1295,6 +1390,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -1308,6 +1404,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -1321,6 +1418,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -1334,6 +1432,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -1347,6 +1446,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -1360,6 +1460,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     }
@@ -1379,6 +1480,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -1392,6 +1494,7 @@
      "defects": 7,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -1405,6 +1508,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -1418,6 +1522,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -1431,6 +1536,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -1444,6 +1550,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -1457,6 +1564,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -1470,6 +1578,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -1483,6 +1592,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -1496,6 +1606,7 @@
      "defects": 4,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -1509,6 +1620,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     }
@@ -1528,6 +1640,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -1541,6 +1654,7 @@
      "defects": 5,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -1554,6 +1668,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -1567,6 +1682,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -1580,6 +1696,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -1593,6 +1710,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -1606,6 +1724,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -1619,6 +1738,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -1632,6 +1752,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -1645,6 +1766,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -1658,6 +1780,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -1671,6 +1794,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -1684,6 +1808,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -1697,6 +1822,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -1710,6 +1836,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -1723,6 +1850,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -1736,6 +1864,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -1749,6 +1878,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -1762,6 +1892,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -1775,6 +1906,7 @@
      "defects": 11,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -1788,6 +1920,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -1801,6 +1934,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -1814,6 +1948,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -1827,6 +1962,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -1840,6 +1976,7 @@
      "defects": 4,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -1853,6 +1990,7 @@
      "defects": 4,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -1866,6 +2004,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     }
@@ -1885,6 +2024,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -1898,6 +2038,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -1911,6 +2052,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -1924,6 +2066,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -1937,6 +2080,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -1950,6 +2094,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     }
@@ -1969,6 +2114,7 @@
      "defects": 3,
      "detained": false,
      "codes": "01333 WATER ON 2026.07.13 NOT CONDUCTED AND RECORDED ACCORDING TO L\n03105 ACCESS HATCH COVER(FORE) GASKET FOR NO.3 CARGO HOLD FOUND\n10109 FORE MAST HEAD LIGHT(LOWER) OUT OF ORDER",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:PSC Inspection Report at Yantai 20260727.pdf|FP:8e42b164"
     },
@@ -1982,6 +2128,7 @@
      "defects": null,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:不符合规定情况报告表.pdf|FP:512bcf19"
     },
@@ -1995,6 +2142,7 @@
      "defects": 14,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -2008,6 +2156,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -2021,6 +2170,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -2034,6 +2184,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -2047,6 +2198,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -2060,6 +2212,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -2073,6 +2226,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -2086,6 +2240,7 @@
      "defects": 8,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -2099,6 +2254,7 @@
      "defects": 5,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -2112,6 +2268,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -2125,6 +2282,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -2138,6 +2296,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -2151,6 +2310,7 @@
      "defects": 9,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -2164,6 +2324,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -2177,6 +2338,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -2190,6 +2352,7 @@
      "defects": 6,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     }
@@ -2209,6 +2372,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -2222,6 +2386,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -2235,6 +2400,7 @@
      "defects": 4,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -2248,6 +2414,7 @@
      "defects": 5,
      "detained": true,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -2261,6 +2428,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -2274,6 +2442,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -2287,6 +2456,7 @@
      "defects": 11,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -2300,6 +2470,7 @@
      "defects": 5,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -2313,6 +2484,7 @@
      "defects": 5,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -2326,6 +2498,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -2339,6 +2512,7 @@
      "defects": 6,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -2352,6 +2526,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -2365,6 +2540,7 @@
      "defects": 4,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -2378,6 +2554,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     }
@@ -2397,6 +2574,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -2410,6 +2588,7 @@
      "defects": 4,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -2423,6 +2602,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -2436,6 +2616,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -2449,6 +2630,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -2462,6 +2644,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -2475,6 +2658,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -2488,6 +2672,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -2501,6 +2686,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     }
@@ -2517,11 +2703,12 @@
      "type": "PSC",
      "authority": "",
      "officer": "",
-     "defects": 4,
+     "defects": 3,
      "detained": false,
-     "codes": "11101 DAMAGED\n03105 THE GASKET OF ESCAPE HATCH COVER FOR ELEVATOR TRUNK\n93105 HARDENED AND DAMAGED a 图\n07109 THE PRESSURE GAUGE RANGE(0-0.4MPA) OF MANIFOLD PIPE FOR FIXED",
+     "codes": "11101 THE BUOYANT LIFELINE AROUND THE OUTSIDE OF LIFEBOAT(S) DAMAGED\n03105 THE GASKET OF ESCAPE HATCH COVER FOR ELEVATOR TRUNK HARDENED AND DAMAGED\n07109 THE PRESSURE GAUGE RANGE(0-0.4MPA) OF MANIFOLD PIPE FOR FIXED CO2 FIRE-EXTINGUISHING SYSTEM LESS THAN WORKING PRESSURE",
+     "codes_uncertain": true,
      "rectified": "",
-     "note": "来源:S' Labe 烟台PSC检查20260908.pdf|FP:7de8dc95"
+     "note": "来源:S' Labe 烟台PSC检查20260908.pdf|FP:7de8dc95 | 2026-09-16 复核：按原件 Form B 更正为 3 条（原 OCR 幻影缺陷 93105 已剔除）"
     },
     {
      "date": "2024-01-03",
@@ -2533,6 +2720,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -2546,6 +2734,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -2559,6 +2748,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -2572,6 +2762,7 @@
      "defects": 9,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -2585,6 +2776,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -2598,6 +2790,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -2611,6 +2804,7 @@
      "defects": 5,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -2624,6 +2818,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     }
@@ -2643,6 +2838,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -2656,6 +2852,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -2669,6 +2866,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -2682,6 +2880,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -2695,6 +2894,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -2708,6 +2908,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -2721,6 +2922,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -2734,6 +2936,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -2747,6 +2950,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -2760,6 +2964,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -2773,6 +2978,7 @@
      "defects": 5,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -2786,6 +2992,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -2799,6 +3006,7 @@
      "defects": 4,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     }
@@ -2818,6 +3026,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -2831,6 +3040,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -2844,6 +3054,7 @@
      "defects": 12,
      "detained": true,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -2857,6 +3068,7 @@
      "defects": 6,
      "detained": true,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -2870,6 +3082,7 @@
      "defects": 4,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -2883,6 +3096,7 @@
      "defects": 6,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -2896,6 +3110,7 @@
      "defects": 4,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -2909,6 +3124,7 @@
      "defects": 4,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -2922,6 +3138,7 @@
      "defects": 4,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -2935,6 +3152,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -2948,6 +3166,7 @@
      "defects": 15,
      "detained": true,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -2961,6 +3180,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -2974,6 +3194,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -2987,6 +3208,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -3000,6 +3222,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     }
@@ -3019,6 +3242,7 @@
      "defects": 2,
      "detained": false,
      "codes": "04103 ONE EMERGENCY LIGHT FOR EMERGENCY Pe hie 01] f HFK (01 E=]\n11119 ECR NOT FIT ENGINEERS ON DUTY (A 台海",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:PSC REPORT 2025.12.30-Sunny Morebaya.pdf|FP:8e8bdbe6"
     },
@@ -3032,6 +3256,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -3045,6 +3270,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -3058,6 +3284,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -3071,6 +3298,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -3084,6 +3312,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -3097,6 +3326,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -3110,6 +3340,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -3123,6 +3354,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     }
@@ -3142,6 +3374,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -3155,6 +3388,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -3168,6 +3402,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -3181,6 +3416,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -3194,6 +3430,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -3207,6 +3444,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -3220,6 +3458,7 @@
      "defects": 4,
      "detained": true,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -3233,6 +3472,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -3246,6 +3486,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -3259,6 +3500,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -3272,6 +3514,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -3285,6 +3528,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -3298,6 +3542,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -3311,6 +3556,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -3324,6 +3570,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     }
@@ -3343,6 +3590,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -3356,6 +3604,7 @@
      "defects": 2,
      "detained": false,
      "codes": "10127 POSITION FIXING l.NTERVAL fN ECDIS NOT PERFORMED ACCORDING TO\n10109 THE STERN LIGHT(LOWER) F01JND om OF WORK",
+     "codes_uncertain": true,
      "rectified": "",
      "note": "来源:SUNNY RIVER  PSC INSPECTION REPORT.pdf|FP:8fc332d7"
     },
@@ -3369,6 +3618,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -3382,6 +3632,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -3395,6 +3646,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -3408,6 +3660,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -3421,6 +3674,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -3434,6 +3688,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -3447,6 +3702,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -3460,6 +3716,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -3473,6 +3730,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -3486,6 +3744,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -3499,6 +3758,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -3512,6 +3772,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -3525,6 +3786,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -3538,6 +3800,7 @@
      "defects": 5,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -3551,6 +3814,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     }
@@ -3570,6 +3834,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -3583,6 +3848,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -3596,6 +3862,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -3609,6 +3876,7 @@
      "defects": 5,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -3622,6 +3890,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -3635,6 +3904,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -3648,6 +3918,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -3661,6 +3932,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -3674,6 +3946,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     }
@@ -3693,6 +3966,7 @@
      "defects": 3,
      "detained": false,
      "codes": "14602 VERIFICATION OF IMO NOx EMISSION CONTROL - NO ENTRIES OF\n11117 THE BRACKET FOR SELF-IGNITING LIGHT OF LIFEBUOY ON BOAT\n07110 FIXED LOCAL APPLICATION FIRE-FIGHTING SYSTEM - FRESH WATER",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:S.sailor烟台PSC检查记录20260805.pdf|FP:2ba3de7e"
     },
@@ -3706,6 +3980,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -3719,6 +3994,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -3732,6 +4008,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -3745,6 +4022,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -3758,6 +4036,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -3771,6 +4050,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -3784,6 +4064,7 @@
      "defects": 5,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     }
@@ -3803,6 +4084,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -3816,6 +4098,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -3829,6 +4112,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -3842,6 +4126,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -3855,6 +4140,7 @@
      "defects": 4,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -3868,6 +4154,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -3881,6 +4168,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -3894,6 +4182,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -3907,6 +4196,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -3920,6 +4210,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -3933,6 +4224,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -3946,6 +4238,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -3959,6 +4252,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -3972,6 +4266,7 @@
      "defects": 13,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -3985,6 +4280,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -3998,6 +4294,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -4011,6 +4308,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -4024,6 +4322,7 @@
      "defects": 6,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     }
@@ -4043,6 +4342,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -4056,6 +4356,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -4069,6 +4370,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -4082,6 +4384,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -4095,6 +4398,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -4108,6 +4412,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -4121,6 +4426,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -4134,6 +4440,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     }
@@ -4153,6 +4460,7 @@
      "defects": 3,
      "detained": false,
      "codes": "10109 THE AFTER ANCHOR LIGHT(LOWER) OUT OF ORDER\n07116 THE INSPECTION HATCH COVER ON GALLEY VENTILATOR BROKEN (ft ¢\n11113 THE REMOTE RELEASE WIRE FOR RESCUE BOAT LAUNCHING",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:S'star-烟台PSC检查报告 2026.06.25.pdf|FP:9a963d4f"
     },
@@ -4166,6 +4474,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -4179,6 +4488,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -4192,6 +4502,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -4205,6 +4516,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -4218,6 +4530,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -4231,6 +4544,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -4244,6 +4558,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -4257,6 +4572,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     }
@@ -4276,6 +4592,7 @@
      "defects": 4,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -4289,6 +4606,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -4302,6 +4620,7 @@
      "defects": 5,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -4315,6 +4634,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -4328,6 +4648,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -4341,6 +4662,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -4354,6 +4676,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -4367,6 +4690,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -4380,6 +4704,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -4393,6 +4718,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -4406,6 +4732,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -4419,6 +4746,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -4432,6 +4760,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -4445,6 +4774,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -4458,6 +4788,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -4471,6 +4802,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -4484,6 +4816,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -4497,6 +4830,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -4510,6 +4844,7 @@
      "defects": 8,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -4523,6 +4858,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -4536,6 +4872,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -4549,6 +4886,7 @@
      "defects": 10,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -4562,6 +4900,7 @@
      "defects": 13,
      "detained": true,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -4575,6 +4914,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     }
@@ -4594,6 +4934,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -4607,6 +4948,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -4620,6 +4962,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -4633,6 +4976,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -4646,6 +4990,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -4659,6 +5004,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -4672,6 +5018,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -4685,6 +5032,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -4698,6 +5046,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -4711,6 +5060,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -4724,6 +5074,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     }
@@ -4743,6 +5094,7 @@
      "defects": 1,
      "detained": false,
      "codes": "16106 THE ADDITIONAL SECURITY DRILL NOT CONDUCTED WITHIN ONE WEEK AFTER CREW CHANGED MORE THAN 25% ON 17",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:PSC REPORT-2026.08.18.pdf|FP:781a1522"
     },
@@ -4756,6 +5108,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -4769,6 +5122,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -4782,6 +5136,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -4795,6 +5150,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -4808,6 +5164,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -4821,6 +5178,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -4834,6 +5192,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -4847,6 +5206,7 @@
      "defects": 5,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     }
@@ -4866,6 +5226,7 @@
      "defects": 2,
      "detained": false,
      "codes": "14811 BALLAST WATER MANAGEMENT SYSTEM FOUND LEAKING\n03105 ORDER DURING INSPECTION",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:WINNING CONFIDENCE---PSC 黄骅检查报告2026.06.11.pdf|FP:15bf23e8"
     },
@@ -4879,6 +5240,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -4892,6 +5254,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -4905,6 +5268,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -4918,6 +5282,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -4931,6 +5296,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -4944,6 +5310,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -4957,6 +5324,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -4970,6 +5338,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     }
@@ -4989,6 +5358,7 @@
      "defects": 2,
      "detained": false,
      "codes": "04103 THE EMERGENCY LIGHTING FOR THE STOWAGE POSITION FOR\n03108 DURE DUE TO THE SEAL RUBBER PEELED OFF",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:WINNING DILIGENCE  PSC REPORT 20260128.pdf|FP:1f92d5ed"
     },
@@ -5002,6 +5372,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -5015,6 +5386,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -5028,6 +5400,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -5041,6 +5414,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -5054,6 +5428,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -5067,6 +5442,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -5080,6 +5456,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -5093,6 +5470,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -5106,6 +5484,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     }
@@ -5125,6 +5504,7 @@
      "defects": 3,
      "detained": false,
      "codes": "18418 THE BRACKET FOR STERN MOORING WIENCH(S) CLUTCH FOUND\n04103 ILLUMINATE THE LAUNCHING WATER AREA DUE TO THE SWIVEL\n03105 PORTSIDE OF NO.5 CARGO HATCH COVER(AFT) - SEALING PACKING",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:烟台PSC检查报告-2026.08.18.pdf|FP:772b1cc9"
     },
@@ -5138,6 +5518,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -5151,6 +5532,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -5164,6 +5546,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -5177,6 +5560,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -5190,6 +5574,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -5203,6 +5588,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -5216,6 +5602,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -5229,6 +5616,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     }
@@ -5245,11 +5633,12 @@
      "type": "PSC",
      "authority": "",
      "officer": "",
-     "defects": 1,
+     "defects": 3,
      "detained": false,
-     "codes": "18424 ABOVE GENERATOR DETACHED",
+     "codes": "18424 HEAT INSULATION MATERIAL ON ONE SECTION STEAM LINE(20CM) DAMAGED\n07115 FIRE DAMPER FOR AIR CONDITIONER SUPPLY DUCT ON D-DECK HARD TO OPERATE\n10109 PORTSIDE SIDELIGHT (UPPER) AND MASTHEAD LIGHT(UPPER) UNLIT",
+     "codes_uncertain": false,
      "rectified": "",
-     "note": "来源:MV Winning Excellence--PSC REPORT YANTAI 20260227.pdf|FP:e6a951e1"
+     "note": "来源:MV Winning Excellence--PSC REPORT YANTAI 20260227.pdf|FP:e6a951e1 | 2026-09-16 复核：原件重提取为 3 条（原 1 条为漏计）"
     },
     {
      "date": "2025-01-15",
@@ -5261,6 +5650,7 @@
      "defects": 5,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -5274,6 +5664,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -5287,6 +5678,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -5300,6 +5692,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -5313,6 +5706,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -5326,6 +5720,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -5339,6 +5734,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -5352,6 +5748,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -5365,6 +5762,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -5378,6 +5776,7 @@
      "defects": 4,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -5391,6 +5790,7 @@
      "defects": 3,
      "detained": true,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -5404,6 +5804,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -5417,6 +5818,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -5430,6 +5832,7 @@
      "defects": 2,
      "detained": true,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -5443,6 +5846,7 @@
      "defects": 4,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -5456,6 +5860,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     }
@@ -5475,6 +5880,7 @@
      "defects": 2,
      "detained": false,
      "codes": "11101 ONE SET OF SAFETY HARNESS DEFECTIVE IN STBD L/B\n04118 PORTABLE GAS DETECTORS ON BOARD UNABLE TO MEASURE CARBON",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:PSC RPT 20260817.pdf|FP:637c1e45"
     },
@@ -5488,6 +5894,7 @@
      "defects": 4,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -5501,6 +5908,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -5514,6 +5922,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -5527,6 +5936,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -5540,6 +5950,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -5553,6 +5964,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -5566,6 +5978,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     }
@@ -5585,6 +5998,7 @@
      "defects": 1,
      "detained": false,
      "codes": "11101 THE PAINTER NOT CONNECTED WITH THE QUICK RELEASE UNIT OF RESCUE BOAT",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:W'GRACE PSC检查报告20260624宁波港.pdf|FP:c86b3b54"
     },
@@ -5598,6 +6012,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -5611,6 +6026,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -5624,6 +6040,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -5637,6 +6054,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -5650,6 +6068,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -5663,6 +6082,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     }
@@ -5682,6 +6102,7 @@
      "defects": 1,
      "detained": false,
      "codes": "10109 LIGHT. Mg 5 Shs Sao: te rae tS C]",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:PSC检查报告.pdf|FP:f33062e0 | 检查日期经OCR修正(原误读2028)"
     },
@@ -5695,6 +6116,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -5708,6 +6130,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -5721,6 +6144,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -5734,6 +6158,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -5747,6 +6172,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -5760,6 +6186,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     }
@@ -5779,6 +6206,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -5792,6 +6220,7 @@
      "defects": 4,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -5805,6 +6234,7 @@
      "defects": 6,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -5818,6 +6248,7 @@
      "defects": 2,
      "detained": true,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -5831,6 +6262,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -5844,6 +6276,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -5857,6 +6290,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -5870,6 +6304,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -5883,6 +6318,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -5896,6 +6332,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -5909,6 +6346,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -5922,6 +6360,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -5935,6 +6374,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -5948,6 +6388,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -5961,6 +6402,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -5974,6 +6416,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -5987,6 +6430,7 @@
      "defects": 5,
      "detained": true,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     }
@@ -6006,6 +6450,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -6019,6 +6464,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -6032,6 +6478,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -6045,6 +6492,7 @@
      "defects": 6,
      "detained": true,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -6058,6 +6506,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -6071,6 +6520,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -6084,6 +6534,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -6097,6 +6548,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -6110,6 +6562,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -6123,6 +6576,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -6136,6 +6590,7 @@
      "defects": 4,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -6149,6 +6604,7 @@
      "defects": 6,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -6162,6 +6618,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -6175,6 +6632,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -6188,6 +6646,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     }
@@ -6207,6 +6666,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -6220,6 +6680,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -6233,6 +6694,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -6246,6 +6708,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -6259,6 +6722,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -6272,6 +6736,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     }
@@ -6291,6 +6756,7 @@
      "defects": 3,
      "detained": false,
      "codes": "07199 SHELTER FOR PAINT DRUM.WATER CAN NOT REACH THE PAINT DRUM\n07113 NO DRAINAGE VALVE FOR BOTTOM OF U-TYPE FIRE PIPE OUTSIDE\n04103 PORTABLE LIGHT SHELF FOR FORE LIFERAFT EMBARKATION STATION",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:PSC 报告 2.pdf|FP:079fe16b"
     },
@@ -6304,6 +6770,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -6317,6 +6784,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -6330,6 +6798,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -6343,6 +6812,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -6356,6 +6826,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -6369,6 +6840,7 @@
      "defects": 4,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -6382,6 +6854,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -6395,6 +6868,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -6408,6 +6882,7 @@
      "defects": 4,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -6421,6 +6896,7 @@
      "defects": 8,
      "detained": true,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -6434,6 +6910,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -6447,6 +6924,7 @@
      "defects": 4,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     }
@@ -6466,6 +6944,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -6479,6 +6958,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -6492,6 +6972,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -6505,6 +6986,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -6518,6 +7000,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -6531,6 +7014,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -6544,6 +7028,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -6557,6 +7042,7 @@
      "defects": 5,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     }
@@ -6576,6 +7062,7 @@
      "defects": 3,
      "detained": false,
      "codes": "02120 THE LOCATION SIGN FOR ENCLOSURE CONTAINING THE FIRE PLAN\n11117 A LIFEBUOY EQUIPPED WITH A SELF-IGNITING LIGHT AND A BOUYANT\n11102 TWO HATCHETS NOT STOWED AT EACH END OF LIFEBOAT",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:PSC REPORT.pdf|FP:90150576"
     },
@@ -6589,6 +7076,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -6602,6 +7090,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -6615,6 +7104,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -6628,6 +7118,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -6641,6 +7132,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -6654,6 +7146,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -6667,6 +7160,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -6680,6 +7174,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     }
@@ -6699,6 +7194,7 @@
      "defects": 1,
      "detained": false,
      "codes": "14599 THE RECEPTACLE FOR E-GARBAGE NOT MARKED IN BLACK IN",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:WINNING OCEAN-PSC REPORT 2026.04.23(1).pdf|FP:2f70acfd"
     },
@@ -6712,6 +7208,7 @@
      "defects": 7,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -6725,6 +7222,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -6738,6 +7236,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -6751,6 +7250,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -6764,6 +7264,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -6777,6 +7278,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -6790,6 +7292,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     }
@@ -6809,6 +7312,7 @@
      "defects": 6,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -6822,6 +7326,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -6835,6 +7340,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -6848,6 +7354,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -6861,6 +7368,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -6874,6 +7382,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     }
@@ -6893,6 +7402,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -6906,6 +7416,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -6919,6 +7430,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -6932,6 +7444,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -6945,6 +7458,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -6958,6 +7472,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -6971,6 +7486,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -6984,6 +7500,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -6997,6 +7514,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -7010,6 +7528,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -7023,6 +7542,7 @@
      "defects": 9,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -7036,6 +7556,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -7049,6 +7570,7 @@
      "defects": 6,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     }
@@ -7068,6 +7590,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -7081,6 +7604,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -7094,6 +7618,7 @@
      "defects": 4,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -7107,6 +7632,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -7120,6 +7646,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -7133,6 +7660,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -7146,6 +7674,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -7159,6 +7688,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -7172,6 +7702,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -7185,6 +7716,7 @@
      "defects": 6,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     }
@@ -7204,6 +7736,7 @@
      "defects": 2,
      "detained": false,
      "codes": "03108 THE CLOSING DEVICE OF FRESH WATER TANK AIR PIPE FOUND SEIZED\n11108 STARBOARD SIDE",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:WINNING QUEEN-PSC INSPECTION REPORT AT JINGTANG 20260204.pdf|FP:8c1d68db"
     },
@@ -7217,6 +7750,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -7230,6 +7764,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -7243,6 +7778,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -7256,6 +7792,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -7269,6 +7806,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -7282,6 +7820,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -7295,6 +7834,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -7308,6 +7848,7 @@
      "defects": 8,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -7321,6 +7862,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -7334,6 +7876,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -7347,6 +7890,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     }
@@ -7366,6 +7910,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -7379,6 +7924,7 @@
      "defects": 4,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -7392,6 +7938,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -7405,6 +7952,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -7418,6 +7966,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -7431,6 +7980,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -7444,6 +7994,7 @@
      "defects": 5,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -7457,6 +8008,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -7470,6 +8022,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     }
@@ -7489,6 +8042,7 @@
      "defects": null,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:W`RICH-烟台接受PSC检查报告表20290729.pdf|FP:6c2f7b72|⚠️接受表(与P001同次检查),日期由2029修正为2026"
     },
@@ -7502,6 +8056,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -7515,6 +8070,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -7528,6 +8084,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -7541,6 +8098,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -7554,6 +8112,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -7567,6 +8126,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -7580,6 +8140,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -7593,6 +8154,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -7606,6 +8168,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     }
@@ -7625,6 +8188,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -7638,6 +8202,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -7651,6 +8216,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -7664,6 +8230,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -7677,6 +8244,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -7690,6 +8258,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -7703,6 +8272,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -7716,6 +8286,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -7729,6 +8300,7 @@
      "defects": 5,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -7742,6 +8314,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -7755,6 +8328,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -7768,6 +8342,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     }
@@ -7787,6 +8362,7 @@
      "defects": 2,
      "detained": false,
      "codes": "11123 WEAK l.['.1( NOT PR.OV1DED FOR. TWO WAY Vl-IF WRIST BAND\n08108 NO. I DETECT SENSOR OF OIL r,OST ALARM SYSTEM MANUALLY ISOLATED",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:PSC 曹妃甸检查报告2026.04.14.pdf|FP:cd5bfec6"
     },
@@ -7800,6 +8376,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -7813,6 +8390,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -7826,6 +8404,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -7839,6 +8418,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -7852,6 +8432,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -7865,6 +8446,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -7878,6 +8460,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -7891,6 +8474,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -7904,6 +8488,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -7917,6 +8502,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -7930,6 +8516,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     }
@@ -7949,6 +8536,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -7962,6 +8550,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -7975,6 +8564,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -7988,6 +8578,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -8001,6 +8592,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -8014,6 +8606,7 @@
      "defects": 4,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -8027,6 +8620,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -8040,6 +8634,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -8053,6 +8648,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -8066,6 +8662,7 @@
      "defects": 9,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -8079,6 +8676,7 @@
      "defects": 4,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -8092,6 +8690,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     }
@@ -8111,6 +8710,7 @@
      "defects": 3,
      "detained": false,
      "codes": "10109 OUT OF ORDER\n11101 SIDE LIFEBOAT OUT OF WORK DUE TO THE\n01330 THE SEAFARERS’ COUNTRY OF PET Hs Bd BA A R01 O",
+     "codes_uncertain": true,
      "rectified": "",
      "note": "来源:W'TEAM PSC REPORT 2025-12-22.pdf|FP:89b2b363"
     },
@@ -8124,6 +8724,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -8137,6 +8738,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -8150,6 +8752,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -8163,6 +8766,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -8176,6 +8780,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -8189,6 +8794,7 @@
      "defects": 4,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -8202,6 +8808,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -8215,6 +8822,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -8228,6 +8836,7 @@
      "defects": 10,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -8241,6 +8850,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -8254,6 +8864,7 @@
      "defects": 10,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -8267,6 +8878,7 @@
      "defects": 4,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     }
@@ -8286,6 +8898,7 @@
      "defects": 4,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -8299,6 +8912,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -8312,6 +8926,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -8325,6 +8940,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -8338,6 +8954,7 @@
      "defects": 9,
      "detained": true,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -8351,6 +8968,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -8364,6 +8982,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -8377,6 +8996,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -8390,6 +9010,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -8403,6 +9024,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     }
@@ -8422,6 +9044,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -8435,6 +9058,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -8448,6 +9072,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -8461,6 +9086,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -8474,6 +9100,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -8487,6 +9114,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -8500,6 +9128,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -8513,6 +9142,7 @@
      "defects": 5,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -8526,6 +9156,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -8539,6 +9170,7 @@
      "defects": 7,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -8552,6 +9184,7 @@
      "defects": 7,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     }
@@ -8571,6 +9204,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -8584,6 +9218,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -8597,6 +9232,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -8610,6 +9246,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     }
@@ -8629,6 +9266,7 @@
      "defects": 10,
      "detained": true,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -8642,6 +9280,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -8655,6 +9294,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -8668,6 +9308,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -8681,6 +9322,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -8694,6 +9336,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -8707,6 +9350,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -8720,6 +9364,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -8733,6 +9378,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -8746,6 +9392,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -8759,6 +9406,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     }
@@ -8778,6 +9426,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -8791,6 +9440,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -8804,6 +9454,7 @@
      "defects": 4,
      "detained": true,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -8817,6 +9468,7 @@
      "defects": 1,
      "detained": true,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -8830,6 +9482,7 @@
      "defects": 4,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -8843,6 +9496,7 @@
      "defects": 7,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -8856,6 +9510,7 @@
      "defects": 8,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -8869,6 +9524,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -8882,6 +9538,7 @@
      "defects": 6,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -8895,6 +9552,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -8908,6 +9566,7 @@
      "defects": 8,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -8921,6 +9580,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -8934,6 +9594,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -8947,6 +9608,7 @@
      "defects": 4,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -8960,6 +9622,7 @@
      "defects": 5,
      "detained": true,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -8973,6 +9636,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     }
@@ -8992,6 +9656,7 @@
      "defects": 8,
      "detained": false,
      "codes": "11101 THE CASE STORED STARTING BATTERY IN FREE-FALL LIFEBUOY PENETRATED BY CABLE CAN NOT KEEP WATERTIGHT.\n10109 ONE GREEN ALL-ROUND LIGHT ON COMPASS DECK PORTSIDE MALFUNCTION.\n1117 THE LENGTH OF BUOYANT LINE OF LIFEBUOY NEARBY ACCOMMODATION LADDER ON PORTSIDE OF MAINDECK LESS THAN 30M.\n03103 THE LOWEST COURSE OF HANDRAIL ON THE PORTSIDE OF MAINDECK MISSING ABOUT 5M.\n03105 ONE CLEAT OF NO.9 CARGO HOLD HATCH ON THE PORTSIDE OF MAINDECK MALFUNCTION.\n07101 THE FIREPROOF LAGGING OF PIPE PENETRATING THE DECK BETWEEN FIRE CONTROL ROOM AND ENGINE ROOM LESS THAN 900MM.\n03108 THE SOUNDING PIPE OF A.P.T ",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:WINNING WISDOM - PSC检查报告（董家口，2026.08.21）.pdf|FP:d9c672a3"
     },
@@ -9005,6 +9670,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -9018,6 +9684,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -9031,6 +9698,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -9044,6 +9712,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -9057,6 +9726,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -9070,6 +9740,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     }
@@ -9089,6 +9760,7 @@
      "defects": 4,
      "detained": false,
      "codes": "14616 DATA RECORDER OF EXHAUST GAS SCRUBBER FAILED TO\n11131 OPERATIONAL INSTRUCTION PLACARD FOR FREE-FALL LIFEBOAT 17\n04113 THE SENSOR OF THE WATER INGRESS ALARM SYSTEM FOR THE\n10109 THE ALARM OF UPPER AFT MASTER LIGHT WAS INDICATED ON THE 17",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:PSC Inspection Report @ Zhanjiang W.World 20260728.pdf|FP:c7806b2c"
     },
@@ -9102,6 +9774,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -9115,6 +9788,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     }
@@ -9134,6 +9808,7 @@
      "defects": 3,
      "detained": false,
      "codes": "1. 14802 压载水记录簿(BWRB): 2026-07-25 滤器清洗操作未记录; 2026-07-01 整页记录后船长未签署 (BWM)\n2. 07101 机舱与消防站之间甲板贯穿管多处未用450mm耐火材料隔热 (FSS)\n3. 11101 右舷救生艇回收后未就位,吊钩钢丝持续受力 (LSA)",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:PSC REPORT_2026-08-25.pdf (Form B OCR 2026-08-31回填)"
     },
@@ -9147,6 +9822,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -9160,6 +9836,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -9173,6 +9850,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -9186,6 +9864,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -9199,6 +9878,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -9212,6 +9892,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
     },
@@ -9225,6 +9906,7 @@
      "defects": 11,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -9238,6 +9920,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -9251,6 +9934,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -9264,6 +9948,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -9277,6 +9962,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -9290,6 +9976,7 @@
      "defects": 2,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -9303,6 +9990,7 @@
      "defects": 3,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -9316,6 +10004,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -9329,6 +10018,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -9342,6 +10032,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
     },
@@ -9355,6 +10046,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -9368,6 +10060,7 @@
      "defects": 0,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     },
@@ -9381,6 +10074,7 @@
      "defects": 1,
      "detained": false,
      "codes": "",
+     "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
     }
@@ -9393,9 +10087,9 @@
     "ship": "SUNNY LABE",
     "date": "2026-09-08",
     "port": "yantai",
-    "defects": 4,
+    "defects": 3,
     "detained": false,
-    "codes": "11101 DAMAGED\n03105 THE GASKET OF ESCAPE HATCH COVER FOR ELEVATOR TRUNK\n93105 HARDENED AND DAMAGED a 图\n07109 THE PRESSURE GAUGE RANGE(0-0.4MPA) OF MANIFOLD PIPE FOR FIXED"
+    "codes": "11101 THE BUOYANT LIFELINE AROUND THE OUTSIDE OF LIFEBOAT(S) DAMAGED\n03105 THE GASKET OF ESCAPE HATCH COVER FOR ELEVATOR TRUNK HARDENED AND DAMAGED\n07109 THE PRESSURE GAUGE RANGE(0-0.4MPA) OF MANIFOLD PIPE FOR FIXED CO2 FIRE-EXTINGUISHING SYSTEM LESS THAN WORKING PRESSURE"
    },
    {
     "ship": "WINNING ENDURANCE",
@@ -9537,9 +10231,9 @@
     "ship": "WINNING EXCELLENCE",
     "date": "2026-02-27",
     "port": "yantai",
-    "defects": 1,
+    "defects": 3,
     "detained": false,
-    "codes": "18424 ABOVE GENERATOR DETACHED"
+    "codes": "18424 HEAT INSULATION MATERIAL ON ONE SECTION STEAM LINE(20CM) DAMAGED\n07115 FIRE DAMPER FOR AIR CONDITIONER SUPPLY DUCT ON D-DECK HARD TO OPERATE\n10109 PORTSIDE SIDELIGHT (UPPER) AND MASTHEAD LIGHT(UPPER) UNLIT"
    },
    {
     "ship": "WINNING UNIVERSE",
@@ -15156,7 +15850,10 @@
   },
   "this_year": 43,
   "detained_total": 17,
-  "with_codes": 25
+  "with_codes": 25,
+  "codes_uncertain": 4,
+  "pdf_enriched": 0,
+  "pdf_files_matched": 2
  },
  "missing": []
 }
