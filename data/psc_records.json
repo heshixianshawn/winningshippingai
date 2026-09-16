@@ -1,7 +1,7 @@
 {
  "generated": "2026-09-16",
  "source": "单船档案 PSC-FSC检查记录 sheet（TokyoMOU/APCIS 等来源）",
- "count": 643,
+ "count": 694,
  "ship_count": 60,
  "ships": {
   "SUNNY BEYLA": {
@@ -427,8 +427,34 @@
   },
   "SUNNY CONAKRY": {
    "imo": "",
-   "count": 11,
+   "count": 13,
    "records": [
+    {
+     "date": "2026-01-29",
+     "port": "huanghua",
+     "port_raw": "黄骅",
+     "type": "PSC",
+     "authority": "",
+     "officer": "",
+     "defects": 2,
+     "detained": false,
+     "codes": "05110 DURING INSPECTION. [te $ Hs 3% Q2\n10109 STERN LIGHT HORIZONTAL SECTOR VISIBILITY NOT AS REQUIRED BY",
+     "rectified": "",
+     "note": "来源:PSC REPORT 20260129.pdf|FP:71d32ce3"
+    },
+    {
+     "date": "2023-06-18",
+     "port": "Callao",
+     "port_raw": "Callao (Peru)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 0,
+     "detained": false,
+     "codes": "",
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
+    },
     {
      "date": "2023-01-05",
      "port": "Vancouver",
@@ -991,8 +1017,34 @@
   },
   "SUNNY FARANAH": {
    "imo": "",
-   "count": 11,
+   "count": 13,
    "records": [
+    {
+     "date": "2025-12-18",
+     "port": "yantai",
+     "port_raw": "烟台",
+     "type": "PSC",
+     "authority": "",
+     "officer": "",
+     "defects": 1,
+     "detained": false,
+     "codes": "11110 BLOCK NOT LOWERED TO SET ON THE DAVIT A gah |",
+     "rectified": "",
+     "note": "来源:SUNNY FARANAH  PSC 烟台港检查.pdf|FP:08f6a5f6"
+    },
+    {
+     "date": "2024-05-20",
+     "port": "Qingdao",
+     "port_raw": "Qingdao (China)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 1,
+     "detained": false,
+     "codes": "",
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
+    },
     {
      "date": "2023-08-08",
      "port": "Ningbo",
@@ -1140,8 +1192,34 @@
   },
   "SUNNY FRIA": {
    "imo": "",
-   "count": 11,
+   "count": 13,
    "records": [
+    {
+     "date": "2026-06-18",
+     "port": "yantai",
+     "port_raw": "烟台",
+     "type": "PSC",
+     "authority": "",
+     "officer": "",
+     "defects": 0,
+     "detained": false,
+     "codes": "",
+     "rectified": "",
+     "note": "来源:SUNNY FRIA PSC 检查.pdf|FP:7978d1ff | 无FORM B=零缺陷(Form A 18 deficiencies: no)"
+    },
+    {
+     "date": "2025-09-08",
+     "port": "Fangcheng",
+     "port_raw": "Fangcheng (China)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 3,
+     "detained": false,
+     "codes": "",
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
+    },
     {
      "date": "2025-01-13",
      "port": "Yantai",
@@ -1879,8 +1957,47 @@
   },
   "SUNNY KEROUANE": {
    "imo": "",
-   "count": 15,
+   "count": 18,
    "records": [
+    {
+     "date": "2026-07-27",
+     "port": "yantai",
+     "port_raw": "烟台",
+     "type": "PSC",
+     "authority": "",
+     "officer": "",
+     "defects": 3,
+     "detained": false,
+     "codes": "01333 WATER ON 2026.07.13 NOT CONDUCTED AND RECORDED ACCORDING TO L\n03105 ACCESS HATCH COVER(FORE) GASKET FOR NO.3 CARGO HOLD FOUND\n10109 FORE MAST HEAD LIGHT(LOWER) OUT OF ORDER",
+     "rectified": "",
+     "note": "来源:PSC Inspection Report at Yantai 20260727.pdf|FP:8e42b164"
+    },
+    {
+     "date": "2026-07-13",
+     "port": "qingdao",
+     "port_raw": "青岛",
+     "type": "PSC",
+     "authority": "",
+     "officer": "",
+     "defects": null,
+     "detained": false,
+     "codes": "",
+     "rectified": "",
+     "note": "来源:不符合规定情况报告表.pdf|FP:512bcf19"
+    },
+    {
+     "date": "2025-05-01",
+     "port": "Vancouver",
+     "port_raw": "Vancouver (Canada)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 14,
+     "detained": false,
+     "codes": "",
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
+    },
     {
      "date": "2025-02-25",
      "port": "Pohang",
@@ -2391,8 +2508,21 @@
   },
   "SUNNY LABE": {
    "imo": "",
-   "count": 8,
+   "count": 9,
    "records": [
+    {
+     "date": "2026-09-08",
+     "port": "yantai",
+     "port_raw": "烟台",
+     "type": "PSC",
+     "authority": "",
+     "officer": "",
+     "defects": 4,
+     "detained": false,
+     "codes": "11101 DAMAGED\n03105 THE GASKET OF ESCAPE HATCH COVER FOR ELEVATOR TRUNK\n93105 HARDENED AND DAMAGED a 图\n07109 THE PRESSURE GAUGE RANGE(0-0.4MPA) OF MANIFOLD PIPE FOR FIXED",
+     "rectified": "",
+     "note": "来源:S' Labe 烟台PSC检查20260908.pdf|FP:7de8dc95"
+    },
     {
      "date": "2024-01-03",
      "port": "Yantai",
@@ -2877,8 +3007,34 @@
   },
   "SUNNY MOREBAYA": {
    "imo": "",
-   "count": 7,
+   "count": 9,
    "records": [
+    {
+     "date": "2025-12-30",
+     "port": "",
+     "port_raw": "",
+     "type": "PSC",
+     "authority": "",
+     "officer": "",
+     "defects": 2,
+     "detained": false,
+     "codes": "04103 ONE EMERGENCY LIGHT FOR EMERGENCY Pe hie 01] f HFK (01 E=]\n11119 ECR NOT FIT ENGINEERS ON DUTY (A 台海",
+     "rectified": "",
+     "note": "来源:PSC REPORT 2025.12.30-Sunny Morebaya.pdf|FP:8e8bdbe6"
+    },
+    {
+     "date": "2022-08-04",
+     "port": "Yantai",
+     "port_raw": "Yantai (China)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 2,
+     "detained": false,
+     "codes": "",
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
+    },
     {
      "date": "2018-05-30",
      "port": "Yantai",
@@ -3175,7 +3331,7 @@
   },
   "SUNNY RIVER": {
    "imo": "",
-   "count": 16,
+   "count": 17,
    "records": [
     {
      "date": "2026-01-13",
@@ -3189,6 +3345,19 @@
      "codes": "",
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
+    },
+    {
+     "date": "2025-02-05",
+     "port": "yantai",
+     "port_raw": "烟台",
+     "type": "PSC",
+     "authority": "Address",
+     "officer": "",
+     "defects": 2,
+     "detained": false,
+     "codes": "10127 POSITION FIXING l.NTERVAL fN ECDIS NOT PERFORMED ACCORDING TO\n10109 THE STERN LIGHT(LOWER) F01JND om OF WORK",
+     "rectified": "",
+     "note": "来源:SUNNY RIVER  PSC INSPECTION REPORT.pdf|FP:8fc332d7"
     },
     {
      "date": "2024-06-11",
@@ -3512,8 +3681,34 @@
   },
   "SUNNY SAILOR": {
    "imo": "",
-   "count": 6,
+   "count": 8,
    "records": [
+    {
+     "date": "2026-08-05",
+     "port": "yantai",
+     "port_raw": "烟台",
+     "type": "PSC",
+     "authority": "",
+     "officer": "",
+     "defects": 3,
+     "detained": false,
+     "codes": "14602 VERIFICATION OF IMO NOx EMISSION CONTROL - NO ENTRIES OF\n11117 THE BRACKET FOR SELF-IGNITING LIGHT OF LIFEBUOY ON BOAT\n07110 FIXED LOCAL APPLICATION FIRE-FIGHTING SYSTEM - FRESH WATER",
+     "rectified": "",
+     "note": "来源:S.sailor烟台PSC检查记录20260805.pdf|FP:2ba3de7e"
+    },
+    {
+     "date": "2025-01-10",
+     "port": "Yantai",
+     "port_raw": "Yantai (China)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 2,
+     "detained": false,
+     "codes": "",
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
+    },
     {
      "date": "2021-05-17",
      "port": "Pyeongtaek",
@@ -3946,8 +4141,34 @@
   },
   "SUNNY STAR": {
    "imo": "",
-   "count": 7,
+   "count": 9,
    "records": [
+    {
+     "date": "2026-06-25",
+     "port": "yantai",
+     "port_raw": "烟台",
+     "type": "PSC",
+     "authority": "",
+     "officer": "",
+     "defects": 3,
+     "detained": false,
+     "codes": "10109 THE AFTER ANCHOR LIGHT(LOWER) OUT OF ORDER\n07116 THE INSPECTION HATCH COVER ON GALLEY VENTILATOR BROKEN (ft ¢\n11113 THE REMOTE RELEASE WIRE FOR RESCUE BOAT LAUNCHING",
+     "rectified": "",
+     "note": "来源:S'star-烟台PSC检查报告 2026.06.25.pdf|FP:9a963d4f"
+    },
+    {
+     "date": "2023-07-03",
+     "port": "Tangshan",
+     "port_raw": "Tangshan (China)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 1,
+     "detained": false,
+     "codes": "",
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
+    },
     {
      "date": "2022-08-23",
      "port": "Yantai",
@@ -4510,8 +4731,34 @@
   },
   "WINNING BROTHER": {
    "imo": "",
-   "count": 7,
+   "count": 9,
    "records": [
+    {
+     "date": "2026-08-18",
+     "port": "",
+     "port_raw": "",
+     "type": "PSC",
+     "authority": "",
+     "officer": "",
+     "defects": 1,
+     "detained": false,
+     "codes": "16106 THE ADDITIONAL SECURITY DRILL NOT CONDUCTED WITHIN ONE WEEK AFTER CREW CHANGED MORE THAN 25% ON 17",
+     "rectified": "",
+     "note": "来源:PSC REPORT-2026.08.18.pdf|FP:781a1522"
+    },
+    {
+     "date": "2026-01-12",
+     "port": "Fangcheng",
+     "port_raw": "Fangcheng (China)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 3,
+     "detained": false,
+     "codes": "",
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
+    },
     {
      "date": "2024-10-28",
      "port": "Yantai",
@@ -4607,8 +4854,34 @@
   },
   "WINNING CONFIDENCE": {
    "imo": "",
-   "count": 7,
+   "count": 9,
    "records": [
+    {
+     "date": "2026-06-11",
+     "port": "huanghua",
+     "port_raw": "黄骅",
+     "type": "PSC",
+     "authority": "",
+     "officer": "",
+     "defects": 2,
+     "detained": false,
+     "codes": "14811 BALLAST WATER MANAGEMENT SYSTEM FOUND LEAKING\n03105 ORDER DURING INSPECTION",
+     "rectified": "",
+     "note": "来源:WINNING CONFIDENCE---PSC 黄骅检查报告2026.06.11.pdf|FP:15bf23e8"
+    },
+    {
+     "date": "2025-11-05",
+     "port": "Tangshan",
+     "port_raw": "Tangshan (China)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 2,
+     "detained": false,
+     "codes": "",
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
+    },
     {
      "date": "2025-01-07",
      "port": "Yantai",
@@ -4704,8 +4977,34 @@
   },
   "WINNING DILIGENCE": {
    "imo": "",
-   "count": 8,
+   "count": 10,
    "records": [
+    {
+     "date": "2026-01-28",
+     "port": "",
+     "port_raw": "",
+     "type": "PSC",
+     "authority": "",
+     "officer": "",
+     "defects": 2,
+     "detained": false,
+     "codes": "04103 THE EMERGENCY LIGHTING FOR THE STOWAGE POSITION FOR\n03108 DURE DUE TO THE SEAL RUBBER PEELED OFF",
+     "rectified": "",
+     "note": "来源:WINNING DILIGENCE  PSC REPORT 20260128.pdf|FP:1f92d5ed"
+    },
+    {
+     "date": "2024-04-17",
+     "port": "Fangcheng",
+     "port_raw": "Fangcheng (China)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 3,
+     "detained": false,
+     "codes": "",
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
+    },
     {
      "date": "2022-08-23",
      "port": "Caofeidian",
@@ -4814,8 +5113,34 @@
   },
   "WINNING ENDURANCE": {
    "imo": "",
-   "count": 7,
+   "count": 9,
    "records": [
+    {
+     "date": "2026-08-18",
+     "port": "yantai",
+     "port_raw": "烟台",
+     "type": "PSC",
+     "authority": "",
+     "officer": "",
+     "defects": 3,
+     "detained": false,
+     "codes": "18418 THE BRACKET FOR STERN MOORING WIENCH(S) CLUTCH FOUND\n04103 ILLUMINATE THE LAUNCHING WATER AREA DUE TO THE SWIVEL\n03105 PORTSIDE OF NO.5 CARGO HATCH COVER(AFT) - SEALING PACKING",
+     "rectified": "",
+     "note": "来源:烟台PSC检查报告-2026.08.18.pdf|FP:772b1cc9"
+    },
+    {
+     "date": "2025-07-15",
+     "port": "Qinhuangdao",
+     "port_raw": "Qinhuangdao (China)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 1,
+     "detained": false,
+     "codes": "",
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
+    },
     {
      "date": "2023-07-25",
      "port": "Qingdao",
@@ -4911,8 +5236,34 @@
   },
   "WINNING EXCELLENCE": {
    "imo": "",
-   "count": 15,
+   "count": 17,
    "records": [
+    {
+     "date": "2026-02-27",
+     "port": "yantai",
+     "port_raw": "烟台",
+     "type": "PSC",
+     "authority": "",
+     "officer": "",
+     "defects": 1,
+     "detained": false,
+     "codes": "18424 ABOVE GENERATOR DETACHED",
+     "rectified": "",
+     "note": "来源:MV Winning Excellence--PSC REPORT YANTAI 20260227.pdf|FP:e6a951e1"
+    },
+    {
+     "date": "2025-01-15",
+     "port": "Yantai",
+     "port_raw": "Yantai (China)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 5,
+     "detained": false,
+     "codes": "",
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
+    },
     {
      "date": "2022-06-27",
      "port": "Yantai",
@@ -5112,8 +5463,21 @@
   },
   "WINNING FAITH": {
    "imo": "",
-   "count": 7,
+   "count": 8,
    "records": [
+    {
+     "date": "2026-08-17",
+     "port": "caofeidian",
+     "port_raw": "曹妃甸",
+     "type": "PSC",
+     "authority": "",
+     "officer": "",
+     "defects": 2,
+     "detained": false,
+     "codes": "11101 ONE SET OF SAFETY HARNESS DEFECTIVE IN STBD L/B\n04118 PORTABLE GAS DETECTORS ON BOARD UNABLE TO MEASURE CARBON",
+     "rectified": "",
+     "note": "来源:PSC RPT 20260817.pdf|FP:637c1e45"
+    },
     {
      "date": "2026-01-20",
      "port": "Yantai",
@@ -5209,8 +5573,34 @@
   },
   "WINNING GRACE": {
    "imo": "",
-   "count": 5,
+   "count": 7,
    "records": [
+    {
+     "date": "2026-06-24",
+     "port": "ningbo",
+     "port_raw": "宁波",
+     "type": "PSC",
+     "authority": "",
+     "officer": "",
+     "defects": 1,
+     "detained": false,
+     "codes": "11101 THE PAINTER NOT CONNECTED WITH THE QUICK RELEASE UNIT OF RESCUE BOAT",
+     "rectified": "",
+     "note": "来源:W'GRACE PSC检查报告20260624宁波港.pdf|FP:c86b3b54"
+    },
+    {
+     "date": "2025-10-16",
+     "port": "Yantai",
+     "port_raw": "Yantai (China)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 2,
+     "detained": false,
+     "codes": "",
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
+    },
     {
      "date": "2024-05-20",
      "port": "Caofeidian",
@@ -5280,8 +5670,34 @@
   },
   "WINNING HOPE": {
    "imo": "",
-   "count": 5,
+   "count": 7,
    "records": [
+    {
+     "date": "2026-01-26",
+     "port": "yantai",
+     "port_raw": "烟台",
+     "type": "PSC",
+     "authority": "",
+     "officer": "",
+     "defects": 1,
+     "detained": false,
+     "codes": "10109 LIGHT. Mg 5 Shs Sao: te rae tS C]",
+     "rectified": "",
+     "note": "来源:PSC检查报告.pdf|FP:f33062e0 | 检查日期经OCR修正(原误读2028)"
+    },
+    {
+     "date": "2025-02-27",
+     "port": "Yantai",
+     "port_raw": "Yantai (China)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 2,
+     "detained": false,
+     "codes": "",
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
+    },
     {
      "date": "2024-06-08",
      "port": "Tianjin",
@@ -5863,8 +6279,34 @@
   },
   "WINNING LOYALTY": {
    "imo": "",
-   "count": 11,
+   "count": 13,
    "records": [
+    {
+     "date": "2026-05-04",
+     "port": "singapore",
+     "port_raw": "新加坡",
+     "type": "PSC",
+     "authority": "",
+     "officer": "",
+     "defects": 3,
+     "detained": false,
+     "codes": "07199 SHELTER FOR PAINT DRUM.WATER CAN NOT REACH THE PAINT DRUM\n07113 NO DRAINAGE VALVE FOR BOTTOM OF U-TYPE FIRE PIPE OUTSIDE\n04103 PORTABLE LIGHT SHELF FOR FORE LIFERAFT EMBARKATION STATION",
+     "rectified": "",
+     "note": "来源:PSC 报告 2.pdf|FP:079fe16b"
+    },
+    {
+     "date": "2025-10-24",
+     "port": "Yantai",
+     "port_raw": "Yantai (China)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 2,
+     "detained": false,
+     "codes": "",
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
+    },
     {
      "date": "2023-11-30",
      "port": "Yantai",
@@ -6122,8 +6564,34 @@
   },
   "WINNING NATURE": {
    "imo": "",
-   "count": 7,
+   "count": 9,
    "records": [
+    {
+     "date": "2026-04-13",
+     "port": "yantai",
+     "port_raw": "烟台",
+     "type": "PSC",
+     "authority": "",
+     "officer": "",
+     "defects": 3,
+     "detained": false,
+     "codes": "02120 THE LOCATION SIGN FOR ENCLOSURE CONTAINING THE FIRE PLAN\n11117 A LIFEBUOY EQUIPPED WITH A SELF-IGNITING LIGHT AND A BOUYANT\n11102 TWO HATCHETS NOT STOWED AT EACH END OF LIFEBOAT",
+     "rectified": "",
+     "note": "来源:PSC REPORT.pdf|FP:90150576"
+    },
+    {
+     "date": "2024-10-23",
+     "port": "Yantai",
+     "port_raw": "Yantai (China)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 1,
+     "detained": false,
+     "codes": "",
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
+    },
     {
      "date": "2023-04-18",
      "port": "Qingdao",
@@ -6219,8 +6687,34 @@
   },
   "WINNING OCEAN": {
    "imo": "",
-   "count": 6,
+   "count": 8,
    "records": [
+    {
+     "date": "2026-04-23",
+     "port": "",
+     "port_raw": "",
+     "type": "PSC",
+     "authority": "",
+     "officer": "",
+     "defects": 1,
+     "detained": false,
+     "codes": "14599 THE RECEPTACLE FOR E-GARBAGE NOT MARKED IN BLACK IN",
+     "rectified": "",
+     "note": "来源:WINNING OCEAN-PSC REPORT 2026.04.23(1).pdf|FP:2f70acfd"
+    },
+    {
+     "date": "2025-03-17",
+     "port": "Caofeidian",
+     "port_raw": "Caofeidian (China)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 7,
+     "detained": false,
+     "codes": "",
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
+    },
     {
      "date": "2023-07-17",
      "port": "Yantai",
@@ -6698,8 +7192,34 @@
   },
   "WINNING QUEEN": {
    "imo": "",
-   "count": 10,
+   "count": 12,
    "records": [
+    {
+     "date": "2026-02-04",
+     "port": "jingtang",
+     "port_raw": "京唐",
+     "type": "PSC",
+     "authority": "",
+     "officer": "",
+     "defects": 2,
+     "detained": false,
+     "codes": "03108 THE CLOSING DEVICE OF FRESH WATER TANK AIR PIPE FOUND SEIZED\n11108 STARBOARD SIDE",
+     "rectified": "",
+     "note": "来源:WINNING QUEEN-PSC INSPECTION REPORT AT JINGTANG 20260204.pdf|FP:8c1d68db"
+    },
+    {
+     "date": "2023-11-27",
+     "port": "Yantai",
+     "port_raw": "Yantai (China)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 1,
+     "detained": false,
+     "codes": "",
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
+    },
     {
      "date": "2022-09-02",
      "port": "Dongjiakou",
@@ -6957,8 +7477,34 @@
   },
   "WINNING RICH": {
    "imo": "",
-   "count": 8,
+   "count": 10,
    "records": [
+    {
+     "date": "2026-07-29",
+     "port": "yantai",
+     "port_raw": "烟台",
+     "type": "PSC",
+     "authority": "",
+     "officer": "",
+     "defects": null,
+     "detained": false,
+     "codes": "",
+     "rectified": "",
+     "note": "来源:W`RICH-烟台接受PSC检查报告表20290729.pdf|FP:6c2f7b72|⚠️接受表(与P001同次检查),日期由2029修正为2026"
+    },
+    {
+     "date": "2023-02-07",
+     "port": "Pontianak",
+     "port_raw": "Pontianak (Indonesia)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 0,
+     "detained": false,
+     "codes": "",
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship"
+    },
     {
      "date": "2022-02-27",
      "port": "Pontianak",
@@ -7229,8 +7775,34 @@
   },
   "WINNING SEA": {
    "imo": "",
-   "count": 10,
+   "count": 12,
    "records": [
+    {
+     "date": "2026-04-14",
+     "port": "caofeidian",
+     "port_raw": "曹妃甸",
+     "type": "PSC",
+     "authority": "Addres",
+     "officer": "",
+     "defects": 2,
+     "detained": false,
+     "codes": "11123 WEAK l.['.1( NOT PR.OV1DED FOR. TWO WAY Vl-IF WRIST BAND\n08108 NO. I DETECT SENSOR OF OIL r,OST ALARM SYSTEM MANUALLY ISOLATED",
+     "rectified": "",
+     "note": "来源:PSC 曹妃甸检查报告2026.04.14.pdf|FP:cd5bfec6"
+    },
+    {
+     "date": "2025-03-04",
+     "port": "Fangcheng",
+     "port_raw": "Fangcheng (China)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 1,
+     "detained": false,
+     "codes": "",
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
+    },
     {
      "date": "2023-03-16",
      "port": "Fangcheng",
@@ -7527,8 +8099,34 @@
   },
   "WINNING TEAM": {
    "imo": "",
-   "count": 11,
+   "count": 13,
    "records": [
+    {
+     "date": "2025-12-22",
+     "port": "",
+     "port_raw": "",
+     "type": "PSC",
+     "authority": "",
+     "officer": "",
+     "defects": 3,
+     "detained": false,
+     "codes": "10109 OUT OF ORDER\n11101 SIDE LIFEBOAT OUT OF WORK DUE TO THE\n01330 THE SEAFARERS’ COUNTRY OF PET Hs Bd BA A R01 O",
+     "rectified": "",
+     "note": "来源:W'TEAM PSC REPORT 2025-12-22.pdf|FP:89b2b363"
+    },
+    {
+     "date": "2024-01-18",
+     "port": "Yantai",
+     "port_raw": "Yantai (China)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 1,
+     "detained": false,
+     "codes": "",
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
+    },
     {
      "date": "2022-10-07",
      "port": "Fangcheng",
@@ -8382,8 +8980,34 @@
   },
   "WINNING WISDOM": {
    "imo": "",
-   "count": 5,
+   "count": 7,
    "records": [
+    {
+     "date": "2026-08-21",
+     "port": "董家口",
+     "port_raw": "董家口",
+     "type": "PSC",
+     "authority": "",
+     "officer": "",
+     "defects": 8,
+     "detained": false,
+     "codes": "11101 THE CASE STORED STARTING BATTERY IN FREE-FALL LIFEBUOY PENETRATED BY CABLE CAN NOT KEEP WATERTIGHT.\n10109 ONE GREEN ALL-ROUND LIGHT ON COMPASS DECK PORTSIDE MALFUNCTION.\n1117 THE LENGTH OF BUOYANT LINE OF LIFEBUOY NEARBY ACCOMMODATION LADDER ON PORTSIDE OF MAINDECK LESS THAN 30M.\n03103 THE LOWEST COURSE OF HANDRAIL ON THE PORTSIDE OF MAINDECK MISSING ABOUT 5M.\n03105 ONE CLEAT OF NO.9 CARGO HOLD HATCH ON THE PORTSIDE OF MAINDECK MALFUNCTION.\n07101 THE FIREPROOF LAGGING OF PIPE PENETRATING THE DECK BETWEEN FIRE CONTROL ROOM AND ENGINE ROOM LESS THAN 900MM.\n03108 THE SOUNDING PIPE OF A.P.T ",
+     "rectified": "",
+     "note": "来源:WINNING WISDOM - PSC检查报告（董家口，2026.08.21）.pdf|FP:d9c672a3"
+    },
+    {
+     "date": "2024-02-13",
+     "port": "Singapore",
+     "port_raw": "Singapore (Singapore)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 1,
+     "detained": false,
+     "codes": "",
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship"
+    },
     {
      "date": "2023-09-13",
      "port": "Nagoya, Aichi",
@@ -8453,8 +9077,34 @@
   },
   "WINNING WORLD": {
    "imo": "",
-   "count": 1,
+   "count": 3,
    "records": [
+    {
+     "date": "2026-07-28",
+     "port": "zhanjiang",
+     "port_raw": "湛江",
+     "type": "PSC",
+     "authority": "",
+     "officer": "",
+     "defects": 4,
+     "detained": false,
+     "codes": "14616 DATA RECORDER OF EXHAUST GAS SCRUBBER FAILED TO\n11131 OPERATIONAL INSTRUCTION PLACARD FOR FREE-FALL LIFEBOAT 17\n04113 THE SENSOR OF THE WATER INGRESS ALARM SYSTEM FOR THE\n10109 THE ALARM OF UPPER AFT MASTER LIGHT WAS INDICATED ON THE 17",
+     "rectified": "",
+     "note": "来源:PSC Inspection Report @ Zhanjiang W.World 20260728.pdf|FP:c7806b2c"
+    },
+    {
+     "date": "2025-03-18",
+     "port": "Yantai",
+     "port_raw": "Yantai (China)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 2,
+     "detained": false,
+     "codes": "",
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship"
+    },
     {
      "date": "2021-08-20",
      "port": "Yantai",
@@ -8472,8 +9122,21 @@
   },
   "WINNING YOUTH": {
    "imo": "",
-   "count": 19,
+   "count": 20,
    "records": [
+    {
+     "date": "2026-08-25",
+     "port": "caofeidian",
+     "port_raw": "曹妃甸",
+     "type": "PSC",
+     "authority": "",
+     "officer": "",
+     "defects": 3,
+     "detained": false,
+     "codes": "1. 14802 压载水记录簿(BWRB): 2026-07-25 滤器清洗操作未记录; 2026-07-01 整页记录后船长未签署 (BWM)\n2. 07101 机舱与消防站之间甲板贯穿管多处未用450mm耐火材料隔热 (FSS)\n3. 11101 右舷救生艇回收后未就位,吊钩钢丝持续受力 (LSA)",
+     "rectified": "",
+     "note": "来源:PSC REPORT_2026-08-25.pdf (Form B OCR 2026-08-31回填)"
+    },
     {
      "date": "2025-09-19",
      "port": "Qinhuangdao",
@@ -8727,6 +9390,30 @@
  "by_port": {
   "yantai": [
    {
+    "ship": "SUNNY LABE",
+    "date": "2026-09-08",
+    "port": "yantai",
+    "defects": 4,
+    "detained": false,
+    "codes": "11101 DAMAGED\n03105 THE GASKET OF ESCAPE HATCH COVER FOR ELEVATOR TRUNK\n93105 HARDENED AND DAMAGED a 图\n07109 THE PRESSURE GAUGE RANGE(0-0.4MPA) OF MANIFOLD PIPE FOR FIXED"
+   },
+   {
+    "ship": "WINNING ENDURANCE",
+    "date": "2026-08-18",
+    "port": "yantai",
+    "defects": 3,
+    "detained": false,
+    "codes": "18418 THE BRACKET FOR STERN MOORING WIENCH(S) CLUTCH FOUND\n04103 ILLUMINATE THE LAUNCHING WATER AREA DUE TO THE SWIVEL\n03105 PORTSIDE OF NO.5 CARGO HATCH COVER(AFT) - SEALING PACKING"
+   },
+   {
+    "ship": "SUNNY SAILOR",
+    "date": "2026-08-05",
+    "port": "yantai",
+    "defects": 3,
+    "detained": false,
+    "codes": "14602 VERIFICATION OF IMO NOx EMISSION CONTROL - NO ENTRIES OF\n11117 THE BRACKET FOR SELF-IGNITING LIGHT OF LIFEBUOY ON BOAT\n07110 FIXED LOCAL APPLICATION FIRE-FIGHTING SYSTEM - FRESH WATER"
+   },
+   {
     "ship": "SUNNY MAMOU",
     "date": "2026-07-30",
     "port": "Yantai",
@@ -8735,10 +9422,42 @@
     "codes": ""
    },
    {
+    "ship": "WINNING RICH",
+    "date": "2026-07-29",
+    "port": "yantai",
+    "defects": null,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "SUNNY KEROUANE",
+    "date": "2026-07-27",
+    "port": "yantai",
+    "defects": 3,
+    "detained": false,
+    "codes": "01333 WATER ON 2026.07.13 NOT CONDUCTED AND RECORDED ACCORDING TO L\n03105 ACCESS HATCH COVER(FORE) GASKET FOR NO.3 CARGO HOLD FOUND\n10109 FORE MAST HEAD LIGHT(LOWER) OUT OF ORDER"
+   },
+   {
+    "ship": "SUNNY STAR",
+    "date": "2026-06-25",
+    "port": "yantai",
+    "defects": 3,
+    "detained": false,
+    "codes": "10109 THE AFTER ANCHOR LIGHT(LOWER) OUT OF ORDER\n07116 THE INSPECTION HATCH COVER ON GALLEY VENTILATOR BROKEN (ft ¢\n11113 THE REMOTE RELEASE WIRE FOR RESCUE BOAT LAUNCHING"
+   },
+   {
     "ship": "WINNING INTEGRITY",
     "date": "2026-06-22",
     "port": "Yantai",
     "defects": 3,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "SUNNY FRIA",
+    "date": "2026-06-18",
+    "port": "yantai",
+    "defects": 0,
     "detained": false,
     "codes": ""
    },
@@ -8775,6 +9494,14 @@
     "codes": ""
    },
    {
+    "ship": "WINNING NATURE",
+    "date": "2026-04-13",
+    "port": "yantai",
+    "defects": 3,
+    "detained": false,
+    "codes": "02120 THE LOCATION SIGN FOR ENCLOSURE CONTAINING THE FIRE PLAN\n11117 A LIFEBUOY EQUIPPED WITH A SELF-IGNITING LIGHT AND A BOUYANT\n11102 TWO HATCHETS NOT STOWED AT EACH END OF LIFEBOAT"
+   },
+   {
     "ship": "WINNING RISING",
     "date": "2026-03-19",
     "port": "Yantai",
@@ -8807,12 +9534,28 @@
     "codes": ""
    },
    {
+    "ship": "WINNING EXCELLENCE",
+    "date": "2026-02-27",
+    "port": "yantai",
+    "defects": 1,
+    "detained": false,
+    "codes": "18424 ABOVE GENERATOR DETACHED"
+   },
+   {
     "ship": "WINNING UNIVERSE",
     "date": "2026-01-30",
     "port": "Yantai",
     "defects": 2,
     "detained": false,
     "codes": ""
+   },
+   {
+    "ship": "WINNING HOPE",
+    "date": "2026-01-26",
+    "port": "yantai",
+    "defects": 1,
+    "detained": false,
+    "codes": "10109 LIGHT. Mg 5 Shs Sao: te rae tS C]"
    },
    {
     "ship": "WINNING FAITH",
@@ -8831,10 +9574,34 @@
     "codes": ""
    },
    {
+    "ship": "SUNNY FARANAH",
+    "date": "2025-12-18",
+    "port": "yantai",
+    "defects": 1,
+    "detained": false,
+    "codes": "11110 BLOCK NOT LOWERED TO SET ON THE DAVIT A gah |"
+   },
+   {
     "ship": "SUNNY KALOUM",
     "date": "2025-11-04",
     "port": "Yantai",
     "defects": 3,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "WINNING LOYALTY",
+    "date": "2025-10-24",
+    "port": "Yantai",
+    "defects": 2,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "WINNING GRACE",
+    "date": "2025-10-16",
+    "port": "Yantai",
+    "defects": 2,
     "detained": false,
     "codes": ""
    },
@@ -8871,10 +9638,50 @@
     "codes": ""
    },
    {
+    "ship": "WINNING WORLD",
+    "date": "2025-03-18",
+    "port": "Yantai",
+    "defects": 2,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "WINNING HOPE",
+    "date": "2025-02-27",
+    "port": "Yantai",
+    "defects": 2,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "SUNNY RIVER",
+    "date": "2025-02-05",
+    "port": "yantai",
+    "defects": 2,
+    "detained": false,
+    "codes": "10127 POSITION FIXING l.NTERVAL fN ECDIS NOT PERFORMED ACCORDING TO\n10109 THE STERN LIGHT(LOWER) F01JND om OF WORK"
+   },
+   {
+    "ship": "WINNING EXCELLENCE",
+    "date": "2025-01-15",
+    "port": "Yantai",
+    "defects": 5,
+    "detained": false,
+    "codes": ""
+   },
+   {
     "ship": "SUNNY FRIA",
     "date": "2025-01-13",
     "port": "Yantai",
     "defects": 3,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "SUNNY SAILOR",
+    "date": "2025-01-10",
+    "port": "Yantai",
+    "defects": 2,
     "detained": false,
     "codes": ""
    },
@@ -8905,6 +9712,14 @@
    {
     "ship": "WINNING BROTHER",
     "date": "2024-10-28",
+    "port": "Yantai",
+    "defects": 1,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "WINNING NATURE",
+    "date": "2024-10-23",
     "port": "Yantai",
     "defects": 1,
     "detained": false,
@@ -8975,6 +9790,14 @@
     "codes": ""
    },
    {
+    "ship": "WINNING TEAM",
+    "date": "2024-01-18",
+    "port": "Yantai",
+    "defects": 1,
+    "detained": false,
+    "codes": ""
+   },
+   {
     "ship": "SUNNY LABE",
     "date": "2024-01-03",
     "port": "Yantai",
@@ -8985,6 +9808,14 @@
    {
     "ship": "WINNING LOYALTY",
     "date": "2023-11-30",
+    "port": "Yantai",
+    "defects": 1,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "WINNING QUEEN",
+    "date": "2023-11-27",
     "port": "Yantai",
     "defects": 1,
     "detained": false,
@@ -9067,6 +9898,14 @@
     "date": "2022-08-23",
     "port": "Yantai",
     "defects": 1,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "SUNNY MOREBAYA",
+    "date": "2022-08-04",
+    "port": "Yantai",
+    "defects": 2,
     "detained": false,
     "codes": ""
    },
@@ -9879,9 +10718,25 @@
     "defects": 0,
     "detained": false,
     "codes": ""
+   },
+   {
+    "ship": "SUNNY CONAKRY",
+    "date": "2023-06-18",
+    "port": "Callao",
+    "defects": 0,
+    "detained": false,
+    "codes": ""
    }
   ],
   "tangshan": [
+   {
+    "ship": "WINNING CONFIDENCE",
+    "date": "2025-11-05",
+    "port": "Tangshan",
+    "defects": 2,
+    "detained": false,
+    "codes": ""
+   },
    {
     "ship": "SUNNY BEYLA",
     "date": "2023-10-19",
@@ -9893,6 +10748,14 @@
    {
     "ship": "SUNNY COYAH",
     "date": "2023-08-20",
+    "port": "Tangshan",
+    "defects": 1,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "SUNNY STAR",
+    "date": "2023-07-03",
     "port": "Tangshan",
     "defects": 1,
     "detained": false,
@@ -10237,6 +11100,14 @@
   ],
   "pontianak": [
    {
+    "ship": "WINNING RICH",
+    "date": "2023-02-07",
+    "port": "Pontianak",
+    "defects": 0,
+    "detained": false,
+    "codes": ""
+   },
+   {
     "ship": "SUNNY BOFFA",
     "date": "2022-12-02",
     "port": "Pontianak",
@@ -10303,10 +11174,26 @@
   ],
   "qingdao": [
    {
+    "ship": "SUNNY KEROUANE",
+    "date": "2026-07-13",
+    "port": "qingdao",
+    "defects": null,
+    "detained": false,
+    "codes": ""
+   },
+   {
     "ship": "WINNING BRIGHT",
     "date": "2025-05-23",
     "port": "Qingdao",
     "defects": 2,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "SUNNY FARANAH",
+    "date": "2024-05-20",
+    "port": "Qingdao",
+    "defects": 1,
     "detained": false,
     "codes": ""
    },
@@ -11069,7 +11956,65 @@
     "codes": ""
    }
   ],
+  "huanghua": [
+   {
+    "ship": "WINNING CONFIDENCE",
+    "date": "2026-06-11",
+    "port": "huanghua",
+    "defects": 2,
+    "detained": false,
+    "codes": "14811 BALLAST WATER MANAGEMENT SYSTEM FOUND LEAKING\n03105 ORDER DURING INSPECTION"
+   },
+   {
+    "ship": "WINNING PEACE",
+    "date": "2026-03-27",
+    "port": "Huanghua",
+    "defects": 6,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "SUNNY CONAKRY",
+    "date": "2026-01-29",
+    "port": "huanghua",
+    "defects": 2,
+    "detained": false,
+    "codes": "05110 DURING INSPECTION. [te $ Hs 3% Q2\n10109 STERN LIGHT HORIZONTAL SECTOR VISIBILITY NOT AS REQUIRED BY"
+   },
+   {
+    "ship": "SUNNY SKY",
+    "date": "2022-09-06",
+    "port": "Huanghua",
+    "defects": 1,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "WINNING FAITH",
+    "date": "2021-10-19",
+    "port": "Huanghua",
+    "defects": 1,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "SUNNY MAMOU",
+    "date": "2017-08-21",
+    "port": "Huanghua",
+    "defects": 6,
+    "detained": false,
+    "codes": ""
+   }
+  ],
   "vancouver": [
+   {
+    "ship": "SUNNY KEROUANE",
+    "date": "2025-05-01",
+    "port": "Vancouver",
+    "defects": 14,
+    "detained": false,
+    "codes": ""
+   },
    {
     "ship": "SUNNY CONAKRY",
     "date": "2023-01-05",
@@ -11525,6 +12470,22 @@
   ],
   "fangcheng": [
    {
+    "ship": "WINNING BROTHER",
+    "date": "2026-01-12",
+    "port": "Fangcheng",
+    "defects": 3,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "SUNNY FRIA",
+    "date": "2025-09-08",
+    "port": "Fangcheng",
+    "defects": 3,
+    "detained": false,
+    "codes": ""
+   },
+   {
     "ship": "SUNNY DABOLA",
     "date": "2025-08-08",
     "port": "Fangcheng",
@@ -11541,6 +12502,14 @@
     "codes": ""
    },
    {
+    "ship": "WINNING SEA",
+    "date": "2025-03-04",
+    "port": "Fangcheng",
+    "defects": 1,
+    "detained": false,
+    "codes": ""
+   },
+   {
     "ship": "WINNING ANGEL",
     "date": "2024-12-18",
     "port": "Fangcheng",
@@ -11553,6 +12522,14 @@
     "date": "2024-11-11",
     "port": "Fangcheng",
     "defects": 1,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "WINNING DILIGENCE",
+    "date": "2024-04-17",
+    "port": "Fangcheng",
+    "defects": 3,
     "detained": false,
     "codes": ""
    },
@@ -12741,6 +13718,14 @@
   ],
   "ningbo": [
    {
+    "ship": "WINNING GRACE",
+    "date": "2026-06-24",
+    "port": "ningbo",
+    "defects": 1,
+    "detained": false,
+    "codes": "11101 THE PAINTER NOT CONNECTED WITH THE QUICK RELEASE UNIT OF RESCUE BOAT"
+   },
+   {
     "ship": "SUNNY FARANAH",
     "date": "2023-08-08",
     "port": "Ningbo",
@@ -13523,6 +14508,14 @@
   ],
   "zhanjiang": [
    {
+    "ship": "WINNING WORLD",
+    "date": "2026-07-28",
+    "port": "zhanjiang",
+    "defects": 4,
+    "detained": false,
+    "codes": "14616 DATA RECORDER OF EXHAUST GAS SCRUBBER FAILED TO\n11131 OPERATIONAL INSTRUCTION PLACARD FOR FREE-FALL LIFEBOAT 17\n04113 THE SENSOR OF THE WATER INGRESS ALARM SYSTEM FOR THE\n10109 THE ALARM OF UPPER AFT MASTER LIGHT WAS INDICATED ON THE 17"
+   },
+   {
     "ship": "WINNING INTEGRITY",
     "date": "2025-04-15",
     "port": "Zhanjiang",
@@ -13573,10 +14566,42 @@
   ],
   "caofeidian": [
    {
+    "ship": "WINNING YOUTH",
+    "date": "2026-08-25",
+    "port": "caofeidian",
+    "defects": 3,
+    "detained": false,
+    "codes": "1. 14802 压载水记录簿(BWRB): 2026-07-25 滤器清洗操作未记录; 2026-07-01 整页记录后船长未签署 (BWM)\n2. 07101 机舱与消防站之间甲板贯穿管多处未用450mm耐火材料隔热 (FSS)\n3. 11101 右舷救生艇回收后未就位,吊钩钢丝持续受力 (LSA)"
+   },
+   {
+    "ship": "WINNING FAITH",
+    "date": "2026-08-17",
+    "port": "caofeidian",
+    "defects": 2,
+    "detained": false,
+    "codes": "11101 ONE SET OF SAFETY HARNESS DEFECTIVE IN STBD L/B\n04118 PORTABLE GAS DETECTORS ON BOARD UNABLE TO MEASURE CARBON"
+   },
+   {
+    "ship": "WINNING SEA",
+    "date": "2026-04-14",
+    "port": "caofeidian",
+    "defects": 2,
+    "detained": false,
+    "codes": "11123 WEAK l.['.1( NOT PR.OV1DED FOR. TWO WAY Vl-IF WRIST BAND\n08108 NO. I DETECT SENSOR OF OIL r,OST ALARM SYSTEM MANUALLY ISOLATED"
+   },
+   {
     "ship": "WINNING WEALTH",
     "date": "2025-05-07",
     "port": "Caofeidian",
     "defects": 2,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "WINNING OCEAN",
+    "date": "2025-03-17",
+    "port": "Caofeidian",
+    "defects": 7,
     "detained": false,
     "codes": ""
    },
@@ -13719,40 +14744,6 @@
     "codes": ""
    }
   ],
-  "huanghua": [
-   {
-    "ship": "WINNING PEACE",
-    "date": "2026-03-27",
-    "port": "Huanghua",
-    "defects": 6,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "SUNNY SKY",
-    "date": "2022-09-06",
-    "port": "Huanghua",
-    "defects": 1,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "WINNING FAITH",
-    "date": "2021-10-19",
-    "port": "Huanghua",
-    "defects": 1,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "SUNNY MAMOU",
-    "date": "2017-08-21",
-    "port": "Huanghua",
-    "defects": 6,
-    "detained": false,
-    "codes": ""
-   }
-  ],
   "abbot point, qld": [
    {
     "ship": "SUNNY MAMOU",
@@ -13761,6 +14752,48 @@
     "defects": 15,
     "detained": true,
     "codes": ""
+   }
+  ],
+  "": [
+   {
+    "ship": "WINNING BROTHER",
+    "date": "2026-08-18",
+    "port": "",
+    "defects": 1,
+    "detained": false,
+    "codes": "16106 THE ADDITIONAL SECURITY DRILL NOT CONDUCTED WITHIN ONE WEEK AFTER CREW CHANGED MORE THAN 25% ON 17"
+   },
+   {
+    "ship": "WINNING OCEAN",
+    "date": "2026-04-23",
+    "port": "",
+    "defects": 1,
+    "detained": false,
+    "codes": "14599 THE RECEPTACLE FOR E-GARBAGE NOT MARKED IN BLACK IN"
+   },
+   {
+    "ship": "WINNING DILIGENCE",
+    "date": "2026-01-28",
+    "port": "",
+    "defects": 2,
+    "detained": false,
+    "codes": "04103 THE EMERGENCY LIGHTING FOR THE STOWAGE POSITION FOR\n03108 DURE DUE TO THE SEAL RUBBER PEELED OFF"
+   },
+   {
+    "ship": "SUNNY MOREBAYA",
+    "date": "2025-12-30",
+    "port": "",
+    "defects": 2,
+    "detained": false,
+    "codes": "04103 ONE EMERGENCY LIGHT FOR EMERGENCY Pe hie 01] f HFK (01 E=]\n11119 ECR NOT FIT ENGINEERS ON DUTY (A 台海"
+   },
+   {
+    "ship": "WINNING TEAM",
+    "date": "2025-12-22",
+    "port": "",
+    "defects": 3,
+    "detained": false,
+    "codes": "10109 OUT OF ORDER\n11101 SIDE LIFEBOAT OUT OF WORK DUE TO THE\n01330 THE SEAFARERS’ COUNTRY OF PET Hs Bd BA A R01 O"
    }
   ],
   "lumut": [
@@ -13861,6 +14894,14 @@
     "codes": ""
    },
    {
+    "ship": "WINNING ENDURANCE",
+    "date": "2025-07-15",
+    "port": "Qinhuangdao",
+    "defects": 1,
+    "detained": false,
+    "codes": ""
+   },
+   {
     "ship": "SUNNY SKY",
     "date": "2014-01-10",
     "port": "Qinhuangdao",
@@ -13953,6 +14994,24 @@
     "codes": ""
    }
   ],
+  "singapore": [
+   {
+    "ship": "WINNING LOYALTY",
+    "date": "2026-05-04",
+    "port": "singapore",
+    "defects": 3,
+    "detained": false,
+    "codes": "07199 SHELTER FOR PAINT DRUM.WATER CAN NOT REACH THE PAINT DRUM\n07113 NO DRAINAGE VALVE FOR BOTTOM OF U-TYPE FIRE PIPE OUTSIDE\n04103 PORTABLE LIGHT SHELF FOR FORE LIFERAFT EMBARKATION STATION"
+   },
+   {
+    "ship": "WINNING WISDOM",
+    "date": "2024-02-13",
+    "port": "Singapore",
+    "defects": 1,
+    "detained": false,
+    "codes": ""
+   }
+  ],
   "kure, hiroshima": [
    {
     "ship": "WINNING NATURE",
@@ -13973,6 +15032,16 @@
     "codes": ""
    }
   ],
+  "jingtang": [
+   {
+    "ship": "WINNING QUEEN",
+    "date": "2026-02-04",
+    "port": "jingtang",
+    "defects": 2,
+    "detained": false,
+    "codes": "03108 THE CLOSING DEVICE OF FRESH WATER TANK AIR PIPE FOUND SEIZED\n11108 STARBOARD SIDE"
+   }
+  ],
   "dalian": [
    {
     "ship": "WINNING QUEEN",
@@ -13981,6 +15050,16 @@
     "defects": 8,
     "detained": false,
     "codes": ""
+   }
+  ],
+  "董家口": [
+   {
+    "ship": "WINNING WISDOM",
+    "date": "2026-08-21",
+    "port": "董家口",
+    "defects": 8,
+    "detained": false,
+    "codes": "11101 THE CASE STORED STARTING BATTERY IN FREE-FALL LIFEBUOY PENETRATED BY CABLE CAN NOT KEEP WATERTIGHT.\n10109 ONE GREEN ALL-ROUND LIGHT ON COMPASS DECK PORTSIDE MALFUNCTION.\n1117 THE LENGTH OF BUOYANT LINE OF LIFEBUOY NEARBY ACCOMMODATION LADDER ON PORTSIDE OF MAINDECK LESS THAN 30M.\n03103 THE LOWEST COURSE OF HANDRAIL ON THE PORTSIDE OF MAINDECK MISSING ABOUT 5M.\n03105 ONE CLEAT OF NO.9 CARGO HOLD HATCH ON THE PORTSIDE OF MAINDECK MALFUNCTION.\n07101 THE FIREPROOF LAGGING OF PIPE PENETRATING THE DECK BETWEEN FIRE CONTROL ROOM AND ENGINE ROOM LESS THAN 900MM.\n03108 THE SOUNDING PIPE OF A.P.T "
    }
   ],
   "prince rupert": [
@@ -14004,59 +15083,61 @@
  },
  "stats": {
   "by_port": {
-   "yantai": 140,
+   "yantai": 162,
    "port hedland, wa": 69,
    "tianjin": 27,
-   "qingdao": 24,
+   "qingdao": 26,
+   "caofeidian": 21,
    "gladstone, qld": 17,
    "rizhao": 17,
    "mizushima": 17,
    "dangjin": 17,
-   "caofeidian": 17,
    "dampier, wa": 16,
    "port walcott, wa": 15,
    "hay point, qld": 14,
    "cagayan de oro, mindanao": 14,
+   "fangcheng": 14,
    "zhoushan": 12,
    "lianyungang": 12,
    "pohang": 11,
    "oita": 10,
-   "fangcheng": 10,
+   "ningbo": 10,
    "jiangyin": 10,
+   "pontianak": 9,
    "onomichi": 9,
    "robert's bank": 9,
-   "ningbo": 9,
-   "pontianak": 8,
+   "tangshan": 8,
    "kawasaki": 8,
    "newcastle, nsw": 7,
    "chiba": 7,
    "nagoya, aichi": 7,
    "wakayama": 7,
-   "tangshan": 6,
+   "zhanjiang": 7,
+   "huanghua": 6,
    "wakamatsu/kitakyushu": 6,
    "kashima, ibaraki": 6,
    "shanghai": 6,
-   "zhanjiang": 6,
+   "callao": 5,
    "kobe": 5,
-   "callao": 4,
+   "": 5,
+   "vancouver": 4,
    "fuzhou": 4,
    "gwangyang": 4,
    "hong kong": 4,
-   "huanghua": 4,
    "subic bay": 4,
    "banten": 3,
-   "vancouver": 3,
    "banjarmasin": 3,
    "lumut": 3,
+   "qinhuangdao": 3,
    "pyeongtaek": 2,
    "zhuhai": 2,
    "vung ang": 2,
    "panjang": 2,
    "nantong": 2,
-   "qinhuangdao": 2,
    "muroran": 2,
    "port kembla, nsw": 2,
    "dongjiakou": 2,
+   "singapore": 2,
    "prince rupert": 2,
    "san juan": 1,
    "rayong": 1,
@@ -14069,11 +15150,13 @@
    "xiamen": 1,
    "kure, hiroshima": 1,
    "miyako, iwate": 1,
-   "dalian": 1
+   "jingtang": 1,
+   "dalian": 1,
+   "董家口": 1
   },
-  "this_year": 18,
+  "this_year": 43,
   "detained_total": 17,
-  "with_codes": 0
+  "with_codes": 25
  },
  "missing": []
 }
