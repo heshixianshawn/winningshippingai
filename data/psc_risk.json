@@ -1,6 +1,6 @@
 {
- "generated": "2026-09-16T22:31:25",
- "source": "Tokyo MOU APCIS（源文件生成于 2026-09-16T22:21:18）",
+ "generated": "2026-09-16T22:34:55",
+ "source": "Tokyo MOU APCIS（源文件生成于 2026-09-16T22:34:48）",
  "ship_count": 64,
  "ships": {
   "SUNNY BEYLA": {
@@ -4501,11 +4501,119 @@
    "data_issue": null
   },
   "WINNING ENDURANCE": {
-   "status": "error",
-   "error": "详情为空(限流?)",
-   "name": "WINNING ENDURANCE",
+   "status": "stale",
+   "scanned_at": "2026-08-22T17:37:44",
+   "inspections": [
+    {
+     "date": "18.08.2026",
+     "place": "Yantai (China)",
+     "ship_name": "WINNING ENDURANCE",
+     "callsign": "9V5631",
+     "mmsi": "566845000",
+     "flag": "Singapore",
+     "deficiencies": "3",
+     "detention": "no",
+     "risk_at_inspection": "Standard Risk Ship"
+    },
+    {
+     "date": "15.07.2025",
+     "place": "Qinhuangdao (China)",
+     "ship_name": "WINNING ENDURANCE",
+     "callsign": "9V5631",
+     "mmsi": "566845000",
+     "flag": "Singapore",
+     "deficiencies": "1",
+     "detention": "no",
+     "risk_at_inspection": "Standard Risk Ship"
+    },
+    {
+     "date": "25.07.2023",
+     "place": "Qingdao (China)",
+     "ship_name": "WINNING ENDURANCE",
+     "callsign": "9V5631",
+     "mmsi": "566845000",
+     "flag": "Singapore",
+     "deficiencies": "2",
+     "detention": "no",
+     "risk_at_inspection": "Standard Risk Ship"
+    },
+    {
+     "date": "25.03.2021",
+     "place": "Yantai (China)",
+     "ship_name": "WINNING ENDURANCE",
+     "callsign": "9V5631",
+     "mmsi": "566845000",
+     "flag": "Singapore",
+     "deficiencies": "1",
+     "detention": "no",
+     "risk_at_inspection": "Low Risk Ship"
+    },
+    {
+     "date": "16.09.2019",
+     "place": "Lianyungang (China)",
+     "ship_name": "WINNING ENDURANCE",
+     "callsign": "9V5631",
+     "mmsi": "566845000",
+     "flag": "Singapore",
+     "deficiencies": "2",
+     "detention": "no",
+     "risk_at_inspection": "Low Risk Ship"
+    },
+    {
+     "date": "12.10.2018",
+     "place": "Yantai (China)",
+     "ship_name": "WINNING ENDURANCE",
+     "callsign": "9V5631",
+     "mmsi": "566845000",
+     "flag": "Singapore",
+     "deficiencies": "2",
+     "detention": "no",
+     "risk_at_inspection": "Low Risk Ship"
+    },
+    {
+     "date": "29.12.2016",
+     "place": "Yantai (China)",
+     "ship_name": "WINNING ENDURANCE",
+     "callsign": "9V5631",
+     "mmsi": "566845000",
+     "flag": "Singapore",
+     "deficiencies": "0",
+     "detention": "no",
+     "risk_at_inspection": "Low Risk Ship"
+    },
+    {
+     "date": "13.03.2015",
+     "place": "Yantai (China)",
+     "ship_name": "WINNING ENDURANCE",
+     "callsign": "9V5631",
+     "mmsi": "566845000",
+     "flag": "Singapore",
+     "deficiencies": "0",
+     "detention": "no",
+     "risk_at_inspection": "High Risk Ship"
+    },
+    {
+     "date": "16.05.2014",
+     "place": "Rizhao (China)",
+     "ship_name": "WINNING ENDURANCE",
+     "callsign": "9V5631",
+     "mmsi": "566845000",
+     "flag": "Singapore",
+     "deficiencies": "0",
+     "detention": "no",
+     "risk_at_inspection": "High Risk Ship"
+    }
+   ],
+   "risk_level": "Standard",
+   "priority": "N/A",
+   "inspection_window": "18.01.2027 - 18.04.2027",
+   "weighting_points": 3,
+   "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Winning International Ships Management Co Ltd"
+   },
    "imo": "9232058",
-   "note": null,
+   "note": "本次 TMOU 扫描未成功（详情为空(限流?)），以下为上次成功结果",
    "data_issue": null
   },
   "WINNING EXCELLENCE": {
@@ -7700,9 +7808,67 @@
    "data_issue": null
   },
   "WINNING VISION": {
-   "status": "error",
-   "error": "详情为空(限流?)",
-   "name": "WINNING VISION",
+   "risk_level": "Standard",
+   "priority": "II",
+   "inspection_window": "02.08.2026 - 02.11.2026",
+   "weighting_points": 2,
+   "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Winning International Ships Management Co Ltd",
+    "imo": "5466129"
+   },
+   "inspections": [
+    {
+     "date": "02.03.2026",
+     "place": "Yantai (China)",
+     "ship_name": "WINNING VISION",
+     "callsign": "9V6208",
+     "mmsi": "563097300",
+     "flag": "Singapore",
+     "deficiencies": "2",
+     "detention": "no",
+     "risk_at_inspection": "Standard Risk Ship",
+     "inspection_id": "B2CF4C66-3B37-4A04-BC07-B4E66B7E5B42"
+    },
+    {
+     "date": "05.07.2024",
+     "place": "Yantai (China)",
+     "ship_name": "WINNING VISION",
+     "callsign": "9V6208",
+     "mmsi": "563097300",
+     "flag": "Singapore",
+     "deficiencies": "0",
+     "detention": "no",
+     "risk_at_inspection": "Low Risk Ship",
+     "inspection_id": "D78EA34A-E552-4E00-8D32-E7EDF809CA57"
+    },
+    {
+     "date": "22.09.2022",
+     "place": "Yantai (China)",
+     "ship_name": "WINNING VISION",
+     "callsign": "9V6208",
+     "mmsi": "563097300",
+     "flag": "Singapore",
+     "deficiencies": "0",
+     "detention": "no",
+     "risk_at_inspection": "Low Risk Ship",
+     "inspection_id": "995D6A92-8F2D-4318-B666-EEE3D0F7F777"
+    },
+    {
+     "date": "19.10.2020",
+     "place": "Qingdao (China)",
+     "ship_name": "WINNING VISION",
+     "callsign": "9V6208",
+     "mmsi": "563097300",
+     "flag": "Singapore",
+     "deficiencies": "0",
+     "detention": "no",
+     "risk_at_inspection": "Standard Risk Ship",
+     "inspection_id": "F255CFBF-B2D8-400A-8409-B5DC20D53920"
+    }
+   ],
+   "status": "ok",
+   "scanned_at": "2026-09-16T22:34:18",
    "imo": "9859765",
    "note": null,
    "data_issue": null
@@ -8068,9 +8234,102 @@
    "data_issue": null
   },
   "WINNING WISDOM": {
-   "status": "error",
-   "error": "详情为空(限流?)",
-   "name": "WINNING WISDOM",
+   "risk_level": "Standard",
+   "priority": "N/A",
+   "inspection_window": "21.01.2027 - 21.04.2027",
+   "weighting_points": 3,
+   "company": {
+    "name": "Qingdao Winning International Ships Management Co Ltd",
+    "imo": "5466129"
+   },
+   "inspections": [
+    {
+     "date": "21.08.2026",
+     "place": "Dongjiakou (China)",
+     "ship_name": "WINNING WISDOM",
+     "callsign": "9V9549",
+     "mmsi": "563219600",
+     "flag": "Singapore",
+     "deficiencies": "8",
+     "detention": "no",
+     "risk_at_inspection": "Low Risk Ship",
+     "inspection_id": "F049B131-7B9C-4C79-BEAA-E6131003D40B"
+    },
+    {
+     "date": "13.02.2024",
+     "place": "Singapore (Singapore)",
+     "ship_name": "MINERAL QINGDAO",
+     "callsign": "V7A2564",
+     "mmsi": "538008606",
+     "flag": "Marshall Islands",
+     "deficiencies": "1",
+     "detention": "no",
+     "risk_at_inspection": "High Risk Ship",
+     "inspection_id": "B4AA1E20-9E78-4546-84ED-179A3DFF6FDE"
+    },
+    {
+     "date": "13.09.2023",
+     "place": "Nagoya, Aichi (Japan)",
+     "ship_name": "MINERAL QINGDAO",
+     "callsign": "V7A2564",
+     "mmsi": "538008606",
+     "flag": "Marshall Islands",
+     "deficiencies": "0",
+     "detention": "no",
+     "risk_at_inspection": "High Risk Ship",
+     "inspection_id": "98982AA9-A6C6-4438-974D-28C0B65AB199"
+    },
+    {
+     "date": "11.01.2023",
+     "place": "Qingdao (China)",
+     "ship_name": "MINERAL QINGDAO",
+     "callsign": "V7A2564",
+     "mmsi": "538008606",
+     "flag": "Marshall Islands",
+     "deficiencies": "3",
+     "detention": "no",
+     "risk_at_inspection": "Standard Risk Ship",
+     "inspection_id": "9C904853-82A4-46E2-BC8A-4012211C90DD"
+    },
+    {
+     "date": "25.05.2022",
+     "place": "Kashima, Ibaraki (Japan)",
+     "ship_name": "MINERAL QINGDAO",
+     "callsign": "V7A2564",
+     "mmsi": "538008606",
+     "flag": "Marshall Islands",
+     "deficiencies": "0",
+     "detention": "no",
+     "risk_at_inspection": "Low Risk Ship",
+     "inspection_id": "182C2659-2846-442F-BE0F-77B606C5F7FD"
+    },
+    {
+     "date": "30.03.2021",
+     "place": "Port Hedland, WA (Australia)",
+     "ship_name": "MINERAL QINGDAO",
+     "callsign": "V7A2564",
+     "mmsi": "538008606",
+     "flag": "Marshall Islands",
+     "deficiencies": "0",
+     "detention": "no",
+     "risk_at_inspection": "Low Risk Ship",
+     "inspection_id": "1D794109-6CFB-40CD-ACD6-7ADF2B0FA093"
+    },
+    {
+     "date": "08.03.2021",
+     "place": "Pohang (Korea, Republic of)",
+     "ship_name": "MINERAL QINGDAO",
+     "callsign": "V7A2564",
+     "mmsi": "538008606",
+     "flag": "Marshall Islands",
+     "deficiencies": "0",
+     "detention": "no",
+     "risk_at_inspection": "Standard Risk Ship",
+     "inspection_id": "C5CF9BFF-EBE2-4700-98AC-B68ED0D5F782"
+    }
+   ],
+   "status": "ok",
+   "scanned_at": "2026-09-16T22:34:48",
    "imo": "9738583",
    "note": null,
    "data_issue": null
@@ -8711,11 +8970,129 @@
    "data_issue": null
   },
   "SUNNY MOREBAYA": {
-   "status": "error",
-   "error": "详情为空(限流?)",
-   "name": "SUNNY MOREBAYA",
+   "risk_level": "Standard",
+   "priority": "II",
+   "inspection_window": "30.05.2026 - 30.08.2026",
+   "weighting_points": 3,
+   "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Winning International Ships Management Co Ltd",
+    "imo": "5466129"
+   },
+   "inspections": [
+    {
+     "date": "30.12.2025",
+     "place": "Yantai (China)",
+     "ship_name": "SUNNY MOREBAYA",
+     "callsign": "A8HJ3",
+     "mmsi": "636012726",
+     "flag": "Liberia",
+     "deficiencies": "2",
+     "detention": "no",
+     "risk_at_inspection": "Standard Risk Ship",
+     "inspection_id": "E8027490-AF27-499A-AEC7-4766387FCFF6"
+    },
+    {
+     "date": "04.08.2022",
+     "place": "Yantai (China)",
+     "ship_name": "SUNNY MOREBAYA",
+     "callsign": "A8HJ3",
+     "mmsi": "636012726",
+     "flag": "Liberia",
+     "deficiencies": "2",
+     "detention": "no",
+     "risk_at_inspection": "Standard Risk Ship",
+     "inspection_id": "D2FFEADB-91DB-4824-9B37-5AB42F36A928"
+    },
+    {
+     "date": "30.05.2018",
+     "place": "Yantai (China)",
+     "ship_name": "SHIN SETO",
+     "callsign": "A8HJ3",
+     "mmsi": "636012726",
+     "flag": "Liberia",
+     "deficiencies": "3",
+     "detention": "no",
+     "risk_at_inspection": "Low Risk Ship",
+     "inspection_id": "42CD6DEC-E140-4485-8ADE-DF0941C5AA0C"
+    },
+    {
+     "date": "20.06.2017",
+     "place": "Port Hedland, WA (Australia)",
+     "ship_name": "SHIN SETO",
+     "callsign": "A8HJ3",
+     "mmsi": "636012726",
+     "flag": "Liberia",
+     "deficiencies": "0",
+     "detention": "no",
+     "risk_at_inspection": "Low Risk Ship",
+     "inspection_id": "54FA7DE1-0EC6-42DD-A899-6F17A58DB013"
+    },
+    {
+     "date": "07.09.2016",
+     "place": "Cagayan de Oro, Mindanao (Philippines)",
+     "ship_name": "SHIN SETO",
+     "callsign": "A8HJ3",
+     "mmsi": "636012726",
+     "flag": "Liberia",
+     "deficiencies": "0",
+     "detention": "no",
+     "risk_at_inspection": "Standard Risk Ship",
+     "inspection_id": "4B06E67B-250E-4214-8D32-DD306D55FB2B"
+    },
+    {
+     "date": "12.11.2015",
+     "place": "Kawasaki (Japan)",
+     "ship_name": "SHIN SETO",
+     "callsign": "A8HJ3",
+     "mmsi": "636012726",
+     "flag": "Liberia",
+     "deficiencies": "0",
+     "detention": "no",
+     "risk_at_inspection": "Standard Risk Ship",
+     "inspection_id": "FC1C3EC4-41D4-4794-9872-DC49B13F107A"
+    },
+    {
+     "date": "12.05.2015",
+     "place": "Chiba (Japan)",
+     "ship_name": "SHIN SETO",
+     "callsign": "A8HJ3",
+     "mmsi": "636012726",
+     "flag": "Liberia",
+     "deficiencies": "0",
+     "detention": "no",
+     "risk_at_inspection": "Standard Risk Ship",
+     "inspection_id": "EBA5AF6A-5BED-4C6A-A439-13E7D66AFB84"
+    },
+    {
+     "date": "09.12.2014",
+     "place": "Mizushima (Japan)",
+     "ship_name": "SHIN SETO",
+     "callsign": "A8HJ3",
+     "mmsi": "636012726",
+     "flag": "Liberia",
+     "deficiencies": "0",
+     "detention": "no",
+     "risk_at_inspection": "Standard Risk Ship",
+     "inspection_id": "9E0536F3-E0BB-404A-A400-D2D13435737D"
+    },
+    {
+     "date": "03.06.2014",
+     "place": "Onomichi (Japan)",
+     "ship_name": "SHIN SETO",
+     "callsign": "A8HJ3",
+     "mmsi": "636012726",
+     "flag": "Liberia",
+     "deficiencies": "0",
+     "detention": "no",
+     "risk_at_inspection": "Low Risk Ship",
+     "inspection_id": "5D5534D3-3FF7-4E46-AC76-5AD4D499C299"
+    }
+   ],
+   "status": "stale",
+   "scanned_at": "2026-08-22T17:43:45",
    "imo": "9331426",
-   "note": null,
+   "note": "本次 TMOU 扫描未成功（详情为空(限流?)），以下为上次成功结果",
    "data_issue": null
   },
   "WINNING AMBITION": {
