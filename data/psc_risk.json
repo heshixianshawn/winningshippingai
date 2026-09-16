@@ -1,14 +1,11 @@
 {
- "generated": "2026-08-22T18:15:09",
- "source": "Tokyo MOU APCIS",
+ "generated": "2026-09-16T21:39:02",
+ "source": "Tokyo MOU APCIS（源文件生成于 2026-09-06T09:01:03）",
+ "ship_count": 64,
  "ships": {
   "SUNNY BEYLA": {
-   "imo": "9364320",
    "status": "ok",
-   "risk_level": "Standard",
-   "priority": "I",
-   "inspection_window": "28.05.2025 - 28.08.2025",
-   "weighting_points": 3,
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "28.12.2024",
@@ -110,18 +107,21 @@
      "risk_at_inspection": "Standard Risk Ship"
     }
    ],
+   "risk_level": "Standard",
+   "priority": "I",
+   "inspection_window": "28.05.2025 - 28.08.2025",
+   "weighting_points": 3,
    "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Zhongji International Ships Management Co Ltd"
+   },
+   "imo": "9364320",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
+   "data_issue": null
   },
   "SUNNY BOFFA": {
-   "imo": "9253090",
    "status": "ok",
-   "risk_level": "Standard",
-   "priority": "II",
-   "inspection_window": "03.08.2026 - 03.11.2026",
-   "weighting_points": 3,
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "03.03.2026",
@@ -256,18 +256,21 @@
      "risk_at_inspection": "Low Risk Ship"
     }
    ],
+   "risk_level": "Standard",
+   "priority": "II",
+   "inspection_window": "03.08.2026 - 03.11.2026",
+   "weighting_points": 3,
    "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Winning International Ships Management Co Ltd"
+   },
+   "imo": "9253090",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
+   "data_issue": null
   },
   "SUNNY BOKE": {
-   "imo": "9198240",
    "status": "ok",
-   "risk_level": "Standard",
-   "priority": "I",
-   "inspection_window": "23.10.2025 - 23.01.2026",
-   "weighting_points": 3,
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "23.05.2025",
@@ -380,18 +383,21 @@
      "risk_at_inspection": "High Risk Ship"
     }
    ],
+   "risk_level": "Standard",
+   "priority": "I",
+   "inspection_window": "23.10.2025 - 23.01.2026",
+   "weighting_points": 3,
    "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Winning International Ships Management Co Ltd"
+   },
+   "imo": "9198240",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
+   "data_issue": null
   },
   "SUNNY CONAKRY": {
-   "imo": "9406489",
    "status": "ok",
-   "risk_level": "Standard",
-   "priority": "II",
-   "inspection_window": "29.06.2026 - 29.09.2026",
-   "weighting_points": 3,
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "29.01.2026",
@@ -537,18 +543,21 @@
      "risk_at_inspection": "Standard Risk Ship"
     }
    ],
+   "risk_level": "Standard",
+   "priority": "II",
+   "inspection_window": "29.06.2026 - 29.09.2026",
+   "weighting_points": 3,
    "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Zhongji International Ships Management Co Ltd"
+   },
+   "imo": "9406489",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
+   "data_issue": null
   },
   "SUNNY COYAH": {
-   "imo": "9387114",
    "status": "ok",
-   "risk_level": "Standard",
-   "priority": "I",
-   "inspection_window": "10.02.2025 - 10.05.2025",
-   "weighting_points": 3,
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "10.09.2024",
@@ -650,18 +659,21 @@
      "risk_at_inspection": "Low Risk Ship"
     }
    ],
-   "outstanding_deficiencies": 0,
-   "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
-  },
-  "SUNNY DABOLA": {
-   "imo": "9398149",
-   "status": "ok",
    "risk_level": "Standard",
    "priority": "I",
-   "inspection_window": "08.01.2026 - 08.04.2026",
+   "inspection_window": "10.02.2025 - 10.05.2025",
    "weighting_points": 3,
+   "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Zhongji International Ships Management Co Ltd"
+   },
+   "imo": "9387114",
+   "note": null,
+   "data_issue": null
+  },
+  "SUNNY DABOLA": {
+   "status": "ok",
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "08.08.2025",
@@ -906,18 +918,21 @@
      "risk_at_inspection": "Low Risk Ship"
     }
    ],
-   "outstanding_deficiencies": "",
-   "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
-  },
-  "SUNNY FARANAH": {
-   "imo": "9337107",
-   "status": "ok",
    "risk_level": "Standard",
    "priority": "I",
-   "inspection_window": "18.05.2026 - 18.08.2026",
+   "inspection_window": "08.01.2026 - 08.04.2026",
    "weighting_points": 3,
+   "outstanding_deficiencies": "",
+   "company": {
+    "name": "Qingdao Zhongji International Ships Management Co Ltd"
+   },
+   "imo": "9398149",
+   "note": null,
+   "data_issue": null
+  },
+  "SUNNY FARANAH": {
+   "status": "ok",
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "18.12.2025",
@@ -1063,18 +1078,21 @@
      "risk_at_inspection": "Standard Risk Ship"
     }
    ],
+   "risk_level": "Standard",
+   "priority": "I",
+   "inspection_window": "18.05.2026 - 18.08.2026",
+   "weighting_points": 3,
    "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Zhongji International Ships Management Co Ltd"
+   },
+   "imo": "9337107",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
+   "data_issue": null
   },
   "SUNNY FRIA": {
-   "imo": "9330305",
    "status": "ok",
-   "risk_level": "Standard",
-   "priority": "N/A",
-   "inspection_window": "18.11.2026 - 18.02.2027",
-   "weighting_points": 3,
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "18.06.2026",
@@ -1220,18 +1238,21 @@
      "risk_at_inspection": "Low Risk Ship"
     }
    ],
+   "risk_level": "Standard",
+   "priority": "N/A",
+   "inspection_window": "18.11.2026 - 18.02.2027",
+   "weighting_points": 3,
    "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Zhongji International Ships Management Co Ltd"
+   },
+   "imo": "9330305",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
+   "data_issue": null
   },
   "SUNNY KALOUM": {
-   "imo": "9336969",
    "status": "ok",
-   "risk_level": "High",
-   "priority": "I",
-   "inspection_window": "04.01.2026 - 04.03.2026",
-   "weighting_points": 4,
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "04.11.2025",
@@ -1355,18 +1376,21 @@
      "risk_at_inspection": "Low Risk Ship"
     }
    ],
+   "risk_level": "High",
+   "priority": "I",
+   "inspection_window": "04.01.2026 - 04.03.2026",
+   "weighting_points": 4,
    "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Zhongji International Ships Management Co Ltd"
+   },
+   "imo": "9336969",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
+   "data_issue": null
   },
   "SUNNY KAMSAR": {
-   "imo": "9336957",
    "status": "ok",
-   "risk_level": "Standard",
-   "priority": "II",
-   "inspection_window": "04.08.2026 - 04.11.2026",
-   "weighting_points": 3,
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "04.03.2026",
@@ -1666,18 +1690,21 @@
      "risk_at_inspection": "Standard Risk Ship"
     }
    ],
+   "risk_level": "Standard",
+   "priority": "II",
+   "inspection_window": "04.08.2026 - 04.11.2026",
+   "weighting_points": 3,
    "outstanding_deficiencies": "",
+   "company": {
+    "name": "Qingdao Zhongji International Ships Management Co Ltd"
+   },
+   "imo": "9336957",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
+   "data_issue": null
   },
   "SUNNY KANKAN": {
-   "imo": "9287273",
    "status": "ok",
-   "risk_level": "Standard",
-   "priority": "N/A",
-   "inspection_window": "20.09.2026 - 20.12.2026",
-   "weighting_points": 3,
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "20.04.2026",
@@ -1746,18 +1773,21 @@
      "risk_at_inspection": "Low Risk Ship"
     }
    ],
+   "risk_level": "Standard",
+   "priority": "N/A",
+   "inspection_window": "20.09.2026 - 20.12.2026",
+   "weighting_points": 3,
    "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Zhongji International Ships Management Co Ltd"
+   },
+   "imo": "9287273",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
+   "data_issue": null
   },
   "SUNNY KEROUANE": {
-   "imo": "9398113",
    "status": "ok",
-   "risk_level": "High",
-   "priority": "N/A",
-   "inspection_window": "27.09.2026 - 27.11.2026",
-   "weighting_points": 4,
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "27.07.2026",
@@ -1947,18 +1977,21 @@
      "risk_at_inspection": "High Risk Ship"
     }
    ],
+   "risk_level": "High",
+   "priority": "N/A",
+   "inspection_window": "27.09.2026 - 27.11.2026",
+   "weighting_points": 4,
    "outstanding_deficiencies": "",
+   "company": {
+    "name": "Qingdao Zhongji International Ships Management Co Ltd"
+   },
+   "imo": "9398113",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
+   "data_issue": null
   },
   "SUNNY KINDIA": {
-   "imo": "9374064",
    "status": "ok",
-   "risk_level": "Standard",
-   "priority": "I",
-   "inspection_window": "17.11.2025 - 17.02.2026",
-   "weighting_points": 3,
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "17.06.2025",
@@ -2115,18 +2148,21 @@
      "risk_at_inspection": "Low Risk Ship"
     }
    ],
-   "outstanding_deficiencies": 0,
-   "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
-  },
-  "SUNNY LABE": {
-   "imo": "9271597",
-   "status": "ok",
    "risk_level": "Standard",
    "priority": "I",
-   "inspection_window": "16.10.2025 - 16.01.2026",
+   "inspection_window": "17.11.2025 - 17.02.2026",
    "weighting_points": 3,
+   "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Zhongji International Ships Management Co Ltd"
+   },
+   "imo": "9374064",
+   "note": null,
+   "data_issue": null
+  },
+  "SUNNY LABE": {
+   "status": "ok",
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "16.05.2025",
@@ -2228,18 +2264,21 @@
      "risk_at_inspection": "Low Risk Ship"
     }
    ],
-   "outstanding_deficiencies": 0,
-   "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
-  },
-  "SUNNY LINK": {
-   "imo": "9254666",
-   "status": "ok",
    "risk_level": "Standard",
    "priority": "I",
-   "inspection_window": "15.02.2026 - 15.05.2026",
+   "inspection_window": "16.10.2025 - 16.01.2026",
    "weighting_points": 3,
+   "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Zhongji International Ships Management Co Ltd"
+   },
+   "imo": "9271597",
+   "note": null,
+   "data_issue": null
+  },
+  "SUNNY LINK": {
+   "status": "ok",
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "15.09.2025",
@@ -2385,18 +2424,21 @@
      "risk_at_inspection": "Low Risk Ship"
     }
    ],
-   "outstanding_deficiencies": 0,
-   "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
-  },
-  "SUNNY NZKORE": {
-   "imo": "9393187",
-   "status": "ok",
    "risk_level": "Standard",
    "priority": "I",
-   "inspection_window": "21.08.2025 - 21.11.2025",
+   "inspection_window": "15.02.2026 - 15.05.2026",
    "weighting_points": 3,
+   "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Zhongji International Ships Management Co Ltd"
+   },
+   "imo": "9254666",
+   "note": null,
+   "data_issue": null
+  },
+  "SUNNY NZKORE": {
+   "status": "ok",
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "21.03.2025",
@@ -2564,18 +2606,21 @@
      "risk_at_inspection": "Standard Risk Ship"
     }
    ],
+   "risk_level": "Standard",
+   "priority": "I",
+   "inspection_window": "21.08.2025 - 21.11.2025",
+   "weighting_points": 3,
    "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Zhongji International Ships Management Co Ltd"
+   },
+   "imo": "9393187",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
+   "data_issue": null
   },
   "SUNNY RIVER": {
-   "imo": "9337169",
    "status": "ok",
-   "risk_level": "Standard",
-   "priority": "II",
-   "inspection_window": "13.06.2026 - 13.09.2026",
-   "weighting_points": 3,
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "13.01.2026",
@@ -2754,18 +2799,21 @@
      "risk_at_inspection": "Low Risk Ship"
     }
    ],
+   "risk_level": "Standard",
+   "priority": "II",
+   "inspection_window": "13.06.2026 - 13.09.2026",
+   "weighting_points": 3,
    "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Zhongji International Ships Management Co Ltd"
+   },
+   "imo": "9337169",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
+   "data_issue": null
   },
   "SUNNY ROUTE": {
-   "imo": "9296420",
    "status": "ok",
-   "risk_level": "Standard",
-   "priority": "I",
-   "inspection_window": "27.08.2024 - 27.11.2024",
-   "weighting_points": 3,
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "27.03.2024",
@@ -2867,18 +2915,21 @@
      "risk_at_inspection": "Low Risk Ship"
     }
    ],
+   "risk_level": "Standard",
+   "priority": "I",
+   "inspection_window": "27.08.2024 - 27.11.2024",
+   "weighting_points": 3,
    "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Zhongji International Ships Management Co Ltd"
+   },
+   "imo": "9296420",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
+   "data_issue": null
   },
   "SUNNY SAILOR": {
-   "imo": "9439125",
    "status": "ok",
-   "risk_level": "Standard",
-   "priority": "N/A",
-   "inspection_window": "05.01.2027 - 05.04.2027",
-   "weighting_points": 3,
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "05.08.2026",
@@ -2969,18 +3020,21 @@
      "risk_at_inspection": "Low Risk Ship"
     }
    ],
+   "risk_level": "Standard",
+   "priority": "N/A",
+   "inspection_window": "05.01.2027 - 05.04.2027",
+   "weighting_points": 3,
    "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Zhongji International Ships Management Co Ltd"
+   },
+   "imo": "9439125",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
+   "data_issue": null
   },
   "SUNNY SIGUIRI": {
-   "imo": "9406453",
    "status": "ok",
-   "risk_level": "Standard",
-   "priority": "I",
-   "inspection_window": "14.12.2025 - 14.03.2026",
-   "weighting_points": 3,
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "14.07.2025",
@@ -3181,18 +3235,21 @@
      "risk_at_inspection": "Low Risk Ship"
     }
    ],
-   "outstanding_deficiencies": 0,
-   "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
-  },
-  "SUNNY SKY": {
-   "imo": "9461295",
-   "status": "ok",
    "risk_level": "Standard",
    "priority": "I",
-   "inspection_window": "24.01.2024 - 24.04.2024",
+   "inspection_window": "14.12.2025 - 14.03.2026",
    "weighting_points": 3,
+   "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Zhongji International Ships Management Co Ltd"
+   },
+   "imo": "9406453",
+   "note": null,
+   "data_issue": null
+  },
+  "SUNNY SKY": {
+   "status": "ok",
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "24.08.2023",
@@ -3283,18 +3340,21 @@
      "risk_at_inspection": "Low Risk Ship"
     }
    ],
+   "risk_level": "Standard",
+   "priority": "I",
+   "inspection_window": "24.01.2024 - 24.04.2024",
+   "weighting_points": 3,
    "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Winning International Ships Management Co Ltd"
+   },
+   "imo": "9461295",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
+   "data_issue": null
   },
   "SUNNY STAR": {
-   "imo": "9461300",
    "status": "ok",
-   "risk_level": "Standard",
-   "priority": "N/A",
-   "inspection_window": "25.11.2026 - 25.02.2027",
-   "weighting_points": 3,
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "25.06.2026",
@@ -3396,18 +3456,21 @@
      "risk_at_inspection": "Standard Risk Ship"
     }
    ],
-   "outstanding_deficiencies": 0,
-   "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
-  },
-  "WINNING ANGEL": {
-   "imo": "9406506",
-   "status": "ok",
    "risk_level": "Standard",
    "priority": "N/A",
-   "inspection_window": "17.09.2026 - 17.12.2026",
+   "inspection_window": "25.11.2026 - 25.02.2027",
    "weighting_points": 3,
+   "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Winning International Ships Management Co Ltd"
+   },
+   "imo": "9461300",
+   "note": null,
+   "data_issue": null
+  },
+  "WINNING ANGEL": {
+   "status": "ok",
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "17.04.2026",
@@ -3674,18 +3737,21 @@
      "risk_at_inspection": "Low Risk Ship"
     }
    ],
-   "outstanding_deficiencies": 0,
-   "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
-  },
-  "WINNING BRIGHT": {
-   "imo": "9492218",
-   "status": "ok",
    "risk_level": "Standard",
    "priority": "N/A",
-   "inspection_window": "28.09.2026 - 28.12.2026",
+   "inspection_window": "17.09.2026 - 17.12.2026",
    "weighting_points": 3,
+   "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Zhongji International Ships Management Co Ltd"
+   },
+   "imo": "9406506",
+   "note": null,
+   "data_issue": null
+  },
+  "WINNING BRIGHT": {
+   "status": "ok",
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "28.04.2026",
@@ -3809,18 +3875,21 @@
      "risk_at_inspection": "Low Risk Ship"
     }
    ],
-   "outstanding_deficiencies": 0,
-   "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
-  },
-  "WINNING CONFIDENCE": {
-   "imo": "9325001",
-   "status": "ok",
    "risk_level": "Standard",
    "priority": "N/A",
-   "inspection_window": "11.11.2026 - 11.02.2027",
+   "inspection_window": "28.09.2026 - 28.12.2026",
    "weighting_points": 3,
+   "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Winning International Ships Management Co Ltd"
+   },
+   "imo": "9492218",
+   "note": null,
+   "data_issue": null
+  },
+  "WINNING CONFIDENCE": {
+   "status": "ok",
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "11.06.2026",
@@ -3922,18 +3991,21 @@
      "risk_at_inspection": "Low Risk Ship"
     }
    ],
+   "risk_level": "Standard",
+   "priority": "N/A",
+   "inspection_window": "11.11.2026 - 11.02.2027",
+   "weighting_points": 3,
    "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Winning International Ships Management Co Ltd"
+   },
+   "imo": "9325001",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
+   "data_issue": null
   },
   "WINNING DILIGENCE": {
-   "imo": "9374088",
    "status": "ok",
-   "risk_level": "Standard",
-   "priority": "II",
-   "inspection_window": "28.06.2026 - 28.09.2026",
-   "weighting_points": 3,
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "28.01.2026",
@@ -4046,18 +4118,21 @@
      "risk_at_inspection": "Low Risk Ship"
     }
    ],
+   "risk_level": "Standard",
+   "priority": "II",
+   "inspection_window": "28.06.2026 - 28.09.2026",
+   "weighting_points": 3,
    "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Winning International Ships Management Co Ltd"
+   },
+   "imo": "9374088",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
+   "data_issue": null
   },
   "WINNING ENDURANCE": {
-   "imo": "9232058",
    "status": "ok",
-   "risk_level": "Standard",
-   "priority": "N/A",
-   "inspection_window": "18.01.2027 - 18.04.2027",
-   "weighting_points": 3,
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "18.08.2026",
@@ -4159,18 +4234,21 @@
      "risk_at_inspection": "High Risk Ship"
     }
    ],
+   "risk_level": "Standard",
+   "priority": "N/A",
+   "inspection_window": "18.01.2027 - 18.04.2027",
+   "weighting_points": 3,
    "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Winning International Ships Management Co Ltd"
+   },
+   "imo": "9232058",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
+   "data_issue": null
   },
   "WINNING EXCELLENCE": {
-   "imo": "9279393",
    "status": "ok",
-   "risk_level": "Standard",
-   "priority": "II",
-   "inspection_window": "27.07.2026 - 27.10.2026",
-   "weighting_points": 3,
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "27.02.2026",
@@ -4360,18 +4438,21 @@
      "risk_at_inspection": "Standard Risk Ship"
     }
    ],
+   "risk_level": "Standard",
+   "priority": "II",
+   "inspection_window": "27.07.2026 - 27.10.2026",
+   "weighting_points": 3,
    "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Winning International Ships Management Co Ltd"
+   },
+   "imo": "9279393",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
+   "data_issue": null
   },
   "WINNING FAITH": {
-   "imo": "9314076",
    "status": "ok",
-   "risk_level": "Standard",
-   "priority": "N/A",
-   "inspection_window": "17.01.2027 - 17.04.2027",
-   "weighting_points": 3,
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "17.08.2026",
@@ -4462,18 +4543,21 @@
      "risk_at_inspection": "Low Risk Ship"
     }
    ],
-   "outstanding_deficiencies": "",
-   "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
-  },
-  "WINNING GRACE": {
-   "imo": "9722948",
-   "status": "ok",
    "risk_level": "Standard",
    "priority": "N/A",
-   "inspection_window": "24.11.2026 - 24.02.2027",
-   "weighting_points": 2,
+   "inspection_window": "17.01.2027 - 17.04.2027",
+   "weighting_points": 3,
+   "outstanding_deficiencies": "",
+   "company": {
+    "name": "Qingdao Winning International Ships Management Co Ltd"
+   },
+   "imo": "9314076",
+   "note": null,
+   "data_issue": null
+  },
+  "WINNING GRACE": {
+   "status": "ok",
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "24.06.2026",
@@ -4553,18 +4637,21 @@
      "risk_at_inspection": "Standard Risk Ship"
     }
    ],
+   "risk_level": "Standard",
+   "priority": "N/A",
+   "inspection_window": "24.11.2026 - 24.02.2027",
+   "weighting_points": 2,
    "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Winning International Ships Management Co Ltd"
+   },
+   "imo": "9722948",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
+   "data_issue": null
   },
   "WINNING HOPE": {
-   "imo": "9722950",
    "status": "ok",
-   "risk_level": "Standard",
-   "priority": "II",
-   "inspection_window": "26.06.2026 - 26.09.2026",
-   "weighting_points": 2,
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "26.01.2026",
@@ -4644,18 +4731,21 @@
      "risk_at_inspection": "Standard Risk Ship"
     }
    ],
+   "risk_level": "Standard",
+   "priority": "II",
+   "inspection_window": "26.06.2026 - 26.09.2026",
+   "weighting_points": 2,
    "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Winning International Ships Management Co Ltd"
+   },
+   "imo": "9722950",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
+   "data_issue": null
   },
   "WINNING INTEGRITY": {
-   "imo": "9633068",
    "status": "ok",
-   "risk_level": "High",
-   "priority": "II",
-   "inspection_window": "22.08.2026 - 22.10.2026",
-   "weighting_points": 4,
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "22.06.2026",
@@ -4845,18 +4935,21 @@
      "risk_at_inspection": "Standard Risk Ship"
     }
    ],
+   "risk_level": "High",
+   "priority": "II",
+   "inspection_window": "22.08.2026 - 22.10.2026",
+   "weighting_points": 4,
    "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Winning International Ships Management Co Ltd"
+   },
+   "imo": "9633068",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
+   "data_issue": null
   },
   "WINNING JOY": {
-   "imo": "9492220",
    "status": "ok",
-   "risk_level": "Standard",
-   "priority": "N/A",
-   "inspection_window": "21.09.2026 - 21.12.2026",
-   "weighting_points": 3,
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "21.04.2026",
@@ -5024,18 +5117,21 @@
      "risk_at_inspection": "Standard Risk Ship"
     }
    ],
+   "risk_level": "Standard",
+   "priority": "N/A",
+   "inspection_window": "21.09.2026 - 21.12.2026",
+   "weighting_points": 3,
    "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Winning International Ships Management Co Ltd"
+   },
+   "imo": "9492220",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
+   "data_issue": null
   },
   "WINNING KINDNESS": {
-   "imo": "9335240",
    "status": "ok",
-   "risk_level": "Standard",
-   "priority": "I",
-   "inspection_window": "28.10.2024 - 28.01.2025",
-   "weighting_points": 3,
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "28.05.2024",
@@ -5104,18 +5200,21 @@
      "risk_at_inspection": "Low Risk Ship"
     }
    ],
-   "outstanding_deficiencies": 0,
-   "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
-  },
-  "WINNING MISSION": {
-   "imo": "9659854",
-   "status": "ok",
    "risk_level": "Standard",
    "priority": "I",
-   "inspection_window": "08.03.2024 - 08.06.2024",
+   "inspection_window": "28.10.2024 - 28.01.2025",
    "weighting_points": 3,
+   "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Winning International Ships Management Co Ltd"
+   },
+   "imo": "9335240",
+   "note": null,
+   "data_issue": null
+  },
+  "WINNING MISSION": {
+   "status": "ok",
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "08.10.2023",
@@ -5206,18 +5305,21 @@
      "risk_at_inspection": "Low Risk Ship"
     }
    ],
+   "risk_level": "Standard",
+   "priority": "I",
+   "inspection_window": "08.03.2024 - 08.06.2024",
+   "weighting_points": 3,
    "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Winning International Ships Management Co Ltd"
+   },
+   "imo": "9659854",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
+   "data_issue": null
   },
   "WINNING NATURE": {
-   "imo": "9659866",
    "status": "ok",
-   "risk_level": "Standard",
-   "priority": "N/A",
-   "inspection_window": "13.09.2026 - 13.12.2026",
-   "weighting_points": 3,
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "13.04.2026",
@@ -5319,18 +5421,21 @@
      "risk_at_inspection": "Standard Risk Ship"
     }
    ],
+   "risk_level": "Standard",
+   "priority": "N/A",
+   "inspection_window": "13.09.2026 - 13.12.2026",
+   "weighting_points": 3,
    "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Winning International Ships Management Co Ltd"
+   },
+   "imo": "9659866",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
+   "data_issue": null
   },
   "WINNING OCEAN": {
-   "imo": "9271602",
    "status": "ok",
-   "risk_level": "High",
-   "priority": "II",
-   "inspection_window": "23.06.2026 - 23.08.2026",
-   "weighting_points": 4,
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "23.04.2026",
@@ -5421,18 +5526,21 @@
      "risk_at_inspection": "Standard Risk Ship"
     }
    ],
+   "risk_level": "High",
+   "priority": "II",
+   "inspection_window": "23.06.2026 - 23.08.2026",
+   "weighting_points": 4,
    "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Winning International Ships Management Co Ltd"
+   },
+   "imo": "9271602",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
+   "data_issue": null
   },
   "WINNING PEACE": {
-   "imo": "9500625",
    "status": "ok",
-   "risk_level": "High",
-   "priority": "I",
-   "inspection_window": "27.05.2026 - 27.07.2026",
-   "weighting_points": 4,
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "27.03.2026",
@@ -5501,18 +5609,21 @@
      "risk_at_inspection": "Low Risk Ship"
     }
    ],
+   "risk_level": "High",
+   "priority": "I",
+   "inspection_window": "27.05.2026 - 27.07.2026",
+   "weighting_points": 4,
    "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Zhongji International Ships Management Co Ltd"
+   },
+   "imo": "9500625",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
+   "data_issue": null
   },
   "WINNING PRIDE": {
-   "imo": "9450234",
    "status": "ok",
-   "risk_level": "Standard",
-   "priority": "I",
-   "inspection_window": "18.05.2025 - 18.08.2025",
-   "weighting_points": 3,
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "18.12.2024",
@@ -5658,18 +5769,21 @@
      "risk_at_inspection": "Standard Risk Ship"
     }
    ],
+   "risk_level": "Standard",
+   "priority": "I",
+   "inspection_window": "18.05.2025 - 18.08.2025",
+   "weighting_points": 3,
    "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Zhongji International Ships Management Co Ltd"
+   },
+   "imo": "9450234",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
+   "data_issue": null
   },
   "WINNING PROGRESS": {
-   "imo": "9576296",
    "status": "ok",
-   "risk_level": "Standard",
-   "priority": "II",
-   "inspection_window": "05.08.2026 - 05.11.2026",
-   "weighting_points": 3,
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "05.03.2026",
@@ -5782,18 +5896,21 @@
      "risk_at_inspection": "Low Risk Ship"
     }
    ],
-   "outstanding_deficiencies": 0,
-   "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
-  },
-  "WINNING QUEEN": {
-   "imo": "9311282",
-   "status": "ok",
    "risk_level": "Standard",
    "priority": "II",
-   "inspection_window": "04.07.2026 - 04.10.2026",
+   "inspection_window": "05.08.2026 - 05.11.2026",
    "weighting_points": 3,
+   "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Winning International Ships Management Co Ltd"
+   },
+   "imo": "9576296",
+   "note": null,
+   "data_issue": null
+  },
+  "WINNING QUEEN": {
+   "status": "ok",
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "04.02.2026",
@@ -5928,18 +6045,21 @@
      "risk_at_inspection": "High Risk Ship"
     }
    ],
+   "risk_level": "Standard",
+   "priority": "II",
+   "inspection_window": "04.07.2026 - 04.10.2026",
+   "weighting_points": 3,
    "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Zhongji International Ships Management Co Ltd"
+   },
+   "imo": "9311282",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
+   "data_issue": null
   },
   "WINNING RESILIENCE": {
-   "imo": "9410430",
    "status": "ok",
-   "risk_level": "Standard",
-   "priority": "I",
-   "inspection_window": "15.10.2023 - 15.01.2024",
-   "weighting_points": 3,
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "15.05.2023",
@@ -6041,18 +6161,21 @@
      "risk_at_inspection": "Low Risk Ship"
     }
    ],
+   "risk_level": "Standard",
+   "priority": "I",
+   "inspection_window": "15.10.2023 - 15.01.2024",
+   "weighting_points": 3,
    "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Zhongji International Ships Management Co Ltd"
+   },
+   "imo": "9410430",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
+   "data_issue": null
   },
   "WINNING RICH": {
-   "imo": "9498054",
    "status": "ok",
-   "risk_level": "Standard",
-   "priority": "N/A",
-   "inspection_window": "29.12.2026 - 29.03.2027",
-   "weighting_points": 3,
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "29.07.2026",
@@ -6165,18 +6288,21 @@
      "risk_at_inspection": "High Risk Ship"
     }
    ],
+   "risk_level": "Standard",
+   "priority": "N/A",
+   "inspection_window": "29.12.2026 - 29.03.2027",
+   "weighting_points": 3,
    "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Winning International Ships Management Co Ltd"
+   },
+   "imo": "9498054",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
+   "data_issue": null
   },
   "WINNING RISING": {
-   "imo": "9393199",
    "status": "ok",
-   "risk_level": "Standard",
-   "priority": "II",
-   "inspection_window": "19.08.2026 - 19.11.2026",
-   "weighting_points": 3,
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "19.03.2026",
@@ -6311,18 +6437,21 @@
      "risk_at_inspection": "Low Risk Ship"
     }
    ],
+   "risk_level": "Standard",
+   "priority": "II",
+   "inspection_window": "19.08.2026 - 19.11.2026",
+   "weighting_points": 3,
    "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Winning International Ships Management Co Ltd"
+   },
+   "imo": "9393199",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
+   "data_issue": null
   },
   "WINNING SEA": {
-   "imo": "9254678",
    "status": "ok",
-   "risk_level": "Standard",
-   "priority": "N/A",
-   "inspection_window": "14.09.2026 - 14.12.2026",
-   "weighting_points": 3,
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "14.04.2026",
@@ -6457,18 +6586,21 @@
      "risk_at_inspection": "Low Risk Ship"
     }
    ],
+   "risk_level": "Standard",
+   "priority": "N/A",
+   "inspection_window": "14.09.2026 - 14.12.2026",
+   "weighting_points": 3,
    "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Winning International Ships Management Co Ltd"
+   },
+   "imo": "9254678",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
+   "data_issue": null
   },
   "WINNING SPIRIT": {
-   "imo": "9597824",
    "status": "ok",
-   "risk_level": "Standard",
-   "priority": "II",
-   "inspection_window": "10.08.2026 - 10.11.2026",
-   "weighting_points": 3,
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "10.03.2026",
@@ -6603,18 +6735,21 @@
      "risk_at_inspection": "Low Risk Ship"
     }
    ],
+   "risk_level": "Standard",
+   "priority": "II",
+   "inspection_window": "10.08.2026 - 10.11.2026",
+   "weighting_points": 3,
    "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Winning International Ships Management Co Ltd"
+   },
+   "imo": "9597824",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
+   "data_issue": null
   },
   "WINNING TEAM": {
-   "imo": "9336945",
    "status": "ok",
-   "risk_level": "Standard",
-   "priority": "I",
-   "inspection_window": "22.05.2026 - 22.08.2026",
-   "weighting_points": 3,
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "22.12.2025",
@@ -6760,18 +6895,21 @@
      "risk_at_inspection": "High Risk Ship"
     }
    ],
+   "risk_level": "Standard",
+   "priority": "I",
+   "inspection_window": "22.05.2026 - 22.08.2026",
+   "weighting_points": 3,
    "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Winning International Ships Management Co Ltd"
+   },
+   "imo": "9336945",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
+   "data_issue": null
   },
   "WINNING TIMES": {
-   "imo": "9727352",
    "status": "ok",
-   "risk_level": "Low",
-   "priority": "N/A",
-   "inspection_window": "28.02.2027 - 30.11.2027",
-   "weighting_points": 2,
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "30.05.2026",
@@ -6884,18 +7022,21 @@
      "risk_at_inspection": "Standard Risk Ship"
     }
    ],
+   "risk_level": "Low",
+   "priority": "N/A",
+   "inspection_window": "28.02.2027 - 30.11.2027",
+   "weighting_points": 2,
    "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Zhongji International Ships Management Co Ltd"
+   },
+   "imo": "9727352",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
+   "data_issue": null
   },
   "WINNING UNIVERSE": {
-   "imo": "9346172",
    "status": "ok",
-   "risk_level": "Standard",
-   "priority": "II",
-   "inspection_window": "30.06.2026 - 30.09.2026",
-   "weighting_points": 3,
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "30.01.2026",
@@ -7019,18 +7160,21 @@
      "risk_at_inspection": "High Risk Ship"
     }
    ],
-   "outstanding_deficiencies": 0,
-   "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
-  },
-  "WINNING VISION": {
-   "imo": "9859765",
-   "status": "ok",
    "risk_level": "Standard",
    "priority": "II",
-   "inspection_window": "02.08.2026 - 02.11.2026",
-   "weighting_points": 2,
+   "inspection_window": "30.06.2026 - 30.09.2026",
+   "weighting_points": 3,
+   "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Winning International Ships Management Co Ltd"
+   },
+   "imo": "9346172",
+   "note": null,
+   "data_issue": null
+  },
+  "WINNING VISION": {
+   "status": "ok",
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "02.03.2026",
@@ -7077,18 +7221,21 @@
      "risk_at_inspection": "Standard Risk Ship"
     }
    ],
+   "risk_level": "Standard",
+   "priority": "II",
+   "inspection_window": "02.08.2026 - 02.11.2026",
+   "weighting_points": 2,
    "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Winning International Ships Management Co Ltd"
+   },
+   "imo": "9859765",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
+   "data_issue": null
   },
   "WINNING WAVE": {
-   "imo": "9748100",
    "status": "ok",
-   "risk_level": "Standard",
-   "priority": "N/A",
-   "inspection_window": "25.10.2026 - 25.01.2027",
-   "weighting_points": 3,
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "25.05.2026",
@@ -7212,18 +7359,21 @@
      "risk_at_inspection": "Standard Risk Ship"
     }
    ],
+   "risk_level": "Standard",
+   "priority": "N/A",
+   "inspection_window": "25.10.2026 - 25.01.2027",
+   "weighting_points": 3,
    "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Zhongji International Ships Management Co Ltd"
+   },
+   "imo": "9748100",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
+   "data_issue": null
   },
   "WINNING WEALTH": {
-   "imo": "9362994",
    "status": "ok",
-   "risk_level": "Standard",
-   "priority": "I",
-   "inspection_window": "07.10.2025 - 07.01.2026",
-   "weighting_points": 3,
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "07.05.2025",
@@ -7402,18 +7552,21 @@
      "risk_at_inspection": "Standard Risk Ship"
     }
    ],
+   "risk_level": "Standard",
+   "priority": "I",
+   "inspection_window": "07.10.2025 - 07.01.2026",
+   "weighting_points": 3,
    "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Winning International Ships Management Co Ltd"
+   },
+   "imo": "9362994",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
+   "data_issue": null
   },
   "WINNING WISDOM": {
-   "imo": "9738583",
    "status": "ok",
-   "risk_level": "Standard",
-   "priority": "N/A",
-   "inspection_window": "21.01.2027 - 21.04.2027",
-   "weighting_points": 3,
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "21.08.2026",
@@ -7493,18 +7646,21 @@
      "risk_at_inspection": "Standard Risk Ship"
     }
    ],
-   "outstanding_deficiencies": "",
-   "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
-  },
-  "WINNING WORLD": {
-   "imo": "9859777",
-   "status": "ok",
    "risk_level": "Standard",
    "priority": "N/A",
-   "inspection_window": "28.12.2026 - 28.03.2027",
-   "weighting_points": 2,
+   "inspection_window": "21.01.2027 - 21.04.2027",
+   "weighting_points": 3,
+   "outstanding_deficiencies": "",
+   "company": {
+    "name": "Qingdao Winning International Ships Management Co Ltd"
+   },
+   "imo": "9738583",
+   "note": null,
+   "data_issue": null
+  },
+  "WINNING WORLD": {
+   "status": "ok",
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "28.07.2026",
@@ -7540,18 +7696,21 @@
      "risk_at_inspection": "Standard Risk Ship"
     }
    ],
+   "risk_level": "Standard",
+   "priority": "N/A",
+   "inspection_window": "28.12.2026 - 28.03.2027",
+   "weighting_points": 2,
    "outstanding_deficiencies": "",
+   "company": {
+    "name": "Qingdao Winning International Ships Management Co Ltd"
+   },
+   "imo": "9859777",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
+   "data_issue": null
   },
   "WINNING YOUTH": {
-   "imo": "9278636",
    "status": "ok",
-   "risk_level": "Standard",
-   "priority": "I",
-   "inspection_window": "19.02.2026 - 19.05.2026",
-   "weighting_points": 3,
+   "scanned_at": "2026-08-22T17:37:44",
    "inspections": [
     {
      "date": "19.09.2025",
@@ -7763,18 +7922,28 @@
      "risk_at_inspection": "Low Risk Ship"
     }
    ],
+   "risk_level": "Standard",
+   "priority": "I",
+   "inspection_window": "19.02.2026 - 19.05.2026",
+   "weighting_points": 3,
    "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Winning International Ships Management Co Ltd"
+   },
+   "imo": "9278636",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:37:44"
+   "data_issue": null
   },
   "SUNNY KOGON": {
-   "imo": "9312303",
-   "status": "ok",
    "risk_level": "Standard",
    "priority": "I",
    "inspection_window": "18.05.2026 - 18.08.2026",
    "weighting_points": 3,
+   "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Zhongji International Ships Management Co Ltd",
+    "imo": "6223856"
+   },
    "inspections": [
     {
      "date": "18.12.2025",
@@ -7885,18 +8054,22 @@
      "inspection_id": "FE9040D5-3FC2-4785-A415-C0F68E3A91FB"
     }
    ],
-   "outstanding_deficiencies": 0,
+   "status": "ok",
+   "scanned_at": "2026-08-22T17:49:28",
+   "imo": "9312303",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:49:28"
+   "data_issue": null
   },
   "SUNNY MAMOU": {
-   "imo": "9346342",
-   "status": "ok",
    "risk_level": "Standard",
    "priority": "N/A",
    "inspection_window": "30.12.2026 - 30.03.2027",
    "weighting_points": 3,
+   "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Zhongji International Ships Management Co Ltd",
+    "imo": "6223856"
+   },
    "inspections": [
     {
      "date": "30.07.2026",
@@ -8079,18 +8252,22 @@
      "inspection_id": "10B3A47E-673A-4B2D-AFF9-B19C01A3F8C2"
     }
    ],
-   "outstanding_deficiencies": 0,
+   "status": "ok",
+   "scanned_at": "2026-08-22T17:43:21",
+   "imo": "9346342",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:43:21"
+   "data_issue": null
   },
   "SUNNY MOREBAYA": {
-   "imo": "9331426",
-   "status": "ok",
    "risk_level": "Standard",
    "priority": "II",
    "inspection_window": "30.05.2026 - 30.08.2026",
    "weighting_points": 3,
+   "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Winning International Ships Management Co Ltd",
+    "imo": "5466129"
+   },
    "inspections": [
     {
      "date": "30.12.2025",
@@ -8201,31 +8378,37 @@
      "inspection_id": "5D5534D3-3FF7-4E46-AC76-5AD4D499C299"
     }
    ],
-   "outstanding_deficiencies": 0,
+   "status": "ok",
+   "scanned_at": "2026-08-22T17:43:45",
+   "imo": "9331426",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:43:45"
+   "data_issue": null
   },
   "WINNING AMBITION": {
-   "imo": "1037397",
-   "status": "ok",
    "risk_level": "Standard",
    "priority": "I",
-   "inspection_window": null,
    "weighting_points": 2,
-   "inspections": [],
    "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Xingtong International Ships Management Co Ltd",
+    "imo": "0471029"
+   },
+   "inspections": [],
+   "status": "ok",
+   "scanned_at": "2026-09-06T09:00:49",
+   "imo": "1037397",
    "note": "Tokyo MOU 无检查历史（2020年新船），服务器未提供检查窗口；风险档案 Standard/Priority I 有效",
-   "data_issue": null,
-   "scanned_at": "2026-08-22T18:15:09"
+   "data_issue": null
   },
   "WINNING BROTHER": {
-   "imo": "9250610",
-   "status": "ok",
    "risk_level": "Standard",
    "priority": "N/A",
    "inspection_window": "18.01.2027 - 18.04.2027",
    "weighting_points": 3,
+   "company": {
+    "name": "Qingdao Winning International Ships Management Co Ltd",
+    "imo": "5466129"
+   },
    "inspections": [
     {
      "date": "18.08.2026",
@@ -8336,18 +8519,22 @@
      "inspection_id": "5AE8FC2E-8624-443D-9051-193FAF0B4605"
     }
    ],
-   "outstanding_deficiencies": null,
+   "status": "ok",
+   "scanned_at": "2026-08-22T17:45:12",
+   "imo": "9250610",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:45:12"
+   "data_issue": null
   },
   "WINNING LOYALTY": {
-   "imo": "9314052",
-   "status": "ok",
    "risk_level": "Standard",
    "priority": "N/A",
    "inspection_window": "04.10.2026 - 04.01.2027",
    "weighting_points": 3,
+   "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Winning International Ships Management Co Ltd",
+    "imo": "5466129"
+   },
    "inspections": [
     {
      "date": "04.05.2026",
@@ -8506,18 +8693,22 @@
      "inspection_id": "7B49D4EF-D5F7-4700-9BB7-5BB461FE22D4"
     }
    ],
-   "outstanding_deficiencies": 0,
+   "status": "ok",
+   "scanned_at": "2026-08-22T17:45:46",
+   "imo": "9314052",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:45:46"
+   "data_issue": null
   },
   "WINNING ZEPHYR": {
-   "imo": "9406520",
-   "status": "ok",
    "risk_level": "Standard",
    "priority": "N/A",
    "inspection_window": "08.09.2026 - 08.12.2026",
    "weighting_points": 3,
+   "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Winning International Ships Management Co Ltd",
+    "imo": "5466129"
+   },
    "inspections": [
     {
      "date": "08.04.2026",
@@ -8760,10 +8951,39 @@
      "inspection_id": "ADA86B8D-1717-4E14-AEEE-D1AC8C13AA70"
     }
    ],
-   "outstanding_deficiencies": 0,
+   "status": "ok",
+   "scanned_at": "2026-08-22T17:41:52",
+   "imo": "9406520",
    "note": null,
-   "data_issue": null,
-   "scanned_at": "2026-08-22T17:41:52"
+   "data_issue": null
+  },
+  "WINNING BRAVE": {
+   "risk_level": "Standard",
+   "priority": "I",
+   "weighting_points": 2,
+   "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Xingtong International Ships Management Co Ltd",
+    "imo": "0471029"
+   },
+   "inspections": [],
+   "status": "ok",
+   "scanned_at": "2026-09-06T09:01:03",
+   "imo": "1037402"
+  },
+  "WINNING CREATION": {
+   "risk_level": "Standard",
+   "priority": "I",
+   "weighting_points": 2,
+   "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Winning Shipping (S) Pte Ltd",
+    "imo": "6221007"
+   },
+   "inspections": [],
+   "status": "ok",
+   "scanned_at": "2026-08-30T09:04:03",
+   "imo": "1084651"
   }
  }
 }
