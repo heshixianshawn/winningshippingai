@@ -29,6 +29,113 @@ export function extractShipName(message) {
   const m = String(message || '').match(SHIP_NAME);
   return m ? m[0].trim().toUpperCase().replace(/\s+/g, ' ') : null;
 }
+
+// ===== PSC/FSC 检查记录直答（2026-09-16 新增）=====
+// 背景：全船队 643 条 PSC 检查记录只在单船档案里，平台完全读不到，
+//       实测问「2026年6月后烟台港PSC记录」被答成「知识库无此数据」+ 外部渠道建议。
+// 数据源：data/psc_records.json（由 scripts/psc_records_build.py 从 64 份档案构建）
+const PSC_ASK = /(psc|fsc|港口国监督|受检记录|检查记录|滞留记录)/i;
+const PSC_STRONG = /(psc|fsc)/i;
+// 中文港口名 → 数据集里的港口键（小写）
+const PORT_ALIAS = {
+  '烟台': 'yantai', '青岛': 'qingdao', '天津': 'tianjin', '日照': 'rizhao',
+  '曹妃甸': 'caofeidian', '大连': 'dalian', '上海': 'shanghai', '宁波': 'ningbo',
+  '舟山': 'zhoushan', '连云港': 'lianyun', '黄骅': 'huanghua', '京唐': 'jingtang',
+  '广州': 'guangzhou', '深圳': 'shenzhen', '厦门': 'xiamen', '湛江': 'zhanjiang',
+  '黑德兰': 'port hedland', '格拉德斯通': 'gladstone', '丹皮尔': 'dampier',
+  '纽卡斯尔': 'newcastle', '水岛': 'mizushima', '唐津': 'dangjin',
+  '釜山': 'busan', '蔚山': 'ulsan', '光阳': 'gwangyang', '新加坡': 'singapore',
+};
+
+/** 从问句解析 PSC 查询条件：{port, since, ship} */
+function parsePscQuery(q) {
+  let port = null;
+  for (const [cn, key] of Object.entries(PORT_ALIAS)) {
+    if (q.includes(cn)) { port = key; break; }
+  }
+  if (!port) {
+    // 英文港名直接匹配（如 "Yantai" / "Port Hedland"）
+    const en = q.match(/\b(port hedland|gladstone|newcastle|dampier|qingdao|yantai|tianjin|rizhao|dalian|busan|ulsan|gwangyang|singapore|shanghai)\b/i);
+    if (en) port = en[1].toLowerCase();
+  }
+  let since = null;
+  let m = q.match(/(\d{4})\s*年\s*(\d{1,2})\s*月/);
+  if (m) since = `${m[1]}-${String(m[2]).padStart(2, '0')}-01`;
+  if (!since) {
+    m = q.match(/(\d{4})[-\/](\d{1,2})/);
+    if (m) since = `${m[1]}-${String(m[2]).padStart(2, '0')}-01`;
+  }
+  if (!since) {
+    m = q.match(/(?:近|最近|过去)\s*(\d{1,2})\s*个月/);
+    if (m) {
+      const d = new Date();
+      d.setMonth(d.getMonth() - parseInt(m[1], 10));
+      since = d.toISOString().slice(0, 10);
+    }
+  }
+  if (!since) {
+    m = q.match(/(\d{4})\s*年/);
+    if (m) since = `${m[1]}-01-01`;
+  }
+  const ship = SHIP_NAME.test(q) ? extractShipName(q) : null;
+  return { port, since, ship };
+}
+
+let pscCache = null;
+let pscLoadTried = false;
+async function loadPscRecords(request) {
+  if (pscCache) return pscCache;
+  if (pscLoadTried) return null;
+  pscLoadTried = true;
+  try {
+    const url = new URL(request.url);
+    const resp = await fetch(`${url.protocol}//${url.host}/data/psc_records.json`);
+    if (!resp.ok) return null;
+    pscCache = await resp.json();
+    return pscCache;
+  } catch (e) {
+    console.error('[PSC] psc_records.json load failed:', e.message);
+    return null;
+  }
+}
+
+async function buildPscAnswer(hit, request) {
+  const data = await loadPscRecords(request);
+  if (!data) return null;
+  const { port, since, ship } = hit;
+  const rows = [];
+  for (const [nm, v] of Object.entries(data.ships || {})) {
+    if (ship && !nm.toUpperCase().includes(ship)) continue;
+    for (const r of v.records || []) {
+      if (since && r.date < since) continue;
+      if (port && !String(r.port || '').toLowerCase().includes(port)) continue;
+      rows.push({ nm, ...r });
+    }
+  }
+  rows.sort((a, b) => (a.date < b.date ? 1 : -1));
+
+  const scope = [
+    ship ? `船舶 ${ship}` : '全船队',
+    port ? `港口 ${port}` : null,
+    since ? `${since} 之后` : null,
+  ].filter(Boolean).join('｜');
+
+  if (!rows.length) {
+    return line(`**${scope} 的 PSC/FSC 检查记录：未查到符合条件的记录**。`
+      + `目前知识库收录 PSC/FSC 检查记录 **${data.count}** 条，覆盖 **${data.ship_count}** 艘（来源：单船档案）。`
+      + (since ? '请确认时间范围' : ''),
+      'WINNING 知识库 PSC检查记录 psc_records.json', data.generated);
+  }
+
+  const detained = rows.filter(r => r.detained).length;
+  const withDefects = rows.filter(r => (r.defects || 0) > 0).length;
+  const head = `**${scope} 共 ${rows.length} 条 PSC/FSC 检查记录**（其中 ${withDefects} 条有缺陷、${detained} 条滞留）：`;
+  const shown = rows.slice(0, 20).map(r =>
+    `- ${r.date}｜${r.nm}｜${r.port || '—'}｜缺陷 ${r.defects == null ? '—' : r.defects}｜${r.detained ? '⛔ 滞留' : '未滞留'}`);
+  const tail = rows.length > 20 ? `\n（仅列前 20 条，共 ${rows.length} 条）` : '';
+  return line(head + '\n' + shown.join('\n') + tail,
+    'WINNING 知识库 PSC检查记录 psc_records.json（来源：单船档案 PSC-FSC 表）', data.generated);
+}
 /** 明确的全队/部门语境（无船名时才用于放行全队或部门汇总） */
 export function hasFleetScope(message) {
   const q = String(message || '');
@@ -191,6 +298,11 @@ export function detectFleetStat(message, module = 'ships') {
   if (module === 'ships' && SHIP_NAME.test(q) && DEPT_ASK.test(q) && !/船级社|入级/i.test(q)) {
     return { kind: 'ship_dept', ship: extractShipName(q) };
   }
+  // 0.5) PSC/FSC 检查记录（需在「单船查询不拦截」之前；支持带船名筛选）
+  if (PSC_ASK.test(q) && (PSC_STRONG.test(q) || /(受检|检查记录|滞留)/.test(q))) {
+    const pq = parsePscQuery(q);
+    return { kind: 'psc', ...pq };
+  }
   if (SHIP_NAME.test(q)) return null;               // 单船查询不拦截
 
   const hasCount = COUNT_WORD.test(q);
@@ -342,6 +454,7 @@ export async function buildFleetStatAnswer(request, message, module = 'ships') {
   let reply = null;
   if (hit.kind === 'total') reply = await buildTotal();
   else if (hit.kind === 'ship_dept') reply = await buildShipDept(hit.ship, request);
+  else if (hit.kind === 'psc') reply = await buildPscAnswer(hit, request);
   else if (hit.kind === 'dept') reply = await buildDept(hit.dept, request);
   else if (hit.kind === 'dept_all') reply = await buildDeptAll(request);
   else if (hit.kind === 'class') reply = await buildClass(hit.classes);
