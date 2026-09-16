@@ -85,7 +85,9 @@ export function filterAlerts(data, opts = {}) {
   const buckets = { urgent_7d: [], warning_30d: [], expired: [], info_90d: [] };
   if (!data) return buckets;
   for (const k of ALERT_BUCKET_ORDER) {
-    let arr = Array.isArray(data[k]) ? data[k].slice() : [];
+    // 2026-09-16：生成器已将过期档改名为 expired_recent，此处兼容两种键名（旧靠 expired）。
+    const src = (k === 'expired') ? (data[k] !== undefined ? data[k] : data.expired_recent) : data[k];
+    let arr = Array.isArray(src) ? src.slice() : [];
     if (dept && deptMap && typeof isInDeptFn === 'function') {
       arr = arr.filter(x => isInDeptFn(x && x.ship, dept, deptMap));
     }

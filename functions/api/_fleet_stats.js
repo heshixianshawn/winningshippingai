@@ -319,7 +319,7 @@ async function buildAlerts(dept, request) {
     if (!deptMap || !Array.isArray(deptMap[dept])) return null;
   }
   const filter = (arr) => (dept ? (arr || []).filter(x => isInDept(x && x.ship, dept, deptMap)) : (arr || []));
-  const expired = filter(data.expired);
+  const expired = filter(data.expired || data.expired_recent);
   const urgent = filter(data.urgent_7d);
   const warning = filter(data.warning_30d);
   const info = filter(data.info_90d);
