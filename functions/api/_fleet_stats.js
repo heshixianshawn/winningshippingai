@@ -130,9 +130,14 @@ async function buildPscAnswer(hit, request) {
   const detained = rows.filter(r => r.detained).length;
   const withDefects = rows.filter(r => (r.defects || 0) > 0).length;
   const head = `**${scope} 共 ${rows.length} 条 PSC/FSC 检查记录**（其中 ${withDefects} 条有缺陷、${detained} 条滞留）：`;
-  const shown = rows.slice(0, 20).map(r =>
+  // 2026-09-17：原先只显示 20 条，导致“2026 年全队记录”被截到 4 月（用户以为 1–3 月无记录）。
+  // 提高到 60 条，并在截断时明确告知总数与建议（按时间/港口/船名缩小范围）。
+  const MAX_ROWS = 60;
+  const shown = rows.slice(0, MAX_ROWS).map(r =>
     `- ${r.date}｜${r.nm}｜${r.port || '—'}｜缺陷 ${r.defects == null ? '—' : r.defects}｜${r.detained ? '⛔ 滞留' : '未滞留'}`);
-  const tail = rows.length > 20 ? `\n（仅列前 20 条，共 ${rows.length} 条）` : '';
+  const tail = rows.length > MAX_ROWS
+    ? `\n（仅显示最新 ${MAX_ROWS} 条，共 ${rows.length} 条；如需更早记录，请指明时间范围/港口/船名）`
+    : '';
   return line(head + '\n' + shown.join('\n') + tail,
     'WINNING 知识库 PSC检查记录 psc_records.json（来源：单船档案 PSC-FSC 表）', data.generated);
 }
