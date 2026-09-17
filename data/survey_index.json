@@ -1,13 +1,13 @@
 {
-  "last_updated": "2026-09-15 09:00",
+  "last_updated": "2026-09-18 07:12",
   "total_ships": 64,
   "ships": {
     "SUNNY_BEYLA": {
       "name": "SUNNY BEYLA",
       "imo": "9364320",
       "class_society": "NK",
-      "flag": "Hong Kong, China",
-      "gt": "90092",
+      "flag": "Panama",
+      "gt": 90092,
       "dwt": "180201",
       "surveys": [
         {
@@ -131,7 +131,7 @@
       "imo": "9253090",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": "87413",
+      "gt": 87413,
       "dwt": "172565",
       "surveys": [
         {
@@ -256,7 +256,7 @@
       "imo": "9198240",
       "class_society": "NK",
       "flag": "Panama",
-      "gt": "87473",
+      "gt": 87473,
       "dwt": "172498",
       "surveys": [
         {
@@ -372,7 +372,7 @@
       "imo": "9406489",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": "90092",
+      "gt": 90092,
       "dwt": "180181",
       "surveys": [
         {
@@ -497,7 +497,7 @@
       "imo": "9387114",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": "90125",
+      "gt": 90125,
       "dwt": "180201",
       "surveys": [
         {
@@ -622,7 +622,7 @@
       "imo": "9398149",
       "class_society": "NK",
       "flag": "Panama",
-      "gt": "106367",
+      "gt": 106367,
       "dwt": "207991",
       "surveys": [
         {
@@ -744,7 +744,7 @@
       "imo": "9336969",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": "106367",
+      "gt": 106367,
       "dwt": "208014",
       "surveys": [
         {
@@ -874,7 +874,7 @@
       "imo": "9336957",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": "101953",
+      "gt": 101953,
       "dwt": "203200",
       "surveys": [
         {
@@ -1000,7 +1000,7 @@
       "imo": "9398113",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": "106367",
+      "gt": 106367,
       "dwt": "207945",
       "surveys": [
         {
@@ -1130,7 +1130,7 @@
       "imo": "9374064",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": "90396",
+      "gt": 90396,
       "dwt": "180182",
       "surveys": [
         {
@@ -1259,8 +1259,8 @@
       "name": "SUNNY LABE",
       "imo": "9271597",
       "class_society": "NK",
-      "flag": "Hong Kong, China",
-      "gt": "102101",
+      "flag": "Panama",
+      "gt": 102101,
       "dwt": "203248",
       "surveys": [
         {
@@ -1386,7 +1386,7 @@
       "imo": "9254666",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": "88674",
+      "gt": 88674,
       "dwt": "176391",
       "surveys": [
         {
@@ -1515,7 +1515,7 @@
       "imo": "9346342",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": "104725",
+      "gt": 104725,
       "dwt": "206296",
       "surveys": [
         {
@@ -1645,7 +1645,7 @@
       "imo": "9331426",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": "101953",
+      "gt": 101953,
       "dwt": "203264",
       "surveys": [
         {
@@ -1771,7 +1771,7 @@
       "imo": "9393187",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": "90111",
+      "gt": 90111,
       "dwt": "180129",
       "surveys": [
         {
@@ -1905,7 +1905,7 @@
       "imo": "9439125",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": "90091",
+      "gt": 90091,
       "dwt": "180176",
       "surveys": [
         {
@@ -2048,7 +2048,7 @@
       "imo": "9406453",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": "104721",
+      "gt": 104721,
       "dwt": "206312",
       "surveys": [
         {
@@ -2177,7 +2177,7 @@
       "imo": "9406506",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "104761",
+      "gt": 104761,
       "dwt": "206306",
       "surveys": [
         {
@@ -2302,7 +2302,7 @@
       "imo": "9492218",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "106884",
+      "gt": 106884,
       "dwt": "206125",
       "surveys": [
         {
@@ -2425,7 +2425,7 @@
       "imo": "9250610",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": "94779",
+      "gt": 94779,
       "dwt": "184887",
       "surveys": [
         {
@@ -2555,7 +2555,7 @@
       "imo": "9325001",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "90091",
+      "gt": 90091,
       "dwt": "180265",
       "surveys": [
         {
@@ -2685,7 +2685,7 @@
       "imo": "9374088",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "90091",
+      "gt": 90091,
       "dwt": "180277",
       "surveys": [
         {
@@ -2815,7 +2815,7 @@
       "imo": "9232058",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "87590",
+      "gt": 87590,
       "dwt": "170578",
       "surveys": [
         {
@@ -2943,7 +2943,7 @@
       "imo": "9279393",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "113929",
+      "gt": 113929,
       "dwt": "229186",
       "surveys": [
         {
@@ -3073,7 +3073,7 @@
       "imo": "9314076",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "90091",
+      "gt": 90091,
       "dwt": "180310",
       "surveys": [
         {
@@ -3207,7 +3207,7 @@
       "imo": "9722948",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "107791",
+      "gt": 107791,
       "dwt": "209513",
       "surveys": [
         {
@@ -3344,7 +3344,7 @@
       "imo": "9722950",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "107791",
+      "gt": 107791,
       "dwt": "209545",
       "surveys": [
         {
@@ -3487,7 +3487,7 @@
       "imo": "9633068",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "92758",
+      "gt": 92758,
       "dwt": "181501",
       "surveys": [
         {
@@ -3617,7 +3617,7 @@
       "imo": "9314052",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "90091",
+      "gt": 90091,
       "dwt": "180310",
       "surveys": [
         {
@@ -3751,7 +3751,7 @@
       "imo": "9659854",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "92752",
+      "gt": 92752,
       "dwt": "181371",
       "surveys": [
         {
@@ -3876,7 +3876,7 @@
       "imo": "9659866",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "92752",
+      "gt": 92752,
       "dwt": "181387",
       "surveys": [
         {
@@ -4006,7 +4006,7 @@
       "imo": "9271602",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": "102207",
+      "gt": 102207,
       "dwt": "203315",
       "surveys": [
         {
@@ -4140,7 +4140,7 @@
       "imo": "9450234",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": "89603",
+      "gt": 89603,
       "dwt": "176890",
       "surveys": [
         {
@@ -4274,7 +4274,7 @@
       "imo": "9311282",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": "89726",
+      "gt": 89726,
       "dwt": "176967",
       "surveys": [
         {
@@ -4504,14 +4504,14 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "WINNING_RISING": {
       "name": "WINNING RISING",
       "imo": "9393199",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": "90421",
+      "gt": 90421,
       "dwt": "180140",
       "surveys": [
         {
@@ -4641,7 +4641,7 @@
       "imo": "9254678",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": "101953",
+      "gt": 101953,
       "dwt": "203508",
       "surveys": [
         {
@@ -4771,7 +4771,7 @@
       "imo": "9336945",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "102319",
+      "gt": 102319,
       "dwt": "203091",
       "surveys": [
         {
@@ -4914,7 +4914,7 @@
       "imo": "9346172",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "102092",
+      "gt": 102092,
       "dwt": "203233",
       "surveys": [
         {
@@ -5038,7 +5038,7 @@
       "imo": "9859765",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "107791",
+      "gt": 107791,
       "dwt": "208951",
       "surveys": [
         {
@@ -5168,7 +5168,7 @@
       "imo": "9859777",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "107786",
+      "gt": 107786,
       "dwt": "208970",
       "surveys": [
         {
@@ -5298,7 +5298,7 @@
       "imo": "9278636",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "101933",
+      "gt": 101933,
       "dwt": "203195",
       "surveys": [
         {
@@ -5462,48 +5462,59 @@
       ],
       "certificates": [
         {
-          "name": "ISM DOC"
+          "name": "CLASS",
+          "expiry": "2029-09-28"
         },
         {
           "name": "ISM SMC",
           "expiry": "2027-01-20"
         },
         {
-          "name": "ISPS"
+          "name": "ISPS",
+          "expiry": "2027-01-20"
         },
         {
           "name": "MLC",
           "expiry": "2027-01-20"
         },
         {
-          "name": "IOPP"
+          "name": "EIAPP"
         },
         {
           "name": "IAPP",
           "expiry": "2029-09-28"
         },
         {
-          "name": "ISPP"
+          "name": "IOPP",
+          "expiry": "2029-09-28"
         },
         {
-          "name": "Load Line"
+          "name": "ISPP",
+          "expiry": "2029-09-28"
+        },
+        {
+          "name": "Load Line",
+          "expiry": "2029-09-28"
         },
         {
           "name": "Safety Construction",
           "expiry": "2029-09-28"
         },
         {
-          "name": "Safety Equipment"
+          "name": "Safety Equipment",
+          "expiry": "2029-09-28"
         },
         {
           "name": "Safety Radio",
           "expiry": "2029-09-28"
         },
         {
-          "name": "BWM"
+          "name": "BWM",
+          "expiry": "2029-09-28"
         },
         {
-          "name": "IHM"
+          "name": "IHM",
+          "expiry": "2029-09-28"
         },
         {
           "name": "Cargo Gear"
@@ -5512,8 +5523,7 @@
           "name": "AFS"
         },
         {
-          "name": "EIAPP",
-          "expiry": "2029-09-28"
+          "name": "ISM DOC"
         },
         {
           "name": "DOC"
@@ -5572,7 +5582,8 @@
       ],
       "certificates": [
         {
-          "name": "ISM DOC"
+          "name": "CLASS",
+          "expiry": "2031-01-24"
         },
         {
           "name": "ISM SMC",
@@ -5587,31 +5598,39 @@
           "expiry": "2031-06-24"
         },
         {
-          "name": "IOPP"
+          "name": "EIAPP"
         },
         {
           "name": "IAPP",
           "expiry": "2031-01-24"
         },
         {
-          "name": "ISPP"
+          "name": "IOPP",
+          "expiry": "2031-01-24"
         },
         {
-          "name": "Load Line"
+          "name": "ISPP",
+          "expiry": "2031-01-24"
+        },
+        {
+          "name": "Load Line",
+          "expiry": "2031-01-24"
         },
         {
           "name": "Safety Construction",
           "expiry": "2031-01-24"
         },
         {
-          "name": "Safety Equipment"
+          "name": "Safety Equipment",
+          "expiry": "2031-01-24"
         },
         {
           "name": "Safety Radio",
           "expiry": "2031-01-24"
         },
         {
-          "name": "BWM"
+          "name": "BWM",
+          "expiry": "2031-01-24"
         },
         {
           "name": "IHM"
@@ -5623,8 +5642,7 @@
           "name": "AFS"
         },
         {
-          "name": "EIAPP",
-          "expiry": "2031-01-24"
+          "name": "ISM DOC"
         },
         {
           "name": "DOC"
@@ -5743,7 +5761,7 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "WINNING_RICH": {
       "name": "WINNING RICH",
@@ -5846,7 +5864,7 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "WINNING_SPIRIT": {
       "name": "WINNING SPIRIT",
@@ -5950,7 +5968,7 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "SUNNY_FARANAH": {
       "name": "SUNNY FARANAH",
@@ -6048,7 +6066,7 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "SUNNY_FRIA": {
       "name": "SUNNY FRIA",
@@ -6152,7 +6170,7 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "SUNNY_KOGON": {
       "name": "SUNNY KOGON",
@@ -6251,7 +6269,7 @@
         "warning_30d": 0,
         "info_90d": 1
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "SUNNY_STAR": {
       "name": "SUNNY STAR",
@@ -6355,7 +6373,7 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "WINNING_BRAVE": {
       "name": "WINNING BRAVE",
@@ -6365,6 +6383,11 @@
       "gt": "174863",
       "dwt": "324965",
       "surveys": [
+        {
+          "type": "boiler",
+          "desc": "锅炉",
+          "due_date": "2026-09-05"
+        },
         {
           "type": "annual_survey",
           "desc": "Class Annual Survey",
@@ -6465,7 +6488,7 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "WINNING_JOY": {
       "name": "WINNING JOY",
@@ -6568,7 +6591,7 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "WINNING_TIMES": {
       "name": "WINNING TIMES",
@@ -6669,7 +6692,7 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "WINNING_WAVE": {
       "name": "WINNING WAVE",
@@ -6770,7 +6793,7 @@
         "warning_30d": 0,
         "info_90d": 1
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "WINNING_WEALTH": {
       "name": "WINNING WEALTH",
@@ -6873,7 +6896,7 @@
         "warning_30d": 11,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "WINNING_WISDOM": {
       "name": "WINNING WISDOM",
@@ -6982,7 +7005,7 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "WINNING_AMBITION": {
       "name": "WINNING AMBITION",
@@ -7065,7 +7088,7 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "SUNNY_SKY": {
       "name": "SUNNY SKY",
@@ -7150,7 +7173,7 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "SUNNY_KANKAN": {
       "name": "SUNNY KANKAN",
