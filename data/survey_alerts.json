@@ -1,13 +1,37 @@
 {
-  "generated": "2026-09-18",
+  "generated": "2026-09-19",
   "urgent_7d": [],
   "warning_30d": [
+    {
+      "ship": "SUNNY SKY",
+      "type": "certificate",
+      "name": "ISPS",
+      "date": "2026-10-10",
+      "days": 21,
+      "status": "VALID"
+    },
+    {
+      "ship": "SUNNY SKY",
+      "type": "certificate",
+      "name": "MLC",
+      "date": "2026-10-10",
+      "days": 21,
+      "status": "VALID"
+    },
+    {
+      "ship": "SUNNY SKY",
+      "type": "certificate",
+      "name": "SMC",
+      "date": "2026-10-10",
+      "days": 21,
+      "status": "VALID"
+    },
     {
       "ship": "WINNING WEALTH",
       "type": "certificate",
       "name": "IOPP",
       "date": "2026-10-12",
-      "days": 24,
+      "days": 23,
       "status": "VALID"
     },
     {
@@ -15,7 +39,7 @@
       "type": "certificate",
       "name": "IAPP",
       "date": "2026-10-12",
-      "days": 24,
+      "days": 23,
       "status": "VALID"
     },
     {
@@ -23,7 +47,7 @@
       "type": "certificate",
       "name": "ISPP",
       "date": "2026-10-12",
-      "days": 24,
+      "days": 23,
       "status": "VALID"
     },
     {
@@ -31,7 +55,7 @@
       "type": "certificate",
       "name": "Safety Construction",
       "date": "2026-10-12",
-      "days": 24,
+      "days": 23,
       "status": "VALID"
     },
     {
@@ -39,7 +63,7 @@
       "type": "certificate",
       "name": "Safety Equipment",
       "date": "2026-10-12",
-      "days": 24,
+      "days": 23,
       "status": "VALID"
     },
     {
@@ -47,7 +71,7 @@
       "type": "certificate",
       "name": "Safety Radio",
       "date": "2026-10-12",
-      "days": 24,
+      "days": 23,
       "status": "VALID"
     },
     {
@@ -55,7 +79,7 @@
       "type": "certificate",
       "name": "IHM",
       "date": "2026-10-12",
-      "days": 24,
+      "days": 23,
       "status": "VALID"
     },
     {
@@ -63,7 +87,7 @@
       "type": "certificate",
       "name": "Cargo Gear",
       "date": "2026-10-12",
-      "days": 24,
+      "days": 23,
       "status": "VALID"
     },
     {
@@ -71,7 +95,7 @@
       "type": "certificate",
       "name": "AFS",
       "date": "2026-10-12",
-      "days": 24,
+      "days": 23,
       "status": "VALID"
     },
     {
@@ -79,7 +103,7 @@
       "type": "survey",
       "name": "Class Special Survey for",
       "date": "2026-10-12",
-      "days": 24,
+      "days": 23,
       "status": "Not Due"
     },
     {
@@ -87,15 +111,23 @@
       "type": "survey",
       "name": "BTS (船底外部检验)",
       "date": "2026-10-12",
-      "days": 24,
+      "days": 23,
       "status": "Not Due"
+    },
+    {
+      "ship": "WINNING RESILIENCE",
+      "type": "certificate",
+      "name": "DOC",
+      "date": "2026-10-15",
+      "days": 26,
+      "status": "VALID"
     },
     {
       "ship": "SUNNY BOFFA",
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 30,
+      "days": 29,
       "status": "VALID"
     },
     {
@@ -103,7 +135,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 30,
+      "days": 29,
       "status": "VALID"
     },
     {
@@ -111,7 +143,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 30,
+      "days": 29,
       "status": "VALID"
     },
     {
@@ -119,7 +151,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 30,
+      "days": 29,
       "status": "VALID"
     },
     {
@@ -127,7 +159,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 30,
+      "days": 29,
       "status": "VALID"
     },
     {
@@ -135,7 +167,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 30,
+      "days": 29,
       "status": "VALID"
     },
     {
@@ -143,7 +175,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 30,
+      "days": 29,
       "status": "VALID"
     },
     {
@@ -151,7 +183,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 30,
+      "days": 29,
       "status": "VALID"
     },
     {
@@ -159,7 +191,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 30,
+      "days": 29,
       "status": "VALID"
     },
     {
@@ -167,7 +199,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 30,
+      "days": 29,
       "status": "VALID"
     },
     {
@@ -175,7 +207,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 30,
+      "days": 29,
       "status": "VALID"
     },
     {
@@ -183,7 +215,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 30,
+      "days": 29,
       "status": "VALID"
     },
     {
@@ -191,7 +223,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 30,
+      "days": 29,
       "status": "VALID"
     },
     {
@@ -199,7 +231,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 30,
+      "days": 29,
       "status": "VALID"
     },
     {
@@ -207,7 +239,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 30,
+      "days": 29,
       "status": "VALID"
     },
     {
@@ -215,7 +247,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 30,
+      "days": 29,
       "status": "VALID"
     },
     {
@@ -223,7 +255,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 30,
+      "days": 29,
       "status": "VALID"
     },
     {
@@ -231,7 +263,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 30,
+      "days": 29,
       "status": "VALID"
     },
     {
@@ -239,7 +271,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 30,
+      "days": 29,
       "status": "VALID"
     },
     {
@@ -247,7 +279,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 30,
+      "days": 29,
       "status": "VALID"
     },
     {
@@ -255,7 +287,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 30,
+      "days": 29,
       "status": "VALID"
     },
     {
@@ -263,7 +295,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 30,
+      "days": 29,
       "status": "VALID"
     },
     {
@@ -271,7 +303,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 30,
+      "days": 29,
       "status": "VALID"
     },
     {
@@ -279,7 +311,31 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 30,
+      "days": 29,
+      "status": "VALID"
+    },
+    {
+      "ship": "WINNING PROGRESS",
+      "type": "certificate",
+      "name": "DOC",
+      "date": "2026-10-18",
+      "days": 29,
+      "status": "VALID"
+    },
+    {
+      "ship": "SUNNY SKY",
+      "type": "certificate",
+      "name": "DOC",
+      "date": "2026-10-18",
+      "days": 29,
+      "status": "VALID"
+    },
+    {
+      "ship": "WINNING ZEPHYR",
+      "type": "certificate",
+      "name": "DOC",
+      "date": "2026-10-18",
+      "days": 29,
       "status": "VALID"
     }
   ],
@@ -289,7 +345,7 @@
       "type": "survey",
       "name": "锅炉",
       "date": "2026-09-05",
-      "days": -13,
+      "days": -14,
       "status": "Not Due"
     }
   ],
@@ -299,15 +355,15 @@
       "type": "survey",
       "name": "锅炉",
       "date": "2026-09-05",
-      "days": -13,
+      "days": -14,
       "status": "Not Due"
     }
   ],
   "info_90d": [],
   "summary": {
     "urgent_count": 0,
-    "warning_count": 35,
+    "warning_count": 42,
     "expired_count": 1,
-    "total_active": 35
+    "total_active": 42
   }
 }
