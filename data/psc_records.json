@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-19",
+ "generated": "2026-09-20",
  "source": "单船档案 PSC-FSC检查记录 sheet（TokyoMOU/APCIS 等来源）",
  "count": 692,
  "ship_count": 60,
@@ -357,20 +357,19 @@
    "count": 10,
    "records": [
     {
-     "date": "2025-05-23",
-     "port": "Yantai",
-     "port_raw": "Yantai (China)",
-     "type": "",
+     "date": "2026-09-18",
+     "port": "yantai",
+     "port_raw": "烟台",
+     "type": "PSC",
      "authority": "",
      "officer": "",
-     "defects": 2,
+     "defects": 6,
      "detained": false,
-     "codes": "",
+     "codes": "00736 \n92875 \n92876 \n03105 \n07117 \n10117",
      "codes_uncertain": false,
      "rectified": "",
-     "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship",
-     "defects_official": 2,
-     "defects_source": "TokyoMOU官方"
+     "note": "来源:SUNNY BOKE-PSC检查报告@烟台-2026.09.18.pdf|FP:08c0c885",
+     "defects_source": "档案(无TMOU对照)"
     },
     {
      "date": "2022-12-02",
@@ -11441,6 +11440,14 @@
  "by_port": {
   "yantai": [
    {
+    "ship": "SUNNY BOKE",
+    "date": "2026-09-18",
+    "port": "yantai",
+    "defects": 6,
+    "detained": false,
+    "codes": "00736 \n92875 \n92876 \n03105 \n07117 \n10117"
+   },
+   {
     "ship": "SUNNY LABE",
     "date": "2026-09-08",
     "port": "yantai",
@@ -11669,14 +11676,6 @@
     "date": "2025-06-17",
     "port": "Yantai",
     "defects": 1,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "SUNNY BOKE",
-    "date": "2025-05-23",
-    "port": "Yantai",
-    "defects": 2,
     "detained": false,
     "codes": ""
    },
@@ -17189,15 +17188,15 @@
    "dalian": 1,
    "董家口": 1
   },
-  "this_year": 42,
+  "this_year": 43,
   "detained_total": 17,
-  "with_codes": 25,
+  "with_codes": 26,
   "codes_uncertain": 3,
   "pdf_enriched": 0,
   "pdf_files_matched": 2,
-  "tmou_reconciled": 692,
+  "tmou_reconciled": 691,
   "tmou_mismatches": [],
-  "tmou_unmatched": 0
+  "tmou_unmatched": 1
  },
  "missing": []
 }
