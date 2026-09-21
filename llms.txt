@@ -1,0 +1,26 @@
+# WINNING Shipping AI
+
+> 韦立国际船舶管理（青岛）的船舶智能合规平台。基于自建船队知识库，回答船舶参数、证书与检验到期、PSC/FSC 检查记录、船队结构与统计等问题。
+
+## 平台入口
+
+- [WINNING Shipping AI 船舶智能合规平台](https://www.winningshippingai.com/)：按船名或 IMO 查询船舶参数、证书状态、检验计划与到期预警
+- [船舶动态（HiFleet）](https://www.winningshippingai.com/hifleet.html)：船队实时位置、航次与在港状态
+
+## 数据范围
+
+- **管理船队**：64 艘（WINNING / SUNNY 系列散货船），按机务一部/二部/三部/四部分管
+- **船舶参数**：IMO、呼号、船旗、船级社、建造厂、总吨/载重吨、主机与辅机型号、压载水系统等
+- **证书与检验**：来自船级社 Survey Status 报告（NK / CCS / KR / ABS / DNV / BV / RINA）与船舶证书清单
+- **PSC/FSC 检查记录**：含检查日期、港口、缺陷数量与滞留标记
+- **部门归属映射**：按四个部门共享信箱收件与抄送关系推导
+
+## 使用说明
+
+- 平台回答以内部知识库为准；涉及法定证书与检验，请以原始证书文件与船级社报告为准
+- 本平台为公司内部船舶管理用途
+
+## 联系方式
+
+- 网站：https://www.winningshippingai.com/
+- 运营方：Qingdao Winning International Ships Management Co., Ltd.
