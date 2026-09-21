@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-20",
+ "generated": "2026-09-21",
  "source": "单船档案 PSC-FSC检查记录 sheet（TokyoMOU/APCIS 等来源）",
  "count": 692,
  "ship_count": 60,
@@ -2672,20 +2672,19 @@
    "count": 14,
    "records": [
     {
-     "date": "2025-06-17",
-     "port": "Yantai",
-     "port_raw": "Yantai (China)",
-     "type": "",
-     "authority": "",
+     "date": "2026-09-20",
+     "port": "zhanjiang",
+     "port_raw": "湛江",
+     "type": "PSC",
+     "authority": "MARITIME SAFETY ADMINISTRATION",
      "officer": "",
-     "defects": 1,
+     "defects": 3,
      "detained": false,
-     "codes": "",
+     "codes": "07101 A CABLE PENETRATION (APPROX. 5CM x 5CM) UNDER THE NA VIGAT!ON\n03103 LIGHT CONTROL CONSOLE ON THE BRIDGE IS NOT SEALED WITH FIRE­\n02199 RESISTANT. WIRE ROPE LIFELINES OF SAFE PASSAGE FOR CREW NOT PROVIDED ON BOTH SIDES OF MAIN DECK. MORE THAN 25% OF THE CREW WERE CHANGED ON 04 JUNE 2026, AND NO SECURITY DRILL WAS CONDUCTED WITHIN ONE WEEK THEREAFTER. THE REMOTE CONTROL VAL VE OF THE BOSUN STORE DEWA TERING SYSTEM OUT OF ORDER DURING INSPECTION",
      "codes_uncertain": false,
      "rectified": "",
-     "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship",
-     "defects_official": 1,
-     "defects_source": "TokyoMOU官方"
+     "note": "来源:MV SUNNY KINDIA ZHANJIANG PSC Report-20260920.pdf|FP:adac1aad",
+     "defects_source": "档案(无TMOU对照)"
     },
     {
      "date": "2024-11-06",
@@ -11672,14 +11671,6 @@
     "codes": ""
    },
    {
-    "ship": "SUNNY KINDIA",
-    "date": "2025-06-17",
-    "port": "Yantai",
-    "defects": 1,
-    "detained": false,
-    "codes": ""
-   },
-   {
     "ship": "WINNING RISING",
     "date": "2025-04-09",
     "port": "Yantai",
@@ -16462,6 +16453,72 @@
     "codes": ""
    }
   ],
+  "zhanjiang": [
+   {
+    "ship": "SUNNY KINDIA",
+    "date": "2026-09-20",
+    "port": "zhanjiang",
+    "defects": 3,
+    "detained": false,
+    "codes": "07101 A CABLE PENETRATION (APPROX. 5CM x 5CM) UNDER THE NA VIGAT!ON\n03103 LIGHT CONTROL CONSOLE ON THE BRIDGE IS NOT SEALED WITH FIRE­\n02199 RESISTANT. WIRE ROPE LIFELINES OF SAFE PASSAGE FOR CREW NOT PROVIDED ON BOTH SIDES OF MAIN DECK. MORE THAN 25% OF THE CREW WERE CHANGED ON 04 JUNE 2026, AND NO SECURITY DRILL WAS CONDUCTED WITHIN ONE WEEK THEREAFTER. THE REMOTE CONTROL VAL VE OF THE BOSUN STORE DEWA TERING SYSTEM OUT OF ORDER DURING INSPECTION"
+   },
+   {
+    "ship": "WINNING WORLD",
+    "date": "2026-07-28",
+    "port": "zhanjiang",
+    "defects": 4,
+    "detained": false,
+    "codes": "14616 DATA RECORDER OF EXHAUST GAS SCRUBBER FAILED TO\n11131 OPERATIONAL INSTRUCTION PLACARD FOR FREE-FALL LIFEBOAT 17\n04113 THE SENSOR OF THE WATER INGRESS ALARM SYSTEM FOR THE\n10109 THE ALARM OF UPPER AFT MASTER LIGHT WAS INDICATED ON THE 17"
+   },
+   {
+    "ship": "WINNING INTEGRITY",
+    "date": "2025-04-15",
+    "port": "Zhanjiang",
+    "defects": 6,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "SUNNY KOGON",
+    "date": "2023-02-16",
+    "port": "Zhanjiang",
+    "defects": 0,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "SUNNY SIGUIRI",
+    "date": "2017-06-20",
+    "port": "Zhanjiang",
+    "defects": 2,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "SUNNY SIGUIRI",
+    "date": "2017-03-15",
+    "port": "Zhanjiang",
+    "defects": 3,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "SUNNY SIGUIRI",
+    "date": "2016-10-27",
+    "port": "Zhanjiang",
+    "defects": 3,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "SUNNY SIGUIRI",
+    "date": "2015-11-25",
+    "port": "Zhanjiang",
+    "defects": 1,
+    "detained": false,
+    "codes": ""
+   }
+  ],
   "panjang": [
    {
     "ship": "SUNNY KINDIA",
@@ -16536,64 +16593,6 @@
     "date": "2014-09-09",
     "port": "Banjarmasin",
     "defects": 0,
-    "detained": false,
-    "codes": ""
-   }
-  ],
-  "zhanjiang": [
-   {
-    "ship": "WINNING WORLD",
-    "date": "2026-07-28",
-    "port": "zhanjiang",
-    "defects": 4,
-    "detained": false,
-    "codes": "14616 DATA RECORDER OF EXHAUST GAS SCRUBBER FAILED TO\n11131 OPERATIONAL INSTRUCTION PLACARD FOR FREE-FALL LIFEBOAT 17\n04113 THE SENSOR OF THE WATER INGRESS ALARM SYSTEM FOR THE\n10109 THE ALARM OF UPPER AFT MASTER LIGHT WAS INDICATED ON THE 17"
-   },
-   {
-    "ship": "WINNING INTEGRITY",
-    "date": "2025-04-15",
-    "port": "Zhanjiang",
-    "defects": 6,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "SUNNY KOGON",
-    "date": "2023-02-16",
-    "port": "Zhanjiang",
-    "defects": 0,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "SUNNY SIGUIRI",
-    "date": "2017-06-20",
-    "port": "Zhanjiang",
-    "defects": 2,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "SUNNY SIGUIRI",
-    "date": "2017-03-15",
-    "port": "Zhanjiang",
-    "defects": 3,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "SUNNY SIGUIRI",
-    "date": "2016-10-27",
-    "port": "Zhanjiang",
-    "defects": 3,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "SUNNY SIGUIRI",
-    "date": "2015-11-25",
-    "port": "Zhanjiang",
-    "defects": 1,
     "detained": false,
     "codes": ""
    }
@@ -17117,7 +17116,7 @@
  },
  "stats": {
   "by_port": {
-   "yantai": 161,
+   "yantai": 160,
    "port hedland, wa": 69,
    "tianjin": 27,
    "qingdao": 25,
@@ -17142,11 +17141,11 @@
    "robert's bank": 9,
    "tangshan": 8,
    "kawasaki": 8,
+   "zhanjiang": 8,
    "newcastle, nsw": 7,
    "chiba": 7,
    "nagoya, aichi": 7,
    "wakayama": 7,
-   "zhanjiang": 7,
    "huanghua": 6,
    "wakamatsu/kitakyushu": 6,
    "kashima, ibaraki": 6,
@@ -17188,15 +17187,15 @@
    "dalian": 1,
    "董家口": 1
   },
-  "this_year": 43,
+  "this_year": 44,
   "detained_total": 17,
-  "with_codes": 26,
+  "with_codes": 27,
   "codes_uncertain": 3,
   "pdf_enriched": 0,
   "pdf_files_matched": 2,
-  "tmou_reconciled": 691,
+  "tmou_reconciled": 690,
   "tmou_mismatches": [],
-  "tmou_unmatched": 1
+  "tmou_unmatched": 2
  },
  "missing": []
 }
