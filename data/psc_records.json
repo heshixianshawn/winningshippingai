@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-21",
+ "generated": "2026-09-22",
  "source": "单船档案 PSC-FSC检查记录 sheet（TokyoMOU/APCIS 等来源）",
  "count": 692,
  "ship_count": 60,
@@ -10679,20 +10679,19 @@
    "count": 16,
    "records": [
     {
-     "date": "2025-05-07",
-     "port": "Caofeidian",
-     "port_raw": "Caofeidian (China)",
-     "type": "",
+     "date": "2026-09-20",
+     "port": "tianjin",
+     "port_raw": "天津港",
+     "type": "PSC",
      "authority": "",
      "officer": "",
-     "defects": 2,
+     "defects": 6,
      "detained": false,
-     "codes": "",
+     "codes": "00736 \n92875 \n92876 \n11117 \n16105 \n07105",
      "codes_uncertain": false,
      "rectified": "",
-     "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship",
-     "defects_official": 2,
-     "defects_source": "TokyoMOU官方"
+     "note": "来源:W.WEALTH天津港PSC检查报告 -2026.09.20.pdf|FP:ebae6197",
+     "defects_source": "档案(无TMOU对照)"
     },
     {
      "date": "2023-09-26",
@@ -14693,6 +14692,14 @@
   ],
   "tianjin": [
    {
+    "ship": "WINNING WEALTH",
+    "date": "2026-09-20",
+    "port": "tianjin",
+    "defects": 6,
+    "detained": false,
+    "codes": "00736 \n92875 \n92876 \n11117 \n16105 \n07105"
+   },
+   {
     "ship": "WINNING SPIRIT",
     "date": "2026-03-10",
     "port": "Tianjin",
@@ -16623,14 +16630,6 @@
     "codes": "11123 WEAK l.['.1( NOT PR.OV1DED FOR. TWO WAY Vl-IF WRIST BAND\n08108 NO. I DETECT SENSOR OF OIL r,OST ALARM SYSTEM MANUALLY ISOLATED"
    },
    {
-    "ship": "WINNING WEALTH",
-    "date": "2025-05-07",
-    "port": "Caofeidian",
-    "defects": 2,
-    "detained": false,
-    "codes": ""
-   },
-   {
     "ship": "WINNING OCEAN",
     "date": "2025-03-17",
     "port": "Caofeidian",
@@ -17118,9 +17117,9 @@
   "by_port": {
    "yantai": 160,
    "port hedland, wa": 69,
-   "tianjin": 27,
+   "tianjin": 28,
    "qingdao": 25,
-   "caofeidian": 21,
+   "caofeidian": 20,
    "gladstone, qld": 17,
    "rizhao": 17,
    "mizushima": 17,
@@ -17187,15 +17186,15 @@
    "dalian": 1,
    "董家口": 1
   },
-  "this_year": 44,
+  "this_year": 45,
   "detained_total": 17,
-  "with_codes": 27,
+  "with_codes": 28,
   "codes_uncertain": 3,
   "pdf_enriched": 0,
   "pdf_files_matched": 2,
-  "tmou_reconciled": 690,
+  "tmou_reconciled": 689,
   "tmou_mismatches": [],
-  "tmou_unmatched": 2
+  "tmou_unmatched": 3
  },
  "missing": []
 }
