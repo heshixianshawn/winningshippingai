@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-22",
+  "generated": "2026-09-23",
   "urgent_7d": [],
   "warning_30d": [
     {
@@ -7,7 +7,7 @@
       "type": "certificate",
       "name": "ISPS",
       "date": "2026-10-10",
-      "days": 18,
+      "days": 17,
       "status": "VALID"
     },
     {
@@ -15,7 +15,7 @@
       "type": "certificate",
       "name": "MLC",
       "date": "2026-10-10",
-      "days": 18,
+      "days": 17,
       "status": "VALID"
     },
     {
@@ -23,7 +23,7 @@
       "type": "certificate",
       "name": "SMC",
       "date": "2026-10-10",
-      "days": 18,
+      "days": 17,
       "status": "VALID"
     },
     {
@@ -31,7 +31,7 @@
       "type": "certificate",
       "name": "IOPP",
       "date": "2026-10-12",
-      "days": 20,
+      "days": 19,
       "status": "VALID"
     },
     {
@@ -39,7 +39,7 @@
       "type": "certificate",
       "name": "IAPP",
       "date": "2026-10-12",
-      "days": 20,
+      "days": 19,
       "status": "VALID"
     },
     {
@@ -47,7 +47,7 @@
       "type": "certificate",
       "name": "ISPP",
       "date": "2026-10-12",
-      "days": 20,
+      "days": 19,
       "status": "VALID"
     },
     {
@@ -55,7 +55,7 @@
       "type": "certificate",
       "name": "Safety Construction",
       "date": "2026-10-12",
-      "days": 20,
+      "days": 19,
       "status": "VALID"
     },
     {
@@ -63,7 +63,7 @@
       "type": "certificate",
       "name": "Safety Equipment",
       "date": "2026-10-12",
-      "days": 20,
+      "days": 19,
       "status": "VALID"
     },
     {
@@ -71,7 +71,7 @@
       "type": "certificate",
       "name": "Safety Radio",
       "date": "2026-10-12",
-      "days": 20,
+      "days": 19,
       "status": "VALID"
     },
     {
@@ -79,7 +79,7 @@
       "type": "certificate",
       "name": "IHM",
       "date": "2026-10-12",
-      "days": 20,
+      "days": 19,
       "status": "VALID"
     },
     {
@@ -87,7 +87,7 @@
       "type": "certificate",
       "name": "Cargo Gear",
       "date": "2026-10-12",
-      "days": 20,
+      "days": 19,
       "status": "VALID"
     },
     {
@@ -95,7 +95,7 @@
       "type": "certificate",
       "name": "AFS",
       "date": "2026-10-12",
-      "days": 20,
+      "days": 19,
       "status": "VALID"
     },
     {
@@ -103,7 +103,7 @@
       "type": "survey",
       "name": "Class Special Survey for",
       "date": "2026-10-12",
-      "days": 20,
+      "days": 19,
       "status": "Not Due"
     },
     {
@@ -111,7 +111,7 @@
       "type": "survey",
       "name": "BTS (船底外部检验)",
       "date": "2026-10-12",
-      "days": 20,
+      "days": 19,
       "status": "Not Due"
     },
     {
@@ -119,7 +119,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "2026-10-15",
-      "days": 23,
+      "days": 22,
       "status": "VALID"
     },
     {
@@ -127,7 +127,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 26,
+      "days": 25,
       "status": "VALID"
     },
     {
@@ -135,7 +135,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 26,
+      "days": 25,
       "status": "VALID"
     },
     {
@@ -143,7 +143,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 26,
+      "days": 25,
       "status": "VALID"
     },
     {
@@ -151,7 +151,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 26,
+      "days": 25,
       "status": "VALID"
     },
     {
@@ -159,7 +159,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 26,
+      "days": 25,
       "status": "VALID"
     },
     {
@@ -167,7 +167,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 26,
+      "days": 25,
       "status": "VALID"
     },
     {
@@ -175,7 +175,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 26,
+      "days": 25,
       "status": "VALID"
     },
     {
@@ -183,7 +183,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 26,
+      "days": 25,
       "status": "VALID"
     },
     {
@@ -191,7 +191,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 26,
+      "days": 25,
       "status": "VALID"
     },
     {
@@ -199,7 +199,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 26,
+      "days": 25,
       "status": "VALID"
     },
     {
@@ -207,7 +207,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 26,
+      "days": 25,
       "status": "VALID"
     },
     {
@@ -215,7 +215,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 26,
+      "days": 25,
       "status": "VALID"
     },
     {
@@ -223,7 +223,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 26,
+      "days": 25,
       "status": "VALID"
     },
     {
@@ -231,7 +231,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 26,
+      "days": 25,
       "status": "VALID"
     },
     {
@@ -239,7 +239,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 26,
+      "days": 25,
       "status": "VALID"
     },
     {
@@ -247,7 +247,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 26,
+      "days": 25,
       "status": "VALID"
     },
     {
@@ -255,7 +255,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 26,
+      "days": 25,
       "status": "VALID"
     },
     {
@@ -263,7 +263,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 26,
+      "days": 25,
       "status": "VALID"
     },
     {
@@ -271,7 +271,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 26,
+      "days": 25,
       "status": "VALID"
     },
     {
@@ -279,7 +279,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 26,
+      "days": 25,
       "status": "VALID"
     },
     {
@@ -287,7 +287,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 26,
+      "days": 25,
       "status": "VALID"
     },
     {
@@ -295,7 +295,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 26,
+      "days": 25,
       "status": "VALID"
     },
     {
@@ -303,7 +303,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 26,
+      "days": 25,
       "status": "VALID"
     },
     {
@@ -311,7 +311,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "18 Oct 2026",
-      "days": 26,
+      "days": 25,
       "status": "VALID"
     },
     {
@@ -319,7 +319,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "2026-10-18",
-      "days": 26,
+      "days": 25,
       "status": "VALID"
     },
     {
@@ -327,7 +327,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "2026-10-18",
-      "days": 26,
+      "days": 25,
       "status": "VALID"
     },
     {
@@ -335,7 +335,7 @@
       "type": "certificate",
       "name": "DOC",
       "date": "2026-10-18",
-      "days": 26,
+      "days": 25,
       "status": "VALID"
     }
   ],
@@ -345,7 +345,7 @@
       "type": "survey",
       "name": "锅炉",
       "date": "2026-09-05",
-      "days": -17,
+      "days": -18,
       "status": "Not Due"
     }
   ],
@@ -355,7 +355,7 @@
       "type": "survey",
       "name": "锅炉",
       "date": "2026-09-05",
-      "days": -17,
+      "days": -18,
       "status": "Not Due"
     }
   ],
