@@ -1,29 +1,13 @@
 {
- "generated": "2026-09-23",
+ "generated": "2026-09-24",
  "source": "单船档案 PSC-FSC检查记录 sheet（TokyoMOU/APCIS 等来源）",
- "count": 692,
+ "count": 691,
  "ship_count": 60,
  "ships": {
   "SUNNY BEYLA": {
    "imo": "",
-   "count": 9,
+   "count": 8,
    "records": [
-    {
-     "date": "2024-12-28",
-     "port": "Yantai",
-     "port_raw": "Yantai (China)",
-     "type": "",
-     "authority": "",
-     "officer": "",
-     "defects": 1,
-     "detained": false,
-     "codes": "",
-     "codes_uncertain": false,
-     "rectified": "",
-     "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship",
-     "defects_official": 1,
-     "defects_source": "TokyoMOU官方"
-    },
     {
      "date": "2024-02-16",
      "port": "Callao",
@@ -11436,6 +11420,336 @@
   }
  },
  "by_port": {
+  "callao": [
+   {
+    "ship": "WINNING WAVE",
+    "date": "2025-03-27",
+    "port": "Callao",
+    "defects": 0,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "WINNING TIMES",
+    "date": "2024-07-11",
+    "port": "Callao",
+    "defects": 0,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "SUNNY BEYLA",
+    "date": "2024-02-16",
+    "port": "Callao",
+    "defects": 2,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "WINNING JOY",
+    "date": "2024-01-30",
+    "port": "Callao",
+    "defects": 0,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "SUNNY CONAKRY",
+    "date": "2023-06-18",
+    "port": "Callao",
+    "defects": 0,
+    "detained": false,
+    "codes": ""
+   }
+  ],
+  "tangshan": [
+   {
+    "ship": "WINNING CONFIDENCE",
+    "date": "2025-11-05",
+    "port": "Tangshan",
+    "defects": 2,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "SUNNY BEYLA",
+    "date": "2023-10-19",
+    "port": "Tangshan",
+    "defects": 1,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "SUNNY COYAH",
+    "date": "2023-08-20",
+    "port": "Tangshan",
+    "defects": 1,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "SUNNY STAR",
+    "date": "2023-07-03",
+    "port": "Tangshan",
+    "defects": 1,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "SUNNY COYAH",
+    "date": "2017-06-14",
+    "port": "Tangshan",
+    "defects": 2,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "SUNNY MAMOU",
+    "date": "2017-01-03",
+    "port": "Tangshan",
+    "defects": 4,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "SUNNY LINK",
+    "date": "2016-03-21",
+    "port": "Tangshan",
+    "defects": 5,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "WINNING JOY",
+    "date": "2016-03-01",
+    "port": "Tangshan",
+    "defects": 3,
+    "detained": false,
+    "codes": ""
+   }
+  ],
+  "hay point, qld": [
+   {
+    "ship": "SUNNY BEYLA",
+    "date": "2023-07-18",
+    "port": "Hay Point, QLD",
+    "defects": 10,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "SUNNY LABE",
+    "date": "2018-11-27",
+    "port": "Hay Point, QLD",
+    "defects": 0,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "SUNNY CONAKRY",
+    "date": "2016-10-25",
+    "port": "Hay Point, QLD",
+    "defects": 5,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "SUNNY LINK",
+    "date": "2016-09-22",
+    "port": "Hay Point, QLD",
+    "defects": 0,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "WINNING PROGRESS",
+    "date": "2016-05-27",
+    "port": "Hay Point, QLD",
+    "defects": 2,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "WINNING SEA",
+    "date": "2016-02-16",
+    "port": "Hay Point, QLD",
+    "defects": 0,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "SUNNY NZKORE",
+    "date": "2014-10-10",
+    "port": "Hay Point, QLD",
+    "defects": 0,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "WINNING NATURE",
+    "date": "2014-08-19",
+    "port": "Hay Point, QLD",
+    "defects": 0,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "SUNNY LINK",
+    "date": "2014-04-29",
+    "port": "Hay Point, QLD",
+    "defects": 4,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "SUNNY NZKORE",
+    "date": "2014-04-04",
+    "port": "Hay Point, QLD",
+    "defects": 2,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "WINNING PRIDE",
+    "date": "2014-03-20",
+    "port": "Hay Point, QLD",
+    "defects": 6,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "SUNNY STAR",
+    "date": "2014-03-03",
+    "port": "Hay Point, QLD",
+    "defects": 0,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "WINNING ANGEL",
+    "date": "2014-01-24",
+    "port": "Hay Point, QLD",
+    "defects": 3,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "WINNING QUEEN",
+    "date": "2014-01-15",
+    "port": "Hay Point, QLD",
+    "defects": 0,
+    "detained": false,
+    "codes": ""
+   }
+  ],
+  "pohang": [
+   {
+    "ship": "SUNNY KEROUANE",
+    "date": "2025-02-25",
+    "port": "Pohang",
+    "defects": 0,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "SUNNY KEROUANE",
+    "date": "2024-09-10",
+    "port": "Pohang",
+    "defects": 0,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "SUNNY BEYLA",
+    "date": "2023-06-02",
+    "port": "Pohang",
+    "defects": 2,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "SUNNY KEROUANE",
+    "date": "2023-02-24",
+    "port": "Pohang",
+    "defects": 2,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "SUNNY KEROUANE",
+    "date": "2022-12-05",
+    "port": "Pohang",
+    "defects": 2,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "SUNNY KEROUANE",
+    "date": "2022-04-19",
+    "port": "Pohang",
+    "defects": 0,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "WINNING WISDOM",
+    "date": "2021-03-08",
+    "port": "Pohang",
+    "defects": 0,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "SUNNY KAMSAR",
+    "date": "2020-04-28",
+    "port": "Pohang",
+    "defects": 2,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "SUNNY KEROUANE",
+    "date": "2019-12-09",
+    "port": "Pohang",
+    "defects": 0,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "SUNNY FARANAH",
+    "date": "2014-07-04",
+    "port": "Pohang",
+    "defects": 0,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "SUNNY KEROUANE",
+    "date": "2014-03-11",
+    "port": "Pohang",
+    "defects": 6,
+    "detained": false,
+    "codes": ""
+   }
+  ],
+  "pyeongtaek": [
+   {
+    "ship": "SUNNY SAILOR",
+    "date": "2021-05-17",
+    "port": "Pyeongtaek",
+    "defects": 1,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "SUNNY BEYLA",
+    "date": "2021-01-13",
+    "port": "Pyeongtaek",
+    "defects": 0,
+    "detained": false,
+    "codes": ""
+   }
+  ],
   "yantai": [
    {
     "ship": "SUNNY BOKE",
@@ -11722,14 +12036,6 @@
     "date": "2025-01-07",
     "port": "Yantai",
     "defects": 2,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "SUNNY BEYLA",
-    "date": "2024-12-28",
-    "port": "Yantai",
-    "defects": 1,
     "detained": false,
     "codes": ""
    },
@@ -12714,336 +13020,6 @@
     "date": "2014-03-26",
     "port": "Yantai",
     "defects": 3,
-    "detained": false,
-    "codes": ""
-   }
-  ],
-  "callao": [
-   {
-    "ship": "WINNING WAVE",
-    "date": "2025-03-27",
-    "port": "Callao",
-    "defects": 0,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "WINNING TIMES",
-    "date": "2024-07-11",
-    "port": "Callao",
-    "defects": 0,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "SUNNY BEYLA",
-    "date": "2024-02-16",
-    "port": "Callao",
-    "defects": 2,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "WINNING JOY",
-    "date": "2024-01-30",
-    "port": "Callao",
-    "defects": 0,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "SUNNY CONAKRY",
-    "date": "2023-06-18",
-    "port": "Callao",
-    "defects": 0,
-    "detained": false,
-    "codes": ""
-   }
-  ],
-  "tangshan": [
-   {
-    "ship": "WINNING CONFIDENCE",
-    "date": "2025-11-05",
-    "port": "Tangshan",
-    "defects": 2,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "SUNNY BEYLA",
-    "date": "2023-10-19",
-    "port": "Tangshan",
-    "defects": 1,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "SUNNY COYAH",
-    "date": "2023-08-20",
-    "port": "Tangshan",
-    "defects": 1,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "SUNNY STAR",
-    "date": "2023-07-03",
-    "port": "Tangshan",
-    "defects": 1,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "SUNNY COYAH",
-    "date": "2017-06-14",
-    "port": "Tangshan",
-    "defects": 2,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "SUNNY MAMOU",
-    "date": "2017-01-03",
-    "port": "Tangshan",
-    "defects": 4,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "SUNNY LINK",
-    "date": "2016-03-21",
-    "port": "Tangshan",
-    "defects": 5,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "WINNING JOY",
-    "date": "2016-03-01",
-    "port": "Tangshan",
-    "defects": 3,
-    "detained": false,
-    "codes": ""
-   }
-  ],
-  "hay point, qld": [
-   {
-    "ship": "SUNNY BEYLA",
-    "date": "2023-07-18",
-    "port": "Hay Point, QLD",
-    "defects": 10,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "SUNNY LABE",
-    "date": "2018-11-27",
-    "port": "Hay Point, QLD",
-    "defects": 0,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "SUNNY CONAKRY",
-    "date": "2016-10-25",
-    "port": "Hay Point, QLD",
-    "defects": 5,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "SUNNY LINK",
-    "date": "2016-09-22",
-    "port": "Hay Point, QLD",
-    "defects": 0,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "WINNING PROGRESS",
-    "date": "2016-05-27",
-    "port": "Hay Point, QLD",
-    "defects": 2,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "WINNING SEA",
-    "date": "2016-02-16",
-    "port": "Hay Point, QLD",
-    "defects": 0,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "SUNNY NZKORE",
-    "date": "2014-10-10",
-    "port": "Hay Point, QLD",
-    "defects": 0,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "WINNING NATURE",
-    "date": "2014-08-19",
-    "port": "Hay Point, QLD",
-    "defects": 0,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "SUNNY LINK",
-    "date": "2014-04-29",
-    "port": "Hay Point, QLD",
-    "defects": 4,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "SUNNY NZKORE",
-    "date": "2014-04-04",
-    "port": "Hay Point, QLD",
-    "defects": 2,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "WINNING PRIDE",
-    "date": "2014-03-20",
-    "port": "Hay Point, QLD",
-    "defects": 6,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "SUNNY STAR",
-    "date": "2014-03-03",
-    "port": "Hay Point, QLD",
-    "defects": 0,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "WINNING ANGEL",
-    "date": "2014-01-24",
-    "port": "Hay Point, QLD",
-    "defects": 3,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "WINNING QUEEN",
-    "date": "2014-01-15",
-    "port": "Hay Point, QLD",
-    "defects": 0,
-    "detained": false,
-    "codes": ""
-   }
-  ],
-  "pohang": [
-   {
-    "ship": "SUNNY KEROUANE",
-    "date": "2025-02-25",
-    "port": "Pohang",
-    "defects": 0,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "SUNNY KEROUANE",
-    "date": "2024-09-10",
-    "port": "Pohang",
-    "defects": 0,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "SUNNY BEYLA",
-    "date": "2023-06-02",
-    "port": "Pohang",
-    "defects": 2,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "SUNNY KEROUANE",
-    "date": "2023-02-24",
-    "port": "Pohang",
-    "defects": 2,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "SUNNY KEROUANE",
-    "date": "2022-12-05",
-    "port": "Pohang",
-    "defects": 2,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "SUNNY KEROUANE",
-    "date": "2022-04-19",
-    "port": "Pohang",
-    "defects": 0,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "WINNING WISDOM",
-    "date": "2021-03-08",
-    "port": "Pohang",
-    "defects": 0,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "SUNNY KAMSAR",
-    "date": "2020-04-28",
-    "port": "Pohang",
-    "defects": 2,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "SUNNY KEROUANE",
-    "date": "2019-12-09",
-    "port": "Pohang",
-    "defects": 0,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "SUNNY FARANAH",
-    "date": "2014-07-04",
-    "port": "Pohang",
-    "defects": 0,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "SUNNY KEROUANE",
-    "date": "2014-03-11",
-    "port": "Pohang",
-    "defects": 6,
-    "detained": false,
-    "codes": ""
-   }
-  ],
-  "pyeongtaek": [
-   {
-    "ship": "SUNNY SAILOR",
-    "date": "2021-05-17",
-    "port": "Pyeongtaek",
-    "defects": 1,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "SUNNY BEYLA",
-    "date": "2021-01-13",
-    "port": "Pyeongtaek",
-    "defects": 0,
     "detained": false,
     "codes": ""
    }
@@ -17115,7 +17091,7 @@
  },
  "stats": {
   "by_port": {
-   "yantai": 160,
+   "yantai": 159,
    "port hedland, wa": 69,
    "tianjin": 28,
    "qingdao": 25,
@@ -17192,7 +17168,7 @@
   "codes_uncertain": 3,
   "pdf_enriched": 0,
   "pdf_files_matched": 2,
-  "tmou_reconciled": 689,
+  "tmou_reconciled": 688,
   "tmou_mismatches": [],
   "tmou_unmatched": 3
  },
