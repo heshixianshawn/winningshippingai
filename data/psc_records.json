@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-25",
+ "generated": "2026-09-26",
  "source": "单船档案 PSC-FSC检查记录 sheet（TokyoMOU/APCIS 等来源）",
  "count": 691,
  "ship_count": 60,
@@ -4881,20 +4881,19 @@
    "count": 8,
    "records": [
     {
-     "date": "2023-08-24",
-     "port": "Rizhao",
-     "port_raw": "Rizhao (China)",
-     "type": "",
+     "date": "2023-09-24",
+     "port": "yantai",
+     "port_raw": "烟台",
+     "type": "PSC",
      "authority": "",
      "officer": "",
-     "defects": 1,
+     "defects": 6,
      "detained": false,
-     "codes": "",
+     "codes": "00736 \n92876 \n92875 \n10109 \n11102 \n13103",
      "codes_uncertain": false,
      "rectified": "",
-     "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship",
-     "defects_official": 1,
-     "defects_source": "TokyoMOU官方"
+     "note": "来源:SUNNY SKY PSCI REPORT+CIC CARGO SECURING 24-SEPT-2026 YANTAI.pdf|FP:9b8cf4bb",
+     "defects_source": "档案(无TMOU对照)"
     },
     {
      "date": "2022-09-06",
@@ -12176,6 +12175,14 @@
     "codes": ""
    },
    {
+    "ship": "SUNNY SKY",
+    "date": "2023-09-24",
+    "port": "yantai",
+    "defects": 6,
+    "detained": false,
+    "codes": "00736 \n92876 \n92875 \n10109 \n11102 \n13103"
+   },
+   {
     "ship": "WINNING SPIRIT",
     "date": "2023-08-15",
     "port": "Yantai",
@@ -14281,14 +14288,6 @@
    }
   ],
   "rizhao": [
-   {
-    "ship": "SUNNY SKY",
-    "date": "2023-08-24",
-    "port": "Rizhao",
-    "defects": 1,
-    "detained": false,
-    "codes": ""
-   },
    {
     "ship": "WINNING JOY",
     "date": "2022-02-18",
@@ -17091,16 +17090,16 @@
  },
  "stats": {
   "by_port": {
-   "yantai": 159,
+   "yantai": 160,
    "port hedland, wa": 69,
    "tianjin": 28,
    "qingdao": 25,
    "caofeidian": 20,
    "gladstone, qld": 17,
-   "rizhao": 17,
    "mizushima": 17,
    "dangjin": 17,
    "dampier, wa": 16,
+   "rizhao": 16,
    "port walcott, wa": 15,
    "hay point, qld": 14,
    "cagayan de oro, mindanao": 14,
@@ -17164,13 +17163,13 @@
   },
   "this_year": 45,
   "detained_total": 17,
-  "with_codes": 28,
+  "with_codes": 29,
   "codes_uncertain": 3,
   "pdf_enriched": 0,
   "pdf_files_matched": 2,
-  "tmou_reconciled": 688,
+  "tmou_reconciled": 687,
   "tmou_mismatches": [],
-  "tmou_unmatched": 3
+  "tmou_unmatched": 4
  },
  "missing": []
 }

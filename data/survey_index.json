@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-26 15:00",
+  "last_updated": "2026-09-26 17:01",
   "total_ships": 64,
   "ships": {
     "SUNNY_BEYLA": {
@@ -7794,7 +7794,7 @@
       "class_society": "DNV",
       "flag": "Singapore",
       "gt": "172517",
-      "dwt": "",
+      "dwt": "324984.1",
       "surveys": [
         {
           "type": "",
