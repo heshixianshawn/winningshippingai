@@ -81,6 +81,13 @@
         }
         .ship-detail span { white-space: nowrap; }
         .detail-label { color: #999; margin-right: 2px; }
+        /* 货种徽标（2026-09-26 Shawn 定：船舶动态显示 IRON ORE/BAUXITE/件杂货） */
+        .cargo-badge {
+            display: inline-block; padding: 1px 7px; border-radius: 9px;
+            background: #eef4ff; color: #1d4ed8; font-weight: 600; font-size: 11.5px;
+            border: 1px solid #d3e0fb;
+        }
+        .cargo-badge.plan { background: #fff7e6; color: #b45309; border-color: #fde3b8; }
         .dest-highlight { color: var(--primary-color); font-weight: 500; }
         .eta-overdue { color: var(--danger-color); }
         .fleet-section { margin-bottom: 32px; }
@@ -187,7 +194,7 @@
             <div class="update-time" id="updateTime">数据加载中...</div>
 
             <div class="filter-bar">
-                <input type="text" class="search-input" id="searchInput" placeholder="🔍 搜索船名、目的港..." oninput="renderFleet()">
+                <input type="text" class="search-input" id="searchInput" placeholder="🔍 搜索船名、目的港、货种（如 BAUXITE）..." oninput="renderFleet()">
                 <button class="filter-btn active" data-filter="all" onclick="setFilter('all')">全部 <span id="totalCount">—</span></button>
                 <button class="filter-btn sea-filter" data-filter="sea" onclick="setFilter('sea')">🟢 在航</button>
                 <button class="filter-btn anchor-filter" data-filter="anchor" onclick="setFilter('anchor')">🟡 锚泊</button>
@@ -245,7 +252,8 @@
             
             let filtered = allVessels.filter(v => {
                 if (currentFilter !== 'all' && statusClass(v.status) !== currentFilter) return false;
-                if (search && !v.name.toLowerCase().includes(search) && !(v.destination||'').toLowerCase().includes(search)) return false;
+                if (search && !v.name.toLowerCase().includes(search) && !(v.destination||'').toLowerCase().includes(search)
+                    && !(v.cargo||'').toLowerCase().includes(search) && !(v.cargo_cn||'').includes(search)) return false;
                 return true;
             });
 
@@ -279,11 +287,13 @@
                     <div class="ship-name">${v.name}</div>
                     <div class="ship-status ${sc}">${v.status === '在航' ? '🟢' : v.status === '锚泊' ? '🟡' : '🔴'} ${v.status}</div>
                     <div class="ship-detail">
+                        ${v.cargo ? `<span><span class="detail-label">📦</span><span class="cargo-badge${v.cargo_plan ? ' plan' : ''}">${v.cargo_cn || v.cargo}${v.cargo_plan ? '(计划)' : ''}</span></span>` : ''}
                         ${v.speed_kn ? `<span><span class="detail-label">航速</span>${v.speed_kn} kn</span>` : ''}
                         ${v.destination ? `<span><span class="detail-label">→</span><span class="dest-highlight">${v.destination}</span></span>` : ''}
                         ${v.eta ? `<span><span class="detail-label">ETA</span><span class="${overdue ? 'eta-overdue' : ''}">${v.eta}</span></span>` : ''}
                     </div>
                     <div class="ship-details-expanded">
+                        ${v.cargo ? `<span>📦 货种 ${v.cargo}${v.cargo_plan ? '（计划装，未起运）' : ''}${v.cargo_date ? ' · 依据 ' + v.cargo_date : ''}</span>` : ''}
                         ${v.lat ? `<span>📍 ${v.lat.toFixed(2)}, ${v.lon.toFixed(2)}</span>` : ''}
                         ${v.heading_deg ? `<span>🧭 航向 ${v.heading_deg}°</span>` : ''}
                         ${v.draught_m ? `<span>📏 吃水 ${v.draught_m}m</span>` : ''}
