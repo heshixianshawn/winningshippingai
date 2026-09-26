@@ -1,55 +1,7 @@
 // Auto-generated. NK Survey Status v2 extraction + full fleet merge.
-// Updated: 2026-09-26 14:53 | Ships: 68
+// Updated: 2026-09-26 15:00 | Ships: 64
 
 const ships = {
-  "DNV_CLASSSTATUS_WINNING_AMBITION_20260901": {
-    name: "",
-    imo: "",
-    classSociety: "DNV",
-    flag: "Singapore",
-    gt: "",
-    dwt: null,
-    buildDate: "",
-    surveys: [],
-    certificates: [],
-    source: {"class_society": "DNV", "report_date": "2026-08-15", "extraction_method": "pdf_text+particulars", "confidence": "high", "particulars_source": "Survey_Status_PDF"},
-  },
-  "DNV_CLASSSTATUS_WINNING_AMBITION_20260905": {
-    name: "",
-    imo: "",
-    classSociety: "DNV",
-    flag: "Singapore",
-    gt: "",
-    dwt: null,
-    buildDate: "",
-    surveys: [],
-    certificates: [],
-    source: {"class_society": "DNV", "report_date": "2026-08-15", "extraction_method": "pdf_text+particulars", "confidence": "high", "particulars_source": "Survey_Status_PDF"},
-  },
-  "DNV_CLASSSTATUS_WINNING_CREATION_20260914": {
-    name: "",
-    imo: "",
-    classSociety: "DNV",
-    flag: "Singapore",
-    gt: "",
-    dwt: null,
-    buildDate: "",
-    surveys: [],
-    certificates: [],
-    source: {"class_society": "DNV", "report_date": "2026-08-15", "extraction_method": "pdf_text+particulars", "confidence": "high", "particulars_source": "Survey_Status_PDF"},
-  },
-  "DNV_CLASSSTATUS_WINNING_CREATION_20260926": {
-    name: "",
-    imo: "",
-    classSociety: "DNV",
-    flag: "Singapore",
-    gt: "",
-    dwt: null,
-    buildDate: "",
-    surveys: [],
-    certificates: [],
-    source: {"class_society": "DNV", "report_date": "2026-08-15", "extraction_method": "pdf_text+particulars", "confidence": "high", "particulars_source": "Survey_Status_PDF"},
-  },
   "SUNNY_BEYLA": {
     name: "SUNNY BEYLA",
     imo: "9364320",
@@ -432,7 +384,7 @@ const ships = {
     buildDate: "2026-01-08",
     surveys: [{"description": "Main class annual (MC.A)", "last_done": "2026-09-11", "window_start": "2027-06-11", "window_end": "2027-12-11"}, {"description": "Bottom complete survey (BOT.C)", "last_done": "2026-09-11", "due_date": "2029-09-11"}],
     certificates: [{"title": "Classification Certificate", "abbrev": "CLCE", "status": "Interim", "issued_date": "2026-09-11", "expiry_date": "2027-12-11"}, {"title": "International Load Line Certificate", "abbrev": "ILLC-IC", "status": "Short term", "issued_date": "2026-09-11", "expiry_date": "2027-02-11"}, {"title": "Cargo Ship Safety Construction Certificate (International)", "abbrev": "CCC-IC", "status": "Short term", "issued_date": "2026-09-11", "expiry_date": "2027-02-11"}, {"title": "Cargo Ship Safety Equipment Certificate (International)", "abbrev": "CEC-IC", "status": "Short term", "issued_date": "2026-09-11", "expiry_date": "2027-02-11"}, {"title": "Cargo Ship Safety Radio Certificate (International)", "abbrev": "CRC-IC", "status": "Short term", "issued_date": "2026-09-11", "expiry_date": "2027-02-11"}, {"title": "Safety Management Certificate", "abbrev": "SMC", "status": "Interim", "issued_date": "2026-09-11", "expiry_date": "2027-03-11"}, {"title": "International Ship Security Certificate", "abbrev": "ISPS-IC", "status": "Interim", "issued_date": "2026-09-11", "expiry_date": "2027-03-11"}, {"title": "Maritime Labour Certificate (International)", "abbrev": "MLC-IC", "status": "Interim", "issued_date": "2026-09-11", "expiry_date": "2027-03-11"}, {"title": "Maritime Labour Convention Title 3 Reg 3.1 Certificate", "abbrev": "MLC-T3-C", "status": "Full term", "issued_date": "2026-09-11", "expiry_date": ""}, {"title": "International Oil Pollution Prevention Certificate, Type A", "abbrev": "OPP-A-IC", "status": "Short term", "issued_date": "2026-09-11", "expiry_date": "2027-02-11"}, {"title": "International Sewage Pollution Prevention Certificate", "abbrev": "SPP-IC", "status": "Short term", "issued_date": "2026-09-11", "expiry_date": "2027-02-11"}, {"title": "International Air Pollution Prevention Certificate", "abbrev": "IAPP-IC", "status": "Short term", "issued_date": "2026-09-11", "expiry_date": "2027-02-11"}, {"title": "International Energy Efficiency Certificate", "abbrev": "EEC-IC", "status": "Full term", "issued_date": "2026-09-11", "expiry_date": ""}, {"title": "International Anti-Fouling System Certificate", "abbrev": "AFS-IC", "status": "Full term", "issued_date": "2026-09-11", "expiry_date": ""}, {"title": "International Ballast Water Management Certificate - treatment method", "abbrev": "BWM-T-IC", "status": "Short term", "issued_date": "2026-09-11", "expiry_date": "2027-02-11"}, {"title": "Inventory of Hazardous Materials Statement of Compliance", "abbrev": "REC-IHM-SoC", "status": "Short term", "issued_date": "2026-09-11", "expiry_date": "2027-02-11"}, {"title": "Document of Compliance for the Carriage of Dangerous Goods (International)", "abbrev": "IDG-IC", "status": "Short term", "issued_date": "2026-09-11", "expiry_date": "2027-02-11"}, {"title": "Statement of Compliance for the Carriage of Solid Bulk Cargoes", "abbrev": "IMSBC-C", "status": "Full term", "issued_date": "2026-09-11", "expiry_date": "2031-09-11"}, {"title": "Inventory of Hazardous Materials Statement of Compliance (EU regulation)", "abbrev": "EU-REC-IHM-SoC", "status": "Short term", "issued_date": "2026-09-11", "expiry_date": "2027-02-11"}, {"title": "International Tonnage Certificate (1969)", "abbrev": "TMC-IC", "status": "Full term", "issued_date": "2026-07-31", "expiry_date": ""}, {"title": "Exemption Certificate for Fixed Fire Extinguishing System in Cargo Holds", "abbrev": "EXEFFE", "status": "Short term", "issued_date": "2026-09-11", "expiry_date": "2027-02-11"}],
-    source: {"class_society": "DNV", "report_date": "2026-09-14", "extraction_method": "class_status_report_pdf", "confidence": "high", "note": "来源：DNV Class Status Report (DNV ID 114815, 2026-09-14 下载, 11页)。船 2026 新造，多数证书为 Short term/Interim 临时证，2027-02-11 / 2027-03-11 到期后换正式证。"},
+    source: {"class_society": "DNV", "report_date": "2026-09-14", "extraction_method": "pdf_text+particulars", "confidence": "high", "note": "来源：DNV Class Status Report (DNV ID 114815, 2026-09-14 下载, 11页)。船 2026 新造，多数证书为 Short term/Interim 临时证，2027-02-11 / 2027-03-11 到期后换正式证。", "particulars_source": "DNV_Survey_Status_PDF"},
   },
   "WINNING_DILIGENCE": {
     name: "WINNING DILIGENCE",
@@ -822,6 +774,6 @@ const ships = {
 
 export const SURVEY_DATA = {
   ships,
-  lastUpdated: "2026-09-26 14:53",
-  totalShips: 68,
+  lastUpdated: "2026-09-26 15:00",
+  totalShips: 64,
 };

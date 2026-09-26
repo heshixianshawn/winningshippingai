@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-09-26 14:53",
-  "total_ships": 68,
+  "last_updated": "2026-09-26 15:00",
+  "total_ships": 64,
   "ships": {
     "SUNNY_BEYLA": {
       "name": "SUNNY BEYLA",
@@ -7892,74 +7892,6 @@
           "expiry": "2027-02-11"
         }
       ],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
-    },
-    "DNV_CLASSSTATUS_WINNING_AMBITION_20260901": {
-      "name": "",
-      "imo": "",
-      "class_society": "DNV",
-      "flag": "Singapore",
-      "gt": "",
-      "dwt": "",
-      "surveys": [],
-      "certificates": [],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
-    },
-    "DNV_CLASSSTATUS_WINNING_AMBITION_20260905": {
-      "name": "",
-      "imo": "",
-      "class_society": "DNV",
-      "flag": "Singapore",
-      "gt": "",
-      "dwt": "",
-      "surveys": [],
-      "certificates": [],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
-    },
-    "DNV_CLASSSTATUS_WINNING_CREATION_20260914": {
-      "name": "",
-      "imo": "",
-      "class_society": "DNV",
-      "flag": "Singapore",
-      "gt": "",
-      "dwt": "",
-      "surveys": [],
-      "certificates": [],
-      "alerts": {
-        "expired": 0,
-        "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 0
-      },
-      "extraction_confidence": "high"
-    },
-    "DNV_CLASSSTATUS_WINNING_CREATION_20260926": {
-      "name": "",
-      "imo": "",
-      "class_society": "DNV",
-      "flag": "Singapore",
-      "gt": "",
-      "dwt": "",
-      "surveys": [],
-      "certificates": [],
       "alerts": {
         "expired": 0,
         "urgent_7d": 0,
