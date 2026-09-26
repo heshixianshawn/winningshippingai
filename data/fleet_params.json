@@ -2141,7 +2141,14 @@
       "ccs_no": "23F0810",
       "ccs_built": "2025-10-25",
       "next_special_survey": "2031-06-15",
-      "scrubber_date": "2026-06-01"
+      "scrubber_date": "2026-06-01",
+      "loa": "329.99",
+      "lbp": "323.62",
+      "breadth": "60",
+      "depth": "30.5",
+      "draught": "22",
+      "official_no": "403509",
+      "dnv_id": "46897"
     },
     "1037402": {
       "id": 63,
@@ -2214,7 +2221,14 @@
       "shaft_gen": "",
       "sisters": "",
       "ex_name": "",
-      "ex_owner": ""
+      "ex_owner": "",
+      "loa": "329.9",
+      "lbp": "324.5",
+      "breadth": "60",
+      "depth": "30.5",
+      "draught": "21.974",
+      "official_no": "404254",
+      "dnv_id": "114815"
     }
   }
 }
