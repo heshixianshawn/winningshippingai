@@ -172,7 +172,8 @@
       "shaft_gen": "",
       "sisters": [],
       "ex_name": "无, 新造船",
-      "ex_owner": ""
+      "ex_owner": "",
+      "scrubber_date": "2024-06-01"
     },
     "9335240": {
       "id": 6,
@@ -342,7 +343,8 @@
       "shaft_gen": "浙能迈领",
       "sisters": [],
       "ex_name": "LYLA",
-      "ex_owner": "Manga Shipping S.A."
+      "ex_owner": "Manga Shipping S.A.",
+      "scrubber_date": "2024-10-01"
     },
     "9311282": {
       "id": 11,
@@ -444,7 +446,8 @@
       "shaft_gen": "1901-12-11",
       "sisters": [],
       "ex_name": "BESIKTAS",
-      "ex_owner": "BESIKTAS LIKID TASIMACILIK DENIZCILIK TICARET ANONIM SIRKETI"
+      "ex_owner": "BESIKTAS LIKID TASIMACILIK DENIZCILIK TICARET ANONIM SIRKETI",
+      "scrubber_date": "2024-06-01"
     },
     "9461295": {
       "id": 14,
@@ -478,7 +481,8 @@
       "shaft_gen": "1901-12-11",
       "sisters": [],
       "ex_name": "BESIKTAS TURKMENISTAN",
-      "ex_owner": ""
+      "ex_owner": "",
+      "scrubber_date": "2024-09-01"
     },
     "9659854": {
       "id": 15,
@@ -546,7 +550,8 @@
       "shaft_gen": "",
       "sisters": [],
       "ex_name": "无, 新造船",
-      "ex_owner": ""
+      "ex_owner": "",
+      "scrubber_date": "2024-06-01"
     },
     "9659866": {
       "id": 17,
@@ -614,7 +619,8 @@
       "shaft_gen": "1901-12-11",
       "sisters": [],
       "ex_name": "HANJIN MATSUYAMA",
-      "ex_owner": ""
+      "ex_owner": "",
+      "scrubber_date": "2026-01-01"
     },
     "9271602": {
       "id": 19,
@@ -716,7 +722,8 @@
       "shaft_gen": "菲达澜创",
       "sisters": [],
       "ex_name": "DONG-A LETO",
-      "ex_owner": "LTSF DA 1 INC"
+      "ex_owner": "LTSF DA 1 INC",
+      "scrubber_date": "2024-08-01"
     },
     "9393199": {
       "id": 22,
@@ -750,7 +757,8 @@
       "shaft_gen": "",
       "sisters": [],
       "ex_name": "PLEIADES DREAM",
-      "ex_owner": ""
+      "ex_owner": "",
+      "scrubber_date": "2024-04-01"
     },
     "9597824": {
       "id": 23,
@@ -784,7 +792,8 @@
       "shaft_gen": "浙能迈领",
       "sisters": [],
       "ex_name": "DONG-A EITHER",
-      "ex_owner": "DAT ETHER2 MARITIME S.A."
+      "ex_owner": "DAT ETHER2 MARITIME S.A.",
+      "scrubber_date": "2024-08-01"
     },
     "9254666": {
       "id": 24,
@@ -920,7 +929,8 @@
       "shaft_gen": "1901-12-11",
       "sisters": [],
       "ex_name": "RUBENA N",
-      "ex_owner": "GRACE OCEAN PRIVATE LIMITED"
+      "ex_owner": "GRACE OCEAN PRIVATE LIMITED",
+      "scrubber_date": "2023-10-01"
     },
     "9336945": {
       "id": 28,
@@ -954,7 +964,8 @@
       "shaft_gen": "1901-12-11",
       "sisters": [],
       "ex_name": "MINERAL NIPPON",
-      "ex_owner": ""
+      "ex_owner": "",
+      "scrubber_date": "2024-01-01"
     },
     "9859765": {
       "id": 29,
@@ -988,7 +999,8 @@
       "shaft_gen": "",
       "sisters": [],
       "ex_name": "无, 新造船",
-      "ex_owner": ""
+      "ex_owner": "",
+      "scrubber_date": "2024-10-01"
     },
     "9859777": {
       "id": 30,
@@ -1022,7 +1034,8 @@
       "shaft_gen": "",
       "sisters": [],
       "ex_name": "无, 新造船",
-      "ex_owner": ""
+      "ex_owner": "",
+      "scrubber_date": "2024-11-01"
     },
     "9279393": {
       "id": 31,
@@ -1192,7 +1205,8 @@
       "shaft_gen": "1901-12-11",
       "sisters": [],
       "ex_name": "SAKURA",
-      "ex_owner": "Kitaura Kaiun Co., Ltd"
+      "ex_owner": "Kitaura Kaiun Co., Ltd",
+      "scrubber_date": "2025-08-01"
     },
     "9406506": {
       "id": 36,
@@ -1226,7 +1240,8 @@
       "shaft_gen": "1901-12-11",
       "sisters": [],
       "ex_name": "SPRING BRAVE",
-      "ex_owner": "PRIMAVERA MONTANA S.A."
+      "ex_owner": "PRIMAVERA MONTANA S.A.",
+      "scrubber_date": "2025-12-01"
     },
     "9439125": {
       "id": 37,
@@ -1430,7 +1445,8 @@
       "shaft_gen": "浙能迈领",
       "sisters": [],
       "ex_name": "BAO AN",
-      "ex_owner": "ERICA NAVIGATION S.A."
+      "ex_owner": "ERICA NAVIGATION S.A.",
+      "scrubber_date": "2024-11-01"
     },
     "9337107": {
       "id": 43,
@@ -1464,7 +1480,8 @@
       "shaft_gen": "1901-12-11",
       "sisters": [],
       "ex_name": "MOUNT KINABALU",
-      "ex_owner": "ZIBE SHIPPING LTD"
+      "ex_owner": "ZIBE SHIPPING LTD",
+      "scrubber_date": "2019-12-01"
     },
     "9492218": {
       "id": 44,
@@ -1498,7 +1515,8 @@
       "shaft_gen": "浙能迈领",
       "sisters": [],
       "ex_name": "DAN MAY",
-      "ex_owner": "DAN MAY MARITIME LLC(Foremost Group)"
+      "ex_owner": "DAN MAY MARITIME LLC(Foremost Group)",
+      "scrubber_date": "2019-08-01"
     },
     "9364320": {
       "id": 45,
@@ -1600,7 +1618,8 @@
       "shaft_gen": "",
       "sisters": [],
       "ex_name": "MINERAL QINGDAO",
-      "ex_owner": "OCY Mineral Qingdao Ltd"
+      "ex_owner": "OCY Mineral Qingdao Ltd",
+      "scrubber_date": "2024-10-01"
     },
     "9492220": {
       "id": 48,
@@ -1634,7 +1653,8 @@
       "shaft_gen": "",
       "sisters": [],
       "ex_name": "QING MAY",
-      "ex_owner": "Qing May Maritime LLC(Foremost Group)"
+      "ex_owner": "Qing May Maritime LLC(Foremost Group)",
+      "scrubber_date": "2019-08-01"
     },
     "9387114": {
       "id": 49,
@@ -1668,7 +1688,8 @@
       "shaft_gen": "1901-12-11",
       "sisters": [],
       "ex_name": "Penelope T",
-      "ex_owner": "Trisect Holding SA"
+      "ex_owner": "Trisect Holding SA",
+      "scrubber_date": "2025-07-01"
     },
     "9330305": {
       "id": 50,
@@ -1702,7 +1723,8 @@
       "shaft_gen": "赛思亿/中船电气",
       "sisters": [],
       "ex_name": "MOUNT CARMEL",
-      "ex_owner": "Mizuho Sangyo Co Ltd & Fair Wind Navigation SA"
+      "ex_owner": "Mizuho Sangyo Co Ltd & Fair Wind Navigation SA",
+      "scrubber_date": "2019-06-01"
     },
     "9398149": {
       "id": 51,
@@ -1770,7 +1792,8 @@
       "shaft_gen": "菲达澜创",
       "sisters": [],
       "ex_name": "SIKAMIA",
-      "ex_owner": "UNIVERSAL SHIPPING S.A."
+      "ex_owner": "UNIVERSAL SHIPPING S.A.",
+      "scrubber_date": "2019年"
     },
     "9406453": {
       "id": 53,
@@ -1804,7 +1827,8 @@
       "shaft_gen": "",
       "sisters": [],
       "ex_name": "NETADOLA",
-      "ex_owner": "MELITE OWNING COMPANY LIMITED"
+      "ex_owner": "MELITE OWNING COMPANY LIMITED",
+      "scrubber_date": "2023-05-01"
     },
     "9406489": {
       "id": 54,
@@ -1974,7 +1998,8 @@
       "shaft_gen": "",
       "sisters": [],
       "ex_name": "LONDON SPIRIT",
-      "ex_owner": "Uranie Shipholding Corp"
+      "ex_owner": "Uranie Shipholding Corp",
+      "scrubber_date": "2024-10-01"
     },
     "9633068": {
       "id": 59,
@@ -2106,7 +2131,7 @@
       "bwt_make": "SUNRUI",
       "bwt_model": "",
       "scrubber_make": "SUNRUI",
-      "scrubber_model": "",
+      "scrubber_model": "Scrubber tower with packing",
       "shaft_gen": "",
       "sisters": [
         "WINNING BRAVE"
@@ -2115,7 +2140,8 @@
       "ex_owner": "",
       "ccs_no": "23F0810",
       "ccs_built": "2025-10-25",
-      "next_special_survey": "2031-06-15"
+      "next_special_survey": "2031-06-15",
+      "scrubber_date": "2026-06-01"
     },
     "1037402": {
       "id": 63,
