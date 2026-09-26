@@ -1,6 +1,6 @@
 {
- "generated": "2026-09-16T22:34:55",
- "source": "Tokyo MOU APCIS（源文件生成于 2026-09-16T22:34:48）",
+ "generated": "2026-09-26T08:16:32",
+ "source": "Tokyo MOU APCIS（源文件生成于 2026-09-21T05:40:21）",
  "ship_count": 64,
  "ships": {
   "SUNNY BEYLA": {
@@ -2155,7 +2155,7 @@
     }
    ],
    "status": "ok",
-   "scanned_at": "2026-09-16T21:55:40",
+   "scanned_at": "2026-09-16T23:36:39",
    "imo": "9398113",
    "note": null,
    "data_issue": null
@@ -3061,7 +3061,7 @@
     }
    ],
    "status": "ok",
-   "scanned_at": "2026-09-16T21:59:57",
+   "scanned_at": "2026-09-16T23:37:53",
    "imo": "9337169",
    "note": null,
    "data_issue": null
@@ -4501,8 +4501,15 @@
    "data_issue": null
   },
   "WINNING ENDURANCE": {
-   "status": "stale",
-   "scanned_at": "2026-08-22T17:37:44",
+   "risk_level": "Standard",
+   "priority": "N/A",
+   "inspection_window": "18.01.2027 - 18.04.2027",
+   "weighting_points": 3,
+   "outstanding_deficiencies": 0,
+   "company": {
+    "name": "Qingdao Winning International Ships Management Co Ltd",
+    "imo": "5466129"
+   },
    "inspections": [
     {
      "date": "18.08.2026",
@@ -4513,7 +4520,8 @@
      "flag": "Singapore",
      "deficiencies": "3",
      "detention": "no",
-     "risk_at_inspection": "Standard Risk Ship"
+     "risk_at_inspection": "Standard Risk Ship",
+     "inspection_id": "42F70FBD-1287-4E75-AEFA-3F504F8A58F8"
     },
     {
      "date": "15.07.2025",
@@ -4524,7 +4532,8 @@
      "flag": "Singapore",
      "deficiencies": "1",
      "detention": "no",
-     "risk_at_inspection": "Standard Risk Ship"
+     "risk_at_inspection": "Standard Risk Ship",
+     "inspection_id": "257661B2-F1AF-446E-98F9-13520A467C53"
     },
     {
      "date": "25.07.2023",
@@ -4535,7 +4544,8 @@
      "flag": "Singapore",
      "deficiencies": "2",
      "detention": "no",
-     "risk_at_inspection": "Standard Risk Ship"
+     "risk_at_inspection": "Standard Risk Ship",
+     "inspection_id": "2A5410AE-9452-4032-BF03-DC5D552DF3E4"
     },
     {
      "date": "25.03.2021",
@@ -4546,7 +4556,8 @@
      "flag": "Singapore",
      "deficiencies": "1",
      "detention": "no",
-     "risk_at_inspection": "Low Risk Ship"
+     "risk_at_inspection": "Low Risk Ship",
+     "inspection_id": "00A9035C-629A-4D6D-8E4F-148A340F78A5"
     },
     {
      "date": "16.09.2019",
@@ -4557,7 +4568,8 @@
      "flag": "Singapore",
      "deficiencies": "2",
      "detention": "no",
-     "risk_at_inspection": "Low Risk Ship"
+     "risk_at_inspection": "Low Risk Ship",
+     "inspection_id": "9A66C73B-4F2A-4B33-A4A8-2A17A5E1D420"
     },
     {
      "date": "12.10.2018",
@@ -4568,7 +4580,8 @@
      "flag": "Singapore",
      "deficiencies": "2",
      "detention": "no",
-     "risk_at_inspection": "Low Risk Ship"
+     "risk_at_inspection": "Low Risk Ship",
+     "inspection_id": "FDEA69F6-53C0-4B2B-AC58-E79850AEEA34"
     },
     {
      "date": "29.12.2016",
@@ -4579,7 +4592,8 @@
      "flag": "Singapore",
      "deficiencies": "0",
      "detention": "no",
-     "risk_at_inspection": "Low Risk Ship"
+     "risk_at_inspection": "Low Risk Ship",
+     "inspection_id": "EE95146C-FE3D-4A4A-9FA8-6DAF1D540E89"
     },
     {
      "date": "13.03.2015",
@@ -4590,7 +4604,8 @@
      "flag": "Singapore",
      "deficiencies": "0",
      "detention": "no",
-     "risk_at_inspection": "High Risk Ship"
+     "risk_at_inspection": "High Risk Ship",
+     "inspection_id": "01405D96-D41C-4980-8250-59EFBAB167E4"
     },
     {
      "date": "16.05.2014",
@@ -4601,17 +4616,12 @@
      "flag": "Singapore",
      "deficiencies": "0",
      "detention": "no",
-     "risk_at_inspection": "High Risk Ship"
+     "risk_at_inspection": "High Risk Ship",
+     "inspection_id": "EB8EEEAE-4702-43BF-9EB1-801E63517DF1"
     }
    ],
-   "risk_level": "Standard",
-   "priority": "N/A",
-   "inspection_window": "18.01.2027 - 18.04.2027",
-   "weighting_points": 3,
-   "outstanding_deficiencies": 0,
-   "company": {
-    "name": "Qingdao Winning International Ships Management Co Ltd"
-   },
+   "status": "ok",
+   "scanned_at": "2026-09-16T23:38:28",
    "imo": "9232058",
    "note": "本次 TMOU 扫描未成功（详情为空(限流?)），以下为上次成功结果",
    "data_issue": null
@@ -8640,7 +8650,7 @@
     }
    ],
    "status": "ok",
-   "scanned_at": "2026-09-16T22:21:07",
+   "scanned_at": "2026-09-16T23:39:30",
    "imo": "9278636",
    "note": null,
    "data_issue": null
@@ -8971,7 +8981,7 @@
   },
   "SUNNY MOREBAYA": {
    "risk_level": "Standard",
-   "priority": "II",
+   "priority": "I",
    "inspection_window": "30.05.2026 - 30.08.2026",
    "weighting_points": 3,
    "outstanding_deficiencies": 0,
@@ -9089,8 +9099,8 @@
      "inspection_id": "5D5534D3-3FF7-4E46-AC76-5AD4D499C299"
     }
    ],
-   "status": "stale",
-   "scanned_at": "2026-08-22T17:43:45",
+   "status": "ok",
+   "scanned_at": "2026-09-16T23:37:19",
    "imo": "9331426",
    "note": "本次 TMOU 扫描未成功（详情为空(限流?)），以下为上次成功结果",
    "data_issue": null
@@ -9106,7 +9116,7 @@
    },
    "inspections": [],
    "status": "ok",
-   "scanned_at": "2026-09-16T22:04:14",
+   "scanned_at": "2026-09-21T05:39:23",
    "imo": "1037397",
    "note": "Tokyo MOU 无检查历史（2020年新船），服务器未提供检查窗口；风险档案 Standard/Priority I 有效",
    "data_issue": null
@@ -9679,7 +9689,7 @@
    },
    "inspections": [],
    "status": "ok",
-   "scanned_at": "2026-09-16T22:04:40",
+   "scanned_at": "2026-09-21T05:39:47",
    "imo": "1037402"
   },
   "WINNING CREATION": {
@@ -9688,12 +9698,12 @@
    "weighting_points": 2,
    "outstanding_deficiencies": 0,
    "company": {
-    "name": "Winning Shipping (S) Pte Ltd",
-    "imo": "6221007"
+    "name": "Qingdao Xingtong International Ships Management Co Ltd",
+    "imo": "0471029"
    },
    "inspections": [],
    "status": "ok",
-   "scanned_at": "2026-09-16T22:05:52",
+   "scanned_at": "2026-09-21T05:40:21",
    "imo": "1084651"
   }
  }
