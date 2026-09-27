@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-26 17:01",
+  "last_updated": "2026-09-27 10:55",
   "total_ships": 64,
   "ships": {
     "SUNNY_BEYLA": {
@@ -7,7 +7,7 @@
       "imo": "9364320",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": "90092",
+      "gt": 90092,
       "dwt": "180201",
       "surveys": [
         {
@@ -135,7 +135,7 @@
       "imo": "9253090",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": "87413",
+      "gt": 87413,
       "dwt": "172565",
       "surveys": [
         {
@@ -259,8 +259,8 @@
       "name": "SUNNY BOKE",
       "imo": "9198240",
       "class_society": "NK",
-      "flag": "Panama",
-      "gt": "87473",
+      "flag": "Hong Kong, China",
+      "gt": 87473,
       "dwt": "172498",
       "surveys": [
         {
@@ -376,7 +376,7 @@
       "imo": "9406489",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": "90092",
+      "gt": 90092,
       "dwt": "180181",
       "surveys": [
         {
@@ -501,7 +501,7 @@
       "imo": "9387114",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": "90125",
+      "gt": 90125,
       "dwt": "180201",
       "surveys": [
         {
@@ -625,8 +625,8 @@
       "name": "SUNNY DABOLA",
       "imo": "9398149",
       "class_society": "NK",
-      "flag": "Panama",
-      "gt": "106367",
+      "flag": "Hong Kong, China",
+      "gt": 106367,
       "dwt": "207991",
       "surveys": [
         {
@@ -752,7 +752,7 @@
       "imo": "9336969",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": "106367",
+      "gt": 106367,
       "dwt": "208014",
       "surveys": [
         {
@@ -882,7 +882,7 @@
       "imo": "9336957",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": "101953",
+      "gt": 101953,
       "dwt": "203200",
       "surveys": [
         {
@@ -1008,7 +1008,7 @@
       "imo": "9398113",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": "106367",
+      "gt": 106367,
       "dwt": "207945",
       "surveys": [
         {
@@ -1138,7 +1138,7 @@
       "imo": "9374064",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": "90396",
+      "gt": 90396,
       "dwt": "180182",
       "surveys": [
         {
@@ -1268,7 +1268,7 @@
       "imo": "9271597",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": "102101",
+      "gt": 102101,
       "dwt": "203248",
       "surveys": [
         {
@@ -1394,7 +1394,7 @@
       "imo": "9254666",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": "88674",
+      "gt": 88674,
       "dwt": "176391",
       "surveys": [
         {
@@ -1527,7 +1527,7 @@
       "imo": "9346342",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": "104725",
+      "gt": 104725,
       "dwt": "206296",
       "surveys": [
         {
@@ -1661,7 +1661,7 @@
       "imo": "9331426",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": "101953",
+      "gt": 101953,
       "dwt": "203264",
       "surveys": [
         {
@@ -1787,7 +1787,7 @@
       "imo": "9393187",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": "90111",
+      "gt": 90111,
       "dwt": "180129",
       "surveys": [
         {
@@ -1925,7 +1925,7 @@
       "imo": "9439125",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": "90091",
+      "gt": 90091,
       "dwt": "180176",
       "surveys": [
         {
@@ -2068,7 +2068,7 @@
       "imo": "9406453",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": "104721",
+      "gt": 104721,
       "dwt": "206312",
       "surveys": [
         {
@@ -2197,7 +2197,7 @@
       "imo": "9406506",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "104761",
+      "gt": 104761,
       "dwt": "206306",
       "surveys": [
         {
@@ -2326,7 +2326,7 @@
       "imo": "9492218",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "106884",
+      "gt": 106884,
       "dwt": "206125",
       "surveys": [
         {
@@ -2453,7 +2453,7 @@
       "imo": "9250610",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": "94779",
+      "gt": 94779,
       "dwt": "184887",
       "surveys": [
         {
@@ -2587,7 +2587,7 @@
       "imo": "9325001",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "90091",
+      "gt": 90091,
       "dwt": "180265",
       "surveys": [
         {
@@ -2721,7 +2721,7 @@
       "imo": "9374088",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "90091",
+      "gt": 90091,
       "dwt": "180277",
       "surveys": [
         {
@@ -2855,7 +2855,7 @@
       "imo": "9232058",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "87590",
+      "gt": 87590,
       "dwt": "170578",
       "surveys": [
         {
@@ -2987,7 +2987,7 @@
       "imo": "9279393",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "113929",
+      "gt": 113929,
       "dwt": "229186",
       "surveys": [
         {
@@ -3117,7 +3117,7 @@
       "imo": "9314076",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "90091",
+      "gt": 90091,
       "dwt": "180310",
       "surveys": [
         {
@@ -3251,7 +3251,7 @@
       "imo": "9722948",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "107791",
+      "gt": 107791,
       "dwt": "209513",
       "surveys": [
         {
@@ -3388,7 +3388,7 @@
       "imo": "9722950",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "107791",
+      "gt": 107791,
       "dwt": "209545",
       "surveys": [
         {
@@ -3535,7 +3535,7 @@
       "imo": "9633068",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "92758",
+      "gt": 92758,
       "dwt": "181501",
       "surveys": [
         {
@@ -3665,7 +3665,7 @@
       "imo": "9314052",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "90091",
+      "gt": 90091,
       "dwt": "180310",
       "surveys": [
         {
@@ -3799,7 +3799,7 @@
       "imo": "9659854",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "92752",
+      "gt": 92752,
       "dwt": "181371",
       "surveys": [
         {
@@ -3924,7 +3924,7 @@
       "imo": "9659866",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "92752",
+      "gt": 92752,
       "dwt": "181387",
       "surveys": [
         {
@@ -4054,7 +4054,7 @@
       "imo": "9271602",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": "102207",
+      "gt": 102207,
       "dwt": "203315",
       "surveys": [
         {
@@ -4188,7 +4188,7 @@
       "imo": "9450234",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": "89603",
+      "gt": 89603,
       "dwt": "176890",
       "surveys": [
         {
@@ -4322,7 +4322,7 @@
       "imo": "9311282",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": "89726",
+      "gt": 89726,
       "dwt": "176967",
       "surveys": [
         {
@@ -4464,10 +4464,6 @@
       "dwt": "229069",
       "surveys": [
         {
-          "type": "boiler",
-          "desc": "锅炉"
-        },
-        {
           "type": "annual_survey",
           "desc": "Class Annual Survey"
         },
@@ -4493,8 +4489,9 @@
         },
         {
           "type": "boiler",
-          "desc": "Boiler Survey ( Oil-fired Aux.",
-          "due_date": "2025-08-05"
+          "desc": "Boiler Survey ( Oil-fired Aux. 2025-08-05 2027-08-31 Boiler)",
+          "due_date": "2027-08-31",
+          "last_done": "2025-08-05"
         }
       ],
       "certificates": [
@@ -4565,14 +4562,14 @@
         "warning_30d": 1,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "WINNING_RISING": {
       "name": "WINNING RISING",
       "imo": "9393199",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": "90421",
+      "gt": 90421,
       "dwt": "180140",
       "surveys": [
         {
@@ -4706,7 +4703,7 @@
       "imo": "9254678",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": "101953",
+      "gt": 101953,
       "dwt": "203508",
       "surveys": [
         {
@@ -4836,7 +4833,7 @@
       "imo": "9336945",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "102319",
+      "gt": 102319,
       "dwt": "203091",
       "surveys": [
         {
@@ -4979,7 +4976,7 @@
       "imo": "9346172",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "102092",
+      "gt": 102092,
       "dwt": "203233",
       "surveys": [
         {
@@ -5107,7 +5104,7 @@
       "imo": "9859765",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "107791",
+      "gt": 107791,
       "dwt": "208951",
       "surveys": [
         {
@@ -5237,7 +5234,7 @@
       "imo": "9859777",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "107786",
+      "gt": 107786,
       "dwt": "208970",
       "surveys": [
         {
@@ -5367,7 +5364,7 @@
       "imo": "9278636",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "101933",
+      "gt": 101933,
       "dwt": "203195",
       "surveys": [
         {
@@ -5831,7 +5828,7 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "WINNING_RICH": {
       "name": "WINNING RICH",
@@ -5934,7 +5931,7 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "WINNING_SPIRIT": {
       "name": "WINNING SPIRIT",
@@ -6038,7 +6035,7 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "SUNNY_FARANAH": {
       "name": "SUNNY FARANAH",
@@ -6048,10 +6045,6 @@
       "gt": "101933",
       "dwt": "203185",
       "surveys": [
-        {
-          "type": "boiler",
-          "desc": "锅炉"
-        },
         {
           "type": "annual_survey",
           "desc": "Class Annual Survey"
@@ -6078,8 +6071,15 @@
         },
         {
           "type": "boiler",
-          "desc": "Boiler Survey ( Oil-fired Aux.and",
-          "due_date": "2025-05-01"
+          "desc": "Boiler Survey ( Oil-fired Aux.and 2025-05-01 Zhoushan 2027-03-01 Exh. Gas Composite Boiler)",
+          "due_date": "2027-03-01",
+          "last_done": "2025-05-01"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (Steam Pipe) 2022-08-09 Zhoushan 2027-08-08",
+          "due_date": "2027-08-08",
+          "last_done": "2022-08-09"
         }
       ],
       "certificates": [
@@ -6136,7 +6136,7 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "SUNNY_FRIA": {
       "name": "SUNNY FRIA",
@@ -6146,10 +6146,6 @@
       "gt": "89877",
       "dwt": "177003",
       "surveys": [
-        {
-          "type": "boiler",
-          "desc": "锅炉"
-        },
         {
           "type": "annual_survey",
           "desc": "Class Annual Survey",
@@ -6177,8 +6173,15 @@
         },
         {
           "type": "boiler",
-          "desc": "Boiler Survey ( Oil-fired Aux.and",
-          "due_date": "2026-07-10"
+          "desc": "Boiler Survey ( Oil-fired Aux.and 2026-07-10 Qinhuangdao 2029-06-03 Exh. Gas Composite Boiler)",
+          "due_date": "2029-06-03",
+          "last_done": "2026-07-10"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (Steam Pipe) 2024-09-10 Qingdao 2029-09-09",
+          "due_date": "2029-09-09",
+          "last_done": "2024-09-10"
         }
       ],
       "certificates": [
@@ -6250,7 +6253,7 @@
         "warning_30d": 1,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "SUNNY_KOGON": {
       "name": "SUNNY KOGON",
@@ -6260,10 +6263,6 @@
       "gt": "106312",
       "dwt": "207960",
       "surveys": [
-        {
-          "type": "boiler",
-          "desc": "锅炉"
-        },
         {
           "type": "annual_survey",
           "desc": "Class Annual Survey",
@@ -6291,8 +6290,15 @@
         },
         {
           "type": "boiler",
-          "desc": "Boiler Survey ( Oil-fired Aux.and",
-          "due_date": "2025-09-13"
+          "desc": "Boiler Survey ( Oil-fired Aux.and 2025-09-13 2027-12-06 Exh. Gas Composite Boiler)",
+          "due_date": "2027-12-06",
+          "last_done": "2025-09-13"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (Steam Pipe) 2022-11-08 2027-11-07",
+          "due_date": "2027-11-07",
+          "last_done": "2022-11-08"
         }
       ],
       "certificates": [
@@ -6349,7 +6355,7 @@
         "warning_30d": 0,
         "info_90d": 1
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "SUNNY_STAR": {
       "name": "SUNNY STAR",
@@ -6359,10 +6365,6 @@
       "gt": "94175",
       "dwt": "179843",
       "surveys": [
-        {
-          "type": "boiler",
-          "desc": "锅炉"
-        },
         {
           "type": "annual_survey",
           "desc": "Class Annual Survey",
@@ -6391,8 +6393,15 @@
         },
         {
           "type": "boiler",
-          "desc": "Boiler Survey (No.1 Oil-fired",
-          "due_date": "2026-06-17"
+          "desc": "Boiler Survey (No.1 Oil-fired 2026-06-17 Qingdao 2029-06-16 Aux. Boiler)",
+          "due_date": "2029-06-16",
+          "last_done": "2026-06-17"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (Steam Pipe) 2026-06-17 Qingdao 2031-06-16",
+          "due_date": "2031-06-16",
+          "last_done": "2026-06-17"
         }
       ],
       "certificates": [
@@ -6453,7 +6462,7 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "WINNING_BRAVE": {
       "name": "WINNING BRAVE",
@@ -6463,11 +6472,6 @@
       "gt": "174863",
       "dwt": "324965",
       "surveys": [
-        {
-          "type": "boiler",
-          "desc": "锅炉",
-          "due_date": "2026-09-05"
-        },
         {
           "type": "annual_survey",
           "desc": "Class Annual Survey",
@@ -6489,14 +6493,19 @@
           "due_date": "2036-08-11"
         },
         {
-          "type": "special_survey",
-          "desc": "Class Special Survey (Hull & Machinery)",
-          "due_date": "2031-08-11"
+          "type": "boiler",
+          "desc": "Boiler Survey ( Oil-fired Aux.and 2029-08-11 Exh. Gas Composite Boiler)",
+          "due_date": "2029-08-11"
         },
         {
           "type": "boiler",
-          "desc": "Boiler Survey (Oil-fired Aux. & Exh. Gas Composite)",
-          "due_date": "2029-08-11"
+          "desc": "Boiler Survey (Steam Pipe) 2036-08-11",
+          "due_date": "2036-08-11"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Class Special Survey (Hull & Machinery)",
+          "due_date": "2031-08-11"
         },
         {
           "type": "dry_docking",
@@ -6568,7 +6577,7 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "WINNING_JOY": {
       "name": "WINNING JOY",
@@ -6578,10 +6587,6 @@
       "gt": "106884",
       "dwt": "205940",
       "surveys": [
-        {
-          "type": "boiler",
-          "desc": "锅炉"
-        },
         {
           "type": "annual_survey",
           "desc": "Class Annual Survey"
@@ -6608,8 +6613,15 @@
         },
         {
           "type": "boiler",
-          "desc": "Boiler Survey ( Oil-fired Aux.and",
-          "due_date": "2024-08-09"
+          "desc": "Boiler Survey ( Oil-fired Aux.and 2024-08-09 Shidao 2027-08-08 Exh. Gas Composite Boiler)",
+          "due_date": "2027-08-08",
+          "last_done": "2024-08-09"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (Steam Pipe) 2024-08-09 Shidao 2029-08-08",
+          "due_date": "2029-08-08",
+          "last_done": "2024-08-09"
         }
       ],
       "certificates": [
@@ -6671,7 +6683,7 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "WINNING_TIMES": {
       "name": "WINNING TIMES",
@@ -6681,10 +6693,6 @@
       "gt": "107514",
       "dwt": "207219",
       "surveys": [
-        {
-          "type": "boiler",
-          "desc": "锅炉"
-        },
         {
           "type": "annual_survey",
           "desc": "Class Annual Survey",
@@ -6713,8 +6721,15 @@
         },
         {
           "type": "boiler",
-          "desc": "Boiler Survey ( Oil-fired Aux.and",
-          "due_date": "2025-04-11"
+          "desc": "Boiler Survey ( Oil-fired Aux.and 2025-04-11 2028-04-10 Exh. Gas Composite Boiler)",
+          "due_date": "2028-04-10",
+          "last_done": "2025-04-11"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (Steam Pipe) 2025-04-11 2030-04-16",
+          "due_date": "2030-04-16",
+          "last_done": "2025-04-11"
         }
       ],
       "certificates": [
@@ -6772,7 +6787,7 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "WINNING_WAVE": {
       "name": "WINNING WAVE",
@@ -6782,10 +6797,6 @@
       "gt": "107222",
       "dwt": "207469",
       "surveys": [
-        {
-          "type": "boiler",
-          "desc": "锅炉"
-        },
         {
           "type": "annual_survey",
           "desc": "Class Annual Survey",
@@ -6814,8 +6825,15 @@
         },
         {
           "type": "boiler",
-          "desc": "Boiler Survey ( Oil-fired Aux.and",
-          "due_date": "2026-02-16"
+          "desc": "Boiler Survey ( Oil-fired Aux.and 2026-02-16 2029-02-15 Exh. Gas Composite Boiler)",
+          "due_date": "2029-02-15",
+          "last_done": "2026-02-16"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (Steam Pipe) 2026-02-16 2031-02-15",
+          "due_date": "2031-02-15",
+          "last_done": "2026-02-16"
         }
       ],
       "certificates": [
@@ -6873,7 +6891,7 @@
         "warning_30d": 0,
         "info_90d": 1
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "WINNING_WEALTH": {
       "name": "WINNING WEALTH",
@@ -6883,10 +6901,6 @@
       "gt": "114019",
       "dwt": "229117",
       "surveys": [
-        {
-          "type": "boiler",
-          "desc": "锅炉"
-        },
         {
           "type": "annual_survey",
           "desc": "Class Annual Survey"
@@ -6913,8 +6927,15 @@
         },
         {
           "type": "boiler",
-          "desc": "Boiler Survey (No.1 Oil-fired",
-          "due_date": "2024-12-24"
+          "desc": "Boiler Survey (No.1 Oil-fired 2024-12-24 Zhoushan 2026-10-12 Aux. Boiler)",
+          "due_date": "2026-10-12",
+          "last_done": "2024-12-24"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (Steam Pipe) 2024-12-24 Zhoushan 2029-12-23",
+          "due_date": "2029-12-23",
+          "last_done": "2024-12-24"
         }
       ],
       "certificates": [
@@ -6973,10 +6994,10 @@
       "alerts": {
         "expired": 0,
         "urgent_7d": 0,
-        "warning_30d": 11,
+        "warning_30d": 12,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "WINNING_WISDOM": {
       "name": "WINNING WISDOM",
@@ -6986,10 +7007,6 @@
       "gt": "108208",
       "dwt": "206298",
       "surveys": [
-        {
-          "type": "boiler",
-          "desc": "锅炉"
-        },
         {
           "type": "annual_survey",
           "desc": "Class Annual Survey",
@@ -7018,8 +7035,14 @@
         },
         {
           "type": "boiler",
-          "desc": "Boiler Survey ( Oil-fired Aux.and",
-          "due_date": "2024-10-05"
+          "desc": "Boiler Survey ( Oil-fired Aux.and 2024-10-05 Qinhuangdao 2027-10-04 Exh. Gas Composite Boiler)",
+          "due_date": "2027-10-04",
+          "last_done": "2024-10-05"
+        },
+        {
+          "type": "boiler",
+          "desc": "Boiler Survey (Steam Pipe) 2030-07-01",
+          "due_date": "2030-07-01"
         }
       ],
       "certificates": [
@@ -7085,11 +7108,11 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "WINNING_AMBITION": {
       "name": "WINNING AMBITION",
-      "imo": "1037393",
+      "imo": "1037397",
       "class_society": "DNV",
       "flag": "Singapore",
       "gt": "174863",
@@ -7168,7 +7191,7 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "SUNNY_SKY": {
       "name": "SUNNY SKY",
@@ -7260,14 +7283,14 @@
         "warning_30d": 4,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "SUNNY_KANKAN": {
       "name": "SUNNY KANKAN",
       "imo": "9287273",
       "class_society": "RINA",
       "flag": "Liberia",
-      "gt": "",
+      "gt": "102112",
       "dwt": "203266",
       "surveys": [
         {
@@ -7418,7 +7441,7 @@
       "imo": "9337169",
       "class_society": "RINA",
       "flag": "Hong Kong",
-      "gt": "",
+      "gt": "106367",
       "dwt": "207923",
       "surveys": [
         {
@@ -7562,7 +7585,7 @@
       "imo": "9296420",
       "class_society": "RINA",
       "flag": "Liberia",
-      "gt": "",
+      "gt": "102208",
       "dwt": "203180",
       "surveys": [
         {
