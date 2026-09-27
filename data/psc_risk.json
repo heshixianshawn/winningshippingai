@@ -1,6 +1,6 @@
 {
- "generated": "2026-09-26T08:16:32",
- "source": "Tokyo MOU APCIS（源文件生成于 2026-09-21T05:40:21）",
+ "generated": "2026-09-27T09:02:24",
+ "source": "Tokyo MOU APCIS（源文件生成于 2026-09-27T09:02:13）",
  "ship_count": 64,
  "ships": {
   "SUNNY BEYLA": {
@@ -9116,7 +9116,7 @@
    },
    "inspections": [],
    "status": "ok",
-   "scanned_at": "2026-09-21T05:39:23",
+   "scanned_at": "2026-09-27T09:00:49",
    "imo": "1037397",
    "note": "Tokyo MOU 无检查历史（2020年新船），服务器未提供检查窗口；风险档案 Standard/Priority I 有效",
    "data_issue": null
@@ -9688,9 +9688,10 @@
     "imo": "0471029"
    },
    "inspections": [],
-   "status": "ok",
+   "status": "stale",
    "scanned_at": "2026-09-21T05:39:47",
-   "imo": "1037402"
+   "imo": "1037402",
+   "note": "本次 TMOU 扫描未成功（详情为空(限流?)），以下为上次成功结果"
   },
   "WINNING CREATION": {
    "risk_level": "Standard",
@@ -9702,9 +9703,10 @@
     "imo": "0471029"
    },
    "inspections": [],
-   "status": "ok",
+   "status": "stale",
    "scanned_at": "2026-09-21T05:40:21",
-   "imo": "1084651"
+   "imo": "1084651",
+   "note": "本次 TMOU 扫描未成功（详情为空(限流?)），以下为上次成功结果"
   }
  }
 }
