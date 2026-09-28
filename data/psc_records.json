@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-27",
+ "generated": "2026-09-28",
  "source": "单船档案 PSC-FSC检查记录 sheet（TokyoMOU/APCIS 等来源）",
  "count": 691,
  "ship_count": 60,
@@ -7840,20 +7840,19 @@
    "count": 8,
    "records": [
     {
-     "date": "2023-10-08",
-     "port": "Yantai",
-     "port_raw": "Yantai (China)",
-     "type": "",
+     "date": "2026-09-28",
+     "port": "caofeidian",
+     "port_raw": "曹妃甸",
+     "type": "PSC",
      "authority": "",
      "officer": "",
-     "defects": 1,
+     "defects": 4,
      "detained": false,
-     "codes": "",
+     "codes": "00736 \n92875 \n92876 \n04113",
      "codes_uncertain": false,
      "rectified": "",
-     "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship",
-     "defects_official": 1,
-     "defects_source": "TokyoMOU官方"
+     "note": "来源:W.MISSION PSC检查报告曹妃甸20260928.pdf|FP:77d79d9f",
+     "defects_source": "档案(无TMOU对照)"
     },
     {
      "date": "2023-02-21",
@@ -12153,14 +12152,6 @@
    {
     "ship": "WINNING QUEEN",
     "date": "2023-11-27",
-    "port": "Yantai",
-    "defects": 1,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "WINNING MISSION",
-    "date": "2023-10-08",
     "port": "Yantai",
     "defects": 1,
     "detained": false,
@@ -16581,6 +16572,14 @@
   ],
   "caofeidian": [
    {
+    "ship": "WINNING MISSION",
+    "date": "2026-09-28",
+    "port": "caofeidian",
+    "defects": 4,
+    "detained": false,
+    "codes": "00736 \n92875 \n92876 \n04113"
+   },
+   {
     "ship": "WINNING YOUTH",
     "date": "2026-08-25",
     "port": "caofeidian",
@@ -17090,11 +17089,11 @@
  },
  "stats": {
   "by_port": {
-   "yantai": 160,
+   "yantai": 159,
    "port hedland, wa": 69,
    "tianjin": 28,
    "qingdao": 25,
-   "caofeidian": 20,
+   "caofeidian": 21,
    "gladstone, qld": 17,
    "mizushima": 17,
    "dangjin": 17,
@@ -17161,15 +17160,15 @@
    "dalian": 1,
    "董家口": 1
   },
-  "this_year": 45,
+  "this_year": 46,
   "detained_total": 17,
-  "with_codes": 29,
+  "with_codes": 30,
   "codes_uncertain": 3,
   "pdf_enriched": 0,
   "pdf_files_matched": 2,
-  "tmou_reconciled": 687,
+  "tmou_reconciled": 686,
   "tmou_mismatches": [],
-  "tmou_unmatched": 4
+  "tmou_unmatched": 5
  },
  "missing": []
 }
