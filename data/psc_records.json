@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-28",
+ "generated": "2026-09-29",
  "source": "单船档案 PSC-FSC检查记录 sheet（TokyoMOU/APCIS 等来源）",
  "count": 691,
  "ship_count": 60,
@@ -347,12 +347,12 @@
      "type": "PSC",
      "authority": "",
      "officer": "",
-     "defects": 6,
+     "defects": 3,
      "detained": false,
-     "codes": "00736 \n92875 \n92876 \n03105 \n07117 \n10117",
+     "codes": "10117 ECHO SOUNDER - SRAM INDICATED ABNORMAL ON CONTROL PANEL\n07117 THE DRAIN PLUG OF JACKETED HIGH PRESSURE LINES AND OIL LEAKAGE COLLECTION DEVICE FOR NO.1 GENERATOR SUBSTITUTED WITH DRAIN PIPE WITH COCK IN OPEN POSITION\n03105 ONE QUICK ACTING CLEAT FOR NO.5 CARGO HOLD HATCH COVER OUT OF ORDER",
      "codes_uncertain": false,
      "rectified": "",
-     "note": "来源:SUNNY BOKE-PSC检查报告@烟台-2026.09.18.pdf|FP:08c0c885",
+     "note": "来源:SUNNY BOKE-PSC检查报告@烟台-2026.09.18.pdf|FP:08c0c885｜2026-09-29 读图核实修正(剔除页眉假码 00736/92875/92876)",
      "defects_source": "档案(无TMOU对照)"
     },
     {
@@ -4881,18 +4881,18 @@
    "count": 8,
    "records": [
     {
-     "date": "2023-09-24",
+     "date": "2026-09-24",
      "port": "yantai",
      "port_raw": "烟台",
      "type": "PSC",
      "authority": "",
      "officer": "",
-     "defects": 6,
+     "defects": 3,
      "detained": false,
-     "codes": "00736 \n92876 \n92875 \n10109 \n11102 \n13103",
+     "codes": "13103 THE PRESSURE GAUGE FOR THE HYDRAULIC OIL TRANSFER PUMP IN STEERING GEAR COMPARTMENT MALFUNCTION.\n11102 RADAR REFLECTOR FOR FREE-FALL LIFEBOAT UNABLE TO FIX ON THE SOCKET BASE.\n10109 ONE RED LIGHT ON MAIN MAST (PORT,MID.) OUT OF WORK.",
      "codes_uncertain": false,
      "rectified": "",
-     "note": "来源:SUNNY SKY PSCI REPORT+CIC CARGO SECURING 24-SEPT-2026 YANTAI.pdf|FP:9b8cf4bb",
+     "note": "来源:SUNNY SKY PSCI REPORT+CIC CARGO SECURING 24-SEPT-2026 YANTAI.pdf|FP:9b8cf4bb｜2026-09-29 读图核实修正(剔除页眉假码 00736/92875/92876)",
      "defects_source": "档案(无TMOU对照)"
     },
     {
@@ -7846,12 +7846,12 @@
      "type": "PSC",
      "authority": "",
      "officer": "",
-     "defects": 4,
+     "defects": 1,
      "detained": false,
-     "codes": "00736 \n92875 \n92876 \n04113",
+     "codes": "04113 THE SENSOR OF WATER INGRESS SYSTEM IN F.P.T IS MANUALLY INHIBITED DURING INSPECTION.",
      "codes_uncertain": false,
      "rectified": "",
-     "note": "来源:W.MISSION PSC检查报告曹妃甸20260928.pdf|FP:77d79d9f",
+     "note": "来源:W.MISSION PSC检查报告曹妃甸20260928.pdf|FP:77d79d9f｜2026-09-29 读图核实修正(剔除页眉假码 00736/92875/92876)",
      "defects_source": "档案(无TMOU对照)"
     },
     {
@@ -10667,12 +10667,12 @@
      "type": "PSC",
      "authority": "",
      "officer": "",
-     "defects": 6,
+     "defects": 3,
      "detained": false,
-     "codes": "00736 \n92875 \n92876 \n11117 \n16105 \n07105",
+     "codes": "16105 THE ACCESS CONTROL FAILURE DUE TO THE ESCAPE HATCH FOR ELEVATOR NOT LOCK FROM OUTSIDE ON THE COMPASS DECK.\n11117 THE REFLECTIVE TAPE OF THE LIFEBUOY NEAR STBD SIDE PILOT LADDER MISSING.\n07105 THE A-CLASS FIRE DOOR ACCESS TO STEERING GEAR ROOM FROM ENGINE ROOM CAN NOT BE CLOSED TIGHTLY.",
      "codes_uncertain": false,
      "rectified": "",
-     "note": "来源:W.WEALTH天津港PSC检查报告 -2026.09.20.pdf|FP:ebae6197",
+     "note": "来源:W.WEALTH天津港PSC检查报告 -2026.09.20.pdf|FP:ebae6197｜2026-09-29 读图核实修正(剔除页眉假码 00736/92875/92876)",
      "defects_source": "档案(无TMOU对照)"
     },
     {
@@ -11750,12 +11750,20 @@
   ],
   "yantai": [
    {
+    "ship": "SUNNY SKY",
+    "date": "2026-09-24",
+    "port": "yantai",
+    "defects": 3,
+    "detained": false,
+    "codes": "13103 THE PRESSURE GAUGE FOR THE HYDRAULIC OIL TRANSFER PUMP IN STEERING GEAR COMPARTMENT MALFUNCTION.\n11102 RADAR REFLECTOR FOR FREE-FALL LIFEBOAT UNABLE TO FIX ON THE SOCKET BASE.\n10109 ONE RED LIGHT ON MAIN MAST (PORT,MID.) OUT OF WORK."
+   },
+   {
     "ship": "SUNNY BOKE",
     "date": "2026-09-18",
     "port": "yantai",
-    "defects": 6,
+    "defects": 3,
     "detained": false,
-    "codes": "00736 \n92875 \n92876 \n03105 \n07117 \n10117"
+    "codes": "10117 ECHO SOUNDER - SRAM INDICATED ABNORMAL ON CONTROL PANEL\n07117 THE DRAIN PLUG OF JACKETED HIGH PRESSURE LINES AND OIL LEAKAGE COLLECTION DEVICE FOR NO.1 GENERATOR SUBSTITUTED WITH DRAIN PIPE WITH COCK IN OPEN POSITION\n03105 ONE QUICK ACTING CLEAT FOR NO.5 CARGO HOLD HATCH COVER OUT OF ORDER"
    },
    {
     "ship": "SUNNY LABE",
@@ -12164,14 +12172,6 @@
     "defects": 2,
     "detained": false,
     "codes": ""
-   },
-   {
-    "ship": "SUNNY SKY",
-    "date": "2023-09-24",
-    "port": "yantai",
-    "defects": 6,
-    "detained": false,
-    "codes": "00736 \n92876 \n92875 \n10109 \n11102 \n13103"
    },
    {
     "ship": "WINNING SPIRIT",
@@ -14661,9 +14661,9 @@
     "ship": "WINNING WEALTH",
     "date": "2026-09-20",
     "port": "tianjin",
-    "defects": 6,
+    "defects": 3,
     "detained": false,
-    "codes": "00736 \n92875 \n92876 \n11117 \n16105 \n07105"
+    "codes": "16105 THE ACCESS CONTROL FAILURE DUE TO THE ESCAPE HATCH FOR ELEVATOR NOT LOCK FROM OUTSIDE ON THE COMPASS DECK.\n11117 THE REFLECTIVE TAPE OF THE LIFEBUOY NEAR STBD SIDE PILOT LADDER MISSING.\n07105 THE A-CLASS FIRE DOOR ACCESS TO STEERING GEAR ROOM FROM ENGINE ROOM CAN NOT BE CLOSED TIGHTLY."
    },
    {
     "ship": "WINNING SPIRIT",
@@ -16575,9 +16575,9 @@
     "ship": "WINNING MISSION",
     "date": "2026-09-28",
     "port": "caofeidian",
-    "defects": 4,
+    "defects": 1,
     "detained": false,
-    "codes": "00736 \n92875 \n92876 \n04113"
+    "codes": "04113 THE SENSOR OF WATER INGRESS SYSTEM IN F.P.T IS MANUALLY INHIBITED DURING INSPECTION."
    },
    {
     "ship": "WINNING YOUTH",
@@ -17160,7 +17160,7 @@
    "dalian": 1,
    "董家口": 1
   },
-  "this_year": 46,
+  "this_year": 47,
   "detained_total": 17,
   "with_codes": 30,
   "codes_uncertain": 3,
