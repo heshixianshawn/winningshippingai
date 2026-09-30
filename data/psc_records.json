@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-29",
+ "generated": "2026-09-30",
  "source": "单船档案 PSC-FSC检查记录 sheet（TokyoMOU/APCIS 等来源）",
  "count": 691,
  "ship_count": 60,
@@ -4041,20 +4041,19 @@
    "count": 16,
    "records": [
     {
-     "date": "2026-01-13",
-     "port": "Yantai",
-     "port_raw": "Yantai (China)",
-     "type": "",
-     "authority": "",
+     "date": "2026-09-29",
+     "port": "jingtang",
+     "port_raw": "京唐",
+     "type": "PSC",
+     "authority": "Address",
      "officer": "",
      "defects": 2,
      "detained": false,
-     "codes": "10127 POSITION FIXING INTERVAL IN ECDIS NOT PERFORMED ACCORDING TO VOYAGE\n10109 THE STERN LIGHT(LOWER) FOUND OUT OF WORK",
+     "codes": "14501 THE GARAGE IN GALLEY NOT STOWED AS REQUIRED\n05105 SHIP'S CALL SIGN INFORMATION NOT POSTED NEAR THE RADIO STATION",
      "codes_uncertain": false,
      "rectified": "",
-     "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship|含PDF提取的缺陷代码",
-     "defects_official": 2,
-     "defects_source": "TokyoMOU官方"
+     "note": "来源:PSC REPORT JINGTANG 2026.09.29.pdf|FP:9c85d974",
+     "defects_source": "档案(无TMOU对照)"
     },
     {
      "date": "2024-06-11",
@@ -6882,6 +6881,21 @@
    "count": 7,
    "records": [
     {
+     "date": "2026-09-28",
+     "port": "singapore",
+     "port_raw": "新加坡",
+     "type": "PSC",
+     "authority": "",
+     "officer": "",
+     "defects": 2,
+     "detained": false,
+     "codes": "10126 \n11101",
+     "codes_uncertain": false,
+     "rectified": "",
+     "note": "来源:天津PSC检查260928(2).pdf|FP:056b9624",
+     "defects_source": "档案(无TMOU对照)"
+    },
+    {
      "date": "2026-01-26",
      "port": "yantai",
      "port_raw": "烟台",
@@ -6901,22 +6915,6 @@
      "date": "2025-02-27",
      "port": "Yantai",
      "port_raw": "Yantai (China)",
-     "type": "",
-     "authority": "",
-     "officer": "",
-     "defects": 2,
-     "detained": false,
-     "codes": "",
-     "codes_uncertain": false,
-     "rectified": "",
-     "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship",
-     "defects_official": 2,
-     "defects_source": "TokyoMOU官方"
-    },
-    {
-     "date": "2024-06-08",
-     "port": "Tianjin",
-     "port_raw": "Tianjin (China)",
      "type": "",
      "authority": "",
      "officer": "",
@@ -11942,14 +11940,6 @@
     "codes": ""
    },
    {
-    "ship": "SUNNY RIVER",
-    "date": "2026-01-13",
-    "port": "Yantai",
-    "defects": 2,
-    "detained": false,
-    "codes": "10127 POSITION FIXING INTERVAL IN ECDIS NOT PERFORMED ACCORDING TO VOYAGE\n10109 THE STERN LIGHT(LOWER) FOUND OUT OF WORK"
-   },
-   {
     "ship": "SUNNY FARANAH",
     "date": "2025-12-18",
     "port": "yantai",
@@ -14698,14 +14688,6 @@
     "codes": ""
    },
    {
-    "ship": "WINNING HOPE",
-    "date": "2024-06-08",
-    "port": "Tianjin",
-    "defects": 2,
-    "detained": false,
-    "codes": ""
-   },
-   {
     "ship": "WINNING BRIGHT",
     "date": "2024-05-14",
     "port": "Tianjin",
@@ -16828,6 +16810,24 @@
     "codes": ""
    }
   ],
+  "jingtang": [
+   {
+    "ship": "SUNNY RIVER",
+    "date": "2026-09-29",
+    "port": "jingtang",
+    "defects": 2,
+    "detained": false,
+    "codes": "14501 THE GARAGE IN GALLEY NOT STOWED AS REQUIRED\n05105 SHIP'S CALL SIGN INFORMATION NOT POSTED NEAR THE RADIO STATION"
+   },
+   {
+    "ship": "WINNING QUEEN",
+    "date": "2026-02-04",
+    "port": "jingtang",
+    "defects": 2,
+    "detained": false,
+    "codes": "03108 THE CLOSING DEVICE OF FRESH WATER TANK AIR PIPE FOUND SEIZED\n11108 STARBOARD SIDE"
+   }
+  ],
   "subic bay": [
    {
     "ship": "SUNNY RIVER",
@@ -16990,17 +16990,15 @@
     "codes": ""
    }
   ],
-  "xiamen": [
-   {
-    "ship": "WINNING INTEGRITY",
-    "date": "2022-09-01",
-    "port": "Xiamen",
-    "defects": 2,
-    "detained": true,
-    "codes": ""
-   }
-  ],
   "singapore": [
+   {
+    "ship": "WINNING HOPE",
+    "date": "2026-09-28",
+    "port": "singapore",
+    "defects": 2,
+    "detained": false,
+    "codes": "10126 \n11101"
+   },
    {
     "ship": "WINNING LOYALTY",
     "date": "2026-05-04",
@@ -17015,6 +17013,16 @@
     "port": "Singapore",
     "defects": 1,
     "detained": false,
+    "codes": ""
+   }
+  ],
+  "xiamen": [
+   {
+    "ship": "WINNING INTEGRITY",
+    "date": "2022-09-01",
+    "port": "Xiamen",
+    "defects": 2,
+    "detained": true,
     "codes": ""
    }
   ],
@@ -17036,16 +17044,6 @@
     "defects": 0,
     "detained": false,
     "codes": ""
-   }
-  ],
-  "jingtang": [
-   {
-    "ship": "WINNING QUEEN",
-    "date": "2026-02-04",
-    "port": "jingtang",
-    "defects": 2,
-    "detained": false,
-    "codes": "03108 THE CLOSING DEVICE OF FRESH WATER TANK AIR PIPE FOUND SEIZED\n11108 STARBOARD SIDE"
    }
   ],
   "dalian": [
@@ -17089,9 +17087,9 @@
  },
  "stats": {
   "by_port": {
-   "yantai": 159,
+   "yantai": 158,
    "port hedland, wa": 69,
-   "tianjin": 28,
+   "tianjin": 27,
    "qingdao": 25,
    "caofeidian": 21,
    "gladstone, qld": 17,
@@ -17135,15 +17133,16 @@
    "banjarmasin": 3,
    "lumut": 3,
    "qinhuangdao": 3,
+   "singapore": 3,
    "pyeongtaek": 2,
    "zhuhai": 2,
    "vung ang": 2,
    "panjang": 2,
+   "jingtang": 2,
    "nantong": 2,
    "muroran": 2,
    "port kembla, nsw": 2,
    "dongjiakou": 2,
-   "singapore": 2,
    "prince rupert": 2,
    "san juan": 1,
    "rayong": 1,
@@ -17156,19 +17155,18 @@
    "xiamen": 1,
    "kure, hiroshima": 1,
    "miyako, iwate": 1,
-   "jingtang": 1,
    "dalian": 1,
    "董家口": 1
   },
-  "this_year": 47,
+  "this_year": 48,
   "detained_total": 17,
-  "with_codes": 30,
+  "with_codes": 31,
   "codes_uncertain": 3,
   "pdf_enriched": 0,
   "pdf_files_matched": 2,
-  "tmou_reconciled": 686,
+  "tmou_reconciled": 684,
   "tmou_mismatches": [],
-  "tmou_unmatched": 5
+  "tmou_unmatched": 7
  },
  "missing": []
 }
