@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-01 18:19",
+  "generated": "2026-10-01 18:20",
   "expired": [
     {
       "ship": "WINNING RESILIENCE",
@@ -352,27 +352,6 @@
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
-      "description": "OPP (MARPOL Annex I)",
-      "date": "2026-11-27",
-      "days": 57
-    },
-    {
-      "ship": "SUNNY BOFFA",
-      "class": "NK",
-      "description": "SPP (MARPOL Annex IV)",
-      "date": "2026-11-27",
-      "days": 57
-    },
-    {
-      "ship": "SUNNY BOFFA",
-      "class": "NK",
-      "description": "APP (MARPOL Annex VI)",
-      "date": "2026-11-27",
-      "days": 57
-    },
-    {
-      "ship": "SUNNY BOFFA",
-      "class": "NK",
       "description": "EE Anti Fouling System BWM",
       "date": "2026-11-27",
       "days": 57
@@ -388,13 +367,6 @@
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "IMSBC code",
-      "date": "2026-11-27",
-      "days": 57
-    },
-    {
-      "ship": "SUNNY BOFFA",
-      "class": "NK",
-      "description": "BWM",
       "date": "2026-11-27",
       "days": 57
     },
