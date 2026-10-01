@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-01 18:20",
+  "last_updated": "2026-10-01 18:35",
   "total_ships": 64,
   "ships": {
     "SUNNY_BEYLA": {
@@ -489,11 +489,11 @@
         },
         {
           "name": "Dangerous Goods",
-          "expiry": "21 Nov 2027"
+          "expiry": "2027-11-21"
         },
         {
           "name": "Lifting Appliances(Cranes / Hoists)",
-          "expiry": "19 Oct 2030"
+          "expiry": "2030-10-19"
         }
       ],
       "alerts": {
@@ -1004,7 +1004,7 @@
         },
         {
           "name": "Dangerous Goods",
-          "expiry": "24 Jun 2030"
+          "expiry": "2030-06-24"
         }
       ],
       "alerts": {
