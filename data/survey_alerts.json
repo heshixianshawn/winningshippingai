@@ -1,519 +1,458 @@
 {
-  "generated": "2026-09-30",
+  "generated": "2026-10-01 18:19",
+  "expired": [
+    {
+      "ship": "WINNING RESILIENCE",
+      "class": "CCS",
+      "description": "MLC",
+      "date": "2026-08-18",
+      "days": -44
+    }
+  ],
   "urgent_7d": [],
   "warning_30d": [
     {
       "ship": "SUNNY SKY",
-      "type": "certificate",
-      "name": "ISPS",
+      "class": "BV",
+      "description": "ISPS",
       "date": "2026-10-10",
-      "days": 10,
-      "status": "VALID"
+      "days": 9
     },
     {
       "ship": "SUNNY SKY",
-      "type": "certificate",
-      "name": "MLC",
+      "class": "BV",
+      "description": "MLC",
       "date": "2026-10-10",
-      "days": 10,
-      "status": "VALID"
+      "days": 9
     },
     {
       "ship": "SUNNY SKY",
-      "type": "certificate",
-      "name": "SMC",
+      "class": "BV",
+      "description": "SMC",
       "date": "2026-10-10",
-      "days": 10,
-      "status": "VALID"
+      "days": 9
     },
     {
       "ship": "WINNING WEALTH",
-      "type": "certificate",
-      "name": "IOPP",
+      "class": "CCS",
+      "description": "Class Special Survey for",
       "date": "2026-10-12",
-      "days": 12,
-      "status": "VALID"
+      "days": 11
     },
     {
       "ship": "WINNING WEALTH",
-      "type": "certificate",
-      "name": "IAPP",
+      "class": "CCS",
+      "description": "BTS (船底外部检验)",
       "date": "2026-10-12",
-      "days": 12,
-      "status": "VALID"
+      "days": 11
     },
     {
       "ship": "WINNING WEALTH",
-      "type": "certificate",
-      "name": "ISPP",
+      "class": "CCS",
+      "description": "Boiler Survey (No.1 Oil-fired 2024-12-24 Zhoushan 2026-10-12 Aux. Boiler)",
       "date": "2026-10-12",
-      "days": 12,
-      "status": "VALID"
+      "days": 11
     },
     {
       "ship": "WINNING WEALTH",
-      "type": "certificate",
-      "name": "Safety Construction",
+      "class": "CCS",
+      "description": "Boiler Survey (No.2 Exhaust gas 2024-12-24 Zhoushan 2026-10-12 economizer)",
       "date": "2026-10-12",
-      "days": 12,
-      "status": "VALID"
+      "days": 11
     },
     {
       "ship": "WINNING WEALTH",
-      "type": "certificate",
-      "name": "Safety Equipment",
+      "class": "CCS",
+      "description": "IOPP",
       "date": "2026-10-12",
-      "days": 12,
-      "status": "VALID"
+      "days": 11
     },
     {
       "ship": "WINNING WEALTH",
-      "type": "certificate",
-      "name": "Safety Radio",
+      "class": "CCS",
+      "description": "IAPP",
       "date": "2026-10-12",
-      "days": 12,
-      "status": "VALID"
+      "days": 11
     },
     {
       "ship": "WINNING WEALTH",
-      "type": "certificate",
-      "name": "IHM",
+      "class": "CCS",
+      "description": "ISPP",
       "date": "2026-10-12",
-      "days": 12,
-      "status": "VALID"
+      "days": 11
     },
     {
       "ship": "WINNING WEALTH",
-      "type": "certificate",
-      "name": "Cargo Gear",
+      "class": "CCS",
+      "description": "Safety Construction",
       "date": "2026-10-12",
-      "days": 12,
-      "status": "VALID"
+      "days": 11
     },
     {
       "ship": "WINNING WEALTH",
-      "type": "certificate",
-      "name": "AFS",
+      "class": "CCS",
+      "description": "Safety Equipment",
       "date": "2026-10-12",
-      "days": 12,
-      "status": "VALID"
+      "days": 11
     },
     {
       "ship": "WINNING WEALTH",
-      "type": "survey",
-      "name": "Class Special Survey for",
+      "class": "CCS",
+      "description": "Safety Radio",
       "date": "2026-10-12",
-      "days": 12,
-      "status": "Not Due"
+      "days": 11
     },
     {
       "ship": "WINNING WEALTH",
-      "type": "survey",
-      "name": "BTS (船底外部检验)",
+      "class": "CCS",
+      "description": "IHM",
       "date": "2026-10-12",
-      "days": 12,
-      "status": "Not Due"
+      "days": 11
     },
     {
       "ship": "WINNING WEALTH",
-      "type": "survey",
-      "name": "Boiler Survey (No.1 Oil-fired 2024-12-24 Zhoushan 2026-10-12 Aux. Boiler)",
+      "class": "CCS",
+      "description": "Cargo Gear",
       "date": "2026-10-12",
-      "days": 12,
-      "status": "Not Due"
+      "days": 11
     },
     {
       "ship": "WINNING WEALTH",
-      "type": "survey",
-      "name": "Boiler Survey (No.2 Exhaust gas 2024-12-24 Zhoushan 2026-10-12 economizer)",
+      "class": "CCS",
+      "description": "AFS",
       "date": "2026-10-12",
-      "days": 12,
-      "status": "Not Due"
+      "days": 11
     },
     {
       "ship": "WINNING RESILIENCE",
-      "type": "certificate",
-      "name": "DOC",
+      "class": "CCS",
+      "description": "DOC",
       "date": "2026-10-15",
-      "days": 15,
-      "status": "VALID"
-    },
-    {
-      "ship": "SUNNY BOFFA",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "18 Oct 2026",
-      "days": 18,
-      "status": "VALID"
-    },
-    {
-      "ship": "SUNNY BOKE",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "18 Oct 2026",
-      "days": 18,
-      "status": "VALID"
-    },
-    {
-      "ship": "SUNNY MOREBAYA",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "18 Oct 2026",
-      "days": 18,
-      "status": "VALID"
-    },
-    {
-      "ship": "WINNING BRIGHT",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "18 Oct 2026",
-      "days": 18,
-      "status": "VALID"
-    },
-    {
-      "ship": "WINNING BROTHER",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "18 Oct 2026",
-      "days": 18,
-      "status": "VALID"
-    },
-    {
-      "ship": "WINNING CONFIDENCE",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "18 Oct 2026",
-      "days": 18,
-      "status": "VALID"
-    },
-    {
-      "ship": "WINNING DILIGENCE",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "18 Oct 2026",
-      "days": 18,
-      "status": "VALID"
-    },
-    {
-      "ship": "WINNING ENDURANCE",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "18 Oct 2026",
-      "days": 18,
-      "status": "VALID"
-    },
-    {
-      "ship": "WINNING EXCELLENCE",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "18 Oct 2026",
-      "days": 18,
-      "status": "VALID"
-    },
-    {
-      "ship": "WINNING FAITH",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "18 Oct 2026",
-      "days": 18,
-      "status": "VALID"
-    },
-    {
-      "ship": "WINNING GRACE",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "18 Oct 2026",
-      "days": 18,
-      "status": "VALID"
-    },
-    {
-      "ship": "WINNING HOPE",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "18 Oct 2026",
-      "days": 18,
-      "status": "VALID"
-    },
-    {
-      "ship": "WINNING INTEGRITY",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "18 Oct 2026",
-      "days": 18,
-      "status": "VALID"
-    },
-    {
-      "ship": "WINNING LOYALTY",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "18 Oct 2026",
-      "days": 18,
-      "status": "VALID"
-    },
-    {
-      "ship": "WINNING MISSION",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "18 Oct 2026",
-      "days": 18,
-      "status": "VALID"
-    },
-    {
-      "ship": "WINNING NATURE",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "18 Oct 2026",
-      "days": 18,
-      "status": "VALID"
-    },
-    {
-      "ship": "WINNING OCEAN",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "18 Oct 2026",
-      "days": 18,
-      "status": "VALID"
-    },
-    {
-      "ship": "WINNING RISING",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "18 Oct 2026",
-      "days": 18,
-      "status": "VALID"
-    },
-    {
-      "ship": "WINNING SEA",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "18 Oct 2026",
-      "days": 18,
-      "status": "VALID"
-    },
-    {
-      "ship": "WINNING TEAM",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "18 Oct 2026",
-      "days": 18,
-      "status": "VALID"
-    },
-    {
-      "ship": "WINNING UNIVERSE",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "18 Oct 2026",
-      "days": 18,
-      "status": "VALID"
-    },
-    {
-      "ship": "WINNING VISION",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "18 Oct 2026",
-      "days": 18,
-      "status": "VALID"
-    },
-    {
-      "ship": "WINNING WORLD",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "18 Oct 2026",
-      "days": 18,
-      "status": "VALID"
-    },
-    {
-      "ship": "WINNING YOUTH",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "18 Oct 2026",
-      "days": 18,
-      "status": "VALID"
+      "days": 14
     },
     {
       "ship": "WINNING PROGRESS",
-      "type": "certificate",
-      "name": "DOC",
+      "class": "ABS",
+      "description": "DOC",
       "date": "2026-10-18",
-      "days": 18,
-      "status": "VALID"
+      "days": 17
     },
     {
       "ship": "SUNNY SKY",
-      "type": "certificate",
-      "name": "DOC",
+      "class": "BV",
+      "description": "DOC",
       "date": "2026-10-18",
-      "days": 18,
-      "status": "VALID"
+      "days": 17
     },
     {
       "ship": "WINNING ZEPHYR",
-      "type": "certificate",
-      "name": "DOC",
+      "class": "RINA",
+      "description": "DOC",
       "date": "2026-10-18",
-      "days": 18,
-      "status": "VALID"
-    },
-    {
-      "ship": "SUNNY BEYLA",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "25 Oct 2026",
-      "days": 25,
-      "status": "VALID"
-    },
-    {
-      "ship": "SUNNY CONAKRY",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "25 Oct 2026",
-      "days": 25,
-      "status": "VALID"
-    },
-    {
-      "ship": "SUNNY COYAH",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "25 Oct 2026",
-      "days": 25,
-      "status": "VALID"
-    },
-    {
-      "ship": "SUNNY DABOLA",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "25 Oct 2026",
-      "days": 25,
-      "status": "VALID"
-    },
-    {
-      "ship": "SUNNY KALOUM",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "25 Oct 2026",
-      "days": 25,
-      "status": "VALID"
-    },
-    {
-      "ship": "SUNNY KAMSAR",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "25 Oct 2026",
-      "days": 25,
-      "status": "VALID"
-    },
-    {
-      "ship": "SUNNY KEROUANE",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "25 Oct 2026",
-      "days": 25,
-      "status": "VALID"
-    },
-    {
-      "ship": "SUNNY KINDIA",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "25 Oct 2026",
-      "days": 25,
-      "status": "VALID"
-    },
-    {
-      "ship": "SUNNY LABE",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "25 Oct 2026",
-      "days": 25,
-      "status": "VALID"
-    },
-    {
-      "ship": "SUNNY LINK",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "25 Oct 2026",
-      "days": 25,
-      "status": "VALID"
-    },
-    {
-      "ship": "SUNNY MAMOU",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "25 Oct 2026",
-      "days": 25,
-      "status": "VALID"
-    },
-    {
-      "ship": "SUNNY NZKORE",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "25 Oct 2026",
-      "days": 25,
-      "status": "VALID"
-    },
-    {
-      "ship": "SUNNY SAILOR",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "25 Oct 2026",
-      "days": 25,
-      "status": "VALID"
-    },
-    {
-      "ship": "SUNNY SIGUIRI",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "25 Oct 2026",
-      "days": 25,
-      "status": "VALID"
-    },
-    {
-      "ship": "WINNING ANGEL",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "25 Oct 2026",
-      "days": 25,
-      "status": "VALID"
-    },
-    {
-      "ship": "WINNING PRIDE",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "25 Oct 2026",
-      "days": 25,
-      "status": "VALID"
-    },
-    {
-      "ship": "WINNING QUEEN",
-      "type": "certificate",
-      "name": "DOC",
-      "date": "25 Oct 2026",
-      "days": 25,
-      "status": "VALID"
+      "days": 17
     },
     {
       "ship": "SUNNY FRIA",
-      "type": "certificate",
-      "name": "DOC",
+      "class": "CCS",
+      "description": "DOC",
       "date": "2026-10-25",
-      "days": 25,
-      "status": "VALID"
+      "days": 24
     },
     {
       "ship": "SUNNY ROUTE",
-      "type": "certificate",
-      "name": "DOC",
+      "class": "RINA",
+      "description": "DOC",
       "date": "2026-10-25",
-      "days": 25,
-      "status": "VALID"
+      "days": 24
+    },
+    {
+      "ship": "SUNNY ROUTE",
+      "class": "RINA",
+      "description": "Maritime Labour Convention",
+      "date": "2026-10-31",
+      "days": 30
+    },
+    {
+      "ship": "SUNNY ROUTE",
+      "class": "RINA",
+      "description": "ISM Safety Management",
+      "date": "2026-10-31",
+      "days": 30
+    },
+    {
+      "ship": "SUNNY ROUTE",
+      "class": "RINA",
+      "description": "International Ship Security Certificate",
+      "date": "2026-10-31",
+      "days": 30
+    },
+    {
+      "ship": "SUNNY ROUTE",
+      "class": "RINA",
+      "description": "International Sewage Pollution Prevention",
+      "date": "2026-10-31",
+      "days": 30
+    },
+    {
+      "ship": "SUNNY ROUTE",
+      "class": "RINA",
+      "description": "SMC",
+      "date": "2026-10-31",
+      "days": 30
+    },
+    {
+      "ship": "SUNNY ROUTE",
+      "class": "RINA",
+      "description": "MLC",
+      "date": "2026-10-31",
+      "days": 30
+    },
+    {
+      "ship": "SUNNY ROUTE",
+      "class": "RINA",
+      "description": "ISPS",
+      "date": "2026-10-31",
+      "days": 30
     }
   ],
-  "expired_recent": [],
-  "expired": [],
-  "info_90d": [],
-  "summary": {
-    "urgent_count": 0,
-    "warning_count": 63,
-    "expired_count": 0,
-    "total_active": 63
-  }
+  "info_90d": [
+    {
+      "ship": "WINNING HOPE",
+      "class": "NK",
+      "description": "ISPS",
+      "date": "2026-11-13",
+      "days": 43
+    },
+    {
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "Propeller Shaft Survey (尾轴检验)",
+      "date": "2026-11-18",
+      "days": 48
+    },
+    {
+      "ship": "WINNING WAVE",
+      "class": "CCS",
+      "description": "Class Annual Survey",
+      "date": "2026-11-18",
+      "days": 48
+    },
+    {
+      "ship": "WINNING LOYALTY",
+      "class": "NK",
+      "description": "Propeller Shaft Survey (尾轴检验)",
+      "date": "2026-11-24",
+      "days": 54
+    },
+    {
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "Special Survey (特检)",
+      "date": "2026-11-27",
+      "days": 57
+    },
+    {
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "Boiler Survey (锅炉检验)",
+      "date": "2026-11-27",
+      "days": 57
+    },
+    {
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "Docking Survey (坞检)",
+      "date": "2026-11-27",
+      "days": 57
+    },
+    {
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "Load Line Renewal (载重线换证)",
+      "date": "2026-11-27",
+      "days": 57
+    },
+    {
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "Safety Construction Renewal (构造安全换证)",
+      "date": "2026-11-27",
+      "days": 57
+    },
+    {
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "Safety Equipment Renewal (设备安全换证)",
+      "date": "2026-11-27",
+      "days": 57
+    },
+    {
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "Safety Radio Renewal (无线电安全换证)",
+      "date": "2026-11-27",
+      "days": 57
+    },
+    {
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "OPP Renewal (防油污换证)",
+      "date": "2026-11-27",
+      "days": 57
+    },
+    {
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "SPP Renewal (生活污水换证)",
+      "date": "2026-11-27",
+      "days": 57
+    },
+    {
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "APP Renewal (防空气污染换证)",
+      "date": "2026-11-27",
+      "days": 57
+    },
+    {
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "BWM Renewal (压载水换证)",
+      "date": "2026-11-27",
+      "days": 57
+    },
+    {
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "Load Line",
+      "date": "2026-11-27",
+      "days": 57
+    },
+    {
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "Safety Construction",
+      "date": "2026-11-27",
+      "days": 57
+    },
+    {
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "Safety Equipment",
+      "date": "2026-11-27",
+      "days": 57
+    },
+    {
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "Safety Radio",
+      "date": "2026-11-27",
+      "days": 57
+    },
+    {
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "OPP (MARPOL Annex I)",
+      "date": "2026-11-27",
+      "days": 57
+    },
+    {
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "SPP (MARPOL Annex IV)",
+      "date": "2026-11-27",
+      "days": 57
+    },
+    {
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "APP (MARPOL Annex VI)",
+      "date": "2026-11-27",
+      "days": 57
+    },
+    {
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "EE Anti Fouling System BWM",
+      "date": "2026-11-27",
+      "days": 57
+    },
+    {
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "IHM",
+      "date": "2026-11-27",
+      "days": 57
+    },
+    {
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "IMSBC code",
+      "date": "2026-11-27",
+      "days": 57
+    },
+    {
+      "ship": "SUNNY BOFFA",
+      "class": "NK",
+      "description": "BWM",
+      "date": "2026-11-27",
+      "days": 57
+    },
+    {
+      "ship": "WINNING NATURE",
+      "class": "NK",
+      "description": "Boiler Survey (锅炉检验)",
+      "date": "2026-12-03",
+      "days": 63
+    },
+    {
+      "ship": "WINNING NATURE",
+      "class": "NK",
+      "description": "Docking Survey (坞检)",
+      "date": "2026-12-03",
+      "days": 63
+    },
+    {
+      "ship": "SUNNY RIVER",
+      "class": "RINA",
+      "description": "Maritime Labour Convention",
+      "date": "2026-12-04",
+      "days": 64
+    },
+    {
+      "ship": "SUNNY RIVER",
+      "class": "RINA",
+      "description": "ISM Safety Management",
+      "date": "2026-12-04",
+      "days": 64
+    },
+    {
+      "ship": "SUNNY RIVER",
+      "class": "RINA",
+      "description": "International Ship Security Certificate",
+      "date": "2026-12-04",
+      "days": 64
+    },
+    {
+      "ship": "SUNNY RIVER",
+      "class": "RINA",
+      "description": "International Sewage Pollution Prevention",
+      "date": "2026-12-04",
+      "days": 64
+    },
+    {
+      "ship": "SUNNY KOGON",
+      "class": "CCS",
+      "description": "Class Annual Survey",
+      "date": "2026-12-06",
+      "days": 66
+    },
+    {
+      "ship": "WINNING KINDNESS",
+      "class": "KR",
+      "description": "Annual Survey",
+      "date": "2026-12-28",
+      "days": 88
+    }
+  ]
 }
