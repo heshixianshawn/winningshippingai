@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-01 18:35",
+  "last_updated": "2026-10-02 09:23",
   "total_ships": 64,
   "ships": {
     "SUNNY_BEYLA": {
@@ -7,7 +7,7 @@
       "imo": "9364320",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": "90092",
+      "gt": 90092,
       "dwt": "180201",
       "surveys": [
         {
@@ -75,15 +75,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "21 Jan 2031"
+          "expiry": "2031-01-21"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "21 Jan 2031"
+          "expiry": "2031-01-21"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "21 Jan 2031"
+          "expiry": "2031-01-21"
         },
         {
           "name": "IMSBC code",
@@ -135,7 +135,7 @@
       "imo": "9253090",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": "87413",
+      "gt": 87413,
       "dwt": "172565",
       "surveys": [
         {
@@ -204,15 +204,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "19 Nov 2021"
+          "expiry": "2026-11-27"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "19 Nov 2021"
+          "expiry": "2026-11-27"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "19 Nov 2021"
+          "expiry": "2026-11-27"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -228,7 +228,7 @@
         },
         {
           "name": "BWM",
-          "expiry": "19 Nov 2021"
+          "expiry": "2026-11-27"
         },
         {
           "name": "DOC",
@@ -251,7 +251,7 @@
         "expired": 0,
         "urgent_7d": 0,
         "warning_30d": 0,
-        "info_90d": 12
+        "info_90d": 16
       },
       "extraction_confidence": "high"
     },
@@ -259,8 +259,8 @@
       "name": "SUNNY BOKE",
       "imo": "9198240",
       "class_society": "NK",
-      "flag": "Panama",
-      "gt": "87473",
+      "flag": "Hong Kong, China",
+      "gt": 87473,
       "dwt": "172498",
       "surveys": [
         {
@@ -328,15 +328,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "29 Jun 2030"
+          "expiry": "2030-06-29"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "29 Jun 2030"
+          "expiry": "2030-06-29"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "29 Jun 2030"
+          "expiry": "2030-06-29"
         },
         {
           "name": "IMSBC code",
@@ -376,7 +376,7 @@
       "imo": "9406489",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": "90092",
+      "gt": 90092,
       "dwt": "180181",
       "surveys": [
         {
@@ -445,15 +445,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "21 Nov 2027"
+          "expiry": "2027-11-21"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "21 Nov 2027"
+          "expiry": "2027-11-21"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "21 Nov 2027"
+          "expiry": "2027-11-21"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -461,7 +461,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "21 Nov 2027"
+          "expiry": "2027-11-21"
         },
         {
           "name": "IMSBC code",
@@ -469,7 +469,7 @@
         },
         {
           "name": "BWM",
-          "expiry": "21 Nov 2027"
+          "expiry": "2027-11-21"
         },
         {
           "name": "DOC",
@@ -509,7 +509,7 @@
       "imo": "9387114",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": "90125",
+      "gt": 90125,
       "dwt": "180201",
       "surveys": [
         {
@@ -578,15 +578,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "25 Apr 2027"
+          "expiry": "2027-04-25"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "25 Apr 2027"
+          "expiry": "2027-04-25"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "25 Apr 2027"
+          "expiry": "2027-04-25"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -594,7 +594,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "25 Apr 2027"
+          "expiry": "2027-04-25"
         },
         {
           "name": "IMSBC code",
@@ -602,7 +602,7 @@
         },
         {
           "name": "BWM",
-          "expiry": "25 Apr 2027"
+          "expiry": "2027-04-25"
         },
         {
           "name": "DOC",
@@ -633,8 +633,8 @@
       "name": "SUNNY DABOLA",
       "imo": "9398149",
       "class_society": "NK",
-      "flag": "Panama",
-      "gt": "106367",
+      "flag": "Hong Kong, China",
+      "gt": 106367,
       "dwt": "207991",
       "surveys": [
         {
@@ -708,15 +708,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "22 Oct 2029"
+          "expiry": "2029-10-22"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "22 Oct 2029"
+          "expiry": "2029-10-22"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "22 Oct 2029"
+          "expiry": "2029-10-22"
         },
         {
           "name": "IMSBC code",
@@ -760,7 +760,7 @@
       "imo": "9336969",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": "106367",
+      "gt": 106367,
       "dwt": "208014",
       "surveys": [
         {
@@ -838,15 +838,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "07 Oct 2030"
+          "expiry": "2030-10-07"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "07 Oct 2030"
+          "expiry": "2030-10-07"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "07 Oct 2030"
+          "expiry": "2030-10-07"
         },
         {
           "name": "IMSBC code",
@@ -890,7 +890,7 @@
       "imo": "9336957",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": "101953",
+      "gt": 101953,
       "dwt": "203200",
       "surveys": [
         {
@@ -964,15 +964,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "24 Jun 2030"
+          "expiry": "2030-06-24"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "24 Jun 2030"
+          "expiry": "2030-06-24"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "24 Jun 2030"
+          "expiry": "2030-06-24"
         },
         {
           "name": "IMSBC code",
@@ -1020,7 +1020,7 @@
       "imo": "9398113",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": "106367",
+      "gt": 106367,
       "dwt": "207945",
       "surveys": [
         {
@@ -1098,15 +1098,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "24 May 2030"
+          "expiry": "2030-05-24"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "24 May 2030"
+          "expiry": "2030-05-24"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "24 May 2030"
+          "expiry": "2030-05-24"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -1118,7 +1118,7 @@
         },
         {
           "name": "BWM",
-          "expiry": "24 May 2030"
+          "expiry": "2030-05-24"
         },
         {
           "name": "DOC",
@@ -1150,7 +1150,7 @@
       "imo": "9374064",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": "90396",
+      "gt": 90396,
       "dwt": "180182",
       "surveys": [
         {
@@ -1224,15 +1224,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "01 Jul 2029"
+          "expiry": "2029-07-01"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "01 Jul 2029"
+          "expiry": "2029-07-01"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "01 Jul 2029"
+          "expiry": "2029-07-01"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -1240,7 +1240,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "01 Jul 2029"
+          "expiry": "2029-07-01"
         },
         {
           "name": "IMSBC code",
@@ -1248,7 +1248,7 @@
         },
         {
           "name": "BWM",
-          "expiry": "01 Jul 2029"
+          "expiry": "2029-07-01"
         },
         {
           "name": "DOC",
@@ -1280,7 +1280,7 @@
       "imo": "9271597",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": "102101",
+      "gt": 102101,
       "dwt": "203248",
       "surveys": [
         {
@@ -1354,15 +1354,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "18 Aug 2029"
+          "expiry": "2029-08-18"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "18 Aug 2029"
+          "expiry": "2029-08-18"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "18 Aug 2029"
+          "expiry": "2029-08-18"
         },
         {
           "name": "IMSBC code",
@@ -1406,7 +1406,7 @@
       "imo": "9254666",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": "88674",
+      "gt": 88674,
       "dwt": "176391",
       "surveys": [
         {
@@ -1475,15 +1475,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "25 Jun 2027"
+          "expiry": "2027-06-25"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "25 Jun 2027"
+          "expiry": "2027-06-25"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "25 Jun 2027"
+          "expiry": "2027-06-25"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -1499,7 +1499,7 @@
         },
         {
           "name": "BWM",
-          "expiry": "25 Jun 2027"
+          "expiry": "2027-06-25"
         },
         {
           "name": "DOC",
@@ -1539,7 +1539,7 @@
       "imo": "9346342",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": "104725",
+      "gt": 104725,
       "dwt": "206296",
       "surveys": [
         {
@@ -1617,15 +1617,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "06 Oct 2030"
+          "expiry": "2030-10-06"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "06 Oct 2030"
+          "expiry": "2030-10-06"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "06 Oct 2030"
+          "expiry": "2030-10-06"
         },
         {
           "name": "IMSBC code",
@@ -1633,11 +1633,11 @@
         },
         {
           "name": "BWM",
-          "expiry": "06 Oct 2030"
+          "expiry": "2030-10-06"
         },
         {
           "name": "IHM",
-          "expiry": "06 Oct 2030"
+          "expiry": "2030-10-06"
         },
         {
           "name": "DOC",
@@ -1673,7 +1673,7 @@
       "imo": "9331426",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": "101953",
+      "gt": 101953,
       "dwt": "203264",
       "surveys": [
         {
@@ -1747,15 +1747,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "14 Nov 2030"
+          "expiry": "2030-11-14"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "14 Nov 2030"
+          "expiry": "2030-11-14"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "14 Nov 2030"
+          "expiry": "2030-11-14"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -1767,7 +1767,7 @@
         },
         {
           "name": "BWM",
-          "expiry": "14 Nov 2030"
+          "expiry": "2030-11-14"
         },
         {
           "name": "DOC",
@@ -1799,7 +1799,7 @@
       "imo": "9393187",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": "90111",
+      "gt": 90111,
       "dwt": "180129",
       "surveys": [
         {
@@ -1877,15 +1877,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "09 Apr 2029"
+          "expiry": "2029-04-09"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "09 Apr 2029"
+          "expiry": "2029-04-09"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "09 Apr 2029"
+          "expiry": "2029-04-09"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -1901,7 +1901,7 @@
         },
         {
           "name": "BWM",
-          "expiry": "09 Apr 2029"
+          "expiry": "2029-04-09"
         },
         {
           "name": "DOC",
@@ -1937,7 +1937,7 @@
       "imo": "9439125",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": "90091",
+      "gt": 90091,
       "dwt": "180176",
       "surveys": [
         {
@@ -2020,15 +2020,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "07 Sep 2031"
+          "expiry": "2031-09-07"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "07 Sep 2031"
+          "expiry": "2031-09-07"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "07 Sep 2031"
+          "expiry": "2031-09-07"
         },
         {
           "name": "IMSBC code",
@@ -2044,11 +2044,11 @@
         },
         {
           "name": "BWM",
-          "expiry": "07 Sep 2031"
+          "expiry": "2031-09-07"
         },
         {
           "name": "IHM",
-          "expiry": "29 Jul 2031"
+          "expiry": "2031-09-07"
         },
         {
           "name": "DOC",
@@ -2080,7 +2080,7 @@
       "imo": "9406453",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": "104721",
+      "gt": 104721,
       "dwt": "206312",
       "surveys": [
         {
@@ -2153,15 +2153,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "24 Apr 2027"
+          "expiry": "2027-04-24"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "24 Apr 2027"
+          "expiry": "2027-04-24"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "24 Apr 2027"
+          "expiry": "2027-04-24"
         },
         {
           "name": "IMSBC code",
@@ -2173,11 +2173,11 @@
         },
         {
           "name": "BWM",
-          "expiry": "24 Apr 2027"
+          "expiry": "2027-04-24"
         },
         {
           "name": "IHM",
-          "expiry": "24 Apr 2027"
+          "expiry": "2027-04-24"
         },
         {
           "name": "DOC",
@@ -2209,7 +2209,7 @@
       "imo": "9406506",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "104761",
+      "gt": 104761,
       "dwt": "206306",
       "surveys": [
         {
@@ -2278,15 +2278,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "18 Dec 2027"
+          "expiry": "2027-12-18"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "18 Dec 2027"
+          "expiry": "2027-12-18"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "18 Dec 2027"
+          "expiry": "2027-12-18"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -2294,7 +2294,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "18 Dec 2027"
+          "expiry": "2027-12-18"
         },
         {
           "name": "IMSBC code",
@@ -2302,7 +2302,7 @@
         },
         {
           "name": "BWM",
-          "expiry": "18 Dec 2027"
+          "expiry": "2027-12-18"
         },
         {
           "name": "DOC",
@@ -2338,7 +2338,7 @@
       "imo": "9492218",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "106884",
+      "gt": 106884,
       "dwt": "206125",
       "surveys": [
         {
@@ -2405,15 +2405,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "21 Aug 2029"
+          "expiry": "2029-08-21"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "21 Aug 2029"
+          "expiry": "2029-08-21"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "21 Aug 2029"
+          "expiry": "2029-08-21"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -2421,7 +2421,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "21 Aug 2029"
+          "expiry": "2029-08-21"
         },
         {
           "name": "IMSBC code",
@@ -2429,7 +2429,7 @@
         },
         {
           "name": "BWM",
-          "expiry": "21 Aug 2029"
+          "expiry": "2029-08-21"
         },
         {
           "name": "DOC",
@@ -2465,7 +2465,7 @@
       "imo": "9250610",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": "94779",
+      "gt": 94779,
       "dwt": "184887",
       "surveys": [
         {
@@ -2539,15 +2539,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "17 Oct 2030"
+          "expiry": "2030-10-17"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "17 Oct 2030"
+          "expiry": "2030-10-17"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "17 Oct 2030"
+          "expiry": "2030-10-17"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -2559,7 +2559,7 @@
         },
         {
           "name": "BWM",
-          "expiry": "17 Oct 2030"
+          "expiry": "2030-10-17"
         },
         {
           "name": "DOC",
@@ -2599,7 +2599,7 @@
       "imo": "9325001",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "90091",
+      "gt": 90091,
       "dwt": "180265",
       "surveys": [
         {
@@ -2673,15 +2673,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "31 Jan 2030"
+          "expiry": "2030-01-31"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "31 Jan 2030"
+          "expiry": "2030-01-31"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "31 Jan 2030"
+          "expiry": "2030-01-31"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -2689,7 +2689,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "31 Jan 2030"
+          "expiry": "2030-01-31"
         },
         {
           "name": "IMSBC code",
@@ -2697,7 +2697,7 @@
         },
         {
           "name": "BWM",
-          "expiry": "31 Jan 2030"
+          "expiry": "2030-01-31"
         },
         {
           "name": "DOC",
@@ -2733,7 +2733,7 @@
       "imo": "9374088",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "90091",
+      "gt": 90091,
       "dwt": "180277",
       "surveys": [
         {
@@ -2807,15 +2807,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "17 May 2031"
+          "expiry": "2031-05-17"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "17 May 2031"
+          "expiry": "2031-05-17"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "17 May 2031"
+          "expiry": "2031-05-17"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -2823,7 +2823,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "17 May 2031"
+          "expiry": "2031-05-17"
         },
         {
           "name": "IMSBC code",
@@ -2831,7 +2831,7 @@
         },
         {
           "name": "BWM",
-          "expiry": "17 May 2031"
+          "expiry": "2031-05-17"
         },
         {
           "name": "DOC",
@@ -2867,7 +2867,7 @@
       "imo": "9232058",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "87590",
+      "gt": 87590,
       "dwt": "170578",
       "surveys": [
         {
@@ -2935,15 +2935,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "15 Jul 2030"
+          "expiry": "2030-07-15"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "15 Jul 2030"
+          "expiry": "2030-07-15"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "15 Jul 2030"
+          "expiry": "2030-07-15"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -2951,7 +2951,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "15 Jul 2030"
+          "expiry": "2030-07-15"
         },
         {
           "name": "IMSBC code",
@@ -2959,7 +2959,7 @@
         },
         {
           "name": "BWM",
-          "expiry": "15 Jul 2030"
+          "expiry": "2030-07-15"
         },
         {
           "name": "DOC",
@@ -2999,7 +2999,7 @@
       "imo": "9279393",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "113929",
+      "gt": 113929,
       "dwt": "229186",
       "surveys": [
         {
@@ -3073,15 +3073,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "25 May 2029"
+          "expiry": "2029-05-25"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "25 May 2029"
+          "expiry": "2029-05-25"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "25 May 2029"
+          "expiry": "2029-05-25"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -3089,7 +3089,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "25 May 2029"
+          "expiry": "2029-05-25"
         },
         {
           "name": "IMSBC code",
@@ -3097,7 +3097,7 @@
         },
         {
           "name": "BWM",
-          "expiry": "25 May 2029"
+          "expiry": "2029-05-25"
         },
         {
           "name": "DOC",
@@ -3129,7 +3129,7 @@
       "imo": "9314076",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "90091",
+      "gt": 90091,
       "dwt": "180310",
       "surveys": [
         {
@@ -3203,15 +3203,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "19 Oct 2029"
+          "expiry": "2029-10-19"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "19 Oct 2029"
+          "expiry": "2029-10-19"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "19 Oct 2029"
+          "expiry": "2029-10-19"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -3219,7 +3219,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "19 Oct 2029"
+          "expiry": "2029-10-19"
         },
         {
           "name": "IMSBC code",
@@ -3227,7 +3227,7 @@
         },
         {
           "name": "BWM",
-          "expiry": "19 Oct 2029"
+          "expiry": "2029-10-19"
         },
         {
           "name": "DOC",
@@ -3263,7 +3263,7 @@
       "imo": "9722948",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "107791",
+      "gt": 107791,
       "dwt": "209513",
       "surveys": [
         {
@@ -3336,15 +3336,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "25 Apr 2031"
+          "expiry": "2031-04-25"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "25 Apr 2031"
+          "expiry": "2031-04-25"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "25 Apr 2031"
+          "expiry": "2031-04-25"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -3352,7 +3352,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "01 Mar 2031"
+          "expiry": "2031-03-01"
         },
         {
           "name": "IMSBC code",
@@ -3368,7 +3368,7 @@
         },
         {
           "name": "BWM",
-          "expiry": "25 Apr 2031"
+          "expiry": "2031-04-25"
         },
         {
           "name": "DOC",
@@ -3400,7 +3400,7 @@
       "imo": "9722950",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "107791",
+      "gt": 107791,
       "dwt": "209545",
       "surveys": [
         {
@@ -3479,15 +3479,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "09 Aug 2031"
+          "expiry": "2031-08-09"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "09 Aug 2031"
+          "expiry": "2031-08-09"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "09 Aug 2031"
+          "expiry": "2031-08-09"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -3495,7 +3495,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "06 Jun 2031"
+          "expiry": "2031-06-06"
         },
         {
           "name": "IMSBC code",
@@ -3511,7 +3511,7 @@
         },
         {
           "name": "BWM",
-          "expiry": "09 Aug 2031"
+          "expiry": "2031-08-09"
         },
         {
           "name": "DOC",
@@ -3547,7 +3547,7 @@
       "imo": "9633068",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "92758",
+      "gt": 92758,
       "dwt": "181501",
       "surveys": [
         {
@@ -3621,15 +3621,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "25 Jul 2030"
+          "expiry": "2030-07-25"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "25 Jul 2030"
+          "expiry": "2030-07-25"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "25 Jul 2030"
+          "expiry": "2030-07-25"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -3641,7 +3641,7 @@
         },
         {
           "name": "BWM",
-          "expiry": "25 Jul 2030"
+          "expiry": "2030-07-25"
         },
         {
           "name": "IHM",
@@ -3677,7 +3677,7 @@
       "imo": "9314052",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "90091",
+      "gt": 90091,
       "dwt": "180310",
       "surveys": [
         {
@@ -3751,15 +3751,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "08 Aug 2029"
+          "expiry": "2029-08-08"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "08 Aug 2029"
+          "expiry": "2029-08-08"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "08 Aug 2029"
+          "expiry": "2029-08-08"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -3767,7 +3767,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "08 Aug 2029"
+          "expiry": "2029-08-08"
         },
         {
           "name": "IMSBC code",
@@ -3775,7 +3775,7 @@
         },
         {
           "name": "BWM",
-          "expiry": "08 Aug 2029"
+          "expiry": "2029-08-08"
         },
         {
           "name": "DOC",
@@ -3811,7 +3811,7 @@
       "imo": "9659854",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "92752",
+      "gt": 92752,
       "dwt": "181371",
       "surveys": [
         {
@@ -3880,15 +3880,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "21 Jul 2028"
+          "expiry": "2028-07-21"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "21 Jul 2028"
+          "expiry": "2028-07-21"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "21 Jul 2028"
+          "expiry": "2028-07-21"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -3896,7 +3896,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "21 Jul 2028"
+          "expiry": "2028-07-21"
         },
         {
           "name": "IMSBC code",
@@ -3904,7 +3904,7 @@
         },
         {
           "name": "BWM",
-          "expiry": "21 Jul 2028"
+          "expiry": "2028-07-21"
         },
         {
           "name": "DOC",
@@ -3936,7 +3936,7 @@
       "imo": "9659866",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "92752",
+      "gt": 92752,
       "dwt": "181387",
       "surveys": [
         {
@@ -4010,15 +4010,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "27 Feb 2029"
+          "expiry": "2029-02-27"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "27 Feb 2029"
+          "expiry": "2029-02-27"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "27 Feb 2029"
+          "expiry": "2029-02-27"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -4026,7 +4026,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "27 Feb 2029"
+          "expiry": "2029-02-27"
         },
         {
           "name": "IMSBC code",
@@ -4034,7 +4034,7 @@
         },
         {
           "name": "BWM",
-          "expiry": "27 Feb 2029"
+          "expiry": "2029-02-27"
         },
         {
           "name": "DOC",
@@ -4066,7 +4066,7 @@
       "imo": "9271602",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": "102207",
+      "gt": 102207,
       "dwt": "203315",
       "surveys": [
         {
@@ -4140,15 +4140,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "04 Jan 2031"
+          "expiry": "2031-01-04"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "04 Jan 2031"
+          "expiry": "2031-01-04"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "04 Jan 2031"
+          "expiry": "2031-01-04"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -4164,7 +4164,7 @@
         },
         {
           "name": "BWM",
-          "expiry": "04 Jan 2031"
+          "expiry": "2031-01-04"
         },
         {
           "name": "DOC",
@@ -4200,7 +4200,7 @@
       "imo": "9450234",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": "89603",
+      "gt": 89603,
       "dwt": "176890",
       "surveys": [
         {
@@ -4278,15 +4278,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "16 Feb 2029"
+          "expiry": "2029-02-16"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "16 Feb 2029"
+          "expiry": "2029-02-16"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "16 Feb 2029"
+          "expiry": "2029-02-16"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -4294,7 +4294,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "16 Feb 2029"
+          "expiry": "2029-02-16"
         },
         {
           "name": "IMSBC code",
@@ -4302,7 +4302,7 @@
         },
         {
           "name": "BWM",
-          "expiry": "16 Feb 2029"
+          "expiry": "2029-02-16"
         },
         {
           "name": "DOC",
@@ -4334,7 +4334,7 @@
       "imo": "9311282",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": "89726",
+      "gt": 89726,
       "dwt": "176967",
       "surveys": [
         {
@@ -4408,15 +4408,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "01 Jun 2031"
+          "expiry": "2031-06-01"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "01 Jun 2031"
+          "expiry": "2031-06-01"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "01 Jun 2031"
+          "expiry": "2031-06-01"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -4424,7 +4424,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "01 Jun 2031"
+          "expiry": "2031-06-01"
         },
         {
           "name": "IMSBC code",
@@ -4440,7 +4440,7 @@
         },
         {
           "name": "BWM",
-          "expiry": "01 Jun 2031"
+          "expiry": "2031-06-01"
         },
         {
           "name": "DOC",
@@ -4574,14 +4574,14 @@
         "warning_30d": 1,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "WINNING_RISING": {
       "name": "WINNING RISING",
       "imo": "9393199",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": "90421",
+      "gt": 90421,
       "dwt": "180140",
       "surveys": [
         {
@@ -4659,15 +4659,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "29 Jun 2029"
+          "expiry": "2029-06-29"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "29 Jun 2029"
+          "expiry": "2029-06-29"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "29 Jun 2029"
+          "expiry": "2029-06-29"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -4679,7 +4679,7 @@
         },
         {
           "name": "BWM",
-          "expiry": "29 Jun 2029"
+          "expiry": "2029-06-29"
         },
         {
           "name": "DOC",
@@ -4715,7 +4715,7 @@
       "imo": "9254678",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": "101953",
+      "gt": 101953,
       "dwt": "203508",
       "surveys": [
         {
@@ -4789,15 +4789,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "22 Dec 2030"
+          "expiry": "2030-12-22"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "22 Dec 2030"
+          "expiry": "2030-12-22"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "22 Dec 2030"
+          "expiry": "2030-12-22"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -4809,7 +4809,7 @@
         },
         {
           "name": "BWM",
-          "expiry": "22 Dec 2030"
+          "expiry": "2030-12-22"
         },
         {
           "name": "DOC",
@@ -4845,7 +4845,7 @@
       "imo": "9336945",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "102319",
+      "gt": 102319,
       "dwt": "203091",
       "surveys": [
         {
@@ -4928,15 +4928,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "09 Feb 2031"
+          "expiry": "2031-02-09"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "09 Feb 2031"
+          "expiry": "2031-02-09"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "09 Feb 2031"
+          "expiry": "2031-02-09"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -4944,7 +4944,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "12 Jan 2031"
+          "expiry": "2031-01-12"
         },
         {
           "name": "IMSBC code",
@@ -4956,7 +4956,7 @@
         },
         {
           "name": "BWM",
-          "expiry": "09 Feb 2031"
+          "expiry": "2031-02-09"
         },
         {
           "name": "DOC",
@@ -4988,7 +4988,7 @@
       "imo": "9346172",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "102092",
+      "gt": 102092,
       "dwt": "203233",
       "surveys": [
         {
@@ -5056,15 +5056,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "04 Oct 2030"
+          "expiry": "2030-10-04"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "04 Oct 2030"
+          "expiry": "2030-10-04"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "04 Oct 2030"
+          "expiry": "2030-10-04"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -5072,7 +5072,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "04 Oct 2030"
+          "expiry": "2030-10-04"
         },
         {
           "name": "IMSBC code",
@@ -5080,7 +5080,7 @@
         },
         {
           "name": "BWM",
-          "expiry": "04 Oct 2030"
+          "expiry": "2030-10-04"
         },
         {
           "name": "DOC",
@@ -5116,7 +5116,7 @@
       "imo": "9859765",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "107791",
+      "gt": 107791,
       "dwt": "208951",
       "surveys": [
         {
@@ -5190,15 +5190,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "24 Nov 2029"
+          "expiry": "2029-11-24"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "24 Nov 2029"
+          "expiry": "2029-11-24"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "24 Nov 2029"
+          "expiry": "2029-11-24"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -5206,7 +5206,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "24 Nov 2029"
+          "expiry": "2029-11-24"
         },
         {
           "name": "IMSBC code",
@@ -5214,7 +5214,7 @@
         },
         {
           "name": "BWM",
-          "expiry": "24 Nov 2029"
+          "expiry": "2029-11-24"
         },
         {
           "name": "DOC",
@@ -5246,7 +5246,7 @@
       "imo": "9859777",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "107786",
+      "gt": 107786,
       "dwt": "208970",
       "surveys": [
         {
@@ -5320,15 +5320,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "02 Jan 2030"
+          "expiry": "2030-01-02"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "02 Jan 2030"
+          "expiry": "2030-01-02"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "02 Jan 2030"
+          "expiry": "2030-01-02"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -5336,7 +5336,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "02 Jan 2030"
+          "expiry": "2030-01-02"
         },
         {
           "name": "IMSBC code",
@@ -5344,7 +5344,7 @@
         },
         {
           "name": "BWM",
-          "expiry": "02 Jan 2030"
+          "expiry": "2030-01-02"
         },
         {
           "name": "DOC",
@@ -5376,7 +5376,7 @@
       "imo": "9278636",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": "101933",
+      "gt": 101933,
       "dwt": "203195",
       "surveys": [
         {
@@ -5445,15 +5445,15 @@
         },
         {
           "name": "OPP (MARPOL Annex I)",
-          "expiry": "20 May 2028"
+          "expiry": "2028-05-20"
         },
         {
           "name": "SPP (MARPOL Annex IV)",
-          "expiry": "20 May 2028"
+          "expiry": "2028-05-20"
         },
         {
           "name": "APP (MARPOL Annex VI)",
-          "expiry": "20 May 2028"
+          "expiry": "2028-05-20"
         },
         {
           "name": "EE Anti Fouling System BWM",
@@ -5461,7 +5461,7 @@
         },
         {
           "name": "IHM",
-          "expiry": "20 May 2028"
+          "expiry": "2028-05-20"
         },
         {
           "name": "IMSBC code",
@@ -5469,7 +5469,7 @@
         },
         {
           "name": "BWM",
-          "expiry": "20 May 2028"
+          "expiry": "2028-05-20"
         },
         {
           "name": "DOC",
@@ -5840,7 +5840,7 @@
         "warning_30d": 0,
         "info_90d": 1
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "WINNING_RICH": {
       "name": "WINNING RICH",
@@ -5943,7 +5943,7 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "WINNING_SPIRIT": {
       "name": "WINNING SPIRIT",
@@ -6047,7 +6047,7 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "SUNNY_FARANAH": {
       "name": "SUNNY FARANAH",
@@ -6148,7 +6148,7 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "SUNNY_FRIA": {
       "name": "SUNNY FRIA",
@@ -6265,7 +6265,7 @@
         "warning_30d": 1,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "SUNNY_KOGON": {
       "name": "SUNNY KOGON",
@@ -6367,7 +6367,7 @@
         "warning_30d": 0,
         "info_90d": 1
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "SUNNY_STAR": {
       "name": "SUNNY STAR",
@@ -6474,7 +6474,7 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "WINNING_BRAVE": {
       "name": "WINNING BRAVE",
@@ -6589,7 +6589,7 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "WINNING_JOY": {
       "name": "WINNING JOY",
@@ -6695,7 +6695,7 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "WINNING_TIMES": {
       "name": "WINNING TIMES",
@@ -6799,7 +6799,7 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "WINNING_WAVE": {
       "name": "WINNING WAVE",
@@ -6903,7 +6903,7 @@
         "warning_30d": 0,
         "info_90d": 1
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "WINNING_WEALTH": {
       "name": "WINNING WEALTH",
@@ -7009,7 +7009,7 @@
         "warning_30d": 12,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "WINNING_WISDOM": {
       "name": "WINNING WISDOM",
@@ -7120,11 +7120,11 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "WINNING_AMBITION": {
       "name": "WINNING AMBITION",
-      "imo": "1037393",
+      "imo": "1037397",
       "class_society": "DNV",
       "flag": "Singapore",
       "gt": "174863",
@@ -7203,7 +7203,7 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "SUNNY_SKY": {
       "name": "SUNNY SKY",
@@ -7295,7 +7295,7 @@
         "warning_30d": 4,
         "info_90d": 0
       },
-      "extraction_confidence": "high"
+      "extraction_confidence": "medium"
     },
     "SUNNY_KANKAN": {
       "name": "SUNNY KANKAN",
