@@ -1,11 +1,12 @@
 {
- "generated": "2026-10-02",
+ "generated": "2026-10-07",
  "source": "单船档案 PSC-FSC检查记录 sheet（TokyoMOU/APCIS 等来源）",
- "count": 691,
- "ship_count": 60,
+ "count": 692,
+ "ship_count": 61,
  "ships": {
   "SUNNY BEYLA": {
-   "imo": "",
+   "imo": "9364320",
+   "imo_src": "权威库(survey_index)",
    "count": 8,
    "records": [
     {
@@ -139,7 +140,8 @@
    ]
   },
   "SUNNY BOFFA": {
-   "imo": "",
+   "imo": "9253090",
+   "imo_src": "权威库(survey_index)",
    "count": 12,
    "records": [
     {
@@ -337,7 +339,8 @@
    ]
   },
   "SUNNY BOKE": {
-   "imo": "",
+   "imo": "9198240",
+   "imo_src": "权威库(survey_index)",
    "count": 10,
    "records": [
     {
@@ -502,7 +505,8 @@
    ]
   },
   "SUNNY CONAKRY": {
-   "imo": "",
+   "imo": "9406489",
+   "imo_src": "权威库(survey_index)",
    "count": 13,
    "records": [
     {
@@ -716,7 +720,8 @@
    ]
   },
   "SUNNY COYAH": {
-   "imo": "",
+   "imo": "9387114",
+   "imo_src": "权威库(survey_index)",
    "count": 9,
    "records": [
     {
@@ -866,7 +871,8 @@
    ]
   },
   "SUNNY DABOLA": {
-   "imo": "",
+   "imo": "9398149",
+   "imo_src": "权威库(survey_index)",
    "count": 22,
    "records": [
     {
@@ -1224,7 +1230,8 @@
    ]
   },
   "SUNNY FARANAH": {
-   "imo": "",
+   "imo": "9337107",
+   "imo_src": "权威库(survey_index)",
    "count": 13,
    "records": [
     {
@@ -1438,7 +1445,8 @@
    ]
   },
   "SUNNY FRIA": {
-   "imo": "",
+   "imo": "9330305",
+   "imo_src": "权威库(survey_index)",
    "count": 13,
    "records": [
     {
@@ -1652,7 +1660,8 @@
    ]
   },
   "SUNNY KALOUM": {
-   "imo": "",
+   "imo": "9336969",
+   "imo_src": "权威库(survey_index)",
    "count": 11,
    "records": [
     {
@@ -1834,7 +1843,8 @@
    ]
   },
   "SUNNY KAMSAR": {
-   "imo": "",
+   "imo": "9336957",
+   "imo_src": "权威库(survey_index)",
    "count": 27,
    "records": [
     {
@@ -2272,7 +2282,8 @@
    ]
   },
   "SUNNY KANKAN": {
-   "imo": "",
+   "imo": "9287273",
+   "imo_src": "权威库(survey_index)",
    "count": 6,
    "records": [
     {
@@ -2374,7 +2385,8 @@
    ]
   },
   "SUNNY KEROUANE": {
-   "imo": "",
+   "imo": "9398113",
+   "imo_src": "权威库(survey_index)",
    "count": 17,
    "records": [
     {
@@ -2652,7 +2664,8 @@
    ]
   },
   "SUNNY KINDIA": {
-   "imo": "",
+   "imo": "9374064",
+   "imo_src": "权威库(survey_index)",
    "count": 14,
    "records": [
     {
@@ -2881,7 +2894,8 @@
    ]
   },
   "SUNNY KOGON": {
-   "imo": "",
+   "imo": "9312303",
+   "imo_src": "权威库(survey_index)",
    "count": 9,
    "records": [
     {
@@ -3031,7 +3045,8 @@
    ]
   },
   "SUNNY LABE": {
-   "imo": "",
+   "imo": "9271597",
+   "imo_src": "权威库(survey_index)",
    "count": 9,
    "records": [
     {
@@ -3181,7 +3196,8 @@
    ]
   },
   "SUNNY LINK": {
-   "imo": "",
+   "imo": "9254666",
+   "imo_src": "权威库(survey_index)",
    "count": 13,
    "records": [
     {
@@ -3395,7 +3411,8 @@
    ]
   },
   "SUNNY MAMOU": {
-   "imo": "",
+   "imo": "9346342",
+   "imo_src": "权威库(survey_index)",
    "count": 15,
    "records": [
     {
@@ -3641,7 +3658,8 @@
    ]
   },
   "SUNNY MOREBAYA": {
-   "imo": "",
+   "imo": "9331426",
+   "imo_src": "权威库(survey_index)",
    "count": 9,
    "records": [
     {
@@ -3791,7 +3809,8 @@
    ]
   },
   "SUNNY NZKORE": {
-   "imo": "",
+   "imo": "9393187",
+   "imo_src": "权威库(survey_index)",
    "count": 15,
    "records": [
     {
@@ -4037,7 +4056,8 @@
    ]
   },
   "SUNNY RIVER": {
-   "imo": "",
+   "imo": "9337169",
+   "imo_src": "权威库(survey_index)",
    "count": 16,
    "records": [
     {
@@ -4298,7 +4318,8 @@
    ]
   },
   "SUNNY ROUTE": {
-   "imo": "",
+   "imo": "9296420",
+   "imo_src": "权威库(survey_index)",
    "count": 9,
    "records": [
     {
@@ -4448,7 +4469,8 @@
    ]
   },
   "SUNNY SAILOR": {
-   "imo": "",
+   "imo": "9439125",
+   "imo_src": "权威库(survey_index)",
    "count": 8,
    "records": [
     {
@@ -4582,7 +4604,8 @@
    ]
   },
   "SUNNY SIGUIRI": {
-   "imo": "",
+   "imo": "9406453",
+   "imo_src": "权威库(survey_index)",
    "count": 18,
    "records": [
     {
@@ -4876,7 +4899,8 @@
    ]
   },
   "SUNNY SKY": {
-   "imo": "",
+   "imo": "9461295",
+   "imo_src": "权威库(survey_index)",
    "count": 8,
    "records": [
     {
@@ -5009,7 +5033,8 @@
    ]
   },
   "SUNNY STAR": {
-   "imo": "",
+   "imo": "9461300",
+   "imo_src": "权威库(survey_index)",
    "count": 9,
    "records": [
     {
@@ -5159,7 +5184,8 @@
    ]
   },
   "WINNING ANGEL": {
-   "imo": "",
+   "imo": "9406506",
+   "imo_src": "权威库(survey_index)",
    "count": 24,
    "records": [
     {
@@ -5548,8 +5574,31 @@
     }
    ]
   },
+  "WINNING BRAVE": {
+   "imo": "1037402",
+   "imo_src": "权威库(survey_index)",
+   "count": 1,
+   "records": [
+    {
+     "date": "2026-09-25",
+     "port": "",
+     "port_raw": "",
+     "type": "PSC",
+     "authority": "",
+     "officer": "",
+     "defects": null,
+     "detained": false,
+     "codes": "",
+     "codes_uncertain": false,
+     "rectified": "",
+     "note": "来源:WINNING BRAVE---PSCI REPORT 2026.09.25.pdf|FP:d9f7c26d",
+     "defects_source": "档案(无TMOU对照)"
+    }
+   ]
+  },
   "WINNING BRIGHT": {
-   "imo": "",
+   "imo": "9492218",
+   "imo_src": "权威库(survey_index)",
    "count": 11,
    "records": [
     {
@@ -5731,7 +5780,8 @@
    ]
   },
   "WINNING BROTHER": {
-   "imo": "",
+   "imo": "9250610",
+   "imo_src": "权威库(survey_index)",
    "count": 9,
    "records": [
     {
@@ -5881,7 +5931,8 @@
    ]
   },
   "WINNING CONFIDENCE": {
-   "imo": "",
+   "imo": "9325001",
+   "imo_src": "权威库(survey_index)",
    "count": 9,
    "records": [
     {
@@ -6031,7 +6082,8 @@
    ]
   },
   "WINNING DILIGENCE": {
-   "imo": "",
+   "imo": "9374088",
+   "imo_src": "权威库(survey_index)",
    "count": 10,
    "records": [
     {
@@ -6197,7 +6249,8 @@
    ]
   },
   "WINNING ENDURANCE": {
-   "imo": "",
+   "imo": "9232058",
+   "imo_src": "权威库(survey_index)",
    "count": 9,
    "records": [
     {
@@ -6347,7 +6400,8 @@
    ]
   },
   "WINNING EXCELLENCE": {
-   "imo": "",
+   "imo": "9279393",
+   "imo_src": "权威库(survey_index)",
    "count": 17,
    "records": [
     {
@@ -6625,7 +6679,8 @@
    ]
   },
   "WINNING FAITH": {
-   "imo": "",
+   "imo": "9314076",
+   "imo_src": "权威库(survey_index)",
    "count": 8,
    "records": [
     {
@@ -6759,7 +6814,8 @@
    ]
   },
   "WINNING GRACE": {
-   "imo": "",
+   "imo": "9722948",
+   "imo_src": "权威库(survey_index)",
    "count": 7,
    "records": [
     {
@@ -6877,7 +6933,8 @@
    ]
   },
   "WINNING HOPE": {
-   "imo": "",
+   "imo": "9722950",
+   "imo_src": "权威库(survey_index)",
    "count": 7,
    "records": [
     {
@@ -6994,7 +7051,8 @@
    ]
   },
   "WINNING INTEGRITY": {
-   "imo": "",
+   "imo": "9633068",
+   "imo_src": "权威库(survey_index)",
    "count": 17,
    "records": [
     {
@@ -7272,7 +7330,8 @@
    ]
   },
   "WINNING JOY": {
-   "imo": "",
+   "imo": "9492220",
+   "imo_src": "权威库(survey_index)",
    "count": 15,
    "records": [
     {
@@ -7518,7 +7577,8 @@
    ]
   },
   "WINNING KINDNESS": {
-   "imo": "",
+   "imo": "9335240",
+   "imo_src": "权威库(survey_index)",
    "count": 6,
    "records": [
     {
@@ -7620,7 +7680,8 @@
    ]
   },
   "WINNING LOYALTY": {
-   "imo": "",
+   "imo": "9314052",
+   "imo_src": "权威库(survey_index)",
    "count": 13,
    "records": [
     {
@@ -7834,7 +7895,8 @@
    ]
   },
   "WINNING MISSION": {
-   "imo": "",
+   "imo": "9659854",
+   "imo_src": "权威库(survey_index)",
    "count": 8,
    "records": [
     {
@@ -7967,7 +8029,8 @@
    ]
   },
   "WINNING NATURE": {
-   "imo": "",
+   "imo": "9659866",
+   "imo_src": "权威库(survey_index)",
    "count": 9,
    "records": [
     {
@@ -8117,7 +8180,8 @@
    ]
   },
   "WINNING OCEAN": {
-   "imo": "",
+   "imo": "9271602",
+   "imo_src": "权威库(survey_index)",
    "count": 8,
    "records": [
     {
@@ -8251,7 +8315,8 @@
    ]
   },
   "WINNING PEACE": {
-   "imo": "",
+   "imo": "9500625",
+   "imo_src": "权威库(survey_index)",
    "count": 6,
    "records": [
     {
@@ -8353,7 +8418,8 @@
    ]
   },
   "WINNING PRIDE": {
-   "imo": "",
+   "imo": "9450234",
+   "imo_src": "权威库(survey_index)",
    "count": 13,
    "records": [
     {
@@ -8567,7 +8633,8 @@
    ]
   },
   "WINNING PROGRESS": {
-   "imo": "",
+   "imo": "9576296",
+   "imo_src": "权威库(survey_index)",
    "count": 10,
    "records": [
     {
@@ -8733,7 +8800,8 @@
    ]
   },
   "WINNING QUEEN": {
-   "imo": "",
+   "imo": "9311282",
+   "imo_src": "权威库(survey_index)",
    "count": 12,
    "records": [
     {
@@ -8931,7 +8999,8 @@
    ]
   },
   "WINNING RESILIENCE": {
-   "imo": "",
+   "imo": "9410430",
+   "imo_src": "权威库(survey_index)",
    "count": 9,
    "records": [
     {
@@ -9081,7 +9150,8 @@
    ]
   },
   "WINNING RICH": {
-   "imo": "",
+   "imo": "9498054",
+   "imo_src": "权威库(survey_index)",
    "count": 10,
    "records": [
     {
@@ -9247,7 +9317,8 @@
    ]
   },
   "WINNING RISING": {
-   "imo": "",
+   "imo": "9393199",
+   "imo_src": "权威库(survey_index)",
    "count": 12,
    "records": [
     {
@@ -9445,7 +9516,8 @@
    ]
   },
   "WINNING SEA": {
-   "imo": "",
+   "imo": "9254678",
+   "imo_src": "权威库(survey_index)",
    "count": 12,
    "records": [
     {
@@ -9643,7 +9715,8 @@
    ]
   },
   "WINNING SPIRIT": {
-   "imo": "",
+   "imo": "9597824",
+   "imo_src": "权威库(survey_index)",
    "count": 12,
    "records": [
     {
@@ -9841,7 +9914,8 @@
    ]
   },
   "WINNING TEAM": {
-   "imo": "",
+   "imo": "9336945",
+   "imo_src": "权威库(survey_index)",
    "count": 13,
    "records": [
     {
@@ -10055,7 +10129,8 @@
    ]
   },
   "WINNING TIMES": {
-   "imo": "",
+   "imo": "9727352",
+   "imo_src": "权威库(survey_index)",
    "count": 10,
    "records": [
     {
@@ -10221,7 +10296,8 @@
    ]
   },
   "WINNING UNIVERSE": {
-   "imo": "",
+   "imo": "9346172",
+   "imo_src": "权威库(survey_index)",
    "count": 11,
    "records": [
     {
@@ -10403,7 +10479,8 @@
    ]
   },
   "WINNING VISION": {
-   "imo": "",
+   "imo": "9859765",
+   "imo_src": "权威库(survey_index)",
    "count": 4,
    "records": [
     {
@@ -10473,7 +10550,8 @@
    ]
   },
   "WINNING WAVE": {
-   "imo": "",
+   "imo": "9748100",
+   "imo_src": "权威库(survey_index)",
    "count": 11,
    "records": [
     {
@@ -10655,7 +10733,8 @@
    ]
   },
   "WINNING WEALTH": {
-   "imo": "",
+   "imo": "9362994",
+   "imo_src": "权威库(survey_index)",
    "count": 16,
    "records": [
     {
@@ -10916,7 +10995,8 @@
    ]
   },
   "WINNING WISDOM": {
-   "imo": "",
+   "imo": "9738583",
+   "imo_src": "权威库(survey_index)",
    "count": 7,
    "records": [
     {
@@ -11034,7 +11114,8 @@
    ]
   },
   "WINNING WORLD": {
-   "imo": "",
+   "imo": "9859777",
+   "imo_src": "权威库(survey_index)",
    "count": 3,
    "records": [
     {
@@ -11088,7 +11169,8 @@
    ]
   },
   "WINNING YOUTH": {
-   "imo": "",
+   "imo": "9278636",
+   "imo_src": "权威库(survey_index)",
    "count": 20,
    "records": [
     {
@@ -16744,6 +16826,14 @@
   ],
   "": [
    {
+    "ship": "WINNING BRAVE",
+    "date": "2026-09-25",
+    "port": "",
+    "defects": null,
+    "detained": false,
+    "codes": ""
+   },
+   {
     "ship": "WINNING BROTHER",
     "date": "2026-08-18",
     "port": "",
@@ -17121,9 +17211,9 @@
    "wakamatsu/kitakyushu": 6,
    "kashima, ibaraki": 6,
    "shanghai": 6,
+   "": 6,
    "callao": 5,
    "kobe": 5,
-   "": 5,
    "vancouver": 4,
    "fuzhou": 4,
    "gwangyang": 4,
@@ -17158,7 +17248,7 @@
    "dalian": 1,
    "董家口": 1
   },
-  "this_year": 48,
+  "this_year": 49,
   "detained_total": 17,
   "with_codes": 31,
   "codes_uncertain": 3,
@@ -17166,7 +17256,7 @@
   "pdf_files_matched": 2,
   "tmou_reconciled": 684,
   "tmou_mismatches": [],
-  "tmou_unmatched": 7
+  "tmou_unmatched": 8
  },
  "missing": []
 }
