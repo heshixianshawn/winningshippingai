@@ -59,12 +59,21 @@ export function getShipDetails(shipName) {
   const ship = ships[0];
   
   // Format surveys
+  // 2026-10-08：补窗口字段（window_start / window_end）。
+  //   教训：Annual / Intermediate 这类检验在船级社报告里**没有 due_date**，只在 Range Date 里给窗口。
+  //   原先只输出 due/last → 模型看不到窗口，只好自己按周年日**推算**到期日（出现过与报告不符的推断值）。
   let surveysText = '';
   for (const s of (ship.surveys || [])) {
     const desc = s.description || s.d || '';
     const due = s.due_date || s.due || '';
     const last = s.last_done || '';
-    surveysText += `  - ${desc}: ${due} (${daysText(due)})${last ? `，上次 ${last}` : ''}\n`;
+    const ws = s.window_start || s.ws || '';
+    const we = s.window_end || s.we || '';
+    const win = (ws || we) ? `${ws || '?'}~${we || '?'}` : '';
+    const when = due ? `${due} (${daysText(due)})` : (win ? `无固定至期日；窗口 ${win}` : '—');
+    surveysText += `  - ${desc}: ${when}`
+      + (win && due ? `，窗口 ${win}` : '')
+      + (last ? `，上次 ${last}` : '') + `\n`;
   }
   
   // Format certificates
