@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-08 11:00",
+  "last_updated": "2026-10-09 07:07",
   "total_ships": 64,
   "ships": {
     "SUNNY_BEYLA": {
@@ -5746,7 +5746,8 @@
           "expiry": "2027-08-31"
         },
         {
-          "name": "Load Line"
+          "name": "Load Line",
+          "expiry": "2027-08-31"
         },
         {
           "name": "Safety Construction",
@@ -5761,7 +5762,8 @@
           "expiry": "2027-08-31"
         },
         {
-          "name": "BWM"
+          "name": "BWM",
+          "expiry": "2027-08-31"
         },
         {
           "name": "IHM",
@@ -7575,7 +7577,8 @@
           "expiry": "2027-03-01"
         },
         {
-          "name": "Load Line"
+          "name": "Load Line",
+          "expiry": "2027-03-01"
         },
         {
           "name": "Safety Construction",
@@ -7590,7 +7593,8 @@
           "expiry": "2027-03-01"
         },
         {
-          "name": "BWM"
+          "name": "BWM",
+          "expiry": "2027-03-01"
         },
         {
           "name": "Cargo Gear",
@@ -7678,7 +7682,8 @@
           "expiry": "2029-06-03"
         },
         {
-          "name": "Load Line"
+          "name": "Load Line",
+          "expiry": "2029-06-03"
         },
         {
           "name": "Safety Construction",
@@ -7795,7 +7800,8 @@
           "expiry": "2027-12-06"
         },
         {
-          "name": "Load Line"
+          "name": "Load Line",
+          "expiry": "2027-12-06"
         },
         {
           "name": "Safety Construction",
@@ -7810,7 +7816,8 @@
           "expiry": "2027-12-06"
         },
         {
-          "name": "BWM"
+          "name": "BWM",
+          "expiry": "2027-12-06"
         },
         {
           "name": "Cargo Gear"
@@ -7906,7 +7913,8 @@
           "expiry": "2031-06-09"
         },
         {
-          "name": "Load Line"
+          "name": "Load Line",
+          "expiry": "2031-06-09"
         },
         {
           "name": "Safety Construction",
@@ -7921,7 +7929,8 @@
           "expiry": "2031-06-09"
         },
         {
-          "name": "BWM"
+          "name": "BWM",
+          "expiry": "2031-06-09"
         },
         {
           "name": "IHM",
@@ -8022,7 +8031,8 @@
           "expiry": "2031-08-11"
         },
         {
-          "name": "Load Line"
+          "name": "Load Line",
+          "expiry": "2031-08-11"
         },
         {
           "name": "Safety Construction",
@@ -8037,7 +8047,8 @@
           "expiry": "2031-08-11"
         },
         {
-          "name": "BWM"
+          "name": "BWM",
+          "expiry": "2031-08-11"
         },
         {
           "name": "IHM",
@@ -8128,7 +8139,8 @@
           "expiry": "2029-08-01"
         },
         {
-          "name": "Load Line"
+          "name": "Load Line",
+          "expiry": "2029-08-01"
         },
         {
           "name": "Safety Construction",
@@ -8143,7 +8155,8 @@
           "expiry": "2029-08-01"
         },
         {
-          "name": "BWM"
+          "name": "BWM",
+          "expiry": "2029-08-01"
         },
         {
           "name": "IHM",
@@ -8233,7 +8246,8 @@
           "expiry": "2030-04-16"
         },
         {
-          "name": "Load Line"
+          "name": "Load Line",
+          "expiry": "2030-04-16"
         },
         {
           "name": "Safety Construction",
@@ -8248,7 +8262,8 @@
           "expiry": "2030-04-16"
         },
         {
-          "name": "BWM"
+          "name": "BWM",
+          "expiry": "2030-04-16"
         },
         {
           "name": "IHM",
@@ -8337,7 +8352,8 @@
           "expiry": "2031-02-17"
         },
         {
-          "name": "Load Line"
+          "name": "Load Line",
+          "expiry": "2031-02-17"
         },
         {
           "name": "Safety Construction",
@@ -8352,7 +8368,8 @@
           "expiry": "2031-02-17"
         },
         {
-          "name": "BWM"
+          "name": "BWM",
+          "expiry": "2031-02-17"
         },
         {
           "name": "IHM",
@@ -8448,7 +8465,8 @@
           "expiry": "2026-10-12"
         },
         {
-          "name": "Load Line"
+          "name": "Load Line",
+          "expiry": "2026-10-12"
         },
         {
           "name": "Safety Construction",
@@ -8463,7 +8481,8 @@
           "expiry": "2026-10-12"
         },
         {
-          "name": "BWM"
+          "name": "BWM",
+          "expiry": "2026-10-12"
         },
         {
           "name": "IHM",
@@ -8483,7 +8502,7 @@
       ],
       "alerts": {
         "expired": 0,
-        "urgent_7d": 13,
+        "urgent_7d": 15,
         "warning_30d": 0,
         "info_90d": 0
       },
@@ -8558,7 +8577,8 @@
           "expiry": "2030-07-01"
         },
         {
-          "name": "Load Line"
+          "name": "Load Line",
+          "expiry": "2030-07-01"
         },
         {
           "name": "Safety Construction",
