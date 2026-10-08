@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-08 07:14",
+  "last_updated": "2026-10-08 11:00",
   "total_ships": 64,
   "ships": {
     "SUNNY_BEYLA": {
@@ -5776,7 +5776,7 @@
         },
         {
           "name": "DOC",
-          "expiry": "2026-10-15"
+          "expiry": "2027-08-31"
         },
         {
           "name": "SMC",
@@ -5785,7 +5785,7 @@
       ],
       "alerts": {
         "expired": 1,
-        "urgent_7d": 1,
+        "urgent_7d": 0,
         "warning_30d": 0,
         "info_90d": 0
       },
@@ -7013,7 +7013,8 @@
           "expiry": "2027-01-20"
         },
         {
-          "name": "EIAPP"
+          "name": "EIAPP",
+          "expiry": "2029-09-28"
         },
         {
           "name": "IAPP",
@@ -7133,7 +7134,8 @@
           "expiry": "2031-06-24"
         },
         {
-          "name": "EIAPP"
+          "name": "EIAPP",
+          "expiry": "2031-01-24"
         },
         {
           "name": "IAPP",
@@ -7274,7 +7276,8 @@
           "expiry": "2030-09-28"
         },
         {
-          "name": "IHM"
+          "name": "IHM",
+          "expiry": "2030-09-28"
         },
         {
           "name": "Cargo Gear",
@@ -7377,7 +7380,8 @@
           "expiry": "2029-11-16"
         },
         {
-          "name": "IHM"
+          "name": "IHM",
+          "expiry": "2029-11-16"
         },
         {
           "name": "Cargo Gear",
@@ -7772,7 +7776,8 @@
       ],
       "certificates": [
         {
-          "name": "ISM DOC"
+          "name": "ISM DOC",
+          "expiry": "2027-12-06"
         },
         {
           "name": "ISPS"
@@ -7815,7 +7820,8 @@
           "expiry": "2027-12-06"
         },
         {
-          "name": "DOC"
+          "name": "DOC",
+          "expiry": "2027-12-06"
         }
       ],
       "alerts": {
@@ -7881,7 +7887,8 @@
       ],
       "certificates": [
         {
-          "name": "ISM DOC"
+          "name": "ISM DOC",
+          "expiry": "2031-06-09"
         },
         {
           "name": "ISPS"
@@ -7928,7 +7935,8 @@
           "name": "AFS"
         },
         {
-          "name": "DOC"
+          "name": "DOC",
+          "expiry": "2031-06-09"
         }
       ],
       "alerts": {
@@ -8043,7 +8051,8 @@
           "name": "AFS"
         },
         {
-          "name": "DOC"
+          "name": "DOC",
+          "expiry": "2031-08-11"
         }
       ],
       "alerts": {
@@ -8632,13 +8641,16 @@
       ],
       "certificates": [
         {
-          "name": "ISPS"
+          "name": "ISPS",
+          "expiry": "2031-09-23"
         },
         {
-          "name": "ISPP"
+          "name": "ISPP",
+          "expiry": "2031-06-16"
         },
         {
-          "name": "Load Line"
+          "name": "Load Line",
+          "expiry": "2031-06-16"
         },
         {
           "name": "Safety Construction",
@@ -8653,7 +8665,8 @@
           "expiry": "2031-06-16"
         },
         {
-          "name": "BWM"
+          "name": "BWM",
+          "expiry": "2031-06-16"
         },
         {
           "name": "IHM",
@@ -8706,39 +8719,48 @@
       ],
       "certificates": [
         {
-          "name": "ISM SMC"
+          "name": "ISM SMC",
+          "expiry": "2027-02-24"
         },
         {
           "name": "ISPS",
-          "expiry": "2026-10-10"
+          "expiry": "2027-02-24"
         },
         {
           "name": "MLC",
-          "expiry": "2026-10-10"
+          "expiry": "2027-02-24"
         },
         {
-          "name": "IOPP"
+          "name": "IOPP",
+          "expiry": "2031-09-05"
         },
         {
-          "name": "IAPP"
+          "name": "IAPP",
+          "expiry": "2031-09-05"
         },
         {
-          "name": "ISPP"
+          "name": "ISPP",
+          "expiry": "2031-09-05"
         },
         {
-          "name": "Load Line"
+          "name": "Load Line",
+          "expiry": "2031-09-05"
         },
         {
-          "name": "Safety Construction"
+          "name": "Safety Construction",
+          "expiry": "2031-09-05"
         },
         {
-          "name": "Safety Equipment"
+          "name": "Safety Equipment",
+          "expiry": "2031-09-05"
         },
         {
-          "name": "Safety Radio"
+          "name": "Safety Radio",
+          "expiry": "2031-09-05"
         },
         {
-          "name": "BWM"
+          "name": "BWM",
+          "expiry": "2031-09-05"
         },
         {
           "name": "IHM"
@@ -8751,7 +8773,7 @@
         },
         {
           "name": "SMC",
-          "expiry": "2026-10-10"
+          "expiry": "2027-02-24"
         },
         {
           "name": "DOC",
@@ -8760,7 +8782,7 @@
       ],
       "alerts": {
         "expired": 0,
-        "urgent_7d": 3,
+        "urgent_7d": 0,
         "warning_30d": 1,
         "info_90d": 0
       },

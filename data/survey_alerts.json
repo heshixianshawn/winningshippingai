@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-08 07:14",
+  "generated": "2026-10-08 11:00",
   "expired": [
     {
       "ship": "WINNING RESILIENCE",
@@ -10,27 +10,6 @@
     }
   ],
   "urgent_7d": [
-    {
-      "ship": "SUNNY SKY",
-      "class": "BV",
-      "description": "ISPS",
-      "date": "2026-10-10",
-      "days": 2
-    },
-    {
-      "ship": "SUNNY SKY",
-      "class": "BV",
-      "description": "MLC",
-      "date": "2026-10-10",
-      "days": 2
-    },
-    {
-      "ship": "SUNNY SKY",
-      "class": "BV",
-      "description": "SMC",
-      "date": "2026-10-10",
-      "days": 2
-    },
     {
       "ship": "WINNING WEALTH",
       "class": "CCS",
@@ -121,13 +100,6 @@
       "description": "AFS",
       "date": "2026-10-12",
       "days": 4
-    },
-    {
-      "ship": "WINNING RESILIENCE",
-      "class": "CCS",
-      "description": "DOC",
-      "date": "2026-10-15",
-      "days": 7
     }
   ],
   "warning_30d": [
