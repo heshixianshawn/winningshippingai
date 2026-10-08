@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-07",
+ "generated": "2026-10-08",
  "source": "单船档案 PSC-FSC检查记录 sheet（TokyoMOU/APCIS 等来源）",
  "count": 692,
  "ship_count": 61,
@@ -5785,6 +5785,21 @@
    "count": 9,
    "records": [
     {
+     "date": "2026-10-07",
+     "port": "卡姆萨",
+     "port_raw": "卡姆萨",
+     "type": "PSC",
+     "authority": "",
+     "officer": "",
+     "defects": null,
+     "detained": false,
+     "codes": "",
+     "codes_uncertain": false,
+     "rectified": "",
+     "note": "来源:W.BROTHER V026 KAMSAR PSC INSPECTION REPORT.pdf|FP:7f0e79dd",
+     "defects_source": "档案(无TMOU对照)"
+    },
+    {
      "date": "2026-08-18",
      "port": "",
      "port_raw": "",
@@ -5814,22 +5829,6 @@
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship",
      "defects_official": 3,
-     "defects_source": "TokyoMOU官方"
-    },
-    {
-     "date": "2024-10-28",
-     "port": "Yantai",
-     "port_raw": "Yantai (China)",
-     "type": "",
-     "authority": "",
-     "officer": "",
-     "defects": 1,
-     "detained": false,
-     "codes": "",
-     "codes_uncertain": false,
-     "rectified": "",
-     "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship",
-     "defects_official": 1,
      "defects_source": "TokyoMOU官方"
     },
     {
@@ -12126,14 +12125,6 @@
     "codes": ""
    },
    {
-    "ship": "WINNING BROTHER",
-    "date": "2024-10-28",
-    "port": "Yantai",
-    "defects": 1,
-    "detained": false,
-    "codes": ""
-   },
-   {
     "ship": "WINNING NATURE",
     "date": "2024-10-23",
     "port": "Yantai",
@@ -17070,6 +17061,16 @@
     "codes": ""
    }
   ],
+  "卡姆萨": [
+   {
+    "ship": "WINNING BROTHER",
+    "date": "2026-10-07",
+    "port": "卡姆萨",
+    "defects": null,
+    "detained": false,
+    "codes": ""
+   }
+  ],
   "yingkou": [
    {
     "ship": "WINNING EXCELLENCE",
@@ -17177,7 +17178,7 @@
  },
  "stats": {
   "by_port": {
-   "yantai": 158,
+   "yantai": 157,
    "port hedland, wa": 69,
    "tianjin": 27,
    "qingdao": 25,
@@ -17241,6 +17242,7 @@
    "abbot point, qld": 1,
    "delta": 1,
    "himeji": 1,
+   "卡姆萨": 1,
    "yingkou": 1,
    "xiamen": 1,
    "kure, hiroshima": 1,
@@ -17248,15 +17250,15 @@
    "dalian": 1,
    "董家口": 1
   },
-  "this_year": 49,
+  "this_year": 50,
   "detained_total": 17,
   "with_codes": 31,
   "codes_uncertain": 3,
   "pdf_enriched": 0,
   "pdf_files_matched": 2,
-  "tmou_reconciled": 684,
+  "tmou_reconciled": 683,
   "tmou_mismatches": [],
-  "tmou_unmatched": 8
+  "tmou_unmatched": 9
  },
  "missing": []
 }
