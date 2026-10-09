@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-09 07:07",
+  "last_updated": "2026-10-09 20:26",
   "total_ships": 64,
   "ships": {
     "SUNNY_BEYLA": {
@@ -5710,13 +5710,13 @@
         },
         {
           "type": "boiler",
-          "desc": "Boiler Survey ( Oil-fired Aux. 2025-08-05 2027-08-31 Boiler)",
+          "desc": "Boiler Survey ( Oil-fired Aux. Boiler)",
           "due_date": "2027-08-31",
           "last_done": "2025-08-05"
         },
         {
           "type": "boiler",
-          "desc": "Boiler Survey (Steam Pipe) 2022-10-08 2027-08-31",
+          "desc": "Boiler Survey (Steam Pipe)",
           "due_date": "2027-08-31",
           "last_done": "2022-10-08"
         }
@@ -7546,13 +7546,13 @@
         },
         {
           "type": "boiler",
-          "desc": "Boiler Survey ( Oil-fired Aux.and 2025-05-01 Zhoushan 2027-03-01 Exh. Gas Composite Boiler)",
+          "desc": "Boiler Survey ( Oil-fired Aux.and Exh. Gas Composite Boiler)",
           "due_date": "2027-03-01",
           "last_done": "2025-05-01"
         },
         {
           "type": "boiler",
-          "desc": "Boiler Survey (Steam Pipe) 2022-08-09 Zhoushan 2027-08-08",
+          "desc": "Boiler Survey (Steam Pipe)",
           "due_date": "2027-08-08",
           "last_done": "2022-08-09"
         }
@@ -7650,13 +7650,13 @@
         },
         {
           "type": "boiler",
-          "desc": "Boiler Survey ( Oil-fired Aux.and 2026-07-10 Qinhuangdao 2029-06-03 Exh. Gas Composite Boiler)",
+          "desc": "Boiler Survey ( Oil-fired Aux.and Qinhuangdao Exh. Gas Composite Boiler)",
           "due_date": "2029-06-03",
           "last_done": "2026-07-10"
         },
         {
           "type": "boiler",
-          "desc": "Boiler Survey (Steam Pipe) 2024-09-10 Qingdao 2029-09-09",
+          "desc": "Boiler Survey (Steam Pipe)",
           "due_date": "2029-09-09",
           "last_done": "2024-09-10"
         }
@@ -7768,13 +7768,13 @@
         },
         {
           "type": "boiler",
-          "desc": "Boiler Survey ( Oil-fired Aux.and 2025-09-13 2027-12-06 Exh. Gas Composite Boiler)",
+          "desc": "Boiler Survey ( Oil-fired Aux.and Exh. Gas Composite Boiler)",
           "due_date": "2027-12-06",
           "last_done": "2025-09-13"
         },
         {
           "type": "boiler",
-          "desc": "Boiler Survey (Steam Pipe) 2022-11-08 2027-11-07",
+          "desc": "Boiler Survey (Steam Pipe)",
           "due_date": "2027-11-07",
           "last_done": "2022-11-08"
         }
@@ -7875,19 +7875,19 @@
         },
         {
           "type": "boiler",
-          "desc": "Boiler Survey (No.1 Oil-fired 2026-06-17 Qingdao 2029-06-16 Aux. Boiler)",
+          "desc": "Boiler Survey (No.1 Oil-fired Aux. Boiler)",
           "due_date": "2029-06-16",
           "last_done": "2026-06-17"
         },
         {
           "type": "boiler",
-          "desc": "Boiler Survey (No.2 Exhaust gas 2026-06-17 Qingdao 2029-06-16 economizer)",
+          "desc": "Boiler Survey (No.2 Exhaust gas economizer)",
           "due_date": "2029-06-16",
           "last_done": "2026-06-17"
         },
         {
           "type": "boiler",
-          "desc": "Boiler Survey (Steam Pipe) 2026-06-17 Qingdao 2031-06-16",
+          "desc": "Boiler Survey (Steam Pipe)",
           "due_date": "2031-06-16",
           "last_done": "2026-06-17"
         }
@@ -7986,12 +7986,12 @@
         },
         {
           "type": "boiler",
-          "desc": "Boiler Survey ( Oil-fired Aux.and 2029-08-11 Exh. Gas Composite Boiler)",
+          "desc": "Boiler Survey ( Oil-fired Aux.and Exh. Gas Composite Boiler)",
           "due_date": "2029-08-11"
         },
         {
           "type": "boiler",
-          "desc": "Boiler Survey (Steam Pipe) 2036-08-11",
+          "desc": "Boiler Survey (Steam Pipe)",
           "due_date": "2036-08-11"
         },
         {
@@ -8108,13 +8108,13 @@
         },
         {
           "type": "boiler",
-          "desc": "Boiler Survey ( Oil-fired Aux.and 2024-08-09 Shidao 2027-08-08 Exh. Gas Composite Boiler)",
+          "desc": "Boiler Survey ( Oil-fired Aux.and Shidao Exh. Gas Composite Boiler)",
           "due_date": "2027-08-08",
           "last_done": "2024-08-09"
         },
         {
           "type": "boiler",
-          "desc": "Boiler Survey (Steam Pipe) 2024-08-09 Shidao 2029-08-08",
+          "desc": "Boiler Survey (Steam Pipe) Shidao",
           "due_date": "2029-08-08",
           "last_done": "2024-08-09"
         }
@@ -8218,13 +8218,13 @@
         },
         {
           "type": "boiler",
-          "desc": "Boiler Survey ( Oil-fired Aux.and 2025-04-11 2028-04-10 Exh. Gas Composite Boiler)",
+          "desc": "Boiler Survey ( Oil-fired Aux.and Exh. Gas Composite Boiler)",
           "due_date": "2028-04-10",
           "last_done": "2025-04-11"
         },
         {
           "type": "boiler",
-          "desc": "Boiler Survey (Steam Pipe) 2025-04-11 2030-04-16",
+          "desc": "Boiler Survey (Steam Pipe)",
           "due_date": "2030-04-16",
           "last_done": "2025-04-11"
         }
@@ -8324,13 +8324,13 @@
         },
         {
           "type": "boiler",
-          "desc": "Boiler Survey ( Oil-fired Aux.and 2026-02-16 2029-02-15 Exh. Gas Composite Boiler)",
+          "desc": "Boiler Survey ( Oil-fired Aux.and Exh. Gas Composite Boiler)",
           "due_date": "2029-02-15",
           "last_done": "2026-02-16"
         },
         {
           "type": "boiler",
-          "desc": "Boiler Survey (Steam Pipe) 2026-02-16 2031-02-15",
+          "desc": "Boiler Survey (Steam Pipe)",
           "due_date": "2031-02-15",
           "last_done": "2026-02-16"
         }
@@ -8428,19 +8428,19 @@
         },
         {
           "type": "boiler",
-          "desc": "Boiler Survey (No.1 Oil-fired 2024-12-24 Zhoushan 2026-10-12 Aux. Boiler)",
+          "desc": "Boiler Survey (No.1 Oil-fired Aux. Boiler)",
           "due_date": "2026-10-12",
           "last_done": "2024-12-24"
         },
         {
           "type": "boiler",
-          "desc": "Boiler Survey (No.2 Exhaust gas 2024-12-24 Zhoushan 2026-10-12 economizer)",
+          "desc": "Boiler Survey (No.2 Exhaust gas economizer)",
           "due_date": "2026-10-12",
           "last_done": "2024-12-24"
         },
         {
           "type": "boiler",
-          "desc": "Boiler Survey (Steam Pipe) 2024-12-24 Zhoushan 2029-12-23",
+          "desc": "Boiler Survey (Steam Pipe)",
           "due_date": "2029-12-23",
           "last_done": "2024-12-24"
         }
@@ -8544,13 +8544,13 @@
         },
         {
           "type": "boiler",
-          "desc": "Boiler Survey ( Oil-fired Aux.and 2024-10-05 Qinhuangdao 2027-10-04 Exh. Gas Composite Boiler)",
+          "desc": "Boiler Survey ( Oil-fired Aux.and Qinhuangdao Exh. Gas Composite Boiler)",
           "due_date": "2027-10-04",
           "last_done": "2024-10-05"
         },
         {
           "type": "boiler",
-          "desc": "Boiler Survey (Steam Pipe) 2030-07-01",
+          "desc": "Boiler Survey (Steam Pipe)",
           "due_date": "2030-07-01"
         }
       ],
