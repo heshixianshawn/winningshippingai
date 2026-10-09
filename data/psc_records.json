@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-08",
+ "generated": "2026-10-09",
  "source": "单船档案 PSC-FSC检查记录 sheet（TokyoMOU/APCIS 等来源）",
  "count": 692,
  "ship_count": 61,
@@ -7055,20 +7055,19 @@
    "count": 17,
    "records": [
     {
-     "date": "2026-06-22",
-     "port": "Yantai",
-     "port_raw": "Yantai (China)",
-     "type": "",
+     "date": "2026-10-08",
+     "port": "",
+     "port_raw": "",
+     "type": "PSC",
      "authority": "",
      "officer": "",
-     "defects": 3,
+     "defects": null,
      "detained": false,
      "codes": "",
      "codes_uncertain": false,
      "rectified": "",
-     "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship",
-     "defects_official": 3,
-     "defects_source": "TokyoMOU官方"
+     "note": "来源:WINNING INTEGRITY PSC REPORT2026.10.08.pdf|FP:45af8bb6",
+     "defects_source": "档案(无TMOU对照)"
     },
     {
      "date": "2025-05-06",
@@ -11899,14 +11898,6 @@
     "defects": 3,
     "detained": false,
     "codes": "10109 THE AFTER ANCHOR LIGHT(LOWER) OUT OF ORDER\n07116 THE INSPECTION HATCH COVER ON GALLEY VENTILATOR BROKEN (ft ¢\n11113 THE REMOTE RELEASE WIRE FOR RESCUE BOAT LAUNCHING"
-   },
-   {
-    "ship": "WINNING INTEGRITY",
-    "date": "2026-06-22",
-    "port": "Yantai",
-    "defects": 3,
-    "detained": false,
-    "codes": ""
    },
    {
     "ship": "SUNNY FRIA",
@@ -16817,6 +16808,14 @@
   ],
   "": [
    {
+    "ship": "WINNING INTEGRITY",
+    "date": "2026-10-08",
+    "port": "",
+    "defects": null,
+    "detained": false,
+    "codes": ""
+   },
+   {
     "ship": "WINNING BRAVE",
     "date": "2026-09-25",
     "port": "",
@@ -17178,7 +17177,7 @@
  },
  "stats": {
   "by_port": {
-   "yantai": 157,
+   "yantai": 156,
    "port hedland, wa": 69,
    "tianjin": 27,
    "qingdao": 25,
@@ -17208,11 +17207,11 @@
    "chiba": 7,
    "nagoya, aichi": 7,
    "wakayama": 7,
+   "": 7,
    "huanghua": 6,
    "wakamatsu/kitakyushu": 6,
    "kashima, ibaraki": 6,
    "shanghai": 6,
-   "": 6,
    "callao": 5,
    "kobe": 5,
    "vancouver": 4,
@@ -17256,9 +17255,9 @@
   "codes_uncertain": 3,
   "pdf_enriched": 0,
   "pdf_files_matched": 2,
-  "tmou_reconciled": 683,
+  "tmou_reconciled": 682,
   "tmou_mismatches": [],
-  "tmou_unmatched": 9
+  "tmou_unmatched": 10
  },
  "missing": []
 }
