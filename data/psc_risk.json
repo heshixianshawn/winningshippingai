@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-11T09:02:20",
- "source": "Tokyo MOU APCIS（源文件生成于 2026-10-11T09:02:09）",
+ "generated": "2026-10-18T09:02:14",
+ "source": "Tokyo MOU APCIS（源文件生成于 2026-10-18T09:02:03）",
  "ship_count": 64,
  "ships": {
   "SUNNY BEYLA": {
@@ -9115,7 +9115,7 @@
     "imo": "0471029"
    },
    "inspections": [],
-   "status": "ok",
+   "status": "stale",
    "scanned_at": "2026-10-11T09:00:44",
    "imo": "1037397",
    "note": "本次 TMOU 扫描未成功（详情为空(限流?)），以下为上次成功结果",
@@ -9703,8 +9703,8 @@
     "imo": "0471029"
    },
    "inspections": [],
-   "status": "stale",
-   "scanned_at": "2026-09-21T05:40:21",
+   "status": "ok",
+   "scanned_at": "2026-10-18T09:02:03",
    "imo": "1084651",
    "note": "本次 TMOU 扫描未成功（详情为空(限流?)），以下为上次成功结果"
   }
