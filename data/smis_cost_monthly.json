@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-21 18:37 九大类定稿",
+ "updated": "2026-10-21 23:28 九大类定稿",
  "version": "9cats-20261021",
  "currency": "USD",
  "cats": [
@@ -1166,6 +1166,12 @@
    "坞修油漆": {}
   }
  },
+ "data_through": {
+  "repair": "2026-10-21",
+  "spare": "2026-10-21",
+  "material": "2026-10-21"
+ },
+ "data_through_max": "2026-10-21",
  "meta": {
   "year": 2026,
   "currency": "USD",
@@ -1176,6 +1182,13 @@
    "material": 508,
    "spare": 866
   },
+  "data_through": {
+   "repair": "2026-10-21",
+   "spare": "2026-10-21",
+   "material": "2026-10-21"
+  },
+  "data_through_max": "2026-10-21",
+  "generated_at": "2026-10-21 23:28:36",
   "unclassified_repair_cats": {},
   "warning_count": 319
  },
