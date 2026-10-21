@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-17 20:17",
+  "last_updated": "2026-10-22 00:17",
   "total_ships": 64,
   "ships": {
     "SUNNY_BEYLA": {
@@ -7,31 +7,13 @@
       "imo": "9364320",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": 90092,
+      "gt": "90092",
       "dwt": "180201",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2031-01-21",
-          "last_done": "2026-01-22"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2029-01-21",
-          "last_done": "2026-01-22"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (坞检)",
-          "due_date": "2029-01-21",
-          "last_done": "2026-01-22"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2031-01-21",
           "last_done": "2026-01-22"
         },
         {
@@ -118,6 +100,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2031-01-21",
           "last_done": "2026-01-22"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -159,11 +145,11 @@
         },
         {
           "name": "BWM",
-          "expiry": "21 Jan 2031"
+          "expiry": "2031-01-21"
         },
         {
           "name": "IHM",
-          "expiry": "21 Jan 2031"
+          "expiry": "2031-01-21"
         },
         {
           "name": "DOC",
@@ -183,7 +169,7 @@
         },
         {
           "name": "ISPS",
-          "expiry": "2029-09-02"
+          "expiry": "2027-02-23"
         }
       ],
       "alerts": {
@@ -199,32 +185,14 @@
       "imo": "9253090",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": 87413,
+      "gt": "87413",
       "dwt": "172565",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2026-11-27",
-          "last_done": "2021-11-19"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2026-11-27",
           "last_done": "2024-11-30"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (坞检)",
-          "due_date": "2026-11-27",
-          "last_done": "2024-11-30"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2026-11-18",
-          "last_done": "2021-11-19"
         },
         {
           "type": "statutory",
@@ -269,62 +237,34 @@
         {
           "type": "special_survey",
           "desc": "Special Survey",
-          "due_date": "27 Nov 2026",
-          "last_done": "19 Nov 2021"
-        },
-        {
-          "type": "intermediate_survey",
-          "desc": "Intermediate Survey (*1)",
-          "last_done": "30 Nov 2024"
-        },
-        {
-          "type": "annual_survey",
-          "desc": "Annual Survey",
-          "last_done": "15 Nov 2025"
-        },
-        {
-          "type": "boiler",
-          "desc": "No.1 Boiler Survey",
-          "due_date": "27 Nov 2026",
-          "last_done": "30 Nov 2024"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (*1)",
-          "due_date": "27 Nov 2026",
-          "last_done": "30 Nov 2024"
-        },
-        {
-          "type": "planned_machinery",
-          "desc": "Planned Machinery Survey"
-        },
-        {
-          "type": "special_survey",
-          "desc": "Special Survey 90",
           "due_date": "2026-11-27",
           "last_done": "2021-11-19"
         },
         {
           "type": "intermediate_survey",
-          "desc": "Intermediate Survey (*1) --",
+          "desc": "Intermediate Survey (*1)",
           "last_done": "2024-11-30"
         },
         {
           "type": "annual_survey",
-          "desc": "Annual Survey --",
+          "desc": "Annual Survey",
           "last_done": "2025-11-15"
         },
         {
           "type": "boiler",
-          "desc": "No.1 Boiler Survey 90",
+          "desc": "No.1 Boiler Survey",
           "due_date": "2026-11-27",
           "last_done": "2024-11-30"
         },
         {
           "type": "dry_docking",
-          "desc": "Docking Survey (*1) 90",
+          "desc": "Docking Survey (*1)",
           "due_date": "2026-11-27",
           "last_done": "2024-11-30"
+        },
+        {
+          "type": "planned_machinery",
+          "desc": "Planned Machinery Survey"
         },
         {
           "type": "tail_shaft",
@@ -380,26 +320,26 @@
         },
         {
           "name": "DOC",
-          "expiry": "18 Oct 2026"
+          "expiry": "2026-10-18"
         },
         {
           "name": "SMC",
-          "expiry": "08 Mar 2028"
+          "expiry": "2028-03-08"
         },
         {
           "name": "MLC",
-          "expiry": "08 Mar 2028"
+          "expiry": "2028-03-08"
         },
         {
           "name": "ISSC (ISPS)",
-          "expiry": "08 Mar 2028"
+          "expiry": "2028-03-08"
         }
       ],
       "alerts": {
         "expired": 0,
-        "urgent_7d": 1,
-        "warning_30d": 0,
-        "info_90d": 30
+        "urgent_7d": 0,
+        "warning_30d": 2,
+        "info_90d": 23
       },
       "extraction_confidence": "high"
     },
@@ -407,33 +347,15 @@
       "name": "SUNNY BOKE",
       "imo": "9198240",
       "class_society": "NK",
-      "flag": "Hong Kong, China",
-      "gt": 87473,
+      "flag": "Panama",
+      "gt": "87473",
       "dwt": "172498",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2030-06-29",
-          "last_done": "2025-06-30"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2028-06-29",
           "last_done": "2025-06-30"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (坞检)",
-          "due_date": "2028-06-29",
-          "last_done": "2025-06-30"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2030-06-29",
-          "last_done": "2020-10-05"
         },
         {
           "type": "statutory",
@@ -515,6 +437,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2030-06-29",
           "last_done": "2020-10-05"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -552,29 +478,29 @@
         },
         {
           "name": "BWM",
-          "expiry": "29 Jun 2030"
+          "expiry": "2030-06-29"
         },
         {
           "name": "IHM",
-          "expiry": "29 Jun 2030"
+          "expiry": "2030-06-29"
         },
         {
           "name": "DOC",
-          "expiry": "18 Oct 2026"
+          "expiry": "2026-10-18"
         },
         {
           "name": "SMC",
-          "expiry": "27 Oct 2030"
+          "expiry": "2030-10-27"
         },
         {
           "name": "MLC",
-          "expiry": "27 Oct 2030"
+          "expiry": "2030-10-27"
         }
       ],
       "alerts": {
         "expired": 0,
-        "urgent_7d": 1,
-        "warning_30d": 0,
+        "urgent_7d": 0,
+        "warning_30d": 1,
         "info_90d": 0
       },
       "extraction_confidence": "high"
@@ -584,31 +510,13 @@
       "imo": "9406489",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": 90092,
+      "gt": "90092",
       "dwt": "180181",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2027-11-21",
-          "last_done": "2022-11-26"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2027-11-21",
-          "last_done": "2025-10-20"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (坞检)",
-          "due_date": "2027-11-21",
-          "last_done": "2025-10-20"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2030-10-19",
           "last_done": "2025-10-20"
         },
         {
@@ -659,12 +567,12 @@
         {
           "type": "intermediate_survey",
           "desc": "Intermediate Survey (*1)",
-          "last_done": "20 Oct 2025"
+          "last_done": "2025-10-20"
         },
         {
           "type": "annual_survey",
           "desc": "Annual Survey",
-          "last_done": "17 Dec 2024"
+          "last_done": "2024-12-17"
         },
         {
           "type": "planned_machinery",
@@ -675,16 +583,6 @@
           "desc": "Special Survey",
           "due_date": "2027-11-21",
           "last_done": "2022-11-26"
-        },
-        {
-          "type": "intermediate_survey",
-          "desc": "Intermediate Survey (*1) --",
-          "last_done": "2025-10-20"
-        },
-        {
-          "type": "annual_survey",
-          "desc": "Annual Survey --",
-          "last_done": "2026-08-28"
         },
         {
           "type": "boiler",
@@ -788,32 +686,14 @@
       "imo": "9387114",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": 90125,
+      "gt": "90125",
       "dwt": "180201",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2027-04-25",
-          "last_done": "2022-05-05"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2027-04-25",
           "last_done": "2025-07-06"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (坞检)",
-          "due_date": "2027-04-25",
-          "last_done": "2025-07-06"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2027-05-04",
-          "last_done": "2007-04-26"
         },
         {
           "type": "statutory",
@@ -858,12 +738,12 @@
         {
           "type": "intermediate_survey",
           "desc": "Intermediate Survey (*1)",
-          "last_done": "06 Jul 2025"
+          "last_done": "2025-07-06"
         },
         {
           "type": "annual_survey",
           "desc": "Annual Survey",
-          "last_done": "19 Feb 2026"
+          "last_done": "2026-02-19"
         },
         {
           "type": "planned_machinery",
@@ -874,16 +754,6 @@
           "desc": "Special Survey",
           "due_date": "2027-04-25",
           "last_done": "2022-05-05"
-        },
-        {
-          "type": "intermediate_survey",
-          "desc": "Intermediate Survey (*1) --",
-          "last_done": "2025-07-06"
-        },
-        {
-          "type": "annual_survey",
-          "desc": "Annual Survey --",
-          "last_done": "2026-02-19"
         },
         {
           "type": "boiler",
@@ -955,15 +825,15 @@
         },
         {
           "name": "SMC",
-          "expiry": "12 Dec 2026"
+          "expiry": "2026-12-12"
         },
         {
           "name": "MLC",
-          "expiry": "12 Dec 2026"
+          "expiry": "2026-12-12"
         },
         {
           "name": "ISSC (ISPS)",
-          "expiry": "12 Dec 2026"
+          "expiry": "2026-12-12"
         }
       ],
       "alerts": {
@@ -978,32 +848,14 @@
       "name": "SUNNY DABOLA",
       "imo": "9398149",
       "class_society": "NK",
-      "flag": "Hong Kong, China",
-      "gt": 106367,
+      "flag": "Panama",
+      "gt": "106367",
       "dwt": "207991",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2029-10-22",
-          "last_done": "2024-09-10"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2027-09-09",
-          "last_done": "2024-09-10"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (坞检)",
-          "due_date": "2027-09-09",
-          "last_done": "2024-09-10"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2029-10-23",
           "last_done": "2024-09-10"
         },
         {
@@ -1091,6 +943,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2029-10-23",
           "last_done": "2024-09-10"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -1128,23 +984,23 @@
         },
         {
           "name": "BWM",
-          "expiry": "22 Oct 2029"
+          "expiry": "2029-10-22"
         },
         {
           "name": "IHM",
-          "expiry": "22 Oct 2029"
+          "expiry": "2029-10-22"
         },
         {
           "name": "DOC",
-          "expiry": "25 Oct 2026"
+          "expiry": "2026-10-25"
         },
         {
           "name": "SMC",
-          "expiry": "16 Aug 2029"
+          "expiry": "2029-08-16"
         },
         {
           "name": "MLC",
-          "expiry": "16 Aug 2029"
+          "expiry": "2029-08-16"
         },
         {
           "name": "ISPS",
@@ -1164,32 +1020,14 @@
       "imo": "9336969",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": 106367,
+      "gt": "106367",
       "dwt": "208014",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2030-10-07",
-          "last_done": "2025-07-16"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2028-07-15",
           "last_done": "2025-07-16"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (坞检)",
-          "due_date": "2028-07-15",
-          "last_done": "2025-07-16"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2027-09-21",
-          "last_done": "2007-11-06"
         },
         {
           "type": "statutory",
@@ -1276,6 +1114,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2027-09-21",
           "last_done": "2007-11-06"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -1317,11 +1159,11 @@
         },
         {
           "name": "BWM",
-          "expiry": "07 Oct 2030"
+          "expiry": "2030-10-07"
         },
         {
           "name": "IHM",
-          "expiry": "07 Oct 2030"
+          "expiry": "2030-10-07"
         },
         {
           "name": "DOC",
@@ -1329,15 +1171,15 @@
         },
         {
           "name": "SMC",
-          "expiry": "07 Jan 2027"
+          "expiry": "2027-01-07"
         },
         {
           "name": "MLC",
-          "expiry": "07 Jan 2027"
+          "expiry": "2027-01-07"
         },
         {
           "name": "ISSC (ISPS)",
-          "expiry": "07 Jan 2027"
+          "expiry": "2027-01-07"
         }
       ],
       "alerts": {
@@ -1353,32 +1195,14 @@
       "imo": "9336957",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": 101953,
+      "gt": "101953",
       "dwt": "203200",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2030-06-24",
-          "last_done": "2025-07-16"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2028-07-15",
           "last_done": "2025-07-16"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (坞检)",
-          "due_date": "2028-07-15",
-          "last_done": "2025-07-16"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2030-07-15",
-          "last_done": "2007-05-25"
         },
         {
           "type": "statutory",
@@ -1460,6 +1284,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2030-07-15",
           "last_done": "2007-05-25"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -1497,11 +1325,11 @@
         },
         {
           "name": "BWM",
-          "expiry": "24 Jun 2030"
+          "expiry": "2030-06-24"
         },
         {
           "name": "IHM",
-          "expiry": "24 Jun 2030"
+          "expiry": "2030-06-24"
         },
         {
           "name": "DOC",
@@ -1537,32 +1365,14 @@
       "imo": "9398113",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": 106367,
+      "gt": "106367",
       "dwt": "207945",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2030-05-24",
-          "last_done": "2025-08-22"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2028-08-21",
           "last_done": "2025-08-22"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (坞检)",
-          "due_date": "2028-08-21",
-          "last_done": "2025-08-22"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2030-08-21",
-          "last_done": "2020-05-22"
         },
         {
           "type": "statutory",
@@ -1644,6 +1454,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2030-08-21",
           "last_done": "2020-05-22"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -1697,15 +1511,15 @@
         },
         {
           "name": "SMC",
-          "expiry": "24 Dec 2030"
+          "expiry": "2030-12-24"
         },
         {
           "name": "MLC",
-          "expiry": "24 Dec 2030"
+          "expiry": "2030-12-24"
         },
         {
           "name": "ISSC (ISPS)",
-          "expiry": "24 Dec 2030"
+          "expiry": "2030-12-24"
         }
       ],
       "alerts": {
@@ -1721,32 +1535,14 @@
       "imo": "9374064",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": 90396,
+      "gt": "90396",
       "dwt": "180182",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2029-07-01",
-          "last_done": "2024-04-20"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2027-04-19",
           "last_done": "2024-04-20"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (坞检)",
-          "due_date": "2027-04-19",
-          "last_done": "2024-04-20"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2029-05-21",
-          "last_done": "2014-05-23"
         },
         {
           "type": "statutory",
@@ -1833,6 +1629,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2029-05-21",
           "last_done": "2014-05-23"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -1910,32 +1710,14 @@
       "imo": "9271597",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": 102101,
+      "gt": "102101",
       "dwt": "203248",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2029-08-18",
-          "last_done": "2024-09-08"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2027-09-07",
           "last_done": "2024-09-08"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (坞检)",
-          "due_date": "2027-09-07",
-          "last_done": "2024-09-08"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2027-08-26",
-          "last_done": "2012-08-27"
         },
         {
           "type": "statutory",
@@ -2022,6 +1804,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2027-08-26",
           "last_done": "2012-08-27"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -2059,11 +1845,11 @@
         },
         {
           "name": "BWM",
-          "expiry": "18 Aug 2029"
+          "expiry": "2029-08-18"
         },
         {
           "name": "IHM",
-          "expiry": "18 Aug 2029"
+          "expiry": "2029-08-18"
         },
         {
           "name": "DOC",
@@ -2095,32 +1881,14 @@
       "imo": "9254666",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": 88674,
+      "gt": "88674",
       "dwt": "176391",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2027-06-25",
-          "last_done": "2022-07-14"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2027-06-25",
           "last_done": "2025-06-06"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (坞检)",
-          "due_date": "2027-06-25",
-          "last_done": "2025-06-06"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2027-07-26",
-          "last_done": "2017-07-27"
         },
         {
           "type": "statutory",
@@ -2165,12 +1933,12 @@
         {
           "type": "intermediate_survey",
           "desc": "Intermediate Survey (*1)",
-          "last_done": "06 Jun 2025"
+          "last_done": "2025-06-06"
         },
         {
           "type": "annual_survey",
           "desc": "Annual Survey",
-          "last_done": "05 May 2026"
+          "last_done": "2026-05-05"
         },
         {
           "type": "planned_machinery",
@@ -2181,16 +1949,6 @@
           "desc": "Special Survey",
           "due_date": "2027-06-25",
           "last_done": "2022-07-14"
-        },
-        {
-          "type": "intermediate_survey",
-          "desc": "Intermediate Survey (*1) --",
-          "last_done": "2025-06-06"
-        },
-        {
-          "type": "annual_survey",
-          "desc": "Annual Survey --",
-          "last_done": "2026-05-05"
         },
         {
           "type": "boiler",
@@ -2262,15 +2020,15 @@
         },
         {
           "name": "SMC",
-          "expiry": "20 Sep 2028"
+          "expiry": "2028-09-20"
         },
         {
           "name": "MLC",
-          "expiry": "20 Sep 2028"
+          "expiry": "2028-09-20"
         },
         {
           "name": "ISSC (ISPS)",
-          "expiry": "20 Sep 2028"
+          "expiry": "2028-09-20"
         },
         {
           "name": "Dangerous Goods",
@@ -2278,7 +2036,7 @@
         },
         {
           "name": "ISPS",
-          "expiry": "2028-09-10"
+          "expiry": "2028-09-20"
         }
       ],
       "alerts": {
@@ -2294,31 +2052,13 @@
       "imo": "9346342",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": 104725,
+      "gt": "104725",
       "dwt": "206296",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2030-10-06",
-          "last_done": "2025-09-29"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2028-09-28",
-          "last_done": "2025-09-29"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (坞检)",
-          "due_date": "2028-09-28",
-          "last_done": "2025-09-29"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2030-09-28",
           "last_done": "2025-09-29"
         },
         {
@@ -2406,6 +2146,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2030-09-28",
           "last_done": "2025-09-29"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -2459,19 +2203,19 @@
         },
         {
           "name": "SMC",
-          "expiry": "29 Jan 2027"
+          "expiry": "2027-01-29"
         },
         {
           "name": "MLC",
-          "expiry": "29 Jan 2027"
+          "expiry": "2027-01-29"
         },
         {
           "name": "ISSC (ISPS)",
-          "expiry": "29 Jan 2027"
+          "expiry": "2027-01-29"
         },
         {
           "name": "ISPS",
-          "expiry": "2029-02-24"
+          "expiry": "2027-01-29"
         }
       ],
       "alerts": {
@@ -2487,32 +2231,14 @@
       "imo": "9331426",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": 101953,
+      "gt": "101953",
       "dwt": "203264",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2030-11-14",
-          "last_done": "2025-09-08"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2028-09-07",
           "last_done": "2025-09-08"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (坞检)",
-          "due_date": "2028-09-07",
-          "last_done": "2025-09-08"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2030-08-12",
-          "last_done": "2015-08-13"
         },
         {
           "type": "statutory",
@@ -2593,6 +2319,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2030-08-12",
           "last_done": "2015-08-13"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -2638,25 +2368,25 @@
         },
         {
           "name": "DOC",
-          "expiry": "18 Oct 2026"
+          "expiry": "2026-10-18"
         },
         {
           "name": "SMC",
-          "expiry": "05 Mar 2031"
+          "expiry": "2031-03-05"
         },
         {
           "name": "MLC",
-          "expiry": "05 Mar 2031"
+          "expiry": "2031-03-05"
         },
         {
           "name": "ISSC (ISPS)",
-          "expiry": "05 Mar 2031"
+          "expiry": "2031-03-05"
         }
       ],
       "alerts": {
         "expired": 0,
-        "urgent_7d": 1,
-        "warning_30d": 0,
+        "urgent_7d": 0,
+        "warning_30d": 1,
         "info_90d": 0
       },
       "extraction_confidence": "high"
@@ -2666,31 +2396,13 @@
       "imo": "9393187",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": 90111,
+      "gt": "90111",
       "dwt": "180129",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2029-04-09",
-          "last_done": "2024-04-22"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2027-04-21",
-          "last_done": "2024-04-22"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (坞检)",
-          "due_date": "2027-04-21",
-          "last_done": "2024-04-22"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2029-04-21",
           "last_done": "2024-04-22"
         },
         {
@@ -2773,6 +2485,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2029-04-21",
           "last_done": "2024-04-22"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -2830,26 +2546,26 @@
         },
         {
           "name": "SMC",
-          "expiry": "19 Jan 2027"
+          "expiry": "2027-01-19"
         },
         {
           "name": "MLC",
-          "expiry": "19 Jan 2027"
+          "expiry": "2027-01-19"
         },
         {
           "name": "ISSC (ISPS)",
-          "expiry": "19 Jan 2027"
+          "expiry": "2027-01-19"
         },
         {
           "name": "ISPS",
-          "expiry": "2029-08-10"
+          "expiry": "2027-01-19"
         }
       ],
       "alerts": {
         "expired": 0,
         "urgent_7d": 0,
         "warning_30d": 0,
-        "info_90d": 0
+        "info_90d": 4
       },
       "extraction_confidence": "high"
     },
@@ -2858,32 +2574,14 @@
       "imo": "9439125",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": 90091,
+      "gt": "90091",
       "dwt": "180176",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2031-09-07",
-          "last_done": "2026-07-30"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2029-07-29",
           "last_done": "2026-07-30"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (坞检)",
-          "due_date": "2029-07-29",
-          "last_done": "2026-07-30"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2031-07-29",
-          "last_done": "2021-06-12"
         },
         {
           "type": "statutory",
@@ -2969,6 +2667,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2031-07-29",
           "last_done": "2021-06-12"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -3030,15 +2732,15 @@
         },
         {
           "name": "SMC",
-          "expiry": "30 Jan 2027"
+          "expiry": "2027-01-30"
         },
         {
           "name": "MLC",
-          "expiry": "30 Jan 2027"
+          "expiry": "2027-01-30"
         },
         {
           "name": "ISSC (ISPS)",
-          "expiry": "30 Jan 2027"
+          "expiry": "2027-01-30"
         }
       ],
       "alerts": {
@@ -3054,32 +2756,14 @@
       "imo": "9406453",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": 104721,
+      "gt": "104721",
       "dwt": "206312",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2027-04-24",
-          "last_done": "2022-07-23"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2027-04-24",
           "last_done": "2025-08-15"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (坞检)",
-          "due_date": "2027-04-24",
-          "last_done": "2025-08-15"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2027-07-24",
-          "last_done": "2022-07-23"
         },
         {
           "type": "statutory",
@@ -3129,12 +2813,12 @@
         {
           "type": "intermediate_survey",
           "desc": "Intermediate Survey (*1)",
-          "last_done": "15 Aug 2025"
+          "last_done": "2025-08-15"
         },
         {
           "type": "annual_survey",
           "desc": "Annual Survey",
-          "last_done": "07 Apr 2026"
+          "last_done": "2026-04-07"
         },
         {
           "type": "planned_machinery",
@@ -3145,16 +2829,6 @@
           "desc": "Special Survey",
           "due_date": "2027-04-24",
           "last_done": "2022-07-23"
-        },
-        {
-          "type": "intermediate_survey",
-          "desc": "Intermediate Survey (*1) --",
-          "last_done": "2025-08-15"
-        },
-        {
-          "type": "annual_survey",
-          "desc": "Annual Survey --",
-          "last_done": "2026-04-07"
         },
         {
           "type": "boiler",
@@ -3230,15 +2904,15 @@
         },
         {
           "name": "SMC",
-          "expiry": "23 Jan 2027"
+          "expiry": "2027-01-23"
         },
         {
           "name": "MLC",
-          "expiry": "23 Jan 2027"
+          "expiry": "2027-01-23"
         },
         {
           "name": "ISSC (ISPS)",
-          "expiry": "23 Jan 2027"
+          "expiry": "2027-01-23"
         }
       ],
       "alerts": {
@@ -3254,31 +2928,13 @@
       "imo": "9406506",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 104761,
+      "gt": "104761",
       "dwt": "206306",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2027-12-18",
-          "last_done": "2023-03-03"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2027-12-18",
-          "last_done": "2025-12-23"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (坞检)",
-          "due_date": "2027-12-18",
-          "last_done": "2025-12-23"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2030-12-22",
           "last_done": "2025-12-23"
         },
         {
@@ -3329,7 +2985,7 @@
         {
           "type": "intermediate_survey",
           "desc": "Intermediate Survey (*1)",
-          "last_done": "23 Dec 2025"
+          "last_done": "2025-12-23"
         },
         {
           "type": "planned_machinery",
@@ -3340,11 +2996,6 @@
           "desc": "Special Survey",
           "due_date": "2027-12-18",
           "last_done": "2023-03-03"
-        },
-        {
-          "type": "intermediate_survey",
-          "desc": "Intermediate Survey (*1) --",
-          "last_done": "2025-12-23"
         },
         {
           "type": "annual_survey",
@@ -3423,15 +3074,15 @@
         },
         {
           "name": "SMC",
-          "expiry": "02 Mar 2028"
+          "expiry": "2028-03-02"
         },
         {
           "name": "MLC",
-          "expiry": "02 Mar 2028"
+          "expiry": "2028-03-02"
         },
         {
           "name": "ISSC (ISPS)",
-          "expiry": "02 Mar 2028"
+          "expiry": "2028-03-02"
         },
         {
           "name": "ISPS",
@@ -3451,31 +3102,14 @@
       "imo": "9492218",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 106884,
+      "gt": "106884",
       "dwt": "206125",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2029-08-21",
-          "last_done": "2024-09-27"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2027-09-26",
           "last_done": "2024-09-27"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (坞检)",
-          "due_date": "2027-09-26",
-          "last_done": "2024-09-27"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2027-01-03"
         },
         {
           "type": "statutory",
@@ -3525,7 +3159,7 @@
         {
           "type": "annual_survey",
           "desc": "Annual Survey",
-          "last_done": "25 May 2025"
+          "last_done": "2025-05-25"
         },
         {
           "type": "planned_machinery",
@@ -3544,13 +3178,6 @@
           "window_end": "2026-11-21"
         },
         {
-          "type": "annual_survey",
-          "desc": "Annual Survey 90",
-          "last_done": "2025-05-25",
-          "window_start": "2026-05-21",
-          "window_end": "2026-11-21"
-        },
-        {
           "type": "boiler",
           "desc": "No.1 Boiler Survey",
           "due_date": "2027-09-26",
@@ -3565,7 +3192,12 @@
         {
           "type": "tail_shaft",
           "desc": "No.1 Prop. Shaft Svy",
-          "due_date": "2027-01-03"
+          "due_date": "2027-01-03",
+          "last_done": "2027-01-03"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -3615,19 +3247,19 @@
         },
         {
           "name": "DOC",
-          "expiry": "18 Oct 2026"
+          "expiry": "2026-10-18"
         },
         {
           "name": "SMC",
-          "expiry": "26 Sep 2029"
+          "expiry": "2029-09-26"
         },
         {
           "name": "MLC",
-          "expiry": "26 Sep 2029"
+          "expiry": "2029-09-26"
         },
         {
           "name": "ISSC (ISPS)",
-          "expiry": "26 Sep 2029"
+          "expiry": "2029-09-26"
         },
         {
           "name": "ISPS",
@@ -3636,9 +3268,9 @@
       ],
       "alerts": {
         "expired": 0,
-        "urgent_7d": 1,
-        "warning_30d": 0,
-        "info_90d": 2
+        "urgent_7d": 0,
+        "warning_30d": 1,
+        "info_90d": 1
       },
       "extraction_confidence": "high"
     },
@@ -3647,31 +3279,13 @@
       "imo": "9250610",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": 94779,
+      "gt": "94779",
       "dwt": "184887",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2030-10-17",
-          "last_done": "2025-09-25"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2028-09-24",
-          "last_done": "2025-09-25"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (坞检)",
-          "due_date": "2028-09-24",
-          "last_done": "2025-09-25"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2030-09-24",
           "last_done": "2025-09-25"
         },
         {
@@ -3719,6 +3333,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2030-09-24",
           "last_done": "2025-09-25"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -3764,19 +3382,19 @@
         },
         {
           "name": "DOC",
-          "expiry": "18 Oct 2026"
+          "expiry": "2026-10-18"
         },
         {
           "name": "SMC",
-          "expiry": "10 Jun 2029"
+          "expiry": "2029-06-10"
         },
         {
           "name": "MLC",
-          "expiry": "10 Jun 2029"
+          "expiry": "2029-06-10"
         },
         {
           "name": "ISSC (ISPS)",
-          "expiry": "10 Jun 2029"
+          "expiry": "2029-06-10"
         },
         {
           "name": "Dangerous Goods",
@@ -3789,8 +3407,8 @@
       ],
       "alerts": {
         "expired": 0,
-        "urgent_7d": 1,
-        "warning_30d": 0,
+        "urgent_7d": 0,
+        "warning_30d": 1,
         "info_90d": 0
       },
       "extraction_confidence": "high"
@@ -3800,32 +3418,14 @@
       "imo": "9325001",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 90091,
+      "gt": "90091",
       "dwt": "180265",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2030-01-31",
-          "last_done": "2024-12-28"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2027-12-27",
           "last_done": "2024-12-28"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (坞检)",
-          "due_date": "2027-12-27",
-          "last_done": "2024-12-28"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2030-01-30",
-          "last_done": "2019-12-14"
         },
         {
           "type": "statutory",
@@ -3912,6 +3512,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2030-01-30",
           "last_done": "2019-12-14"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -3961,19 +3565,19 @@
         },
         {
           "name": "DOC",
-          "expiry": "18 Oct 2026"
+          "expiry": "2026-10-18"
         },
         {
           "name": "SMC",
-          "expiry": "08 Mar 2027"
+          "expiry": "2027-03-08"
         },
         {
           "name": "MLC",
-          "expiry": "08 Apr 2028"
+          "expiry": "2028-04-08"
         },
         {
           "name": "ISSC (ISPS)",
-          "expiry": "08 Mar 2027"
+          "expiry": "2027-03-08"
         },
         {
           "name": "ISPS",
@@ -3982,8 +3586,8 @@
       ],
       "alerts": {
         "expired": 0,
-        "urgent_7d": 1,
-        "warning_30d": 0,
+        "urgent_7d": 0,
+        "warning_30d": 1,
         "info_90d": 0
       },
       "extraction_confidence": "high"
@@ -3993,32 +3597,14 @@
       "imo": "9374088",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 90091,
+      "gt": "90091",
       "dwt": "180277",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2031-05-17",
-          "last_done": "2026-05-12"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2028-10-23",
           "last_done": "2025-10-24"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (坞检)",
-          "due_date": "2028-10-23",
-          "last_done": "2025-10-24"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2028-08-02",
-          "last_done": "2023-06-27"
         },
         {
           "type": "statutory",
@@ -4104,6 +3690,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2028-08-02",
           "last_done": "2023-06-27"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -4153,19 +3743,19 @@
         },
         {
           "name": "DOC",
-          "expiry": "18 Oct 2026"
+          "expiry": "2026-10-18"
         },
         {
           "name": "SMC",
-          "expiry": "27 Jan 2027"
+          "expiry": "2027-01-27"
         },
         {
           "name": "MLC",
-          "expiry": "27 Jan 2027"
+          "expiry": "2027-01-27"
         },
         {
           "name": "ISSC (ISPS)",
-          "expiry": "27 Jan 2027"
+          "expiry": "2027-01-27"
         },
         {
           "name": "ISPS",
@@ -4174,8 +3764,8 @@
       ],
       "alerts": {
         "expired": 0,
-        "urgent_7d": 1,
-        "warning_30d": 0,
+        "urgent_7d": 0,
+        "warning_30d": 1,
         "info_90d": 0
       },
       "extraction_confidence": "high"
@@ -4185,31 +3775,13 @@
       "imo": "9232058",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 87590,
+      "gt": "87590",
       "dwt": "170578",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2030-07-15",
-          "last_done": "2025-07-16"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2028-07-15",
-          "last_done": "2025-07-16"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (坞检)",
-          "due_date": "2028-07-15",
-          "last_done": "2025-07-16"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2030-07-15",
           "last_done": "2025-07-16"
         },
         {
@@ -4292,6 +3864,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2030-07-15",
           "last_done": "2025-07-16"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -4341,19 +3917,19 @@
         },
         {
           "name": "DOC",
-          "expiry": "18 Oct 2026"
+          "expiry": "2026-10-18"
         },
         {
           "name": "SMC",
-          "expiry": "20 Jun 2028"
+          "expiry": "2028-06-20"
         },
         {
           "name": "MLC",
-          "expiry": "30 Mar 2028"
+          "expiry": "2028-03-30"
         },
         {
           "name": "ISSC (ISPS)",
-          "expiry": "20 Jun 2028"
+          "expiry": "2028-06-20"
         },
         {
           "name": "Dangerous Goods",
@@ -4361,13 +3937,13 @@
         },
         {
           "name": "ISPS",
-          "expiry": "2028-03-30"
+          "expiry": "2028-06-20"
         }
       ],
       "alerts": {
         "expired": 0,
-        "urgent_7d": 1,
-        "warning_30d": 0,
+        "urgent_7d": 0,
+        "warning_30d": 1,
         "info_90d": 0
       },
       "extraction_confidence": "high"
@@ -4377,31 +3953,13 @@
       "imo": "9279393",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 113929,
+      "gt": "113929",
       "dwt": "229186",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2029-05-25",
-          "last_done": "2024-04-08"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2027-04-07",
-          "last_done": "2024-04-08"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (坞检)",
-          "due_date": "2027-04-07",
-          "last_done": "2024-04-08"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2029-05-24",
           "last_done": "2024-04-08"
         },
         {
@@ -4489,6 +4047,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2029-05-24",
           "last_done": "2024-04-08"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -4538,25 +4100,25 @@
         },
         {
           "name": "DOC",
-          "expiry": "18 Oct 2026"
+          "expiry": "2026-10-18"
         },
         {
           "name": "SMC",
-          "expiry": "15 Apr 2031"
+          "expiry": "2031-04-15"
         },
         {
           "name": "MLC",
-          "expiry": "15 Apr 2031"
+          "expiry": "2031-04-15"
         },
         {
           "name": "ISSC (ISPS)",
-          "expiry": "15 Apr 2031"
+          "expiry": "2031-04-15"
         }
       ],
       "alerts": {
         "expired": 0,
-        "urgent_7d": 1,
-        "warning_30d": 0,
+        "urgent_7d": 0,
+        "warning_30d": 1,
         "info_90d": 0
       },
       "extraction_confidence": "high"
@@ -4566,32 +4128,14 @@
       "imo": "9314076",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 90091,
+      "gt": "90091",
       "dwt": "180310",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2029-10-19",
-          "last_done": "2024-10-07"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2027-10-06",
           "last_done": "2024-10-07"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (坞检)",
-          "due_date": "2027-10-06",
-          "last_done": "2024-10-07"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2029-10-21",
-          "last_done": "2014-10-23"
         },
         {
           "type": "statutory",
@@ -4678,6 +4222,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2029-10-21",
           "last_done": "2014-10-23"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -4727,19 +4275,19 @@
         },
         {
           "name": "DOC",
-          "expiry": "18 Oct 2026"
+          "expiry": "2026-10-18"
         },
         {
           "name": "SMC",
-          "expiry": "07 May 2028"
+          "expiry": "2028-05-07"
         },
         {
           "name": "MLC",
-          "expiry": "07 May 2028"
+          "expiry": "2028-05-07"
         },
         {
           "name": "ISSC (ISPS)",
-          "expiry": "07 May 2028"
+          "expiry": "2028-05-07"
         },
         {
           "name": "Dangerous Goods",
@@ -4748,8 +4296,8 @@
       ],
       "alerts": {
         "expired": 0,
-        "urgent_7d": 1,
-        "warning_30d": 0,
+        "urgent_7d": 0,
+        "warning_30d": 1,
         "info_90d": 0
       },
       "extraction_confidence": "high"
@@ -4759,32 +4307,14 @@
       "imo": "9722948",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 107791,
+      "gt": "107791",
       "dwt": "209513",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2031-04-25",
-          "last_done": "2026-03-02"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2029-03-01",
           "last_done": "2026-03-02"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (坞检)",
-          "due_date": "2029-03-01",
-          "last_done": "2026-03-02"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2031-04-25",
-          "last_done": "2021-05-16"
         },
         {
           "type": "statutory",
@@ -4870,6 +4400,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2031-04-25",
           "last_done": "2021-05-16"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -4927,25 +4461,25 @@
         },
         {
           "name": "DOC",
-          "expiry": "18 Oct 2026"
+          "expiry": "2026-10-18"
         },
         {
           "name": "SMC",
-          "expiry": "01 Mar 2031"
+          "expiry": "2031-03-01"
         },
         {
           "name": "MLC",
-          "expiry": "01 Mar 2031"
+          "expiry": "2031-03-01"
         },
         {
           "name": "ISSC (ISPS)",
-          "expiry": "01 Mar 2031"
+          "expiry": "2031-03-01"
         }
       ],
       "alerts": {
         "expired": 0,
-        "urgent_7d": 1,
-        "warning_30d": 0,
+        "urgent_7d": 0,
+        "warning_30d": 1,
         "info_90d": 0
       },
       "extraction_confidence": "high"
@@ -4955,32 +4489,14 @@
       "imo": "9722950",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 107791,
+      "gt": "107791",
       "dwt": "209545",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2031-08-09",
-          "last_done": "2026-06-07"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2029-06-06",
           "last_done": "2026-06-07"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (坞检)",
-          "due_date": "2029-06-06",
-          "last_done": "2026-06-07"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2031-08-08",
-          "last_done": "2021-06-15"
         },
         {
           "type": "statutory",
@@ -5066,6 +4582,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2031-08-08",
           "last_done": "2021-06-15"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -5123,19 +4643,19 @@
         },
         {
           "name": "DOC",
-          "expiry": "18 Oct 2026"
+          "expiry": "2026-10-18"
         },
         {
           "name": "SMC",
-          "expiry": "13 Nov 2026"
+          "expiry": "2026-11-13"
         },
         {
           "name": "MLC",
-          "expiry": "13 Nov 2026"
+          "expiry": "2026-11-13"
         },
         {
           "name": "ISSC (ISPS)",
-          "expiry": "13 Nov 2026"
+          "expiry": "2026-11-13"
         },
         {
           "name": "ISPS",
@@ -5144,8 +4664,8 @@
       ],
       "alerts": {
         "expired": 0,
-        "urgent_7d": 1,
-        "warning_30d": 4,
+        "urgent_7d": 0,
+        "warning_30d": 5,
         "info_90d": 0
       },
       "extraction_confidence": "high"
@@ -5155,31 +4675,13 @@
       "imo": "9633068",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 92758,
+      "gt": "92758",
       "dwt": "181501",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2030-07-25",
-          "last_done": "2025-07-24"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2028-07-23",
-          "last_done": "2025-07-24"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (坞检)",
-          "due_date": "2028-07-23",
-          "last_done": "2025-07-24"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2030-07-23",
           "last_done": "2025-07-24"
         },
         {
@@ -5262,6 +4764,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2030-07-23",
           "last_done": "2025-07-24"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -5307,29 +4813,29 @@
         },
         {
           "name": "IHM",
-          "expiry": "10 Jul 2030"
+          "expiry": "2030-07-25"
         },
         {
           "name": "DOC",
-          "expiry": "18 Oct 2026"
+          "expiry": "2026-10-18"
         },
         {
           "name": "SMC",
-          "expiry": "04 Mar 2031"
+          "expiry": "2031-03-04"
         },
         {
           "name": "MLC",
-          "expiry": "04 Mar 2031"
+          "expiry": "2031-03-04"
         },
         {
           "name": "ISSC (ISPS)",
-          "expiry": "04 Mar 2031"
+          "expiry": "2031-03-04"
         }
       ],
       "alerts": {
         "expired": 0,
-        "urgent_7d": 1,
-        "warning_30d": 0,
+        "urgent_7d": 0,
+        "warning_30d": 1,
         "info_90d": 0
       },
       "extraction_confidence": "high"
@@ -5339,32 +4845,14 @@
       "imo": "9314052",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 90091,
+      "gt": "90091",
       "dwt": "180310",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2029-08-08",
-          "last_done": "2024-08-16"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2027-08-15",
           "last_done": "2024-08-16"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (坞检)",
-          "due_date": "2027-08-15",
-          "last_done": "2024-08-16"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2026-11-24",
-          "last_done": "2021-11-25"
         },
         {
           "type": "statutory",
@@ -5451,6 +4939,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2031-11-23",
           "last_done": "2021-11-25"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -5500,19 +4992,19 @@
         },
         {
           "name": "DOC",
-          "expiry": "18 Oct 2026"
+          "expiry": "2026-10-18"
         },
         {
           "name": "SMC",
-          "expiry": "19 Jan 2031"
+          "expiry": "2031-01-19"
         },
         {
           "name": "MLC",
-          "expiry": "19 Jan 2031"
+          "expiry": "2031-01-19"
         },
         {
           "name": "ISSC (ISPS)",
-          "expiry": "19 Jan 2031"
+          "expiry": "2031-01-19"
         },
         {
           "name": "Dangerous Goods",
@@ -5521,9 +5013,9 @@
       ],
       "alerts": {
         "expired": 0,
-        "urgent_7d": 1,
-        "warning_30d": 0,
-        "info_90d": 1
+        "urgent_7d": 0,
+        "warning_30d": 1,
+        "info_90d": 0
       },
       "extraction_confidence": "high"
     },
@@ -5532,32 +5024,14 @@
       "imo": "9659854",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 92752,
+      "gt": "92752",
       "dwt": "181371",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2028-07-21",
-          "last_done": "2023-07-04"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2028-07-21",
           "last_done": "2026-06-09"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (坞检)",
-          "due_date": "2028-07-21",
-          "last_done": "2026-06-09"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2028-07-03",
-          "last_done": "2023-07-04"
         },
         {
           "type": "statutory",
@@ -5607,7 +5081,7 @@
         {
           "type": "intermediate_survey",
           "desc": "Intermediate Survey (*1)",
-          "last_done": "09 Jun 2026"
+          "last_done": "2026-06-09"
         },
         {
           "type": "planned_machinery",
@@ -5618,11 +5092,6 @@
           "desc": "Special Survey",
           "due_date": "2028-07-21",
           "last_done": "2023-07-04"
-        },
-        {
-          "type": "intermediate_survey",
-          "desc": "Intermediate Survey (*1) --",
-          "last_done": "2026-06-09"
         },
         {
           "type": "annual_survey",
@@ -5697,25 +5166,25 @@
         },
         {
           "name": "DOC",
-          "expiry": "18 Oct 2026"
+          "expiry": "2026-10-18"
         },
         {
           "name": "SMC",
-          "expiry": "23 Dec 2026"
+          "expiry": "2026-12-23"
         },
         {
           "name": "MLC",
-          "expiry": "23 Dec 2026"
+          "expiry": "2026-12-23"
         },
         {
           "name": "ISSC (ISPS)",
-          "expiry": "23 Dec 2026"
+          "expiry": "2026-12-23"
         }
       ],
       "alerts": {
         "expired": 0,
-        "urgent_7d": 1,
-        "warning_30d": 0,
+        "urgent_7d": 0,
+        "warning_30d": 1,
         "info_90d": 3
       },
       "extraction_confidence": "high"
@@ -5725,32 +5194,14 @@
       "imo": "9659866",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 92752,
+      "gt": "92752",
       "dwt": "181387",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2029-02-27",
-          "last_done": "2023-12-04"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2026-12-03",
           "last_done": "2023-12-04"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (坞检)",
-          "due_date": "2026-12-03",
-          "last_done": "2023-12-04"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2029-02-26",
-          "last_done": "2014-02-28"
         },
         {
           "type": "statutory",
@@ -5837,6 +5288,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2029-02-26",
           "last_done": "2014-02-28"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -5886,26 +5341,26 @@
         },
         {
           "name": "DOC",
-          "expiry": "18 Oct 2026"
+          "expiry": "2026-10-18"
         },
         {
           "name": "SMC",
-          "expiry": "21 Mar 2027"
+          "expiry": "2027-03-21"
         },
         {
           "name": "MLC",
-          "expiry": "21 Mar 2027"
+          "expiry": "2027-03-21"
         },
         {
           "name": "ISSC (ISPS)",
-          "expiry": "21 Mar 2027"
+          "expiry": "2027-03-21"
         }
       ],
       "alerts": {
         "expired": 0,
-        "urgent_7d": 1,
-        "warning_30d": 0,
-        "info_90d": 4
+        "urgent_7d": 0,
+        "warning_30d": 1,
+        "info_90d": 3
       },
       "extraction_confidence": "high"
     },
@@ -5914,32 +5369,14 @@
       "imo": "9271602",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": 102207,
+      "gt": "102207",
       "dwt": "203315",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2031-01-04",
-          "last_done": "2026-01-05"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2029-01-04",
           "last_done": "2026-01-05"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (坞检)",
-          "due_date": "2029-01-04",
-          "last_done": "2026-01-05"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2029-04-05",
-          "last_done": "2019-04-04"
         },
         {
           "type": "statutory",
@@ -6020,6 +5457,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2029-04-05",
           "last_done": "2019-04-04"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -6069,19 +5510,19 @@
         },
         {
           "name": "DOC",
-          "expiry": "18 Oct 2026"
+          "expiry": "2026-10-18"
         },
         {
           "name": "SMC",
-          "expiry": "10 Apr 2027"
+          "expiry": "2027-04-10"
         },
         {
           "name": "MLC",
-          "expiry": "10 Apr 2027"
+          "expiry": "2027-04-10"
         },
         {
           "name": "ISSC (ISPS)",
-          "expiry": "10 Apr 2027"
+          "expiry": "2027-04-10"
         },
         {
           "name": "Dangerous Goods",
@@ -6090,8 +5531,8 @@
       ],
       "alerts": {
         "expired": 0,
-        "urgent_7d": 1,
-        "warning_30d": 0,
+        "urgent_7d": 0,
+        "warning_30d": 1,
         "info_90d": 0
       },
       "extraction_confidence": "high"
@@ -6101,32 +5542,14 @@
       "imo": "9450234",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": 89603,
+      "gt": "89603",
       "dwt": "176890",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2029-02-16",
-          "last_done": "2024-02-07"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2027-02-06",
           "last_done": "2024-02-07"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (坞检)",
-          "due_date": "2027-02-06",
-          "last_done": "2024-02-07"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2029-02-12",
-          "last_done": "2018-12-31"
         },
         {
           "type": "statutory",
@@ -6213,6 +5636,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2029-02-12",
           "last_done": "2018-12-31"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -6270,15 +5697,15 @@
         },
         {
           "name": "SMC",
-          "expiry": "08 Jan 2027"
+          "expiry": "2027-01-08"
         },
         {
           "name": "MLC",
-          "expiry": "08 Jan 2027"
+          "expiry": "2027-01-08"
         },
         {
           "name": "ISSC (ISPS)",
-          "expiry": "08 Jan 2027"
+          "expiry": "2027-01-08"
         }
       ],
       "alerts": {
@@ -6294,32 +5721,14 @@
       "imo": "9311282",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": 89726,
+      "gt": "89726",
       "dwt": "176967",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2031-06-01",
-          "last_done": "2026-06-17"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2029-06-16",
           "last_done": "2026-06-17"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (坞检)",
-          "due_date": "2029-06-16",
-          "last_done": "2026-06-17"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2031-07-05",
-          "last_done": "2021-07-07"
         },
         {
           "type": "statutory",
@@ -6405,6 +5814,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2031-07-05",
           "last_done": "2021-07-07"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -6466,15 +5879,15 @@
         },
         {
           "name": "SMC",
-          "expiry": "16 Dec 2026"
+          "expiry": "2026-12-16"
         },
         {
           "name": "MLC",
-          "expiry": "16 Dec 2026"
+          "expiry": "2026-12-16"
         },
         {
           "name": "ISSC (ISPS)",
-          "expiry": "16 Dec 2026"
+          "expiry": "2026-12-16"
         }
       ],
       "alerts": {
@@ -6522,12 +5935,6 @@
           "desc": "Boiler Survey ( Oil-fired Aux. Boiler)",
           "due_date": "2027-08-31",
           "last_done": "2025-08-05"
-        },
-        {
-          "type": "boiler",
-          "desc": "Boiler Survey (Steam Pipe)",
-          "due_date": "2027-08-31",
-          "last_done": "2022-10-08"
         }
       ],
       "certificates": [
@@ -6603,31 +6010,13 @@
       "imo": "9393199",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": 90421,
+      "gt": "90421",
       "dwt": "180140",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2029-06-29",
-          "last_done": "2024-05-03"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2027-05-02",
-          "last_done": "2024-05-03"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (坞检)",
-          "due_date": "2027-05-02",
-          "last_done": "2024-05-03"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2029-05-03",
           "last_done": "2024-05-03"
         },
         {
@@ -6710,6 +6099,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2029-05-03",
           "last_done": "2024-05-03"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -6759,19 +6152,19 @@
         },
         {
           "name": "DOC",
-          "expiry": "18 Oct 2026"
+          "expiry": "2026-10-18"
         },
         {
           "name": "SMC",
-          "expiry": "19 Mar 2027"
+          "expiry": "2027-03-19"
         },
         {
           "name": "MLC",
-          "expiry": "19 Mar 2027"
+          "expiry": "2027-03-19"
         },
         {
           "name": "ISSC (ISPS)",
-          "expiry": "19 Mar 2027"
+          "expiry": "2027-03-19"
         },
         {
           "name": "ISPS",
@@ -6780,8 +6173,8 @@
       ],
       "alerts": {
         "expired": 0,
-        "urgent_7d": 1,
-        "warning_30d": 0,
+        "urgent_7d": 0,
+        "warning_30d": 1,
         "info_90d": 0
       },
       "extraction_confidence": "high"
@@ -6791,32 +6184,14 @@
       "imo": "9254678",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": 101953,
+      "gt": "101953",
       "dwt": "203508",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2030-12-22",
-          "last_done": "2025-12-23"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2028-12-22",
           "last_done": "2025-12-23"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (坞检)",
-          "due_date": "2028-12-22",
-          "last_done": "2025-12-23"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2029-07-04",
-          "last_done": "2018-06-25"
         },
         {
           "type": "statutory",
@@ -6897,6 +6272,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2029-07-04",
           "last_done": "2018-06-25"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -6942,19 +6321,19 @@
         },
         {
           "name": "DOC",
-          "expiry": "18 Oct 2026"
+          "expiry": "2026-10-18"
         },
         {
           "name": "SMC",
-          "expiry": "14 Apr 2027"
+          "expiry": "2027-04-14"
         },
         {
           "name": "MLC",
-          "expiry": "14 Apr 2027"
+          "expiry": "2027-04-14"
         },
         {
           "name": "ISSC (ISPS)",
-          "expiry": "14 Apr 2027"
+          "expiry": "2027-04-14"
         },
         {
           "name": "Dangerous Goods",
@@ -6963,8 +6342,8 @@
       ],
       "alerts": {
         "expired": 0,
-        "urgent_7d": 1,
-        "warning_30d": 0,
+        "urgent_7d": 0,
+        "warning_30d": 1,
         "info_90d": 0
       },
       "extraction_confidence": "high"
@@ -6974,31 +6353,13 @@
       "imo": "9336945",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 102319,
+      "gt": "102319",
       "dwt": "203091",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2031-02-09",
-          "last_done": "2026-01-13"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2029-01-12",
-          "last_done": "2026-01-13"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (坞检)",
-          "due_date": "2029-01-12",
-          "last_done": "2026-01-13"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2031-01-28",
           "last_done": "2026-01-13"
         },
         {
@@ -7085,6 +6446,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2031-01-28",
           "last_done": "2026-01-13"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -7142,25 +6507,25 @@
         },
         {
           "name": "DOC",
-          "expiry": "18 Oct 2026"
+          "expiry": "2026-10-18"
         },
         {
           "name": "SMC",
-          "expiry": "17 Jun 2028"
+          "expiry": "2028-06-17"
         },
         {
           "name": "MLC",
-          "expiry": "17 Jun 2028"
+          "expiry": "2028-06-17"
         },
         {
           "name": "ISSC (ISPS)",
-          "expiry": "17 Jun 2028"
+          "expiry": "2028-06-17"
         }
       ],
       "alerts": {
         "expired": 0,
-        "urgent_7d": 1,
-        "warning_30d": 0,
+        "urgent_7d": 0,
+        "warning_30d": 1,
         "info_90d": 0
       },
       "extraction_confidence": "high"
@@ -7170,31 +6535,13 @@
       "imo": "9346172",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 102092,
+      "gt": "102092",
       "dwt": "203233",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2030-10-04",
-          "last_done": "2025-10-05"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2028-10-04",
-          "last_done": "2025-10-05"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (坞检)",
-          "due_date": "2028-10-04",
-          "last_done": "2025-10-05"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2030-10-04",
           "last_done": "2025-10-05"
         },
         {
@@ -7281,6 +6628,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2030-10-04",
           "last_done": "2025-10-05"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -7330,19 +6681,19 @@
         },
         {
           "name": "DOC",
-          "expiry": "18 Oct 2026"
+          "expiry": "2026-10-18"
         },
         {
           "name": "SMC",
-          "expiry": "13 Jun 2028"
+          "expiry": "2028-06-13"
         },
         {
           "name": "MLC",
-          "expiry": "13 Jun 2028"
+          "expiry": "2028-06-13"
         },
         {
           "name": "ISSC (ISPS)",
-          "expiry": "13 Jun 2028"
+          "expiry": "2028-06-13"
         },
         {
           "name": "ISPS",
@@ -7351,8 +6702,8 @@
       ],
       "alerts": {
         "expired": 0,
-        "urgent_7d": 1,
-        "warning_30d": 0,
+        "urgent_7d": 0,
+        "warning_30d": 1,
         "info_90d": 0
       },
       "extraction_confidence": "high"
@@ -7362,32 +6713,14 @@
       "imo": "9859765",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 107791,
+      "gt": "107791",
       "dwt": "208951",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2029-11-24",
-          "last_done": "2024-11-23"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2027-11-22",
           "last_done": "2024-11-23"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (坞检)",
-          "due_date": "2027-11-22",
-          "last_done": "2024-11-23"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2029-11-23",
-          "last_done": "2019-11-25"
         },
         {
           "type": "statutory",
@@ -7523,25 +6856,25 @@
         },
         {
           "name": "DOC",
-          "expiry": "18 Oct 2026"
+          "expiry": "2026-10-18"
         },
         {
           "name": "SMC",
-          "expiry": "23 Nov 2029"
+          "expiry": "2029-11-23"
         },
         {
           "name": "MLC",
-          "expiry": "20 Feb 2030"
+          "expiry": "2030-02-20"
         },
         {
           "name": "ISSC (ISPS)",
-          "expiry": "20 Feb 2030"
+          "expiry": "2030-02-20"
         }
       ],
       "alerts": {
         "expired": 0,
-        "urgent_7d": 1,
-        "warning_30d": 0,
+        "urgent_7d": 0,
+        "warning_30d": 1,
         "info_90d": 0
       },
       "extraction_confidence": "high"
@@ -7551,32 +6884,14 @@
       "imo": "9859777",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 107786,
+      "gt": "107786",
       "dwt": "208970",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2030-01-02",
-          "last_done": "2024-11-14"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2027-11-13",
           "last_done": "2024-11-14"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (坞检)",
-          "due_date": "2027-11-13",
-          "last_done": "2024-11-14"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2030-01-01",
-          "last_done": "2020-01-03"
         },
         {
           "type": "statutory",
@@ -7712,25 +7027,25 @@
         },
         {
           "name": "DOC",
-          "expiry": "18 Oct 2026"
+          "expiry": "2026-10-18"
         },
         {
           "name": "SMC",
-          "expiry": "13 Nov 2029"
+          "expiry": "2029-11-13"
         },
         {
           "name": "MLC",
-          "expiry": "13 Nov 2029"
+          "expiry": "2029-11-13"
         },
         {
           "name": "ISSC (ISPS)",
-          "expiry": "13 Nov 2029"
+          "expiry": "2029-11-13"
         }
       ],
       "alerts": {
         "expired": 0,
-        "urgent_7d": 1,
-        "warning_30d": 0,
+        "urgent_7d": 0,
+        "warning_30d": 1,
         "info_90d": 0
       },
       "extraction_confidence": "high"
@@ -7740,31 +7055,13 @@
       "imo": "9278636",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 101933,
+      "gt": "101933",
       "dwt": "203195",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2028-05-20",
-          "last_done": "2023-03-19"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2028-05-20",
-          "last_done": "2025-09-19"
-        },
-        {
-          "type": "dry_docking",
-          "desc": "Docking Survey (坞检)",
-          "due_date": "2028-05-20",
-          "last_done": "2025-09-19"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2030-09-18",
           "last_done": "2025-09-19"
         },
         {
@@ -7815,7 +7112,7 @@
         {
           "type": "intermediate_survey",
           "desc": "Intermediate Survey (*1)",
-          "last_done": "01 May 2026"
+          "last_done": "2026-05-01"
         },
         {
           "type": "planned_machinery",
@@ -7826,11 +7123,6 @@
           "desc": "Special Survey",
           "due_date": "2028-05-20",
           "last_done": "2023-03-19"
-        },
-        {
-          "type": "intermediate_survey",
-          "desc": "Intermediate Survey (*1) --",
-          "last_done": "2026-05-01"
         },
         {
           "type": "annual_survey",
@@ -7905,19 +7197,19 @@
         },
         {
           "name": "DOC",
-          "expiry": "18 Oct 2026"
+          "expiry": "2026-10-18"
         },
         {
           "name": "SMC",
-          "expiry": "20 Jan 2031"
+          "expiry": "2031-01-20"
         },
         {
           "name": "MLC",
-          "expiry": "20 Jan 2031"
+          "expiry": "2031-01-20"
         },
         {
           "name": "ISSC (ISPS)",
-          "expiry": "20 Jan 2031"
+          "expiry": "2031-01-20"
         },
         {
           "name": "Dangerous Goods",
@@ -7926,8 +7218,8 @@
       ],
       "alerts": {
         "expired": 0,
-        "urgent_7d": 1,
-        "warning_30d": 0,
+        "urgent_7d": 0,
+        "warning_30d": 1,
         "info_90d": 0
       },
       "extraction_confidence": "high"
@@ -7988,7 +7280,8 @@
           "expiry": "2027-01-20"
         },
         {
-          "name": "EIAPP"
+          "name": "EIAPP",
+          "expiry": "2029-09-28"
         },
         {
           "name": "IAPP",
@@ -8045,7 +7338,7 @@
         "expired": 0,
         "urgent_7d": 0,
         "warning_30d": 0,
-        "info_90d": 0
+        "info_90d": 4
       },
       "extraction_confidence": "high"
     },
@@ -8106,7 +7399,8 @@
           "expiry": "2031-06-24"
         },
         {
-          "name": "EIAPP"
+          "name": "EIAPP",
+          "expiry": "2031-01-24"
         },
         {
           "name": "IAPP",
@@ -8160,8 +7454,8 @@
       ],
       "alerts": {
         "expired": 0,
-        "urgent_7d": 1,
-        "warning_30d": 0,
+        "urgent_7d": 0,
+        "warning_30d": 1,
         "info_90d": 0
       },
       "extraction_confidence": "high"
@@ -8260,16 +7554,16 @@
         },
         {
           "name": "SMC",
-          "expiry": "2030.09.14"
+          "expiry": "2030-09-14"
         }
       ],
       "alerts": {
         "expired": 0,
-        "urgent_7d": 1,
-        "warning_30d": 0,
+        "urgent_7d": 0,
+        "warning_30d": 1,
         "info_90d": 1
       },
-      "extraction_confidence": "medium"
+      "extraction_confidence": "high"
     },
     "WINNING_RICH": {
       "name": "WINNING RICH",
@@ -8365,16 +7659,16 @@
         },
         {
           "name": "SMC",
-          "expiry": "2027.05.03"
+          "expiry": "2027-05-03"
         }
       ],
       "alerts": {
         "expired": 0,
-        "urgent_7d": 1,
-        "warning_30d": 0,
+        "urgent_7d": 0,
+        "warning_30d": 1,
         "info_90d": 0
       },
-      "extraction_confidence": "medium"
+      "extraction_confidence": "high"
     },
     "WINNING_SPIRIT": {
       "name": "WINNING SPIRIT",
@@ -8470,16 +7764,16 @@
         },
         {
           "name": "SMC",
-          "expiry": "2027.05.14"
+          "expiry": "2027-05-14"
         }
       ],
       "alerts": {
         "expired": 0,
-        "urgent_7d": 1,
-        "warning_30d": 0,
+        "urgent_7d": 0,
+        "warning_30d": 1,
         "info_90d": 0
       },
-      "extraction_confidence": "medium"
+      "extraction_confidence": "high"
     },
     "SUNNY_FARANAH": {
       "name": "SUNNY FARANAH",
@@ -8906,8 +8200,8 @@
       ],
       "alerts": {
         "expired": 0,
-        "urgent_7d": 1,
-        "warning_30d": 0,
+        "urgent_7d": 0,
+        "warning_30d": 1,
         "info_90d": 0
       },
       "extraction_confidence": "high"
@@ -9126,8 +8420,8 @@
       ],
       "alerts": {
         "expired": 0,
-        "urgent_7d": 1,
-        "warning_30d": 0,
+        "urgent_7d": 0,
+        "warning_30d": 1,
         "info_90d": 0
       },
       "extraction_confidence": "high"
@@ -9235,7 +8529,7 @@
         "expired": 0,
         "urgent_7d": 0,
         "warning_30d": 0,
-        "info_90d": 0
+        "info_90d": 2
       },
       "extraction_confidence": "high"
     },
@@ -9341,8 +8635,8 @@
       "alerts": {
         "expired": 0,
         "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 1
+        "warning_30d": 1,
+        "info_90d": 0
       },
       "extraction_confidence": "high"
     },
@@ -9452,8 +8746,8 @@
       ],
       "alerts": {
         "expired": 11,
-        "urgent_7d": 1,
-        "warning_30d": 0,
+        "urgent_7d": 0,
+        "warning_30d": 1,
         "info_90d": 0
       },
       "extraction_confidence": "high"
@@ -9562,15 +8856,15 @@
       ],
       "alerts": {
         "expired": 0,
-        "urgent_7d": 1,
-        "warning_30d": 0,
+        "urgent_7d": 0,
+        "warning_30d": 1,
         "info_90d": 0
       },
       "extraction_confidence": "high"
     },
     "WINNING_AMBITION": {
       "name": "WINNING AMBITION",
-      "imo": "1037397",
+      "imo": "1037393",
       "class_society": "DNV",
       "flag": "Singapore",
       "gt": "174863",
@@ -9653,7 +8947,7 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "medium"
+      "extraction_confidence": "high"
     },
     "SUNNY_SKY": {
       "name": "SUNNY SKY",
@@ -9750,11 +9044,11 @@
       ],
       "alerts": {
         "expired": 0,
-        "urgent_7d": 1,
-        "warning_30d": 0,
+        "urgent_7d": 0,
+        "warning_30d": 1,
         "info_90d": 0
       },
-      "extraction_confidence": "medium"
+      "extraction_confidence": "high"
     },
     "SUNNY_KANKAN": {
       "name": "SUNNY KANKAN",
@@ -9793,7 +9087,7 @@
           "last_done": "2024-07-17"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "Bottom - Dry Condition",
           "due_date": "2027-07-17",
           "last_done": "2022-10-25"
@@ -9866,7 +9160,7 @@
           "window_end": "2029-06-07"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "DG (SOLAS) (cargo) First Issue (Initial)",
           "last_done": "2026-04-15"
         },
@@ -9886,13 +9180,6 @@
           "window_end": "2029-06-07"
         },
         {
-          "type": "intermediate_survey",
-          "desc": "Intermediate (1)",
-          "last_done": "2027-06-07",
-          "window_start": "2027-03-08",
-          "window_end": "2027-09-07"
-        },
-        {
           "type": "special_survey",
           "desc": "SE H Renewal",
           "due_date": "2029-06-07",
@@ -9901,7 +9188,7 @@
           "window_end": "2029-06-07"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "Periodical (1)",
           "last_done": "2027-06-07",
           "window_start": "2027-03-08",
@@ -9916,7 +9203,7 @@
           "window_end": "2029-06-07"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "Periodical",
           "due_date": "2027-06-07",
           "last_done": "2026-04-15",
@@ -9950,7 +9237,7 @@
           "window_end": "2028-11-06"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "For any enquiries please contact: Greater China Marine Telephone : E-mail : china.marine@rina.org Direct fax line : +86 ",
           "last_done": "2026-04-15"
         },
@@ -9992,29 +9279,29 @@
           "window_end": "2029-06-07"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "IEEC First Issue (Initial)",
           "last_done": "2023-07-25"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "L.A. 452.05a CRANE ILO Test (port,Hose Davit)",
           "due_date": "2029-07-17",
           "last_done": "2024-07-17"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "- 17Jul2029 452.05b CRANE ILO Test (central,Engine room crane)",
           "last_done": "2029-07-17"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "- 17Jul2029 563.01a CRANE ILO Test (port,Provision Crane (Port))",
           "due_date": "2029-07-17",
           "last_done": "2024-07-17"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "- 17Jul2029 563.01b CRANE ILO Test (stbd,Provision Crane (Starboard))",
           "due_date": "2029-07-17",
           "last_done": "2024-07-17"
@@ -10044,7 +9331,7 @@
           "last_done": "2026-04-15"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "- 15Apr2027 563.10a DERRICK ILO Quinquennial (Hose Davit,stbd)",
           "due_date": "2029-07-17",
           "last_done": "2024-07-17"
@@ -10124,7 +9411,8 @@
           "expiry": "2028-07-24"
         },
         {
-          "name": "International Energy Efficiency Certificate International Ballast Water Management"
+          "name": "International Energy Efficiency Certificate International Ballast Water Management",
+          "expiry": "2029-06-07"
         },
         {
           "name": "International Anti-Fouling System",
@@ -10179,12 +9467,12 @@
           "last_done": "2023-08-10"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "- 25Aug2028 Bottom - Dry Condition",
           "last_done": "2026-06-04"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "Bottom - in Water",
           "last_done": "2021-08-13"
         },
@@ -10281,7 +9569,7 @@
           "window_end": "2028-08-25"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "Change of flag (Periodical) (1)",
           "last_done": "2026-06-04"
         },
@@ -10293,7 +9581,7 @@
           "window_end": "2028-08-25"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "Periodical",
           "due_date": "2027-08-25",
           "last_done": "2025-09-17",
@@ -10301,22 +9589,22 @@
           "window_end": "2027-11-25"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "For any enquiries please contact: Greater China Marine Telephone : E-mail : china.marine@rina.org Direct fax line : +86 ",
           "last_done": "2026-06-04"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "First Issue",
           "last_done": "2026-12-04"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "- 04Dec2026 • MLC Interim Audit",
           "last_done": "2026-06-04"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "- 04Dec2026 • ISSC Pre-Verification",
           "last_done": "2026-06-04"
         },
@@ -10368,7 +9656,7 @@
           "window_end": "2028-08-25"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "IAFSC First Issue (Occasional)",
           "last_done": "2025-01-25"
         },
@@ -10380,46 +9668,46 @@
           "window_end": "2028-08-25"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "IEEC First Issue (Initial)",
           "last_done": "2025-01-25"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "ILO 92/133 First Issue (Initial)",
           "last_done": "2018-05-28"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "Change of flag (Initial) (1)",
           "last_done": "2026-06-04"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "L.A. 334a CRANE ILO Test (FO Hose Handling Davit,port)",
           "due_date": "2028-08-10",
           "last_done": "2023-08-10"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "- 10Aug2028 334b CRANE ILO Test (FO Hose and SUEZ Handling Davit,stbd)",
           "due_date": "2028-08-10",
           "last_done": "2023-08-10"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "- 10Aug2028 452.01a CRANE ILO Test (central)",
           "due_date": "2028-08-10",
           "last_done": "2023-08-10"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "- 10Aug2028 563.01a CRANE ILO Test (PROVISION CRANE,port)",
           "due_date": "2028-08-10",
           "last_done": "2023-08-10"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "- 10Aug2028 563.01b CRANE ILO Test (PROVISION CRANE,stbd)",
           "due_date": "2028-08-10",
           "last_done": "2023-08-10"
@@ -10437,7 +9725,7 @@
           "last_done": "2026-06-04"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "- 04Jun2027 For any enquiries please contact: Greater China Marine Telephone : E-mail : china.marine@rina.org Direct fax",
           "due_date": "2027-06-04",
           "last_done": "2026-06-04"
@@ -10531,7 +9819,8 @@
           "expiry": "2028-08-25"
         },
         {
-          "name": "International Energy Efficiency Certificate International Ballast Water Management"
+          "name": "International Energy Efficiency Certificate International Ballast Water Management",
+          "expiry": "2028-08-25"
         },
         {
           "name": "International Anti-Fouling System",
@@ -10590,13 +9879,13 @@
           "last_done": "2025-03-26"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "Bottom - Dry Condition",
           "due_date": "2028-03-26",
           "last_done": "2022-06-25"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "- 26Mar2028 Bottom - in Water",
           "last_done": "2017-10-26"
         },
@@ -10690,7 +9979,7 @@
           "window_end": "2030-05-11"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "Periodical (1)",
           "last_done": "2027-05-11",
           "window_start": "2027-02-12",
@@ -10705,7 +9994,7 @@
           "window_end": "2030-05-11"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "Periodical",
           "due_date": "2027-05-11",
           "last_done": "2026-02-25",
@@ -10739,7 +10028,7 @@
           "window_end": "2026-10-31"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "For any enquiries please contact: Greater China Marine Telephone : E-mail : china.marine@rina.org Direct fax line : +86 ",
           "due_date": "2030-05-11",
           "last_done": "2025-03-26",
@@ -10763,7 +10052,7 @@
           "window_end": "2030-05-11"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "IAFSC First Issue (Occasional)",
           "last_done": "2021-07-30"
         },
@@ -10776,24 +10065,24 @@
           "window_end": "2030-05-11"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "IEEC First Issue (Initial)",
           "last_done": "2021-07-30"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "L.A. 452.05a CRANE ILO Test (central,Main Engine Overhead Travelling Crane)",
           "due_date": "2030-03-26",
           "last_done": "2025-03-26"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "- 26Mar2030 563.01a CRANE ILO Test (port,Provision Crane (Port))",
           "due_date": "2030-03-26",
           "last_done": "2025-03-26"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "- 26Mar2030 563.01b CRANE ILO Test (stbd,Provision Crane (Starboard))",
           "due_date": "2030-03-26",
           "last_done": "2025-03-26"
@@ -10817,7 +10106,7 @@
           "last_done": "2026-02-25"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "- 25Feb2027 • 563.10a DERRICK ILO Quinquennial (Provision Davit,stbd)",
           "due_date": "2030-03-26",
           "last_done": "2025-03-26"
@@ -10841,7 +10130,7 @@
           "last_done": "2026-02-25"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "- 25Feb2027 563.10a DERRICK ILO Quinquennial (Provision Davit,stbd)",
           "due_date": "2030-03-26",
           "last_done": "2025-03-26"
@@ -11059,8 +10348,8 @@
       ],
       "alerts": {
         "expired": 0,
-        "urgent_7d": 1,
-        "warning_30d": 0,
+        "urgent_7d": 0,
+        "warning_30d": 1,
         "info_90d": 0
       },
       "extraction_confidence": "medium"
@@ -11095,14 +10384,14 @@
           "window_end": "2031-09-11"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "Machinery items (MS.Sa)",
           "last_done": "2026-09-11",
           "window_start": "2031-06-11",
           "window_end": "2031-09-11"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "Bottom complete survey (BOT.C)",
           "due_date": "2029-09-11",
           "last_done": "2026-09-11"
@@ -11135,7 +10424,7 @@
           "window_end": "2027-12-11"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "Clean complete (CLEAN.C)",
           "last_done": "2026-09-11",
           "window_start": "2031-06-11",
@@ -11149,21 +10438,21 @@
           "window_end": "2027-12-11"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "Hull monitoring complete survey (HMON.C)",
           "last_done": "2026-09-11",
           "window_start": "2031-06-11",
           "window_end": "2031-09-11"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "Recyclable materials complete (RCL.C)",
           "last_done": "2026-09-11",
           "window_start": "2031-06-11",
           "window_end": "2031-09-11"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "Shore power complete (SHP.C)",
           "last_done": "2026-09-11",
           "window_start": "2031-06-11",
@@ -11212,7 +10501,7 @@
           "window_end": "2027-12-11"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "Safety equipment periodical (CEC.In)",
           "last_done": "2026-09-11",
           "window_start": "2028-06-11",
@@ -11226,7 +10515,7 @@
           "window_end": "2031-09-11"
         },
         {
-          "type": "",
+          "type": null,
           "desc": "Safety radio periodical (CRC.A)",
           "last_done": "2026-09-11",
           "window_start": "2027-06-11",
