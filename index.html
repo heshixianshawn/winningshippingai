@@ -1350,16 +1350,17 @@ function renderQuickActions(module) {
 var COST_QA_CACHE = null;   // smis_cost_trace.json
 var COST_QA_MONTH = null;   // smis_cost_monthly.json
 var COST_SHIP_LIST = ['SUNNY BOFFA','SUNNY COYAH','SUNNY KANKAN','SUNNY KEROUANE','SUNNY LABE','SUNNY MOREBAYA','SUNNY RIVER','SUNNY SAILOR','SUNNY SIGUIRI','WINNING AMBITION','WINNING FAITH','WINNING INTEGRITY','WINNING KINDNESS','WINNING MISSION','WINNING NATURE','WINNING PEACE','WINNING RICH','WINNING SPIRIT','WINNING WISDOM'];
+// 九大类口径（2026-10-21 定稿）：与 scripts/smis_cost_core.py 的 CATS 一致
 var COST_LINE_ALIAS = [
-  ['船员奖金', ['船员奖金', '安全奖', '机务船员奖金']],
-  ['检验费用', ['检验费用', '检验费', '机务检验', '船级社费']],
-  ['航修费用', ['航修费用', '航修费']],
-  ['设备更新', ['设备更新']],
-  ['坞修费用', ['坞修费用', '坞修费', '厂修']],
-  ['常规油漆', ['常规油漆']],
-  ['坞修油漆', ['坞修油漆']],
+  ['备件', ['备件']],
   ['物料', ['物料']],
-  ['备件', ['备件']]
+  ['油漆', ['油漆', '油漆费', '油漆费用']],
+  ['滑油', ['滑油', '润滑油', '机油']],
+  ['航修', ['航修', '航修费', '航修费用']],
+  ['坞修', ['坞修', '坞修费', '坞修费用', '厂修', '厂修费']],
+  ['设备更新', ['设备更新']],
+  ['检验', ['检验', '检验费', '检验费用', '机务检验', '船级社费']],
+  ['船员奖金', ['船员奖金', '安全奖', '机务船员奖金']]
 ];
 async function costQALoad() {
   var t = COST_QA_CACHE || (COST_QA_CACHE = await (await fetch('data/smis_cost_trace.json?_t=' + Date.now())).json());

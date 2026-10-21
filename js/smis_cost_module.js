@@ -392,17 +392,24 @@
   /* ============================================================
    * 区块 2：月度统计（19 船 × 1~12 月 · 细项：修船5+物料3+备件）
    * ==========================================================*/
-  var COST_LINES = ['船员奖金', '检验费用', '航修费用', '设备更新', '坞修费用',
-                    '常规油漆', '坞修油漆', '物料', '备件'];
+  // 九大类口径（2026-10-21 定稿）：与 scripts/smis_cost_core.py 的 CATS 完全一致
+  var COST_LINES = ['备件', '物料', '油漆', '滑油', '航修', '坞修', '设备更新', '检验', '船员奖金'];
+  var PAINT_SUB = ['常规油漆', '坞修油漆'];
   var COST_AGGS = {
-    '修船合计': ['船员奖金', '检验费用', '航修费用', '设备更新', '坞修费用'],
-    '物资合计': ['常规油漆', '坞修油漆', '物料'],
-    '备件合计': ['备件'],
+    '修船合计': ['航修', '坞修', '设备更新', '检验'],
+    '采购合计': ['备件', '物料', '油漆', '滑油'],
+    '船员奖金': ['船员奖金'],
     '总计': null
   };
-  function costVal(shipRec, mode, m) {
+  function costVal(shipRec, mode, m, shipName) {
     // mode 形如 line:船员奖金 或 agg:修船合计
     var total = 0;
+    if (mode.indexOf('paint:') === 0) {
+      var pb = (monthlyCache && monthlyCache.paint_breakdown) || {};
+      var rec2 = pb[shipName] || {};
+      var sub = rec2[mode.slice(6)] || {};
+      return num(sub[m]);
+    }
     if (mode.indexOf('line:') === 0) {
       var ln = mode.slice(5);
       var mm = (shipRec && shipRec[ln]) || {};
@@ -418,6 +425,7 @@
     return total;
   }
   function monthlyModeLabel(mode) {
+    if (mode.indexOf('paint:') === 0) return '油漆·' + mode.slice(6);
     if (mode.indexOf('line:') === 0) return mode.slice(5);
     return mode.slice(4);
   }
@@ -433,10 +441,11 @@
     var opts = [];
     Object.keys(COST_AGGS).forEach(function (a) { opts.push(['agg:' + a, '∑ ' + a]); });
     COST_LINES.forEach(function (ln) { opts.push(['line:' + ln, ln]); });
+    PAINT_SUB.forEach(function (p) { opts.push(['paint:' + p, '油漆·' + p]); });
     var optsHtml = opts.map(function (o) {
       return '<option value="' + o[0] + '"' + (o[0] === 'agg:修船合计' ? ' selected' : '') + '>' + o[1] + '</option>';
     }).join('');
-    var h = '<div class="constp-note">月度细项统计：修船 5 科目 / 物料 3 类 / 备件（单位：本币，在账约值）</div>';
+    var h = '<div class="constp-note">月度统计（九大类）：备件 / 物料 / 油漆 / 滑油 / 航修 / 坞修 / 设备更新 / 检验 / 船员奖金（单位：本币 USD，定单口径）</div>';
     h += '<div class="constp-filters"><span class="constp-lab">统计口径：</span>' +
       '<select id="constp-mline" class="constp-sel">' + optsHtml + '</select>' +
       '<span class="constp-sub">行=船 · 列=1~12月 · 末列合计</span></div>';
@@ -454,7 +463,7 @@
     var colSum = {};
     shipList.forEach(function (ship) {
       var rec = ships[ship] || {};
-      months.forEach(function (m) { colSum[m] = (colSum[m] || 0) + costVal(rec, mode, m); });
+      months.forEach(function (m) { colSum[m] = (colSum[m] || 0) + costVal(rec, mode, m, ship); });
     });
     var grand = months.reduce(function (a, m) { return a + (colSum[m] || 0); }, 0);
     var h = '<table class="constp-table constp-mt">';
@@ -463,10 +472,10 @@
     h += '<th>合计</th></tr></thead><tbody>';
     shipList.forEach(function (ship) {
       var rec = ships[ship] || {};
-      var sTotal = months.reduce(function (a, m) { return a + costVal(rec, mode, m); }, 0);
+      var sTotal = months.reduce(function (a, m) { return a + costVal(rec, mode, m, ship); }, 0);
       h += '<tr><td class="constp-shipnm">' + esc(ship) + '</td>';
       months.forEach(function (m) {
-        var v = costVal(rec, mode, m);
+        var v = costVal(rec, mode, m, ship);
         h += '<td class="constp-r">' + (v ? fmtMoney(v) : '—') + '</td>';
       });
       h += '<td class="constp-r constp-strong">' + fmtMoney(sTotal) + '</td></tr>';
