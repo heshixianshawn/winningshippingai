@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-17",
+ "generated": "2026-10-24",
  "source": "单船档案 PSC-FSC检查记录 sheet（TokyoMOU/APCIS 等来源）",
  "count": 692,
  "ship_count": 61,
@@ -3050,6 +3050,21 @@
    "count": 9,
    "records": [
     {
+     "date": "2026-10-21",
+     "port": "博凯",
+     "port_raw": "博凯",
+     "type": "PSC",
+     "authority": "",
+     "officer": "",
+     "defects": null,
+     "detained": false,
+     "codes": "",
+     "codes_uncertain": false,
+     "rectified": "",
+     "note": "来源:PSC-Port De Boke-2026.10.21.pdf|FP:f5eeca14",
+     "defects_source": "档案(无TMOU对照)"
+    },
+    {
      "date": "2026-09-08",
      "port": "yantai",
      "port_raw": "烟台",
@@ -3063,22 +3078,6 @@
      "rectified": "",
      "note": "来源:S' Labe 烟台PSC检查20260908.pdf|FP:7de8dc95 | 2026-09-16 复核：按原件 Form B 更正为 3 条（原 OCR 幻影缺陷 93105 已剔除）",
      "defects_official": 3,
-     "defects_source": "TokyoMOU官方"
-    },
-    {
-     "date": "2024-01-03",
-     "port": "Yantai",
-     "port_raw": "Yantai (China)",
-     "type": "",
-     "authority": "",
-     "officer": "",
-     "defects": 2,
-     "detained": false,
-     "codes": "",
-     "codes_uncertain": false,
-     "rectified": "",
-     "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship",
-     "defects_official": 2,
      "defects_source": "TokyoMOU官方"
     },
     {
@@ -12195,14 +12194,6 @@
     "codes": ""
    },
    {
-    "ship": "SUNNY LABE",
-    "date": "2024-01-03",
-    "port": "Yantai",
-    "defects": 2,
-    "detained": false,
-    "codes": ""
-   },
-   {
     "ship": "WINNING LOYALTY",
     "date": "2023-11-30",
     "port": "Yantai",
@@ -16785,6 +16776,16 @@
     "codes": ""
    }
   ],
+  "博凯": [
+   {
+    "ship": "SUNNY LABE",
+    "date": "2026-10-21",
+    "port": "博凯",
+    "defects": null,
+    "detained": false,
+    "codes": ""
+   }
+  ],
   "taicang": [
    {
     "ship": "SUNNY LINK",
@@ -17176,7 +17177,7 @@
  },
  "stats": {
   "by_port": {
-   "yantai": 156,
+   "yantai": 155,
    "port hedland, wa": 69,
    "tianjin": 27,
    "qingdao": 25,
@@ -17235,6 +17236,7 @@
    "san juan": 1,
    "rayong": 1,
    "daesan": 1,
+   "博凯": 1,
    "taicang": 1,
    "abbot point, qld": 1,
    "delta": 1,
@@ -17248,15 +17250,15 @@
    "dalian": 1,
    "董家口": 1
   },
-  "this_year": 51,
+  "this_year": 52,
   "detained_total": 17,
   "with_codes": 32,
   "codes_uncertain": 3,
   "pdf_enriched": 0,
   "pdf_files_matched": 2,
-  "tmou_reconciled": 681,
+  "tmou_reconciled": 680,
   "tmou_mismatches": [],
-  "tmou_unmatched": 11
+  "tmou_unmatched": 12
  },
  "missing": []
 }

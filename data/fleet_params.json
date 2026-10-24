@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generated": "2026-10-04T09:02:55",
+  "generated": "2026-10-19",
   "count": 64,
   "source": "survey_knowledge_unified.json（各船级社最新 Survey Status Report，经 systems/survey_knowledge_base.py 提取）+ 校验层过滤 + 人工维护字段",
   "ships": {
@@ -388,7 +388,7 @@
       "imo": "9198240",
       "call_sign": "H3XI",
       "owner": "FORESEE MARINE S.A.",
-      "flag": "Hong Kong, China",
+      "flag": "Panama",
       "class_notation": "NK",
       "manager": "QINGDAO WINNING INTERNATIONAL SHIPS MANAGEMENT CO., LTD",
       "hull_no": "204",
@@ -1734,7 +1734,7 @@
       "imo": "9398149",
       "call_sign": "3FSQ3",
       "owner": "Sunny Dabola Shipping S.A.",
-      "flag": "Hong Kong, China",
+      "flag": "Panama",
       "class_notation": "NK",
       "manager": "QINGDAO ZHONGJI INTERNATIONAL SHIPS MANAGEMENT CO., LTD",
       "hull_no": "101",

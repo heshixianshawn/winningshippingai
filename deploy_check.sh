@@ -45,7 +45,7 @@ if [ "$TOTAL" -lt 30 ]; then
     echo "   运行: find . -not -path './.git/*' -type f | wc -l"
     ERRORS=$((ERRORS+1))
 else
-    echo "✅ 文件总数: $TOTAL（正常）"
+    echo "✅ 文件总数: ${TOTAL}（正常）"
 fi
 
 # 6. 检查 index.html 是否引用不存在的文件
