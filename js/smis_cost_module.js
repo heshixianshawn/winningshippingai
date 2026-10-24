@@ -14,6 +14,7 @@
 
   var TRACE_URL = 'data/smis_cost_trace.json?_t=' + Date.now();
   var MONTHLY_URL = 'data/smis_cost_monthly.json?_t=' + Date.now();
+  var LINES_URL = 'data/smis_order_lines.json?_t=' + Date.now();   // P0：行级明细（按需加载）
 
   // 站内 CSS 变量名假设：--card-bg/--border/--primary/--primary-light/--text/--text-light
   // （如缺失则走 fallback 字面量）
@@ -21,8 +22,9 @@
   /* ---------------- 缓存（闭包内私有） ---------------- */
   var traceCache = null;   // {updated,count,rows:[]}
   var monthlyCache = null; // {updated,ships:{}}
+  var linesCache = null;   // {bill|ship: {type,vendor,date,lines:[...]}}
   var lastResult = [];     // 最近一次检索结果（供导出CSV）
-  var sortKey = 'date';    // date|type|ship|vendor|amount
+  var sortKey = 'date';    // date|type|ship|vendor|amount|qty|unit_price
   var sortDir = -1;        // 1 升序, -1 降序
 
   var MONTH_LINES = { repair: '修船', parts: '备件', store: '物资' };
@@ -119,10 +121,12 @@
     // 页签
     h += '<div class="constp-tabs">' +
       '<button type="button" class="constp-tab constp-active" data-mode="trace">|> 溯源检索</button>' +
+      '<button type="button" class="constp-tab" data-mode="agg">🔎 品名聚合</button>' +
       '<button type="button" class="constp-tab" data-mode="monthly">📊 月度统计</button>' +
       '</div>';
 
     h += '<div id="constp-trace" class="constp-body"></div>';
+    h += '<div id="constp-agg" class="constp-body" style="display:none"></div>';
     h += '<div id="constp-monthly" class="constp-body" style="display:none"></div>';
     h += '</div>';
     el.innerHTML = h;
@@ -133,10 +137,13 @@
       el.querySelectorAll('.constp-tab').forEach(function (b) { b.classList.toggle('constp-active', b === btn); });
       var mode = btn.getAttribute('data-mode');
       var trace = el.querySelector('#constp-trace');
+      var agg = el.querySelector('#constp-agg');
       var monthly = el.querySelector('#constp-monthly');
       trace.style.display = mode === 'trace' ? '' : 'none';
+      agg.style.display = mode === 'agg' ? '' : 'none';
       monthly.style.display = mode === 'monthly' ? '' : 'none';
       if (mode === 'trace') renderTraceForm(el, rows, ships, types, months);
+      else if (mode === 'agg') renderAgg(el, rows, types, ships, months);
       else renderMonthly(el);
     });
 
@@ -150,6 +157,7 @@
   function renderTraceForm(el, rows, ships, types, months) {
     var box = el.querySelector('#constp-trace');
     if (!box) return;
+    var vendors = uniqueSorted(rows.map(function (r) { return r.vendor; }).filter(Boolean));
 
     var h = '<div class="constp-filters">';
 
@@ -174,12 +182,19 @@
     }).join('');
     h += '</select>';
 
+    h += '<select id="constp-f-vendor" class="constp-sel constp-vendor-sel">';
+    h += '<option value="">厂商：全部</option>' + vendors.map(function (v) {
+      return '<option value="' + esc(v) + '">' + esc(v) + '</option>';
+    }).join('');
+    h += '</select>';
+
     h += '<button type="button" id="constp-go" class="constp-btn">🔍 查询</button>';
     h += '<button type="button" id="constp-reset" class="constp-btn constp-ghost">重置</button>';
     h += '</div>';
 
     h += '<div class="constp-sub">' +
-      '提示：设备名可含代码（如 压载水 / EPIRB / 空冷器 / 舱盖 / 胶条）；点表头「类型 / 船 / 厂商 / 金额 / 日期」可排序。' +
+      '提示：设备名可含代码（如 压载水 / EPIRB / 空冷器 / 舱盖 / 胶条）；' +
+      '表头「日期 / 类型 / 船 / 厂商 / 金额 / 数量 / 均价」可排序；点任意一行看该单的件号级明细。' +
       '</div>';
 
     h += '<div id="constp-result"></div>';
@@ -192,6 +207,7 @@
       box.querySelector('#constp-f-type').value = '';
       box.querySelector('#constp-f-ship').value = '';
       box.querySelector('#constp-f-month').value = '';
+      var vsel = box.querySelector('#constp-f-vendor'); if (vsel) vsel.value = '';
       sortKey = 'date'; sortDir = -1;
       runTrace();
     });
@@ -208,7 +224,9 @@
       var type = box.querySelector('#constp-f-type').value;
       var ship = box.querySelector('#constp-f-ship').value;
       var monthSel = box.querySelector('#constp-f-month').value;
+      var vendorSel = (box.querySelector('#constp-f-vendor') || {}).value || '';
       window._constpTokens = raw ? raw.toLowerCase().split(/\s+/) : [];
+      window._constpFilter = { type: type, ship: ship, month: monthSel, vendor: vendorSel };
 
       var needed = raw ? raw.split(/\s+/).filter(Boolean).map(function (w) { return w.toLowerCase(); }) : [];
       var rows = traceCache.rows.filter(function (r) {
@@ -219,6 +237,7 @@
         if (type && r.type !== type) return false;
         if (ship && r.ship !== ship) return false;
         if (monthSel && monthOf(r.date) !== monthSel) return false;
+        if (vendorSel && r.vendor !== vendorSel) return false;
         return true;
       });
       // 排序
@@ -239,6 +258,8 @@
   function comparator() {
     return function (a, b) {
       if (sortKey === 'amount') { return (num(a.amount) - num(b.amount)) * sortDir; }
+      if (sortKey === 'qty') { return (num(a.qty) - num(b.qty)) * sortDir; }
+      if (sortKey === 'unit_price') { return (num(a.unit_price) - num(b.unit_price)) * sortDir; }
       if (sortKey === 'date') { return String(a.date).localeCompare(String(b.date)) * sortDir; }
       var sx = String(a[sortKey] || '').toUpperCase();
       var sy = String(b[sortKey] || '').toUpperCase();
@@ -246,10 +267,10 @@
     };
   }
 
-  function sortHeader(key, label) {
+  function sortHeader(key, label, cls) {
     var arrow = '';
     if (sortKey === key) arrow = sortDir < 0 ? ' ▼' : ' ▲';
-    return '<th class="constp-sorthd" data-k="' + key + '" title="点击排序">' + label + arrow + '</th>';
+    return '<th class="constp-sorthd' + (cls ? ' ' + cls : '') + '" data-k="' + key + '" title="点击排序">' + label + arrow + '</th>';
   }
 
   function renderTraceResult(el, rows) {
@@ -280,7 +301,9 @@
     h += '<th>设备 / 物料名</th>';
     h += sortHeader('vendor', '厂商');
     h += '<th>单号</th>';
-    h += sortHeader('amount', '金额');
+    h += sortHeader('amount', '金额', 'constp-r');
+    h += sortHeader('qty', '数量', 'constp-r');
+    h += sortHeader('unit_price', '均价', 'constp-r');
     h += '<th>币种</th>';
     h += '<th>说明 / 备注</th>';
     h += '</tr></thead><tbody>';
@@ -310,7 +333,8 @@
         });
         itemShow = names.join('；').slice(0, 160) + (names.length > 1 ? '…' : '');
       }
-      h += '<tr><td>' + esc(r.date) + '</td>' +
+      h += '<tr class="constp-row" data-bill="' + esc(r.bill || '') + '" data-ship="' + esc(r.ship || '') + '">' +
+        '<td>' + esc(r.date) + '</td>' +
         '<td><span class="constp-chip constp-ct-' + chipCls(r.type) + '">' + esc(r.type) + '</span></td>' +
         '<td>' + esc(r.ship) + '</td>' +
         '<td>' + esc(r.cat) + '</td>' +
@@ -318,14 +342,17 @@
         '<td>' + esc(r.vendor) + '</td>' +
         '<td class="constp-bill">' + esc(r.bill) + '</td>' +
         '<td class="constp-r">' + fmtMoney(r.amount) + '</td>' +
+        '<td class="constp-r">' + (r.qty ? (fmtQty(r.qty) + (r.uom ? ' ' + esc(r.uom) : '')) : '') + '</td>' +
+        '<td class="constp-r">' + (r.unit_price ? fmtMoney(r.unit_price) : '') + '</td>' +
         '<td>' + esc(r.currency) + '</td>' +
-        '<td class="constp-desc">' + esc(descShow) + '</td></tr>';
+        '<td class="constp-desc" title="' + esc(String(descShow).slice(0, 400)) + '">' + esc(descShow) + '</td></tr>';
     });
     if (toks.length) {
       var note = res.querySelector('.ship-stat.total');
       if (note) note.textContent = '共 ' + rows.length + ' 单（命中明细行 ' + totalMatched + ' 行）';
     }
     h += '</tbody></table></div>';
+    h += '<div id="constp-detail" class="constp-detail"></div>';
     res.innerHTML = h;
 
     // 排序点击委派
@@ -341,6 +368,231 @@
 
     var btn = res.querySelector('#constp-export');
     if (btn) btn.addEventListener('click', function () { exportCSV(rows, money); });
+
+    // P0：点行看件号级明细
+    res.querySelectorAll('tr.constp-row').forEach(function (tr) {
+      tr.addEventListener('click', function () {
+        var bill = tr.getAttribute('data-bill');
+        var ship = tr.getAttribute('data-ship');
+        var rec = rows.filter(function (x) { return String(x.bill) === bill && x.ship === ship; })[0];
+        if (rec) showDetail(res, rec);
+      });
+    });
+  }
+
+  function fmtQty(v) {
+    var n = num(v);
+    if (!n) return '';
+    return (Math.round(n * 1000) / 1000).toLocaleString('en-US');
+  }
+
+  /* ---------------- P0：单张定单的件号级明细 ---------------- */
+  function showDetail(res, r) {
+    var box = res.querySelector('#constp-detail');
+    if (!box) return;
+    if (r.type === '修船费用') {
+      box.innerHTML = '<div class="constp-detail-card"><b>修船帐单 ' + esc(r.bill) + '</b>' +
+        '<div class="constp-detail-grid">' +
+        '<span>船：' + esc(r.ship) + '</span><span>科目：' + esc(r.cat) + '</span>' +
+        '<span>厂商：' + esc(r.vendor) + '</span><span>港口：' + esc(r.port || '—') + '</span>' +
+        '<span>费用日期：' + esc(r.date) + '</span><span>完工：' + esc(r.done_date || '—') + '</span>' +
+        '</div>' +
+        '<div class="constp-detail-desc">细目：' + esc(r.detail || '—') + '<br>说明：' + esc(r.desc || '—') + '</div>' +
+        '<div class="constp-note">修船帐单目前只有科目级，无工项级明细（P1 建字典后补）</div>' +
+        '<button type="button" class="constp-btn constp-ghost constp-close">收起</button></div>';
+      box.querySelector('.constp-close').addEventListener('click', function () { box.innerHTML = ''; });
+      box.scrollIntoView({ block: 'nearest' });
+      return;
+    }
+    box.innerHTML = '<div class="constp-detail-card">⏳ 正在读取件号级明细…</div>';
+    ensureLines().then(function (lines) {
+      var key = String(r.bill) + '|' + r.ship;
+      var hit = lines[key] || null;
+      if (!hit && r.type === '物资') {
+        // 物资定单的 _ship 可能与展示船名大小写不同，做一次宽松匹配
+        var alt = Object.keys(lines).filter(function (k) {
+          return k.split('|')[0] === String(r.bill);
+        })[0];
+        if (alt) hit = lines[alt];
+      }
+      if (!hit || !hit.lines || !hit.lines.length) {
+        box.innerHTML = '<div class="constp-detail-card">该单没有可用的件号级明细（可能未展开或来源为空）' +
+          '<br><span class="constp-note">' + esc(shortDesc(r)) + '</span>' +
+          '<button type="button" class="constp-btn constp-ghost constp-close">收起</button></div>';
+        box.querySelector('.constp-close').addEventListener('click', function () { box.innerHTML = ''; });
+        return;
+      }
+      var hh = '<div class="constp-detail-card"><b>' + esc(r.type) + ' ' + esc(r.bill) + '</b>' +
+        ' <span class="constp-note">' + esc(r.vendor) + ' · ' + esc(r.date) + '</span>' +
+        '<div class="constp-tablewrap"><table class="constp-table constp-lines">' +
+        '<thead><tr><th>#</th><th>件号</th><th>品名</th><th>型号/规格</th><th>数量</th><th>单位</th><th>单价</th><th>金额</th><th>备注</th></tr></thead><tbody>';
+      hit.lines.forEach(function (L, i) {
+        hh += '<tr><td>' + (i + 1) + '</td><td>' + esc(L.p) + '</td><td>' + esc(L.n) + '</td>' +
+          '<td>' + esc(L.s) + '</td><td class="constp-r">' + (L.q === null || L.q === undefined ? '' : fmtQty(L.q)) + '</td>' +
+          '<td>' + esc(L.u) + '</td><td class="constp-r">' + (L.pr === null || L.pr === undefined ? '' : fmtMoney(L.pr)) + '</td>' +
+          '<td class="constp-r">' + (L.a === null || L.a === undefined ? '' : fmtMoney(L.a)) + '</td>' +
+          '<td class="constp-desc">' + esc(L.r) + '</td></tr>';
+      });
+      hh += '</tbody></table></div>' +
+        '<button type="button" class="constp-btn constp-ghost constp-close">收起</button></div>';
+      box.innerHTML = hh;
+      box.querySelector('.constp-close').addEventListener('click', function () { box.innerHTML = ''; });
+      box.scrollIntoView({ block: 'nearest' });
+    }).catch(function () {
+      box.innerHTML = '<div class="constp-detail-card">明细文件加载失败（data/smis_order_lines.json）</div>';
+    });
+  }
+
+  function ensureLines() {
+    if (linesCache) return Promise.resolve(linesCache);
+    return fetch(LINES_URL).then(function (r) { return r.ok ? r.json() : {}; })
+      .then(function (j) { linesCache = j || {}; return linesCache; });
+  }
+
+  /* ============================================================
+   * P0 新增：品名聚合（跨船 / 跨厂 / 数量 / 均价）
+   * 数据源：smis_order_lines.json（备件·物资逐行）+ trace 的修船帐单
+   * ==========================================================*/
+  function renderAgg(el, rows, types, ships, months) {
+    var box = el.querySelector('#constp-agg');
+    if (!box) return;
+    box.innerHTML = divPlaceholder('⏳ 正在汇总品名…', '首次打开需加载行级明细');
+
+    ensureLines().then(function (lines) {
+      var entries = [];
+      Object.keys(lines).forEach(function (k) {
+        var rec = lines[k] || {};
+        var ship = String(k).split('|')[1] || '';
+        (rec.lines || []).forEach(function (L) {
+          var nm = String(L.n || '').trim();
+          if (!nm) return;
+          entries.push({
+            name: nm, spec: L.s || '', ship: ship, type: rec.type || '',
+            vendor: rec.vendor || '', date: rec.date || '',
+            qty: num(L.q), uom: L.u || '', price: L.pr, amount: num(L.a)
+          });
+        });
+      });
+      rows.forEach(function (r) {
+        if (r.type !== '修船费用') return;
+        var nm = r.cat || '未分类';
+        if (r.detail) nm += ' · ' + String(r.detail).slice(0, 30);
+        entries.push({
+          name: nm, spec: '', ship: r.ship, type: '修船费用',
+          vendor: r.vendor || '', date: r.date || '',
+          qty: 0, uom: '', price: null, amount: num(r.amount)
+        });
+      });
+
+      var vendors = uniqueSorted(entries.map(function (e) { return e.vendor; }).filter(Boolean));
+
+      var h = '<div class="constp-filters">';
+      h += '<label class="constp-lab">品名关键词</label>';
+      h += '<input id="constp-a-q" class="constp-q" type="text" placeholder="如 安全帽 / 密封圈 / 高压淡水冲洗">';
+      h += '<select id="constp-a-type" class="constp-sel"><option value="">类型：全部</option>' +
+        types.map(function (t) { return '<option value="' + esc(t) + '">' + esc(t) + '</option>'; }).join('') + '</select>';
+      h += '<select id="constp-a-ship" class="constp-sel"><option value="">船名：全部</option>' +
+        ships.map(function (s) { return '<option value="' + esc(s) + '">' + esc(s) + '</option>'; }).join('') + '</select>';
+      h += '<select id="constp-a-month" class="constp-sel"><option value="">月份：全部</option>' +
+        months.map(function (m) { return '<option value="' + m + '">' + m + '</option>'; }).join('') + '</select>';
+      h += '<select id="constp-a-vendor" class="constp-sel constp-vendor-sel"><option value="">厂商：全部</option>' +
+        vendors.map(function (v) { return '<option value="' + esc(v) + '">' + esc(v) + '</option>'; }).join('') + '</select>';
+      h += '<button type="button" id="constp-a-go" class="constp-btn">🔍 汇总</button>';
+      h += '</div>';
+      h += '<div class="constp-sub">按「品名」归并同一物料/备件在各船、各厂的价格与数量；修船按「科目·细目」归并（工项字典完成前的过渡口径）。点行可跳回明细。</div>';
+      h += '<div id="constp-a-result"></div>';
+      box.innerHTML = h;
+
+      function runAgg() {
+        var q = (box.querySelector('#constp-a-q').value || '').trim().toLowerCase();
+        var ty = box.querySelector('#constp-a-type').value;
+        var sh = box.querySelector('#constp-a-ship').value;
+        var mo = box.querySelector('#constp-a-month').value;
+        var ve = box.querySelector('#constp-a-vendor').value;
+
+        var groups = {};
+        entries.forEach(function (e) {
+          if (q && String(e.name).toLowerCase().indexOf(q) < 0) return;
+          if (ty && e.type !== ty) return;
+          if (sh && e.ship !== sh) return;
+          if (mo && monthOf(e.date) !== mo) return;
+          if (ve && e.vendor !== ve) return;
+          var key = e.name + '\u0001' + (e.type === '修船费用' ? '' : (e.spec || ''));
+          var g = groups[key] || (groups[key] = {
+            name: e.name, spec: e.spec, type: e.type, n: 0, ships: {}, vendors: {},
+            qty: 0, uoms: {}, amount: 0, minp: null, maxp: null
+          });
+          g.n++;
+          g.ships[e.ship] = 1;
+          if (e.vendor) g.vendors[e.vendor] = (g.vendors[e.vendor] || 0) + 1;
+          g.qty += e.qty || 0;
+          if (e.uom) g.uoms[e.uom] = 1;
+          g.amount += e.amount || 0;
+          if (e.price !== null && e.price !== undefined && num(e.price) > 0) {
+            var p = num(e.price);
+            if (g.minp === null || p < g.minp) g.minp = p;
+            if (g.maxp === null || p > g.maxp) g.maxp = p;
+          }
+        });
+        var list = Object.keys(groups).map(function (k) {
+          var g = groups[k];
+          var us = Object.keys(g.uoms);
+          var vs = Object.keys(g.vendors).sort(function (a, b) { return g.vendors[b] - g.vendors[a]; });
+          return {
+            name: g.name, spec: g.spec, type: g.type,
+            ships: Object.keys(g.ships).length, n: g.n,
+            qty: us.length ? g.qty : null, uom: us.length === 1 ? us[0] : (us.length ? '多单位' : ''),
+            amount: g.amount, unit_price: (us.length === 1 || !us.length) && g.qty ? g.amount / g.qty : null,
+            minp: g.minp, maxp: g.maxp, vendors: vs.slice(0, 3), vendorN: vs.length
+          };
+        }).sort(function (a, b) { return b.amount - a.amount; });
+
+        var res = box.querySelector('#constp-a-result');
+        if (!list.length) { res.innerHTML = '<div class="panel-placeholder constp-empty">未找到匹配品名</div>'; return; }
+        var total = list.reduce(function (a, x) { return a + x.amount; }, 0);
+        var hh = '<div class="ship-stat-bar constp-foot"><span class="ship-stat total">共 ' + list.length +
+          ' 个品名</span><span class="ship-stat">金额合计：<b>' + fmtMoney(total) + '</b></span></div>';
+        hh += '<div class="constp-tablewrap"><table class="constp-table"><thead><tr>' +
+          '<th>品名</th><th>型号/规格</th><th>类型</th>' +
+          '<th class="constp-r">涉及船数</th><th class="constp-r">笔数</th><th class="constp-r">数量</th>' +
+          '<th class="constp-r">金额</th><th class="constp-r">均价</th><th class="constp-r">单价区间</th>' +
+          '<th>主要厂商</th></tr></thead><tbody>';
+        list.slice(0, 400).forEach(function (x, i) {
+          hh += '<tr class="constp-row constp-aggrow" data-i="' + i + '">' +
+            '<td class="constp-item">' + esc(x.name) + '</td>' +
+            '<td>' + esc(x.spec) + '</td>' +
+            '<td><span class="constp-chip constp-ct-' + chipCls(x.type) + '">' + esc(x.type) + '</span></td>' +
+            '<td class="constp-r">' + x.ships + '</td>' +
+            '<td class="constp-r">' + x.n + '</td>' +
+            '<td class="constp-r">' + (x.qty === null ? '' : fmtQty(x.qty) + (x.uom ? ' ' + esc(x.uom) : '')) + '</td>' +
+            '<td class="constp-r">' + fmtMoney(x.amount) + '</td>' +
+            '<td class="constp-r">' + (x.unit_price ? fmtMoney(x.unit_price) : '') + '</td>' +
+            '<td class="constp-r">' + (x.minp === null ? '' : (fmtMoney(x.minp) + ' ~ ' + fmtMoney(x.maxp))) + '</td>' +
+            '<td><span class="constp-vendtxt" title="' + esc(x.vendors.join(' / ') + (x.vendorN > 3 ? ' …共' + x.vendorN + '家' : '')) + '">' +
+              esc(x.vendors.join(' / ')) + (x.vendorN > 3 ? ' …等' + x.vendorN + '家' : '') + '</span></td></tr>';
+        });
+        hh += '</tbody></table></div>';
+        if (list.length > 400) hh += '<div class="constp-warn">⚠️ 仅显示金额前 400 个品名（共 ' + list.length + ' 个），请加筛选条件缩小范围。</div>';
+        res.innerHTML = hh;
+        res.querySelectorAll('tr.constp-aggrow').forEach(function (tr) {
+          tr.addEventListener('click', function () {
+            var x = list[+tr.getAttribute('data-i')];
+            if (!x) return;
+            var tab = el.querySelector('.constp-tab[data-mode="trace"]');
+            if (tab) tab.click();
+            var qi = el.querySelector('#constp-q');
+            if (qi) { qi.value = x.name; }
+            runTrace();
+          });
+        });
+      }
+
+      box.querySelector('#constp-a-go').addEventListener('click', runAgg);
+      box.querySelector('#constp-a-q').addEventListener('keydown', function (e) { if (e.key === 'Enter') runAgg(); });
+      runAgg();
+    }).catch(function () {
+      box.innerHTML = divPlaceholder('明细数据加载失败', '请确认 data/smis_order_lines.json 可访问');
+    });
   }
 
   function shortDesc(r) {
@@ -359,12 +611,15 @@
 
   /* ---------------- CSV 导出（UTF-8 BOM） ---------------- */
   function exportCSV(rows, money) {
-    var heads = ['日期', '类型', '船名', '科目/设备类别', '设备/物料名', '厂商', '单号', '金额(本币约值)', '币种', '说明/备注'];
+    var heads = ['日期', '类型', '船名', '科目/设备类别', '设备/物料名', '厂商', '单号', '金额(本币约值)',
+      '数量', '单位', '均价(按数量加权)', '件号', '型号', '港口', '完工日', '币种', '说明/备注'];
     var lines = [heads];
     rows.forEach(function (r) {
-      lines.push([r.date, r.type, r.ship, r.cat, r.item, r.vendor, r.bill, r.amount, r.currency, (r.desc || r.memo || '')]);
+      lines.push([r.date, r.type, r.ship, r.cat, r.item, r.vendor, r.bill, r.amount,
+        r.qty || '', r.uom || '', r.unit_price || '', r.part || '', r.spec || '',
+        r.port || '', r.done_date || '', r.currency, (r.desc || r.memo || '')]);
     });
-    lines.push(['', '', '', '', '', '', '合计', money, '', '']);
+    lines.push(['', '', '', '', '', '', '合计', money, '', '', '', '', '', '', '', '', '']);
     var csv = lines.map(function (row) {
       return row.map(function (c) {
         var s = (c === null || c === undefined) ? '' : String(c);
@@ -532,13 +787,32 @@
       '.constp-table td{padding:6px 8px;border-bottom:1px solid #eef1f3;white-space:normal;vertical-align:top}',
       '.constp-table tr:hover td{background:#f7fafc}',
       '.constp-r{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}',
+      '.constp-table thead th.constp-r{text-align:right}',
+      '.constp-table td.constp-r{text-align:right}',
       '.constp-item{max-width:240px}',
+      '.constp-desc{max-width:360px}',
+      '.constp-vend{max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}',
+      '.constp-vendtxt{display:block;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}',
+      '.constp-detail .constp-table thead th{padding:6px 8px}',
+      '.constp-lines td:nth-child(3){max-width:300px}',
+      '.constp-lines td:nth-child(4){max-width:220px}',
+      '.constp-lines td{padding:6px 8px}',
+      '.constp-warn{margin-top:8px;font-size:11px;color:#8a6d00;background:#fff8e1;border-left:3px solid #f0c040;padding:5px 8px;border-radius:3px}',
       '.constp-bill{white-space:nowrap}',
       '.constp-chip{display:inline-block;padding:1px 8px;border-radius:10px;font-size:11px;white-space:nowrap}',
       '.constp-ct-repair{background:#fdecea;color:#c0392b}',
       '.constp-ct-part{background:#e8f0fe;color:#1a63b0}',
       '.constp-ct-store{background:#e8f7ee;color:#1e7e46}',
       '.constp-ct-other{background:#f1f1f1;color:#666}',
+      '.constp-vendor-sel{max-width:260px}',
+      '.constp-row{cursor:pointer}',
+      '.constp-row.constp-sel-row td{background:#eef7fb}',
+      '.constp-detail{margin:10px 0}',
+      '.constp-detail-card{border:1px solid var(--border,#dee2e6);border-radius:8px;padding:10px 12px;background:#fbfdfe;font-size:12px}',
+      '.constp-detail-grid{display:flex;gap:14px;flex-wrap:wrap;margin:6px 0;color:var(--text-light,#666)}',
+      '.constp-detail-desc{margin:6px 0;line-height:1.6}',
+      '.constp-lines{margin:8px 0}',
+      '.constp-lines thead th{cursor:default}',
       '.constp-mt .constp-shipnm{white-space:nowrap;font-weight:600}',
       '.constp-strong{font-weight:700}',
       '.constp-table tfoot td{background:#f7fafc;border-top:2px solid var(--border,#dee2e6);font-weight:700}',
