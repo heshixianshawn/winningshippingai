@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generated": "2026-10-19",
+  "generated": "2026-10-25T09:02:33",
   "count": 64,
   "source": "survey_knowledge_unified.json（各船级社最新 Survey Status Report，经 systems/survey_knowledge_base.py 提取）+ 校验层过滤 + 人工维护字段",
   "ships": {
@@ -2108,7 +2108,7 @@
       "name_en": "WINNING AMBITION",
       "name_cn": "韦立雄心",
       "name_full": "WINNING AMBITION",
-      "imo": "1037397",
+      "imo": "1037393",
       "call_sign": "9v9538",
       "owner": "HAI KUO  SHIPPING 2240C PTE. LIMITED",
       "flag": "Singapore",
