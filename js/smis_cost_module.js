@@ -347,7 +347,7 @@
         '<td>' + esc(r.cat) + '</td>' +
         '<td class="constp-item">' + esc(itemShow) + '</td>' +
         '<td>' + esc(r.vendor) + '</td>' +
-        '<td class="constp-bill">' + esc(r.bill) + '</td>' +
+        '<td class="constp-bill"><a href="javascript:void(0)" class="constp-bill-link" title="点击查看该单明细">' + esc(r.bill) + '</a></td>' +
         '<td class="constp-r">' + fmtMoney(r.amount) + '</td>' +
         '<td class="constp-r">' + (r.qty ? (fmtQty(r.qty) + (r.uom ? ' ' + esc(r.uom) : '')) : '') + '</td>' +
         '<td class="constp-r">' + (r.unit_price ? fmtMoney(r.unit_price) : '') + '</td>' +
@@ -941,6 +941,8 @@
       '.constp-lines td{padding:6px 8px}',
       '.constp-warn{margin-top:8px;font-size:11px;color:#8a6d00;background:#fff8e1;border-left:3px solid #f0c040;padding:5px 8px;border-radius:3px}',
       '.constp-bill{white-space:nowrap}',
+      '.constp-bill-link{color:var(--primary,#1f6f8b);text-decoration:underline dotted;cursor:pointer}',
+      '.constp-bill-link:hover{text-decoration:underline solid}',
       '.constp-chip{display:inline-block;padding:1px 8px;border-radius:10px;font-size:11px;white-space:nowrap}',
       '.constp-ct-repair{background:#fdecea;color:#c0392b}',
       '.constp-ct-part{background:#e8f0fe;color:#1a63b0}',
