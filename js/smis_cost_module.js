@@ -349,7 +349,7 @@
         '<td>' + esc(r.vendor) + '</td>' +
         '<td class="constp-bill"><a href="javascript:void(0)" class="constp-bill-link" title="点击查看该单明细">' + esc(r.bill) + '</a></td>' +
         '<td class="constp-r">' + fmtMoney(r.amount) + '</td>' +
-        '<td class="constp-r">' + (r.qty ? (fmtQty(r.qty) + (r.uom ? ' ' + esc(r.uom) : '')) : '') + '</td>' +
+        '<td class="constp-r" title="' + esc(r.qty ? (fmtQty(r.qty) + (r.uom ? ' ' + r.uom : '')) : '') + '">' + (r.qty ? (fmtQty(r.qty) + (r.uom ? ' ' + esc(r.uom) : '')) : '') + '</td>' +
         '<td class="constp-r">' + (r.unit_price ? fmtMoney(r.unit_price) : '') + '</td>' +
         '<td>' + esc(r.currency) + '</td>' +
         '<td class="constp-desc" title="' + esc(String(descShow).slice(0, 400)) + '">' + esc(descShow) + '</td></tr>';
@@ -930,9 +930,11 @@
       '.constp-table tr:hover td{background:#f7fafc}',
       '.constp-r{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}',
       '.constp-table thead th.constp-r{text-align:right}',
-      '.constp-table td.constp-r{text-align:right}',
+      '.constp-table td.constp-r{text-align:right;white-space:nowrap}',
       '.constp-item{max-width:240px}',
       '.constp-desc{max-width:360px}',
+      '.constp-table td.constp-desc{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}',
+      '.constp-detail{scroll-margin-top:90px}',
       '.constp-vend{max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}',
       '.constp-vendtxt{display:block;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}',
       '.constp-detail .constp-table thead th{padding:6px 8px}',
