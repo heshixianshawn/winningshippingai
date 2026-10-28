@@ -1,7 +1,7 @@
 {
   "version": "1.0",
-  "generated": "2026-10-25T09:02:33",
-  "count": 64,
+  "generated": "2026-10-28",
+  "count": 65,
   "source": "survey_knowledge_unified.json（各船级社最新 Survey Status Report，经 systems/survey_knowledge_base.py 提取）+ 校验层过滤 + 人工维护字段",
   "ships": {
     "9325001": {
@@ -2219,7 +2219,9 @@
       "scrubber_make": "",
       "scrubber_model": "",
       "shaft_gen": "",
-      "sisters": "",
+      "sisters": [
+        "WINNING DEVOTION（IMO 1084663，同型 325K，恒力大连，计划 2026-11-10 接船）"
+      ],
       "ex_name": "",
       "ex_owner": "",
       "loa": "329.9",
@@ -2229,6 +2231,51 @@
       "draught": "21.974",
       "official_no": "404254",
       "dnv_id": "114815"
+    },
+    "1084663": {
+      "id": 65,
+      "name_en": "WINNING DEVOTION",
+      "name_cn": "韦立忠诚",
+      "name_full": "WINNING DEVOTION 韦立忠诚",
+      "imo": "1084663",
+      "call_sign": "9VMD4",
+      "owner": "",
+      "flag": "Singapore",
+      "class_notation": "DNV",
+      "manager": "QINGDAO WINNING INTERNATIONAL SHIPS MANAGEMENT CO., LTD",
+      "hull_no": "HL-B325K-5",
+      "built": "2026",
+      "builder": "HENGLI SHIPBUILDING (DALIAN) CO., LTD",
+      "takeover_date": "2026-11-10",
+      "gt": "172517",
+      "nt": "",
+      "dwt": "325000",
+      "light_ton": "",
+      "me_make": "",
+      "me_model": "",
+      "ae_make": "",
+      "ae_model": "",
+      "boiler_make": "",
+      "boiler_model": "",
+      "bwt_make": "",
+      "bwt_model": "",
+      "scrubber_make": "",
+      "scrubber_model": "",
+      "shaft_gen": "",
+      "sisters": [
+        "WINNING CREATION（IMO 1084651，同型 325K，恒力大连，2026-09-11 交船）"
+      ],
+      "ex_name": "",
+      "ex_owner": "",
+      "status": "under_delivery",
+      "data_note": "2026-10-28 入档：计划 11-10 恒力(大连)交船；参数来源=交接船代理/SSP申请邮件(FLAG SINGAPORE, CLASS DNV, BUILT 2026, SUMMER DWT 325000MT @22M SSW, LOA 329.90M / BREADTH 60.0M, GT 172517, CALL SIGN 9VMD4)；未证实字段留空",
+      "length": "329.90",
+      "breadth": "60.0",
+      "summer_draught": "22.0",
+      "draft": "22.0",
+      "ship_type": "Bulk Carrier",
+      "gross_tonnage": "172517",
+      "deadweight": "325000"
     }
   }
 }
