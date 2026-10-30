@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-29",
+ "generated": "2026-10-30",
  "source": "单船档案 PSC-FSC检查记录 sheet（TokyoMOU/APCIS 等来源）",
- "count": 692,
- "ship_count": 61,
+ "count": 693,
+ "ship_count": 62,
  "ships": {
   "SUNNY BEYLA": {
    "imo": "9364320",
@@ -6076,6 +6076,28 @@
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship",
      "defects_official": 0,
      "defects_source": "TokyoMOU官方"
+    }
+   ]
+  },
+  "WINNING CREATION": {
+   "imo": "1084651",
+   "imo_src": "权威库(survey_index)",
+   "count": 1,
+   "records": [
+    {
+     "date": "2026-10-29",
+     "port": "",
+     "port_raw": "",
+     "type": "PSC",
+     "authority": "",
+     "officer": "",
+     "defects": null,
+     "detained": false,
+     "codes": "",
+     "codes_uncertain": false,
+     "rectified": "",
+     "note": "来源:PSC REPORT_2026-10-29.pdf|FP:118bd8e9",
+     "defects_source": "档案(无TMOU对照)"
     }
    ]
   },
@@ -16808,6 +16830,14 @@
   ],
   "": [
    {
+    "ship": "WINNING CREATION",
+    "date": "2026-10-29",
+    "port": "",
+    "defects": null,
+    "detained": false,
+    "codes": ""
+   },
+   {
     "ship": "WINNING QUEEN",
     "date": "2026-10-09",
     "port": "",
@@ -17200,10 +17230,10 @@
    "pontianak": 9,
    "onomichi": 9,
    "robert's bank": 9,
+   "": 9,
    "tangshan": 8,
    "kawasaki": 8,
    "zhanjiang": 8,
-   "": 8,
    "newcastle, nsw": 7,
    "chiba": 7,
    "nagoya, aichi": 7,
@@ -17250,7 +17280,7 @@
    "dalian": 1,
    "董家口": 1
   },
-  "this_year": 52,
+  "this_year": 53,
   "detained_total": 17,
   "with_codes": 32,
   "codes_uncertain": 3,
@@ -17258,7 +17288,7 @@
   "pdf_files_matched": 2,
   "tmou_reconciled": 680,
   "tmou_mismatches": [],
-  "tmou_unmatched": 12
+  "tmou_unmatched": 13
  },
  "missing": []
 }
