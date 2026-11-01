@@ -1,6 +1,6 @@
 {
  "version": "1.0",
- "generated": "2026-10-01T18:25:49",
+ "generated": "2026-11-01T16:00:13",
  "committees": {
   "MEPC": [
    {
@@ -54,16 +54,16 @@
   ],
   "MSC": [
    {
-    "meeting": "MSC 111th session - highlights",
+    "meeting": "MSC 111th session",
     "url": "https://www.imo.org/en/MediaCentre/MeetingSummaries/Pages/Temporary-MSC-111.aspx",
     "date": "22 May 2026",
     "key_points": [
-     "MASS Code for autonomous ships adopted The Committee adopted a new non-mandatory International Code of Safety for Maritime Autonomous Surface Ships (MASS Code) to support the safe integration of AI-enabled and remotely operated commercial ships into global shipping.&#160;",
-     "Consideration of amendments to SOLAS (new chapter) for the Code's adoption;",
-     "By 1 July 2030 - Expected adoption of the IMO’s first mandatory MASS Code, for entry into force on 1 January 2032.",
-     "Situation in the Strait of Hormuz The Committee adopted a resolution requesting the support of IMO Member States for the Secretary-General's ongoing efforts to facilitate the safe evacuation of ships and seafarers trapped in the Persian Gulf.&#160;",
-     "The Committee also approved new Guidance on training and certification of seafarers affected by the situation in the Arabian Sea, the Sea of Oman and the Gulf region, particularly in and around the Strait of Hormuz.",
-     "Guidelines for ships using alternative fuels&#160;"
+     "Amendments to mandatory and related non-mandatory instruments adopted/approved&#160;",
+     "Situation in the Strait of Hormuz – resolution and guidance for seafarers’ certification&#160;&#160;",
+     "Guidelines for ships using alternative fuels approved&#160;",
+     "Free access to standard periodic position LRIT reports for entitled coastal States – draft amendments to SOLAS approved&#160;",
+     "VDES introduced as an alternative to the AIS offering a high level of availability and security – amendments adopted&#160;",
+     "Reports from Sub-Committees approved&#160;"
     ]
    },
    {
