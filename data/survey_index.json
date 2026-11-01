@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-01 11:03",
+  "last_updated": "2026-11-01 15:00",
   "total_ships": 64,
   "ships": {
     "SUNNY_BEYLA": {
@@ -7,7 +7,7 @@
       "imo": "9364320",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": 90092,
+      "gt": "90092",
       "dwt": "180201",
       "surveys": [
         {
@@ -100,6 +100,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2031-01-21",
           "last_done": "2026-01-22"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -181,7 +185,7 @@
       "imo": "9253090",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": 87413,
+      "gt": "87413",
       "dwt": "172565",
       "surveys": [
         {
@@ -343,8 +347,8 @@
       "name": "SUNNY BOKE",
       "imo": "9198240",
       "class_society": "NK",
-      "flag": "Hong Kong, China",
-      "gt": 87473,
+      "flag": "Panama",
+      "gt": "87473",
       "dwt": "172498",
       "surveys": [
         {
@@ -433,6 +437,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2030-06-29",
           "last_done": "2020-10-05"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -502,7 +510,7 @@
       "imo": "9406489",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": 90092,
+      "gt": "90092",
       "dwt": "180181",
       "surveys": [
         {
@@ -678,7 +686,7 @@
       "imo": "9387114",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": 90125,
+      "gt": "90125",
       "dwt": "180201",
       "surveys": [
         {
@@ -817,22 +825,26 @@
         },
         {
           "name": "SMC",
-          "expiry": "2026-12-12"
+          "expiry": "2031-10-09"
         },
         {
           "name": "MLC",
-          "expiry": "2026-12-12"
+          "expiry": "2031-10-09"
         },
         {
           "name": "ISSC (ISPS)",
-          "expiry": "2026-12-12"
+          "expiry": "2031-10-09"
+        },
+        {
+          "name": "Dangerous Goods",
+          "expiry": "2027-04-25"
         }
       ],
       "alerts": {
         "expired": 0,
         "urgent_7d": 0,
         "warning_30d": 0,
-        "info_90d": 3
+        "info_90d": 0
       },
       "extraction_confidence": "high"
     },
@@ -841,7 +853,7 @@
       "imo": "9398149",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": 106367,
+      "gt": "106367",
       "dwt": "207991",
       "surveys": [
         {
@@ -935,6 +947,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2029-10-23",
           "last_done": "2024-09-10"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -980,24 +996,28 @@
         },
         {
           "name": "DOC",
-          "expiry": "2026-10-25"
+          "expiry": "2031-10-25"
         },
         {
           "name": "SMC",
-          "expiry": "2029-08-16"
+          "expiry": "2027-04-02"
         },
         {
           "name": "MLC",
-          "expiry": "2029-08-16"
+          "expiry": "2027-04-02"
         },
         {
           "name": "ISPS",
-          "expiry": "2029-08-16"
+          "expiry": "2027-04-02"
+        },
+        {
+          "name": "Dangerous Goods",
+          "expiry": "2029-10-22"
         }
       ],
       "alerts": {
         "expired": 0,
-        "urgent_7d": 1,
+        "urgent_7d": 0,
         "warning_30d": 0,
         "info_90d": 0
       },
@@ -1008,7 +1028,7 @@
       "imo": "9336969",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": 106367,
+      "gt": "106367",
       "dwt": "208014",
       "surveys": [
         {
@@ -1102,6 +1122,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2027-09-21",
           "last_done": "2007-11-06"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -1179,7 +1203,7 @@
       "imo": "9336957",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": 101953,
+      "gt": "101953",
       "dwt": "203200",
       "surveys": [
         {
@@ -1268,6 +1292,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2030-07-15",
           "last_done": "2007-05-25"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -1345,7 +1373,7 @@
       "imo": "9398113",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": 106367,
+      "gt": "106367",
       "dwt": "207945",
       "surveys": [
         {
@@ -1434,6 +1462,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2030-08-21",
           "last_done": "2020-05-22"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -1511,7 +1543,7 @@
       "imo": "9374064",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": 90396,
+      "gt": "90396",
       "dwt": "180182",
       "surveys": [
         {
@@ -1605,6 +1637,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2029-05-21",
           "last_done": "2014-05-23"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -1682,7 +1718,7 @@
       "imo": "9271597",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": 102101,
+      "gt": "102101",
       "dwt": "203248",
       "surveys": [
         {
@@ -1776,6 +1812,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2027-08-26",
           "last_done": "2012-08-27"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -1849,7 +1889,7 @@
       "imo": "9254666",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": 88674,
+      "gt": "88674",
       "dwt": "176391",
       "surveys": [
         {
@@ -2020,7 +2060,7 @@
       "imo": "9346342",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": 104725,
+      "gt": "104725",
       "dwt": "206296",
       "surveys": [
         {
@@ -2114,6 +2154,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2030-09-28",
           "last_done": "2025-09-29"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -2195,7 +2239,7 @@
       "imo": "9331426",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": 101953,
+      "gt": "101953",
       "dwt": "203264",
       "surveys": [
         {
@@ -2283,6 +2327,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2030-08-12",
           "last_done": "2015-08-13"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -2356,7 +2404,7 @@
       "imo": "9393187",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": 90111,
+      "gt": "90111",
       "dwt": "180129",
       "surveys": [
         {
@@ -2445,6 +2493,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2029-04-21",
           "last_done": "2024-04-22"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -2530,7 +2582,7 @@
       "imo": "9439125",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": 90091,
+      "gt": "90091",
       "dwt": "180176",
       "surveys": [
         {
@@ -2623,6 +2675,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2031-07-29",
           "last_done": "2021-06-12"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -2708,7 +2764,7 @@
       "imo": "9406453",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": 104721,
+      "gt": "104721",
       "dwt": "206312",
       "surveys": [
         {
@@ -2880,7 +2936,7 @@
       "imo": "9406506",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 104761,
+      "gt": "104761",
       "dwt": "206306",
       "surveys": [
         {
@@ -3054,7 +3110,7 @@
       "imo": "9492218",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 106884,
+      "gt": "106884",
       "dwt": "206125",
       "surveys": [
         {
@@ -3146,6 +3202,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2027-01-03",
           "last_done": "2027-01-03"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -3227,7 +3287,7 @@
       "imo": "9250610",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": 94779,
+      "gt": "94779",
       "dwt": "184887",
       "surveys": [
         {
@@ -3281,6 +3341,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2030-09-24",
           "last_done": "2025-09-25"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -3362,7 +3426,7 @@
       "imo": "9325001",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 90091,
+      "gt": "90091",
       "dwt": "180265",
       "surveys": [
         {
@@ -3456,6 +3520,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2030-01-30",
           "last_done": "2019-12-14"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -3537,7 +3605,7 @@
       "imo": "9374088",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 90091,
+      "gt": "90091",
       "dwt": "180277",
       "surveys": [
         {
@@ -3630,6 +3698,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2028-08-02",
           "last_done": "2023-06-27"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -3711,7 +3783,7 @@
       "imo": "9232058",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 87590,
+      "gt": "87590",
       "dwt": "170578",
       "surveys": [
         {
@@ -3800,6 +3872,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2030-07-15",
           "last_done": "2025-07-16"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -3885,7 +3961,7 @@
       "imo": "9279393",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 113929,
+      "gt": "113929",
       "dwt": "229186",
       "surveys": [
         {
@@ -3979,6 +4055,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2029-05-24",
           "last_done": "2024-04-08"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -4056,7 +4136,7 @@
       "imo": "9314076",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 90091,
+      "gt": "90091",
       "dwt": "180310",
       "surveys": [
         {
@@ -4150,6 +4230,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2029-10-21",
           "last_done": "2014-10-23"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -4231,7 +4315,7 @@
       "imo": "9722948",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 107791,
+      "gt": "107791",
       "dwt": "209513",
       "surveys": [
         {
@@ -4324,6 +4408,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2031-04-25",
           "last_done": "2021-05-16"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -4409,7 +4497,7 @@
       "imo": "9722950",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 107791,
+      "gt": "107791",
       "dwt": "209545",
       "surveys": [
         {
@@ -4502,6 +4590,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2031-08-08",
           "last_done": "2021-06-15"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -4591,7 +4683,7 @@
       "imo": "9633068",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 92758,
+      "gt": "92758",
       "dwt": "181501",
       "surveys": [
         {
@@ -4680,6 +4772,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2030-07-23",
           "last_done": "2025-07-24"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -4757,7 +4853,7 @@
       "imo": "9314052",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 90091,
+      "gt": "90091",
       "dwt": "180310",
       "surveys": [
         {
@@ -4851,6 +4947,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2031-11-23",
           "last_done": "2021-11-25"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -4932,7 +5032,7 @@
       "imo": "9659854",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 92752,
+      "gt": "92752",
       "dwt": "181371",
       "surveys": [
         {
@@ -5102,7 +5202,7 @@
       "imo": "9659866",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 92752,
+      "gt": "92752",
       "dwt": "181387",
       "surveys": [
         {
@@ -5196,6 +5296,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2029-02-26",
           "last_done": "2014-02-28"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -5273,7 +5377,7 @@
       "imo": "9271602",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": 102207,
+      "gt": "102207",
       "dwt": "203315",
       "surveys": [
         {
@@ -5361,6 +5465,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2029-04-05",
           "last_done": "2019-04-04"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -5442,7 +5550,7 @@
       "imo": "9450234",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": 89603,
+      "gt": "89603",
       "dwt": "176890",
       "surveys": [
         {
@@ -5536,6 +5644,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2029-02-12",
           "last_done": "2018-12-31"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -5593,22 +5705,22 @@
         },
         {
           "name": "SMC",
-          "expiry": "2027-01-08"
+          "expiry": "2031-10-22"
         },
         {
           "name": "MLC",
-          "expiry": "2027-01-08"
+          "expiry": "2031-10-22"
         },
         {
           "name": "ISSC (ISPS)",
-          "expiry": "2027-01-08"
+          "expiry": "2031-10-22"
         }
       ],
       "alerts": {
         "expired": 0,
         "urgent_7d": 0,
         "warning_30d": 0,
-        "info_90d": 3
+        "info_90d": 0
       },
       "extraction_confidence": "high"
     },
@@ -5617,7 +5729,7 @@
       "imo": "9311282",
       "class_society": "NK",
       "flag": "Hong Kong, China",
-      "gt": 89726,
+      "gt": "89726",
       "dwt": "176967",
       "surveys": [
         {
@@ -5710,6 +5822,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2031-07-05",
           "last_done": "2021-07-07"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -5771,22 +5887,26 @@
         },
         {
           "name": "SMC",
-          "expiry": "2026-12-16"
+          "expiry": "2031-10-04"
         },
         {
           "name": "MLC",
-          "expiry": "2026-12-16"
+          "expiry": "2031-10-02"
         },
         {
           "name": "ISSC (ISPS)",
-          "expiry": "2026-12-16"
+          "expiry": "2031-10-02"
+        },
+        {
+          "name": "Dangerous Goods",
+          "expiry": "2031-06-01"
         }
       ],
       "alerts": {
         "expired": 0,
         "urgent_7d": 0,
         "warning_30d": 0,
-        "info_90d": 3
+        "info_90d": 0
       },
       "extraction_confidence": "high"
     },
@@ -5902,7 +6022,7 @@
       "imo": "9393199",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": 90421,
+      "gt": "90421",
       "dwt": "180140",
       "surveys": [
         {
@@ -5991,6 +6111,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2029-05-03",
           "last_done": "2024-05-03"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -6072,7 +6196,7 @@
       "imo": "9254678",
       "class_society": "NK",
       "flag": "Liberia",
-      "gt": 101953,
+      "gt": "101953",
       "dwt": "203508",
       "surveys": [
         {
@@ -6160,6 +6284,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2029-07-04",
           "last_done": "2018-06-25"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -6237,7 +6365,7 @@
       "imo": "9336945",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 102319,
+      "gt": "102319",
       "dwt": "203091",
       "surveys": [
         {
@@ -6330,6 +6458,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2031-01-28",
           "last_done": "2026-01-13"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -6415,7 +6547,7 @@
       "imo": "9346172",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 102092,
+      "gt": "102092",
       "dwt": "203233",
       "surveys": [
         {
@@ -6508,6 +6640,10 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2030-10-04",
           "last_done": "2025-10-05"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -6589,7 +6725,7 @@
       "imo": "9859765",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 107791,
+      "gt": "107791",
       "dwt": "208951",
       "surveys": [
         {
@@ -6760,7 +6896,7 @@
       "imo": "9859777",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 107786,
+      "gt": "107786",
       "dwt": "208970",
       "surveys": [
         {
@@ -6931,7 +7067,7 @@
       "imo": "9278636",
       "class_society": "NK",
       "flag": "Singapore",
-      "gt": 101933,
+      "gt": "101933",
       "dwt": "203195",
       "surveys": [
         {
@@ -7156,7 +7292,8 @@
           "expiry": "2027-01-20"
         },
         {
-          "name": "EIAPP"
+          "name": "EIAPP",
+          "expiry": "2029-09-28"
         },
         {
           "name": "IAPP",
@@ -7274,7 +7411,8 @@
           "expiry": "2031-06-24"
         },
         {
-          "name": "EIAPP"
+          "name": "EIAPP",
+          "expiry": "2031-01-24"
         },
         {
           "name": "IAPP",
@@ -7437,7 +7575,7 @@
         "warning_30d": 0,
         "info_90d": 1
       },
-      "extraction_confidence": "medium"
+      "extraction_confidence": "high"
     },
     "WINNING_RICH": {
       "name": "WINNING RICH",
@@ -7542,7 +7680,7 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "medium"
+      "extraction_confidence": "high"
     },
     "WINNING_SPIRIT": {
       "name": "WINNING SPIRIT",
@@ -7647,7 +7785,7 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "medium"
+      "extraction_confidence": "high"
     },
     "SUNNY_FARANAH": {
       "name": "SUNNY FARANAH",
@@ -8571,39 +8709,39 @@
         },
         {
           "name": "IOPP",
-          "expiry": "2026-10-12"
+          "expiry": "2031-10-12"
         },
         {
           "name": "IAPP",
-          "expiry": "2026-10-12"
+          "expiry": "2031-10-12"
         },
         {
           "name": "ISPP",
-          "expiry": "2026-10-12"
+          "expiry": "2031-10-12"
         },
         {
           "name": "Load Line",
-          "expiry": "2026-10-12"
+          "expiry": "2031-10-12"
         },
         {
           "name": "Safety Construction",
-          "expiry": "2026-10-12"
+          "expiry": "2031-10-12"
         },
         {
           "name": "Safety Equipment",
-          "expiry": "2026-10-12"
+          "expiry": "2026-10-30"
         },
         {
           "name": "Safety Radio",
-          "expiry": "2026-10-12"
+          "expiry": "2031-10-12"
         },
         {
           "name": "BWM",
-          "expiry": "2026-10-12"
+          "expiry": "2031-10-12"
         },
         {
           "name": "IHM",
-          "expiry": "2026-10-12"
+          "expiry": "2031-10-12"
         },
         {
           "name": "Cargo Gear",
@@ -8619,7 +8757,7 @@
         }
       ],
       "alerts": {
-        "expired": 11,
+        "expired": 3,
         "urgent_7d": 1,
         "warning_30d": 0,
         "info_90d": 0
@@ -8738,7 +8876,7 @@
     },
     "WINNING_AMBITION": {
       "name": "WINNING AMBITION",
-      "imo": "1037397",
+      "imo": "1037393",
       "class_society": "DNV",
       "flag": "Singapore",
       "gt": "174863",
@@ -8821,7 +8959,7 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "medium"
+      "extraction_confidence": "high"
     },
     "SUNNY_SKY": {
       "name": "SUNNY SKY",
@@ -8922,7 +9060,7 @@
         "warning_30d": 0,
         "info_90d": 0
       },
-      "extraction_confidence": "medium"
+      "extraction_confidence": "high"
     },
     "SUNNY_KANKAN": {
       "name": "SUNNY KANKAN",
