@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-25T09:02:33",
- "source": "Tokyo MOU APCIS（源文件生成于 2026-10-25T09:02:22）",
- "ship_count": 64,
+ "generated": "2026-11-01T09:02:02",
+ "source": "Tokyo MOU APCIS（源文件生成于 2026-11-01T09:01:51）",
+ "ship_count": 65,
  "ships": {
   "SUNNY BEYLA": {
    "risk_level": "Standard",
@@ -9115,9 +9115,9 @@
     "imo": "0471029"
    },
    "inspections": [],
-   "status": "stale",
-   "scanned_at": "2026-10-11T09:00:44",
-   "imo": "1037397",
+   "status": "ok",
+   "scanned_at": "2026-11-01T09:00:44",
+   "imo": "1037393",
    "note": "本次 TMOU 扫描未成功（详情为空(限流?)），以下为上次成功结果",
    "data_issue": null
   },
@@ -9688,8 +9688,8 @@
     "imo": "0471029"
    },
    "inspections": [],
-   "status": "stale",
-   "scanned_at": "2026-09-21T05:39:47",
+   "status": "ok",
+   "scanned_at": "2026-11-01T09:00:56",
    "imo": "1037402",
    "note": "本次 TMOU 扫描未成功（详情为空(限流?)），以下为上次成功结果"
   },
@@ -9703,10 +9703,17 @@
     "imo": "0471029"
    },
    "inspections": [],
-   "status": "stale",
-   "scanned_at": "2026-10-18T09:02:03",
+   "status": "ok",
+   "scanned_at": "2026-11-01T09:01:08",
    "imo": "1084651",
    "note": "本次 TMOU 扫描未成功（详情为空(限流?)），以下为上次成功结果"
+  },
+  "WINNING DEVOTION": {
+   "status": "error",
+   "error": "详情为空(限流?)",
+   "name": "WINNING DEVOTION",
+   "imo": "1084663",
+   "note": "TMOU 扫描未成功，数据可能不完整"
   }
  }
 }
