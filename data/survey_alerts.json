@@ -1,56 +1,12 @@
 {
-  "generated": "2026-11-01 15:00",
+  "generated": "2026-11-02 14:00",
   "expired": [
-    {
-      "ship": "SUNNY ROUTE",
-      "class": "RINA",
-      "description": "ISM Safety Management",
-      "date": "2026-10-31",
-      "days": -1
-    },
-    {
-      "ship": "WINNING WEALTH",
-      "class": "CCS",
-      "description": "Safety Equipment",
-      "date": "2026-10-30",
-      "days": -2
-    },
-    {
-      "ship": "WINNING WEALTH",
-      "class": "CCS",
-      "description": "Class Special Survey for",
-      "date": "2026-10-12",
-      "days": -20
-    },
-    {
-      "ship": "WINNING WEALTH",
-      "class": "CCS",
-      "description": "BTS (船底外部检验)",
-      "date": "2026-10-12",
-      "days": -20
-    },
-    {
-      "ship": "WINNING WEALTH",
-      "class": "CCS",
-      "description": "Cargo Gear",
-      "date": "2026-10-12",
-      "days": -20
-    },
-    {
-      "ship": "WINNING WEALTH",
-      "class": "CCS",
-      "description": "AFS",
-      "date": "2026-10-12",
-      "days": -20
-    }
-  ],
-  "urgent_7d": [
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "DOC",
       "date": "2026-10-18",
-      "days": 0,
+      "days": -1,
       "doc_marker": true
     },
     {
@@ -58,7 +14,7 @@
       "class": "NK",
       "description": "DOC",
       "date": "2026-10-18",
-      "days": 0,
+      "days": -1,
       "doc_marker": true
     },
     {
@@ -66,7 +22,7 @@
       "class": "NK",
       "description": "DOC",
       "date": "2026-10-18",
-      "days": 0,
+      "days": -1,
       "doc_marker": true
     },
     {
@@ -74,7 +30,7 @@
       "class": "NK",
       "description": "DOC",
       "date": "2026-10-18",
-      "days": 0,
+      "days": -1,
       "doc_marker": true
     },
     {
@@ -82,7 +38,7 @@
       "class": "NK",
       "description": "DOC",
       "date": "2026-10-18",
-      "days": 0,
+      "days": -1,
       "doc_marker": true
     },
     {
@@ -90,7 +46,7 @@
       "class": "NK",
       "description": "DOC",
       "date": "2026-10-18",
-      "days": 0,
+      "days": -1,
       "doc_marker": true
     },
     {
@@ -98,7 +54,7 @@
       "class": "NK",
       "description": "DOC",
       "date": "2026-10-18",
-      "days": 0,
+      "days": -1,
       "doc_marker": true
     },
     {
@@ -106,7 +62,7 @@
       "class": "NK",
       "description": "DOC",
       "date": "2026-10-18",
-      "days": 0,
+      "days": -1,
       "doc_marker": true
     },
     {
@@ -114,7 +70,7 @@
       "class": "NK",
       "description": "DOC",
       "date": "2026-10-18",
-      "days": 0,
+      "days": -1,
       "doc_marker": true
     },
     {
@@ -122,7 +78,7 @@
       "class": "NK",
       "description": "DOC",
       "date": "2026-10-18",
-      "days": 0,
+      "days": -1,
       "doc_marker": true
     },
     {
@@ -130,7 +86,7 @@
       "class": "NK",
       "description": "DOC",
       "date": "2026-10-18",
-      "days": 0,
+      "days": -1,
       "doc_marker": true
     },
     {
@@ -138,7 +94,7 @@
       "class": "NK",
       "description": "DOC",
       "date": "2026-10-18",
-      "days": 0,
+      "days": -1,
       "doc_marker": true
     },
     {
@@ -146,7 +102,7 @@
       "class": "NK",
       "description": "DOC",
       "date": "2026-10-18",
-      "days": 0,
+      "days": -1,
       "doc_marker": true
     },
     {
@@ -154,7 +110,7 @@
       "class": "NK",
       "description": "DOC",
       "date": "2026-10-18",
-      "days": 0,
+      "days": -1,
       "doc_marker": true
     },
     {
@@ -162,7 +118,7 @@
       "class": "NK",
       "description": "DOC",
       "date": "2026-10-18",
-      "days": 0,
+      "days": -1,
       "doc_marker": true
     },
     {
@@ -170,7 +126,7 @@
       "class": "NK",
       "description": "DOC",
       "date": "2026-10-18",
-      "days": 0,
+      "days": -1,
       "doc_marker": true
     },
     {
@@ -178,7 +134,7 @@
       "class": "NK",
       "description": "DOC",
       "date": "2026-10-18",
-      "days": 0,
+      "days": -1,
       "doc_marker": true
     },
     {
@@ -186,7 +142,7 @@
       "class": "NK",
       "description": "DOC",
       "date": "2026-10-18",
-      "days": 0,
+      "days": -1,
       "doc_marker": true
     },
     {
@@ -194,7 +150,7 @@
       "class": "NK",
       "description": "DOC",
       "date": "2026-10-18",
-      "days": 0,
+      "days": -1,
       "doc_marker": true
     },
     {
@@ -202,7 +158,7 @@
       "class": "NK",
       "description": "DOC",
       "date": "2026-10-18",
-      "days": 0,
+      "days": -1,
       "doc_marker": true
     },
     {
@@ -210,7 +166,7 @@
       "class": "NK",
       "description": "DOC",
       "date": "2026-10-18",
-      "days": 0,
+      "days": -1,
       "doc_marker": true
     },
     {
@@ -218,7 +174,7 @@
       "class": "NK",
       "description": "DOC",
       "date": "2026-10-18",
-      "days": 0,
+      "days": -1,
       "doc_marker": true
     },
     {
@@ -226,7 +182,7 @@
       "class": "NK",
       "description": "DOC",
       "date": "2026-10-18",
-      "days": 0,
+      "days": -1,
       "doc_marker": true
     },
     {
@@ -234,7 +190,7 @@
       "class": "NK",
       "description": "DOC",
       "date": "2026-10-18",
-      "days": 0,
+      "days": -1,
       "doc_marker": true
     },
     {
@@ -242,7 +198,7 @@
       "class": "ABS",
       "description": "DOC",
       "date": "2026-10-18",
-      "days": 0,
+      "days": -1,
       "doc_marker": true
     },
     {
@@ -250,7 +206,7 @@
       "class": "KR",
       "description": "DOC",
       "date": "2026-10-18",
-      "days": 0,
+      "days": -1,
       "doc_marker": true
     },
     {
@@ -258,7 +214,7 @@
       "class": "KR",
       "description": "DOC",
       "date": "2026-10-18",
-      "days": 0,
+      "days": -1,
       "doc_marker": true
     },
     {
@@ -266,7 +222,7 @@
       "class": "KR",
       "description": "DOC",
       "date": "2026-10-18",
-      "days": 0,
+      "days": -1,
       "doc_marker": true
     },
     {
@@ -274,7 +230,7 @@
       "class": "CCS",
       "description": "DOC",
       "date": "2026-10-18",
-      "days": 0,
+      "days": -1,
       "doc_marker": true
     },
     {
@@ -282,7 +238,7 @@
       "class": "CCS",
       "description": "DOC",
       "date": "2026-10-18",
-      "days": 0,
+      "days": -1,
       "doc_marker": true
     },
     {
@@ -290,7 +246,7 @@
       "class": "CCS",
       "description": "DOC",
       "date": "2026-10-18",
-      "days": 0,
+      "days": -1,
       "doc_marker": true
     },
     {
@@ -298,7 +254,7 @@
       "class": "CCS",
       "description": "DOC",
       "date": "2026-10-18",
-      "days": 0,
+      "days": -1,
       "doc_marker": true
     },
     {
@@ -306,7 +262,7 @@
       "class": "BV",
       "description": "DOC",
       "date": "2026-10-18",
-      "days": 0,
+      "days": -1,
       "doc_marker": true
     },
     {
@@ -314,213 +270,256 @@
       "class": "RINA",
       "description": "DOC",
       "date": "2026-10-18",
-      "days": 0,
+      "days": -1,
       "doc_marker": true
+    },
+    {
+      "ship": "SUNNY ROUTE",
+      "class": "RINA",
+      "description": "ISM Safety Management",
+      "date": "2026-10-31",
+      "days": -2
+    },
+    {
+      "ship": "WINNING WEALTH",
+      "class": "CCS",
+      "description": "Safety Equipment",
+      "date": "2026-10-30",
+      "days": -3
+    },
+    {
+      "ship": "WINNING WEALTH",
+      "class": "CCS",
+      "description": "Class Special Survey for",
+      "date": "2026-10-12",
+      "days": -21
+    },
+    {
+      "ship": "WINNING WEALTH",
+      "class": "CCS",
+      "description": "BTS (船底外部检验)",
+      "date": "2026-10-12",
+      "days": -21
+    },
+    {
+      "ship": "WINNING WEALTH",
+      "class": "CCS",
+      "description": "Cargo Gear",
+      "date": "2026-10-12",
+      "days": -21
+    },
+    {
+      "ship": "WINNING WEALTH",
+      "class": "CCS",
+      "description": "AFS",
+      "date": "2026-10-12",
+      "days": -21
     }
   ],
+  "urgent_7d": [],
   "warning_30d": [
     {
       "ship": "WINNING HOPE",
       "class": "NK",
       "description": "SMC",
       "date": "2026-11-13",
-      "days": 12
+      "days": 11
     },
     {
       "ship": "WINNING HOPE",
       "class": "NK",
       "description": "MLC",
       "date": "2026-11-13",
-      "days": 12
+      "days": 11
     },
     {
       "ship": "WINNING HOPE",
       "class": "NK",
       "description": "ISSC (ISPS)",
       "date": "2026-11-13",
-      "days": 12
+      "days": 11
     },
     {
       "ship": "WINNING HOPE",
       "class": "NK",
       "description": "ISPS",
       "date": "2026-11-13",
-      "days": 12
+      "days": 11
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "No.1 Prop. Shaft Svy",
       "date": "2026-11-18",
-      "days": 17
+      "days": 16
     },
     {
       "ship": "WINNING WAVE",
       "class": "CCS",
       "description": "Class Annual Survey",
       "date": "2026-11-18",
-      "days": 17
+      "days": 16
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "Boiler Survey (锅炉检验)",
       "date": "2026-11-27",
-      "days": 26
+      "days": 25
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "Load Line Renewal (载重线换证)",
       "date": "2026-11-27",
-      "days": 26
+      "days": 25
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "Safety Construction Renewal (构造安全换证)",
       "date": "2026-11-27",
-      "days": 26
+      "days": 25
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "Safety Equipment Renewal (设备安全换证)",
       "date": "2026-11-27",
-      "days": 26
+      "days": 25
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "Safety Radio Renewal (无线电安全换证)",
       "date": "2026-11-27",
-      "days": 26
+      "days": 25
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "OPP Renewal (防油污换证)",
       "date": "2026-11-27",
-      "days": 26
+      "days": 25
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "SPP Renewal (生活污水换证)",
       "date": "2026-11-27",
-      "days": 26
+      "days": 25
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "APP Renewal (防空气污染换证)",
       "date": "2026-11-27",
-      "days": 26
+      "days": 25
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "BWM Renewal (压载水换证)",
       "date": "2026-11-27",
-      "days": 26
+      "days": 25
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "Special Survey",
       "date": "2026-11-27",
-      "days": 26
+      "days": 25
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "No.1 Boiler Survey",
       "date": "2026-11-27",
-      "days": 26
+      "days": 25
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "Docking Survey (*1)",
       "date": "2026-11-27",
-      "days": 26
+      "days": 25
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "Load Line",
       "date": "2026-11-27",
-      "days": 26
+      "days": 25
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "Safety Construction",
       "date": "2026-11-27",
-      "days": 26
+      "days": 25
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "Safety Equipment",
       "date": "2026-11-27",
-      "days": 26
+      "days": 25
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "Safety Radio",
       "date": "2026-11-27",
-      "days": 26
+      "days": 25
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "OPP (MARPOL Annex I)",
       "date": "2026-11-27",
-      "days": 26
+      "days": 25
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "SPP (MARPOL Annex IV)",
       "date": "2026-11-27",
-      "days": 26
+      "days": 25
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "APP (MARPOL Annex VI)",
       "date": "2026-11-27",
-      "days": 26
+      "days": 25
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "EE Anti Fouling System BWM",
       "date": "2026-11-27",
-      "days": 26
+      "days": 25
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "IHM",
       "date": "2026-11-27",
-      "days": 26
+      "days": 25
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "IMSBC code",
       "date": "2026-11-27",
-      "days": 26
+      "days": 25
     },
     {
       "ship": "SUNNY BOFFA",
       "class": "NK",
       "description": "BWM",
       "date": "2026-11-27",
-      "days": 26
+      "days": 25
     }
   ],
   "info_90d": [
@@ -529,266 +528,266 @@
       "class": "NK",
       "description": "Boiler Survey (锅炉检验)",
       "date": "2026-12-03",
-      "days": 32
+      "days": 31
     },
     {
       "ship": "WINNING NATURE",
       "class": "NK",
       "description": "No.1 Boiler Survey",
       "date": "2026-12-03",
-      "days": 32
+      "days": 31
     },
     {
       "ship": "WINNING NATURE",
       "class": "NK",
       "description": "Docking Survey",
       "date": "2026-12-03",
-      "days": 32
+      "days": 31
     },
     {
       "ship": "WINNING NATURE",
       "class": "NK",
       "description": "Docking Survey (*1)",
       "date": "2026-12-03",
-      "days": 32
+      "days": 31
     },
     {
       "ship": "SUNNY RIVER",
       "class": "RINA",
       "description": "ISM Safety Management",
       "date": "2026-12-04",
-      "days": 33
+      "days": 32
     },
     {
       "ship": "SUNNY KOGON",
       "class": "CCS",
       "description": "Class Annual Survey",
       "date": "2026-12-06",
-      "days": 35
+      "days": 34
     },
     {
       "ship": "WINNING MISSION",
       "class": "NK",
       "description": "SMC",
       "date": "2026-12-23",
-      "days": 52
+      "days": 51
     },
     {
       "ship": "WINNING MISSION",
       "class": "NK",
       "description": "MLC",
       "date": "2026-12-23",
-      "days": 52
+      "days": 51
     },
     {
       "ship": "WINNING MISSION",
       "class": "NK",
       "description": "ISSC (ISPS)",
       "date": "2026-12-23",
-      "days": 52
+      "days": 51
     },
     {
       "ship": "WINNING KINDNESS",
       "class": "KR",
       "description": "Annual Survey",
       "date": "2026-12-28",
-      "days": 57
+      "days": 56
     },
     {
       "ship": "WINNING BRIGHT",
       "class": "NK",
       "description": "No.1 Prop. Shaft Svy",
       "date": "2027-01-03",
-      "days": 63
+      "days": 62
     },
     {
       "ship": "SUNNY KALOUM",
       "class": "NK",
       "description": "SMC",
       "date": "2027-01-07",
-      "days": 67
+      "days": 66
     },
     {
       "ship": "SUNNY KALOUM",
       "class": "NK",
       "description": "MLC",
       "date": "2027-01-07",
-      "days": 67
+      "days": 66
     },
     {
       "ship": "SUNNY KALOUM",
       "class": "NK",
       "description": "ISSC (ISPS)",
       "date": "2027-01-07",
-      "days": 67
+      "days": 66
     },
     {
       "ship": "WINNING TIMES",
       "class": "CCS",
       "description": "Class Annual Survey",
       "date": "2027-01-17",
-      "days": 77
+      "days": 76
     },
     {
       "ship": "WINNING TIMES",
       "class": "CCS",
       "description": "Class Intermediate Survey",
       "date": "2027-01-17",
-      "days": 77
+      "days": 76
     },
     {
       "ship": "SUNNY NZKORE",
       "class": "NK",
       "description": "SMC",
       "date": "2027-01-19",
-      "days": 79
+      "days": 78
     },
     {
       "ship": "SUNNY NZKORE",
       "class": "NK",
       "description": "MLC",
       "date": "2027-01-19",
-      "days": 79
+      "days": 78
     },
     {
       "ship": "SUNNY NZKORE",
       "class": "NK",
       "description": "ISSC (ISPS)",
       "date": "2027-01-19",
-      "days": 79
+      "days": 78
     },
     {
       "ship": "SUNNY NZKORE",
       "class": "NK",
       "description": "ISPS",
       "date": "2027-01-19",
-      "days": 79
+      "days": 78
     },
     {
       "ship": "WINNING PEACE",
       "class": "ABS",
       "description": "ISM SMC",
       "date": "2027-01-20",
-      "days": 80
+      "days": 79
     },
     {
       "ship": "WINNING PEACE",
       "class": "ABS",
       "description": "ISPS",
       "date": "2027-01-20",
-      "days": 80
+      "days": 79
     },
     {
       "ship": "WINNING PEACE",
       "class": "ABS",
       "description": "MLC",
       "date": "2027-01-20",
-      "days": 80
+      "days": 79
     },
     {
       "ship": "WINNING PEACE",
       "class": "ABS",
       "description": "SMC",
       "date": "2027-01-20",
-      "days": 80
+      "days": 79
     },
     {
       "ship": "SUNNY SIGUIRI",
       "class": "NK",
       "description": "SMC",
       "date": "2027-01-23",
-      "days": 83
+      "days": 82
     },
     {
       "ship": "SUNNY SIGUIRI",
       "class": "NK",
       "description": "MLC",
       "date": "2027-01-23",
-      "days": 83
+      "days": 82
     },
     {
       "ship": "SUNNY SIGUIRI",
       "class": "NK",
       "description": "ISSC (ISPS)",
       "date": "2027-01-23",
-      "days": 83
+      "days": 82
     },
     {
       "ship": "WINNING DILIGENCE",
       "class": "NK",
       "description": "SMC",
       "date": "2027-01-27",
-      "days": 87
+      "days": 86
     },
     {
       "ship": "WINNING DILIGENCE",
       "class": "NK",
       "description": "MLC",
       "date": "2027-01-27",
-      "days": 87
+      "days": 86
     },
     {
       "ship": "WINNING DILIGENCE",
       "class": "NK",
       "description": "ISSC (ISPS)",
       "date": "2027-01-27",
-      "days": 87
+      "days": 86
     },
     {
       "ship": "WINNING DILIGENCE",
       "class": "NK",
       "description": "ISPS",
       "date": "2027-01-27",
-      "days": 87
+      "days": 86
     },
     {
       "ship": "SUNNY MAMOU",
       "class": "NK",
       "description": "SMC",
       "date": "2027-01-29",
-      "days": 89
+      "days": 88
     },
     {
       "ship": "SUNNY MAMOU",
       "class": "NK",
       "description": "MLC",
       "date": "2027-01-29",
-      "days": 89
+      "days": 88
     },
     {
       "ship": "SUNNY MAMOU",
       "class": "NK",
       "description": "ISSC (ISPS)",
       "date": "2027-01-29",
-      "days": 89
+      "days": 88
     },
     {
       "ship": "SUNNY MAMOU",
       "class": "NK",
       "description": "ISPS",
       "date": "2027-01-29",
-      "days": 89
+      "days": 88
     },
     {
       "ship": "SUNNY SAILOR",
       "class": "NK",
       "description": "SMC",
       "date": "2027-01-30",
-      "days": 90
+      "days": 89
     },
     {
       "ship": "SUNNY SAILOR",
       "class": "NK",
       "description": "MLC",
       "date": "2027-01-30",
-      "days": 90
+      "days": 89
     },
     {
       "ship": "SUNNY SAILOR",
       "class": "NK",
       "description": "ISSC (ISPS)",
       "date": "2027-01-30",
-      "days": 90
+      "days": 89
     }
   ]
 }
