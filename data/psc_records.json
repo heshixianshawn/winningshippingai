@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-02",
+ "generated": "2026-11-03",
  "source": "单船档案 PSC-FSC检查记录 sheet（TokyoMOU/APCIS 等来源）",
  "count": 692,
  "ship_count": 62,
@@ -1665,20 +1665,19 @@
    "count": 11,
    "records": [
     {
-     "date": "2025-11-04",
-     "port": "Yantai",
-     "port_raw": "Yantai (China)",
-     "type": "",
+     "date": "2026-11-02",
+     "port": "qingdao",
+     "port_raw": "青岛",
+     "type": "PSC",
      "authority": "",
      "officer": "",
-     "defects": 3,
+     "defects": 4,
      "detained": false,
-     "codes": "",
+     "codes": "10109 \n04117 \n14601 \n03108",
      "codes_uncertain": false,
      "rectified": "",
-     "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship",
-     "defects_official": 3,
-     "defects_source": "TokyoMOU官方"
+     "note": "来源:阳光卡鲁姆PSC报告-已关.pdf|FP:f89e341a",
+     "defects_source": "档案(无TMOU对照)"
     },
     {
      "date": "2023-12-14",
@@ -12023,14 +12022,6 @@
     "codes": "11110 BLOCK NOT LOWERED TO SET ON THE DAVIT A gah |"
    },
    {
-    "ship": "SUNNY KALOUM",
-    "date": "2025-11-04",
-    "port": "Yantai",
-    "defects": 3,
-    "detained": false,
-    "codes": ""
-   },
-   {
     "ship": "WINNING LOYALTY",
     "date": "2025-10-24",
     "port": "Yantai",
@@ -13228,6 +13219,14 @@
    }
   ],
   "qingdao": [
+   {
+    "ship": "SUNNY KALOUM",
+    "date": "2026-11-02",
+    "port": "qingdao",
+    "defects": 4,
+    "detained": false,
+    "codes": "10109 \n04117 \n14601 \n03108"
+   },
    {
     "ship": "WINNING BRIGHT",
     "date": "2025-05-23",
@@ -17182,10 +17181,10 @@
  },
  "stats": {
   "by_port": {
-   "yantai": 155,
+   "yantai": 154,
    "port hedland, wa": 69,
+   "qingdao": 26,
    "tianjin": 26,
-   "qingdao": 25,
    "caofeidian": 20,
    "gladstone, qld": 17,
    "mizushima": 17,
@@ -17255,15 +17254,15 @@
    "miyako, iwate": 1,
    "dalian": 1
   },
-  "this_year": 54,
+  "this_year": 55,
   "detained_total": 17,
-  "with_codes": 33,
+  "with_codes": 34,
   "codes_uncertain": 3,
   "pdf_enriched": 0,
   "pdf_files_matched": 2,
-  "tmou_reconciled": 678,
+  "tmou_reconciled": 677,
   "tmou_mismatches": [],
-  "tmou_unmatched": 14
+  "tmou_unmatched": 15
  },
  "missing": []
 }
