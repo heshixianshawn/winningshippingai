@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-03 14:00",
+  "last_updated": "2026-11-04 14:00",
   "total_ships": 64,
   "ships": {
     "SUNNY_BEYLA": {
@@ -10,12 +10,6 @@
       "gt": "90092",
       "dwt": "180201",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2031-01-21",
-          "last_done": "2026-01-22"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
@@ -94,6 +88,12 @@
           "desc": "Annual Survey",
           "window_start": "2026-10-21",
           "window_end": "2027-04-21"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Survey",
+          "due_date": "2031-01-21",
+          "last_done": "2026-01-22"
         },
         {
           "type": "intermediate_survey",
@@ -352,12 +352,6 @@
       "dwt": "172498",
       "surveys": [
         {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2030-06-29",
-          "last_done": "2025-06-30"
-        },
-        {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2028-06-29",
@@ -368,12 +362,6 @@
           "desc": "Docking Survey (坞检)",
           "due_date": "2028-06-29",
           "last_done": "2025-06-30"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2030-06-29",
-          "last_done": "2020-10-05"
         },
         {
           "type": "statutory",
@@ -431,6 +419,18 @@
           "last_done": "2026-06-03",
           "window_start": "2027-03-29",
           "window_end": "2027-09-29"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Survey",
+          "due_date": "2030-06-29",
+          "last_done": "2025-06-30"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "2030-06-29",
+          "last_done": "2020-10-05"
         },
         {
           "type": "intermediate_survey",
@@ -514,12 +514,6 @@
       "dwt": "180181",
       "surveys": [
         {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2027-11-21",
-          "last_done": "2022-11-26"
-        },
-        {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2027-11-21",
@@ -595,6 +589,12 @@
         {
           "type": "planned_machinery",
           "desc": "Planned Machinery Survey"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Survey",
+          "due_date": "2027-11-21",
+          "last_done": "2022-11-26"
         },
         {
           "type": "boiler",
@@ -690,12 +690,6 @@
       "dwt": "180201",
       "surveys": [
         {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2027-04-25",
-          "last_done": "2022-05-05"
-        },
-        {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2027-04-25",
@@ -706,12 +700,6 @@
           "desc": "Docking Survey (坞检)",
           "due_date": "2027-04-25",
           "last_done": "2025-07-06"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2027-05-04",
-          "last_done": "2007-04-26"
         },
         {
           "type": "statutory",
@@ -766,6 +754,18 @@
         {
           "type": "planned_machinery",
           "desc": "Planned Machinery Survey"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Survey",
+          "due_date": "2027-04-25",
+          "last_done": "2022-05-05"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "2027-05-04",
+          "last_done": "2007-04-26"
         },
         {
           "type": "boiler",
@@ -857,12 +857,6 @@
       "dwt": "207991",
       "surveys": [
         {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2029-10-22",
-          "last_done": "2024-09-10"
-        },
-        {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2027-09-09",
@@ -941,6 +935,12 @@
           "last_done": "2025-08-08",
           "window_start": "2026-07-22",
           "window_end": "2027-01-22"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Survey",
+          "due_date": "2029-10-22",
+          "last_done": "2024-09-10"
         },
         {
           "type": "intermediate_survey",
@@ -1032,12 +1032,6 @@
       "dwt": "208014",
       "surveys": [
         {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2030-10-07",
-          "last_done": "2025-07-16"
-        },
-        {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2028-07-15",
@@ -1048,12 +1042,6 @@
           "desc": "Docking Survey (坞检)",
           "due_date": "2028-07-15",
           "last_done": "2025-07-16"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2027-09-21",
-          "last_done": "2007-11-06"
         },
         {
           "type": "statutory",
@@ -1116,6 +1104,18 @@
           "last_done": "2026-07-08",
           "window_start": "2027-07-07",
           "window_end": "2028-01-07"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Survey",
+          "due_date": "2030-10-07",
+          "last_done": "2025-07-16"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "2027-09-21",
+          "last_done": "2007-11-06"
         },
         {
           "type": "intermediate_survey",
@@ -1207,12 +1207,6 @@
       "dwt": "203200",
       "surveys": [
         {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2030-06-24",
-          "last_done": "2025-07-16"
-        },
-        {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2028-07-15",
@@ -1223,12 +1217,6 @@
           "desc": "Docking Survey (坞检)",
           "due_date": "2028-07-15",
           "last_done": "2025-07-16"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2030-07-15",
-          "last_done": "2007-05-25"
         },
         {
           "type": "statutory",
@@ -1286,6 +1274,18 @@
           "last_done": "2026-06-15",
           "window_start": "2027-03-24",
           "window_end": "2027-09-24"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Survey",
+          "due_date": "2030-06-24",
+          "last_done": "2025-07-16"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "2030-07-15",
+          "last_done": "2007-05-25"
         },
         {
           "type": "intermediate_survey",
@@ -1377,12 +1377,6 @@
       "dwt": "207945",
       "surveys": [
         {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2030-05-24",
-          "last_done": "2025-08-22"
-        },
-        {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2028-08-21",
@@ -1393,12 +1387,6 @@
           "desc": "Docking Survey (坞检)",
           "due_date": "2028-08-21",
           "last_done": "2025-08-22"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2030-08-21",
-          "last_done": "2020-05-22"
         },
         {
           "type": "statutory",
@@ -1456,6 +1444,18 @@
           "last_done": "2026-07-25",
           "window_start": "2027-02-24",
           "window_end": "2027-08-24"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Survey",
+          "due_date": "2030-05-24",
+          "last_done": "2025-08-22"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "2030-08-21",
+          "last_done": "2020-05-22"
         },
         {
           "type": "intermediate_survey",
@@ -1547,12 +1547,6 @@
       "dwt": "180182",
       "surveys": [
         {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2029-07-01",
-          "last_done": "2024-04-20"
-        },
-        {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2027-04-19",
@@ -1563,12 +1557,6 @@
           "desc": "Docking Survey (坞检)",
           "due_date": "2027-04-19",
           "last_done": "2024-04-20"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2029-05-21",
-          "last_done": "2014-05-23"
         },
         {
           "type": "statutory",
@@ -1631,6 +1619,18 @@
           "last_done": "2026-06-06",
           "window_start": "2027-04-01",
           "window_end": "2027-10-01"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Survey",
+          "due_date": "2029-07-01",
+          "last_done": "2024-04-20"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "2029-05-21",
+          "last_done": "2014-05-23"
         },
         {
           "type": "intermediate_survey",
@@ -1722,12 +1722,6 @@
       "dwt": "203248",
       "surveys": [
         {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2029-08-18",
-          "last_done": "2024-09-08"
-        },
-        {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2027-09-07",
@@ -1738,12 +1732,6 @@
           "desc": "Docking Survey (坞检)",
           "due_date": "2027-09-07",
           "last_done": "2024-09-08"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2027-08-26",
-          "last_done": "2012-08-27"
         },
         {
           "type": "statutory",
@@ -1806,6 +1794,18 @@
           "last_done": "2026-08-28",
           "window_start": "2027-05-18",
           "window_end": "2027-11-18"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Survey",
+          "due_date": "2029-08-18",
+          "last_done": "2024-09-08"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "2027-08-26",
+          "last_done": "2012-08-27"
         },
         {
           "type": "intermediate_survey",
@@ -1893,12 +1893,6 @@
       "dwt": "176391",
       "surveys": [
         {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2027-06-25",
-          "last_done": "2022-07-14"
-        },
-        {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2027-06-25",
@@ -1909,12 +1903,6 @@
           "desc": "Docking Survey (坞检)",
           "due_date": "2027-06-25",
           "last_done": "2025-06-06"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2027-07-26",
-          "last_done": "2017-07-27"
         },
         {
           "type": "statutory",
@@ -1969,6 +1957,18 @@
         {
           "type": "planned_machinery",
           "desc": "Planned Machinery Survey"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Survey",
+          "due_date": "2027-06-25",
+          "last_done": "2022-07-14"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "2027-07-26",
+          "last_done": "2017-07-27"
         },
         {
           "type": "boiler",
@@ -2064,12 +2064,6 @@
       "dwt": "206296",
       "surveys": [
         {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2030-10-06",
-          "last_done": "2025-09-29"
-        },
-        {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2028-09-28",
@@ -2148,6 +2142,12 @@
           "last_done": "2026-07-30",
           "window_start": "2027-07-06",
           "window_end": "2028-01-06"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Survey",
+          "due_date": "2030-10-06",
+          "last_done": "2025-09-29"
         },
         {
           "type": "intermediate_survey",
@@ -2243,12 +2243,6 @@
       "dwt": "203264",
       "surveys": [
         {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2030-11-14",
-          "last_done": "2025-09-08"
-        },
-        {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2028-09-07",
@@ -2259,12 +2253,6 @@
           "desc": "Docking Survey (坞检)",
           "due_date": "2028-09-07",
           "last_done": "2025-09-08"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2030-08-12",
-          "last_done": "2015-08-13"
         },
         {
           "type": "statutory",
@@ -2321,6 +2309,18 @@
           "desc": "Annual Survey",
           "window_start": "2026-08-14",
           "window_end": "2027-02-14"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Survey",
+          "due_date": "2030-11-14",
+          "last_done": "2025-09-08"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "2030-08-12",
+          "last_done": "2015-08-13"
         },
         {
           "type": "intermediate_survey",
@@ -2408,12 +2408,6 @@
       "dwt": "180129",
       "surveys": [
         {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2029-04-09",
-          "last_done": "2024-04-22"
-        },
-        {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2027-04-21",
@@ -2487,6 +2481,12 @@
           "last_done": "2026-01-14",
           "window_start": "2027-01-09",
           "window_end": "2027-07-09"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Survey",
+          "due_date": "2029-04-09",
+          "last_done": "2024-04-22"
         },
         {
           "type": "intermediate_survey",
@@ -2586,12 +2586,6 @@
       "dwt": "180176",
       "surveys": [
         {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2031-09-07",
-          "last_done": "2026-07-30"
-        },
-        {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2029-07-29",
@@ -2602,12 +2596,6 @@
           "desc": "Docking Survey (坞检)",
           "due_date": "2029-07-29",
           "last_done": "2026-07-30"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2031-07-29",
-          "last_done": "2021-06-12"
         },
         {
           "type": "statutory",
@@ -2669,6 +2657,18 @@
           "desc": "Annual Survey",
           "window_start": "2027-06-07",
           "window_end": "2027-12-07"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Survey",
+          "due_date": "2031-09-07",
+          "last_done": "2026-07-30"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "2031-07-29",
+          "last_done": "2021-06-12"
         },
         {
           "type": "intermediate_survey",
@@ -2768,12 +2768,6 @@
       "dwt": "206312",
       "surveys": [
         {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2027-04-24",
-          "last_done": "2022-07-23"
-        },
-        {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2027-04-24",
@@ -2849,6 +2843,12 @@
         {
           "type": "planned_machinery",
           "desc": "Planned Machinery Survey"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Survey",
+          "due_date": "2027-04-24",
+          "last_done": "2022-07-23"
         },
         {
           "type": "boiler",
@@ -2940,12 +2940,6 @@
       "dwt": "206306",
       "surveys": [
         {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2027-12-18",
-          "last_done": "2023-03-03"
-        },
-        {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2027-12-18",
@@ -3023,6 +3017,12 @@
           "last_done": "2024-12-21",
           "window_start": "2026-09-18",
           "window_end": "2027-03-18"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Survey",
+          "due_date": "2027-12-18",
+          "last_done": "2023-03-03"
         },
         {
           "type": "boiler",
@@ -3114,12 +3114,6 @@
       "dwt": "206125",
       "surveys": [
         {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2029-08-21",
-          "last_done": "2024-09-27"
-        },
-        {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2027-09-26",
@@ -3196,6 +3190,12 @@
           "desc": "No.1 Prop. Shaft Svy",
           "due_date": "2027-01-03",
           "last_done": "2027-01-03"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Survey",
+          "due_date": "2029-08-21",
+          "last_done": "2024-09-27"
         },
         {
           "type": "intermediate_survey",
@@ -3291,12 +3291,6 @@
       "dwt": "184887",
       "surveys": [
         {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2030-10-17",
-          "last_done": "2025-09-25"
-        },
-        {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2028-09-24",
@@ -3335,6 +3329,12 @@
           "last_done": "2026-08-16",
           "window_start": "2027-07-17",
           "window_end": "2028-01-17"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Survey",
+          "due_date": "2030-10-17",
+          "last_done": "2025-09-25"
         },
         {
           "type": "intermediate_survey",
@@ -3430,12 +3430,6 @@
       "dwt": "180265",
       "surveys": [
         {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2030-01-31",
-          "last_done": "2024-12-28"
-        },
-        {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2027-12-27",
@@ -3446,12 +3440,6 @@
           "desc": "Docking Survey (坞检)",
           "due_date": "2027-12-27",
           "last_done": "2024-12-28"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2030-01-30",
-          "last_done": "2019-12-14"
         },
         {
           "type": "statutory",
@@ -3514,6 +3502,18 @@
           "last_done": "2025-11-05",
           "window_start": "2026-10-31",
           "window_end": "2027-04-30"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Survey",
+          "due_date": "2030-01-31",
+          "last_done": "2024-12-28"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "2030-01-30",
+          "last_done": "2019-12-14"
         },
         {
           "type": "intermediate_survey",
@@ -3609,12 +3609,6 @@
       "dwt": "180277",
       "surveys": [
         {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2031-05-17",
-          "last_done": "2026-05-12"
-        },
-        {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2028-10-23",
@@ -3625,12 +3619,6 @@
           "desc": "Docking Survey (坞检)",
           "due_date": "2028-10-23",
           "last_done": "2025-10-24"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2028-08-02",
-          "last_done": "2023-06-27"
         },
         {
           "type": "statutory",
@@ -3694,14 +3682,26 @@
           "window_end": "2027-08-17"
         },
         {
-          "type": "intermediate_survey",
-          "desc": "Intermediate Survey (*1)"
+          "type": "special_survey",
+          "desc": "Special Survey",
+          "due_date": "2031-05-17",
+          "last_done": "2026-05-12"
         },
         {
           "type": "boiler",
           "desc": "No.1 Boiler Survey",
           "due_date": "2028-10-23",
           "last_done": "2025-10-24"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "2028-08-02",
+          "last_done": "2023-06-27"
+        },
+        {
+          "type": "intermediate_survey",
+          "desc": "Intermediate Survey (*1)"
         }
       ],
       "certificates": [
@@ -3787,12 +3787,6 @@
       "dwt": "170578",
       "surveys": [
         {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2030-07-15",
-          "last_done": "2025-07-16"
-        },
-        {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2028-07-15",
@@ -3866,6 +3860,12 @@
           "last_done": "2026-08-17",
           "window_start": "2027-04-15",
           "window_end": "2027-10-15"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Survey",
+          "due_date": "2030-07-15",
+          "last_done": "2025-07-16"
         },
         {
           "type": "intermediate_survey",
@@ -3965,12 +3965,6 @@
       "dwt": "229186",
       "surveys": [
         {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2029-05-25",
-          "last_done": "2024-04-08"
-        },
-        {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2027-04-07",
@@ -4049,6 +4043,12 @@
           "last_done": "2026-02-28",
           "window_start": "2027-02-25",
           "window_end": "2027-08-25"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Survey",
+          "due_date": "2029-05-25",
+          "last_done": "2024-04-08"
         },
         {
           "type": "intermediate_survey",
@@ -4140,12 +4140,6 @@
       "dwt": "180310",
       "surveys": [
         {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2029-10-19",
-          "last_done": "2024-10-07"
-        },
-        {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2027-10-06",
@@ -4156,12 +4150,6 @@
           "desc": "Docking Survey (坞检)",
           "due_date": "2027-10-06",
           "last_done": "2024-10-07"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2029-10-21",
-          "last_done": "2014-10-23"
         },
         {
           "type": "statutory",
@@ -4224,6 +4212,18 @@
           "last_done": "2026-08-26",
           "window_start": "2027-07-19",
           "window_end": "2028-01-19"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Survey",
+          "due_date": "2029-10-19",
+          "last_done": "2024-10-07"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "2029-10-21",
+          "last_done": "2014-10-23"
         },
         {
           "type": "intermediate_survey",
@@ -4319,12 +4319,6 @@
       "dwt": "209513",
       "surveys": [
         {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2031-04-25",
-          "last_done": "2026-03-02"
-        },
-        {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2029-03-01",
@@ -4335,12 +4329,6 @@
           "desc": "Docking Survey (坞检)",
           "due_date": "2029-03-01",
           "last_done": "2026-03-02"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2031-04-25",
-          "last_done": "2021-05-16"
         },
         {
           "type": "statutory",
@@ -4402,6 +4390,18 @@
           "desc": "Annual Survey",
           "window_start": "2027-01-25",
           "window_end": "2027-07-25"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Survey",
+          "due_date": "2031-04-25",
+          "last_done": "2026-03-02"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "2031-04-25",
+          "last_done": "2021-05-16"
         },
         {
           "type": "intermediate_survey",
@@ -4501,12 +4501,6 @@
       "dwt": "209545",
       "surveys": [
         {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2031-08-09",
-          "last_done": "2026-06-07"
-        },
-        {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2029-06-06",
@@ -4517,12 +4511,6 @@
           "desc": "Docking Survey (坞检)",
           "due_date": "2029-06-06",
           "last_done": "2026-06-07"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2031-08-08",
-          "last_done": "2021-06-15"
         },
         {
           "type": "statutory",
@@ -4584,6 +4572,18 @@
           "desc": "Annual Survey",
           "window_start": "2027-05-09",
           "window_end": "2027-11-09"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Survey",
+          "due_date": "2031-08-09",
+          "last_done": "2026-06-07"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "2031-08-08",
+          "last_done": "2021-06-15"
         },
         {
           "type": "intermediate_survey",
@@ -4687,12 +4687,6 @@
       "dwt": "181501",
       "surveys": [
         {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2030-07-25",
-          "last_done": "2025-07-24"
-        },
-        {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2028-07-23",
@@ -4766,6 +4760,12 @@
           "last_done": "2026-06-19",
           "window_start": "2027-04-25",
           "window_end": "2027-10-25"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Survey",
+          "due_date": "2030-07-25",
+          "last_done": "2025-07-24"
         },
         {
           "type": "intermediate_survey",
@@ -4857,12 +4857,6 @@
       "dwt": "180310",
       "surveys": [
         {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2029-08-08",
-          "last_done": "2024-08-16"
-        },
-        {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2027-08-15",
@@ -4873,12 +4867,6 @@
           "desc": "Docking Survey (坞检)",
           "due_date": "2027-08-15",
           "last_done": "2024-08-16"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2026-11-24",
-          "last_done": "2021-11-25"
         },
         {
           "type": "statutory",
@@ -4943,6 +4931,18 @@
           "window_end": "2027-11-08"
         },
         {
+          "type": "special_survey",
+          "desc": "Special Survey",
+          "due_date": "2029-08-08",
+          "last_done": "2024-08-16"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "2031-11-23",
+          "last_done": "2021-11-25"
+        },
+        {
           "type": "intermediate_survey",
           "desc": "Intermediate Survey (*1)"
         },
@@ -4951,12 +4951,6 @@
           "desc": "No.1 Boiler Survey",
           "due_date": "2027-08-15",
           "last_done": "2024-08-16"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "No.1 Prop. Shaft Svy",
-          "due_date": "2031-11-23",
-          "last_done": "2021-11-25"
         }
       ],
       "certificates": [
@@ -5028,7 +5022,7 @@
       "alerts": {
         "expired": 1,
         "urgent_7d": 0,
-        "warning_30d": 1,
+        "warning_30d": 0,
         "info_90d": 0
       },
       "extraction_confidence": "high"
@@ -5041,12 +5035,6 @@
       "gt": "92752",
       "dwt": "181371",
       "surveys": [
-        {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2028-07-21",
-          "last_done": "2023-07-04"
-        },
         {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
@@ -5125,6 +5113,12 @@
           "last_done": "2025-07-15",
           "window_start": "2027-04-21",
           "window_end": "2027-10-21"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Survey",
+          "due_date": "2028-07-21",
+          "last_done": "2023-07-04"
         },
         {
           "type": "boiler",
@@ -5212,12 +5206,6 @@
       "dwt": "181387",
       "surveys": [
         {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2029-02-27",
-          "last_done": "2023-12-04"
-        },
-        {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2026-12-03",
@@ -5228,12 +5216,6 @@
           "desc": "Docking Survey (坞检)",
           "due_date": "2026-12-03",
           "last_done": "2023-12-04"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2029-02-26",
-          "last_done": "2014-02-28"
         },
         {
           "type": "statutory",
@@ -5296,6 +5278,18 @@
           "last_done": "2026-01-06",
           "window_start": "2026-11-27",
           "window_end": "2027-05-27"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Survey",
+          "due_date": "2029-02-27",
+          "last_done": "2023-12-04"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "2029-02-26",
+          "last_done": "2014-02-28"
         },
         {
           "type": "intermediate_survey",
@@ -5387,12 +5381,6 @@
       "dwt": "203315",
       "surveys": [
         {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2031-01-04",
-          "last_done": "2026-01-05"
-        },
-        {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2029-01-04",
@@ -5403,12 +5391,6 @@
           "desc": "Docking Survey (坞检)",
           "due_date": "2029-01-04",
           "last_done": "2026-01-05"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2029-04-05",
-          "last_done": "2019-04-04"
         },
         {
           "type": "statutory",
@@ -5465,6 +5447,18 @@
           "desc": "Annual Survey",
           "window_start": "2026-10-04",
           "window_end": "2027-04-04"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Survey",
+          "due_date": "2031-01-04",
+          "last_done": "2026-01-05"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "2029-04-05",
+          "last_done": "2019-04-04"
         },
         {
           "type": "intermediate_survey",
@@ -5560,12 +5554,6 @@
       "dwt": "176890",
       "surveys": [
         {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2029-02-16",
-          "last_done": "2024-02-07"
-        },
-        {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2027-02-06",
@@ -5576,12 +5564,6 @@
           "desc": "Docking Survey (坞检)",
           "due_date": "2027-02-06",
           "last_done": "2024-02-07"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2029-02-12",
-          "last_done": "2018-12-31"
         },
         {
           "type": "statutory",
@@ -5644,6 +5626,18 @@
           "last_done": "2025-12-04",
           "window_start": "2026-11-16",
           "window_end": "2027-05-16"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Survey",
+          "due_date": "2029-02-16",
+          "last_done": "2024-02-07"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "2029-02-12",
+          "last_done": "2018-12-31"
         },
         {
           "type": "intermediate_survey",
@@ -5739,12 +5733,6 @@
       "dwt": "176967",
       "surveys": [
         {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2031-06-01",
-          "last_done": "2026-06-17"
-        },
-        {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2029-06-16",
@@ -5755,12 +5743,6 @@
           "desc": "Docking Survey (坞检)",
           "due_date": "2029-06-16",
           "last_done": "2026-06-17"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2031-07-05",
-          "last_done": "2021-07-07"
         },
         {
           "type": "statutory",
@@ -5822,6 +5804,18 @@
           "desc": "Annual Survey",
           "window_start": "2027-03-01",
           "window_end": "2027-09-01"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Survey",
+          "due_date": "2031-06-01",
+          "last_done": "2026-06-17"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "2031-07-05",
+          "last_done": "2021-07-07"
         },
         {
           "type": "intermediate_survey",
@@ -6032,12 +6026,6 @@
       "dwt": "180140",
       "surveys": [
         {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2029-06-29",
-          "last_done": "2024-05-03"
-        },
-        {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2027-05-02",
@@ -6111,6 +6099,12 @@
           "last_done": "2026-07-08",
           "window_start": "2027-03-29",
           "window_end": "2027-09-29"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Survey",
+          "due_date": "2029-06-29",
+          "last_done": "2024-05-03"
         },
         {
           "type": "intermediate_survey",
@@ -6206,12 +6200,6 @@
       "dwt": "203508",
       "surveys": [
         {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2030-12-22",
-          "last_done": "2025-12-23"
-        },
-        {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2028-12-22",
@@ -6222,12 +6210,6 @@
           "desc": "Docking Survey (坞检)",
           "due_date": "2028-12-22",
           "last_done": "2025-12-23"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2029-07-04",
-          "last_done": "2018-06-25"
         },
         {
           "type": "statutory",
@@ -6284,6 +6266,18 @@
           "desc": "Annual Survey",
           "window_start": "2026-09-22",
           "window_end": "2027-03-22"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Survey",
+          "due_date": "2030-12-22",
+          "last_done": "2025-12-23"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "2029-07-04",
+          "last_done": "2018-06-25"
         },
         {
           "type": "intermediate_survey",
@@ -6375,12 +6369,6 @@
       "dwt": "203091",
       "surveys": [
         {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2031-02-09",
-          "last_done": "2026-01-13"
-        },
-        {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2029-01-12",
@@ -6458,6 +6446,12 @@
           "desc": "Annual Survey",
           "window_start": "2026-11-09",
           "window_end": "2027-05-09"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Survey",
+          "due_date": "2031-02-09",
+          "last_done": "2026-01-13"
         },
         {
           "type": "intermediate_survey",
@@ -6557,12 +6551,6 @@
       "dwt": "203233",
       "surveys": [
         {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2030-10-04",
-          "last_done": "2025-10-05"
-        },
-        {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2028-10-04",
@@ -6640,6 +6628,12 @@
           "desc": "Annual Survey",
           "window_start": "2026-07-04",
           "window_end": "2027-01-04"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Survey",
+          "due_date": "2030-10-04",
+          "last_done": "2025-10-05"
         },
         {
           "type": "intermediate_survey",
@@ -6735,12 +6729,6 @@
       "dwt": "208951",
       "surveys": [
         {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2029-11-24",
-          "last_done": "2024-11-23"
-        },
-        {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2027-11-22",
@@ -6751,12 +6739,6 @@
           "desc": "Docking Survey (坞检)",
           "due_date": "2027-11-22",
           "last_done": "2024-11-23"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2029-11-23",
-          "last_done": "2019-11-25"
         },
         {
           "type": "statutory",
@@ -6819,6 +6801,18 @@
           "last_done": "2025-11-02",
           "window_start": "2026-08-24",
           "window_end": "2027-02-24"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Survey",
+          "due_date": "2029-11-24",
+          "last_done": "2024-11-23"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "2029-11-23",
+          "last_done": "2019-11-25"
         },
         {
           "type": "boiler",
@@ -6906,12 +6900,6 @@
       "dwt": "208970",
       "surveys": [
         {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2030-01-02",
-          "last_done": "2024-11-14"
-        },
-        {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2027-11-13",
@@ -6922,12 +6910,6 @@
           "desc": "Docking Survey (坞检)",
           "due_date": "2027-11-13",
           "last_done": "2024-11-14"
-        },
-        {
-          "type": "tail_shaft",
-          "desc": "Propeller Shaft Survey (尾轴检验)",
-          "due_date": "2030-01-01",
-          "last_done": "2020-01-03"
         },
         {
           "type": "statutory",
@@ -6990,6 +6972,18 @@
           "last_done": "2025-10-25",
           "window_start": "2026-10-02",
           "window_end": "2027-04-02"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Survey",
+          "due_date": "2030-01-02",
+          "last_done": "2024-11-14"
+        },
+        {
+          "type": "tail_shaft",
+          "desc": "No.1 Prop. Shaft Svy",
+          "due_date": "2030-01-01",
+          "last_done": "2020-01-03"
         },
         {
           "type": "boiler",
@@ -7077,12 +7071,6 @@
       "dwt": "203195",
       "surveys": [
         {
-          "type": "special_survey",
-          "desc": "Special Survey (特检)",
-          "due_date": "2028-05-20",
-          "last_done": "2023-03-19"
-        },
-        {
           "type": "boiler",
           "desc": "Boiler Survey (锅炉检验)",
           "due_date": "2028-05-20",
@@ -7160,6 +7148,12 @@
           "last_done": "2025-08-24",
           "window_start": "2027-02-20",
           "window_end": "2027-08-20"
+        },
+        {
+          "type": "special_survey",
+          "desc": "Special Survey",
+          "due_date": "2028-05-20",
+          "last_done": "2023-03-19"
         },
         {
           "type": "boiler",
@@ -10244,8 +10238,8 @@
       "alerts": {
         "expired": 0,
         "urgent_7d": 0,
-        "warning_30d": 0,
-        "info_90d": 1
+        "warning_30d": 1,
+        "info_90d": 0
       },
       "extraction_confidence": "medium"
     },
