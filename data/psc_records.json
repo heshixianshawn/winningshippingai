@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-06",
+ "generated": "2026-11-07",
  "source": "单船档案 PSC-FSC检查记录 sheet（TokyoMOU/APCIS 等来源）",
  "count": 692,
  "ship_count": 62,
@@ -8035,6 +8035,21 @@
    "count": 9,
    "records": [
     {
+     "date": "2026-11-07",
+     "port": "qingdao",
+     "port_raw": "青岛",
+     "type": "PSC",
+     "authority": "",
+     "officer": "",
+     "defects": 2,
+     "detained": false,
+     "codes": "07105 A CLASS SELF-CLOSING FIRE DOOR HELD IN OPEN POSITION BY CREW\n05105 INDEPENDENT LIGHTING LAMP OF MF/HF STATION UNLIT DURING INSPECTION",
+     "codes_uncertain": false,
+     "rectified": "",
+     "note": "来源:PSC 20261107.pdf|FP:e2133d1c",
+     "defects_source": "档案(无TMOU对照)"
+    },
+    {
      "date": "2026-04-13",
      "port": "yantai",
      "port_raw": "烟台",
@@ -8063,22 +8078,6 @@
      "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship",
-     "defects_official": 1,
-     "defects_source": "TokyoMOU官方"
-    },
-    {
-     "date": "2023-04-18",
-     "port": "Qingdao",
-     "port_raw": "Qingdao (China)",
-     "type": "",
-     "authority": "",
-     "officer": "",
-     "defects": 1,
-     "detained": false,
-     "codes": "",
-     "codes_uncertain": false,
-     "rectified": "",
-     "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship",
      "defects_official": 1,
      "defects_source": "TokyoMOU官方"
     },
@@ -13220,6 +13219,14 @@
   ],
   "qingdao": [
    {
+    "ship": "WINNING NATURE",
+    "date": "2026-11-07",
+    "port": "qingdao",
+    "defects": 2,
+    "detained": false,
+    "codes": "07105 A CLASS SELF-CLOSING FIRE DOOR HELD IN OPEN POSITION BY CREW\n05105 INDEPENDENT LIGHTING LAMP OF MF/HF STATION UNLIT DURING INSPECTION"
+   },
+   {
     "ship": "SUNNY KALOUM",
     "date": "2026-11-02",
     "port": "qingdao",
@@ -13270,14 +13277,6 @@
    {
     "ship": "WINNING LOYALTY",
     "date": "2023-05-05",
-    "port": "Qingdao",
-    "defects": 1,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "WINNING NATURE",
-    "date": "2023-04-18",
     "port": "Qingdao",
     "defects": 1,
     "detained": false,
@@ -17254,15 +17253,15 @@
    "miyako, iwate": 1,
    "dalian": 1
   },
-  "this_year": 55,
+  "this_year": 56,
   "detained_total": 17,
-  "with_codes": 34,
+  "with_codes": 35,
   "codes_uncertain": 3,
   "pdf_enriched": 0,
   "pdf_files_matched": 2,
-  "tmou_reconciled": 677,
+  "tmou_reconciled": 676,
   "tmou_mismatches": [],
-  "tmou_unmatched": 15
+  "tmou_unmatched": 16
  },
  "missing": []
 }
