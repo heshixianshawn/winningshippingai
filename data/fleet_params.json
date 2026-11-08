@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generated": "2026-11-01",
+  "generated": "2026-11-08T09:03:20",
   "count": 65,
   "source": "survey_knowledge_unified.json（各船级社最新 Survey Status Report，经 systems/survey_knowledge_base.py 提取）+ 校验层过滤 + 人工维护字段",
   "ships": {
@@ -1732,9 +1732,9 @@
       "name_cn": "阳光大宝",
       "name_full": "SUNNY DABOLA阳光大宝",
       "imo": "9398149",
-      "call_sign": "3FSQ3",
+      "call_sign": "VRYP7",
       "owner": "Sunny Dabola Shipping S.A.",
-      "flag": "Hong Kong",
+      "flag": "Hong Kong, China",
       "class_notation": "NK",
       "manager": "QINGDAO ZHONGJI INTERNATIONAL SHIPS MANAGEMENT CO., LTD",
       "hull_no": "101",
