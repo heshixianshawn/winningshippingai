@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-09",
+ "generated": "2026-11-10",
  "source": "单船档案 PSC-FSC检查记录 sheet（TokyoMOU/APCIS 等来源）",
- "count": 692,
+ "count": 689,
  "ship_count": 62,
  "ships": {
   "SUNNY BEYLA": {
@@ -1692,8 +1692,7 @@
      "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship",
-     "defects_official": 7,
-     "defects_source": "TokyoMOU官方"
+     "defects_source": "档案(无TMOU对照)"
     },
     {
      "date": "2021-06-24",
@@ -1708,8 +1707,7 @@
      "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship",
-     "defects_official": 1,
-     "defects_source": "TokyoMOU官方"
+     "defects_source": "档案(无TMOU对照)"
     },
     {
      "date": "2021-04-19",
@@ -1724,8 +1722,7 @@
      "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship",
-     "defects_official": 0,
-     "defects_source": "TokyoMOU官方"
+     "defects_source": "档案(无TMOU对照)"
     },
     {
      "date": "2019-12-20",
@@ -1740,8 +1737,7 @@
      "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship",
-     "defects_official": 0,
-     "defects_source": "TokyoMOU官方"
+     "defects_source": "档案(无TMOU对照)"
     },
     {
      "date": "2019-03-12",
@@ -1756,8 +1752,7 @@
      "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship",
-     "defects_official": 3,
-     "defects_source": "TokyoMOU官方"
+     "defects_source": "档案(无TMOU对照)"
     },
     {
      "date": "2018-08-10",
@@ -1772,8 +1767,7 @@
      "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship",
-     "defects_official": 0,
-     "defects_source": "TokyoMOU官方"
+     "defects_source": "档案(无TMOU对照)"
     },
     {
      "date": "2017-03-29",
@@ -1788,8 +1782,7 @@
      "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship",
-     "defects_official": 3,
-     "defects_source": "TokyoMOU官方"
+     "defects_source": "档案(无TMOU对照)"
     },
     {
      "date": "2016-03-16",
@@ -1804,8 +1797,7 @@
      "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship",
-     "defects_official": 3,
-     "defects_source": "TokyoMOU官方"
+     "defects_source": "档案(无TMOU对照)"
     },
     {
      "date": "2015-06-11",
@@ -1820,8 +1812,7 @@
      "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship",
-     "defects_official": 4,
-     "defects_source": "TokyoMOU官方"
+     "defects_source": "档案(无TMOU对照)"
     },
     {
      "date": "2015-01-09",
@@ -1836,8 +1827,7 @@
      "codes_uncertain": false,
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship",
-     "defects_official": 0,
-     "defects_source": "TokyoMOU官方"
+     "defects_source": "档案(无TMOU对照)"
     }
    ]
   },
@@ -4604,7 +4594,7 @@
   "SUNNY SIGUIRI": {
    "imo": "9406453",
    "imo_src": "权威库(survey_index)",
-   "count": 17,
+   "count": 15,
    "records": [
     {
      "date": "2026-10-30",
@@ -4620,38 +4610,6 @@
      "rectified": "",
      "note": "来源:SUNNY SIGURI - PSC检查报告（董家口，2026.10.30）.pdf|FP:73023fcf",
      "defects_source": "档案(无TMOU对照)"
-    },
-    {
-     "date": "2024-02-05",
-     "port": "Jiangyin",
-     "port_raw": "Jiangyin (China)",
-     "type": "",
-     "authority": "",
-     "officer": "",
-     "defects": 1,
-     "detained": false,
-     "codes": "",
-     "codes_uncertain": false,
-     "rectified": "",
-     "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship",
-     "defects_official": 1,
-     "defects_source": "TokyoMOU官方"
-    },
-    {
-     "date": "2021-03-05",
-     "port": "Port Walcott, WA",
-     "port_raw": "Port Walcott, WA (Australia)",
-     "type": "",
-     "authority": "",
-     "officer": "",
-     "defects": 1,
-     "detained": false,
-     "codes": "",
-     "codes_uncertain": false,
-     "rectified": "",
-     "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship",
-     "defects_official": 1,
-     "defects_source": "TokyoMOU官方"
     },
     {
      "date": "2020-08-21",
@@ -7064,13 +7022,14 @@
      "type": "PSC",
      "authority": "",
      "officer": "",
-     "defects": null,
+     "defects": 1,
      "detained": false,
      "codes": "",
      "codes_uncertain": false,
      "rectified": "",
      "note": "来源:WINNING INTEGRITY PSC REPORT2026.10.08.pdf|FP:45af8bb6",
-     "defects_source": "档案(无TMOU对照)"
+     "defects_official": 1,
+     "defects_source": "TokyoMOU官方"
     },
     {
      "date": "2025-05-06",
@@ -8317,39 +8276,22 @@
   "WINNING PEACE": {
    "imo": "9500625",
    "imo_src": "权威库(survey_index)",
-   "count": 6,
+   "count": 5,
    "records": [
     {
-     "date": "2026-03-27",
-     "port": "Huanghua",
-     "port_raw": "Huanghua (China)",
-     "type": "",
+     "date": "2026-11-09",
+     "port": "Beilun",
+     "port_raw": "Beilun (China)",
+     "type": "PSC",
      "authority": "",
      "officer": "",
-     "defects": 6,
+     "defects": 0,
      "detained": false,
      "codes": "",
      "codes_uncertain": false,
      "rectified": "",
-     "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship",
-     "defects_official": 6,
-     "defects_source": "TokyoMOU官方"
-    },
-    {
-     "date": "2025-08-08",
-     "port": "Yantai",
-     "port_raw": "Yantai (China)",
-     "type": "",
-     "authority": "",
-     "officer": "",
-     "defects": 2,
-     "detained": false,
-     "codes": "",
-     "codes_uncertain": false,
-     "rectified": "",
-     "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship",
-     "defects_official": 2,
-     "defects_source": "TokyoMOU官方"
+     "note": "北仑 PSC，缺陷 NIL，无滞留（宁波海事局 2 名 PSCO，0945-1230）",
+     "defects_source": "档案(无TMOU对照)"
     },
     {
      "date": "2021-03-24",
@@ -12037,14 +11979,6 @@
     "codes": ""
    },
    {
-    "ship": "WINNING PEACE",
-    "date": "2025-08-08",
-    "port": "Yantai",
-    "defects": 2,
-    "detained": false,
-    "codes": ""
-   },
-   {
     "ship": "WINNING RISING",
     "date": "2025-04-09",
     "port": "Yantai",
@@ -13535,14 +13469,6 @@
     "codes": ""
    },
    {
-    "ship": "SUNNY SIGUIRI",
-    "date": "2021-03-05",
-    "port": "Port Walcott, WA",
-    "defects": 1,
-    "detained": false,
-    "codes": ""
-   },
-   {
     "ship": "WINNING RESILIENCE",
     "date": "2020-07-31",
     "port": "Port Walcott, WA",
@@ -14009,14 +13935,6 @@
     "defects": 2,
     "detained": false,
     "codes": "14811 BALLAST WATER MANAGEMENT SYSTEM FOUND LEAKING\n03105 ORDER DURING INSPECTION"
-   },
-   {
-    "ship": "WINNING PEACE",
-    "date": "2026-03-27",
-    "port": "Huanghua",
-    "defects": 6,
-    "detained": false,
-    "codes": ""
    },
    {
     "ship": "SUNNY CONAKRY",
@@ -16003,14 +15921,6 @@
     "codes": ""
    },
    {
-    "ship": "SUNNY SIGUIRI",
-    "date": "2024-02-05",
-    "port": "Jiangyin",
-    "defects": 1,
-    "detained": false,
-    "codes": ""
-   },
-   {
     "ship": "WINNING JOY",
     "date": "2023-03-06",
     "port": "Jiangyin",
@@ -17139,6 +17049,16 @@
     "codes": ""
    }
   ],
+  "beilun": [
+   {
+    "ship": "WINNING PEACE",
+    "date": "2026-11-09",
+    "port": "Beilun",
+    "defects": 0,
+    "detained": false,
+    "codes": ""
+   }
+  ],
   "miyako, iwate": [
    {
     "ship": "WINNING PRIDE",
@@ -17180,7 +17100,7 @@
  },
  "stats": {
   "by_port": {
-   "yantai": 154,
+   "yantai": 153,
    "port hedland, wa": 69,
    "qingdao": 26,
    "tianjin": 26,
@@ -17190,8 +17110,8 @@
    "dangjin": 17,
    "dampier, wa": 16,
    "rizhao": 16,
-   "port walcott, wa": 15,
    "hay point, qld": 14,
+   "port walcott, wa": 14,
    "cagayan de oro, mindanao": 14,
    "fangcheng": 14,
    "zhoushan": 12,
@@ -17199,10 +17119,10 @@
    "pohang": 11,
    "oita": 10,
    "ningbo": 10,
-   "jiangyin": 10,
    "pontianak": 9,
    "onomichi": 9,
    "robert's bank": 9,
+   "jiangyin": 9,
    "": 9,
    "tangshan": 8,
    "kawasaki": 8,
@@ -17211,12 +17131,12 @@
    "chiba": 7,
    "nagoya, aichi": 7,
    "wakayama": 7,
-   "huanghua": 6,
    "wakamatsu/kitakyushu": 6,
    "kashima, ibaraki": 6,
    "shanghai": 6,
    "callao": 5,
    "kobe": 5,
+   "huanghua": 5,
    "vancouver": 4,
    "fuzhou": 4,
    "gwangyang": 4,
@@ -17250,6 +17170,7 @@
    "yingkou": 1,
    "xiamen": 1,
    "kure, hiroshima": 1,
+   "beilun": 1,
    "miyako, iwate": 1,
    "dalian": 1
   },
@@ -17259,9 +17180,16 @@
   "codes_uncertain": 3,
   "pdf_enriched": 0,
   "pdf_files_matched": 2,
-  "tmou_reconciled": 676,
-  "tmou_mismatches": [],
-  "tmou_unmatched": 16
+  "tmou_reconciled": 663,
+  "tmou_mismatches": [
+   {
+    "ship": "WINNING INTEGRITY",
+    "date": "2026-10-08",
+    "archive": null,
+    "official": 1
+   }
+  ],
+  "tmou_unmatched": 26
  },
  "missing": []
 }
