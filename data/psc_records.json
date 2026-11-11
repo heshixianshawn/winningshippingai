@@ -1,8 +1,8 @@
 {
  "generated": "2026-11-10",
  "source": "单船档案 PSC-FSC检查记录 sheet（TokyoMOU/APCIS 等来源）",
- "count": 689,
- "ship_count": 62,
+ "count": 709,
+ "ship_count": 63,
  "ships": {
   "SUNNY BEYLA": {
    "imo": "9364320",
@@ -11436,6 +11436,333 @@
      "defects_source": "TokyoMOU官方"
     }
    ]
+  },
+  "WINNING ZEPHYR": {
+   "imo": "",
+   "imo_src": "TMOU",
+   "count": 20,
+   "records": [
+    {
+     "date": "2026-04-08",
+     "port": "Yantai",
+     "port_raw": "Yantai (China)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 3,
+     "detained": false,
+     "codes": "",
+     "codes_uncertain": false,
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS（本地无 PDF 报告）",
+     "defects_official": 3,
+     "defects_source": "TokyoMOU官方"
+    },
+    {
+     "date": "2023-03-07",
+     "port": "Yantai",
+     "port_raw": "Yantai (China)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 2,
+     "detained": false,
+     "codes": "",
+     "codes_uncertain": false,
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS（本地无 PDF 报告）",
+     "defects_official": 2,
+     "defects_source": "TokyoMOU官方"
+    },
+    {
+     "date": "2022-01-12",
+     "port": "Qingdao",
+     "port_raw": "Qingdao (China)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 1,
+     "detained": false,
+     "codes": "",
+     "codes_uncertain": false,
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS（本地无 PDF 报告）",
+     "defects_official": 1,
+     "defects_source": "TokyoMOU官方"
+    },
+    {
+     "date": "2020-10-01",
+     "port": "Port Walcott, WA",
+     "port_raw": "Port Walcott, WA (Australia)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 1,
+     "detained": false,
+     "codes": "",
+     "codes_uncertain": false,
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS（本地无 PDF 报告）",
+     "defects_official": 1,
+     "defects_source": "TokyoMOU官方"
+    },
+    {
+     "date": "2020-03-30",
+     "port": "Vung Ang",
+     "port_raw": "Vung Ang (Vietnam)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 0,
+     "detained": false,
+     "codes": "",
+     "codes_uncertain": false,
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS（本地无 PDF 报告）",
+     "defects_official": 0,
+     "defects_source": "TokyoMOU官方"
+    },
+    {
+     "date": "2020-01-19",
+     "port": "Xiamen",
+     "port_raw": "Xiamen (China)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 2,
+     "detained": false,
+     "codes": "",
+     "codes_uncertain": false,
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS（本地无 PDF 报告）",
+     "defects_official": 2,
+     "defects_source": "TokyoMOU官方"
+    },
+    {
+     "date": "2019-10-31",
+     "port": "Ningbo",
+     "port_raw": "Ningbo (China)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 0,
+     "detained": false,
+     "codes": "",
+     "codes_uncertain": false,
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS（本地无 PDF 报告）",
+     "defects_official": 0,
+     "defects_source": "TokyoMOU官方"
+    },
+    {
+     "date": "2019-08-06",
+     "port": "Dampier, WA",
+     "port_raw": "Dampier, WA (Australia)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 2,
+     "detained": false,
+     "codes": "",
+     "codes_uncertain": false,
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS（本地无 PDF 报告）",
+     "defects_official": 2,
+     "defects_source": "TokyoMOU官方"
+    },
+    {
+     "date": "2019-06-25",
+     "port": "Yantai",
+     "port_raw": "Yantai (China)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 2,
+     "detained": false,
+     "codes": "",
+     "codes_uncertain": false,
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS（本地无 PDF 报告）",
+     "defects_official": 2,
+     "defects_source": "TokyoMOU官方"
+    },
+    {
+     "date": "2018-12-09",
+     "port": "Rizhao",
+     "port_raw": "Rizhao (China)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 2,
+     "detained": false,
+     "codes": "",
+     "codes_uncertain": false,
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS（本地无 PDF 报告）",
+     "defects_official": 2,
+     "defects_source": "TokyoMOU官方"
+    },
+    {
+     "date": "2018-01-03",
+     "port": "Yantai",
+     "port_raw": "Yantai (China)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 2,
+     "detained": false,
+     "codes": "",
+     "codes_uncertain": false,
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS（本地无 PDF 报告）",
+     "defects_official": 2,
+     "defects_source": "TokyoMOU官方"
+    },
+    {
+     "date": "2017-08-25",
+     "port": "Dampier, WA",
+     "port_raw": "Dampier, WA (Australia)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 6,
+     "detained": true,
+     "codes": "",
+     "codes_uncertain": false,
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS（本地无 PDF 报告）",
+     "defects_official": 6,
+     "defects_source": "TokyoMOU官方"
+    },
+    {
+     "date": "2017-08-09",
+     "port": "Tianjin",
+     "port_raw": "Tianjin (China)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 4,
+     "detained": false,
+     "codes": "",
+     "codes_uncertain": false,
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS（本地无 PDF 报告）",
+     "defects_official": 4,
+     "defects_source": "TokyoMOU官方"
+    },
+    {
+     "date": "2016-09-06",
+     "port": "Zhanjiang",
+     "port_raw": "Zhanjiang (China)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 3,
+     "detained": false,
+     "codes": "",
+     "codes_uncertain": false,
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS（本地无 PDF 报告）",
+     "defects_official": 3,
+     "defects_source": "TokyoMOU官方"
+    },
+    {
+     "date": "2016-06-01",
+     "port": "Port Hedland, WA",
+     "port_raw": "Port Hedland, WA (Australia)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 0,
+     "detained": false,
+     "codes": "",
+     "codes_uncertain": false,
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS（本地无 PDF 报告）",
+     "defects_official": 0,
+     "defects_source": "TokyoMOU官方"
+    },
+    {
+     "date": "2016-01-13",
+     "port": "Tianjin",
+     "port_raw": "Tianjin (China)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 13,
+     "detained": false,
+     "codes": "",
+     "codes_uncertain": false,
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS（本地无 PDF 报告）",
+     "defects_official": 13,
+     "defects_source": "TokyoMOU官方"
+    },
+    {
+     "date": "2015-05-26",
+     "port": "Port Hedland, WA",
+     "port_raw": "Port Hedland, WA (Australia)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 6,
+     "detained": false,
+     "codes": "",
+     "codes_uncertain": false,
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS（本地无 PDF 报告）",
+     "defects_official": 6,
+     "defects_source": "TokyoMOU官方"
+    },
+    {
+     "date": "2015-05-11",
+     "port": "Tianjin",
+     "port_raw": "Tianjin (China)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 16,
+     "detained": false,
+     "codes": "",
+     "codes_uncertain": false,
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS（本地无 PDF 报告）",
+     "defects_official": 16,
+     "defects_source": "TokyoMOU官方"
+    },
+    {
+     "date": "2014-08-27",
+     "port": "Dampier, WA",
+     "port_raw": "Dampier, WA (Australia)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 6,
+     "detained": false,
+     "codes": "",
+     "codes_uncertain": false,
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS（本地无 PDF 报告）",
+     "defects_official": 6,
+     "defects_source": "TokyoMOU官方"
+    },
+    {
+     "date": "2014-08-12",
+     "port": "Tangshan",
+     "port_raw": "Tangshan (China)",
+     "type": "",
+     "authority": "",
+     "officer": "",
+     "defects": 2,
+     "detained": false,
+     "codes": "",
+     "codes_uncertain": false,
+     "rectified": "",
+     "note": "来源:TokyoMOU/APCIS（本地无 PDF 报告）",
+     "defects_official": 2,
+     "defects_source": "TokyoMOU官方"
+    }
+   ]
   }
  },
  "by_port": {
@@ -11543,6 +11870,14 @@
     "date": "2016-03-01",
     "port": "Tangshan",
     "defects": 3,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "WINNING ZEPHYR",
+    "date": "2014-08-12",
+    "port": "Tangshan",
+    "defects": 2,
     "detained": false,
     "codes": ""
    }
@@ -11891,6 +12226,14 @@
     "codes": "02120 THE LOCATION SIGN FOR ENCLOSURE CONTAINING THE FIRE PLAN\n11117 A LIFEBUOY EQUIPPED WITH A SELF-IGNITING LIGHT AND A BOUYANT\n11102 TWO HATCHETS NOT STOWED AT EACH END OF LIFEBOAT"
    },
    {
+    "ship": "WINNING ZEPHYR",
+    "date": "2026-04-08",
+    "port": "Yantai",
+    "defects": 3,
+    "detained": false,
+    "codes": ""
+   },
+   {
     "ship": "WINNING RISING",
     "date": "2026-03-19",
     "port": "Yantai",
@@ -12165,6 +12508,14 @@
    {
     "ship": "WINNING RESILIENCE",
     "date": "2023-05-15",
+    "port": "Yantai",
+    "defects": 2,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "WINNING ZEPHYR",
+    "date": "2023-03-07",
     "port": "Yantai",
     "defects": 2,
     "detained": false,
@@ -12499,6 +12850,14 @@
     "codes": ""
    },
    {
+    "ship": "WINNING ZEPHYR",
+    "date": "2019-06-25",
+    "port": "Yantai",
+    "defects": 2,
+    "detained": false,
+    "codes": ""
+   },
+   {
     "ship": "WINNING MISSION",
     "date": "2019-06-12",
     "port": "Yantai",
@@ -12741,6 +13100,14 @@
    {
     "ship": "WINNING KINDNESS",
     "date": "2018-01-29",
+    "port": "Yantai",
+    "defects": 2,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "WINNING ZEPHYR",
+    "date": "2018-01-03",
     "port": "Yantai",
     "defects": 2,
     "detained": false,
@@ -13265,6 +13632,14 @@
     "codes": ""
    },
    {
+    "ship": "WINNING ZEPHYR",
+    "date": "2022-01-12",
+    "port": "Qingdao",
+    "defects": 1,
+    "detained": false,
+    "codes": ""
+   },
+   {
     "ship": "SUNNY BOKE",
     "date": "2021-10-22",
     "port": "Qingdao",
@@ -13465,6 +13840,14 @@
     "date": "2021-07-06",
     "port": "Port Walcott, WA",
     "defects": 4,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "WINNING ZEPHYR",
+    "date": "2020-10-01",
+    "port": "Port Walcott, WA",
+    "defects": 1,
     "detained": false,
     "codes": ""
    },
@@ -13771,8 +14154,24 @@
     "codes": ""
    },
    {
+    "ship": "WINNING ZEPHYR",
+    "date": "2019-08-06",
+    "port": "Dampier, WA",
+    "defects": 2,
+    "detained": false,
+    "codes": ""
+   },
+   {
     "ship": "SUNNY MAMOU",
     "date": "2018-09-04",
+    "port": "Dampier, WA",
+    "defects": 6,
+    "detained": true,
+    "codes": ""
+   },
+   {
+    "ship": "WINNING ZEPHYR",
+    "date": "2017-08-25",
     "port": "Dampier, WA",
     "defects": 6,
     "detained": true,
@@ -13847,6 +14246,14 @@
     "date": "2014-10-14",
     "port": "Dampier, WA",
     "defects": 5,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "WINNING ZEPHYR",
+    "date": "2014-08-27",
+    "port": "Dampier, WA",
+    "defects": 6,
     "detained": false,
     "codes": ""
    },
@@ -14289,6 +14696,14 @@
     "date": "2019-01-03",
     "port": "Rizhao",
     "defects": 4,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "WINNING ZEPHYR",
+    "date": "2018-12-09",
+    "port": "Rizhao",
+    "defects": 2,
     "detained": false,
     "codes": ""
    },
@@ -14783,6 +15198,14 @@
     "codes": ""
    },
    {
+    "ship": "WINNING ZEPHYR",
+    "date": "2017-08-09",
+    "port": "Tianjin",
+    "defects": 4,
+    "detained": false,
+    "codes": ""
+   },
+   {
     "ship": "WINNING PEACE",
     "date": "2017-06-12",
     "port": "Tianjin",
@@ -14803,6 +15226,22 @@
     "date": "2016-03-03",
     "port": "Tianjin",
     "defects": 4,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "WINNING ZEPHYR",
+    "date": "2016-01-13",
+    "port": "Tianjin",
+    "defects": 13,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "WINNING ZEPHYR",
+    "date": "2015-05-11",
+    "port": "Tianjin",
+    "defects": 16,
     "detained": false,
     "codes": ""
    },
@@ -15241,6 +15680,14 @@
     "codes": ""
    },
    {
+    "ship": "WINNING ZEPHYR",
+    "date": "2016-06-01",
+    "port": "Port Hedland, WA",
+    "defects": 0,
+    "detained": false,
+    "codes": ""
+   },
+   {
     "ship": "WINNING LOYALTY",
     "date": "2016-05-05",
     "port": "Port Hedland, WA",
@@ -15317,6 +15764,14 @@
     "date": "2015-06-11",
     "port": "Port Hedland, WA",
     "defects": 4,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "WINNING ZEPHYR",
+    "date": "2015-05-26",
+    "port": "Port Hedland, WA",
+    "defects": 6,
     "detained": false,
     "codes": ""
    },
@@ -15681,6 +16136,14 @@
     "codes": ""
    },
    {
+    "ship": "WINNING ZEPHYR",
+    "date": "2019-10-31",
+    "port": "Ningbo",
+    "defects": 0,
+    "detained": false,
+    "codes": ""
+   },
+   {
     "ship": "WINNING SPIRIT",
     "date": "2019-08-29",
     "port": "Ningbo",
@@ -15751,6 +16214,14 @@
     "date": "2021-10-22",
     "port": "Vung Ang",
     "defects": 1,
+    "detained": false,
+    "codes": ""
+   },
+   {
+    "ship": "WINNING ZEPHYR",
+    "date": "2020-03-30",
+    "port": "Vung Ang",
+    "defects": 0,
     "detained": false,
     "codes": ""
    },
@@ -16425,6 +16896,14 @@
     "codes": ""
    },
    {
+    "ship": "WINNING ZEPHYR",
+    "date": "2016-09-06",
+    "port": "Zhanjiang",
+    "defects": 3,
+    "detained": false,
+    "codes": ""
+   },
+   {
     "ship": "SUNNY SIGUIRI",
     "date": "2015-11-25",
     "port": "Zhanjiang",
@@ -17037,6 +17516,14 @@
     "defects": 2,
     "detained": true,
     "codes": ""
+   },
+   {
+    "ship": "WINNING ZEPHYR",
+    "date": "2020-01-19",
+    "port": "Xiamen",
+    "defects": 2,
+    "detained": false,
+    "codes": ""
    }
   ],
   "kure, hiroshima": [
@@ -17100,33 +17587,33 @@
  },
  "stats": {
   "by_port": {
-   "yantai": 153,
-   "port hedland, wa": 69,
-   "qingdao": 26,
-   "tianjin": 26,
+   "yantai": 157,
+   "port hedland, wa": 71,
+   "tianjin": 29,
+   "qingdao": 27,
    "caofeidian": 20,
+   "dampier, wa": 19,
    "gladstone, qld": 17,
+   "rizhao": 17,
    "mizushima": 17,
    "dangjin": 17,
-   "dampier, wa": 16,
-   "rizhao": 16,
+   "port walcott, wa": 15,
    "hay point, qld": 14,
-   "port walcott, wa": 14,
    "cagayan de oro, mindanao": 14,
    "fangcheng": 14,
    "zhoushan": 12,
    "lianyungang": 12,
    "pohang": 11,
+   "ningbo": 11,
    "oita": 10,
-   "ningbo": 10,
+   "tangshan": 9,
    "pontianak": 9,
    "onomichi": 9,
    "robert's bank": 9,
    "jiangyin": 9,
+   "zhanjiang": 9,
    "": 9,
-   "tangshan": 8,
    "kawasaki": 8,
-   "zhanjiang": 8,
    "newcastle, nsw": 7,
    "chiba": 7,
    "nagoya, aichi": 7,
@@ -17143,19 +17630,20 @@
    "hong kong": 4,
    "subic bay": 4,
    "banten": 3,
+   "vung ang": 3,
    "banjarmasin": 3,
    "lumut": 3,
    "qinhuangdao": 3,
    "singapore": 3,
    "pyeongtaek": 2,
    "zhuhai": 2,
-   "vung ang": 2,
    "panjang": 2,
    "jingtang": 2,
    "董家口": 2,
    "nantong": 2,
    "muroran": 2,
    "port kembla, nsw": 2,
+   "xiamen": 2,
    "prince rupert": 2,
    "san juan": 1,
    "rayong": 1,
@@ -17168,19 +17656,18 @@
    "dongjiakou": 1,
    "卡姆萨": 1,
    "yingkou": 1,
-   "xiamen": 1,
    "kure, hiroshima": 1,
    "beilun": 1,
    "miyako, iwate": 1,
    "dalian": 1
   },
-  "this_year": 56,
-  "detained_total": 17,
+  "this_year": 57,
+  "detained_total": 18,
   "with_codes": 35,
   "codes_uncertain": 3,
   "pdf_enriched": 0,
   "pdf_files_matched": 2,
-  "tmou_reconciled": 663,
+  "tmou_reconciled": 683,
   "tmou_mismatches": [
    {
     "ship": "WINNING INTEGRITY",
