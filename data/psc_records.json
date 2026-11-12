@@ -3651,6 +3651,21 @@
    "count": 9,
    "records": [
     {
+     "date": "2026-11-11",
+     "port": "yantai",
+     "port_raw": "烟台",
+     "type": "PSC",
+     "authority": "",
+     "officer": "",
+     "defects": 2,
+     "detained": false,
+     "codes": "07199 NOT APPROVED DEEP FAT FRYING EQUIPMENT INSTALLED IN GALLEY\n04103 ONE EMERGENCY LIGHT ON MAIN DECK(S) OUT OF ORDER MAIN MASTHEAD LIGHT(UPPER) OUT OF WORK",
+     "codes_uncertain": false,
+     "rectified": "",
+     "note": "来源:2026.11.11 YANTAI PSC INSPECTION.pdf|FP:31ec6f4a",
+     "defects_source": "档案(无TMOU对照)"
+    },
+    {
      "date": "2025-12-30",
      "port": "",
      "port_raw": "",
@@ -3680,22 +3695,6 @@
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship",
      "defects_official": 2,
-     "defects_source": "TokyoMOU官方"
-    },
-    {
-     "date": "2018-05-30",
-     "port": "Yantai",
-     "port_raw": "Yantai (China)",
-     "type": "",
-     "authority": "",
-     "officer": "",
-     "defects": 3,
-     "detained": false,
-     "codes": "",
-     "codes_uncertain": false,
-     "rectified": "",
-     "note": "来源:TokyoMOU/APCIS|当时风险:Low Risk Ship",
-     "defects_official": 3,
      "defects_source": "TokyoMOU官方"
     },
     {
@@ -12106,6 +12105,14 @@
   ],
   "yantai": [
    {
+    "ship": "SUNNY MOREBAYA",
+    "date": "2026-11-11",
+    "port": "yantai",
+    "defects": 2,
+    "detained": false,
+    "codes": "07199 NOT APPROVED DEEP FAT FRYING EQUIPMENT INSTALLED IN GALLEY\n04103 ONE EMERGENCY LIGHT ON MAIN DECK(S) OUT OF ORDER MAIN MASTHEAD LIGHT(UPPER) OUT OF WORK"
+   },
+   {
     "ship": "SUNNY SKY",
     "date": "2026-09-24",
     "port": "yantai",
@@ -13046,14 +13053,6 @@
     "date": "2018-06-11",
     "port": "Yantai",
     "defects": 2,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "SUNNY MOREBAYA",
-    "date": "2018-05-30",
-    "port": "Yantai",
-    "defects": 3,
     "detained": false,
     "codes": ""
    },
@@ -17661,13 +17660,13 @@
    "miyako, iwate": 1,
    "dalian": 1
   },
-  "this_year": 57,
+  "this_year": 58,
   "detained_total": 18,
-  "with_codes": 35,
+  "with_codes": 36,
   "codes_uncertain": 3,
   "pdf_enriched": 0,
   "pdf_files_matched": 2,
-  "tmou_reconciled": 683,
+  "tmou_reconciled": 682,
   "tmou_mismatches": [
    {
     "ship": "WINNING INTEGRITY",
@@ -17676,7 +17675,7 @@
     "official": 1
    }
   ],
-  "tmou_unmatched": 26
+  "tmou_unmatched": 27
  },
  "missing": []
 }
