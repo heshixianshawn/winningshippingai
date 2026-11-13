@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-12",
+ "generated": "2026-11-13",
  "source": "单船档案 PSC-FSC检查记录 sheet（TokyoMOU/APCIS 等来源）",
  "count": 709,
  "ship_count": 63,
@@ -2379,6 +2379,21 @@
    "count": 17,
    "records": [
     {
+     "date": "2026-11-13",
+     "port": "yantai",
+     "port_raw": "烟台",
+     "type": "PSC",
+     "authority": "",
+     "officer": "",
+     "defects": 4,
+     "detained": false,
+     "codes": "11119 IMMERSION SUITS AND LIFE JACKETS ARE NOT STOWED NEAR THE 7 口\n10110 THE BATTERY WEIGHT OF THE DAYLIGHT SIGNALLING LAMP EXCEEDS 7 口\n07106 ONE FIRE DETECTOR BEHAND MAIN SWITCHBOARD IN THE ENGINE 7 口\n07120 PART OF HANDRAIL OF MISSING AT COMMODATION 17 口",
+     "codes_uncertain": true,
+     "rectified": "",
+     "note": "来源:PSC Inspection Report at Jiangyin 20261113.pdf|FP:c2b21f9d",
+     "defects_source": "档案(无TMOU对照)"
+    },
+    {
      "date": "2026-07-27",
      "port": "yantai",
      "port_raw": "烟台",
@@ -2408,22 +2423,6 @@
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship",
      "defects_official": 14,
-     "defects_source": "TokyoMOU官方"
-    },
-    {
-     "date": "2025-02-25",
-     "port": "Pohang",
-     "port_raw": "Pohang (Korea, Republic of)",
-     "type": "",
-     "authority": "",
-     "officer": "",
-     "defects": 0,
-     "detained": false,
-     "codes": "",
-     "codes_uncertain": false,
-     "rectified": "",
-     "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship",
-     "defects_official": 0,
      "defects_source": "TokyoMOU官方"
     },
     {
@@ -11998,14 +11997,6 @@
   "pohang": [
    {
     "ship": "SUNNY KEROUANE",
-    "date": "2025-02-25",
-    "port": "Pohang",
-    "defects": 0,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "SUNNY KEROUANE",
     "date": "2024-09-10",
     "port": "Pohang",
     "defects": 0,
@@ -12104,6 +12095,14 @@
    }
   ],
   "yantai": [
+   {
+    "ship": "SUNNY KEROUANE",
+    "date": "2026-11-13",
+    "port": "yantai",
+    "defects": 4,
+    "detained": false,
+    "codes": "11119 IMMERSION SUITS AND LIFE JACKETS ARE NOT STOWED NEAR THE 7 口\n10110 THE BATTERY WEIGHT OF THE DAYLIGHT SIGNALLING LAMP EXCEEDS 7 口\n07106 ONE FIRE DETECTOR BEHAND MAIN SWITCHBOARD IN THE ENGINE 7 口\n07120 PART OF HANDRAIL OF MISSING AT COMMODATION 17 口"
+   },
    {
     "ship": "SUNNY MOREBAYA",
     "date": "2026-11-11",
@@ -17586,7 +17585,7 @@
  },
  "stats": {
   "by_port": {
-   "yantai": 157,
+   "yantai": 158,
    "port hedland, wa": 71,
    "tianjin": 29,
    "qingdao": 27,
@@ -17602,8 +17601,8 @@
    "fangcheng": 14,
    "zhoushan": 12,
    "lianyungang": 12,
-   "pohang": 11,
    "ningbo": 11,
+   "pohang": 10,
    "oita": 10,
    "tangshan": 9,
    "pontianak": 9,
@@ -17660,13 +17659,13 @@
    "miyako, iwate": 1,
    "dalian": 1
   },
-  "this_year": 58,
+  "this_year": 59,
   "detained_total": 18,
-  "with_codes": 36,
-  "codes_uncertain": 3,
+  "with_codes": 37,
+  "codes_uncertain": 4,
   "pdf_enriched": 0,
   "pdf_files_matched": 2,
-  "tmou_reconciled": 682,
+  "tmou_reconciled": 681,
   "tmou_mismatches": [
    {
     "ship": "WINNING INTEGRITY",
@@ -17675,7 +17674,7 @@
     "official": 1
    }
   ],
-  "tmou_unmatched": 27
+  "tmou_unmatched": 28
  },
  "missing": []
 }
