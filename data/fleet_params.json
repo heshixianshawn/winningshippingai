@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generated": "2026-11-08T09:03:20",
+  "generated": "2026-11-15T09:04:02",
   "count": 65,
   "source": "survey_knowledge_unified.json（各船级社最新 Survey Status Report，经 systems/survey_knowledge_base.py 提取）+ 校验层过滤 + 人工维护字段",
   "ships": {
@@ -36,7 +36,16 @@
       "shaft_gen": "",
       "sisters": [],
       "ex_name": "BEGONIA",
-      "ex_owner": "BEGONIA MARITIME SA/"
+      "ex_owner": "BEGONIA MARITIME SA/",
+      "loa": "288.93",
+      "lbp": "281.61",
+      "breadth": "45.0",
+      "depth": "24.7",
+      "draught": "18.17",
+      "me_mcr": "18630.0",
+      "me_rpm": "91.0",
+      "port_of_registry": "Singapore",
+      "me_maker": "MITSUI ENGINEERING & SHIPBUILDING CO., LTD. TAMANO"
     },
     "9374088": {
       "id": 2,
@@ -70,7 +79,16 @@
       "shaft_gen": "",
       "sisters": [],
       "ex_name": "REGENA N",
-      "ex_owner": "GENERAL ORE CARRIER CORP X"
+      "ex_owner": "GENERAL ORE CARRIER CORP X",
+      "loa": "288.93",
+      "lbp": "281.61",
+      "breadth": "45.0",
+      "depth": "24.7",
+      "draught": "18.174",
+      "me_mcr": "18630.0",
+      "me_rpm": "91.0",
+      "port_of_registry": "Singapore",
+      "me_maker": "MITSUI ENGINEERING & SHIPBUILDING CO., LTD."
     },
     "9232058": {
       "id": 3,
@@ -104,7 +122,16 @@
       "shaft_gen": "",
       "sisters": [],
       "ex_name": "BULK ASIA",
-      "ex_owner": "MS \"BULK ASIA\" GMBH & GO., LTD"
+      "ex_owner": "MS \"BULK ASIA\" GMBH & GO., LTD",
+      "loa": "289.0",
+      "lbp": "279.63",
+      "breadth": "44.98",
+      "depth": "24.4",
+      "draught": "17.976",
+      "me_mcr": "16858.0",
+      "me_rpm": "91.0",
+      "port_of_registry": "Singapore",
+      "me_maker": "MITSUI ENGINEERING & SHIPBUILDING CO., LTD."
     },
     "9314076": {
       "id": 4,
@@ -138,7 +165,16 @@
       "shaft_gen": "",
       "sisters": [],
       "ex_name": "PACIFIC TIARA",
-      "ex_owner": "RIGEL TRANSPORT INC"
+      "ex_owner": "RIGEL TRANSPORT INC",
+      "loa": "288.93",
+      "lbp": "281.61",
+      "breadth": "45.0",
+      "depth": "24.7",
+      "draught": "18.171",
+      "me_mcr": "18630.0",
+      "me_rpm": "91.0",
+      "port_of_registry": "Singapore",
+      "me_maker": "Mitsui Engineering & Shipbuilding Co., Ltd. Tamano Works"
     },
     "9722948": {
       "id": 5,
@@ -173,7 +209,16 @@
       "sisters": [],
       "ex_name": "无, 新造船",
       "ex_owner": "",
-      "scrubber_date": "2024-06-01"
+      "scrubber_date": "2024-06-01",
+      "loa": "300.0",
+      "lbp": "295.52",
+      "breadth": "50.0",
+      "depth": "25.0",
+      "draught": "18.425",
+      "me_mcr": "15250.0",
+      "me_rpm": "66.0",
+      "port_of_registry": "Singapore",
+      "me_maker": "CSSC-MES DIESEL CO., LTD."
     },
     "9335240": {
       "id": 6,
@@ -207,7 +252,11 @@
       "shaft_gen": "",
       "sisters": [],
       "ex_name": "JIANG JUN SHAN",
-      "ex_owner": "Champion Dragon Shipping Limited, Hong Kong"
+      "ex_owner": "Champion Dragon Shipping Limited, Hong Kong",
+      "lbp": "280.45",
+      "me_mcr": "16860.0",
+      "me_rpm": "91.0",
+      "port_of_registry": "SINGAPORE                     "
     },
     "9314052": {
       "id": 7,
@@ -241,7 +290,16 @@
       "shaft_gen": "",
       "sisters": [],
       "ex_name": "BAO ZHU HAI",
-      "ex_owner": "TOSCO KEYMAX International"
+      "ex_owner": "TOSCO KEYMAX International",
+      "loa": "288.93",
+      "lbp": "281.61",
+      "breadth": "45.0",
+      "depth": "24.7",
+      "draught": "18.171",
+      "me_mcr": "18630.0",
+      "me_rpm": "91.0",
+      "port_of_registry": "Singapore",
+      "me_maker": "Mitsui Engineering & Shipbuilding Co., Ltd. Tamano Works"
     },
     "9250610": {
       "id": 8,
@@ -275,7 +333,16 @@
       "shaft_gen": "",
       "sisters": [],
       "ex_name": "SHINYO CHALLENGER",
-      "ex_owner": "SHINYO CHALLENGER LIMITED/SHINYO INTERNATIONAL GROUP LIMITED HONG KONG"
+      "ex_owner": "SHINYO CHALLENGER LIMITED/SHINYO INTERNATIONAL GROUP LIMITED HONG KONG",
+      "loa": "290.0",
+      "lbp": "281.19",
+      "breadth": "47.0",
+      "depth": "24.4",
+      "draught": "17.975",
+      "me_mcr": "16860.0",
+      "me_rpm": "91.0",
+      "port_of_registry": "Monrovia",
+      "me_maker": "Mitsui Engineering & Shipbuilding Co., Ltd. Tamano Works"
     },
     "9450234": {
       "id": 9,
@@ -309,7 +376,16 @@
       "shaft_gen": "",
       "sisters": [],
       "ex_name": "GOLDEN HOPE",
-      "ex_owner": "GOLDEN HELM SHIPPING CO., S.A.,Panama"
+      "ex_owner": "GOLDEN HELM SHIPPING CO., S.A.,Panama",
+      "loa": "288.97",
+      "lbp": "280.45",
+      "breadth": "45.0",
+      "depth": "24.4",
+      "draught": "17.964",
+      "me_mcr": "16860.0",
+      "me_rpm": "91.0",
+      "port_of_registry": "HONG KONG",
+      "me_maker": "HITACHI ZOSEN DIESEL & ENGINEERING CO., LTD."
     },
     "9500625": {
       "id": 10,
@@ -344,7 +420,12 @@
       "sisters": [],
       "ex_name": "LYLA",
       "ex_owner": "Manga Shipping S.A.",
-      "scrubber_date": "2024-10-01"
+      "scrubber_date": "2024-10-01",
+      "loa": "292.0",
+      "lbp": "283.0",
+      "breadth": "45.0",
+      "depth": "24.8",
+      "port_of_registry": "HONG KONG"
     },
     "9311282": {
       "id": 11,
@@ -378,7 +459,16 @@
       "shaft_gen": "源上",
       "sisters": [],
       "ex_name": "GLOBAL PARTNERSHIP",
-      "ex_owner": "MI-DAS Line S.A."
+      "ex_owner": "MI-DAS Line S.A.",
+      "loa": "288.97",
+      "lbp": "280.45",
+      "breadth": "45.0",
+      "depth": "24.4",
+      "draught": "17.955",
+      "me_mcr": "16090.0",
+      "me_rpm": "90.0",
+      "port_of_registry": "HONG KONG",
+      "me_maker": "HITACHI ZOSEN CORPORATION ARIAKE WORKS"
     },
     "9198240": {
       "id": 12,
@@ -386,9 +476,9 @@
       "name_cn": "阳光博凯",
       "name_full": "SUNNY BOKE阳光博凯",
       "imo": "9198240",
-      "call_sign": "H3XI",
+      "call_sign": "VRYC7",
       "owner": "FORESEE MARINE S.A.",
-      "flag": "Panama",
+      "flag": "Hong Kong, China",
       "class_notation": "NK",
       "manager": "QINGDAO WINNING INTERNATIONAL SHIPS MANAGEMENT CO., LTD",
       "hull_no": "204",
@@ -412,7 +502,20 @@
       "shaft_gen": "",
       "sisters": [],
       "ex_name": "KOHJU",
-      "ex_owner": "ERICA NAVIGATION S.A."
+      "ex_owner": "ERICA NAVIGATION S.A.",
+      "flag_prev": "Panama",
+      "flag_changed": "2026-09",
+      "flag_note": "2026-08-13 起询价无线电改码，08-28 批准；EMC 新 MMSI 477285700（HK MID 477）；精确生效日待核实",
+      "official_number": "HK-6317",
+      "port_of_registry": "HONG KONG",
+      "loa": "289.0",
+      "lbp": "280.2",
+      "breadth": "45.0",
+      "depth": "24.1",
+      "draught": "17.81",
+      "me_mcr": "14710.0",
+      "me_rpm": "80.0",
+      "me_maker": "Mitsui Engineering & Shipbuilding Co., Ltd. Tamano Works"
     },
     "9461300": {
       "id": 13,
@@ -447,7 +550,9 @@
       "sisters": [],
       "ex_name": "BESIKTAS",
       "ex_owner": "BESIKTAS LIKID TASIMACILIK DENIZCILIK TICARET ANONIM SIRKETI",
-      "scrubber_date": "2024-06-01"
+      "scrubber_date": "2024-06-01",
+      "me_mcr": "18660.0",
+      "me_rpm": "91.0"
     },
     "9461295": {
       "id": 14,
@@ -482,7 +587,12 @@
       "sisters": [],
       "ex_name": "BESIKTAS TURKMENISTAN",
       "ex_owner": "",
-      "scrubber_date": "2024-09-01"
+      "scrubber_date": "2024-09-01",
+      "breadth": "45.0",
+      "depth": "24.75",
+      "draught": "18.23",
+      "port_of_registry": "SINGAPORE",
+      "me_mcr": "18660.0"
     },
     "9659854": {
       "id": 15,
@@ -516,7 +626,16 @@
       "shaft_gen": "",
       "sisters": [],
       "ex_name": "GALAXY DREAM",
-      "ex_owner": "CANOPUS MARITIME INC."
+      "ex_owner": "CANOPUS MARITIME INC.",
+      "loa": "291.98",
+      "lbp": "284.28",
+      "breadth": "45.0",
+      "depth": "24.7",
+      "draught": "18.235",
+      "me_mcr": "18660.0",
+      "me_rpm": "91.0",
+      "port_of_registry": "Singapore",
+      "me_maker": "HITACHI ZOSEN CORPORATION ARIAKE WORKS"
     },
     "9722950": {
       "id": 16,
@@ -551,7 +670,16 @@
       "sisters": [],
       "ex_name": "无, 新造船",
       "ex_owner": "",
-      "scrubber_date": "2024-06-01"
+      "scrubber_date": "2024-06-01",
+      "loa": "300.0",
+      "lbp": "295.5",
+      "breadth": "50.0",
+      "depth": "25.0",
+      "draught": "18.425",
+      "me_mcr": "15250.0",
+      "me_rpm": "66.0",
+      "port_of_registry": "Singapore",
+      "me_maker": "CSSC-MES DIESEL CO., LTD."
     },
     "9659866": {
       "id": 17,
@@ -585,7 +713,16 @@
       "shaft_gen": "",
       "sisters": [],
       "ex_name": "AQUARIUS DREAM",
-      "ex_owner": "MITSUI O.S.K. LINES, LTD."
+      "ex_owner": "MITSUI O.S.K. LINES, LTD.",
+      "loa": "291.98",
+      "lbp": "284.28",
+      "breadth": "45.0",
+      "depth": "24.7",
+      "draught": "18.235",
+      "me_mcr": "18660.0",
+      "me_rpm": "91.0",
+      "port_of_registry": "Singapore",
+      "me_maker": "HITACHI ZOSEN CORPORATION ARIAKE WORKS"
     },
     "9576296": {
       "id": 18,
@@ -620,7 +757,12 @@
       "sisters": [],
       "ex_name": "HANJIN MATSUYAMA",
       "ex_owner": "",
-      "scrubber_date": "2026-01-01"
+      "scrubber_date": "2026-01-01",
+      "loa": "292.0",
+      "lbp": "283.5",
+      "breadth": "45.0",
+      "depth": "24.8",
+      "port_of_registry": "Singapore"
     },
     "9271602": {
       "id": 19,
@@ -654,7 +796,16 @@
       "shaft_gen": "",
       "sisters": [],
       "ex_name": "SHIN HEIRYU",
-      "ex_owner": "THEBE MARITIMA S.A. /NIPPON YUSEN KABISHIKI KAISHYA"
+      "ex_owner": "THEBE MARITIMA S.A. /NIPPON YUSEN KABISHIKI KAISHYA",
+      "loa": "299.95",
+      "lbp": "294.27",
+      "breadth": "50.0",
+      "depth": "24.1",
+      "draught": "17.91",
+      "me_mcr": "16020.0",
+      "me_rpm": "91.0",
+      "port_of_registry": "Monrovia",
+      "me_maker": "Mitsui Engineering & Shipbuilding Co., Ltd. Tamano Works"
     },
     "9254678": {
       "id": 20,
@@ -688,7 +839,16 @@
       "shaft_gen": "",
       "sisters": [],
       "ex_name": "SHIN KENRYU",
-      "ex_owner": "ERICA NAVIGATION S.A."
+      "ex_owner": "ERICA NAVIGATION S.A.",
+      "loa": "299.95",
+      "lbp": "294.27",
+      "breadth": "50.0",
+      "depth": "24.1",
+      "draught": "17.91",
+      "me_mcr": "16020.0",
+      "me_rpm": "91.0",
+      "port_of_registry": "Monrovia",
+      "me_maker": "Mitsui Engineering & Shipbuilding Co., Ltd. Tamano Works"
     },
     "9498054": {
       "id": 21,
@@ -723,7 +883,11 @@
       "sisters": [],
       "ex_name": "DONG-A LETO",
       "ex_owner": "LTSF DA 1 INC",
-      "scrubber_date": "2024-08-01"
+      "scrubber_date": "2024-08-01",
+      "lbp": "284.23",
+      "me_mcr": "18660.0",
+      "me_rpm": "91.0",
+      "port_of_registry": "SINGAPORE                     "
     },
     "9393199": {
       "id": 22,
@@ -758,7 +922,16 @@
       "sisters": [],
       "ex_name": "PLEIADES DREAM",
       "ex_owner": "",
-      "scrubber_date": "2024-04-01"
+      "scrubber_date": "2024-04-01",
+      "loa": "288.93",
+      "lbp": "288.93",
+      "breadth": "45.0",
+      "depth": "24.7",
+      "draught": "18.17",
+      "me_mcr": "18630.0",
+      "me_rpm": "91.0",
+      "port_of_registry": "Monrovia",
+      "me_maker": "MITSUI ENGINEERING & SHIPBUILDING CO., LTD. TAMANO"
     },
     "9597824": {
       "id": 23,
@@ -793,7 +966,11 @@
       "sisters": [],
       "ex_name": "DONG-A EITHER",
       "ex_owner": "DAT ETHER2 MARITIME S.A.",
-      "scrubber_date": "2024-08-01"
+      "scrubber_date": "2024-08-01",
+      "lbp": "284.227",
+      "me_mcr": "18660.0",
+      "me_rpm": "91.0",
+      "port_of_registry": "SINGAPORE                     "
     },
     "9254666": {
       "id": 24,
@@ -827,7 +1004,16 @@
       "shaft_gen": "",
       "sisters": [],
       "ex_name": "PORTAGE",
-      "ex_owner": ""
+      "ex_owner": "",
+      "loa": "289.0",
+      "lbp": "283.74",
+      "breadth": "45.0",
+      "depth": "24.1",
+      "draught": "17.85",
+      "me_mcr": "16020.0",
+      "me_rpm": "91.0",
+      "port_of_registry": "Monrovia",
+      "me_maker": "Mitsui Engineering & Shipbuilding Co., Ltd. Tamano Works"
     },
     "9406520": {
       "id": 25,
@@ -895,7 +1081,16 @@
       "shaft_gen": "",
       "sisters": [],
       "ex_name": "MONA FRONTIER",
-      "ex_owner": "KUMIAI NAVIGATION (PTE) LTD"
+      "ex_owner": "KUMIAI NAVIGATION (PTE) LTD",
+      "loa": "289.0",
+      "lbp": "280.2",
+      "breadth": "45.0",
+      "depth": "24.1",
+      "draught": "17.81",
+      "me_mcr": "13980.0",
+      "me_rpm": "80.0",
+      "port_of_registry": "Monrovia",
+      "me_maker": "Mitsui Engineering & Shipbuilding Co., Ltd. Tamano Works"
     },
     "9346172": {
       "id": 27,
@@ -930,7 +1125,16 @@
       "sisters": [],
       "ex_name": "RUBENA N",
       "ex_owner": "GRACE OCEAN PRIVATE LIMITED",
-      "scrubber_date": "2023-10-01"
+      "scrubber_date": "2023-10-01",
+      "loa": "299.95",
+      "lbp": "294.27",
+      "breadth": "50.0",
+      "depth": "24.1",
+      "draught": "17.91",
+      "me_mcr": "16860.0",
+      "me_rpm": "91.0",
+      "port_of_registry": "Singapore",
+      "me_maker": "Mitsui Engineering & Shipbuilding Co., Ltd. Tamano Works"
     },
     "9336945": {
       "id": 28,
@@ -965,7 +1169,16 @@
       "sisters": [],
       "ex_name": "MINERAL NIPPON",
       "ex_owner": "",
-      "scrubber_date": "2024-01-01"
+      "scrubber_date": "2024-01-01",
+      "loa": "299.95",
+      "lbp": "294.27",
+      "breadth": "50.0",
+      "depth": "24.1",
+      "draught": "17.91",
+      "me_mcr": "16860.0",
+      "me_rpm": "91.0",
+      "port_of_registry": "Singapore",
+      "me_maker": "Mitsui Engineering & Shipbuilding Co., Ltd. Tamano Works"
     },
     "9859765": {
       "id": 29,
@@ -1000,7 +1213,16 @@
       "sisters": [],
       "ex_name": "无, 新造船",
       "ex_owner": "",
-      "scrubber_date": "2024-10-01"
+      "scrubber_date": "2024-10-01",
+      "loa": "299.99",
+      "lbp": "295.5",
+      "breadth": "50.0",
+      "depth": "25.0",
+      "draught": "18.426",
+      "me_mcr": "15250.0",
+      "me_rpm": "66.0",
+      "port_of_registry": "Singapore",
+      "me_maker": "CSSC-MES DIESEL CO., LTD."
     },
     "9859777": {
       "id": 30,
@@ -1035,7 +1257,16 @@
       "sisters": [],
       "ex_name": "无, 新造船",
       "ex_owner": "",
-      "scrubber_date": "2024-11-01"
+      "scrubber_date": "2024-11-01",
+      "loa": "299.99",
+      "lbp": "295.5",
+      "breadth": "50.0",
+      "depth": "25.0",
+      "draught": "18.426",
+      "me_mcr": "15250.0",
+      "me_rpm": "66.0",
+      "port_of_registry": "Singapore",
+      "me_maker": "CSSC-MES DIESEL CO., LTD."
     },
     "9279393": {
       "id": 31,
@@ -1069,7 +1300,16 @@
       "shaft_gen": "",
       "sisters": [],
       "ex_name": "VATHY",
-      "ex_owner": "SAMOS STEAMSHIP CYPRUS LTD"
+      "ex_owner": "SAMOS STEAMSHIP CYPRUS LTD",
+      "loa": "319.58",
+      "lbp": "308.96",
+      "breadth": "54.0",
+      "depth": "24.3",
+      "draught": "18.127",
+      "me_mcr": "22432.0",
+      "me_rpm": "76.0",
+      "port_of_registry": "Singapore",
+      "me_maker": "Mitsubishi Heavy Industries, Ltd. Kobe Shipyard & Machinery Wo"
     },
     "9278636": {
       "id": 32,
@@ -1103,7 +1343,16 @@
       "shaft_gen": "",
       "sisters": [],
       "ex_name": "AZUL CIELO",
-      "ex_owner": "KOTOBUKI KAIUN CO., LTD"
+      "ex_owner": "KOTOBUKI KAIUN CO., LTD",
+      "loa": "299.95",
+      "lbp": "294.27",
+      "breadth": "50.0",
+      "depth": "24.1",
+      "draught": "17.91",
+      "me_mcr": "16860.0",
+      "me_rpm": "91.0",
+      "port_of_registry": "Singapore",
+      "me_maker": "Mitsui Engineering & Shipbuilding Co., Ltd. Tamano Works"
     },
     "9331426": {
       "id": 33,
@@ -1137,7 +1386,16 @@
       "shaft_gen": "",
       "sisters": [],
       "ex_name": "SHIN SETO",
-      "ex_owner": ""
+      "ex_owner": "",
+      "loa": "299.95",
+      "lbp": "294.27",
+      "breadth": "50.0",
+      "depth": "24.1",
+      "draught": "17.91",
+      "me_mcr": "16020.0",
+      "me_rpm": "91.0",
+      "port_of_registry": "Monrovia",
+      "me_maker": "Hitachi Zosen Corporation Ariake Works"
     },
     "9296420": {
       "id": 34,
@@ -1206,7 +1464,10 @@
       "sisters": [],
       "ex_name": "SAKURA",
       "ex_owner": "Kitaura Kaiun Co., Ltd",
-      "scrubber_date": "2025-08-01"
+      "scrubber_date": "2025-08-01",
+      "port_of_registry": "Panama",
+      "me_mcr": "22432.0",
+      "me_rpm": "76.0"
     },
     "9406506": {
       "id": 36,
@@ -1241,7 +1502,16 @@
       "sisters": [],
       "ex_name": "SPRING BRAVE",
       "ex_owner": "PRIMAVERA MONTANA S.A.",
-      "scrubber_date": "2025-12-01"
+      "scrubber_date": "2025-12-01",
+      "loa": "299.94",
+      "lbp": "292.17",
+      "breadth": "50.0",
+      "depth": "24.5",
+      "draught": "18.105",
+      "me_mcr": "18630.0",
+      "me_rpm": "91.0",
+      "port_of_registry": "Singapore",
+      "me_maker": "MITSUI ENGINEERING & SHIPBUILDING CO., LTD."
     },
     "9439125": {
       "id": 37,
@@ -1275,7 +1545,16 @@
       "shaft_gen": "",
       "sisters": [],
       "ex_name": "OCEAN CAESAR",
-      "ex_owner": "NIPPON YUSEN KABUSHIKI KAISHA"
+      "ex_owner": "NIPPON YUSEN KABUSHIKI KAISHA",
+      "loa": "288.93",
+      "lbp": "281.61",
+      "breadth": "45.0",
+      "depth": "24.7",
+      "draught": "18.17",
+      "me_mcr": "18630.0",
+      "me_rpm": "91.0",
+      "port_of_registry": "HONG KONG",
+      "me_maker": "MITSUI ENGINEERING & SHIPBUILDING CO., LTD. TAMANO"
     },
     "9271597": {
       "id": 38,
@@ -1309,7 +1588,16 @@
       "shaft_gen": "",
       "sisters": [],
       "ex_name": "SHIN ONOE",
-      "ex_owner": "ADRASTEA MARITIME S.A./NIPPON YUSEN KABUSHIKI KAISHA"
+      "ex_owner": "ADRASTEA MARITIME S.A./NIPPON YUSEN KABUSHIKI KAISHA",
+      "loa": "299.95",
+      "lbp": "294.27",
+      "breadth": "50.0",
+      "depth": "24.1",
+      "draught": "17.91",
+      "me_mcr": "16020.0",
+      "me_rpm": "91.0",
+      "port_of_registry": "HONG KONG",
+      "me_maker": "Mitsui Engineering & Shipbuilding Co., Ltd. Tamano Works"
     },
     "9287273": {
       "id": 39,
@@ -1377,7 +1665,16 @@
       "shaft_gen": "无",
       "sisters": [],
       "ex_name": "ATLANTIC TIGER",
-      "ex_owner": "NIPPON YUSEN KABUSHIKI KAISHA"
+      "ex_owner": "NIPPON YUSEN KABUSHIKI KAISHA",
+      "loa": "288.93",
+      "lbp": "281.61",
+      "breadth": "45.0",
+      "depth": "24.7",
+      "draught": "18.174",
+      "me_mcr": "18630.0",
+      "me_rpm": "91.0",
+      "port_of_registry": "HONG KONG",
+      "me_maker": "MITSUI ENGINEERING & SHIPBUILDING CO., LTD. TAMANO"
     },
     "9346342": {
       "id": 41,
@@ -1411,7 +1708,16 @@
       "shaft_gen": "无",
       "sisters": [],
       "ex_name": "STAR VENTURE",
-      "ex_owner": "AMPIGO SHIPPING CORPORATION"
+      "ex_owner": "AMPIGO SHIPPING CORPORATION",
+      "loa": "299.94",
+      "lbp": "292.17",
+      "breadth": "50.0",
+      "depth": "24.5",
+      "draught": "18.105",
+      "me_mcr": "18630.0",
+      "me_rpm": "91.0",
+      "port_of_registry": "HONG KONG",
+      "me_maker": "Mitsui Engineering & Shipbuilding Co., Ltd. Tamano Shipyard"
     },
     "9362994": {
       "id": 42,
@@ -1446,7 +1752,9 @@
       "sisters": [],
       "ex_name": "BAO AN",
       "ex_owner": "ERICA NAVIGATION S.A.",
-      "scrubber_date": "2024-11-01"
+      "scrubber_date": "2024-11-01",
+      "me_mcr": "22432.0",
+      "me_rpm": "76.0"
     },
     "9337107": {
       "id": 43,
@@ -1481,7 +1789,9 @@
       "sisters": [],
       "ex_name": "MOUNT KINABALU",
       "ex_owner": "ZIBE SHIPPING LTD",
-      "scrubber_date": "2019-12-01"
+      "scrubber_date": "2019-12-01",
+      "me_mcr": "16860.0",
+      "me_rpm": "91.0"
     },
     "9492218": {
       "id": 44,
@@ -1516,7 +1826,16 @@
       "sisters": [],
       "ex_name": "DAN MAY",
       "ex_owner": "DAN MAY MARITIME LLC(Foremost Group)",
-      "scrubber_date": "2019-08-01"
+      "scrubber_date": "2019-08-01",
+      "loa": "299.92",
+      "lbp": "294.12",
+      "breadth": "50.0",
+      "depth": "24.9",
+      "draught": "18.49",
+      "me_mcr": "18660.0",
+      "me_rpm": "91.0",
+      "port_of_registry": "Singapore",
+      "me_maker": "CSSC-MES DIESEL CO., LTD."
     },
     "9364320": {
       "id": 45,
@@ -1550,7 +1869,16 @@
       "shaft_gen": "",
       "sisters": [],
       "ex_name": "IMPERIAL FRONTIER",
-      "ex_owner": "IMPERIAL TRIP S.A."
+      "ex_owner": "IMPERIAL TRIP S.A.",
+      "loa": "288.93",
+      "lbp": "281.61",
+      "breadth": "45.0",
+      "depth": "24.7",
+      "draught": "18.171",
+      "me_mcr": "18630.0",
+      "me_rpm": "91.0",
+      "port_of_registry": "HONG KONG",
+      "me_maker": "KAWASAKI HEAVY INDUSTRIES, LTD."
     },
     "9393187": {
       "id": 46,
@@ -1584,7 +1912,16 @@
       "shaft_gen": "",
       "sisters": [],
       "ex_name": "ROYAL IOLE",
-      "ex_owner": "IOLE SHIPPING SA"
+      "ex_owner": "IOLE SHIPPING SA",
+      "loa": "288.93",
+      "lbp": "281.61",
+      "breadth": "45.0",
+      "depth": "24.7",
+      "draught": "18.17",
+      "me_mcr": "17700.0",
+      "me_rpm": "87.0",
+      "port_of_registry": "Monrovia",
+      "me_maker": "MITSUI ENGINEERING & SHIPBUILDING CO., LTD. TAMANO"
     },
     "9738583": {
       "id": 47,
@@ -1619,7 +1956,9 @@
       "sisters": [],
       "ex_name": "MINERAL QINGDAO",
       "ex_owner": "OCY Mineral Qingdao Ltd",
-      "scrubber_date": "2024-10-01"
+      "scrubber_date": "2024-10-01",
+      "me_mcr": "17106.0",
+      "me_rpm": "77.5"
     },
     "9492220": {
       "id": 48,
@@ -1654,7 +1993,9 @@
       "sisters": [],
       "ex_name": "QING MAY",
       "ex_owner": "Qing May Maritime LLC(Foremost Group)",
-      "scrubber_date": "2019-08-01"
+      "scrubber_date": "2019-08-01",
+      "me_mcr": "18660.0",
+      "me_rpm": "91.0"
     },
     "9387114": {
       "id": 49,
@@ -1689,7 +2030,16 @@
       "sisters": [],
       "ex_name": "Penelope T",
       "ex_owner": "Trisect Holding SA",
-      "scrubber_date": "2025-07-01"
+      "scrubber_date": "2025-07-01",
+      "loa": "288.93",
+      "lbp": "281.61",
+      "breadth": "45.0",
+      "depth": "24.7",
+      "draught": "18.171",
+      "me_mcr": "18630.0",
+      "me_rpm": "91.0",
+      "port_of_registry": "HONG KONG",
+      "me_maker": "MITSUI ENGINEERING & SHIPBUILDING CO., LTD."
     },
     "9330305": {
       "id": 50,
@@ -1724,7 +2074,9 @@
       "sisters": [],
       "ex_name": "MOUNT CARMEL",
       "ex_owner": "Mizuho Sangyo Co Ltd & Fair Wind Navigation SA",
-      "scrubber_date": "2019-06-01"
+      "scrubber_date": "2019-06-01",
+      "me_mcr": "16860.0",
+      "me_rpm": "91.0"
     },
     "9398149": {
       "id": 51,
@@ -1758,7 +2110,16 @@
       "shaft_gen": "",
       "sisters": [],
       "ex_name": "SHIN KORYU",
-      "ex_owner": "SCOTCH MARITIMA S.A."
+      "ex_owner": "SCOTCH MARITIMA S.A.",
+      "loa": "299.7",
+      "lbp": "295.17",
+      "breadth": "50.0",
+      "depth": "25.0",
+      "draught": "18.23",
+      "me_mcr": "16610.0",
+      "me_rpm": "81.0",
+      "port_of_registry": "HONG KONG",
+      "me_maker": "MITSUI ENGINEERING & SHIPBUILDING CO., LTD. TAMANO"
     },
     "9337169": {
       "id": 52,
@@ -1828,7 +2189,16 @@
       "sisters": [],
       "ex_name": "NETADOLA",
       "ex_owner": "MELITE OWNING COMPANY LIMITED",
-      "scrubber_date": "2023-05-01"
+      "scrubber_date": "2023-05-01",
+      "loa": "299.94",
+      "lbp": "292.17",
+      "breadth": "50.0",
+      "depth": "24.5",
+      "draught": "18.105",
+      "me_mcr": "18630.0",
+      "me_rpm": "91.0",
+      "port_of_registry": "HONG KONG",
+      "me_maker": "MITSUI ENGINEERING & SHIPBUILDING CO., LTD."
     },
     "9406489": {
       "id": 54,
@@ -1862,7 +2232,16 @@
       "shaft_gen": "",
       "sisters": [],
       "ex_name": "CAPE UNITY",
-      "ex_owner": "Forward Gloria Navigation S.A."
+      "ex_owner": "Forward Gloria Navigation S.A.",
+      "loa": "288.93",
+      "lbp": "281.61",
+      "breadth": "45.0",
+      "depth": "24.7",
+      "draught": "18.174",
+      "me_mcr": "18630.0",
+      "me_rpm": "91.0",
+      "port_of_registry": "HONG KONG",
+      "me_maker": "MITSUI ENGINEERING & SHIPBUILDING CO., LTD."
     },
     "9336957": {
       "id": 55,
@@ -1896,7 +2275,16 @@
       "shaft_gen": "",
       "sisters": [],
       "ex_name": "OCEAN PROMETHEUS",
-      "ex_owner": "Erica Navigation S.A."
+      "ex_owner": "Erica Navigation S.A.",
+      "loa": "299.95",
+      "lbp": "294.27",
+      "breadth": "50.0",
+      "depth": "24.1",
+      "draught": "17.91",
+      "me_mcr": "16020.0",
+      "me_rpm": "91.0",
+      "port_of_registry": "HONG KONG",
+      "me_maker": "HITACHI ZOSEN DIESEL & ENGINEERING CO., LTD."
     },
     "9398113": {
       "id": 56,
@@ -1930,7 +2318,16 @@
       "shaft_gen": "",
       "sisters": [],
       "ex_name": "KARADENIZ POWERSHIP RAUF OSMAN BEY",
-      "ex_owner": "KARPOWERSHIPYARD RAUF BEY COMPANY LIMITED"
+      "ex_owner": "KARPOWERSHIPYARD RAUF BEY COMPANY LIMITED",
+      "loa": "299.7",
+      "lbp": "295.17",
+      "breadth": "50.0",
+      "depth": "25.0",
+      "draught": "18.23",
+      "me_mcr": "16610.0",
+      "me_rpm": "81.0",
+      "port_of_registry": "Monrovia",
+      "me_maker": "MITSUI ENGINEERING & SHIPBUILDING CO., LTD. TAMANO"
     },
     "9336969": {
       "id": 57,
@@ -1964,7 +2361,16 @@
       "shaft_gen": "",
       "sisters": [],
       "ex_name": "BAO GUO",
-      "ex_owner": "ERICA NAVIGATION, S.A."
+      "ex_owner": "ERICA NAVIGATION, S.A.",
+      "loa": "299.7",
+      "lbp": "295.17",
+      "breadth": "50.0",
+      "depth": "25.0",
+      "draught": "18.23",
+      "me_mcr": "16610.0",
+      "me_rpm": "81.0",
+      "port_of_registry": "HONG KONG",
+      "me_maker": "MITSUI ENGINEERING & SHIPBUILDING CO., LTD."
     },
     "9312303": {
       "id": 58,
@@ -1999,7 +2405,9 @@
       "sisters": [],
       "ex_name": "LONDON SPIRIT",
       "ex_owner": "Uranie Shipholding Corp",
-      "scrubber_date": "2024-10-01"
+      "scrubber_date": "2024-10-01",
+      "me_mcr": "16610.0",
+      "me_rpm": "81.0"
     },
     "9633068": {
       "id": 59,
@@ -2033,7 +2441,16 @@
       "shaft_gen": "",
       "sisters": [],
       "ex_name": "WAKAYAMA MARU",
-      "ex_owner": "LUCRETIA SHIPPING, S.A."
+      "ex_owner": "LUCRETIA SHIPPING, S.A.",
+      "loa": "291.98",
+      "lbp": "284.28",
+      "breadth": "45.0",
+      "depth": "24.7",
+      "draught": "18.237",
+      "me_mcr": "18660.0",
+      "me_rpm": "91.0",
+      "port_of_registry": "Singapore",
+      "me_maker": "MITSUI ENGINEERING & SHIPBUILDING CO., LTD. TAMANO"
     },
     "9727352": {
       "id": 60,
@@ -2067,7 +2484,9 @@
       "shaft_gen": "无",
       "sisters": [],
       "ex_name": "MINERAL EDO",
-      "ex_owner": "LUSTER MARITIME S.A. (10.0%), HIGAKI SANGYO KAISHA, LTD. (90.0 %)"
+      "ex_owner": "LUSTER MARITIME S.A. (10.0%), HIGAKI SANGYO KAISHA, LTD. (90.0 %)",
+      "me_mcr": "16420.0",
+      "me_rpm": "77.0"
     },
     "9748100": {
       "id": 61,
@@ -2101,7 +2520,9 @@
       "shaft_gen": "无",
       "sisters": [],
       "ex_name": "MINERAL UTAMARO",
-      "ex_owner": "WATANABE PRINT CO., LTD. (90.0%), WPSD S.A. (10.0 %)"
+      "ex_owner": "WATANABE PRINT CO., LTD. (90.0%), WPSD S.A. (10.0 %)",
+      "me_mcr": "16420.0",
+      "me_rpm": "77.0"
     },
     "1037397": {
       "id": 62,
@@ -2148,7 +2569,11 @@
       "depth": "30.5",
       "draught": "22",
       "official_no": "403509",
-      "dnv_id": "46897"
+      "dnv_id": "46897",
+      "manager_prev": "QINGDAO WINNING INTERNATIONAL SHIPS MANAGEMENT CO., LTD.",
+      "manager_changed": "2026-07-31",
+      "initial_audit": "2026-09-23 烟台（DNV，ISM 船舶审核/ISPS/MLC，远程+现场）",
+      "port_of_registry": "Singapore"
     },
     "1037402": {
       "id": 63,
@@ -2187,7 +2612,9 @@
       "ex_owner": "",
       "ccs_no": "23G0811",
       "next_special_survey": "2031-08-11",
-      "source": "CCS船舶录 internationalShipDetail?ccsno=23G0811 (2026-08-23)"
+      "source": "CCS船舶录 internationalShipDetail?ccsno=23G0811 (2026-08-23)",
+      "me_mcr": "19000.0",
+      "me_rpm": "58.0"
     },
     "1084651": {
       "id": 64,
@@ -2230,7 +2657,8 @@
       "depth": "30.5",
       "draught": "21.974",
       "official_no": "404254",
-      "dnv_id": "114815"
+      "dnv_id": "114815",
+      "port_of_registry": "Singapore"
     },
     "1084663": {
       "id": 65,
@@ -2248,8 +2676,8 @@
       "builder": "HENGLI SHIPBUILDING (DALIAN) CO., LTD",
       "takeover_date": "2026-11-10",
       "gt": "172517",
-      "nt": "",
-      "dwt": "325000",
+      "nt": "72503",
+      "dwt": "324988",
       "light_ton": "",
       "me_make": "",
       "me_model": "",
@@ -2275,7 +2703,20 @@
       "draft": "22.0",
       "ship_type": "Bulk Carrier",
       "gross_tonnage": "172517",
-      "deadweight": "325000"
+      "deadweight": "325000",
+      "dnv_id": "114816",
+      "mmsi": "563352500",
+      "official_number": "",
+      "yard_no": "HL-B325K-5",
+      "delivery_date": "2026-11-10",
+      "keel_date": "2026-04-25",
+      "former_names": "HL-B325K-2 (2025)",
+      "loa": "329.9",
+      "lbp": "324.5",
+      "depth": "30.5",
+      "draught": "21.994",
+      "official_no": "404255",
+      "port_of_registry": "Singapore"
     }
   }
 }
