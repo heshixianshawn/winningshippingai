@@ -14,3 +14,8 @@ database_id = "480d7142-3a26-450c-bbe9-cb3a42d6d18c"
 # DEEPSEEK_API_KEY_ENV
 # DIGEST_KEY
 # PAGES_URL = "https://winningshippingai.pages.dev"
+
+# KV: 对话日志（/api/logs 与 _logger.js 使用）
+[[kv_namespaces]]
+binding = "WSAI_LOG"
+id = "c99f4e83e1754ccdb3348a1252dd68fd"
