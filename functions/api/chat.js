@@ -40,6 +40,7 @@ const SYSTEM_PROMPTS = {
 
 export async function onRequest(context) {
   const { request, env } = context;
+  const ctx = context;   // ctx.waitUntil 用于异步日志（原代码用 ctx 但从未定义）
 
   if (request.method === 'OPTIONS') {
     return new Response(null, { headers: CORS_HEADERS });
