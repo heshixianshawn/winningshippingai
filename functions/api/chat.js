@@ -503,8 +503,7 @@ export async function onRequest(context) {
     }
 
     // ====== Log ======
-    (async () => {
-      await logToKV(env, {
+    ctx.waitUntil(logToKV(env, {
         timestamp: new Date().toISOString(),
         message: message.slice(0, 200),
         module,
@@ -514,9 +513,8 @@ export async function onRequest(context) {
         isThinking: isThinkingMode,
         replyPreview: reply.slice(0, 300),
         model: data.model,
-        usage: { prompt: usage.prompt_tokens, completion: usage.completion_tokens }
-      });
-    })();
+      usage: { prompt: usage.prompt_tokens, completion: usage.completion_tokens }
+    }));
 
     // ====== Log query to memory system ======
     if (env && env.DB && memoryEntries.length > 0) {
