@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-08T09:03:20",
- "source": "Tokyo MOU APCIS（源文件生成于 2026-11-08T09:03:08）",
+ "generated": "2026-11-15T09:04:02",
+ "source": "Tokyo MOU APCIS（源文件生成于 2026-11-15T09:03:51）",
  "ship_count": 65,
  "ships": {
   "SUNNY BEYLA": {
@@ -1502,10 +1502,10 @@
      "inspection_id": "085841CB-BC7F-490A-A5D8-F6948B750FC2"
     }
    ],
-   "status": "ok",
+   "status": "stale",
    "scanned_at": "2026-09-16T21:53:43",
    "imo": "9336969",
-   "note": null,
+   "note": "本次 TMOU 扫描未成功（详情为空(限流?)），以下为上次成功结果",
    "data_issue": null
   },
   "SUNNY KAMSAR": {
@@ -5167,8 +5167,8 @@
   },
   "WINNING INTEGRITY": {
    "risk_level": "High",
-   "priority": "II",
-   "inspection_window": "22.08.2026 - 22.10.2026",
+   "priority": "N/A",
+   "inspection_window": "08.12.2026 - 08.02.2027",
    "weighting_points": 4,
    "outstanding_deficiencies": 0,
    "company": {
@@ -5176,6 +5176,18 @@
     "imo": "5466129"
    },
    "inspections": [
+    {
+     "date": "08.10.2026",
+     "place": "Ningbo (China)",
+     "ship_name": "WINNING INTEGRITY",
+     "callsign": "9V5172",
+     "mmsi": "563312300",
+     "flag": "Singapore",
+     "deficiencies": "1",
+     "detention": "no",
+     "risk_at_inspection": "High Risk Ship",
+     "inspection_id": "2E208811-D52F-458D-AD97-4DD351F3CD9E"
+    },
     {
      "date": "22.06.2026",
      "place": "Yantai (China)",
@@ -5210,7 +5222,23 @@
      "deficiencies": "6",
      "detention": "no",
      "risk_at_inspection": "Standard Risk Ship",
-     "inspection_id": "32D06B67-D46E-4E07-8EDC-8DCA10B160A4"
+     "inspection_id": "32D06B67-D46E-4E07-8EDC-8DCA10B160A4",
+     "defect_codes": [
+      "07109",
+      "13105",
+      "18322",
+      "10112",
+      "11129",
+      "14899"
+     ],
+     "defect_desc": [
+      "FIRE SAFETY",
+      "PROPULSION AND AUXILIARY MACHINERY",
+      "LABOUR CONDITIONS-ACCOMMODATION, RECREATIONAL FACILITIES, FOOD AND CATERING",
+      "SAFETY OF NAVIGATION",
+      "LIFE SAVING APPLIANCES",
+      "POLLUTION PREVENTION - BALLAST WATER"
+     ]
     },
     {
      "date": "01.09.2022",
@@ -5382,7 +5410,7 @@
     }
    ],
    "status": "ok",
-   "scanned_at": "2026-09-16T22:10:45",
+   "scanned_at": "2026-11-10T17:44:06",
    "imo": "9633068",
    "note": null,
    "data_issue": null
@@ -6062,7 +6090,23 @@
      "deficiencies": "6",
      "detention": "no",
      "risk_at_inspection": "Standard Risk Ship",
-     "inspection_id": "448132AA-85E4-41E6-A3A9-A8B48CCE6FB6"
+     "inspection_id": "448132AA-85E4-41E6-A3A9-A8B48CCE6FB6",
+     "defect_codes": [
+      "08109",
+      "14404",
+      "11101",
+      "11113",
+      "03108",
+      "01104"
+     ],
+     "defect_desc": [
+      "ALARMS",
+      "POLLUTION PREVENTION - MARPOL ANNEX IV",
+      "LIFE SAVING APPLIANCES",
+      "LIFE SAVING APPLIANCES",
+      "WATER/WEATHERTIGHT CONDITIONS",
+      "CERTIFICATE AND DOCUMENTATION - SHIP CERTIFICATES"
+     ]
     },
     {
      "date": "08.08.2025",
@@ -6074,7 +6118,15 @@
      "deficiencies": "2",
      "detention": "no",
      "risk_at_inspection": "Standard Risk Ship",
-     "inspection_id": "CD5D14C9-44AB-488D-AD28-AE5C05989E2B"
+     "inspection_id": "CD5D14C9-44AB-488D-AD28-AE5C05989E2B",
+     "defect_codes": [
+      "11102",
+      "08109"
+     ],
+     "defect_desc": [
+      "LIFE SAVING APPLIANCES",
+      "ALARMS"
+     ]
     },
     {
      "date": "24.03.2021",
@@ -6098,7 +6150,15 @@
      "deficiencies": "2",
      "detention": "no",
      "risk_at_inspection": "Low Risk Ship",
-     "inspection_id": "7539F09F-A204-4361-BB2E-003B65E684E7"
+     "inspection_id": "7539F09F-A204-4361-BB2E-003B65E684E7",
+     "defect_codes": [
+      "14402",
+      "10136"
+     ],
+     "defect_desc": [
+      "POLLUTION PREVENTION - MARPOL ANNEX IV",
+      "SAFETY OF NAVIGATION"
+     ]
     },
     {
      "date": "12.06.2017",
@@ -6126,7 +6186,7 @@
     }
    ],
    "status": "ok",
-   "scanned_at": "2026-09-16T22:13:27",
+   "scanned_at": "2026-11-10T17:31:39",
    "imo": "9500625",
    "note": null,
    "data_issue": null
@@ -9116,7 +9176,7 @@
    },
    "inspections": [],
    "status": "ok",
-   "scanned_at": "2026-11-08T09:01:02",
+   "scanned_at": "2026-11-15T09:01:45",
    "imo": "1037393",
    "note": "本次 TMOU 扫描未成功（详情为空(限流?)），以下为上次成功结果",
    "data_issue": null
