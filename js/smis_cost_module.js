@@ -514,8 +514,16 @@
         var lv = box.querySelector('#constp-r-level').value;
         var showUncl = box.querySelector('#constp-r-uncl').checked;
         var list = items.filter(function (x) {
-          if (!showUncl && x.item === '其他/未分类') return false;
-          if (q && String(x.item).toLowerCase().indexOf(q) < 0) return false;
+          // 2026-11-18：有关键词时不再默认隐藏「其他/未分类」，否则命中原文的行会被过滤掉
+          if (!showUncl && x.item === '其他/未分类' && !q) return false;
+          if (q) {
+            // 关键词同时匹配 工项名 / 类别 / 原文样例 / 涉及船名（原来只匹配工项名，搜不到原文里的词）
+            var hay = [x.item, x.cat,
+                       (x.samples || []).join(' '),
+                       (x.by_ship || []).map(function (y) { return y[0]; }).join(' ')
+                      ].join(' ').toLowerCase();
+            if (hay.indexOf(q) < 0) return false;
+          }
           if (lv && String(x.level) !== lv) return false;
           if (sh && !(x.by_ship || []).some(function (y) { return y[0] === sh; })) return false;
           if (yd && !(x.by_yard || []).some(function (y) { return y[0] === yd; })) return false;
