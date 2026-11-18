@@ -520,6 +520,7 @@
             // 关键词同时匹配 工项名 / 类别 / 原文样例 / 涉及船名（原来只匹配工项名，搜不到原文里的词）
             var hay = [x.item, x.cat,
                        (x.samples || []).join(' '),
+                       (x.text || ''),
                        (x.by_ship || []).map(function (y) { return y[0]; }).join(' ')
                       ].join(' ').toLowerCase();
             if (hay.indexOf(q) < 0) return false;
