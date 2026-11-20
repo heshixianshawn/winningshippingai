@@ -47,5 +47,9 @@ export async function onRequest(context) {
     });
   }
   const nextUrl = encodeURIComponent(url.pathname + url.search);
-  return Response.redirect(`${url.origin}/login?next=${nextUrl}`, 302);
+  // 302 加 no-store：避免 Safari/浏览器把重定向缓存住（曾出现“刷新后空白页”）
+  return new Response(null, {
+    status: 302,
+    headers: { 'Location': `${url.origin}/login?next=${nextUrl}`, 'Cache-Control': 'no-store, must-revalidate' },
+  });
 }
