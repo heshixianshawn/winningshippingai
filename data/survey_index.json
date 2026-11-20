@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-19 14:01",
+  "last_updated": "2026-11-20 14:01",
   "total_ships": 65,
   "ships": {
     "SUNNY_BEYLA": {
@@ -341,8 +341,8 @@
       ],
       "alerts": {
         "expired": 1,
-        "urgent_7d": 0,
-        "warning_30d": 23,
+        "urgent_7d": 23,
+        "warning_30d": 0,
         "info_90d": 0
       },
       "extraction_confidence": "high"
