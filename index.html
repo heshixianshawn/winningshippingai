@@ -393,10 +393,10 @@ var STATE = {
   repairData: null
 };
 
-try {
-  const saved = localStorage.getItem('wsai_history');
-  if (saved) STATE.conversationHistory = JSON.parse(saved);
-} catch(e) {}
+// 2026-11-20 Shawn：页面刷新/重新进入时不再恢复历史对话（每个模块从空白开始，便于查看）
+// 仅在同一次页面会话内保留（切换模块再切回来仍可见）；同时清掉旧的本地缓存
+try { localStorage.removeItem('wsai_history'); } catch(e) {}
+STATE.conversationHistory = {};
 
 // ====== DOM ======
 var els = {
@@ -2234,7 +2234,7 @@ function saveHistory(userText, assistantText) {
   if (STATE.conversationHistory[module].length > 20) {
     STATE.conversationHistory[module] = STATE.conversationHistory[module].slice(-20);
   }
-  try { localStorage.setItem('wsai_history', JSON.stringify(STATE.conversationHistory)); } catch(e) {}
+  // 2026-11-20：不再写入 localStorage，刷新后自然清空
 }
 
 function renderMessages(module) {
