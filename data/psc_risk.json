@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-15T09:04:02",
- "source": "Tokyo MOU APCIS（源文件生成于 2026-11-15T09:03:51）",
+ "generated": "2026-11-22T09:03:59",
+ "source": "Tokyo MOU APCIS（源文件生成于 2026-11-22T09:03:47）",
  "ship_count": 65,
  "ships": {
   "SUNNY BEYLA": {
@@ -1360,8 +1360,8 @@
   },
   "SUNNY KALOUM": {
    "risk_level": "High",
-   "priority": "I",
-   "inspection_window": "04.01.2026 - 04.03.2026",
+   "priority": "N/A",
+   "inspection_window": "02.01.2027 - 02.03.2027",
    "weighting_points": 4,
    "outstanding_deficiencies": 0,
    "company": {
@@ -1369,6 +1369,18 @@
     "imo": "6223856"
    },
    "inspections": [
+    {
+     "date": "02.11.2026",
+     "place": "Tianjin (China)",
+     "ship_name": "SUNNY KALOUM",
+     "callsign": "VRYH6",
+     "mmsi": "477263400",
+     "flag": "Hong Kong, China",
+     "deficiencies": "4",
+     "detention": "no",
+     "risk_at_inspection": "High Risk Ship",
+     "inspection_id": "27AD2F18-826B-420C-8F59-6BD4BAEF9F15"
+    },
     {
      "date": "04.11.2025",
      "place": "Yantai (China)",
@@ -1502,8 +1514,8 @@
      "inspection_id": "085841CB-BC7F-490A-A5D8-F6948B750FC2"
     }
    ],
-   "status": "stale",
-   "scanned_at": "2026-09-16T21:53:43",
+   "status": "ok",
+   "scanned_at": "2026-11-22T09:00:59",
    "imo": "9336969",
    "note": "本次 TMOU 扫描未成功（详情为空(限流?)），以下为上次成功结果",
    "data_issue": null
@@ -5198,7 +5210,17 @@
      "deficiencies": "3",
      "detention": "no",
      "risk_at_inspection": "High Risk Ship",
-     "inspection_id": "85033A9F-B324-45B0-99A2-7FFCE412A397"
+     "inspection_id": "85033A9F-B324-45B0-99A2-7FFCE412A397",
+     "defect_codes": [
+      "03105",
+      "02108",
+      "07105"
+     ],
+     "defect_desc": [
+      "WATER/WEATHERTIGHT CONDITIONS",
+      "STRUCTURAL CONDITIONS",
+      "FIRE SAFETY"
+     ]
     },
     {
      "date": "06.05.2025",
@@ -5410,7 +5432,7 @@
     }
    ],
    "status": "ok",
-   "scanned_at": "2026-11-10T17:44:06",
+   "scanned_at": "2026-11-15T09:45:40",
    "imo": "9633068",
    "note": null,
    "data_issue": null
@@ -9175,7 +9197,7 @@
     "imo": "0471029"
    },
    "inspections": [],
-   "status": "ok",
+   "status": "stale",
    "scanned_at": "2026-11-15T09:01:45",
    "imo": "1037393",
    "note": "本次 TMOU 扫描未成功（详情为空(限流?)），以下为上次成功结果",
