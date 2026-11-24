@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-23",
+ "generated": "2026-11-24",
  "source": "单船档案 PSC-FSC检查记录 sheet（TokyoMOU/APCIS 等来源）",
  "count": 689,
  "ship_count": 63,
@@ -2379,6 +2379,21 @@
    "count": 16,
    "records": [
     {
+     "date": "2026-11-14",
+     "port": "qingdao",
+     "port_raw": "青岛",
+     "type": "PSC",
+     "authority": "",
+     "officer": "",
+     "defects": null,
+     "detained": false,
+     "codes": "",
+     "codes_uncertain": false,
+     "rectified": "",
+     "note": "来源:SUNNY KEROUANE---PSC__PRO-06-01 不符合规定的情况报告表 Non-Conformity Report-1.pdf|FP:af9dfde0",
+     "defects_source": "档案(无TMOU对照)"
+    },
+    {
      "date": "2026-11-13",
      "port": "江阴",
      "port_raw": "江阴",
@@ -2423,22 +2438,6 @@
      "rectified": "",
      "note": "来源:TokyoMOU/APCIS|当时风险:Standard Risk Ship",
      "defects_official": 14,
-     "defects_source": "TokyoMOU官方"
-    },
-    {
-     "date": "2023-02-24",
-     "port": "Pohang",
-     "port_raw": "Pohang (Korea, Republic of)",
-     "type": "",
-     "authority": "",
-     "officer": "",
-     "defects": 2,
-     "detained": false,
-     "codes": "",
-     "codes_uncertain": false,
-     "rectified": "",
-     "note": "来源:TokyoMOU/APCIS|当时风险:High Risk Ship",
-     "defects_official": 2,
      "defects_source": "TokyoMOU官方"
     },
     {
@@ -11676,14 +11675,6 @@
    },
    {
     "ship": "SUNNY KEROUANE",
-    "date": "2023-02-24",
-    "port": "Pohang",
-    "defects": 2,
-    "detained": false,
-    "codes": ""
-   },
-   {
-    "ship": "SUNNY KEROUANE",
     "date": "2022-12-05",
     "port": "Pohang",
     "defects": 2,
@@ -13140,6 +13131,14 @@
    }
   ],
   "qingdao": [
+   {
+    "ship": "SUNNY KEROUANE",
+    "date": "2026-11-14",
+    "port": "qingdao",
+    "defects": null,
+    "detained": false,
+    "codes": ""
+   },
    {
     "ship": "WINNING NATURE",
     "date": "2026-11-07",
@@ -17110,7 +17109,7 @@
   "by_port": {
    "yantai": 153,
    "port hedland, wa": 69,
-   "qingdao": 26,
+   "qingdao": 27,
    "tianjin": 26,
    "caofeidian": 20,
    "gladstone, qld": 17,
@@ -17126,13 +17125,13 @@
    "lianyungang": 12,
    "oita": 10,
    "ningbo": 10,
-   "pohang": 9,
    "pontianak": 9,
    "onomichi": 9,
    "robert's bank": 9,
    "jiangyin": 9,
    "": 9,
    "tangshan": 8,
+   "pohang": 8,
    "kawasaki": 8,
    "zhanjiang": 8,
    "newcastle, nsw": 7,
@@ -17184,13 +17183,13 @@
    "dalian": 1,
    "铁山港": 1
   },
-  "this_year": 59,
+  "this_year": 60,
   "detained_total": 17,
   "with_codes": 37,
   "codes_uncertain": 4,
   "pdf_enriched": 0,
   "pdf_files_matched": 2,
-  "tmou_reconciled": 660,
+  "tmou_reconciled": 659,
   "tmou_mismatches": [
    {
     "ship": "WINNING INTEGRITY",
@@ -17199,7 +17198,7 @@
     "official": 1
    }
   ],
-  "tmou_unmatched": 29
+  "tmou_unmatched": 30
  },
  "missing": []
 }
